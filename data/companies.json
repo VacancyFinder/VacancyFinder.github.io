@@ -1,0 +1,4756 @@
+[
+  {
+    "slug": "99x",
+    "name": "99x",
+    "website": "https://99x.io",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "abans-electricals",
+    "name": "Abans Electricals PLC",
+    "website": "https://www.abansgroup.com",
+    "careersUrl": "https://abansgroup.com/work-with-us/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "ABAN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "abans-finance",
+    "name": "Abans Finance PLC",
+    "website": "https://abansfinance.lk",
+    "careersUrl": "https://abansfinance.lk/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "AFSL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "access-engineering",
+    "name": "Access Engineering PLC",
+    "website": "https://www.accessengsl.com",
+    "careersUrl": "https://www.accessengsl.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "construction-engineering",
+    "cseSymbol": "AEL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "acl-cables",
+    "name": "ACL Cables PLC",
+    "website": "https://www.acl.lk",
+    "careersUrl": "https://www.acl.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "manufacturing-industrials",
+    "cseSymbol": "ACL.N0000",
+    "parentGroup": "acl",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "acl-plastics",
+    "name": "ACL Plastics PLC",
+    "website": "https://www.acl.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "APLA.N0000",
+    "parentGroup": "acl",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "acme-printing-and-packaging",
+    "name": "ACME Printing & Packaging PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "ACME.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "agalawatte-plantations",
+    "name": "Agalawatte Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "AGAL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "agarapatana-plantations",
+    "name": "Agarapatana Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "AGPL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "agstar",
+    "name": "Agstar PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "AGST.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "aitken-spence",
+    "name": "Aitken Spence PLC",
+    "website": "https://www.aitkenspence.com",
+    "careersUrl": "https://www.aitkenspence.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "SPEN.N0000",
+    "parentGroup": "aitkenspence",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "aitken-spence-hotel-holdings",
+    "name": "Aitken Spence Hotel Holdings PLC",
+    "website": "https://www.aitkenspence.com",
+    "careersUrl": "https://www.aitkenspence.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "AHUN.N0000",
+    "parentGroup": "aitkenspence",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "aitken-spence-plantation-managements",
+    "name": "Aitken Spence Plantation Managements PLC",
+    "website": "https://www.aitkenspence.com",
+    "careersUrl": "https://www.aitkenspence.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "ASPM.N0000",
+    "parentGroup": "aitkenspence",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "alliance-finance-company",
+    "name": "Alliance Finance Company PLC",
+    "website": "https://www.alliancefinance.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "ALLI.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "alpha-fire-services",
+    "name": "Alpha Fire Services PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "services",
+    "cseSymbol": "AFS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "alumex",
+    "name": "Alumex PLC",
+    "website": "https://www.alumexgroup.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "ALUM.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "amana-bank",
+    "name": "Amana Bank PLC",
+    "website": "https://www.amanabank.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "ABL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "amana-takaful",
+    "name": "Amana Takaful PLC",
+    "website": "https://www.amanatakaful.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "ATL.N0000",
+    "parentGroup": "amanatakaful",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "amana-takaful-life",
+    "name": "Amana Takaful Life PLC",
+    "website": "https://www.amanatakaful.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "ATLL.N0000",
+    "parentGroup": "amanatakaful",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "ambeon-capital",
+    "name": "Ambeon Capital PLC",
+    "website": "https://www.ambeon.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "TAP.N0000",
+    "parentGroup": "ambeon",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "ambeon-holdings",
+    "name": "Ambeon Holdings PLC",
+    "website": "https://www.ambeon.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "GREG.N0000",
+    "parentGroup": "ambeon",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "amw-capital-leasing-and-finance",
+    "name": "AMW Capital Leasing & Finance PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "AMCL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "arpico-insurance",
+    "name": "Arpico Insurance PLC",
+    "website": "https://www.arpico.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "AINS.N0000",
+    "parentGroup": "arpico",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "ascentic",
+    "name": "Ascentic",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed from here (Swedish-owned, Colombo office) — confirm in M1."
+  },
+  {
+    "slug": "asia-asset-finance",
+    "name": "Asia Asset Finance PLC",
+    "website": "https://www.asiaasset.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "AAF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "asia-capital",
+    "name": "Asia Capital PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "ACAP.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "asia-siyaka-commodities",
+    "name": "Asia Siyaka Commodities PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "trading",
+    "cseSymbol": "ASIY.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "asian-hotels-and-properties",
+    "name": "Asian Hotels & Properties PLC",
+    "website": "https://www.johnkeells.com",
+    "careersUrl": "https://www.keells.com/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "AHPL.N0000",
+    "parentGroup": "keells",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "asiri-hospital-holdings",
+    "name": "Asiri Hospital Holdings PLC",
+    "website": "https://www.asirihealth.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "healthcare",
+    "cseSymbol": "ASIR.N0000",
+    "parentGroup": "asirihealth",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "asiri-surgical-hospital",
+    "name": "Asiri Surgical Hospital PLC",
+    "website": "https://www.asirihealth.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "healthcare",
+    "cseSymbol": "AMSL.N0000",
+    "parentGroup": "asirihealth",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "associated-motor-finance-company",
+    "name": "Associated Motor Finance Company PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "AMF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "atlas-labs",
+    "name": "Atlas Labs",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed — confirm in M1."
+  },
+  {
+    "slug": "bairaha-farms",
+    "name": "Bairaha Farms PLC",
+    "website": "https://www.bairaha.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "BFL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "balangoda-plantations",
+    "name": "Balangoda Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "BALA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "bansei-royal-resorts-hikkaduwa",
+    "name": "Bansei Royal Resorts Hikkaduwa PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "BRR.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "beruwala-resorts",
+    "name": "Beruwala Resorts PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "BERU.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "blue-diamonds-jewellery-worldwide",
+    "name": "Blue Diamonds Jewellery Worldwide PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "BLUE.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "bogala-graphite-lanka",
+    "name": "Bogala Graphite Lanka PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "BOGA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "bogawantalawa-tea-estates",
+    "name": "Bogawantalawa Tea Estates PLC",
+    "website": "https://www.bpl.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "BOPL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "bppl-holdings",
+    "name": "BPPL Holdings PLC",
+    "website": "https://www.bpplholdings.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "BPPL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "brown-and-company",
+    "name": "Brown and Company PLC",
+    "website": "https://www.brownsgroup.lk",
+    "careersUrl": "https://www.brownsgroup.lk/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "BRWN.N0000",
+    "parentGroup": "brownsgroup",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "browns-beach-hotels",
+    "name": "Browns Beach Hotels PLC",
+    "website": "https://www.brownsgroup.lk",
+    "careersUrl": "https://www.brownsgroup.lk/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "BBH.N0000",
+    "parentGroup": "brownsgroup",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "browns-investments",
+    "name": "Browns Investments PLC",
+    "website": "https://www.brownsgroup.lk",
+    "careersUrl": "https://www.brownsgroup.lk/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "BIL.N0000",
+    "parentGroup": "brownsgroup",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "bukit-darah",
+    "name": "Bukit Darah PLC",
+    "website": "https://www.carsoncumberbatch.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "BUKI.N0000",
+    "parentGroup": "carsoncumberbatch",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "c-m-holdings",
+    "name": "C M Holdings PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "COLO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "c-t-holdings",
+    "name": "C T Holdings PLC",
+    "website": "https://www.cargillsceylon.com",
+    "careersUrl": "https://www.cargillsceylon.com/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "CTHR.N0000",
+    "parentGroup": "cargillsceylon",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "c-t-land-development",
+    "name": "C T Land Development PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "CTLD.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "c-w-mackie",
+    "name": "C. W. Mackie PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "trading",
+    "cseSymbol": "CWM.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "capital-alliance-holdings",
+    "name": "Capital Alliance Holdings PLC",
+    "website": "https://www.capitalalliance.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "CALT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "cargills-bank",
+    "name": "Cargills Bank PLC",
+    "website": "https://www.cargillsbank.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "CBNK.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "cargills-ceylon",
+    "name": "Cargills (Ceylon) PLC",
+    "website": "https://www.cargillsceylon.com",
+    "careersUrl": "https://www.cargillsceylon.com/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "CARG.N0000",
+    "parentGroup": "cargillsceylon",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "cargo-boat-development-company",
+    "name": "Cargo Boat Development Company PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "CABO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "carson-cumberbatch",
+    "name": "Carson Cumberbatch PLC",
+    "website": "https://www.carsoncumberbatch.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "CARS.N0000",
+    "parentGroup": "carsoncumberbatch",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "central-finance-company",
+    "name": "Central Finance Company PLC",
+    "website": "https://www.centralfinance.lk",
+    "careersUrl": "https://www.centralfinance.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "CFIN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "central-industries",
+    "name": "Central Industries PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "CIND.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "ceylinco-insurance",
+    "name": "Ceylinco Insurance PLC",
+    "website": "https://www.ceylinco.com",
+    "careersUrl": "https://www.ceylinco.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "CINS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "ceylon-beverage-holdings",
+    "name": "Ceylon Beverage Holdings PLC",
+    "website": "https://www.lionbeer.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "BREW.N0000",
+    "parentGroup": "lionbeer",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "ceylon-cold-stores",
+    "name": "Ceylon Cold Stores PLC",
+    "website": "https://www.keells.com",
+    "careersUrl": "https://www.keells.com/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "CCS.N0000",
+    "parentGroup": "keells",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "ceylon-grain-elevators",
+    "name": "Ceylon Grain Elevators PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "GRAN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "ceylon-guardian-investment-trust",
+    "name": "Ceylon Guardian Investment Trust PLC",
+    "website": "https://www.carsoncumberbatch.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "GUAR.N0000",
+    "parentGroup": "carsoncumberbatch",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "ceylon-hospitals",
+    "name": "Ceylon Hospitals PLC",
+    "website": "https://www.durdans.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "healthcare",
+    "cseSymbol": "CHL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "ceylon-hotels-corporation",
+    "name": "Ceylon Hotels Corporation PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "CHOT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "ceylon-investment",
+    "name": "Ceylon Investment PLC",
+    "website": "https://www.carsoncumberbatch.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "CINV.N0000",
+    "parentGroup": "carsoncumberbatch",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "ceylon-printers",
+    "name": "Ceylon Printers PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "media-printing",
+    "cseSymbol": "CPRT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "ceylon-tea-brokers",
+    "name": "Ceylon Tea Brokers PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "trading",
+    "cseSymbol": "CTBL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "ceylon-tobacco-company",
+    "name": "Ceylon Tobacco Company PLC",
+    "website": "https://www.ceylontobacco.com",
+    "careersUrl": "https://www.ceylontobacco.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "CTC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "chemanex",
+    "name": "Chemanex PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "CHMX.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "chevron-lubricants-lanka",
+    "name": "Chevron Lubricants Lanka PLC",
+    "website": "https://www.chevronlubricants.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "LLUB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "chrissworld",
+    "name": "Chrissworld PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "services",
+    "cseSymbol": "CWL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "cic-holdings",
+    "name": "CIC Holdings PLC",
+    "website": "https://www.cic.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "CIC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "citizens-development-business-finance",
+    "name": "Citizens Development Business Finance PLC",
+    "website": "https://www.cdb.lk",
+    "careersUrl": "https://www.cdb.lk/life-at-cdb/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "CDB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "citrus-leisure",
+    "name": "Citrus Leisure PLC",
+    "website": "https://www.citrusleisure.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "REEF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "co-operative-insurance-company",
+    "name": "Co-Operative Insurance Company PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "COOP.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "codegen",
+    "name": "CodeGen",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed — confirm in M1."
+  },
+  {
+    "slug": "colombo-city-holdings",
+    "name": "Colombo City Holdings PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "PHAR.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "colombo-dockyard",
+    "name": "Colombo Dockyard PLC",
+    "website": "https://www.cdl.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "manufacturing-industrials",
+    "cseSymbol": "DOCK.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "colombo-fort-investments",
+    "name": "Colombo Fort Investments PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "CFI.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "colombo-investment-trust",
+    "name": "Colombo Investment Trust PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "CIT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "colombo-land-and-development-company",
+    "name": "Colombo Land and Development Company PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "CLND.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "commercial-bank-of-ceylon",
+    "name": "Commercial Bank of Ceylon PLC",
+    "website": "https://www.combank.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "COMB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "commercial-credit-and-finance",
+    "name": "Commercial Credit & Finance PLC",
+    "website": "https://www.comcredit.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "COCR.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "commercial-development-company",
+    "name": "Commercial Development Company PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "COMD.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "convenience-foods-lanka",
+    "name": "Convenience Foods (Lanka) PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "SOY.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "creative-software",
+    "name": "Creative Software",
+    "website": "https://www.creativesoftware.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "cryptoworth",
+    "name": "Cryptoworth",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed — confirm in M1."
+  },
+  {
+    "slug": "dankotuwa-porcelain",
+    "name": "Dankotuwa Porcelain PLC",
+    "website": "https://www.dankotuwa.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "DPL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "dfcc-bank",
+    "name": "DFCC Bank PLC",
+    "website": "https://www.dfcc.lk",
+    "careersUrl": "https://www.dfcc.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "DFCC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "dialog-axiata",
+    "name": "Dialog Axiata PLC",
+    "website": "https://www.dialog.lk",
+    "careersUrl": "https://dialog.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "telecommunications",
+    "cseSymbol": "DIAL.N0000",
+    "parentGroup": "dialog",
+    "sourceLists": [
+      "tech",
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "dialog-finance",
+    "name": "Dialog Finance PLC",
+    "website": "https://www.dialog.lk",
+    "careersUrl": "https://dialog.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "CALF.N0000",
+    "parentGroup": "dialog",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "diesel-and-motor-engineering",
+    "name": "Diesel & Motor Engineering PLC",
+    "website": "https://www.dimolanka.com",
+    "careersUrl": "https://www.dimolanka.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "automotive",
+    "cseSymbol": "DIMO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "digital-mobility-solutions-lanka-pickme",
+    "name": "Digital Mobility Solutions Lanka PLC (PickMe)",
+    "website": "https://pickme.lk",
+    "careersUrl": "https://pickme.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": "PKME.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "tech",
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "dilmah-ceylon-tea-company",
+    "name": "Dilmah Ceylon Tea Company PLC",
+    "website": "https://www.dilmahtea.com",
+    "careersUrl": "https://www.dilmahtea.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "CTEA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "dipped-products",
+    "name": "Dipped Products PLC",
+    "website": "https://www.dplgroup.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "DIPD.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "distilleries-company-of-sri-lanka",
+    "name": "Distilleries Company of Sri Lanka PLC",
+    "website": "https://www.dcs.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "DIST.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "dolphin-hotels",
+    "name": "Dolphin Hotels PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "STAF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "e-b-creasy-and-company",
+    "name": "E. B. Creasy & Company PLC",
+    "website": "https://www.ebcreasy.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "trading",
+    "cseSymbol": "EBCR.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "e-channelling",
+    "name": "E-Channelling PLC",
+    "website": "https://www.echannelling.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "healthcare",
+    "cseSymbol": "ECL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "e-m-l-consultants",
+    "name": "E M L Consultants PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "services",
+    "cseSymbol": "EML.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "east-west-properties",
+    "name": "East West Properties PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "EAST.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "eastern-merchants",
+    "name": "Eastern Merchants PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "trading",
+    "cseSymbol": "EMER.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "eden-hotel-lanka",
+    "name": "Eden Hotel Lanka PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "EDEN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "elpitiya-plantations",
+    "name": "Elpitiya Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "ELPL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "equity-two",
+    "name": "Equity Two PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "ETWO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "ex-pack-corrugated-cartons",
+    "name": "Ex-pack Corrugated Cartons PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "PACK.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "expolanka-holdings",
+    "name": "Expolanka Holdings PLC",
+    "website": "https://www.expolanka.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "logistics-shipping",
+    "cseSymbol": "EXPO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "exterminators",
+    "name": "Exterminators PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "services",
+    "cseSymbol": "EXT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "first-capital-holdings",
+    "name": "First Capital Holdings PLC",
+    "website": "https://www.firstcapital.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "CFVF.N0000",
+    "parentGroup": "firstcapital",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "first-capital-treasuries",
+    "name": "First Capital Treasuries PLC",
+    "website": "https://www.firstcapital.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "FCT.N0000",
+    "parentGroup": "firstcapital",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "flat-rock-technology",
+    "name": "Flat Rock Technology",
+    "website": "https://www.flatrocktech.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "fortude",
+    "name": "Fortude",
+    "website": "https://fortude.co",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "galadari-hotels-lanka",
+    "name": "Galadari Hotels (Lanka) PLC",
+    "website": "https://www.galadarihotel.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "GHLL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "galle-face-capital-partners",
+    "name": "Galle Face Capital Partners PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "WAPO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "gestetner-of-ceylon",
+    "name": "Gestetner of Ceylon PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "services",
+    "cseSymbol": "GEST.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "greentech-energy",
+    "name": "Greentech Energy PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "MEL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "hapugastenne-plantations",
+    "name": "Hapugastenne Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "HAPU.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "harischandra-mills",
+    "name": "Harischandra Mills PLC",
+    "website": "https://www.harischandramills.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "HARI.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "hatton-national-bank",
+    "name": "Hatton National Bank PLC",
+    "website": "https://www.hnb.lk",
+    "careersUrl": "https://www.hnb.lk/about-us/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "HNB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "hatton-plantations",
+    "name": "Hatton Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "HPL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "haycarb",
+    "name": "Haycarb PLC",
+    "website": "https://www.haycarb.com",
+    "careersUrl": "https://www.hayleys.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "HAYC.N0000",
+    "parentGroup": "hayleys",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "hayleys",
+    "name": "Hayleys PLC",
+    "website": "https://www.hayleys.com",
+    "careersUrl": "https://www.hayleys.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "HAYL.N0000",
+    "parentGroup": "hayleys",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "hayleys-fabric",
+    "name": "Hayleys Fabric PLC",
+    "website": "https://www.hayleysfabric.com",
+    "careersUrl": "https://www.hayleys.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "apparel-textiles",
+    "cseSymbol": "MGT.N0000",
+    "parentGroup": "hayleys",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "hayleys-fibre",
+    "name": "Hayleys Fibre PLC",
+    "website": "https://www.hayleys.com",
+    "careersUrl": "https://www.hayleys.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "HEXP.N0000",
+    "parentGroup": "hayleys",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "hayleys-leisure",
+    "name": "Hayleys Leisure PLC",
+    "website": "https://www.hayleys.com",
+    "careersUrl": "https://www.hayleys.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "CONN.N0000",
+    "parentGroup": "hayleys",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "hcltech",
+    "name": "HCLTech",
+    "website": "https://www.hcltech.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "Global careers portal; filter to Sri Lanka."
+  },
+  {
+    "slug": "hdfc-bank-of-sri-lanka",
+    "name": "HDFC Bank of Sri Lanka",
+    "website": "https://www.hdfc.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "HDFC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "hela-apparel-holdings",
+    "name": "Hela Apparel Holdings PLC",
+    "website": "https://www.helaclothing.com",
+    "careersUrl": "https://www.helaclothing.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "apparel-textiles",
+    "cseSymbol": "HELA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "hemas-holdings",
+    "name": "Hemas Holdings PLC",
+    "website": "https://www.hemas.com",
+    "careersUrl": "https://www.hemas.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "HHL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "hikkaduwa-beach-resort",
+    "name": "Hikkaduwa Beach Resort PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "CITH.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "hnb-assurance",
+    "name": "HNB Assurance PLC",
+    "website": "https://www.hnbassurance.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "HASU.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "hnb-finance",
+    "name": "HNB Finance PLC",
+    "website": "https://www.hnbfinance.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "HNBF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "horana-plantations",
+    "name": "Horana Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "HOPL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "hotel-sigiriya",
+    "name": "Hotel Sigiriya PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "HSIG.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "hsenid-business-solutions",
+    "name": "hSenid Business Solutions PLC",
+    "website": "https://www.hsenid.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": "HBS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "hunas-holdings",
+    "name": "Hunas Holdings PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "HUNA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "hunters-and-company",
+    "name": "Hunters & Company PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "trading",
+    "cseSymbol": "HUNT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "hva-foods",
+    "name": "HVA Foods PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "HVA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "hype-invention",
+    "name": "Hype Invention",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed — confirm in M1."
+  },
+  {
+    "slug": "ifs",
+    "name": "IFS",
+    "website": "https://www.ifs.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "Global site; need the Sri Lanka-filtered listing."
+  },
+  {
+    "slug": "industrial-asphalts-lanka",
+    "name": "Industrial Asphalts (Lanka) PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "ASPH.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "janashakthi-insurance",
+    "name": "Janashakthi Insurance PLC",
+    "website": "https://www.janashakthi.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "JINS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "jat-holdings",
+    "name": "JAT Holdings PLC",
+    "website": "https://www.jatholdings.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "JAT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "jetwing-symphony",
+    "name": "Jetwing Symphony PLC",
+    "website": "https://www.jetwinghotels.com",
+    "careersUrl": "https://www.jetwinghotels.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "JETS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "john-keells",
+    "name": "John Keells PLC",
+    "website": "https://www.keells.com",
+    "careersUrl": "https://www.keells.com/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "trading",
+    "cseSymbol": "JKL.N0000",
+    "parentGroup": "keells",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "john-keells-holdings",
+    "name": "John Keells Holdings PLC",
+    "website": "https://www.keells.com",
+    "careersUrl": "https://www.keells.com/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "JKH.N0000",
+    "parentGroup": "keells",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "john-keells-hotels",
+    "name": "John Keells Hotels PLC",
+    "website": "https://www.cinnamonhotels.com",
+    "careersUrl": "https://www.cinnamonhotels.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "KHL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "kahawatte-plantations",
+    "name": "Kahawatte Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "KAHA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "kapruka-holdings",
+    "name": "Kapruka Holdings PLC",
+    "website": "https://www.kapruka.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "KPHL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "keells-food-products",
+    "name": "Keells Food Products PLC",
+    "website": "https://www.keells.com",
+    "careersUrl": "https://www.keells.com/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "KFP.N0000",
+    "parentGroup": "keells",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "kegalle-plantations",
+    "name": "Kegalle Plantations PLC",
+    "website": "https://www.arpico.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "KGAL.N0000",
+    "parentGroup": "arpico",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "kelani-cables",
+    "name": "Kelani Cables PLC",
+    "website": "https://www.kelanicables.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "manufacturing-industrials",
+    "cseSymbol": "KCAB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "kelani-tyres",
+    "name": "Kelani Tyres PLC",
+    "website": "https://www.kelanityres.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "automotive",
+    "cseSymbol": "TYRE.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "kelani-valley-plantations",
+    "name": "Kelani Valley Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "KVAL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "kelsey-developments",
+    "name": "Kelsey Developments PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "KDL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "kotagala-plantations",
+    "name": "Kotagala Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "KOTA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "kotmale-holdings",
+    "name": "Kotmale Holdings PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "LAMB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "lake-house-printers-and-publishers",
+    "name": "Lake House Printers & Publishers PLC",
+    "website": "https://www.lakehouse.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "media-printing",
+    "cseSymbol": "LPRT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "lanka-aluminium-industries",
+    "name": "Lanka Aluminium Industries PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "LALU.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "lanka-ashok-leyland",
+    "name": "Lanka Ashok Leyland PLC",
+    "website": "https://www.ashokleyland.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "automotive",
+    "cseSymbol": "ASHO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "lanka-ceramic",
+    "name": "Lanka Ceramic PLC",
+    "website": "https://www.lankaceramic.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "CERA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "lanka-credit-and-business-finance",
+    "name": "Lanka Credit & Business Finance PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "LCBF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "lanka-ioc",
+    "name": "Lanka IOC PLC",
+    "website": "https://www.lankaioc.com",
+    "careersUrl": "https://www.lankaioc.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "LIOC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "lanka-milk-foods-cwe",
+    "name": "Lanka Milk Foods (CWE) PLC",
+    "website": "https://www.lankamilkfoods.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "LMF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "lanka-realty-investments",
+    "name": "Lanka Realty Investments PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "ASCO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "lanka-tiles",
+    "name": "Lanka Tiles PLC",
+    "website": "https://www.lankatiles.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "TILE.N0000",
+    "parentGroup": "lankatiles",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "lanka-ventures",
+    "name": "Lanka Ventures PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "LVEN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "lanka-walltiles",
+    "name": "Lanka Walltiles PLC",
+    "website": "https://www.lankatiles.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "LWL.N0000",
+    "parentGroup": "lankatiles",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "lankem-ceylon",
+    "name": "Lankem Ceylon PLC",
+    "website": "https://www.lankem.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "LCEY.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "lankem-developments",
+    "name": "Lankem Developments PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "LDEV.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "laugfs-gas",
+    "name": "LAUGFS Gas PLC",
+    "website": "https://www.laugfs.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "LGL.N0000",
+    "parentGroup": "laugfs",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "laugfs-power",
+    "name": "LAUGFS Power PLC",
+    "website": "https://www.laugfs.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "LPL.N0000",
+    "parentGroup": "laugfs",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "laxapana-batteries",
+    "name": "Laxapana Batteries PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "LITE.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "lb-finance",
+    "name": "LB Finance PLC",
+    "website": "https://www.lbfinance.com",
+    "careersUrl": "https://www.lbfinance.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "LFIN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "lee-hedges",
+    "name": "Lee Hedges PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "SHAW.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "lion-brewery-ceylon",
+    "name": "Lion Brewery (Ceylon) PLC",
+    "website": "https://www.lionbeer.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "LION.N0000",
+    "parentGroup": "lionbeer",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "lolc-finance",
+    "name": "LOLC Finance PLC",
+    "website": "https://www.lolc.com",
+    "careersUrl": "https://www.lolc.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "LOFC.N0000",
+    "parentGroup": "lolc",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "lolc-general-insurance",
+    "name": "LOLC General Insurance PLC",
+    "website": "https://www.lolc.com",
+    "careersUrl": "https://www.lolc.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "LGIL.N0000",
+    "parentGroup": "lolc",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "lolc-holdings",
+    "name": "LOLC Holdings PLC",
+    "website": "https://www.lolc.com",
+    "careersUrl": "https://www.lolc.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "LOLC.N0000",
+    "parentGroup": "lolc",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "lotus-hydro-power",
+    "name": "Lotus Hydro Power PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "HPFL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "lseg",
+    "name": "LSEG",
+    "website": "https://www.lseg.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "Global careers portal; filter to Sri Lanka. Millennium IT is now part of LSEG — check whether they share one listing."
+  },
+  {
+    "slug": "luminex",
+    "name": "Luminex PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": "LUMX.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "lvl-energy-fund",
+    "name": "LVL Energy Fund PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "LVEF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "madulsima-plantations",
+    "name": "Madulsima Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "MADU.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "maharaja-foods",
+    "name": "Maharaja Foods PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "MFPE.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "mahaweli-coconut-plantations",
+    "name": "Mahaweli Coconut Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "MCPL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "mahaweli-reach-hotels",
+    "name": "Mahaweli Reach Hotels PLC",
+    "website": "https://www.mahawelireach.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "MRH.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "malwatte-valley-plantations",
+    "name": "Malwatte Valley Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "MAL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "marawila-resorts",
+    "name": "Marawila Resorts PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "MARA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "maskeliya-plantations",
+    "name": "Maskeliya Plantations PLC",
+    "website": "https://www.arpico.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "MASK.N0000",
+    "parentGroup": "arpico",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "melstacorp",
+    "name": "Melstacorp PLC",
+    "website": "https://www.melstacorp.com",
+    "careersUrl": "https://www.melstacorp.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "MELS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "mercantile-investments-and-finance",
+    "name": "Mercantile Investments and Finance PLC",
+    "website": "https://www.mi.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "MERC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "mercantile-shipping-company",
+    "name": "Mercantile Shipping Company PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "logistics-shipping",
+    "cseSymbol": "MSL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "merchant-bank-of-sri-lanka-and-finance",
+    "name": "Merchant Bank of Sri Lanka & Finance PLC",
+    "website": "https://www.mbsl.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "MBSL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "millennium-housing-developers",
+    "name": "Millennium Housing Developers PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "MHDL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "millennium-it",
+    "name": "Millennium IT",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Now part of LSEG; may have no separate careers page. NOT the same as Millennium Housing Developers PLC (CSE)."
+  },
+  {
+    "slug": "muller-and-phipps-ceylon",
+    "name": "Muller & Phipps (Ceylon) PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "trading",
+    "cseSymbol": "MULL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "multi-finance",
+    "name": "Multi Finance PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "MFL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "myland-development",
+    "name": "Myland Development PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "MDL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "namunukula-plantations",
+    "name": "Namunukula Plantations PLC",
+    "website": "https://www.arpico.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "NAMU.N0000",
+    "parentGroup": "arpico",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "nation-lanka-finance",
+    "name": "Nation Lanka Finance PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "CSF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "national-development-bank",
+    "name": "National Development Bank PLC",
+    "website": "https://www.ndbbank.com",
+    "careersUrl": "https://www.ndbbank.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "NDB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "nations-trust-bank",
+    "name": "Nations Trust Bank PLC",
+    "website": "https://www.nationstrust.com",
+    "careersUrl": "https://www.nationstrust.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "NTB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "nawaloka-hospitals",
+    "name": "Nawaloka Hospitals PLC",
+    "website": "https://www.nawaloka.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "healthcare",
+    "cseSymbol": "NHL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "octave",
+    "name": "Octave",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "John Keells Group data & AI unit — may list roles on keells.com/careers; confirm in M1."
+  },
+  {
+    "slug": "odel",
+    "name": "Odel PLC",
+    "website": "https://www.odel.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "ODEL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "office-equipment",
+    "name": "Office Equipment PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "OFEQ.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "on-ally-holdings",
+    "name": "On'ally Holdings PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "ONAL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "orient-finance",
+    "name": "Orient Finance PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "BFN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "overseas-realty-ceylon",
+    "name": "Overseas Realty (Ceylon) PLC",
+    "website": "https://www.overseasrealty.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "OSEA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "palm-garden-hotels",
+    "name": "Palm Garden Hotels PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "PALM.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "pan-asia-banking-corporation",
+    "name": "Pan Asia Banking Corporation PLC",
+    "website": "https://www.pabc.lk",
+    "careersUrl": "https://www.pabc.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "PABC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "panasian-power",
+    "name": "Panasian Power PLC",
+    "website": "https://www.panasianpower.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "PAP.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "paragon-ceylon",
+    "name": "Paragon Ceylon PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "trading",
+    "cseSymbol": "PARA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "pearson",
+    "name": "Pearson",
+    "website": "https://www.pearson.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "Global careers portal; filter to Sri Lanka (Pearson Lanka)."
+  },
+  {
+    "slug": "pegasus-hotels-of-ceylon",
+    "name": "Pegasus Hotels of Ceylon PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "PEG.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "people-s-insurance",
+    "name": "People's Insurance PLC",
+    "website": "https://www.peoplesinsurance.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "PINS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "people-s-leasing-and-finance",
+    "name": "People's Leasing & Finance PLC",
+    "website": "https://www.plc.lk",
+    "careersUrl": "https://www.plc.lk/careers/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "PLC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "pgp-glass-ceylon",
+    "name": "PGP Glass Ceylon PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "GLAS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "pmf-finance",
+    "name": "PMF Finance PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "PMB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "prime-lands-residencies",
+    "name": "Prime Lands Residencies PLC",
+    "website": "https://www.primelands.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "PLR.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "printcare",
+    "name": "Printcare PLC",
+    "website": "https://www.printcare.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "media-printing",
+    "cseSymbol": "CARE.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "r-i-l-property",
+    "name": "R I L Property PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "RIL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "radiant-gems-international",
+    "name": "Radiant Gems International PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "RGEM.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "raigam-wayamba-salterns",
+    "name": "Raigam Wayamba Salterns PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "RWSL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "ramboda-falls",
+    "name": "Ramboda Falls PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "RFL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "regnis-lanka",
+    "name": "Regnis (Lanka) PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "REG.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "renuka-agri-foods",
+    "name": "Renuka Agri Foods PLC",
+    "website": "https://www.renukagroup.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "RAL.N0000",
+    "parentGroup": "renukagroup",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "renuka-city-hotels",
+    "name": "Renuka City Hotels PLC",
+    "website": "https://www.renukagroup.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "RENU.N0000",
+    "parentGroup": "renukagroup",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "renuka-foods",
+    "name": "Renuka Foods PLC",
+    "website": "https://www.renukagroup.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "food-beverage-tobacco",
+    "cseSymbol": "COCO.N0000",
+    "parentGroup": "renukagroup",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "renuka-holdings",
+    "name": "Renuka Holdings PLC",
+    "website": "https://www.renukagroup.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "RHL.N0000",
+    "parentGroup": "renukagroup",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "renuka-hotels",
+    "name": "Renuka Hotels PLC",
+    "website": "https://www.renukagroup.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "RCH.N0000",
+    "parentGroup": "renukagroup",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "resus-energy",
+    "name": "Resus Energy PLC",
+    "website": "https://www.resusenergy.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "HPWR.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "richard-pieris-and-company",
+    "name": "Richard Pieris and Company PLC",
+    "website": "https://www.arpico.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "RICH.N0000",
+    "parentGroup": "arpico",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "richard-pieris-exports",
+    "name": "Richard Pieris Exports PLC",
+    "website": "https://www.arpicorubber.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "REXP.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "rootcode",
+    "name": "Rootcode",
+    "website": "https://rootcode.io",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "royal-ceramics-lanka",
+    "name": "Royal Ceramics Lanka PLC",
+    "website": "https://www.rocell.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "RCL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "royal-palms-beach-hotels",
+    "name": "Royal Palms Beach Hotels PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "RPBH.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "sampath-bank",
+    "name": "Sampath Bank PLC",
+    "website": "https://www.sampath.lk",
+    "careersUrl": "https://www.sampath.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "SAMP.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "samson-international",
+    "name": "Samson International PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "SIL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "sanasa-development-bank",
+    "name": "Sanasa Development Bank PLC",
+    "website": "https://www.sdb.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "SDB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "sarvodaya-development-finance",
+    "name": "Sarvodaya Development Finance PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "SDF.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "sathosa-motors",
+    "name": "Sathosa Motors PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "automotive",
+    "cseSymbol": "SMOT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "senkadagala-finance",
+    "name": "Senkadagala Finance PLC",
+    "website": "https://www.senfin.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "SFCL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "serendib-engineering-group",
+    "name": "Serendib Engineering Group PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "construction-engineering",
+    "cseSymbol": "IDL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "serendib-hotels",
+    "name": "Serendib Hotels PLC",
+    "website": "https://www.serendibhotels.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "SHOT.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "serendib-land",
+    "name": "Serendib Land PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "SLND.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "seylan-bank",
+    "name": "Seylan Bank PLC",
+    "website": "https://www.seylan.lk",
+    "careersUrl": "https://www.seylan.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "SEYB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "seylan-developments",
+    "name": "Seylan Developments PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "CSD.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "shaw-wallace-investments",
+    "name": "Shaw Wallace Investments PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "KZOO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "sierra-cables",
+    "name": "Sierra Cables PLC",
+    "website": "https://www.sierracables.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "manufacturing-industrials",
+    "cseSymbol": "SIRA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "sigiriya-village-hotels",
+    "name": "Sigiriya Village Hotels PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "SIGV.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "singer-finance-lanka",
+    "name": "Singer Finance (Lanka) PLC",
+    "website": "https://www.singerfinance.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "SFIN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "singer-industries-ceylon",
+    "name": "Singer Industries (Ceylon) PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "manufacturing-industrials",
+    "cseSymbol": "SINI.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "singer-sri-lanka",
+    "name": "Singer (Sri Lanka) PLC",
+    "website": "https://www.singer.lk",
+    "careersUrl": "https://www.singer.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "consumer-goods-retail",
+    "cseSymbol": "SINS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "singhe-hospitals",
+    "name": "Singhe Hospitals PLC",
+    "website": "https://www.singhehospitals.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "healthcare",
+    "cseSymbol": "SINH.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "smb-finance",
+    "name": "SMB Finance PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "SEMB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "snapdrum",
+    "name": "Snapdrum",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed — confirm in M1."
+  },
+  {
+    "slug": "softlogic-capital",
+    "name": "Softlogic Capital PLC",
+    "website": "https://www.softlogic.lk",
+    "careersUrl": "https://www.softlogic.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "SCAP.N0000",
+    "parentGroup": "softlogic",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "softlogic-finance",
+    "name": "Softlogic Finance PLC",
+    "website": "https://www.softlogic.lk",
+    "careersUrl": "https://www.softlogic.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "CRL.N0000",
+    "parentGroup": "softlogic",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "softlogic-holdings",
+    "name": "Softlogic Holdings PLC",
+    "website": "https://www.softlogic.lk",
+    "careersUrl": "https://www.softlogic.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "SHL.N0000",
+    "parentGroup": "softlogic",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "softlogic-life-insurance",
+    "name": "Softlogic Life Insurance PLC",
+    "website": "https://www.softlogiclife.lk",
+    "careersUrl": "https://www.softlogic.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "insurance",
+    "cseSymbol": "AAIC.N0000",
+    "parentGroup": "softlogic",
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "sri-lanka-telecom",
+    "name": "Sri Lanka Telecom PLC",
+    "website": "https://www.slt.lk",
+    "careersUrl": "https://www.slt.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "telecommunications",
+    "cseSymbol": "SLTL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "standard-capital",
+    "name": "Standard Capital PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "investment",
+    "cseSymbol": "SING.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "sunshine-holdings",
+    "name": "Sunshine Holdings PLC",
+    "website": "https://www.sunshineholdings.lk",
+    "careersUrl": "https://www.sunshineholdings.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "SUN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "surge-global",
+    "name": "Surge Global",
+    "website": "https://surge.global",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "swadeshi-industrial-works",
+    "name": "Swadeshi Industrial Works PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "manufacturing-industrials",
+    "cseSymbol": "SWAD.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "swisstek-ceylon",
+    "name": "Swisstek (Ceylon) PLC",
+    "website": "https://www.swisstek.lk",
+    "careersUrl": "https://www.swisstek.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "PARQ.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "swivel-group",
+    "name": "Swivel Group",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed — confirm in M1."
+  },
+  {
+    "slug": "sysco-labs",
+    "name": "Sysco LABS",
+    "website": "https://syscolabs.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "tal-lanka-hotels",
+    "name": "TAL Lanka Hotels PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "TAJ.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "talawakelle-tea-estates",
+    "name": "Talawakelle Tea Estates PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "TPL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "tangerine-beach-hotels",
+    "name": "Tangerine Beach Hotels PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "TANG.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "tea-smallholder-factories",
+    "name": "Tea Smallholder Factories PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "TSML.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "teejay-lanka",
+    "name": "Teejay Lanka PLC",
+    "website": "https://www.teejay.com",
+    "careersUrl": "https://www.teejay.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "apparel-textiles",
+    "cseSymbol": "TJL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "tess-agro",
+    "name": "Tess Agro PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "TESS.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "the-autodrome",
+    "name": "The Autodrome PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "automotive",
+    "cseSymbol": "AUTO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "the-colombo-fort-land-and-building",
+    "name": "The Colombo Fort Land & Building PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "real-estate",
+    "cseSymbol": "CFLB.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "the-fortress-resorts",
+    "name": "The Fortress Resorts PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "RHTL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "the-kandy-hotels-company-1938",
+    "name": "The Kandy Hotels Company (1938) PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "KHC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "the-kingsbury",
+    "name": "The Kingsbury PLC",
+    "website": "https://www.thekingsburyhotel.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "SERV.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "the-lanka-hospitals-corporation",
+    "name": "The Lanka Hospitals Corporation PLC",
+    "website": "https://www.lankahospitals.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "healthcare",
+    "cseSymbol": "LHCL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "the-lighthouse-hotel",
+    "name": "The Lighthouse Hotel PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "LHL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "the-nuwara-eliya-hotels-company",
+    "name": "The Nuwara Eliya Hotels Company PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "hotels-leisure",
+    "cseSymbol": "NEH.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "three-acre-farms",
+    "name": "Three Acre Farms PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "TAFL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "tokyo-cement-company-lanka",
+    "name": "Tokyo Cement Company (Lanka) PLC",
+    "website": "https://www.tokyocement.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "materials-chemicals",
+    "cseSymbol": "TKYO.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "twist-digital",
+    "name": "Twist Digital",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed — confirm in M1."
+  },
+  {
+    "slug": "union-bank-of-colombo",
+    "name": "Union Bank of Colombo PLC",
+    "website": "https://www.unionb.com",
+    "careersUrl": "https://www.unionb.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "banking",
+    "cseSymbol": "UBC.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "vallibel-finance",
+    "name": "Vallibel Finance PLC",
+    "website": "https://www.vallibelfinance.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "financial-services",
+    "cseSymbol": "VFIN.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "vallibel-one",
+    "name": "Vallibel One PLC",
+    "website": "https://www.vallibelone.com",
+    "careersUrl": "https://www.vallibelone.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "diversified",
+    "cseSymbol": "VONE.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-adapter",
+    "active": true
+  },
+  {
+    "slug": "vidullanka",
+    "name": "Vidullanka PLC",
+    "website": "https://www.vidullanka.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "VDL.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "watawala-plantations",
+    "name": "Watawala Plantations PLC",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "plantations-agriculture",
+    "cseSymbol": "WATA.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-research",
+    "active": true
+  },
+  {
+    "slug": "windforce",
+    "name": "WindForce PLC",
+    "website": "https://www.windforce.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "energy",
+    "cseSymbol": "WIND.N0000",
+    "parentGroup": null,
+    "sourceLists": [
+      "cse"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "wso2",
+    "name": "WSO2",
+    "website": "https://wso2.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "zegates",
+    "name": "Zegates",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed — confirm in M1."
+  },
+  {
+    "slug": "zillione",
+    "name": "ZILLIONe",
+    "website": null,
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-research",
+    "active": true,
+    "notes": "Website not confirmed — confirm in M1."
+  },
+  {
+    "slug": "zone24x7",
+    "name": "Zone24x7",
+    "website": "https://www.zone24x7.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  },
+  {
+    "slug": "zyner-io",
+    "name": "Zyner.io",
+    "website": "https://zyner.io",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true
+  }
+]
