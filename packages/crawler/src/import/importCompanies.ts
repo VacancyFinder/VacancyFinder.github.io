@@ -4,6 +4,7 @@ import {
   domainOf,
   isHttpUrl,
   normaliseIndustry,
+  ownerDomainOf,
   type Adapter,
   type Company,
   type CompanyStatus,
@@ -137,9 +138,10 @@ export function importCompanies(input: ImportInput): ImportResult {
   report.cse.uniqueCareersUrls = careersSet.size;
 
   // ---- 2. Merge tech list by DOMAIN (never by name alone) -------------------
+  // Shared hosts (job boards, ATS vendors) are ignored: they prove nothing about ownership.
   const byDomain = new Map<string, Draft[]>();
   for (const d of drafts) {
-    for (const dom of new Set([domainOf(d.website), domainOf(d.careersUrl)])) {
+    for (const dom of new Set([ownerDomainOf(d.website), ownerDomainOf(d.careersUrl)])) {
       if (!dom) continue;
       const list = byDomain.get(dom) ?? [];
       list.push(d);
@@ -150,7 +152,7 @@ export function importCompanies(input: ImportInput): ImportResult {
   for (const t of input.tech) {
     const website = cleanUrl(t.website);
     if (website) report.tech.withWebsite++;
-    const dom = domainOf(website) ?? domainOf(t.careersUrl);
+    const dom = ownerDomainOf(website) ?? ownerDomainOf(t.careersUrl);
     const candidates = dom ? (byDomain.get(dom) ?? []) : [];
 
     let match: Draft | undefined;
@@ -200,8 +202,25 @@ export function importCompanies(input: ImportInput): ImportResult {
   // ---- 3. Carry over hand-edited values from existing companies.json -------
   const existingBySymbol = new Map(input.existing.filter((c) => c.cseSymbol).map((c) => [c.cseSymbol!, c]));
   const existingBySlug = new Map(input.existing.map((c) => [c.slug, c]));
-  const findExisting = (d: Draft): Company | undefined =>
-    (d.cseSymbol ? existingBySymbol.get(d.cseSymbol) : undefined) ?? existingBySlug.get(d.slug);
+  // Tech-only entries have no symbol; their name is the stable key (two names may share a slug).
+  const existingTechByName = new Map(
+    input.existing.filter((c) => !c.cseSymbol).map((c) => [c.name.trim().toLowerCase(), c]),
+  );
+  // Resolved once, before any slug is changed, so later lookups cannot drift.
+  const prevOf = new Map<Draft, Company>();
+  const claimed = new Set<Company>();
+  for (const d of drafts) {
+    const prev =
+      (d.cseSymbol
+        ? existingBySymbol.get(d.cseSymbol)
+        : existingTechByName.get(d.name.trim().toLowerCase())) ?? existingBySlug.get(d.slug);
+    // Never let two drafts inherit the same existing record.
+    if (prev && !claimed.has(prev)) {
+      prevOf.set(d, prev);
+      claimed.add(prev);
+    }
+  }
+  const findExisting = (d: Draft): Company | undefined => prevOf.get(d);
 
   for (const d of drafts) {
     const prev = findExisting(d);
@@ -228,6 +247,16 @@ export function importCompanies(input: ImportInput): ImportResult {
       d.slug = `${d.slug}-${d.cseSymbol.split(".")[0]!.toLowerCase()}`;
     }
   }
+  // Anything still colliding (e.g. two tech names with one slug) gets a numeric suffix.
+  // Slugs inherited from companies.json are reserved first so they never move.
+  const taken = new Set(drafts.filter((d) => findExisting(d)).map((d) => d.slug));
+  for (const d of drafts) {
+    if (findExisting(d)) continue;
+    let slug = d.slug;
+    for (let n = 2; taken.has(slug); n++) slug = `${d.slug}-${n}`;
+    d.slug = slug;
+    taken.add(slug);
+  }
 
   // ---- 4. Derive parent groups (shared careers domain, else shared website) -
   const parentOf = new Map<Draft, string>();
@@ -241,13 +270,13 @@ export function importCompanies(input: ImportInput): ImportResult {
     }
     return m;
   };
-  for (const [dom, members] of bucket((d) => domainOf(d.careersUrl))) {
+  for (const [dom, members] of bucket((d) => ownerDomainOf(d.careersUrl))) {
     if (members.length < 2) continue;
     const g = groupSlugFromDomain(dom);
     groupVia.set(g, "careers");
     for (const m of members) parentOf.set(m, g);
   }
-  for (const [dom, members] of bucket((d) => domainOf(d.website))) {
+  for (const [dom, members] of bucket((d) => ownerDomainOf(d.website))) {
     const ungrouped = members.filter((m) => !parentOf.has(m));
     if (members.length < 2 || ungrouped.length === 0) continue;
     const g = groupSlugFromDomain(dom);
