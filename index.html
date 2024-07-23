@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VacancyFinder — Sri Lankan company careers directory</title>
+    <meta
+      name="description"
+      content="Find the official careers pages of CSE-listed companies and tech firms in Sri Lanka. Search by name, industry or group."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0f766e" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VacancyFinder" />
+    <meta
+      property="og:description"
+      content="Official careers pages of CSE-listed companies and tech firms in Sri Lanka, in one searchable directory."
+    />
+    <meta property="og:url" content="https://vacancyfinder.github.io/" />
+    <link rel="canonical" href="https://vacancyfinder.github.io/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="modulepreload" href="assets/lib.js" />
+    <script type="module" src="assets/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#results">Skip to results</a>
+    <header class="hero">
+      <div class="wrap">
+        <p class="brand"><img src="assets/favicon.svg" alt="" width="28" height="28" /> VacancyFinder</p>
+        <h1>Find where Sri Lankan companies post their jobs</h1>
+        <p class="lede">
+          A directory of CSE-listed companies and tech firms in Sri Lanka, with links to each company's own careers
+          page or website. Search by name, industry or group.
+        </p>
+        <dl class="stats" id="stats" aria-label="Directory totals">
+          <div><dt>Companies</dt><dd data-stat="companies">–</dd></div>
+          <div><dt>With a careers page</dt><dd data-stat="careers">–</dd></div>
+          <div><dt>CSE-listed</dt><dd data-stat="cse">–</dd></div>
+          <div><dt>Tech firms</dt><dd data-stat="tech">–</dd></div>
+        </dl>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <form class="controls" id="controls" role="search" onsubmit="return false">
+        <div class="field search">
+          <label for="q">Search</label>
+          <input id="q" name="q" type="search" autocomplete="off" spellcheck="false" maxlength="200"
+            placeholder="Company, CSE symbol, domain…" />
+        </div>
+        <div class="field">
+          <label for="industry">Industry</label>
+          <select id="industry" name="industry"><option value="">All industries</option></select>
+        </div>
+        <div class="field">
+          <label for="access">Links available</label>
+          <select id="access" name="access">
+            <option value="all">Any</option>
+            <option value="careers">Careers page</option>
+            <option value="website">Website only</option>
+            <option value="none">No website on record</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="list">List</label>
+          <select id="list" name="list">
+            <option value="all">All</option>
+            <option value="cse">CSE-listed</option>
+            <option value="tech">Tech firms</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="group">Group</label>
+          <select id="group" name="group"><option value="">All groups</option></select>
+        </div>
+        <div class="field">
+          <label for="sort">Sort by</label>
+          <select id="sort" name="sort">
+            <option value="name">Name</option>
+            <option value="industry">Industry</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="bar">
+        <p id="count" class="count" role="status" aria-live="polite">Loading companies…</p>
+        <button type="button" id="reset" class="reset" hidden>Clear filters</button>
+      </div>
+
+      <noscript><p class="notice">This directory needs JavaScript to load and search the company list.</p></noscript>
+      <div id="error" class="notice error" role="alert" hidden></div>
+      <ul id="results" class="results" tabindex="-1" aria-label="Companies"></ul>
+
+      <section class="about" aria-labelledby="about-h">
+        <h2 id="about-h">About this directory</h2>
+        <p>
+          The list comes from Colombo Stock Exchange listings and a hand-curated list of Sri Lankan tech employers.
+          Links go straight to each company's own site. VacancyFinder doesn't host or copy job adverts, so always
+          check the company's page for current openings and how to apply.
+        </p>
+        <p>
+          Many companies don't publish a careers page. For those, the website is the best place to start. Where
+          neither is known, the company is still listed so you can find it by name.
+        </p>
+        <p>
+          Spotted a wrong or missing link?
+          <a href="https://github.com/VacancyFinder/VacancyFinder.github.io/issues" rel="noopener">Open an issue on GitHub</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <p>
+          VacancyFinder · Data in
+          <a href="https://github.com/VacancyFinder/VacancyFinder.github.io/tree/main/data" rel="noopener">data/</a>
+          · <a href="https://github.com/VacancyFinder/VacancyFinder.github.io" rel="noopener">Source on GitHub</a>
+        </p>
+      </div>
+    </footer>
+
+    <template id="card">
+      <li class="card">
+        <div class="card-head">
+          <h3 class="name"></h3>
+          <div class="badges"></div>
+        </div>
+        <p class="meta"></p>
+        <div class="links"></div>
+      </li>
+    </template>
+  </body>
+</html>

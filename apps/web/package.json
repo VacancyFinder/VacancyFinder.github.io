@@ -1,0 +1,11 @@
+{
+  "name": "@rekiya/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tests for the static directory site served from the repo root (index.html, assets/).",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": { "@rekiya/shared": "workspace:*", "vitest": "^2.1.8" }
+}
