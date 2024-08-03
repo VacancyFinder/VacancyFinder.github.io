@@ -100,8 +100,13 @@ describe("groups and crawl targets", () => {
     const keells = first.targets.find((t) => t.canonicalUrl === "https://keells.com/careers");
     expect(keells?.companySlugs).toHaveLength(5);
     expect(keells?.parentGroup).toBe("keells");
-    expect(first.targets).toHaveLength(41);
-    expect(new Set(first.targets.map((t) => t.id)).size).toBe(41);
+    // The spec's 60 CSE careers URLs collapse to 41 pages; tech-only careers pages add their own targets.
+    const bySlugMap = new Map(first.companies.map((c) => [c.slug, c]));
+    const cseTargets = first.targets.filter((t) => t.companySlugs.some((s) => bySlugMap.get(s)?.cseSymbol));
+    expect(cseTargets).toHaveLength(41);
+    const techOnly = first.companies.filter((c) => !c.cseSymbol && c.careersUrl).length;
+    expect(first.targets).toHaveLength(41 + techOnly);
+    expect(new Set(first.targets.map((t) => t.id)).size).toBe(first.targets.length);
   });
 
   it("gives single-company targets no parent group", () => {

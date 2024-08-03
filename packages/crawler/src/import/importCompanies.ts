@@ -308,7 +308,7 @@ export function importCompanies(input: ImportInput): ImportResult {
       status,
       active: prev?.active ?? true,
     };
-    const notes = prev ? prev.notes : d.notes;
+    const notes = prev?.notes ?? d.notes;
     if (notes) base.notes = notes;
     if (prev?.logo) base.logo = prev.logo;
     if (prev) {

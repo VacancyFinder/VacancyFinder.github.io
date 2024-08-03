@@ -1,0 +1,48 @@
+# Milestone-1 investigation: probe careers pages and discover candidates from a real network,
+# then commit the results back to the branch that requested them. Runs only on claude/** branches
+# when probe/request.json changes, or by hand.
+name: Probe careers pages
+
+on:
+  push:
+    branches: ["claude/**"]
+    paths: ["packages/crawler/probe/request.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: probe-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Install Chromium for the render phase
+        run: pnpm --filter @rekiya/crawler exec playwright install --with-deps chromium
+      - name: Probe careers pages
+        run: pnpm --filter @rekiya/crawler probe
+      - name: Discover careers pages for needs-discovery companies
+        run: pnpm --filter @rekiya/crawler discover
+      - name: Commit results
+        run: |
+          cd packages/crawler
+          mkdir -p probe
+          tar -czf probe/results.tar.gz -C .probe-out .
+          cp .probe-out/report.json probe/report.json
+          cd ../..
+          git config user.name "rekiya-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages/crawler/probe/results.tar.gz packages/crawler/probe/report.json data/discovery-candidates.json
+          git commit -m "probe: results $(date -u +'%Y-%m-%d %H:%M') UTC" || echo "nothing to commit"
+          git push

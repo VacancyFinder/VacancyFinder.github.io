@@ -3,3 +3,4 @@ export * from "./fields.js";
 export * from "./url.js";
 export * from "./company.js";
 export * from "./sources.js";
+export * from "./job.js";

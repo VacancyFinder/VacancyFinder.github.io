@@ -11,24 +11,27 @@
 | Empty website | 118 |
 | Unique careers pages | 41 |
 
-Tech list: 28 companies, 16 with a known website.
+Tech list: 28 companies, 26 with a known website.
 
 ## Tech ↔ CSE overlaps (matched by domain)
 
 - Dialog Axiata → Dialog Axiata PLC (DIAL.N0000) via `dialog.lk`
 - PickMe → Digital Mobility Solutions Lanka PLC (PickMe) (PKME.N0000) via `pickme.lk`
 
+Ambiguous (kept separate, resolve by hand):
+- Octave on `keells.com`: Asian Hotels & Properties PLC, Ceylon Cold Stores PLC, John Keells Holdings PLC, John Keells PLC, Keells Food Products PLC
+
 ## Company status
 
 | Status | Companies |
 |---|---|
 | ready | 0 |
-| needs-adapter | 60 |
-| needs-discovery | 106 |
-| needs-research | 130 |
+| needs-adapter | 64 |
+| needs-discovery | 112 |
+| needs-research | 120 |
 | disabled | 0 |
 
-`needs-discovery`: 106 companies across 88 unique website domains (discovery probes each domain once).
+`needs-discovery`: 112 companies across 94 unique website domains (discovery probes each domain once).
 
 ## Parent groups
 
@@ -46,7 +49,7 @@ Tech list: 28 companies, 16 with a known website.
 | Dialog Axiata Group (`dialog`) | shared careers domain | 2: dialog-axiata, dialog-finance |
 | First Capital Group (`firstcapital`) | shared website domain | 2: first-capital-holdings, first-capital-treasuries |
 | Hayleys Group (`hayleys`) | shared careers domain | 5: haycarb, hayleys, hayleys-fabric, hayleys-fibre, hayleys-leisure |
-| John Keells Group (`keells`) | shared careers domain | 5: asian-hotels-and-properties, ceylon-cold-stores, john-keells, john-keells-holdings, keells-food-products |
+| John Keells Group (`keells`) | shared careers domain | 6: asian-hotels-and-properties, ceylon-cold-stores, john-keells, john-keells-holdings, keells-food-products, octave |
 | Lanka Tiles Group (`lankatiles`) | shared website domain | 2: lanka-tiles, lanka-walltiles |
 | LAUGFS Group (`laugfs`) | shared website domain | 2: laugfs-gas, laugfs-power |
 | Lion Brewery Group (`lionbeer`) | shared website domain | 2: ceylon-beverage-holdings, lion-brewery-ceylon |
@@ -62,9 +65,11 @@ Check whether these belong to a group that the domain rule can't see.
 - haycarb: website `haycarb.com`, careers `hayleys.com`
 - hayleys-fabric: website `hayleysfabric.com`, careers `hayleys.com`
 - softlogic-life-insurance: website `softlogiclife.lk`, careers `softlogic.lk`
+- ascentic: website `ascentic.se`, careers `career.ascentic.se`
+- swivel-group: website `swivelgroup.com.au`, careers `careers.smartrecruiters.com`
 
 ## Output
 
 - companies.json: 296
 - groups.json: 19
-- crawl-targets.json: 41
+- crawl-targets.json: 45
