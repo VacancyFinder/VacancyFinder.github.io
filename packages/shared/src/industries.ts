@@ -1,60 +1,13 @@
 import { z } from "zod";
 
 /** Fixed industry enum. Every company must map to exactly one of these. */
-export const INDUSTRY_SLUGS = [
-  "banking",
-  "insurance",
-  "financial-services",
-  "investment",
-  "diversified",
-  "hotels-leisure",
-  "plantations-agriculture",
-  "food-beverage-tobacco",
-  "consumer-goods-retail",
-  "materials-chemicals",
-  "manufacturing-industrials",
-  "construction-engineering",
-  "automotive",
-  "energy",
-  "real-estate",
-  "healthcare",
-  "telecommunications",
-  "technology",
-  "apparel-textiles",
-  "logistics-shipping",
-  "media-printing",
-  "trading",
-  "services",
-] as const;
+import { INDUSTRY_SLUGS, INDUSTRY_LABELS, type IndustrySlug as IndustrySlugT } from "./constants.js";
+export { INDUSTRY_SLUGS, INDUSTRY_LABELS };
 
 export const IndustrySlug = z.enum(INDUSTRY_SLUGS);
-export type IndustrySlug = z.infer<typeof IndustrySlug>;
+export type IndustrySlug = IndustrySlugT;
 
-export const INDUSTRY_LABELS: Record<IndustrySlug, string> = {
-  banking: "Banking",
-  insurance: "Insurance",
-  "financial-services": "Financial Services",
-  investment: "Investment",
-  diversified: "Diversified Holdings",
-  "hotels-leisure": "Hotels & Leisure",
-  "plantations-agriculture": "Plantations & Agriculture",
-  "food-beverage-tobacco": "Food, Beverage & Tobacco",
-  "consumer-goods-retail": "Consumer Goods & Retail",
-  "materials-chemicals": "Materials & Chemicals",
-  "manufacturing-industrials": "Manufacturing & Industrials",
-  "construction-engineering": "Construction & Engineering",
-  automotive: "Automotive",
-  energy: "Energy",
-  "real-estate": "Real Estate",
-  healthcare: "Healthcare",
-  telecommunications: "Telecommunications",
-  technology: "Technology",
-  "apparel-textiles": "Apparel & Textiles",
-  "logistics-shipping": "Logistics & Shipping",
-  "media-printing": "Media & Printing",
-  trading: "Trading",
-  services: "Services",
-};
+
 
 /**
  * Raw industry strings seen in source lists → enum slug.

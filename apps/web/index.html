@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rekiya — Sri Lanka jobs from company career pages</title>
+    <meta name="description" content="Let us do the searching. You do the applying. Open vacancies from Sri Lankan company career pages, sorted by field and seniority." />
+    <meta name="theme-color" content="#123760" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <link rel="canonical" href="https://vacancyfinder.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rekiya — Sri Lanka jobs" />
+    <meta property="og:description" content="Open vacancies from Sri Lankan company career pages, in one place." />
+    <meta property="og:url" content="https://vacancyfinder.github.io/" />
+    <script>
+      // Apply the saved theme before first paint (no flash).
+      try {
+        var t = JSON.parse(localStorage.getItem("rekiya.theme.v1") || '"system"');
+        var dark = t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.documentElement.classList.add("dark");
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+    <noscript><p style="padding:16px">Rekiya needs JavaScript to load and filter jobs.</p></noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
