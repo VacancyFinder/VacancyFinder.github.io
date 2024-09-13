@@ -33,7 +33,9 @@ async function main(): Promise<void> {
       limit(async () => {
         const r = await discoverDomain(fetcher, d.website, d.slugs);
         const best = r.candidates[0];
-        console.log(`${best ? "✓" : "–"} ${r.domain}: ${best ? `${best.url} (score ${best.score})` : "no candidate"}${r.errors.length ? ` [${r.errors.length} errors]` : ""}`);
+        console.log(
+          `${best ? "✓" : "–"} ${r.domain}: ${best ? `${best.url} (score ${best.score})` : "no candidate"}${r.errors.length ? ` [${r.errors.length} errors]` : ""}`,
+        );
         return r;
       }),
     ),
@@ -46,7 +48,9 @@ async function main(): Promise<void> {
   };
   writeFileSync(resolve(ROOT, "data/discovery-candidates.json"), JSON.stringify(out, null, 2) + "\n");
   const found = results.filter((r) => r.candidates.length).length;
-  console.log(`\n${found}/${results.length} domains have candidates. ${fetcher.requests} requests in ${Math.round((Date.now() - started) / 1000)}s.`);
+  console.log(
+    `\n${found}/${results.length} domains have candidates. ${fetcher.requests} requests in ${Math.round((Date.now() - started) / 1000)}s.`,
+  );
 }
 
 main().catch((err) => {

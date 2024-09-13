@@ -35,8 +35,16 @@ export function FilterPanel({ f, set, options }: { f: Filters; set: (patch: Part
           {FIELD_SLUGS.filter((s) => (options.fieldCounts[s] ?? 0) > 0 || f.fields.includes(s)).map((s: FieldSlug) => {
             const on = f.fields.includes(s);
             return (
-              <label key={s} className={`chip min-h-[36px] cursor-pointer border px-3 text-sm ${on ? "border-brand-800 bg-brand-800 text-white dark:border-brand-300 dark:bg-brand-300 dark:text-brand-950" : "border-slate-300 bg-white text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"}`}>
-                <input type="checkbox" className="sr-only" checked={on} onChange={() => set({ fields: on ? f.fields.filter((x) => x !== s) : [...f.fields, s] })} />
+              <label
+                key={s}
+                className={`chip min-h-[36px] cursor-pointer border px-3 text-sm ${on ? "border-brand-800 bg-brand-800 text-white dark:border-brand-300 dark:bg-brand-300 dark:text-brand-950" : "border-slate-300 bg-white text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"}`}
+              >
+                <input
+                  type="checkbox"
+                  className="sr-only"
+                  checked={on}
+                  onChange={() => set({ fields: on ? f.fields.filter((x) => x !== s) : [...f.fields, s] })}
+                />
                 {FIELD_LABELS[s]}
                 <span className={on ? "opacity-80" : "text-slate-500 dark:text-slate-400"}>{options.fieldCounts[s] ?? 0}</span>
               </label>
@@ -49,7 +57,12 @@ export function FilterPanel({ f, set, options }: { f: Filters; set: (patch: Part
         <label htmlFor={`${id}-ind`} className="label">
           Industry
         </label>
-        <select id={`${id}-ind`} className="input" value={f.industry} onChange={(e) => set({ industry: e.target.value as IndustrySlug | "" })}>
+        <select
+          id={`${id}-ind`}
+          className="input"
+          value={f.industry}
+          onChange={(e) => set({ industry: e.target.value as IndustrySlug | "" })}
+        >
           <option value="">All industries</option>
           {options.industries.map(([s, n]) => (
             <option key={s} value={s}>
@@ -65,8 +78,16 @@ export function FilterPanel({ f, set, options }: { f: Filters; set: (patch: Part
           {SENIORITIES.map((s: Seniority) => {
             const on = f.seniority.includes(s);
             return (
-              <label key={s} className={`chip min-h-[36px] cursor-pointer border px-3 text-sm ${on ? "border-brand-800 bg-brand-800 text-white dark:border-brand-300 dark:bg-brand-300 dark:text-brand-950" : "border-slate-300 bg-white text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"}`}>
-                <input type="checkbox" className="sr-only" checked={on} onChange={() => set({ seniority: on ? f.seniority.filter((x) => x !== s) : [...f.seniority, s] })} />
+              <label
+                key={s}
+                className={`chip min-h-[36px] cursor-pointer border px-3 text-sm ${on ? "border-brand-800 bg-brand-800 text-white dark:border-brand-300 dark:bg-brand-300 dark:text-brand-950" : "border-slate-300 bg-white text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"}`}
+              >
+                <input
+                  type="checkbox"
+                  className="sr-only"
+                  checked={on}
+                  onChange={() => set({ seniority: on ? f.seniority.filter((x) => x !== s) : [...f.seniority, s] })}
+                />
                 {SENIORITY_LABELS[s]}
               </label>
             );
@@ -121,7 +142,14 @@ export function FilterPanel({ f, set, options }: { f: Filters; set: (patch: Part
         <label htmlFor={`${id}-loc`} className="label">
           Location
         </label>
-        <input id={`${id}-loc`} className="input" list={`${id}-locs`} value={f.location} placeholder="e.g. Colombo" onChange={(e) => set({ location: e.target.value })} />
+        <input
+          id={`${id}-loc`}
+          className="input"
+          list={`${id}-locs`}
+          value={f.location}
+          placeholder="e.g. Colombo"
+          onChange={(e) => set({ location: e.target.value })}
+        />
         <datalist id={`${id}-locs`}>
           {options.locations.map((l) => (
             <option key={l} value={l} />
@@ -135,7 +163,12 @@ export function FilterPanel({ f, set, options }: { f: Filters; set: (patch: Part
           CSE-listed companies only
         </label>
         <label className="flex min-h-[44px] cursor-pointer items-center gap-3 text-sm">
-          <input type="checkbox" className="h-5 w-5 accent-brand-800" checked={f.newOnly} onChange={(e) => set({ newOnly: e.target.checked })} />
+          <input
+            type="checkbox"
+            className="h-5 w-5 accent-brand-800"
+            checked={f.newOnly}
+            onChange={(e) => set({ newOnly: e.target.checked })}
+          />
           New since my last visit
         </label>
       </div>

@@ -1,0 +1,6 @@
+data/
+pnpm-lock.yaml
+packages/crawler/probe/
+packages/crawler/fixtures/
+**/dist/
+**/.probe-out/

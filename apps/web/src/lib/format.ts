@@ -1,7 +1,10 @@
 /** "today", "yesterday", "3 days ago", "2 weeks ago", "4 months ago". */
 export function relativeDays(iso: string, now = new Date()): string {
   const then = new Date(iso);
-  const days = Math.floor((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(then.getFullYear(), then.getMonth(), then.getDate())) / 86_400_000);
+  const days = Math.floor(
+    (Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(then.getFullYear(), then.getMonth(), then.getDate())) /
+      86_400_000,
+  );
   if (days <= 0) return "today";
   if (days === 1) return "yesterday";
   if (days < 14) return `${days} days ago`;

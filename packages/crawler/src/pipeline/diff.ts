@@ -26,7 +26,19 @@ export interface DiffResult {
 }
 
 /** Fields refreshed from the latest crawl; identity and history fields are kept. */
-const MUTABLE: (keyof Job)[] = ["title", "industry", "fields", "seniority", "type", "workMode", "location", "snippet", "url", "source", "postedAt"];
+const MUTABLE: (keyof Job)[] = [
+  "title",
+  "industry",
+  "fields",
+  "seniority",
+  "type",
+  "workMode",
+  "location",
+  "snippet",
+  "url",
+  "source",
+  "postedAt",
+];
 
 export function diffJobs({ previous, current, outcomeOf, now }: DiffInput): DiffResult {
   const cur = new Map(current.map((j) => [j.id, j]));
@@ -82,7 +94,9 @@ export function diffJobs({ previous, current, outcomeOf, now }: DiffInput): Diff
     out.push(fresh);
   }
 
-  out.sort((a, b) => (a.status === b.status ? b.firstSeenAt.localeCompare(a.firstSeenAt) || a.id.localeCompare(b.id) : a.status === "open" ? -1 : 1));
+  out.sort((a, b) =>
+    a.status === b.status ? b.firstSeenAt.localeCompare(a.firstSeenAt) || a.id.localeCompare(b.id) : a.status === "open" ? -1 : 1,
+  );
   return { jobs: out, added, closed, archived, updated };
 }
 

@@ -61,7 +61,9 @@ export async function checkAts(fetcher: PoliteFetcher, hit: AtsHit): Promise<Ats
     const r = await fetcher.get(api.url, {
       method: api.method,
       body: api.body,
-      headers: api.body ? { "content-type": "application/json", accept: "application/json" } : { accept: "application/json, application/rss+xml, */*" },
+      headers: api.body
+        ? { "content-type": "application/json", accept: "application/json" }
+        : { accept: "application/json, application/rss+xml, */*" },
     });
     const out: AtsCheck = { ...base, ok: true, body: r.text };
     if (hit.ats === "teamtailor") {

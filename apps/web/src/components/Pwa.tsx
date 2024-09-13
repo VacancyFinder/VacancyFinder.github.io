@@ -12,7 +12,10 @@ export function UpdatePrompt() {
 
   if (!needRefresh && !offlineReady) return null;
   return (
-    <div role="status" className="fixed inset-x-3 bottom-20 z-50 mx-auto max-w-md rounded-xl bg-brand-900 p-4 text-white shadow-lg md:bottom-6">
+    <div
+      role="status"
+      className="fixed inset-x-3 bottom-20 z-50 mx-auto max-w-md rounded-xl bg-brand-900 p-4 text-white shadow-lg md:bottom-6"
+    >
       <p className="text-sm">{needRefresh ? "A new version of Rekiya is available." : "Rekiya is ready to work offline."}</p>
       <div className="mt-3 flex gap-2">
         {needRefresh && (

@@ -3,8 +3,7 @@ import { FIELD_LABELS, type FieldSlug, type Job } from "@rekiya/shared";
 export const SITE_URL = "https://vacancyfinder.github.io/";
 const MAX_ITEMS = 50;
 
-const esc = (s: string) =>
-  s.replace(/[<>&'"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", "'": "&apos;", '"': "&quot;" })[c]!);
+const esc = (s: string) => s.replace(/[<>&'"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", "'": "&apos;", '"': "&quot;" })[c]!);
 
 /** RSS 2.0 feed of the newest open jobs in one field. */
 export function fieldFeed(field: FieldSlug, jobs: Job[], companyName: (slug: string) => string, builtAt: string): string {

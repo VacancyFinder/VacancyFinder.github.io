@@ -7,15 +7,15 @@ company's own careers page or website.
 
 ## Repository layout
 
-| Path | What it is |
-|---|---|
-| `index.html`, `assets/` | The static site. GitHub Pages serves it straight from the root of `main` (no build step). |
-| `data/companies.json`, `data/groups.json` | The directory data. The site loads these at runtime, so it always matches what's committed. |
-| `data/sources/` | Hand-maintained source lists that the importer reads. |
-| `data/crawl-targets.json`, `data/reports/` | Importer output for the (future) careers-page crawler. |
-| `packages/shared` | Zod schemas and shared helpers (industries, URLs). |
-| `packages/crawler` | The importer (`src/import`) and its tests. |
-| `apps/web` | Tests for the site's logic (`assets/lib.js`) and its consistency with the data. |
+| Path                                       | What it is                                                                                  |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| `index.html`, `assets/`                    | The static site. GitHub Pages serves it straight from the root of `main` (no build step).   |
+| `data/companies.json`, `data/groups.json`  | The directory data. The site loads these at runtime, so it always matches what's committed. |
+| `data/sources/`                            | Hand-maintained source lists that the importer reads.                                       |
+| `data/crawl-targets.json`, `data/reports/` | Importer output for the (future) careers-page crawler.                                      |
+| `packages/shared`                          | Zod schemas and shared helpers (industries, URLs).                                          |
+| `packages/crawler`                         | The importer (`src/import`) and its tests.                                                  |
+| `apps/web`                                 | Tests for the site's logic (`assets/lib.js`) and its consistency with the data.             |
 
 ## Development
 

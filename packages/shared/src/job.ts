@@ -4,14 +4,11 @@ import { IndustrySlug } from "./industries.js";
 import { JOB_TYPES, SENIORITIES, SNIPPET_MAX, WORK_MODES } from "./constants.js";
 export { JOB_TYPES, SENIORITIES, SNIPPET_MAX, WORK_MODES };
 
-
 export const Seniority = z.enum(SENIORITIES);
 export type Seniority = z.infer<typeof Seniority>;
 
-
 export const JobType = z.enum(JOB_TYPES);
 export type JobType = z.infer<typeof JobType>;
-
 
 export const WorkMode = z.enum(WORK_MODES);
 export type WorkMode = z.infer<typeof WorkMode>;
@@ -75,7 +72,12 @@ export const Meta = z
   .object({
     generatedAt: isoDateTime,
     runDurationMs: z.number().int().min(0),
-    totals: z.object({ open: z.number().int(), companiesWithJobs: z.number().int(), targets: z.number().int(), targetsOk: z.number().int() }),
+    totals: z.object({
+      open: z.number().int(),
+      companiesWithJobs: z.number().int(),
+      targets: z.number().int(),
+      targetsOk: z.number().int(),
+    }),
     byField: z.record(z.number().int()),
     byCompany: z.record(z.number().int()),
     bySeniority: z.record(z.number().int()),

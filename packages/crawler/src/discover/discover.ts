@@ -104,7 +104,8 @@ export async function discoverDomain(fetcher: PoliteFetcher, website: string, co
           queue.push(...locs.filter((l) => /page|career|job/i.test(l)).slice(0, 3));
           continue;
         }
-        for (const loc of locs.filter((l) => URL_WORDS.test(new URL(l, sm).pathname)).slice(0, 10)) add(loc, 2, `sitemap entry in ${new URL(sm).pathname}`);
+        for (const loc of locs.filter((l) => URL_WORDS.test(new URL(l, sm).pathname)).slice(0, 10))
+          add(loc, 2, `sitemap entry in ${new URL(sm).pathname}`);
       } catch (err) {
         if (!(err instanceof HttpError && err.status === 404)) res.errors.push(`sitemap ${sm}: ${errText(err)}`);
       }
@@ -124,8 +125,17 @@ export async function discoverDomain(fetcher: PoliteFetcher, website: string, co
       const $ = cheerio.load(r.text);
       const heading = `${s.title} ${$("h1").first().text()}`;
       if (!CAREER_WORDS.test(heading) && !URL_WORDS.test(finalPath)) continue;
-      fetched.set(canonicalCareersUrl(r.url), { status: r.status, title: s.title, jsonLd: s.jsonLdJobPostings, ats: s.ats.map((a) => `${a.ats}:${a.id}`) });
-      add(r.url, CAREER_WORDS.test(heading) ? 3 : 2, `common path ${path} → ${r.status}${r.url !== url ? ` (${new URL(r.url).pathname})` : ""}`);
+      fetched.set(canonicalCareersUrl(r.url), {
+        status: r.status,
+        title: s.title,
+        jsonLd: s.jsonLdJobPostings,
+        ats: s.ats.map((a) => `${a.ats}:${a.id}`),
+      });
+      add(
+        r.url,
+        CAREER_WORDS.test(heading) ? 3 : 2,
+        `common path ${path} → ${r.status}${r.url !== url ? ` (${new URL(r.url).pathname})` : ""}`,
+      );
     } catch (err) {
       if (!(err instanceof HttpError && err.status === 404)) res.errors.push(`${path}: ${errText(err)}`);
     }
@@ -155,6 +165,9 @@ export async function discoverDomain(fetcher: PoliteFetcher, website: string, co
     if (CAREER_WORDS.test(f.title)) c.score += 1;
     if (f.jsonLd > 0) c.score += 2;
   }
-  res.candidates = ranked.filter((c) => c.score > 0).sort((a, b) => b.score - a.score).slice(0, MAX_CANDIDATES);
+  res.candidates = ranked
+    .filter((c) => c.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, MAX_CANDIDATES);
   return res;
 }

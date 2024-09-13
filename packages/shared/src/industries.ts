@@ -7,8 +7,6 @@ export { INDUSTRY_SLUGS, INDUSTRY_LABELS };
 export const IndustrySlug = z.enum(INDUSTRY_SLUGS);
 export type IndustrySlug = IndustrySlugT;
 
-
-
 /**
  * Raw industry strings seen in source lists → enum slug.
  * Keys are compared case-insensitively after whitespace collapse.

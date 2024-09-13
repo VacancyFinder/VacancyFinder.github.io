@@ -20,7 +20,9 @@ export function Saved() {
     <div>
       <h1 className="text-2xl font-bold tracking-tight">Saved jobs</h1>
       <p className="mt-1 text-slate-600 dark:text-slate-400">
-        {list.length ? `${list.length} saved · ${applied} marked as applied. Saved on this device only.` : "Jobs you bookmark appear here. They're stored on this device only."}
+        {list.length
+          ? `${list.length} saved · ${applied} marked as applied. Saved on this device only.`
+          : "Jobs you bookmark appear here. They're stored on this device only."}
       </p>
       {list.length === 0 && (
         <Link to="/jobs" className="btn-primary mt-4">
@@ -33,7 +35,15 @@ export function Saved() {
           if (job) {
             return (
               <li key={s.id}>
-                <JobCard job={job} employer={employer(job.company)} isNew={isNew(job)} saved applied={s.applied} onToggleSave={toggleSave} onToggleApplied={toggleApplied} />
+                <JobCard
+                  job={job}
+                  employer={employer(job.company)}
+                  isNew={isNew(job)}
+                  saved
+                  applied={s.applied}
+                  onToggleSave={toggleSave}
+                  onToggleApplied={toggleApplied}
+                />
               </li>
             );
           }
@@ -45,7 +55,9 @@ export function Saved() {
                 <p className="text-sm text-slate-600 dark:text-slate-400">
                   {employer(s.company).name} · saved {relativeDays(s.savedAt)}
                 </p>
-                <p className="chip w-fit bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">{jobs ? "No longer listed" : "Loading…"}</p>
+                <p className="chip w-fit bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+                  {jobs ? "No longer listed" : "Loading…"}
+                </p>
                 <div className="flex flex-wrap gap-2 pt-1">
                   {href && (
                     <a href={href} target="_blank" rel="noopener noreferrer" className="btn-secondary">

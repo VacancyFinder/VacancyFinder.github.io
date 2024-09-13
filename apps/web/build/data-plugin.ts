@@ -32,15 +32,37 @@ export function generateSiteData(dataDir: string, outDir: string): { jobs: numbe
     if (!existsSync(p)) writeFileSync(p, "[]\n");
   }
   if (!existsSync(resolve(dataOut, "meta.json"))) {
-    writeFileSync(resolve(dataOut, "meta.json"), JSON.stringify({ generatedAt: new Date(0).toISOString(), runDurationMs: 0, totals: { open: 0, companiesWithJobs: 0, targets: 0, targetsOk: 0 }, byField: {}, byCompany: {}, bySeniority: {}, byIndustry: {} }));
+    writeFileSync(
+      resolve(dataOut, "meta.json"),
+      JSON.stringify({
+        generatedAt: new Date(0).toISOString(),
+        runDurationMs: 0,
+        totals: { open: 0, companiesWithJobs: 0, targets: 0, targetsOk: 0 },
+        byField: {},
+        byCompany: {},
+        bySeniority: {},
+        byIndustry: {},
+      }),
+    );
   }
   writeFileSync(resolve(dataOut, "directory.json"), JSON.stringify(buildDirectory(companies, groups, health)));
 
-  const names = new Map<string, string>([...groups.map((g) => [g.slug, g.name] as const), ...companies.map((c) => [c.slug, c.name] as const)]);
+  const names = new Map<string, string>([
+    ...groups.map((g) => [g.slug, g.name] as const),
+    ...companies.map((c) => [c.slug, c.name] as const),
+  ]);
   const builtAt = new Date().toISOString();
   mkdirSync(resolve(outDir, "feeds"), { recursive: true });
   for (const f of FIELD_SLUGS) {
-    writeFileSync(resolve(outDir, "feeds", `${f}.xml`), fieldFeed(f, jobs.filter((j) => j.fields.includes(f)), (s) => names.get(s) ?? s, builtAt));
+    writeFileSync(
+      resolve(outDir, "feeds", `${f}.xml`),
+      fieldFeed(
+        f,
+        jobs.filter((j) => j.fields.includes(f)),
+        (s) => names.get(s) ?? s,
+        builtAt,
+      ),
+    );
   }
   return { jobs: jobs.length, feeds: FIELD_SLUGS.length };
 }

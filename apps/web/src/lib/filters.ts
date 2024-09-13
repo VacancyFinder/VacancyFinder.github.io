@@ -39,7 +39,8 @@ export const EMPTY_FILTERS: Filters = {
   newOnly: false,
 };
 
-const oneOf = <T extends string>(v: string | null, allowed: readonly T[]): T | "" => (v && (allowed as readonly string[]).includes(v) ? (v as T) : "");
+const oneOf = <T extends string>(v: string | null, allowed: readonly T[]): T | "" =>
+  v && (allowed as readonly string[]).includes(v) ? (v as T) : "";
 const listOf = <T extends string>(v: string | null, allowed: readonly T[]): T[] =>
   (v ?? "")
     .split(",")
@@ -118,6 +119,7 @@ export function applyFilters(jobs: Job[], f: Filters, ctx: FilterContext): Job[]
 /** Newest first: first seen, then posted date, then title. */
 export function sortNewest(jobs: Job[]): Job[] {
   return [...jobs].sort(
-    (a, b) => b.firstSeenAt.localeCompare(a.firstSeenAt) || (b.postedAt ?? "").localeCompare(a.postedAt ?? "") || a.title.localeCompare(b.title),
+    (a, b) =>
+      b.firstSeenAt.localeCompare(a.firstSeenAt) || (b.postedAt ?? "").localeCompare(a.postedAt ?? "") || a.title.localeCompare(b.title),
   );
 }

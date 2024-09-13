@@ -53,10 +53,11 @@ export function postingToRaw(p: Obj, pageUrl: string): RawJob | null {
 export function parseJsonLdPage(html: string, pageUrl: string): RawJob[] {
   const $ = cheerio.load(html);
   const out: RawJob[] = [];
-  for (const block of jsonLdBlocks($)) for (const p of findJobPostings(block)) {
-    const raw = postingToRaw(p, pageUrl);
-    if (raw) out.push(raw);
-  }
+  for (const block of jsonLdBlocks($))
+    for (const p of findJobPostings(block)) {
+      const raw = postingToRaw(p, pageUrl);
+      if (raw) out.push(raw);
+    }
   return out;
 }
 

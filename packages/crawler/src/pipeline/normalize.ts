@@ -28,7 +28,9 @@ export function canonicalListingUrl(url: string): string {
 }
 
 export function jobId(company: string, url: string): string {
-  return createHash("sha1").update(`${company}|${canonicalListingUrl(url)}`).digest("hex");
+  return createHash("sha1")
+    .update(`${company}|${canonicalListingUrl(url)}`)
+    .digest("hex");
 }
 
 export interface Attribution {
@@ -43,9 +45,17 @@ export interface Attribution {
 const LEGAL = /\b(plc|ltd|limited|pvt|\(pvt\)|private|holdings?|company|co)\b\.?/gi;
 
 function namePattern(name: string): RegExp | null {
-  const core = name.replace(/\(.*?\)/g, " ").replace(LEGAL, " ").replace(/&/g, "and").replace(/\s+/g, " ").trim();
+  const core = name
+    .replace(/\(.*?\)/g, " ")
+    .replace(LEGAL, " ")
+    .replace(/&/g, "and")
+    .replace(/\s+/g, " ")
+    .trim();
   if (core.length < 4) return null;
-  const esc = core.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\band\b/g, "(?:and|&)").replace(/ /g, "\\s+");
+  const esc = core
+    .replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+    .replace(/\band\b/g, "(?:and|&)")
+    .replace(/ /g, "\\s+");
   return new RegExp(`\\b${esc}\\b(?!\\s+group)`, "i");
 }
 
