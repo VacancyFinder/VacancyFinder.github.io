@@ -35,7 +35,7 @@ function JobCardInner({ job, employer, isNew, saved, applied, onToggleSave, onTo
             <Link to={`/companies/${employer.slug}`} className="link">
               {employer.name}
             </Link>
-            {employer.cseSymbol && <span className="ml-2 font-mono text-xs text-slate-500 dark:text-slate-400">{employer.cseSymbol}</span>}
+            {employer.cseSymbol && <span className="ml-2 font-mono text-xs text-slate-600 dark:text-slate-400">{employer.cseSymbol}</span>}
           </p>
         </div>
         <button

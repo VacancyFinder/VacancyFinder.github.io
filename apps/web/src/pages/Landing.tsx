@@ -92,7 +92,7 @@ export function Landing() {
                 <span className="font-semibold">
                   {FIELD_LABELS[f]}
                   {meta?.byField[f] ? (
-                    <span className="ml-2 text-sm font-normal text-slate-500 dark:text-slate-400">{meta.byField[f]} open</span>
+                    <span className="ml-2 text-sm font-normal text-slate-600 dark:text-slate-400">{meta.byField[f]} open</span>
                   ) : null}
                 </span>
                 <span className="text-sm text-slate-600 dark:text-slate-400">{FIELD_DESCRIPTIONS[f]}</span>

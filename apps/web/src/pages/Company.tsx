@@ -134,7 +134,7 @@ export function Company() {
 
       <section className="mt-8" aria-labelledby="open-h">
         <h2 id="open-h" className="text-lg font-semibold">
-          Open jobs {jobs && <span className="font-normal text-slate-500 dark:text-slate-400">({list.length})</span>}
+          Open jobs {jobs && <span className="font-normal text-slate-600 dark:text-slate-400">({list.length})</span>}
         </h2>
         {parent && list.some((j) => j.company === parent.slug) && (
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Includes jobs posted on the shared {parent.name} careers page.</p>

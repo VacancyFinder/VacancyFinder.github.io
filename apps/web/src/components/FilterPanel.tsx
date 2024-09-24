@@ -46,7 +46,7 @@ export function FilterPanel({ f, set, options }: { f: Filters; set: (patch: Part
                   onChange={() => set({ fields: on ? f.fields.filter((x) => x !== s) : [...f.fields, s] })}
                 />
                 {FIELD_LABELS[s]}
-                <span className={on ? "opacity-80" : "text-slate-500 dark:text-slate-400"}>{options.fieldCounts[s] ?? 0}</span>
+                <span className={on ? "opacity-80" : "text-slate-600 dark:text-slate-400"}>{options.fieldCounts[s] ?? 0}</span>
               </label>
             );
           })}
