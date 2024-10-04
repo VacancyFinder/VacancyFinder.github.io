@@ -22,7 +22,18 @@ const OUT = resolve(PKG, ".probe-out");
 
 const Request = z.object({
   targets: z.union([z.literal("all"), z.array(z.string())]).default("all"),
-  urls: z.array(z.object({ id: z.string(), url: z.string().url() })).default([]),
+  urls: z
+    .array(
+      z.object({
+        id: z.string(),
+        url: z.string().url(),
+        method: z.enum(["GET", "POST"]).optional(),
+        body: z.string().optional(),
+        contentType: z.string().optional(),
+        render: z.boolean().optional(),
+      }),
+    )
+    .default([]),
   render: z.boolean().default(true),
 });
 
@@ -30,6 +41,7 @@ interface ProbeEntry {
   id: string;
   url: string;
   companies: string[];
+  render?: boolean;
   fetch: { status: number; finalUrl: string; bytes: number; contentType: string } | { error: string };
   signals?: PageSignals;
   atsChecks: Omit<AtsCheck, "body">[];
@@ -44,14 +56,22 @@ async function main(): Promise<void> {
   const companies = JSON.parse(readFileSync(resolve(ROOT, "data/companies.json"), "utf8")) as { slug: string; careersUrl: string | null }[];
   const careersOf = new Map(companies.map((c) => [c.slug, c.careersUrl]));
 
-  const items: { id: string; url: string; companies: string[] }[] = [];
+  const items: {
+    id: string;
+    url: string;
+    companies: string[];
+    method?: "GET" | "POST";
+    body?: string;
+    contentType?: string;
+    render?: boolean;
+  }[] = [];
   for (const t of allTargets) {
     if (req.targets !== "all" && !req.targets.includes(t.id)) continue;
     // Fetch the URL as written in the data (with www etc.), not the canonical key.
     const url = t.companySlugs.map((s) => careersOf.get(s)).find(Boolean) ?? t.canonicalUrl;
     items.push({ id: t.id, url, companies: t.companySlugs });
   }
-  for (const u of req.urls) items.push({ id: u.id, url: u.url, companies: [] });
+  for (const u of req.urls) items.push({ ...u, companies: [] });
 
   mkdirSync(resolve(OUT, "pages"), { recursive: true });
   mkdirSync(resolve(OUT, "api"), { recursive: true });
@@ -64,7 +84,11 @@ async function main(): Promise<void> {
       limit(async () => {
         const e: ProbeEntry = { ...it, fetch: { error: "not fetched" }, atsChecks: [] };
         try {
-          const r = await fetcher.get(it.url);
+          const r = await fetcher.get(it.url, {
+            method: it.method,
+            body: it.body,
+            headers: it.contentType ? { "content-type": it.contentType, accept: "application/json, */*" } : undefined,
+          });
           e.fetch = { status: r.status, finalUrl: r.url, bytes: r.text.length, contentType: r.headers["content-type"] ?? "" };
           writeFileSync(resolve(OUT, "pages", `${safe(it.id)}.html`), r.text);
           e.signals = extractSignals(r.text, r.url);
@@ -114,7 +138,7 @@ async function renderAll(entries: ProbeEntry[], fetcher: PoliteFetcher): Promise
     // Only pages whose static HTML shows no listings need a browser to understand.
     const s = e.signals;
     const needsRender =
-      !s || s.likelyJsRendered || (s.jsonLdJobPostings === 0 && e.atsChecks.every((a) => !a.ok) && s.jobishLinks.length < 3);
+      e.render ?? (!s || s.likelyJsRendered || (s.jsonLdJobPostings === 0 && e.atsChecks.every((a) => !a.ok) && s.jobishLinks.length < 3));
     if (!needsRender) continue;
     if (!(await fetcher.allowed(e.url))) {
       e.rendered = { error: "robots.txt disallows" };
@@ -126,12 +150,17 @@ async function renderAll(entries: ProbeEntry[], fetcher: PoliteFetcher): Promise
     page.on("response", async (res) => {
       const type = res.request().resourceType();
       const ct = res.headers()["content-type"] ?? "";
-      if (!["xhr", "fetch"].includes(type) || !/json|xml/.test(ct)) return;
+      if (!["xhr", "fetch"].includes(type) || !/json|xml|html|graphql/.test(ct)) return;
+      if (/google|doubleclick|yandex|vimeo|cookieyes|usercentrics|onetrust|contentsquare|hotjar|facebook|clarity/.test(res.url())) return;
       try {
         const body = await res.text();
+        const rq = res.request();
         json.push({ url: res.url(), status: res.status(), bytes: body.length });
-        if (body.length < 2_000_000 && n < 15)
-          writeFileSync(resolve(OUT, "api", `${safe(e.id)}--xhr-${n++}.txt`), `${res.url()}\n\n${body}`);
+        if (body.length < 2_000_000 && n < 25)
+          writeFileSync(
+            resolve(OUT, "api", `${safe(e.id)}--xhr-${n++}.txt`),
+            `${rq.method()} ${res.url()}\nREQUEST BODY: ${rq.postData() ?? ""}\n\n${body}`,
+          );
       } catch {
         // body unavailable (redirect/aborted)
       }
