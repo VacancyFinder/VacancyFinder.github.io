@@ -1,0 +1,3023 @@
+{
+  "generatedAt": "2026-09-30T07:46:21.299Z",
+  "note": "Candidates only. Nothing here is crawled until a human copies an approved URL into companies.json via PR.",
+  "domains": [
+    {
+      "domain": "99x.io",
+      "website": "https://99x.io",
+      "companies": [
+        "99x"
+      ],
+      "candidates": [
+        {
+          "url": "https://99x.io/careers",
+          "score": 10,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers - Boost your digital potential",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "acl.lk",
+      "website": "https://www.acl.lk",
+      "companies": [
+        "acl-plastics"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.acl.lk/careers",
+          "score": 10,
+          "evidence": [
+            "homepage link \"CAREERS\"",
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "ACL Cables PLC - The Largest Manufacturer of Cables in Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "alliancefinance.lk",
+      "website": "https://www.alliancefinance.lk",
+      "companies": [
+        "alliance-finance-company"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.alliancefinance.lk/about-us/careers/",
+          "score": 9,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Careers | Join Our Team | Alliance Finance PLC Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.alliancefinance.lk/si/about-us-si/careers-si/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "වෘත්තීන් | ශ්‍රී ලංකාවේ මුල්‍ය සමාගම් | එලායන්ස් මුල්‍ය සමාගම",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.alliancefinance.lk/ta/about-us-ta/careers-ta/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "தொழில்கள் | இலங்கையில் உள்ள நிதி நிறுவனங்கள் | அலையன்ஸ் நிதி நிறுவனம்",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "alumexgroup.com",
+      "website": "https://www.alumexgroup.com",
+      "companies": [
+        "alumex"
+      ],
+      "candidates": [
+        {
+          "url": "https://alumexgroup.com/careers/",
+          "score": 24,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /page-sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Career Opportunities at Alumex | Join Us",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "amanabank.lk",
+      "website": "https://www.amanabank.lk",
+      "companies": [
+        "amana-bank"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.amanabank.lk/careers/",
+          "score": 14,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "homepage link \"Working at Amana Bank\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers at Amãna Bank PLC - Banking Vacancies in Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://careers.amanabank.lk/",
+          "score": 4,
+          "evidence": [
+            "homepage link \"Current Vacancies\"",
+            "homepage link \"Careers\"",
+            "fetch failed: robots.txt disallows"
+          ]
+        },
+        {
+          "url": "https://www.amanabank.lk/ta/careers/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "தொழில் வாய்ப்பு - அமானா வங்கி PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.amanabank.lk/si/careers/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "amanatakaful.lk",
+      "website": "https://www.amanatakaful.lk",
+      "companies": [
+        "amana-takaful",
+        "amana-takaful-life"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.amanatakaful.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "ambeon.com",
+      "website": "https://www.ambeon.com",
+      "companies": [
+        "ambeon-capital",
+        "ambeon-holdings"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ambeon.com/careers",
+          "score": 4,
+          "evidence": [
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Parked at Loopia",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.ambeon.com/career",
+          "score": 2,
+          "evidence": [
+            "common path /career → 200"
+          ],
+          "status": 200,
+          "title": "Parked at Loopia",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.ambeon.com/jobs",
+          "score": 2,
+          "evidence": [
+            "common path /jobs → 200"
+          ],
+          "status": 200,
+          "title": "Parked at Loopia",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.ambeon.com/join-us",
+          "score": 2,
+          "evidence": [
+            "common path /join-us → 200"
+          ],
+          "status": 200,
+          "title": "Parked at Loopia",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.ambeon.com/work-with-us",
+          "score": 2,
+          "evidence": [
+            "common path /work-with-us → 200"
+          ],
+          "status": 200,
+          "title": "Parked at Loopia",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.ambeon.com/vacancies",
+          "score": 2,
+          "evidence": [
+            "common path /vacancies → 200"
+          ],
+          "status": 200,
+          "title": "Parked at Loopia",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "arpico.com",
+      "website": "https://www.arpico.com",
+      "companies": [
+        "arpico-insurance",
+        "kegalle-plantations",
+        "maskeliya-plantations",
+        "namunukula-plantations",
+        "richard-pieris-and-company"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "arpicorubber.com",
+      "website": "https://www.arpicorubber.com",
+      "companies": [
+        "richard-pieris-exports"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "ashokleyland.lk",
+      "website": "https://www.ashokleyland.lk",
+      "companies": [
+        "lanka-ashok-leyland"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.ashokleyland.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "asiaasset.lk",
+      "website": "https://www.asiaasset.lk",
+      "companies": [
+        "asia-asset-finance"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.asiaasset.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "asirihealth.com",
+      "website": "https://www.asirihealth.com",
+      "companies": [
+        "asiri-hospital-holdings",
+        "asiri-surgical-hospital"
+      ],
+      "candidates": [
+        {
+          "url": "https://asirihealth.com/careers#priorities",
+          "score": 49,
+          "evidence": [
+            "homepage link \"People's Priorities\"",
+            "homepage link \"Vacancies\"",
+            "homepage link \"Career Progression\"",
+            "homepage link \"Learning and Development\"",
+            "homepage link \"Welfare & Benefits\"",
+            "homepage link \"Life at Asiri\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200",
+            "common path /careers/ → 200 (/careers)"
+          ],
+          "status": 200,
+          "title": "Careers at Asiri Health | Join Our Expert Team",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://asirihealth.com/#",
+          "score": 6,
+          "evidence": [
+            "homepage link \"Careers\""
+          ],
+          "status": 200,
+          "title": "Asiri Health: Best Private Hospital in Sri Lanka: Colombo | Kandy | Galle",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "atlaslabs.com.au",
+      "website": "https://atlaslabs.com.au",
+      "companies": [
+        "atlas-labs"
+      ],
+      "candidates": [
+        {
+          "url": "https://atlaslabs.com.au/#careers",
+          "score": 3,
+          "evidence": [
+            "homepage link \"Careers\""
+          ],
+          "status": 200,
+          "title": "Atlas Labs | Product Engineering, Software & 3D Visualization",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "bairaha.com",
+      "website": "https://www.bairaha.com",
+      "companies": [
+        "bairaha-farms"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.bairaha.com/corporate/careers.html",
+          "score": 12,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200 (/corporate/careers.html)",
+            "common path /careers/ → 200 (/corporate/careers.html)"
+          ],
+          "status": 200,
+          "title": "Careers & Vacancies at Bairaha Farms PLC Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.bairaha.com/news/bairaha-offers-you-is-not-a-job-but-a-career.html",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Bairaha offers you is not a job but a CAREER - Bairaha Farms PLC, Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.bairaha.com/news-and-media/image-albums/bairaha-offers-you-is-not-a-job-but-a-career.html",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Bairaha offers you is not a job but a CAREER - Bairaha Farms PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "bpl.lk",
+      "website": "https://www.bpl.lk",
+      "companies": [
+        "bogawantalawa-tea-estates"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.bpl.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "bpplholdings.com",
+      "website": "https://www.bpplholdings.com",
+      "companies": [
+        "bppl-holdings"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "capitalalliance.lk",
+      "website": "https://www.capitalalliance.lk",
+      "companies": [
+        "capital-alliance-holdings"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.capitalalliance.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "cargillsbank.com",
+      "website": "https://www.cargillsbank.com",
+      "companies": [
+        "cargills-bank"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.cargillsbank.com/careers/",
+          "score": 13,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers | Cargills Bank",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.cargillsbank.com/careers/vacancies/",
+          "score": 7,
+          "evidence": [
+            "homepage link \"Vacancies\"",
+            "common path /vacancies → 200 (/careers/vacancies/)"
+          ],
+          "status": 200,
+          "title": "Vacancies | Cargills Bank",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "carsoncumberbatch.com",
+      "website": "https://www.carsoncumberbatch.com",
+      "companies": [
+        "bukit-darah",
+        "carson-cumberbatch",
+        "ceylon-guardian-investment-trust",
+        "ceylon-investment"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.carsoncumberbatch.com/careers/",
+          "score": 18,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "homepage link \"Join now\"",
+            "homepage link \"\"",
+            "sitemap entry in /sitemap.xml",
+            "sitemap entry in /image-sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers | Job Opportunities | Carson Cumberbatch PLC",
+          "jsonLdJobPostings": 0,
+          "ats": [
+            "google-form:https://docs.google.com/forms/d/e/1FAIpQLSeWXcunxuhtVqVaUXT4eCJi5ZDh33NAst9HBiH7ooVplmaH0g/viewform"
+          ]
+        },
+        {
+          "url": "https://www.carsoncumberbatch.com/careers/open-vacancies/",
+          "score": 5,
+          "evidence": [
+            "sitemap entry in /sitemap.xml",
+            "sitemap entry in /image-sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Open Vacancies - Carson Cumberbatch",
+          "jsonLdJobPostings": 0,
+          "ats": [
+            "linkedin-jobs:https://www.linkedin.com/jobs/view/3814228422",
+            "linkedin-jobs:https://www.linkedin.com/jobs/view/corporate-finance-manager-at-carson-cumberbatch-plc-3828539376/?originalSubdomain=lk"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "cdl.lk",
+      "website": "https://www.cdl.lk",
+      "companies": [
+        "colombo-dockyard"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.cdl.lk/careers",
+          "score": 4,
+          "evidence": [
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Colombo Dockyard PLC - An Odyssey of Excellence",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.cdl.lk/career",
+          "score": 2,
+          "evidence": [
+            "common path /career → 200"
+          ],
+          "status": 200,
+          "title": "Colombo Dockyard PLC - An Odyssey of Excellence",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.cdl.lk/jobs",
+          "score": 2,
+          "evidence": [
+            "common path /jobs → 200"
+          ],
+          "status": 200,
+          "title": "Colombo Dockyard PLC - An Odyssey of Excellence",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.cdl.lk/join-us",
+          "score": 2,
+          "evidence": [
+            "common path /join-us → 200"
+          ],
+          "status": 200,
+          "title": "Colombo Dockyard PLC - An Odyssey of Excellence",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.cdl.lk/work-with-us",
+          "score": 2,
+          "evidence": [
+            "common path /work-with-us → 200"
+          ],
+          "status": 200,
+          "title": "Colombo Dockyard PLC - An Odyssey of Excellence",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.cdl.lk/vacancies",
+          "score": 2,
+          "evidence": [
+            "common path /vacancies → 200"
+          ],
+          "status": 200,
+          "title": "Colombo Dockyard PLC - An Odyssey of Excellence",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "chevronlubricants.lk",
+      "website": "https://www.chevronlubricants.lk",
+      "companies": [
+        "chevron-lubricants-lanka"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.chevronlubricants.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "cic.lk",
+      "website": "https://www.cic.lk",
+      "companies": [
+        "cic-holdings"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.cic.lk/careers-page/",
+          "score": 6,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Careers | Top Company in Sri Lanka | CIC Holdings",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "citrusleisure.com",
+      "website": "https://www.citrusleisure.com",
+      "companies": [
+        "citrus-leisure"
+      ],
+      "candidates": [
+        {
+          "url": "https://citrusleisure.com/careers/",
+          "score": 16,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers at Citrus Leisure | Hospitality Jobs in Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "combank.lk",
+      "website": "https://www.combank.lk",
+      "companies": [
+        "commercial-bank-of-ceylon"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: HTTP 403",
+        "sitemap https://www.combank.lk/sitemap.xml: HTTP 403",
+        "/careers: HTTP 403",
+        "/career: HTTP 403",
+        "/careers/: HTTP 403",
+        "/jobs: HTTP 403",
+        "/join-us: HTTP 403",
+        "/work-with-us: HTTP 403",
+        "/vacancies: HTTP 403"
+      ]
+    },
+    {
+      "domain": "comcredit.lk",
+      "website": "https://www.comcredit.lk",
+      "companies": [
+        "commercial-credit-and-finance"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.comcredit.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "creativesoftware.com",
+      "website": "https://www.creativesoftware.com",
+      "companies": [
+        "creative-software"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.creativesoftware.com/careers",
+          "score": 20,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200",
+            "common path /careers/ → 200 (/careers)"
+          ],
+          "status": 200,
+          "title": "We are Hiring | Let's build the next big thing in tech",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.creativesoftware.com/se/careers/associate-technical-lead-lead-ui-ux-engineer-ref-3300",
+          "score": 4,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.creativesoftware.com/careers/associate-technical-lead-ref1044",
+          "score": 4,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.creativesoftware.com/se/careers/associate-technical-lead-ref1044",
+          "score": 4,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.creativesoftware.com/careers/business-development-and-digital-marketing-intern",
+          "score": 4,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.creativesoftware.com/se/careers/business-development-and-digital-marketing-intern",
+          "score": 4,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.creativesoftware.com/careers/data-engineer-ref7025",
+          "score": 4,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.creativesoftware.com/se/careers/data-engineer-ref7025",
+          "score": 4,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "cryptoworth.com",
+      "website": "https://www.cryptoworth.com",
+      "companies": [
+        "cryptoworth"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "dankotuwa.com",
+      "website": "https://www.dankotuwa.com",
+      "companies": [
+        "dankotuwa-porcelain"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "dcs.lk",
+      "website": "https://www.dcs.lk",
+      "companies": [
+        "distilleries-company-of-sri-lanka"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.dcs.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "dplgroup.com",
+      "website": "https://www.dplgroup.com",
+      "companies": [
+        "dipped-products"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.dplgroup.com/careers/",
+          "score": 9,
+          "evidence": [
+            "sitemap entry in /wp-sitemap-posts-page-1.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Join Dipped Products PLC | Careers & Opportunities",
+          "jsonLdJobPostings": 0,
+          "ats": [
+            "oracle-hcm:https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001"
+          ]
+        },
+        {
+          "url": "https://www.dplgroup.com/wp-content/uploads/2026/07/join-us.png",
+          "score": 2,
+          "evidence": [
+            "common path /join-us → 200 (/wp-content/uploads/2026/07/join-us.png)"
+          ],
+          "status": 200,
+          "title": "",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "durdans.com",
+      "website": "https://www.durdans.com",
+      "companies": [
+        "ceylon-hospitals"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.durdans.com/careers/",
+          "score": 18,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers - Durdans Hospital",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.durdans.com/careers/latest-opportunities/",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Latest Opportunities - Durdans Hospital",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.durdans.com/careers/nursing-school/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Nursing School - Durdans Hospital",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.durdans.com/careers/our-employees-say/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "ebcreasy.com",
+      "website": "https://www.ebcreasy.com",
+      "companies": [
+        "e-b-creasy-and-company"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.ebcreasy.com/careers",
+          "score": 4,
+          "evidence": [
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Bot Verification",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.ebcreasy.com/career",
+          "score": 2,
+          "evidence": [
+            "common path /career → 200"
+          ],
+          "status": 200,
+          "title": "Bot Verification",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": [
+        "/jobs: robots.txt disallows",
+        "/join-us: HTTP 403",
+        "/work-with-us: HTTP 403",
+        "/vacancies: HTTP 403"
+      ]
+    },
+    {
+      "domain": "echannelling.com",
+      "website": "https://www.echannelling.com",
+      "companies": [
+        "e-channelling"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.echannelling.com/careers",
+          "score": 7,
+          "evidence": [
+            "common path /careers → 200",
+            "common path /careers/ → 200 (/careers)"
+          ],
+          "status": 200,
+          "title": "Careers | eChannelling Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "expolanka.com",
+      "website": "https://www.expolanka.com",
+      "companies": [
+        "expolanka-holdings"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.expolanka.com/careers-and-people/",
+          "score": 20,
+          "evidence": [
+            "homepage link \"Careers & People\"",
+            "sitemap entry in /sitemap.xml",
+            "sitemap entry in /image-sitemap.xml",
+            "common path /careers → 200 (/careers-and-people/)",
+            "common path /career → 200 (/careers-and-people/)",
+            "common path /careers/ → 200 (/careers-and-people/)"
+          ],
+          "status": 200,
+          "title": "Careers | Expolanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "firstcapital.lk",
+      "website": "https://www.firstcapital.lk",
+      "companies": [
+        "first-capital-holdings",
+        "first-capital-treasuries"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "flatrocktech.com",
+      "website": "https://www.flatrocktech.com",
+      "companies": [
+        "flat-rock-technology"
+      ],
+      "candidates": [
+        {
+          "url": "https://flatrocktech.com/careers",
+          "score": 15,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "homepage link \"Open Positions0\"",
+            "common path /careers → 200",
+            "common path /careers/ → 200 (/careers)"
+          ],
+          "status": 200,
+          "title": "Join Flat Rock Technology | Careers",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "fortude.co",
+      "website": "https://fortude.co",
+      "companies": [
+        "fortude"
+      ],
+      "candidates": [
+        {
+          "url": "https://careers.fortude.co/",
+          "score": 6,
+          "evidence": [
+            "homepage link \"Explore Jobs\""
+          ],
+          "status": 200,
+          "title": "Fortude",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://fortude.co/our-people",
+          "score": 3,
+          "evidence": [
+            "homepage link \"Careers at Fortude\""
+          ],
+          "status": 200,
+          "title": "Our People | Fortude",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "galadarihotel.lk",
+      "website": "https://www.galadarihotel.lk",
+      "companies": [
+        "galadari-hotels-lanka"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.galadarihotel.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "harischandramills.com",
+      "website": "https://www.harischandramills.com",
+      "companies": [
+        "harischandra-mills"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "hcltech.com",
+      "website": "https://www.hcltech.com",
+      "companies": [
+        "hcltech"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.hcltech.com/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "hdfc.lk",
+      "website": "https://www.hdfc.lk",
+      "companies": [
+        "hdfc-bank-of-sri-lanka"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.hdfc.lk/careers",
+          "score": 15,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "HDFC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.hdfc.lk/en/careers",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "HDFC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.hdfc.lk/ta/careers",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "HDFC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.hdfc.lk/si/careers",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "hnbassurance.com",
+      "website": "https://www.hnbassurance.com",
+      "companies": [
+        "hnb-assurance"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: HTTP 403",
+        "sitemap https://www.hnbassurance.com/sitemap.xml: HTTP 403",
+        "/careers: HTTP 403",
+        "/career: HTTP 403",
+        "/careers/: HTTP 403",
+        "/jobs: HTTP 403",
+        "/join-us: HTTP 403",
+        "/work-with-us: HTTP 403",
+        "/vacancies: HTTP 403"
+      ]
+    },
+    {
+      "domain": "hnbfinance.lk",
+      "website": "https://www.hnbfinance.lk",
+      "companies": [
+        "hnb-finance"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "hsenid.com",
+      "website": "https://www.hsenid.com",
+      "companies": [
+        "hsenid-business-solutions"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "hypeinvention.com",
+      "website": "https://hypeinvention.com",
+      "companies": [
+        "hype-invention"
+      ],
+      "candidates": [
+        {
+          "url": "https://hypeinvention.com/careers",
+          "score": 6,
+          "evidence": [
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers in Marketing, AI Engineering & Robotics Roles",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://hypeinvention.com/career",
+          "score": 2,
+          "evidence": [
+            "common path /career → 200"
+          ],
+          "status": 200,
+          "title": "Engineering, AI & Next-Gen Marketing Under One Roof",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://hypeinvention.com/jobs",
+          "score": 2,
+          "evidence": [
+            "common path /jobs → 200"
+          ],
+          "status": 200,
+          "title": "Engineering, AI & Next-Gen Marketing Under One Roof",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://hypeinvention.com/join-us",
+          "score": 2,
+          "evidence": [
+            "common path /join-us → 200"
+          ],
+          "status": 200,
+          "title": "Engineering, AI & Next-Gen Marketing Under One Roof",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://hypeinvention.com/work-with-us",
+          "score": 2,
+          "evidence": [
+            "common path /work-with-us → 200"
+          ],
+          "status": 200,
+          "title": "Engineering, AI & Next-Gen Marketing Under One Roof",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://hypeinvention.com/vacancies",
+          "score": 2,
+          "evidence": [
+            "common path /vacancies → 200"
+          ],
+          "status": 200,
+          "title": "Engineering, AI & Next-Gen Marketing Under One Roof",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "ifs.com",
+      "website": "https://www.ifs.com",
+      "companies": [
+        "ifs"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: HTTP 429",
+        "sitemap https://www.ifs.com/sitemap.xml: HTTP 429",
+        "/careers: HTTP 429",
+        "/career: HTTP 429",
+        "/careers/: HTTP 429",
+        "/jobs: HTTP 429",
+        "/join-us: HTTP 429",
+        "/work-with-us: HTTP 429",
+        "/vacancies: HTTP 429"
+      ]
+    },
+    {
+      "domain": "janashakthi.com",
+      "website": "https://www.janashakthi.com",
+      "companies": [
+        "janashakthi-insurance"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.janashakthi.com/careers",
+          "score": 17,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "homepage link \"Life at Janashakthi\"",
+            "homepage link \"Join Us\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers page - Janashakthi Insurance PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.janashakthi.com/vacancies",
+          "score": 4,
+          "evidence": [
+            "sitemap entry in /sitemap.xml",
+            "common path /vacancies → 200"
+          ],
+          "status": 200,
+          "title": "Home - Janashakthi Insurance PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.janashakthi.com/careers-more",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Home - Janashakthi Insurance PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "jatholdings.com",
+      "website": "https://www.jatholdings.com",
+      "companies": [
+        "jat-holdings"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.jatholdings.com/careers/",
+          "score": 12,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers at JAT Holdings PLC | Jobs in Sri Lanka & Beyond",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.jatholdings.com/news/slfea-appoints-jat-as-a-facilitation-partner-for-training-painters-to-provide-overseas-employment-opportunities/",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "SLFEA Appoints JAT as a Facilitation Partner for Training Painters, to Provide Overseas Employment Opportunities | JAT Holdings PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "kapruka.com",
+      "website": "https://www.kapruka.com",
+      "companies": [
+        "kapruka-holdings"
+      ],
+      "candidates": [
+        {
+          "url": "https://blog.kapruka.com/kapruka_careers",
+          "score": 7,
+          "evidence": [
+            "homepage link \"Kapruka Careers\"",
+            "homepage link \"Careers\""
+          ],
+          "status": 200,
+          "title": "Browse Kapruka vacancies here:",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "keells.com",
+      "website": "https://www.keells.com/octave/",
+      "companies": [
+        "octave"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.keells.com/careers/",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Careers & Vacancies | John Keells Group | Leading Employer in Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.keells.com/posts/developing-skills-for-a-resilient-and-career-ready-youth",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "JKF SKIP Programme Builds Career-Ready Youth Through Skills Development | John Keells Group",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.keells.com/posts/octave-featured-on-career-insights-the-university-of-moratuwa",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "OCTAVE Featured on ‘Career Insights’, the University of Moratuwa",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.keells.com/posts/jkh-team-savours-scb-sponsored-liverpool-anfield-opportunity",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.keells.com/posts/career-week-2018-forum-with-chairman",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.keells.com/posts/nisreen-rehmanjee-recognised-at-the-top-50-professional-and-career-women-awards-2018",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.keells.com/posts/dananjaya-silva-completed-the-career-guidance-vocational-training-programme-of-john-keells-foundation-and-is-now-working-as-a-chef-at-cinnamon-red-hotel-he-is-an-inspiration-to-us-all",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.keells.com/posts/lmd-biz-talk-segment-with-roshanie-jayasundera-moraes-executive-vice-president-of-john-keells-holdings-plc-and-chief-marketing-officer-of-property-group-who-received-a-gold-award-for-career-achieveme",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "kelanicables.com",
+      "website": "https://www.kelanicables.com",
+      "companies": [
+        "kelani-cables"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.kelanicables.com/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "kelanityres.com",
+      "website": "https://www.kelanityres.com",
+      "companies": [
+        "kelani-tyres"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.kelanityres.com/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "lakehouse.lk",
+      "website": "https://www.lakehouse.lk",
+      "companies": [
+        "lake-house-printers-and-publishers"
+      ],
+      "candidates": [
+        {
+          "url": "https://lakehouse.lk/observer-jobs/",
+          "score": 9,
+          "evidence": [
+            "homepage link \"Observer Jobs\"",
+            "sitemap entry in /wp-sitemap-posts-page-1.xml"
+          ],
+          "status": 200,
+          "title": "Observer Jobs – Lakehouse – ANCL",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "lankaceramic.com",
+      "website": "https://www.lankaceramic.com",
+      "companies": [
+        "lanka-ceramic"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.lankaceramic.com/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "lankahospitals.com",
+      "website": "https://www.lankahospitals.com",
+      "companies": [
+        "the-lanka-hospitals-corporation"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.lankahospitals.com/careers/",
+          "score": 22,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Find and Apply | Job Vacancies Colombo | Lanka Hospitals",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.lankahospitals.com/2024/12/30/join-us-in-celebrating-10-years-of-lanka-hospitals-blood-cancer-centre-a-decade-of-hope-healing/",
+          "score": 4,
+          "evidence": [
+            "common path /join-us → 200 (/2024/12/30/join-us-in-celebrating-10-years-of-lanka-hospitals-blood-cancer-centre-a-decade-of-hope-healing/)"
+          ],
+          "status": 200,
+          "title": "Join Us in Celebrating 10 Years of Lanka Hospitals’ Blood Cancer Centre: A Decade of Hope & Healing – Lanka Hospitals",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "lankamilkfoods.com",
+      "website": "https://www.lankamilkfoods.com",
+      "companies": [
+        "lanka-milk-foods-cwe"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.lankamilkfoods.com/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "lankatiles.com",
+      "website": "https://www.lankatiles.com",
+      "companies": [
+        "lanka-tiles",
+        "lanka-walltiles"
+      ],
+      "candidates": [],
+      "errors": [
+        "sitemap https://www.lankatiles.com.com/sitemap.xml: robots.txt disallows",
+        "sitemap https://www.lankatiles.com.com/image-sitemap.xml: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "lankem.com",
+      "website": "https://www.lankem.com",
+      "companies": [
+        "lankem-ceylon"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "laugfs.lk",
+      "website": "https://www.laugfs.lk",
+      "companies": [
+        "laugfs-gas",
+        "laugfs-power"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.laugfs.lk/careers/",
+          "score": 80,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "homepage link \"Why Work at LAUGFS\"",
+            "homepage link \"Vacancies\"",
+            "sitemap entry in /page-sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers - LAUGFS",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.laugfs.lk/careers/software-engineer-centralized-services/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Software Engineer (Centralized Services) - LAUGFS",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.laugfs.lk/careers/senior-manager-group-taxation/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Senior Manager – Group Taxation - LAUGFS",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.laugfs.lk/careers/senior-executive-executive-maintenance/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.laugfs.lk/careers/assistant-manager-marketing/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.laugfs.lk/careers/executive-product-tool-design-engineer/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.laugfs.lk/careers/manager-assistant-manager-electrical/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.laugfs.lk/careers/supply-chain-controller/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "lionbeer.com",
+      "website": "https://www.lionbeer.com",
+      "companies": [
+        "ceylon-beverage-holdings",
+        "lion-brewery-ceylon"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.lionbeer.com/careers",
+          "score": 4,
+          "evidence": [
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Working at Lion | Lion-Brewery",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.lbfinance.com/vacancies",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.lbfinance.com/newsroom/events-and-galleries/lb-finance-plc-partners-up-with-leading-universities-in-sri-lanka-to-raise-awareness-on-career-options-in-the-age-of-covid-19",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.lbfinance.com/vacancies/tech-lead-associate-tech-lead",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "lseg.com",
+      "website": "https://www.lseg.com",
+      "companies": [
+        "lseg"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.lseg.com/en/careers",
+          "score": 15,
+          "evidence": [
+            "homepage link \"Explore our job opportunities\"",
+            "homepage link \"Careers\"",
+            "sitemap entry in /en/sitemap-index.xml",
+            "common path /careers → 200 (/en/careers)",
+            "common path /careers/ → 200 (/en/careers)"
+          ],
+          "status": 200,
+          "title": "Careers | LSEG",
+          "jsonLdJobPostings": 0,
+          "ats": [
+            "workday:lseg/wd3/Careers"
+          ]
+        },
+        {
+          "url": "https://www.lseg.com/en/data-analytics/investment-banking/lpc/podcast/lending-lowdown/episode-23-opportunities-in-digital-assets-financing",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /en/sitemap-index.xml"
+          ],
+          "status": 200,
+          "title": "Opportunities in Digital Assets Financing | Data Analytics",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.lseg.com/en/data-analytics/investment-banking/lpc/podcast/lending-lowdown/episode-18-opportunities-in-the-lower-middle-market",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /en/sitemap-index.xml"
+          ],
+          "status": 200,
+          "title": "Opportunities in the Lower Middle Market | Data Analytics",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.lseg.com/en/data-analytics/investment-banking/lpc/podcast/lending-lowdown/episode-36-non-sponsored-lending-opportunities-in-the-european-mid-market",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /en/sitemap-index.xml"
+          ]
+        },
+        {
+          "url": "https://www.lseg.com/en/data-analytics/market-data/report-financial-data-universe-exploring-challenges-opportunities",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /en/sitemap-index.xml"
+          ]
+        },
+        {
+          "url": "https://www.lseg.com/en/careers/graduate-internship-programmes",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /en/sitemap-index.xml"
+          ]
+        },
+        {
+          "url": "https://www.lseg.com/en/careers/graduate-internship-programmes/graduate-programmes",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /en/sitemap-index.xml"
+          ]
+        },
+        {
+          "url": "https://www.lseg.com/en/careers/graduate-internship-programmes/internship-programmes",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /en/sitemap-index.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "mahawelireach.com",
+      "website": "https://www.mahawelireach.com",
+      "companies": [
+        "mahaweli-reach-hotels"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.mahawelireach.com/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "mbsl.lk",
+      "website": "https://www.mbsl.lk",
+      "companies": [
+        "merchant-bank-of-sri-lanka-and-finance"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.mbsl.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "mi.lk",
+      "website": "https://www.mi.lk",
+      "companies": [
+        "mercantile-investments-and-finance"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.mi.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "nawaloka.com",
+      "website": "https://www.nawaloka.com",
+      "companies": [
+        "nawaloka-hospitals"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.nawaloka.com/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "odel.lk",
+      "website": "https://www.odel.lk",
+      "companies": [
+        "odel"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.odel.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "overseasrealty.com",
+      "website": "https://www.overseasrealty.com",
+      "companies": [
+        "overseas-realty-ceylon"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "panasianpower.com",
+      "website": "https://www.panasianpower.com",
+      "companies": [
+        "panasian-power"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "pearson.com",
+      "website": "https://www.pearson.com",
+      "companies": [
+        "pearson"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.pearson.com/work.html",
+          "score": 3,
+          "evidence": [
+            "homepage link \"Workforce & Career Development\""
+          ],
+          "status": 200,
+          "title": "For Work | Pearson",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "peoplesinsurance.lk",
+      "website": "https://www.peoplesinsurance.lk",
+      "companies": [
+        "people-s-insurance"
+      ],
+      "candidates": [
+        {
+          "url": "https://peoplesinsurance.lk/careers/",
+          "score": 24,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /page-sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers | Join Our Team | People's Insurance PLC Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://peoplesinsurance.lk/jobs/",
+          "score": 6,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml",
+            "common path /jobs → 200 (/jobs/)"
+          ],
+          "status": 200,
+          "title": "Jobs | Peoples Insurance Careers & Vacancies Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://peoplesinsurance.lk/careers-test/",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Careers | Join Our Team | People's Insurance PLC Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://peoplesinsurance.lk/post-a-job/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://peoplesinsurance.lk/job-dashboard/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://peoplesinsurance.lk/apply-for-job/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://peoplesinsurance.lk/job/marketing-coordinator/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /job-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://peoplesinsurance.lk/job/junior-executive-motor-claims/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /job-sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "primelands.lk",
+      "website": "https://www.primelands.lk",
+      "companies": [
+        "prime-lands-residencies"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.primelands.lk/careers/en",
+          "score": 12,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Careers | Prime Lands | No. 1 Real Estate Developer in Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.primelands.lk/careers/tam",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Careers | Prime Lands | No. 1 Real Estate Developer in Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.primelands.lk/careers/sin",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Careers | Prime Lands | No. 1 Real Estate Developer in Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "printcare.lk",
+      "website": "https://www.printcare.lk",
+      "companies": [
+        "printcare"
+      ],
+      "candidates": [
+        {
+          "url": "https://printcare.lk/careers/",
+          "score": 15,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /wp-sitemap-posts-page-1.xml",
+            "common path /careers → 200",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers – Printcare",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://printcare.lk/sustainability/#Opportunities-and-Challenges",
+          "score": 3,
+          "evidence": [
+            "homepage link \"Opportunities and Challenges\""
+          ],
+          "status": 200,
+          "title": "Sustainability – Printcare",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "renukagroup.com",
+      "website": "https://www.renukagroup.com",
+      "companies": [
+        "renuka-agri-foods",
+        "renuka-city-hotels",
+        "renuka-foods",
+        "renuka-holdings",
+        "renuka-hotels"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.renukagroup.com/careers/index.php",
+          "score": 7,
+          "evidence": [
+            "homepage link \"Careers\""
+          ],
+          "status": 200,
+          "title": "Renuka | Careers",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.renukagroup.com/careers/",
+          "score": 7,
+          "evidence": [
+            "common path /careers → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Renuka | Careers",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.renukagroup.com/career",
+          "score": 2,
+          "evidence": [
+            "common path /career → 200"
+          ],
+          "status": 200,
+          "title": "Renuka Group | Home",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.renukagroup.com/jobs",
+          "score": 2,
+          "evidence": [
+            "common path /jobs → 200"
+          ],
+          "status": 200,
+          "title": "Renuka Group | Home",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.renukagroup.com/join-us",
+          "score": 2,
+          "evidence": [
+            "common path /join-us → 200"
+          ],
+          "status": 200,
+          "title": "Renuka Group | Home",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.renukagroup.com/work-with-us",
+          "score": 2,
+          "evidence": [
+            "common path /work-with-us → 200"
+          ],
+          "status": 200,
+          "title": "Renuka Group | Home",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.renukagroup.com/vacancies",
+          "score": 2,
+          "evidence": [
+            "common path /vacancies → 200"
+          ],
+          "status": 200,
+          "title": "Renuka Group | Home",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "resusenergy.lk",
+      "website": "https://www.resusenergy.lk",
+      "companies": [
+        "resus-energy"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.resusenergy.lk/careers.html",
+          "score": 9,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Resus Energy PLC - Hydropower Careers - Hydro Power Jobs in Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "rocell.com",
+      "website": "https://www.rocell.com",
+      "companies": [
+        "royal-ceramics-lanka"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "rootcode.io",
+      "website": "https://rootcode.io",
+      "companies": [
+        "rootcode"
+      ],
+      "candidates": [
+        {
+          "url": "https://rootcode.ai/careers",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "sdb.lk",
+      "website": "https://www.sdb.lk",
+      "companies": [
+        "sanasa-development-bank"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.sdb.lk/en/about-us/careers",
+          "score": 9,
+          "evidence": [
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200 (/en/about-us/careers)",
+            "common path /careers/ → 200 (/en/about-us/careers)"
+          ],
+          "status": 200,
+          "title": "SDB bank | Bank Careers Sri Lanka | SDB bank",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.sdb.lk/about-us/careers",
+          "score": 7,
+          "evidence": [
+            "homepage link \"Careers\""
+          ],
+          "status": 200,
+          "title": "SDB bank | Bank Careers Sri Lanka | SDB bank",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.sdb.lk/ta/about-us/careers",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "SDB bank | Bank Careers Sri Lanka | SDB bank",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://www.sdb.lk/si/about-us/careers",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.sdb.lk/en/internship-opportunity-at-sdb-bank",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.sdb.lk/en/2024-2/unlock-an-exceptional-investment-opportunity-at-13-interest-for-5-year-fixed-deposit-with-sdb-bank",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.sdb.lk/en/2025/unlock-an-exceptional-investment-opportunity-at-13-interest-for-5-year-fixed-deposit-with-sdb-bank-3",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://www.sdb.lk/en/2024-3/unlock-an-exceptional-investment-opportunity-at-13-interest-for-5-year-fixed-deposit-with-sdb-bank-2",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "senfin.com",
+      "website": "https://www.senfin.com",
+      "companies": [
+        "senkadagala-finance"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: HTTP 403",
+        "sitemap https://www.senfin.com/sitemap.xml: HTTP 403",
+        "/careers: HTTP 403",
+        "/career: HTTP 403",
+        "/careers/: HTTP 403",
+        "/jobs: HTTP 403",
+        "/join-us: HTTP 403",
+        "/work-with-us: HTTP 403",
+        "/vacancies: HTTP 403"
+      ]
+    },
+    {
+      "domain": "serendibhotels.com",
+      "website": "https://www.serendibhotels.com",
+      "companies": [
+        "serendib-hotels"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.serendibhotels.com/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "sierracables.com",
+      "website": "https://www.sierracables.com",
+      "companies": [
+        "sierra-cables"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.sierracables.com/career/",
+          "score": 9,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /career → 200 (/career/)"
+          ],
+          "status": 200,
+          "title": "Job Vacancies in Cable Manufacturing Field - Sierra Cables PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "singerfinance.lk",
+      "website": "https://www.singerfinance.lk",
+      "companies": [
+        "singer-finance-lanka"
+      ],
+      "candidates": [],
+      "errors": [
+        "homepage: robots.txt disallows",
+        "sitemap https://www.singerfinance.lk/sitemap.xml: robots.txt disallows",
+        "/careers: robots.txt disallows",
+        "/career: robots.txt disallows",
+        "/careers/: robots.txt disallows",
+        "/jobs: robots.txt disallows",
+        "/join-us: robots.txt disallows",
+        "/work-with-us: robots.txt disallows",
+        "/vacancies: robots.txt disallows"
+      ]
+    },
+    {
+      "domain": "singhehospitals.com",
+      "website": "https://www.singhehospitals.com",
+      "companies": [
+        "singhe-hospitals"
+      ],
+      "candidates": [
+        {
+          "url": "https://www.singhehospital.com/careers",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /pages-sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "snapdrum.com",
+      "website": "https://snapdrum.com",
+      "companies": [
+        "snapdrum"
+      ],
+      "candidates": [
+        {
+          "url": "https://snapdrum.com/careers",
+          "score": 4,
+          "evidence": [
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Snapdrum - AI Systems & Agents That Actually Deliver",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://snapdrum.com/career",
+          "score": 2,
+          "evidence": [
+            "common path /career → 200"
+          ],
+          "status": 200,
+          "title": "Snapdrum - AI Systems & Agents That Actually Deliver",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://snapdrum.com/jobs",
+          "score": 2,
+          "evidence": [
+            "common path /jobs → 200"
+          ],
+          "status": 200,
+          "title": "Snapdrum - AI Systems & Agents That Actually Deliver",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://snapdrum.com/join-us",
+          "score": 2,
+          "evidence": [
+            "common path /join-us → 200"
+          ],
+          "status": 200,
+          "title": "Snapdrum - AI Systems & Agents That Actually Deliver",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://snapdrum.com/work-with-us",
+          "score": 2,
+          "evidence": [
+            "common path /work-with-us → 200"
+          ],
+          "status": 200,
+          "title": "Snapdrum - AI Systems & Agents That Actually Deliver",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://snapdrum.com/vacancies",
+          "score": 2,
+          "evidence": [
+            "common path /vacancies → 200"
+          ],
+          "status": 200,
+          "title": "Snapdrum - AI Systems & Agents That Actually Deliver",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "surge.global",
+      "website": "https://surge.global",
+      "companies": [
+        "surge-global"
+      ],
+      "candidates": [
+        {
+          "url": "https://surge.global/careers/",
+          "score": 18,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /page-sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers At Surge - Surge Global",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "syscolabs.lk",
+      "website": "https://syscolabs.lk",
+      "companies": [
+        "sysco-labs"
+      ],
+      "candidates": [
+        {
+          "url": "https://syscolabs.lk/careers",
+          "score": 4,
+          "evidence": [
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Sysco LABS Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://syscolabs.lk/career",
+          "score": 2,
+          "evidence": [
+            "common path /career → 200"
+          ],
+          "status": 200,
+          "title": "Sysco LABS Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://syscolabs.lk/jobs",
+          "score": 2,
+          "evidence": [
+            "common path /jobs → 200"
+          ],
+          "status": 200,
+          "title": "Sysco LABS Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://syscolabs.lk/join-us",
+          "score": 2,
+          "evidence": [
+            "common path /join-us → 200"
+          ],
+          "status": 200,
+          "title": "Sysco LABS Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://syscolabs.lk/work-with-us",
+          "score": 2,
+          "evidence": [
+            "common path /work-with-us → 200"
+          ],
+          "status": 200,
+          "title": "Sysco LABS Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://syscolabs.lk/vacancies",
+          "score": 2,
+          "evidence": [
+            "common path /vacancies → 200"
+          ],
+          "status": 200,
+          "title": "Sysco LABS Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "thekingsburyhotel.com",
+      "website": "https://www.thekingsburyhotel.com",
+      "companies": [
+        "the-kingsbury"
+      ],
+      "candidates": [],
+      "errors": []
+    },
+    {
+      "domain": "tokyocement.com",
+      "website": "https://www.tokyocement.com",
+      "companies": [
+        "tokyo-cement-company-lanka"
+      ],
+      "candidates": [
+        {
+          "url": "https://tokyocement.com/careers",
+          "score": 14,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /wp-sitemap-posts-page-1.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Tokyo Cement: Sri Lanka’s 1st and only public listed Cement manufacturer",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "vallibelfinance.com",
+      "website": "https://www.vallibelfinance.com",
+      "companies": [
+        "vallibel-finance"
+      ],
+      "candidates": [
+        {
+          "url": "https://vallibelfinance.com/careers/",
+          "score": 24,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /page-sitemap.xml",
+            "common path /careers → 200",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers | Vallibel Finance Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://vallibelfinance.com/si/careers-si/",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Careers | Vallibel Finance Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://vallibelfinance.com/ta/careers-ta/",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /page-sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Careers | Vallibel Finance Sri Lanka",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://vallibelfinance.com/job-title/trainee-officer/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /job-title-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://vallibelfinance.com/job-title/trainee-officer-colombo-metropolitan/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /job-title-sitemap.xml"
+          ]
+        },
+        {
+          "url": "https://vallibelfinance.com/job-title/%e0%ae%aa%e0%ae%af%e0%ae%bf%e0%ae%b1%e0%af%8d%e0%ae%9a%e0%ae%bf-%e0%ae%85%e0%ae%a4%e0%ae%bf%e0%ae%95%e0%ae%be%e0%ae%b0%e0%ae%bf-trainee-officer-%e0%ae%a8%e0%ae%be%e0%ae%9f%e0%af%81-%e0%ae%ae/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /job-title-sitemap.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "vidullanka.com",
+      "website": "https://www.vidullanka.com",
+      "companies": [
+        "vidullanka"
+      ],
+      "candidates": [
+        {
+          "url": "https://vidullanka.com/careers/",
+          "score": 17,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "homepage link \"Learn More\"",
+            "sitemap entry in /wp-sitemap-posts-page-1.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers – Vidullanka PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://vidullanka.com/career-opportunities/",
+          "score": 6,
+          "evidence": [
+            "sitemap entry in /wp-sitemap-posts-page-1.xml",
+            "common path /career → 200 (/career-opportunities/)"
+          ],
+          "status": 200,
+          "title": "Career Opportunities – Vidullanka PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://vidullanka.com/contact-us/",
+          "score": 3,
+          "evidence": [
+            "homepage link \"Work With Us\""
+          ],
+          "status": 200,
+          "title": "Contact Us – Vidullanka PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://vidullanka.com/career-vacancy/operations-executive/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /wp-sitemap-posts-career-vacancy-1.xml"
+          ]
+        },
+        {
+          "url": "https://vidullanka.com/career-vacancy/contract-management-specialist/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /wp-sitemap-posts-career-vacancy-1.xml"
+          ]
+        },
+        {
+          "url": "https://vidullanka.com/career-vacancy/facility-and-admin-executive/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /wp-sitemap-posts-career-vacancy-1.xml"
+          ]
+        },
+        {
+          "url": "https://vidullanka.com/career-vacancy/senior-engineer-electrical-mechanical/",
+          "score": 2,
+          "evidence": [
+            "sitemap entry in /wp-sitemap-posts-career-vacancy-1.xml"
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "windforce.lk",
+      "website": "https://www.windforce.lk",
+      "companies": [
+        "windforce"
+      ],
+      "candidates": [
+        {
+          "url": "https://windforce.lk/careers/",
+          "score": 21,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /page-sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /career → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers - Windforce - Official Website",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "wso2.com",
+      "website": "https://wso2.com",
+      "companies": [
+        "wso2"
+      ],
+      "candidates": [
+        {
+          "url": "https://wso2.com/careers/",
+          "score": 18,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200",
+            "common path /careers/ → 200 (/careers)"
+          ],
+          "status": 200,
+          "title": "WSO2 Careers",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "http://wso2.com/library/blogs/accelerate-your-career-with-wso2-training-and-certification/",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Accelerate Your Career with WSO2 Training and Certification | WSO2",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "http://wso2.com/library/conference/2025/07/modernising-your-iam-considerations-challenges-and-opportunities/",
+          "score": 3,
+          "evidence": [
+            "sitemap entry in /sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Modernising Your IAM: Considerations, Challenges, and Opportunities | WSO2",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "zegates.com",
+      "website": "https://zegates.com",
+      "companies": [
+        "zegates"
+      ],
+      "candidates": [
+        {
+          "url": "https://zegates.com/careers/",
+          "score": 14,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "homepage link \"CareersOpen roles & internships\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers | Build with a studio that ships | Zegates",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "zone24x7.com",
+      "website": "https://www.zone24x7.com",
+      "companies": [
+        "zone24x7"
+      ],
+      "candidates": [
+        {
+          "url": "https://zone24x7.com/careers/",
+          "score": 23,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "homepage link \"1 More open vacancies\"",
+            "homepage link \"None Available\"",
+            "sitemap entry in /page-sitemap.xml",
+            "common path /careers → 200 (/careers/)",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Careers - Zone24x7 Inc",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://zone24x7.com/careers/senior-devops-engineer/",
+          "score": 4,
+          "evidence": [
+            "homepage link \"SDOE Senior DevOps Engineer Full Time Co\"",
+            "sitemap entry in /careers-sitemap.xml"
+          ],
+          "status": 200,
+          "title": "Senior DevOps Engineer - Zone24x7 Inc",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        },
+        {
+          "url": "https://zone24x7.com/partners/",
+          "score": 3,
+          "evidence": [
+            "homepage link \"Join Us\""
+          ],
+          "status": 200,
+          "title": "Partner With us - Zone24x7 Inc",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "domain": "zyner.io",
+      "website": "https://zyner.io",
+      "companies": [
+        "zyner-io"
+      ],
+      "candidates": [
+        {
+          "url": "https://careers.zyner.io/",
+          "score": 10,
+          "evidence": [
+            "homepage link \"Careers\""
+          ],
+          "status": 200,
+          "title": "Careers at Zyner.io | Build, Create, and Grow with Top Startups",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
+    }
+  ]
+}
