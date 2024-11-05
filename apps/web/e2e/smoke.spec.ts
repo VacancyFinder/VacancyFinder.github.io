@@ -117,7 +117,10 @@ test("settings: theme and RSS feeds", async ({ page }) => {
   await noAxeViolations(page);
   await page.getByRole("radio", { name: "light" }).click();
   await expect(page.locator("html")).not.toHaveClass(/dark/);
-  await expect(page.getByRole("link", { name: "Software Engineering" }).first()).toHaveAttribute("href", /feeds\/software-engineering\.xml$/);
+  await expect(page.getByRole("link", { name: "Software Engineering" }).first()).toHaveAttribute(
+    "href",
+    /feeds\/software-engineering\.xml$/,
+  );
 });
 
 test("dark mode passes contrast checks on the feed", async ({ page }) => {
@@ -137,7 +140,7 @@ test("stale data shows a notice", async ({ page }) => {
 test("RSS feed and manifest are published", async ({ request }) => {
   const feed = await request.get("feeds/software-engineering.xml");
   expect(feed.ok()).toBe(true);
-  expect(await feed.text()).toContain("<rss version=\"2.0\"");
+  expect(await feed.text()).toContain('<rss version="2.0"');
   const manifest = await request.get("manifest.webmanifest");
   expect((await manifest.json()).theme_color).toBe("#123760");
 });

@@ -1,58 +1,102 @@
 import * as cheerio from "cheerio";
+import type { AnyNode } from "domhandler";
 import { absUrl, requireString, type AdapterFn, type RawJob } from "./types.js";
 
 /**
- * Config-driven HTML scraping, e.g.
- * { "listSelector": ".job-card", "titleSelector": "h3", "linkSelector": "a",
- *   "locationSelector": ".location", "descriptionSelector": ".summary", "dateSelector": "time",
- *   "linkPattern": "/careers/", "skipTitlePattern": "^(apply|view)" }
- * A listing without a link gets the careers page URL plus "#<title slug>" so each stays distinct.
+ * Config-driven HTML scraping. Every selector is relative to one listing (`listSelector`).
+ *
+ *   listSelector        one element per job (required)
+ *   titleSelector       title inside the item (default: the item's own text)
+ *   linkSelector        link inside the item (default: the item if it is an <a>, else its first link)
+ *   locationSelector / departmentSelector / typeSelector / workplaceSelector / descriptionSelector / dateSelector
+ *   defaultLocation     used when the page shows no location (e.g. "Colombo")
+ *   groupSelector       optional: iterate these groups; `listSelector` is then relative to each group
+ *   groupTitleSelector  heading inside a group, used as the department
+ *   anchorAttr          attribute naming the job (e.g. "rel"); the URL becomes page#job-<value> and the
+ *                       description is read from the element with that id (popup/accordion pages)
+ *   linkPattern         regex a link must match to be used (otherwise a #job- anchor is used)
+ *   skipTitlePattern    regex of titles to ignore ("Apply now", "No vacancies"…)
+ *   titleStripPattern   regex removed from titles (e.g. reference codes)
+ *   extraPages          more pages with the same layout (pagination)
  */
 export interface HtmlConfig {
   listSelector: string;
   titleSelector?: string;
   linkSelector?: string;
   locationSelector?: string;
+  departmentSelector?: string;
+  typeSelector?: string;
+  workplaceSelector?: string;
   descriptionSelector?: string;
   dateSelector?: string;
+  defaultLocation?: string;
+  groupSelector?: string;
+  groupTitleSelector?: string;
+  anchorAttr?: string;
   linkPattern?: string;
   skipTitlePattern?: string;
-  /** Pages to fetch in addition to the careers URL (pagination, category pages). */
+  titleStripPattern?: string;
   extraPages?: string[];
 }
 
-const text = ($el: cheerio.Cheerio<never>) => $el.first().text().replace(/\s+/g, " ").trim();
-
-function slugify(s: string): string {
+function slugify(s: string, max = 80): string {
   return s
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "")
-    .slice(0, 60);
+    .slice(0, max);
 }
 
 export function parseHtmlList(html: string, pageUrl: string, cfg: HtmlConfig): RawJob[] {
   const $ = cheerio.load(html);
   const out: RawJob[] = [];
   const skip = cfg.skipTitlePattern ? new RegExp(cfg.skipTitlePattern, "i") : null;
+  const strip = cfg.titleStripPattern ? new RegExp(cfg.titleStripPattern, "gi") : null;
   const linkRe = cfg.linkPattern ? new RegExp(cfg.linkPattern, "i") : null;
-  $(cfg.listSelector).each((_, node) => {
+  const pageBase = pageUrl.split("#")[0]!;
+  const text = (root: cheerio.Cheerio<AnyNode>, sel?: string) => (sel ? root.find(sel).first().text().replace(/\s+/g, " ").trim() : "");
+
+  const readItem = (node: AnyNode, department: string | null) => {
     const $n = $(node);
-    const title = cfg.titleSelector ? text($n.find(cfg.titleSelector) as cheerio.Cheerio<never>) : text($n as cheerio.Cheerio<never>);
+    let title = (cfg.titleSelector ? text($n, cfg.titleSelector) : $n.text()).replace(/\s+/g, " ").trim();
+    if (strip) title = title.replace(strip, "").trim();
     if (!title || title.length < 3 || title.length > 200 || skip?.test(title)) return;
-    const $a = cfg.linkSelector ? $n.find(cfg.linkSelector).first() : $n.is("a") ? $n : $n.find("a[href]").first();
-    let url = absUrl($a.attr("href"), pageUrl);
-    if (url && linkRe && !linkRe.test(url)) url = null;
+
+    let url: string | null = null;
+    let description = cfg.descriptionSelector ? text($n, cfg.descriptionSelector) || null : null;
+    const anchor = cfg.anchorAttr ? $n.attr(cfg.anchorAttr) : undefined;
+    if (anchor) {
+      url = `${pageBase}#job-${slugify(anchor, 200)}`; // never truncate: anchors tell listings apart
+      if (!description) {
+        const target = $(`[id="${anchor.replace(/"/g, "")}"]`).first();
+        description = target.length ? target.text().replace(/\s+/g, " ").trim() || null : null;
+      }
+    } else {
+      const $a = cfg.linkSelector ? $n.find(cfg.linkSelector).first() : $n.is("a") ? $n : $n.find("a[href]").first();
+      url = absUrl($a.attr("href"), pageUrl);
+      if (url && (url.split("#")[0] === pageBase || (linkRe && !linkRe.test(url)))) url = null;
+    }
     out.push({
       title,
-      url: url ?? `${pageUrl.split("#")[0]}#${slugify(title)}`,
-      location: cfg.locationSelector ? text($n.find(cfg.locationSelector) as cheerio.Cheerio<never>) || null : null,
-      description: cfg.descriptionSelector ? text($n.find(cfg.descriptionSelector) as cheerio.Cheerio<never>) || null : null,
-      postedAt: cfg.dateSelector
-        ? ($n.find(cfg.dateSelector).first().attr("datetime") ?? text($n.find(cfg.dateSelector) as cheerio.Cheerio<never>)) || null
-        : null,
+      url: url ?? `${pageBase}#job-${slugify(title)}`,
+      location: text($n, cfg.locationSelector) || cfg.defaultLocation || null,
+      description,
+      postedAt: cfg.dateSelector ? ($n.find(cfg.dateSelector).first().attr("datetime") ?? text($n, cfg.dateSelector)) || null : null,
+      department: text($n, cfg.departmentSelector) || department,
+      employmentType: text($n, cfg.typeSelector) || null,
+      workplace: text($n, cfg.workplaceSelector) || null,
     });
-  });
+  };
+
+  if (cfg.groupSelector) {
+    $(cfg.groupSelector).each((_, g) => {
+      const $g = $(g);
+      const dept = cfg.groupTitleSelector ? text($g, cfg.groupTitleSelector) || null : null;
+      $g.find(cfg.listSelector).each((__, node) => readItem(node, dept));
+    });
+  } else {
+    $(cfg.listSelector).each((_, node) => readItem(node, null));
+  }
   return out;
 }
 

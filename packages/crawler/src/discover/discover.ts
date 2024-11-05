@@ -86,6 +86,8 @@ export async function discoverDomain(fetcher: PoliteFetcher, website: string, co
     for (const a of extractSignals(r.text, r.url).ats) add(a.url, 4, `homepage references ${a.ats} account ${a.id}`);
   } catch (err) {
     res.errors.push(`homepage: ${errText(err)}`);
+    // Unreachable site (DNS, timeout, TLS, robots): probing more paths would only repeat the failure.
+    if (!(err instanceof HttpError)) return res;
   }
 
   // 2. Sitemap entries.

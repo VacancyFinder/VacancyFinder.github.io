@@ -139,30 +139,66 @@ export const teamtailor: AdapterFn = async (ctx) => {
   return { jobs, validators: r.validators };
 };
 
-/** Workday career sites: POST {host}/wday/cxs/{tenant}/{site}/jobs (the JSON the site itself uses). */
+/** "/job/Colombo-Sri-Lanka/Title_R123" → "Colombo, Sri Lanka" (Workday lists multi-location jobs as "2 Locations"). */
+export function workdayLocation(locationsText: string | null, externalPath: string): string | null {
+  if (locationsText && !/^\d+\s+locations?$/i.test(locationsText)) return locationsText;
+  const seg = externalPath.split("/")[2];
+  return seg
+    ? seg
+        .replace(/-/g, " ")
+        .replace(/\bSri Lanka\b/i, ", Sri Lanka")
+        .replace(/\s+,/, ",")
+    : locationsText;
+}
+
+/**
+ * Workday career sites: POST {host}/wday/cxs/{tenant}/{site}/jobs (the JSON the site itself uses).
+ * adapterConfig: host, tenant, site, appliedFacets (e.g. a country facet), fetchDetails (default true).
+ */
 export const workday: AdapterFn = async (ctx) => {
   const host = requireString(ctx.config, "host"); // e.g. lseg.wd3.myworkdayjobs.com
   const tenant = requireString(ctx.config, "tenant");
   const site = requireString(ctx.config, "site");
+  const publicBase = typeof ctx.config.publicBase === "string" ? ctx.config.publicBase : `https://${host}/en-US/${site}`;
   const searchText = typeof ctx.config.searchText === "string" ? ctx.config.searchText : "";
   const facets = (ctx.config.appliedFacets ?? {}) as Record<string, unknown>;
-  const base = `https://${host}`;
+  const fetchDetails = ctx.config.fetchDetails !== false;
+  const api = `https://${host}/wday/cxs/${tenant}/${site}`;
   const jobs: RawJob[] = [];
   for (let offset = 0; offset < 500; offset += 20) {
-    const r = await getJson(ctx, `${base}/wday/cxs/${tenant}/${site}/jobs`, {
+    const r = await getJson(ctx, `${api}/jobs`, {
       method: "POST",
       body: JSON.stringify({ appliedFacets: facets, limit: 20, offset, searchText }),
     });
     const d = (r.data ?? {}) as Record<string, unknown>;
     const page = asArray(d.jobPostings);
     for (const p of page) {
+      const path = String(p.externalPath ?? "");
       jobs.push({
         title: String(p.title ?? ""),
-        url: `${base}/en-US/${site}${String(p.externalPath ?? "")}`,
-        location: s(p.locationsText),
-        postedAt: null,
+        url: `${publicBase}${path}`,
+        location: workdayLocation(s(p.locationsText), path),
         employmentType: s(p.timeType),
+        department: null,
+        description: null,
+        postedAt: null,
       });
+      if (fetchDetails && jobs.length <= 80) {
+        try {
+          const det = await getJson(ctx, `${api}${path}`);
+          const info = ((det.data ?? {}) as Record<string, unknown>).jobPostingInfo as Record<string, unknown> | undefined;
+          const last = jobs[jobs.length - 1]!;
+          if (info) {
+            last.description = s(info.jobDescription);
+            last.postedAt = s(info.startDate);
+            last.employmentType = s(info.timeType) ?? last.employmentType;
+            const locs = [s(info.location), ...asArray(info.additionalLocations).map((x) => String(x))].filter(Boolean);
+            if (locs.length) last.location = locs.join(" / ");
+          }
+        } catch (err) {
+          ctx.log(`workday detail ${path}: ${(err as Error).message}`);
+        }
+      }
     }
     const total = typeof d.total === "number" ? d.total : 0;
     if (page.length < 20 || offset + 20 >= total) break;

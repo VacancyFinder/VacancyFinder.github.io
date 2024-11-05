@@ -25,13 +25,13 @@ Ambiguous (kept separate, resolve by hand):
 
 | Status | Companies |
 |---|---|
-| ready | 0 |
-| needs-adapter | 64 |
-| needs-discovery | 112 |
+| ready | 12 |
+| needs-adapter | 59 |
+| needs-discovery | 105 |
 | needs-research | 120 |
 | disabled | 0 |
 
-`needs-discovery`: 112 companies across 94 unique website domains (discovery probes each domain once).
+`needs-discovery`: 105 companies across 87 unique website domains (discovery probes each domain once).
 
 ## Parent groups
 
@@ -65,11 +65,21 @@ Check whether these belong to a group that the domain rule can't see.
 - haycarb: website `haycarb.com`, careers `hayleys.com`
 - hayleys-fabric: website `hayleysfabric.com`, careers `hayleys.com`
 - softlogic-life-insurance: website `softlogiclife.lk`, careers `softlogic.lk`
+- rootcode: website `rootcode.io`, careers `rootcode.ai`
 - ascentic: website `ascentic.se`, careers `career.ascentic.se`
+- lseg: website `lseg.com`, careers `lseg.wd3.myworkdayjobs.com`
+- zyner-io: website `zyner.io`, careers `careers.zyner.io`
 - swivel-group: website `swivelgroup.com.au`, careers `careers.smartrecruiters.com`
+
+## Hand edits preserved over source values
+
+- lseg.notes
+- codegen.notes
+- zillione.notes
+- hcltech.notes
 
 ## Output
 
 - companies.json: 296
 - groups.json: 19
-- crawl-targets.json: 45
+- crawl-targets.json: 34

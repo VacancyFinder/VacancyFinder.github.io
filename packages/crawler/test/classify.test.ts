@@ -158,7 +158,7 @@ describe("fields — real-world titles", () => {
   });
   it("needs 3 description hits when the title is silent", () => {
     expect(classifyFields("Executive", "You will use Python and SQL.")).toEqual(["other"]);
-    expect(classifyFields("Executive", "Work with machine learning, analytics and big data pipelines.")).toContain("data-ai-ml");
+    expect(classifyFields("Executive", "Work with machine learning, deep learning and big data pipelines.")).toContain("data-ai-ml");
   });
   it("falls back to other", () => expect(classifyFields("Driver's Helper Trainee Something")).toBeDefined());
   it("returns other when nothing matches", () => expect(classifyFields("Miscellaneous Role")).toEqual(["other"]));
@@ -219,4 +219,43 @@ describe("text normalisation", () => {
     expect(isoDate("3 days ago")).toBeNull();
     expect(isoDate(null)).toBeNull();
   });
+});
+
+describe("title clean-up", () => {
+  it("title-cases ALL-CAPS titles but keeps acronyms", async () => {
+    const { cleanTitle } = await import("../src/classify/text.js");
+    expect(cleanTitle("MANAGER-INTERNAL AUDIT")).toBe("Manager-Internal Audit");
+    expect(cleanTitle("SENIOR QA ENGINEER - IT")).toBe("Senior QA Engineer - IT");
+    expect(cleanTitle("HEAD OF HR AND ADMIN")).toBe("Head of HR and Admin");
+    expect(cleanTitle("Senior .NET Developer")).toBe("Senior .NET Developer");
+    expect(cleanTitle("UI/UX Designer - Apply Now")).toBe("UI/UX Designer");
+  });
+});
+
+describe("fields — generic description words and industry fallback", () => {
+  it("does not tag a marketing role as data just because the description mentions data and AI", () => {
+    expect(classifyFields("Marketing Manager", "Use data, analytics and AI tools to plan campaigns and delivery.")).toEqual([
+      "sales-marketing",
+    ]);
+  });
+  it("falls back to the employer's industry when no keyword matches", () => {
+    expect(classifyFields("Management Trainee", "", "banking")).toEqual(["banking-insurance"]);
+    expect(classifyFields("Management Trainee", "", "hotels-leisure")).toEqual(["hospitality-tourism"]);
+    expect(classifyFields("Management Trainee", "", "diversified")).toEqual(["other"]);
+  });
+  it("keeps ERP roles in software", () => {
+    expect(classifyFields("Lead IFS Technical Consultant")).toContain("software-engineering");
+  });
+  it("does not treat a branch role at a non-bank as banking", () => {
+    expect(classifyFields("Branch Executive (Gampaha)", "", "technology")).not.toContain("banking-insurance");
+  });
+});
+
+describe("seniority — heads and leaders", () => {
+  it.each([
+    ["Product Head – Home Loans", "manager"],
+    ["Head – Finance", "manager"],
+    ["Team Leader – Contact Centre", "lead"],
+    ["Head Chef", "unspecified"],
+  ] as const)("%s → %s", (title, want) => expect(classifySeniority(title)).toBe(want));
 });
