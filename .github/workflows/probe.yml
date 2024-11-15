@@ -54,3 +54,12 @@ jobs:
           git add data/discovery-candidates.json
           git commit -m "discover: candidates $(date -u +'%Y-%m-%d %H:%M') UTC" || echo "nothing to commit"
           git pull --rebase && git push
+      - name: Real crawl preview (writes /data on this branch)
+        if: ${{ hashFiles('packages/crawler/probe/run-crawl') != '' }}
+        run: pnpm crawl && pnpm validate:data
+      - name: Commit crawl preview
+        if: ${{ hashFiles('packages/crawler/probe/run-crawl') != '' }}
+        run: |
+          git add data
+          git commit -m "crawl preview $(date -u +'%Y-%m-%d %H:%M') UTC" || echo "nothing to commit"
+          git pull --rebase && git push

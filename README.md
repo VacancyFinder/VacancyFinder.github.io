@@ -1,34 +1,154 @@
-# VacancyFinder
+# Rekiya — Sri Lanka jobs from company career pages
 
-A directory of Sri Lankan employers (Colombo Stock Exchange-listed companies and tech firms) with links to each
-company's own careers page or website.
+> Let us do the searching. You do the applying.
+
+Rekiya collects open vacancies from the official career pages of Sri Lankan companies (every CSE-listed company
+plus leading tech employers), classifies them by field, industry and seniority, and shows them in an installable
+web app. Applications always happen on the company's own listing.
 
 **Live site:** https://vacancyfinder.github.io/
 
-## Repository layout
+- Static site on **GitHub Pages**; all background work runs in **GitHub Actions** (zero recurring cost).
+- A crawl runs every 3 hours: crawl → classify → diff → commit data (only if it changed) → build → deploy.
+- Per-field **RSS feeds** at `/feeds/<field>.xml`, optional **Telegram** channel alerts.
 
-| Path                                       | What it is                                                                                  |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| `index.html`, `assets/`                    | The static site. GitHub Pages serves it straight from the root of `main` (no build step).   |
-| `data/companies.json`, `data/groups.json`  | The directory data. The site loads these at runtime, so it always matches what's committed. |
-| `data/sources/`                            | Hand-maintained source lists that the importer reads.                                       |
-| `data/crawl-targets.json`, `data/reports/` | Importer output for the (future) careers-page crawler.                                      |
-| `packages/shared`                          | Zod schemas and shared helpers (industries, URLs).                                          |
-| `packages/crawler`                         | The importer (`src/import`) and its tests.                                                  |
-| `apps/web`                                 | Tests for the site's logic (`assets/lib.js`) and its consistency with the data.             |
+## Architecture
 
-## Development
+```mermaid
+flowchart LR
+  subgraph Sources
+    CSE[data/sources/cse_listed_companies_career_pages.json]
+    TECH[data/sources/tech_companies.json]
+  end
+  CSE & TECH --> IMPORT["pnpm import:cse<br/>(validate, merge by domain,<br/>groups, crawl targets)"]
+  IMPORT --> REG[(data/companies.json<br/>data/crawl-targets.json)]
+  REG --> CRAWL["pnpm crawl<br/>adapters → normalise → classify → overrides"]
+  CRAWL -->|"polite HTTP: robots.txt, 1 req/host,<br/>2–5 s delay, ETags"| WEB((Company career pages<br/>& official ATS APIs))
+  CRAWL --> DIFF["diff vs previous jobs<br/>(added / seen / missed / closed)"]
+  DIFF --> DATA[(data/jobs.json · fields/*.json · changes/ · archive/<br/>meta.json · health.json)]
+  DATA --> BUILD["apps/web build<br/>(copies /data, RSS feeds, directory.json)"]
+  BUILD --> PAGES[GitHub Pages PWA]
+  DATA --> ALERT[Telegram notifier]
+  subgraph "GitHub Actions: crawl-and-deploy.yml (every 3 h)"
+    CRAWL
+    DIFF
+    BUILD
+    ALERT
+  end
+```
 
-Requires Node 20+ and pnpm 9 (`corepack enable`).
+| Path | What it is |
+|---|---|
+| `packages/shared` | zod schemas + types shared by crawler and web (`@rekiya/shared/constants` is zod-free for the browser) |
+| `packages/crawler/src/import` | `pnpm import:cse` — builds `companies.json`, `groups.json`, `crawl-targets.json` from the source lists |
+| `packages/crawler/src/discover` | `pnpm discover` — finds careers-page candidates for companies with only a website |
+| `packages/crawler/src/adapters` | one file per source type: `ats.ts` (Lever, Greenhouse, Workable, SmartRecruiters, Teamtailor, Workday), `jsonld.ts`, `html.ts`, `custom/*` |
+| `packages/crawler/src/classify` | `seniority.ts`, `fields.ts`, `taxonomy.json` (editable keyword weights), text/location normalisation |
+| `packages/crawler/src/pipeline` | `run.ts` (crawl), `normalize.ts`, `diff.ts`, `write.ts`, `validate.ts` |
+| `packages/crawler/fixtures` | saved real pages / API responses used by the adapter tests |
+| `apps/web` | Vite + React + Tailwind PWA (HashRouter, MiniSearch) |
+| `data/` | curated + generated JSON, committed |
+| `.github/workflows` | `ci.yml`, `crawl-and-deploy.yml`, `company-request.yml`, `probe.yml` |
+
+## Setup
+
+Node 20+ and pnpm 9 (`corepack enable`).
 
 ```sh
 pnpm install
-pnpm typecheck
-pnpm test
-pnpm import:cse                     # regenerate data/*.json from data/sources/
-python3 -m http.server 8000         # preview the site at http://localhost:8000
+pnpm typecheck && pnpm lint && pnpm test   # all checks CI runs
+pnpm import:cse                            # regenerate companies/groups/crawl-targets from data/sources
+pnpm crawl                                 # crawl every ready company (needs internet; ~10 min politely)
+pnpm crawl --only wso2-com-careers         # crawl specific targets
+pnpm validate:data                         # validate /data against the schemas
+pnpm --filter @rekiya/web dev              # web app at http://localhost:5173 (serves /data)
+pnpm build && pnpm --filter @rekiya/web e2e  # production build + Playwright smoke tests (axe WCAG checks)
 ```
 
-To change the directory, edit `data/sources/*.json` (or hand-editable fields in `data/companies.json`), run
-`pnpm import:cse`, and commit the regenerated files. CI fails if the committed data doesn't match the importer's
-output. Once merged to `main`, GitHub Pages republishes the site automatically.
+### One-time GitHub settings
+
+1. **Settings → Pages → Source: GitHub Actions** (the deploy job uses `actions/deploy-pages`).
+2. **Settings → Actions → General → Workflow permissions:** allow "Read and write" and "Allow GitHub Actions to
+   create and approve pull requests" (the crawl commits data; the company-request flow opens draft PRs).
+3. Optional alerts: add repository secrets `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`. Without them the alert step
+   is skipped.
+
+## How a company gets crawled
+
+A company is crawled only when its entry in `data/companies.json` has `status: "ready"` (a careers URL **and** an
+adapter other than `none`) and `active: true`. Companies sharing one careers page (e.g. John Keells, Hayleys) form
+one crawl target, fetched once per run; its jobs belong to the parent group unless a listing names one subsidiary.
+
+### Add a company
+
+- **Anyone:** open the [Suggest a company](../../issues/new?template=suggest-company.yml) issue form. The
+  `company-request` workflow opens a draft PR adding it with `active: false`.
+- **Maintainer:** review that PR (or edit `data/companies.json` directly):
+  1. confirm the careers page is the company's own (or its official ATS) and that robots.txt and the site's terms
+     allow crawling;
+  2. choose an adapter (below) and fill `adapterConfig`;
+  3. set `active: true`, run `pnpm import:cse` (regenerates crawl targets) and `pnpm crawl --only <target-id>`;
+  4. save the page as a fixture in `packages/crawler/fixtures/` and add a case to `test/adapters.test.ts`.
+
+`adapter`, `adapterConfig`, `notes` and `active` are never overwritten by `pnpm import:cse`.
+
+### Choose an adapter (in this order)
+
+| Adapter | When | `adapterConfig` |
+|---|---|---|
+| `lever` / `greenhouse` / `workable` / `smartrecruiters` / `teamtailor` | the company uses that ATS | `{ "site" }` / `{ "board" }` / `{ "account" }` / `{ "company" }` / `{ "subdomain" }` or `{ "feedUrl" }` |
+| `custom` + `kind: "workday"` | a Workday career site | `{ "kind": "workday", "host", "tenant", "site", "appliedFacets" }` |
+| `jsonld` | the page has `JobPosting` JSON-LD | `{ "detailLinkPattern"?: "regex" }` to follow listing links |
+| `html` | plain HTML list | `{ "listSelector", "titleSelector", "linkSelector", "locationSelector", ... }` — see `src/adapters/html.ts` |
+| `custom` + `kind` | anything else (a site's own JSON API) | one file in `src/adapters/custom/` |
+
+Every adapter accepts `"locationFilter": "sri lanka|colombo"` to keep only Sri Lankan roles from a global account,
+`"url"` to fetch a different page than `careersUrl`, and `"attributeTo": [{ "company": "slug", "pattern": "regex" }]`
+to credit listings to a company that has no page of its own (e.g. Octave on the John Keells page).
+
+If a site can't be crawled reliably or ethically, leave it `active: false` with a `notes` line saying why.
+
+### Fix a misclassification
+
+- **Many jobs wrong:** edit `packages/crawler/src/classify/taxonomy.json` (title hits weigh 3, description hits 1,
+  a field needs ≥ 3; prefix a term with `title:` if it's too generic in descriptions) and add the title to
+  `test/classify.test.ts`.
+- **One job wrong:** add to `data/overrides.json` — applied after classification on every run:
+
+```json
+{
+  "jobs": { "<job id>": { "fields": ["data-ai-ml"], "seniority": "senior" } },
+  "titlePatterns": [{ "match": "\\bSAP\\b", "set": { "fields": ["software-engineering"] } }]
+}
+```
+
+## Data files (`/data`)
+
+| File | Purpose |
+|---|---|
+| `companies.json` | curated registry (see above) |
+| `crawl-targets.json` | generated: one entry per unique careers page |
+| `jobs.json` | open jobs, plus jobs closed in the last 30 days (kept to reopen/archive them) |
+| `fields/<field>.json` | open jobs per field — the web app loads only the fields a user follows |
+| `changes/YYYY-MM-DD.json` | jobs added/closed by each run that day |
+| `archive/YYYY-MM.json` | jobs closed more than 30 days ago |
+| `meta.json` | `generatedAt`, counts per field/company/seniority/industry, run duration |
+| `health.json` | per crawl target: last success, last error, consecutive failures, job count, suspect flag |
+| `overrides.json` | manual fixes |
+| `discovery-candidates.json` | output of `pnpm discover` for review — never crawled until copied into `companies.json` |
+
+Update rules per run: a job seen for the first time is **added**; seen again → `lastSeenAt` refreshed; missing from
+a successful crawl → `missedRuns++`, and **closed** at 2. A failed crawl never touches a company's jobs, and a company
+that had ≥ 3 jobs but suddenly returns 0 is flagged `suspect` and kept as it was.
+
+## Legal and ethics
+
+- Rekiya reads **public** career pages and **official public ATS APIs** only. It does not scrape third-party job
+  boards (topjobs.lk, LinkedIn, rooster.jobs boards, …); companies that post only there are listed as "coming soon".
+- It honours **robots.txt** (RFC 9309; an unreachable robots.txt counts as "disallow"), sends one request at a time
+  per host with a 2–5 s randomised pause, identifies itself as `RekiyaBot/1.0 (+repo URL)`, uses conditional
+  requests, and times out after 20 s with at most 2 retries.
+- It stores only a job's title, location, dates and a **snippet of at most 300 characters** — never full
+  descriptions — and always links to the original listing. It never collects or forwards applications.
+- Company names are shown as text/initials badges; logos are not used (opt-in `logo` field only).
+- A company that wants to be removed can open an issue; set `active: false` and its jobs close on the next run.
