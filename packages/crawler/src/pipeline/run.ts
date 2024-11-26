@@ -21,6 +21,7 @@ import {
   type Job,
   type Meta,
 } from "@rekiya/shared";
+import { applyCommonConfig } from "../adapters/common.js";
 import { resolveAdapter } from "../adapters/index.js";
 import type { CacheValidators } from "../http/fetcher.js";
 import { PoliteFetcher, RobotsDisallowedError } from "../http/fetcher.js";
@@ -110,8 +111,15 @@ export async function runCrawl(opts: CrawlOptions = {}): Promise<CrawlSummary> {
 
   const fetcher = opts.fetcher ?? new PoliteFetcher(fast ? { minDelayMs: 0, maxDelayMs: 0 } : { log: (m) => console.log(`  · ${m}`) });
   const outcomeBySlug = new Map<string, TargetOutcome>();
+  // A company can be named by several targets (e.g. its own inactive page plus a group page that credits it).
+  // An actual crawl outcome always wins over "skipped", so an inactive target can't close jobs another target found.
   const setOutcome = (slugs: string[], o: TargetOutcome) => {
-    for (const s of slugs) outcomeBySlug.set(s, o);
+    for (const s of slugs) {
+      const prev = outcomeBySlug.get(s);
+      if (o === "skipped" && prev && prev !== "skipped") continue;
+      if (prev && prev !== "skipped" && prev !== "ok" && o === "ok") continue; // keep failed/suspect: be conservative
+      outcomeBySlug.set(s, o);
+    }
   };
 
   const limit = pLimit(6);
@@ -153,6 +161,7 @@ export async function runCrawl(opts: CrawlOptions = {}): Promise<CrawlSummary> {
             run.outcome = "not-modified";
           } else {
             const locationFilter = typeof config.locationFilter === "string" ? new RegExp(config.locationFilter, "i") : undefined;
+            res.jobs = applyCommonConfig(res.jobs, config);
             const seen = new Set<string>();
             for (const raw of res.jobs) {
               const r = normalizeJob(raw, {

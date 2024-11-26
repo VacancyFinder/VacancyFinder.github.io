@@ -67,7 +67,11 @@
         "integration consultant*",
         "title:integration",
         "boomi",
-        "mulesoft"
+        "mulesoft",
+        "charging system*",
+        "converged charging",
+        "b2c platform*",
+        "platform engineer*"
       ],
       "exclude": ["software sales", "software support"]
     },
@@ -221,7 +225,9 @@
         "art director*",
         "title:creative",
         "copywriter*",
-        "content writer*"
+        "content writer*",
+        "motion design*",
+        "motion graphics"
       ],
       "exclude": []
     },
@@ -242,7 +248,13 @@
         "hrbp",
         "hris",
         "employee relations",
-        "compensation and benefits"
+        "compensation and benefits",
+        "resource management",
+        "resourcing",
+        "rewards",
+        "compensation",
+        "benefits",
+        "workforce"
       ],
       "exclude": []
     },
@@ -265,7 +277,12 @@
         "pmo",
         "agile coach*",
         "functional consultant*",
-        "business consultant*"
+        "business consultant*",
+        "product development",
+        "program management",
+        "programme management",
+        "process improvement",
+        "business process*"
       ],
       "exclude": []
     },
@@ -291,7 +308,16 @@
         "fp&a",
         "accounts payable",
         "accounts receivable",
-        "credit control*"
+        "credit control*",
+        "financial control*",
+        "financial reporting",
+        "controller*",
+        "financial services",
+        "share plan*",
+        "payables",
+        "receivables",
+        "reconciliation*",
+        "issuer services"
       ],
       "exclude": ["taxi"]
     },
@@ -352,7 +378,10 @@
         "customer acquisition",
         "presales",
         "pre-sales",
-        "lead generation"
+        "lead generation",
+        "category manage*",
+        "category executive*",
+        "trade partner*"
       ],
       "exclude": []
     },
@@ -387,7 +416,9 @@
         "title:leisure",
         "hospitality",
         "pastry",
-        "baker*"
+        "baker*",
+        "prepared food*",
+        "food production"
       ],
       "exclude": []
     },
@@ -522,7 +553,9 @@
         "executive assistant*",
         "personal assistant*",
         "document controller*",
-        "title:coordinator*"
+        "title:coordinator*",
+        "customer complain*",
+        "complaint*"
       ],
       "exclude": ["system administrator", "systems administrator", "linux administrator", "database administrator"]
     },
@@ -542,7 +575,11 @@
         "title:governance",
         "internal audit*",
         "fraud",
-        "data protection officer"
+        "data protection officer",
+        "contracts",
+        "dispute resolution",
+        "litigation",
+        "conveyanc*"
       ],
       "exclude": []
     },

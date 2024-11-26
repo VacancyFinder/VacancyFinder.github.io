@@ -25,13 +25,13 @@ Ambiguous (kept separate, resolve by hand):
 
 | Status | Companies |
 |---|---|
-| ready | 12 |
-| needs-adapter | 59 |
-| needs-discovery | 105 |
+| ready | 40 |
+| needs-adapter | 38 |
+| needs-discovery | 98 |
 | needs-research | 120 |
 | disabled | 0 |
 
-`needs-discovery`: 105 companies across 87 unique website domains (discovery probes each domain once).
+`needs-discovery`: 98 companies across 80 unique website domains (discovery probes each domain once).
 
 ## Parent groups
 
@@ -67,19 +67,29 @@ Check whether these belong to a group that the domain rule can't see.
 - softlogic-life-insurance: website `softlogiclife.lk`, careers `softlogic.lk`
 - rootcode: website `rootcode.io`, careers `rootcode.ai`
 - ascentic: website `ascentic.se`, careers `career.ascentic.se`
+- ifs: website `ifs.com`, careers `careers.smartrecruiters.com`
+- sysco-labs: website `syscolabs.lk`, careers `wd5.myworkdaysite.com`
 - lseg: website `lseg.com`, careers `lseg.wd3.myworkdayjobs.com`
 - zyner-io: website `zyner.io`, careers `careers.zyner.io`
 - swivel-group: website `swivelgroup.com.au`, careers `careers.smartrecruiters.com`
+- pearson: website `pearson.com`, careers `hccz.fa.em3.oraclecloud.com`
+- fortude: website `fortude.co`, careers `careers.fortude.co`
 
 ## Hand edits preserved over source values
 
+- ascentic.notes
+- ifs.notes
 - lseg.notes
+- millennium-it.notes
+- swivel-group.notes
 - codegen.notes
+- pearson.notes
 - zillione.notes
+- octave.notes
 - hcltech.notes
 
 ## Output
 
 - companies.json: 296
 - groups.json: 19
-- crawl-targets.json: 34
+- crawl-targets.json: 38

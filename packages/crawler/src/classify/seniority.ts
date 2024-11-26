@@ -7,12 +7,13 @@ type Rule = [Seniority, RegExp];
  * Deviations from the spec, each covered by tests:
  *  - "staff" counts as principal only in engineering/science titles ("Staff Nurse" is not principal).
  *  - "lead generation" is not a lead role.
+ *  - "Senior Associate" is not junior ("associate" preceded by "senior" doesn't count).
  */
 const TITLE_RULES: Rule[] = [
   ["intern", /\bintern(?:ship)?s?\b/i],
   ["trainee", /\b(?:trainees?|graduates?|freshers?)\b/i],
   // "associate" only when no lead/manager/architect follows it in the title.
-  ["junior", /\bassociate\b(?!.*\b(?:lead|manager|architect)\b)|\bjunior\b|\bjr\b\.?/i],
+  ["junior", /(?<!\bsenior\s)\bassociate\b(?!.*\b(?:lead|manager|architect)\b)|\bjunior\b|\bjr\b\.?/i],
   [
     "principal",
     /\bprincipal\b|\bdistinguished\b|\barchitect\b|\bstaff\s+(?:(?:software|data|ml|machine learning|site reliability|security|backend|back-end|frontend|front-end|full[- ]?stack|platform|devops|qa|test|mobile|cloud)\s+)?(?:engineer|scientist|developer)\b/i,

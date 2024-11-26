@@ -1,5 +1,14 @@
 [
   {
+    "id": "99x-io-careers-open-positions-location-sri-lanka",
+    "canonicalUrl": "https://99x.io/careers/open-positions?location=sri-lanka",
+    "adapter": "html",
+    "companySlugs": [
+      "99x"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "abansfinance-lk-careers",
     "canonicalUrl": "https://abansfinance.lk/careers",
     "adapter": "html",
@@ -40,7 +49,7 @@
   {
     "id": "brownsgroup-lk-careers",
     "canonicalUrl": "https://brownsgroup.lk/careers",
-    "adapter": "none",
+    "adapter": "custom",
     "companySlugs": [
       "brown-and-company",
       "browns-beach-hotels",
@@ -51,18 +60,18 @@
   {
     "id": "career-ascentic-se-jobs",
     "canonicalUrl": "https://career.ascentic.se/jobs",
-    "adapter": "none",
+    "adapter": "teamtailor",
     "companySlugs": [
       "ascentic"
     ],
     "parentGroup": null
   },
   {
-    "id": "careers-smartrecruiters-com-swivelgroup",
-    "canonicalUrl": "https://careers.smartrecruiters.com/SwivelGroup",
-    "adapter": "none",
+    "id": "careers-fortude-co",
+    "canonicalUrl": "https://careers.fortude.co/",
+    "adapter": "custom",
     "companySlugs": [
-      "swivel-group"
+      "fortude"
     ],
     "parentGroup": null
   },
@@ -78,7 +87,7 @@
   {
     "id": "cargillsceylon-com-careers",
     "canonicalUrl": "https://cargillsceylon.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "c-t-holdings",
       "cargills-ceylon"
@@ -95,15 +104,6 @@
     "parentGroup": null
   },
   {
-    "id": "cinnamonhotels-com-careers",
-    "canonicalUrl": "https://cinnamonhotels.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "john-keells-hotels"
-    ],
-    "parentGroup": null
-  },
-  {
     "id": "creativesoftware-com-careers",
     "canonicalUrl": "https://creativesoftware.com/careers",
     "adapter": "html",
@@ -115,7 +115,7 @@
   {
     "id": "dialog-lk-careers",
     "canonicalUrl": "https://dialog.lk/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "dialog-axiata",
       "dialog-finance"
@@ -134,16 +134,25 @@
   {
     "id": "dimolanka-com-careers",
     "canonicalUrl": "https://dimolanka.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "diesel-and-motor-engineering"
     ],
     "parentGroup": null
   },
   {
+    "id": "flatrocktech-com-careers",
+    "canonicalUrl": "https://flatrocktech.com/careers",
+    "adapter": "custom",
+    "companySlugs": [
+      "flat-rock-technology"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "hayleys-com-careers",
     "canonicalUrl": "https://hayleys.com/careers",
-    "adapter": "none",
+    "adapter": "custom",
     "companySlugs": [
       "haycarb",
       "hayleys",
@@ -152,6 +161,15 @@
       "hayleys-leisure"
     ],
     "parentGroup": "hayleys"
+  },
+  {
+    "id": "hccz-fa-em3-oraclecloud-com-hcmui-candidateexperience-en-sites-cx-2-requisitions-location-sri-lanka",
+    "canonicalUrl": "https://hccz.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/requisitions?location=Sri+Lanka",
+    "adapter": "custom",
+    "companySlugs": [
+      "pearson"
+    ],
+    "parentGroup": null
   },
   {
     "id": "hemas-com-careers",
@@ -183,7 +201,7 @@
   {
     "id": "keells-com-careers",
     "canonicalUrl": "https://keells.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "asian-hotels-and-properties",
       "ceylon-cold-stores",
@@ -196,7 +214,7 @@
   {
     "id": "lankaioc-com-careers",
     "canonicalUrl": "https://lankaioc.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "lanka-ioc"
     ],
@@ -214,7 +232,7 @@
   {
     "id": "ndbbank-com-careers",
     "canonicalUrl": "https://ndbbank.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "national-development-bank"
     ],
@@ -278,9 +296,18 @@
     "parentGroup": null
   },
   {
+    "id": "surge-global-careers",
+    "canonicalUrl": "https://surge.global/careers",
+    "adapter": "custom",
+    "companySlugs": [
+      "surge-global"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "unionb-com-careers",
     "canonicalUrl": "https://unionb.com/careers",
-    "adapter": "none",
+    "adapter": "custom",
     "companySlugs": [
       "union-bank-of-colombo"
     ],
@@ -292,6 +319,15 @@
     "adapter": "html",
     "companySlugs": [
       "vallibel-one"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "wd5-myworkdaysite-com-recruiting-sysco-syscocareers-jobs-locations-b014cc62fe6601b8d666502cd5287f36",
+    "canonicalUrl": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/jobs?locations=b014cc62fe6601b8d666502cd5287f36",
+    "adapter": "custom",
+    "companySlugs": [
+      "sysco-labs"
     ],
     "parentGroup": null
   },

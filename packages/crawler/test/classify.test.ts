@@ -229,6 +229,8 @@ describe("title clean-up", () => {
     expect(cleanTitle("HEAD OF HR AND ADMIN")).toBe("Head of HR and Admin");
     expect(cleanTitle("Senior .NET Developer")).toBe("Senior .NET Developer");
     expect(cleanTitle("UI/UX Designer - Apply Now")).toBe("UI/UX Designer");
+    expect(cleanTitle("Deputy Manager - Transaction Banking.")).toBe("Deputy Manager - Transaction Banking");
+    expect(cleanTitle("~Co-ordinator - VAS operations")).toBe("Co-ordinator - VAS operations");
   });
 });
 
@@ -256,6 +258,7 @@ describe("seniority — heads and leaders", () => {
     ["Product Head – Home Loans", "manager"],
     ["Head – Finance", "manager"],
     ["Team Leader – Contact Centre", "lead"],
+    ["Senior Associate, Operations", "senior"],
     ["Head Chef", "unspecified"],
   ] as const)("%s → %s", (title, want) => expect(classifySeniority(title)).toBe(want));
 });

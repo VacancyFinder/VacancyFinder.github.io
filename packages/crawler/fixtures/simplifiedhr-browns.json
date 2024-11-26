@@ -1,0 +1,93 @@
+{
+ "status": 200,
+ "data": {
+  "value": {
+   "entitys": [
+    {
+     "id": 177,
+     "encryptId": "MTc3",
+     "code": "JP0000173",
+     "jobName": "Digital Marketing Intern (Browns Deals-Online Store)",
+     "imagePath": "https://bgimsstorage.blob.core.windows.net/browns-care-user-profile/2d36e809bf8a448097fb900ca2fc2705..jpg?sv=2024-08-04&st=2026-09-29T06%3A27%3A11Z&se=2056-09-30T06%3A27%3A11Z&sr=b&sp=r&sig=HJ3Dk%2BSbG%2F%2FVsGW7vh%2FeHm%2FFqUZ%2FUl8R0b0d%2BAuNHTQ%3D",
+     "department": "Browns Deals",
+     "location": "Browns Head Office",
+     "postDatePeriod": "Today"
+    },
+    {
+     "id": 176,
+     "encryptId": "MTc2",
+     "code": "JP0000172",
+     "jobName": "Senior Officer Business Development (Corporate Sales)",
+     "imagePath": "https://bgimsstorage.blob.core.windows.net/browns-care-user-profile/f40d285fab2e40c3b123098e1cb5487a..jpg?sv=2024-08-04&st=2026-09-14T06%3A01%3A22Z&se=2056-09-15T06%3A01%3A22Z&sr=b&sp=r&sig=X4YrPbp6%2BlDzkX8xouMuMMwvJL%2FAVAacgQTHzDmLxuA%3D",
+     "department": "General Trading Department",
+     "location": "Colombo 10",
+     "postDatePeriod": "15 Days Ago"
+    },
+    {
+     "id": 175,
+     "encryptId": "MTc1",
+     "code": "JP0000171",
+     "jobName": "Associate UI/UX Engineer",
+     "imagePath": "https://bgimsstorage.blob.core.windows.net/browns-care-user-profile/58b640b8ceb0405086f0f5554086f64b..jpg?sv=2024-08-04&st=2026-09-06T02%3A31%3A36Z&se=2056-09-07T02%3A31%3A36Z&sr=b&sp=r&sig=PzAlPUd5qPPJV%2BQxdw8L8z7nBHMqsNAa%2FmDk4SZC0J0%3D",
+     "department": "Browns IT",
+     "location": "Browns Head Office",
+     "postDatePeriod": "23 Days Ago"
+    },
+    {
+     "id": 174,
+     "encryptId": "MTc0",
+     "code": "JP0000170",
+     "jobName": "Manager / Assistant Manager – Marketing &amp; Strategic Support",
+     "imagePath": "https://bgimsstorage.blob.core.windows.net/browns-care-user-profile/a1d0f9ccb3ab4539bde5241a26f189c7..jpg?sv=2024-08-04&st=2026-09-03T04%3A41%3A13Z&se=2056-09-04T04%3A41%3A13Z&sr=b&sp=r&sig=UlrwYrnLhf%2Fsswlm8bAehwLAbdrKjs1eTq78b7mFzLo%3D",
+     "department": "Crop Solution",
+     "location": "Browns Head Office",
+     "postDatePeriod": "26 Days Ago"
+    },
+    {
+     "id": 173,
+     "encryptId": "MTcz",
+     "code": "JP0000169",
+     "jobName": "Senior Executive – Product Development",
+     "imagePath": "https://bgimsstorage.blob.core.windows.net/browns-care-user-profile/36488e834a7b4524a416af1b89d8286a..jpg?sv=2024-08-04&st=2026-09-02T07%3A50%3A25Z&se=2056-09-03T07%3A50%3A25Z&sr=b&sp=r&sig=Eh%2F%2BJOQJJFDlPL0Uo8D9XMNjeeIIAtOBZNprfIdiiGo%3D",
+     "department": "Battery Department",
+     "location": "Browns Head Office",
+     "postDatePeriod": "27 Days Ago"
+    },
+    {
+     "id": 172,
+     "encryptId": "MTcy",
+     "code": "JP0000168",
+     "jobName": "Data Governance Officer&nbsp;",
+     "imagePath": "https://bgimsstorage.blob.core.windows.net/browns-care-user-profile/02412b9bf5824378beb78a6469ca0fe9..jpg?sv=2024-08-04&st=2026-06-10T03%3A08%3A46Z&se=2056-06-11T03%3A08%3A46Z&sr=b&sp=r&sig=P32yzTI23LGvYv7w%2BP4s8Gg2Xb%2FBwe3i3EfC6agElYY%3D",
+     "department": "Browns IT",
+     "location": "Browns Head Office",
+     "postDatePeriod": "28 Days Ago"
+    },
+    {
+     "id": 170,
+     "encryptId": "MTcw",
+     "code": "JP0000166",
+     "jobName": "Receptionist",
+     "imagePath": "https://bgimsstorage.blob.core.windows.net/browns-care-user-profile/d7eabf25a6d345b1997ca3e25edc0c4e..jpg?sv=2024-08-04&st=2026-06-09T08%3A04%3A06Z&se=2056-06-10T08%3A04%3A06Z&sr=b&sp=r&sig=RuwfeJCbg4jXmDkJFT%2ByXcBF2CWM4V6BOvPDTz4Dvm8%3D",
+     "department": "Browns IT",
+     "location": "Browns Head Office",
+     "postDatePeriod": "40 Days Ago"
+    },
+    {
+     "id": 169,
+     "encryptId": "MTY5",
+     "code": "JP0000165",
+     "jobName": "Executive – Project Administration",
+     "imagePath": "https://bgimsstorage.blob.core.windows.net/browns-care-user-profile/6c1fd33609274bcbb8e605be8e970da5..jpg?sv=2024-08-04&st=2026-08-17T11%3A16%3A27Z&se=2056-08-18T11%3A16%3A27Z&sr=b&sp=r&sig=bDw82T4P04rTy5Pxb97BgUQzkXFO6n1auw%2BJOI2u9KU%3D",
+     "department": "Administration Department",
+     "location": "Browns Head Office",
+     "postDatePeriod": "43 Days Ago"
+    }
+   ]
+  },
+  "values": null,
+  "succeeded": true,
+  "messages": [],
+  "message": null
+ }
+}

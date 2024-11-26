@@ -28,6 +28,29 @@ const ROUTES: Record<string, string> = {
   "https://www.slt.lk/": "slt.html",
   "https://rootcode.ai/api/jobs": "rootcode.json",
   "https://apisv1.zillione.com/api/careers": "zillione.json",
+  "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow=": "@empty",
+  "https://careers.keells.com/search/": "keells-successfactors.html",
+  "https://hcmcloud.dialog.lk/": "dialog-mihcm.html",
+  "https://app.mihcm.com/": "ndb-mihcm.html",
+  "https://www.dimolanka.com/careers-and-people/vacancies/page/": "@empty",
+  "https://www.dimolanka.com/": "dimo.html",
+  "https://www.lankaioc.com/": "lanka-ioc.html",
+  "https://www.cargillsceylon.com/": "cargills.html",
+  "https://99x.io/": "99x.html",
+  "https://simplifiedhr.brownsgroup.com/api/": "simplifiedhr-browns.json",
+  "https://unionbank.peopleshr.com/": "peopleshr-unionb.json",
+  "https://hccz.fa.em3.oraclecloud.com/": "oracle-pearson.json",
+  "https://emdm.fa.ap1.oraclecloud.com/": "@oracle-empty",
+  "https://api.rooster.jobs/": "rooster-surge.json",
+  "https://admin.flatrocktech.com/": "flatrock.json",
+  "https://careers.fortude.co/get-job-list.php?limit=10&offset=0": "fortude.json",
+  "https://careers.fortude.co/get-job-list.php": "@fortude-empty",
+  "https://career.ascentic.se/jobs.rss": "teamtailor-ascentic.xml",
+};
+const CANNED: Record<string, string> = {
+  "@empty": "<html><body></body></html>",
+  "@oracle-empty": JSON.stringify({ items: [{ TotalJobsCount: 0, requisitionList: [] }] }),
+  "@fortude-empty": JSON.stringify({ joblist: [], noOfTotalRecords: { totalCount: 10 } }),
 };
 
 function fakeFetcher(opts: { down?: RegExp } = {}): PoliteFetcher {
@@ -38,10 +61,17 @@ function fakeFetcher(opts: { down?: RegExp } = {}): PoliteFetcher {
       const text = offset === 0 ? readFileSync(resolve(FIX, "workday-lseg.json"), "utf8") : JSON.stringify({ total: 28, jobPostings: [] });
       return { status: 200, url, headers: {}, text, notModified: false, validators: {} };
     }
+    if (url.includes("myworkdaysite.com/wday/cxs/sysco/syscocareers/jobs")) {
+      const offset = (JSON.parse(req.body ?? "{}") as { offset?: number }).offset ?? 0;
+      const text = offset === 0 ? readFileSync(resolve(FIX, "workday-sysco.json"), "utf8") : JSON.stringify({ total: 20, jobPostings: [] });
+      return { status: 200, url, headers: {}, text, notModified: false, validators: {} };
+    }
     if (url.includes("myworkdayjobs.com/wday/cxs/")) throw new Error("HTTP 404 (detail not in fixtures)");
     const key = Object.keys(ROUTES).find((k) => url.startsWith(k));
     if (!key) throw new Error(`HTTP 404 for ${url}`);
-    return { status: 200, url, headers: {}, text: readFileSync(resolve(FIX, ROUTES[key]!), "utf8"), notModified: false, validators: {} };
+    const f = ROUTES[key]!;
+    const text = CANNED[f] ?? readFileSync(resolve(FIX, f), "utf8");
+    return { status: 200, url, headers: {}, text, notModified: false, validators: {} };
   };
   return { get, requests: 0 } as unknown as PoliteFetcher;
 }
@@ -70,7 +100,26 @@ describe("local crawl over fixtures", () => {
     expect(r.runs.filter((x) => x.outcome === "failed").map((x) => x.target.id)).toEqual([]);
     // Every ready company contributed jobs.
     const companies = new Set(jobs.map((j) => j.company));
-    for (const slug of ["wso2", "creative-software", "rootcode", "zillione", "lseg", "digital-mobility-solutions-lanka-pickme", "citizens-development-business-finance"]) {
+    for (const slug of [
+      "wso2",
+      "creative-software",
+      "rootcode",
+      "zillione",
+      "lseg",
+      "digital-mobility-solutions-lanka-pickme",
+      "citizens-development-business-finance",
+      "dialog-axiata",
+      "national-development-bank",
+      "union-bank-of-colombo",
+      "pearson",
+      "surge-global",
+      "flat-rock-technology",
+      "fortude",
+      "sysco-labs",
+      "99x",
+      "lanka-ioc",
+      "cargills-bank",
+    ]) {
       expect(companies.has(slug), slug).toBe(true);
     }
     expect(jobs.every((j) => j.firstSeenAt === T1 && j.status === "open")).toBe(true);
@@ -81,6 +130,7 @@ describe("local crawl over fixtures", () => {
     expect(meta.totals.open).toBe(jobs.length);
     expect(meta.totals.targetsOk).toBe(meta.totals.targets);
     expect(existsSync(join(dir, "changes/2026-09-30.json"))).toBe(true);
+    if (process.env.DUMP_JOBS) cpSync(join(dir, "jobs.json"), process.env.DUMP_JOBS);
   });
 
   it("re-running with the same pages changes no job data", async () => {
@@ -109,11 +159,16 @@ describe("local crawl over fixtures", () => {
       fetcher: (() => {
         const f = fakeFetcher();
         const get = f.get.bind(f);
-        return { get: async (u: string, q?: FetchRequest) => (u.startsWith("https://www.cdb.lk/") ? { ...(await get(u, q)), text: "<html></html>" } : get(u, q)) } as unknown as PoliteFetcher;
+        return {
+          get: async (u: string, q?: FetchRequest) =>
+            u.startsWith("https://www.cdb.lk/") ? { ...(await get(u, q)), text: "<html></html>" } : get(u, q),
+        } as unknown as PoliteFetcher;
       })(),
     });
     expect(r.runs.find((x) => x.target.companySlugs.includes("citizens-development-business-finance"))?.outcome).toBe("suspect");
-    expect(read<Job[]>("jobs.json").filter((j) => j.company === "citizens-development-business-finance" && j.status === "open").length).toBe(13);
+    expect(
+      read<Job[]>("jobs.json").filter((j) => j.company === "citizens-development-business-finance" && j.status === "open").length,
+    ).toBe(13);
   });
 
   it("a listing that disappears closes after two successful runs", async () => {
@@ -122,7 +177,8 @@ describe("local crawl over fixtures", () => {
       const f = fakeFetcher();
       const get = f.get.bind(f);
       return {
-        get: async (u: string, q?: FetchRequest) => (u.startsWith("https://zone24x7.com/") ? { ...(await get(u, q)), text: "<html><body></body></html>" } : get(u, q)),
+        get: async (u: string, q?: FetchRequest) =>
+          u.startsWith("https://zone24x7.com/") ? { ...(await get(u, q)), text: "<html><body></body></html>" } : get(u, q),
       } as unknown as PoliteFetcher;
     };
     await runCrawl({ ...opts(), now: T2, fetcher: without() });

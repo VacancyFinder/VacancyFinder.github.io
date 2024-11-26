@@ -37,18 +37,18 @@ flowchart LR
   end
 ```
 
-| Path | What it is |
-|---|---|
-| `packages/shared` | zod schemas + types shared by crawler and web (`@rekiya/shared/constants` is zod-free for the browser) |
-| `packages/crawler/src/import` | `pnpm import:cse` — builds `companies.json`, `groups.json`, `crawl-targets.json` from the source lists |
-| `packages/crawler/src/discover` | `pnpm discover` — finds careers-page candidates for companies with only a website |
+| Path                            | What it is                                                                                                                                 |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `packages/shared`               | zod schemas + types shared by crawler and web (`@rekiya/shared/constants` is zod-free for the browser)                                     |
+| `packages/crawler/src/import`   | `pnpm import:cse` — builds `companies.json`, `groups.json`, `crawl-targets.json` from the source lists                                     |
+| `packages/crawler/src/discover` | `pnpm discover` — finds careers-page candidates for companies with only a website                                                          |
 | `packages/crawler/src/adapters` | one file per source type: `ats.ts` (Lever, Greenhouse, Workable, SmartRecruiters, Teamtailor, Workday), `jsonld.ts`, `html.ts`, `custom/*` |
-| `packages/crawler/src/classify` | `seniority.ts`, `fields.ts`, `taxonomy.json` (editable keyword weights), text/location normalisation |
-| `packages/crawler/src/pipeline` | `run.ts` (crawl), `normalize.ts`, `diff.ts`, `write.ts`, `validate.ts` |
-| `packages/crawler/fixtures` | saved real pages / API responses used by the adapter tests |
-| `apps/web` | Vite + React + Tailwind PWA (HashRouter, MiniSearch) |
-| `data/` | curated + generated JSON, committed |
-| `.github/workflows` | `ci.yml`, `crawl-and-deploy.yml`, `company-request.yml`, `probe.yml` |
+| `packages/crawler/src/classify` | `seniority.ts`, `fields.ts`, `taxonomy.json` (editable keyword weights), text/location normalisation                                       |
+| `packages/crawler/src/pipeline` | `run.ts` (crawl), `normalize.ts`, `diff.ts`, `write.ts`, `validate.ts`                                                                     |
+| `packages/crawler/fixtures`     | saved real pages / API responses used by the adapter tests                                                                                 |
+| `apps/web`                      | Vite + React + Tailwind PWA (HashRouter, MiniSearch)                                                                                       |
+| `data/`                         | curated + generated JSON, committed                                                                                                        |
+| `.github/workflows`             | `ci.yml`, `crawl-and-deploy.yml`, `company-request.yml`, `probe.yml`                                                                       |
 
 ## Setup
 
@@ -94,13 +94,13 @@ one crawl target, fetched once per run; its jobs belong to the parent group unle
 
 ### Choose an adapter (in this order)
 
-| Adapter | When | `adapterConfig` |
-|---|---|---|
-| `lever` / `greenhouse` / `workable` / `smartrecruiters` / `teamtailor` | the company uses that ATS | `{ "site" }` / `{ "board" }` / `{ "account" }` / `{ "company" }` / `{ "subdomain" }` or `{ "feedUrl" }` |
-| `custom` + `kind: "workday"` | a Workday career site | `{ "kind": "workday", "host", "tenant", "site", "appliedFacets" }` |
-| `jsonld` | the page has `JobPosting` JSON-LD | `{ "detailLinkPattern"?: "regex" }` to follow listing links |
-| `html` | plain HTML list | `{ "listSelector", "titleSelector", "linkSelector", "locationSelector", ... }` — see `src/adapters/html.ts` |
-| `custom` + `kind` | anything else (a site's own JSON API) | one file in `src/adapters/custom/` |
+| Adapter                                                                | When                                  | `adapterConfig`                                                                                             |
+| ---------------------------------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `lever` / `greenhouse` / `workable` / `smartrecruiters` / `teamtailor` | the company uses that ATS             | `{ "site" }` / `{ "board" }` / `{ "account" }` / `{ "company" }` / `{ "subdomain" }` or `{ "feedUrl" }`     |
+| `custom` + `kind: "workday"`                                           | a Workday career site                 | `{ "kind": "workday", "host", "tenant", "site", "appliedFacets" }`                                          |
+| `jsonld`                                                               | the page has `JobPosting` JSON-LD     | `{ "detailLinkPattern"?: "regex" }` to follow listing links                                                 |
+| `html`                                                                 | plain HTML list                       | `{ "listSelector", "titleSelector", "linkSelector", "locationSelector", ... }` — see `src/adapters/html.ts` |
+| `custom` + `kind`                                                      | anything else (a site's own JSON API) | one file in `src/adapters/custom/`                                                                          |
 
 Every adapter accepts `"locationFilter": "sri lanka|colombo"` to keep only Sri Lankan roles from a global account,
 `"url"` to fetch a different page than `careersUrl`, and `"attributeTo": [{ "company": "slug", "pattern": "regex" }]`
@@ -124,18 +124,18 @@ If a site can't be crawled reliably or ethically, leave it `active: false` with 
 
 ## Data files (`/data`)
 
-| File | Purpose |
-|---|---|
-| `companies.json` | curated registry (see above) |
-| `crawl-targets.json` | generated: one entry per unique careers page |
-| `jobs.json` | open jobs, plus jobs closed in the last 30 days (kept to reopen/archive them) |
-| `fields/<field>.json` | open jobs per field — the web app loads only the fields a user follows |
-| `changes/YYYY-MM-DD.json` | jobs added/closed by each run that day |
-| `archive/YYYY-MM.json` | jobs closed more than 30 days ago |
-| `meta.json` | `generatedAt`, counts per field/company/seniority/industry, run duration |
-| `health.json` | per crawl target: last success, last error, consecutive failures, job count, suspect flag |
-| `overrides.json` | manual fixes |
-| `discovery-candidates.json` | output of `pnpm discover` for review — never crawled until copied into `companies.json` |
+| File                        | Purpose                                                                                   |
+| --------------------------- | ----------------------------------------------------------------------------------------- |
+| `companies.json`            | curated registry (see above)                                                              |
+| `crawl-targets.json`        | generated: one entry per unique careers page                                              |
+| `jobs.json`                 | open jobs, plus jobs closed in the last 30 days (kept to reopen/archive them)             |
+| `fields/<field>.json`       | open jobs per field — the web app loads only the fields a user follows                    |
+| `changes/YYYY-MM-DD.json`   | jobs added/closed by each run that day                                                    |
+| `archive/YYYY-MM.json`      | jobs closed more than 30 days ago                                                         |
+| `meta.json`                 | `generatedAt`, counts per field/company/seniority/industry, run duration                  |
+| `health.json`               | per crawl target: last success, last error, consecutive failures, job count, suspect flag |
+| `overrides.json`            | manual fixes                                                                              |
+| `discovery-candidates.json` | output of `pnpm discover` for review — never crawled until copied into `companies.json`   |
 
 Update rules per run: a job seen for the first time is **added**; seen again → `lastSeenAt` refreshed; missing from
 a successful crawl → `missedRuns++`, and **closed** at 2. A failed crawl never touches a company's jobs, and a company
