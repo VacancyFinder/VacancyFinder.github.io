@@ -42,22 +42,21 @@ export function Landing() {
             </Link>
             <InstallButton className="btn border border-white/40 text-white hover:bg-white/10" />
           </div>
-          {meta && (
-            <dl className="mt-8 grid max-w-2xl grid-cols-3 gap-3">
-              <div className="rounded-xl bg-white/10 p-3">
-                <dt className="text-xs text-brand-100">Open jobs</dt>
-                <dd className="text-2xl font-bold">{meta.totals.open}</dd>
-              </div>
-              <div className="rounded-xl bg-white/10 p-3">
-                <dt className="text-xs text-brand-100">Companies tracked</dt>
-                <dd className="text-2xl font-bold">{tracked ?? "–"}</dd>
-              </div>
-              <div className="rounded-xl bg-white/10 p-3">
-                <dt className="text-xs text-brand-100">Last updated</dt>
-                <dd className="text-lg font-bold">{hasData ? relativeTime(meta.generatedAt) : "soon"}</dd>
-              </div>
-            </dl>
-          )}
+          {/* Always rendered (with placeholders) so loading the numbers doesn't shift the layout. */}
+          <dl className="mt-8 grid max-w-2xl grid-cols-3 gap-3">
+            <div className="rounded-xl bg-white/10 p-3">
+              <dt className="text-xs text-brand-100">Open jobs</dt>
+              <dd className="text-2xl font-bold">{meta ? meta.totals.open : "–"}</dd>
+            </div>
+            <div className="rounded-xl bg-white/10 p-3">
+              <dt className="text-xs text-brand-100">Companies tracked</dt>
+              <dd className="text-2xl font-bold">{tracked ?? "–"}</dd>
+            </div>
+            <div className="rounded-xl bg-white/10 p-3">
+              <dt className="text-xs text-brand-100">Last updated</dt>
+              <dd className="text-2xl font-bold">{meta ? (hasData ? relativeTime(meta.generatedAt) : "soon") : "–"}</dd>
+            </div>
+          </dl>
         </div>
       </section>
 

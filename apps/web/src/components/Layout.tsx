@@ -20,12 +20,13 @@ function StaleNotice() {
   const { meta } = useData();
   if (!meta || !isStale(meta.generatedAt)) return null;
   const never = Date.parse(meta.generatedAt) === 0;
+  // A fixed toast rather than a banner: it never pushes the page content down (no layout shift).
   return (
     <div
       role="status"
-      className="border-b border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900/50 dark:bg-amber-950/40 dark:text-amber-100"
+      className="fixed inset-x-3 top-16 z-30 mx-auto max-w-xl rounded-lg border border-amber-300 bg-amber-50 text-amber-900 shadow-md dark:border-amber-800 dark:bg-amber-950 dark:text-amber-100"
     >
-      <p className="mx-auto flex max-w-6xl items-center gap-2 px-4 py-2 text-sm">
+      <p className="flex items-center gap-2 px-3 py-2 text-sm">
         <AlertIcon width={16} height={16} />
         {never
           ? "Jobs haven't been collected yet — check back soon."
