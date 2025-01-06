@@ -252,6 +252,11 @@ export function importCompanies(input: ImportInput): ImportResult {
     taken.add(slug);
   }
 
+  // Group slugs share a namespace with company slugs (a job's `company` may be either), so a group
+  // derived from e.g. hayleys.com must not reuse the slug of the company "hayleys".
+  const companySlugs = new Set(drafts.map((d) => d.slug));
+  const groupSlug = (g: string) => (companySlugs.has(g) ? `${g}-group` : g);
+
   // ---- 4. Derive parent groups (shared careers domain, else shared website) -
   const parentOf = new Map<Draft, string>();
   const groupVia = new Map<string, "careers" | "website">();
@@ -266,14 +271,14 @@ export function importCompanies(input: ImportInput): ImportResult {
   };
   for (const [dom, members] of bucket((d) => ownerDomainOf(d.careersUrl))) {
     if (members.length < 2) continue;
-    const g = groupSlugFromDomain(dom);
+    const g = groupSlug(groupSlugFromDomain(dom));
     groupVia.set(g, "careers");
     for (const m of members) parentOf.set(m, g);
   }
   for (const [dom, members] of bucket((d) => ownerDomainOf(d.website))) {
     const ungrouped = members.filter((m) => !parentOf.has(m));
     if (members.length < 2 || ungrouped.length === 0) continue;
-    const g = groupSlugFromDomain(dom);
+    const g = groupSlug(groupSlugFromDomain(dom));
     if (!groupVia.has(g)) groupVia.set(g, "website");
     for (const m of ungrouped) parentOf.set(m, g);
   }
@@ -297,7 +302,7 @@ export function importCompanies(input: ImportInput): ImportResult {
       adapterConfig: prev?.adapterConfig ?? {},
       industry: d.industry,
       cseSymbol: d.cseSymbol,
-      parentGroup: prev?.parentGroup ?? parentOf.get(d) ?? null,
+      parentGroup: (prev?.parentGroup ? groupSlug(prev.parentGroup) : null) ?? parentOf.get(d) ?? null,
       sourceLists: (["tech", "cse", "community"] as const).filter((s) => d.sourceLists.has(s)),
       status,
       active: prev?.active ?? true,
@@ -335,7 +340,7 @@ export function importCompanies(input: ImportInput): ImportResult {
   companies.sort((a, b) => a.slug.localeCompare(b.slug));
 
   // ---- 6. Groups -----------------------------------------------------------
-  const prevGroupNames = new Map(input.existingGroups.map((g) => [g.slug, g.name]));
+  const prevGroupNames = new Map(input.existingGroups.map((g) => [groupSlug(g.slug), g.name]));
   const usedGroups = new Set(companies.map((c) => c.parentGroup).filter((g): g is string => !!g));
   const groups: Group[] = [...usedGroups].sort().map((slug) => ({ slug, name: prevGroupNames.get(slug) ?? groupName(slug) }));
   for (const g of groups) {

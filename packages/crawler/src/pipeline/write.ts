@@ -24,7 +24,6 @@ export interface WriteInput {
   change: ChangesRun | null;
   meta: Meta;
   health: HealthFile;
-  httpCache: Record<string, unknown>;
 }
 
 /** Returns the paths whose content changed. */
@@ -70,6 +69,5 @@ export function writeData(i: WriteInput): string[] {
 
   w("meta.json", pretty(i.meta));
   w("health.json", pretty(i.health));
-  w("http-cache.json", pretty(i.httpCache));
   return changed;
 }

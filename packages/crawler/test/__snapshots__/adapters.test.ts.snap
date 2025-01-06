@@ -2,14 +2,14 @@
 
 exports[`custom adapters on real API responses > Rootcode: drops roles outside Sri Lanka 1`] = `
 [
-  "Associate - Office Administration & Facilities/IT Coordination | Colombo | junior | unspecified | unspecified | admin-customer-service | https://rootcode.ai/careers/associate-office-administration-facilities-it-coordination-4419191",
+  "Associate - Office Administration & Facilities/IT Coordination | Colombo | junior | unspecified | unspecified | cloud-devops,admin-customer-service | https://rootcode.ai/careers/associate-office-administration-facilities-it-coordination-4419191",
   "Growth Executive | Colombo | unspecified | unspecified | unspecified | sales-marketing | https://rootcode.ai/careers/growth-executive-4184980",
   "Intern - Branding & Marketing | Colombo | intern | internship | unspecified | sales-marketing | https://rootcode.ai/careers/intern-branding-marketing-4336240",
   "Intern - Software Engineer Fullstack | Colombo | intern | internship | unspecified | software-engineering | https://rootcode.ai/careers/intern-software-engineer-fullstack-1206830",
   "Marketing Manager | Colombo | manager | unspecified | unspecified | sales-marketing | https://rootcode.ai/careers/marketing-manager-4358660",
   "Senior Software Engineer - Full-Stack (React + .NET) | Colombo | senior | unspecified | unspecified | software-engineering | https://rootcode.ai/careers/senior-software-engineer-full-stack-react-net--4419172",
   "Solutions Architect - AI | Colombo | principal | unspecified | unspecified | software-engineering,data-ai-ml | https://rootcode.ai/careers/solutions-architect-ai-3816312",
-  "Tech Lead - AI | Colombo | lead | unspecified | unspecified | software-engineering,data-ai-ml,cloud-devops | https://rootcode.ai/careers/tech-lead-ai-3636396",
+  "Tech Lead - AI | Colombo | lead | unspecified | unspecified | software-engineering,cloud-devops,data-ai-ml | https://rootcode.ai/careers/tech-lead-ai-3636396",
 ]
 `;
 
@@ -59,8 +59,8 @@ exports[`html adapter on real careers pages > Creative Software 1`] = `
 exports[`html adapter on real careers pages > PickMe 1`] = `
 [
   "Senior Business Analyst – Search Experience | Colombo | senior | unspecified | unspecified | product-project-business | https://pickme.lk/vacancy/senior-business-analyst-search-experience-2/",
-  "Executive – Airport Business | Sri Lanka | unspecified | unspecified | unspecified | operations-logistics | https://pickme.lk/vacancy/executive-airport-business/",
-  "Branch Executive (Gampaha/ Badulla) | Badulla · Gampaha | unspecified | unspecified | unspecified | operations-logistics | https://pickme.lk/vacancy/branch-executive-gampaha-badulla/",
+  "Executive – Airport Business | Sri Lanka | unspecified | unspecified | unspecified | other | https://pickme.lk/vacancy/executive-airport-business/",
+  "Branch Executive (Gampaha/ Badulla) | Badulla · Gampaha | unspecified | unspecified | unspecified | other | https://pickme.lk/vacancy/branch-executive-gampaha-badulla/",
   "Senior Customer Service Analyst | Colombo | senior | unspecified | unspecified | admin-customer-service | https://pickme.lk/vacancy/senior-customer-service-analyst/",
   "Operations Officer – Legal | Colombo | unspecified | unspecified | unspecified | operations-logistics,legal-compliance | https://pickme.lk/vacancy/operations-officer-legal/",
   "Executive – Registration & Driver Care | Colombo | unspecified | unspecified | unspecified | operations-logistics | https://pickme.lk/vacancy/executive-registration-driver-care/",
@@ -85,8 +85,8 @@ exports[`html adapter on real careers pages > WSO2: keeps only Sri Lanka roles 1
   "Marketing Officer - Content Operations Specialist | Sri Lanka | unspecified | full-time | unspecified | sales-marketing,operations-logistics | https://wso2.com/careers/272/2026-09-marketing-officer-content-operations-specialist-sri-lanka",
   "Marketing Officer - Website Design | Sri Lanka | unspecified | full-time | unspecified | ui-ux-design,sales-marketing | https://wso2.com/careers/152/2026-09-marketing-officer-website-design-sri-lanka",
   "Senior Lead - Finance Analyst | Sri Lanka | lead | full-time | unspecified | finance-accounting | https://wso2.com/careers/243/2026-06-senior-lead-finance-analyst-sri-lanka",
-  "Senior Software Engineer - Agent Platform | Sri Lanka | senior | full-time | unspecified | software-engineering,cloud-devops | https://wso2.com/careers/281/2026-09-senior-software-engineer-agent-platform-sri-lanka",
-  "Technical Lead - Agent Platform | Sri Lanka | lead | full-time | unspecified | software-engineering,cloud-devops | https://wso2.com/careers/282/2026-09-technical-lead-agent-platform-sri-lanka",
+  "Senior Software Engineer - Agent Platform | Sri Lanka | senior | full-time | unspecified | software-engineering | https://wso2.com/careers/281/2026-09-senior-software-engineer-agent-platform-sri-lanka",
+  "Technical Lead - Agent Platform | Sri Lanka | lead | full-time | unspecified | software-engineering | https://wso2.com/careers/282/2026-09-technical-lead-agent-platform-sri-lanka",
   "Technical Lead - AI | Sri Lanka | lead | full-time | unspecified | software-engineering,data-ai-ml | https://wso2.com/careers/278/2026-09-technical-lead-ai-sri-lanka",
 ]
 `;

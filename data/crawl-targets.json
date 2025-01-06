@@ -141,15 +141,6 @@
     "parentGroup": null
   },
   {
-    "id": "flatrocktech-com-careers",
-    "canonicalUrl": "https://flatrocktech.com/careers",
-    "adapter": "custom",
-    "companySlugs": [
-      "flat-rock-technology"
-    ],
-    "parentGroup": null
-  },
-  {
     "id": "hayleys-com-careers",
     "canonicalUrl": "https://hayleys.com/careers",
     "adapter": "custom",
@@ -160,7 +151,7 @@
       "hayleys-fibre",
       "hayleys-leisure"
     ],
-    "parentGroup": "hayleys"
+    "parentGroup": "hayleys-group"
   },
   {
     "id": "hccz-fa-em3-oraclecloud-com-hcmui-candidateexperience-en-sites-cx-2-requisitions-location-sri-lanka",

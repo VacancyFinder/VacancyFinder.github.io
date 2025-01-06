@@ -120,7 +120,7 @@ describe("groups and crawl targets", () => {
       .map((g) => g.slug)
       .sort();
     expect(careersGroups).toEqual(
-      ["aitkenspence", "brownsgroup", "cargillsceylon", "dialog", "hayleys", "keells", "lolc", "softlogic"].sort(),
+      ["aitkenspence", "brownsgroup", "cargillsceylon", "dialog", "hayleys-group", "keells", "lolc", "softlogic"].sort(),
     );
   });
 });
@@ -248,5 +248,19 @@ describe("community companies", () => {
     const active = run([...first.companies, { ...community, active: true, adapter: "html", adapterConfig: { listSelector: ".job" } }]);
     expect(bySlug(active.companies, "acme-labs").status).toBe("ready");
     expect(active.targets.some((t) => t.companySlugs.includes("acme-labs"))).toBe(true);
+  });
+});
+
+describe("group slugs never collide with company slugs", () => {
+  it("names the Hayleys group hayleys-group, not hayleys (the company)", () => {
+    const slugs = new Set(first.companies.map((c) => c.slug));
+    for (const g of first.groups) expect(slugs.has(g.slug), g.slug).toBe(false);
+    expect(first.groups.find((g) => g.slug === "hayleys-group")?.name).toBe("Hayleys Group");
+    expect(bySlug(first.companies, "haycarb").parentGroup).toBe("hayleys-group");
+  });
+  it("migrates an existing parentGroup that collides", () => {
+    const old = first.companies.map((c) => (c.parentGroup === "hayleys-group" ? { ...c, parentGroup: "hayleys" } : c));
+    const r = run(old);
+    expect(bySlug(r.companies, "hayleys").parentGroup).toBe("hayleys-group");
   });
 });

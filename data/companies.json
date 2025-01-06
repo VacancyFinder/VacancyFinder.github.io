@@ -1931,8 +1931,8 @@
       "tech"
     ],
     "status": "ready",
-    "active": true,
-    "notes": "Careers page is filled from Flat Rock's own job feed; 8 of 26 global roles were in Colombo at probe time (verified Sep 2026)."
+    "active": false,
+    "notes": "Careers page is filled from admin.flatrocktech.com/wp-admin/admin-ajax.php, which that host's robots.txt disallows; not crawled (verified Sep 2026)."
   },
   {
     "slug": "fortude",
@@ -2093,11 +2093,12 @@
       "kind": "oracle-hcm",
       "host": "emdm.fa.ap1.oraclecloud.com",
       "siteNumber": "CX_23001",
-      "locationFilter": "sri lanka|colombo"
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
     },
     "industry": "materials-chemicals",
     "cseSymbol": "HAYC.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],
@@ -2115,11 +2116,12 @@
       "kind": "oracle-hcm",
       "host": "emdm.fa.ap1.oraclecloud.com",
       "siteNumber": "CX_23001",
-      "locationFilter": "sri lanka|colombo"
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
     },
     "industry": "diversified",
     "cseSymbol": "HAYL.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],
@@ -2137,11 +2139,12 @@
       "kind": "oracle-hcm",
       "host": "emdm.fa.ap1.oraclecloud.com",
       "siteNumber": "CX_23001",
-      "locationFilter": "sri lanka|colombo"
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
     },
     "industry": "apparel-textiles",
     "cseSymbol": "MGT.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],
@@ -2159,11 +2162,12 @@
       "kind": "oracle-hcm",
       "host": "emdm.fa.ap1.oraclecloud.com",
       "siteNumber": "CX_23001",
-      "locationFilter": "sri lanka|colombo"
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
     },
     "industry": "materials-chemicals",
     "cseSymbol": "HEXP.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],
@@ -2181,11 +2185,12 @@
       "kind": "oracle-hcm",
       "host": "emdm.fa.ap1.oraclecloud.com",
       "siteNumber": "CX_23001",
-      "locationFilter": "sri lanka|colombo"
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
     },
     "industry": "hotels-leisure",
     "cseSymbol": "CONN.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],

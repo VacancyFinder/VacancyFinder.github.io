@@ -48,7 +48,7 @@ Ambiguous (kept separate, resolve by hand):
 | Carson Cumberbatch Group (`carsoncumberbatch`) | shared website domain | 4: bukit-darah, carson-cumberbatch, ceylon-guardian-investment-trust, ceylon-investment |
 | Dialog Axiata Group (`dialog`) | shared careers domain | 2: dialog-axiata, dialog-finance |
 | First Capital Group (`firstcapital`) | shared website domain | 2: first-capital-holdings, first-capital-treasuries |
-| Hayleys Group (`hayleys`) | shared careers domain | 5: haycarb, hayleys, hayleys-fabric, hayleys-fibre, hayleys-leisure |
+| Hayleys Group (`hayleys-group`) | shared careers domain | 5: haycarb, hayleys, hayleys-fabric, hayleys-fibre, hayleys-leisure |
 | John Keells Group (`keells`) | shared careers domain | 6: asian-hotels-and-properties, ceylon-cold-stores, john-keells, john-keells-holdings, keells-food-products, octave |
 | Lanka Tiles Group (`lankatiles`) | shared website domain | 2: lanka-tiles, lanka-walltiles |
 | LAUGFS Group (`laugfs`) | shared website domain | 2: laugfs-gas, laugfs-power |
@@ -92,4 +92,4 @@ Check whether these belong to a group that the domain rule can't see.
 
 - companies.json: 296
 - groups.json: 19
-- crawl-targets.json: 38
+- crawl-targets.json: 37

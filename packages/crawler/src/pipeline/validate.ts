@@ -49,6 +49,8 @@ export function validateDataDir(dir: string): string[] {
   if (companies && groups && targets) {
     const slugs = new Set(companies.map((c) => c.slug));
     const groupSlugs = new Set(groups.map((g) => g.slug));
+    for (const g of groupSlugs)
+      if (slugs.has(g)) errors.push(`groups.json: group slug ${g} is also a company slug (jobs would be ambiguous)`);
     for (const c of companies)
       if (c.parentGroup && !groupSlugs.has(c.parentGroup))
         errors.push(`companies.json: ${c.slug} has unknown parentGroup ${c.parentGroup}`);

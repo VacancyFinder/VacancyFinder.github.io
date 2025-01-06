@@ -251,10 +251,9 @@ export async function runCrawl(opts: CrawlOptions = {}): Promise<CrawlSummary> {
 
   const healthState = (h: HealthFile) =>
     JSON.stringify(Object.values(h).map((e) => [e.target, e.consecutiveFailures, e.lastError, e.jobCount, e.suspect]));
-  const changed = writeData({ dataDir: DATA, jobs: diff.jobs, archived: diff.archived, change, meta, health, httpCache: {} });
+  const changed = writeData({ dataDir: DATA, jobs: diff.jobs, archived: diff.archived, change, meta, health });
   writeIfChanged(CACHE, JSON.stringify(httpCache, null, 2) + "\n");
-  const dataChanged =
-    changed.some((p) => !["meta.json", "health.json", "http-cache.json"].includes(p)) || healthState(health) !== healthState(prevHealth);
+  const dataChanged = changed.some((p) => !["meta.json", "health.json"].includes(p)) || healthState(health) !== healthState(prevHealth);
 
   const stamp = now.slice(0, 16).replace("T", " ");
   const message = `data: +${diff.added.length} added, -${diff.closed.length} closed (${stamp} UTC)`;

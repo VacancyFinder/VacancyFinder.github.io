@@ -2,9 +2,9 @@
 
 | | Companies |
 |---|---|
-| Crawled (ready + active) | 40 |
+| Crawled (ready + active) | 39 |
 | Careers page known, not crawled yet (needs-adapter) | 15 |
-| Deliberately not crawled (active: false) | 23 |
+| Deliberately not crawled (active: false) | 24 |
 | Website known, careers page unknown (needs-discovery) | 98 |
 | No website known (needs-research) | 120 |
 | **Total** | **296** |
@@ -29,7 +29,6 @@
 | Dialog Finance PLC | html | dialog.lk/careers links to Dialog's MiHCM career portal; listings are in its HTML (31 roles at probe time, verified Sep 2026). Office buildings are shown instead of towns, so the location is Colombo. |
 | Diesel & Motor Engineering PLC | html | DIMO vacancies page (paginated). Listings past their closing date are dropped — at probe time all 4 had closed (verified Sep 2026). |
 | Digital Mobility Solutions Lanka PLC (PickMe) | html | PickMe's own careers page lists current openings (verified Sep 2026). |
-| Flat Rock Technology | custom: flatrock | Careers page is filled from Flat Rock's own job feed; 8 of 26 global roles were in Colombo at probe time (verified Sep 2026). |
 | Fortude | custom: fortude | careers.fortude.co lists roles from its own job-list endpoint (17 at probe time); Apply goes to Fortude's TalentRecruit ATS (verified Sep 2026). |
 | Haycarb PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
 | Hayleys PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
@@ -64,6 +63,7 @@
 | Ceylon Tobacco Company PLC | ceylontobacco.com from the CSE list is a parked domain (verified Sep 2026); the real careers page needs research. |
 | CodeGen | Not crawled: robots.txt disallows codegen.co.uk/careers (verified Sep 2026). |
 | DFCC Bank PLC | Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page. |
+| Flat Rock Technology | Careers page is filled from admin.flatrocktech.com/wp-admin/admin-ajax.php, which that host's robots.txt disallows; not crawled (verified Sep 2026). |
 | HCLTech | Not crawled: robots.txt disallows hcltech.com/careers (verified Sep 2026). Global portal. |
 | Hela Apparel Holdings PLC | Not crawled: robots.txt disallows the careers page (verified Sep 2026). |
 | IFS | IFS hires in Sri Lanka through SmartRecruiters (ifs1), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026). |

@@ -174,6 +174,7 @@ export const workday: AdapterFn = async (ctx) => {
   const fetchDetails = ctx.config.fetchDetails !== false;
   const api = `https://${host}/wday/cxs/${tenant}/${site}`;
   const jobs: RawJob[] = [];
+  let total = 0; // Workday reports the total only on the first page (later pages say 0).
   for (let offset = 0; offset < 500; offset += 20) {
     const r = await getJson(ctx, `${api}/jobs`, {
       method: "POST",
@@ -209,7 +210,7 @@ export const workday: AdapterFn = async (ctx) => {
         }
       }
     }
-    const total = typeof d.total === "number" ? d.total : 0;
+    if (offset === 0) total = typeof d.total === "number" ? d.total : 0;
     if (page.length < 20 || offset + 20 >= total) break;
   }
   return { jobs };

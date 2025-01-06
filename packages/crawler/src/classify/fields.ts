@@ -3,6 +3,8 @@ import taxonomyJson from "./taxonomy.json" with { type: "json" };
 
 export interface Taxonomy {
   titleWeight: number;
+  /** Department/team names support a field but shouldn't decide it alone. */
+  departmentWeight: number;
   descriptionWeight: number;
   threshold: number;
   fields: Record<string, { terms: string[]; exclude: string[] }>;
@@ -47,14 +49,22 @@ function strip(text: string, exclude: RegExp[]): string {
   return t;
 }
 
-export function scoreFields(title: string, description = "", tax: Taxonomy = DEFAULT_TAX, compiled = DEFAULT): Map<FieldSlug, number> {
+export function scoreFields(
+  title: string,
+  description = "",
+  department = "",
+  tax: Taxonomy = DEFAULT_TAX,
+  compiled = DEFAULT,
+): Map<FieldSlug, number> {
   const scores = new Map<FieldSlug, number>();
   for (const f of compiled) {
     const t = strip(title, f.exclude);
+    const dep = strip(department, f.exclude);
     const d = strip(description, f.exclude);
     let s = 0;
     for (const { re, titleOnly } of f.terms) {
       if (re.test(t)) s += tax.titleWeight;
+      else if (re.test(dep)) s += tax.departmentWeight;
       else if (!titleOnly && re.test(d)) s += tax.descriptionWeight;
     }
     if (s > 0) scores.set(f.field, s);
@@ -81,8 +91,8 @@ export const INDUSTRY_FALLBACK: Partial<Record<IndustrySlug, FieldSlug>> = {
 };
 
 /** Every field scoring >= threshold, best first; else the industry fallback; else ["other"]. */
-export function classifyFields(title: string, description = "", industry?: IndustrySlug): FieldSlug[] {
-  const scores = scoreFields(title, description);
+export function classifyFields(title: string, description = "", industry?: IndustrySlug, department = ""): FieldSlug[] {
+  const scores = scoreFields(title, description, department);
   const hits = [...scores.entries()].filter(([, s]) => s >= DEFAULT_TAX.threshold).sort((a, b) => b[1] - a[1]);
   if (hits.length) return hits.map(([f]) => f);
   const fb = industry ? INDUSTRY_FALLBACK[industry] : undefined;
