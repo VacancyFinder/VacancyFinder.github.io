@@ -9,7 +9,7 @@ exports[`custom adapters on real API responses > Rootcode: drops roles outside S
   "Marketing Manager | Colombo | manager | unspecified | unspecified | sales-marketing | https://rootcode.ai/careers/marketing-manager-4358660",
   "Senior Software Engineer - Full-Stack (React + .NET) | Colombo | senior | unspecified | unspecified | software-engineering | https://rootcode.ai/careers/senior-software-engineer-full-stack-react-net--4419172",
   "Solutions Architect - AI | Colombo | principal | unspecified | unspecified | software-engineering,data-ai-ml | https://rootcode.ai/careers/solutions-architect-ai-3816312",
-  "Tech Lead - AI | Colombo | lead | unspecified | unspecified | software-engineering,cloud-devops,data-ai-ml | https://rootcode.ai/careers/tech-lead-ai-3636396",
+  "Tech Lead - AI | Colombo | lead | unspecified | unspecified | software-engineering,data-ai-ml | https://rootcode.ai/careers/tech-lead-ai-3636396",
 ]
 `;
 
@@ -19,7 +19,7 @@ exports[`html adapter on real careers pages > Abans Finance: grouped by departme
   "Senior Executive/Executive/Junior Executive/Trainee Executive – Marketing | Sri Lanka | trainee | unspecified | unspecified | sales-marketing | https://abansfinance.lk/careers/#job-senior-executive-executive-junior-executive-trainee-executive-marketing-2",
   "Senior Executive/Executive/Junior Executive/Trainee Executive – Marketing | Sri Lanka | trainee | unspecified | unspecified | sales-marketing | https://abansfinance.lk/careers/#job-senior-executive-executive-junior-executive-trainee-executive-marketing",
   "Trainee Executive – Sales & Marketing | Sri Lanka | trainee | unspecified | unspecified | sales-marketing | https://abansfinance.lk/careers/#job-trainee-executive-sales-marketing",
-  "Assistant Manager / Senior Executive / Executive – Fixed Deposits | Sri Lanka | manager | unspecified | unspecified | banking-insurance,sales-marketing | https://abansfinance.lk/careers/#job-assistant-manager-senior-executive-executive-fixed-deposits-2",
+  "Assistant Manager / Senior Executive / Executive – Fixed Deposits | Sri Lanka | manager | unspecified | unspecified | banking-insurance | https://abansfinance.lk/careers/#job-assistant-manager-senior-executive-executive-fixed-deposits-2",
   "Assistant Manager / Senior Executive / Executive – Fixed Deposits | Sri Lanka | manager | unspecified | unspecified | banking-insurance | https://abansfinance.lk/careers/#job-assistant-manager-senior-executive-executive-fixed-deposits",
 ]
 `;

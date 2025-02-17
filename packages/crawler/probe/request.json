@@ -1,6 +1,6 @@
 {
   "note": "Edit this file (on a claude/** branch) to re-run the probe workflow. Run 4: no probing; real crawl preview only (probe/run-crawl marker).",
-  "run": 5,
+  "run": 6,
   "targets": [],
   "render": false,
   "urls": []

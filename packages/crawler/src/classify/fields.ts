@@ -49,25 +49,32 @@ function strip(text: string, exclude: RegExp[]): string {
   return t;
 }
 
+export interface FieldScore {
+  score: number;
+  /** Part of the score from the title and department (not the description). */
+  direct: number;
+}
+
 export function scoreFields(
   title: string,
   description = "",
   department = "",
   tax: Taxonomy = DEFAULT_TAX,
   compiled = DEFAULT,
-): Map<FieldSlug, number> {
-  const scores = new Map<FieldSlug, number>();
+): Map<FieldSlug, FieldScore> {
+  const scores = new Map<FieldSlug, FieldScore>();
   for (const f of compiled) {
     const t = strip(title, f.exclude);
     const dep = strip(department, f.exclude);
     const d = strip(description, f.exclude);
     let s = 0;
+    let direct = 0;
     for (const { re, titleOnly } of f.terms) {
-      if (re.test(t)) s += tax.titleWeight;
-      else if (re.test(dep)) s += tax.departmentWeight;
+      if (re.test(t)) direct += tax.titleWeight;
+      else if (re.test(dep)) direct += tax.departmentWeight;
       else if (!titleOnly && re.test(d)) s += tax.descriptionWeight;
     }
-    if (s > 0) scores.set(f.field, s);
+    if (s + direct > 0) scores.set(f.field, { score: s + direct, direct });
   }
   return scores;
 }
@@ -90,10 +97,18 @@ export const INDUSTRY_FALLBACK: Partial<Record<IndustrySlug, FieldSlug>> = {
   "consumer-goods-retail": "sales-marketing",
 };
 
-/** Every field scoring >= threshold, best first; else the industry fallback; else ["other"]. */
+/**
+ * Every field scoring >= threshold, best first; else the industry fallback; else ["other"].
+ * Once the title or department points at a field, fields found only in the description are ignored:
+ * descriptions often open with company boilerplate ("one of Sri Lanka's first engineering companies…")
+ * that says nothing about the role itself.
+ */
 export function classifyFields(title: string, description = "", industry?: IndustrySlug, department = ""): FieldSlug[] {
-  const scores = scoreFields(title, description, department);
-  const hits = [...scores.entries()].filter(([, s]) => s >= DEFAULT_TAX.threshold).sort((a, b) => b[1] - a[1]);
+  const scores = [...scoreFields(title, description, department).entries()];
+  const anyDirect = scores.some(([, s]) => s.direct > 0);
+  const hits = scores
+    .filter(([, s]) => s.score >= DEFAULT_TAX.threshold && (!anyDirect || s.direct > 0))
+    .sort((a, b) => b[1].score - a[1].score);
   if (hits.length) return hits.map(([f]) => f);
   const fb = industry ? INDUSTRY_FALLBACK[industry] : undefined;
   return [fb ?? "other"];
