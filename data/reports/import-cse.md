@@ -11,24 +11,27 @@
 | Empty website | 118 |
 | Unique careers pages | 41 |
 
-Tech list: 28 companies, 16 with a known website.
+Tech list: 28 companies, 26 with a known website.
 
 ## Tech ↔ CSE overlaps (matched by domain)
 
 - Dialog Axiata → Dialog Axiata PLC (DIAL.N0000) via `dialog.lk`
 - PickMe → Digital Mobility Solutions Lanka PLC (PickMe) (PKME.N0000) via `pickme.lk`
 
+Ambiguous (kept separate, resolve by hand):
+- Octave on `keells.com`: Asian Hotels & Properties PLC, Ceylon Cold Stores PLC, John Keells Holdings PLC, John Keells PLC, Keells Food Products PLC
+
 ## Company status
 
 | Status | Companies |
 |---|---|
-| ready | 0 |
-| needs-adapter | 60 |
-| needs-discovery | 106 |
-| needs-research | 130 |
+| ready | 40 |
+| needs-adapter | 38 |
+| needs-discovery | 98 |
+| needs-research | 120 |
 | disabled | 0 |
 
-`needs-discovery`: 106 companies across 88 unique website domains (discovery probes each domain once).
+`needs-discovery`: 98 companies across 80 unique website domains (discovery probes each domain once).
 
 ## Parent groups
 
@@ -45,8 +48,8 @@ Tech list: 28 companies, 16 with a known website.
 | Carson Cumberbatch Group (`carsoncumberbatch`) | shared website domain | 4: bukit-darah, carson-cumberbatch, ceylon-guardian-investment-trust, ceylon-investment |
 | Dialog Axiata Group (`dialog`) | shared careers domain | 2: dialog-axiata, dialog-finance |
 | First Capital Group (`firstcapital`) | shared website domain | 2: first-capital-holdings, first-capital-treasuries |
-| Hayleys Group (`hayleys`) | shared careers domain | 5: haycarb, hayleys, hayleys-fabric, hayleys-fibre, hayleys-leisure |
-| John Keells Group (`keells`) | shared careers domain | 5: asian-hotels-and-properties, ceylon-cold-stores, john-keells, john-keells-holdings, keells-food-products |
+| Hayleys Group (`hayleys-group`) | shared careers domain | 5: haycarb, hayleys, hayleys-fabric, hayleys-fibre, hayleys-leisure |
+| John Keells Group (`keells`) | shared careers domain | 6: asian-hotels-and-properties, ceylon-cold-stores, john-keells, john-keells-holdings, keells-food-products, octave |
 | Lanka Tiles Group (`lankatiles`) | shared website domain | 2: lanka-tiles, lanka-walltiles |
 | LAUGFS Group (`laugfs`) | shared website domain | 2: laugfs-gas, laugfs-power |
 | Lion Brewery Group (`lionbeer`) | shared website domain | 2: ceylon-beverage-holdings, lion-brewery-ceylon |
@@ -62,9 +65,31 @@ Check whether these belong to a group that the domain rule can't see.
 - haycarb: website `haycarb.com`, careers `hayleys.com`
 - hayleys-fabric: website `hayleysfabric.com`, careers `hayleys.com`
 - softlogic-life-insurance: website `softlogiclife.lk`, careers `softlogic.lk`
+- rootcode: website `rootcode.io`, careers `rootcode.ai`
+- ascentic: website `ascentic.se`, careers `career.ascentic.se`
+- ifs: website `ifs.com`, careers `careers.smartrecruiters.com`
+- sysco-labs: website `syscolabs.lk`, careers `wd5.myworkdaysite.com`
+- lseg: website `lseg.com`, careers `lseg.wd3.myworkdayjobs.com`
+- zyner-io: website `zyner.io`, careers `careers.zyner.io`
+- swivel-group: website `swivelgroup.com.au`, careers `careers.smartrecruiters.com`
+- pearson: website `pearson.com`, careers `hccz.fa.em3.oraclecloud.com`
+- fortude: website `fortude.co`, careers `careers.fortude.co`
+
+## Hand edits preserved over source values
+
+- ascentic.notes
+- ifs.notes
+- lseg.notes
+- millennium-it.notes
+- swivel-group.notes
+- codegen.notes
+- pearson.notes
+- zillione.notes
+- octave.notes
+- hcltech.notes
 
 ## Output
 
 - companies.json: 296
 - groups.json: 19
-- crawl-targets.json: 41
+- crawl-targets.json: 37

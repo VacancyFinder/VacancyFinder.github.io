@@ -1,0 +1,337 @@
+{
+ "items": [
+  {
+   "SearchId": 1,
+   "Keyword": null,
+   "CorrectedKeyword": null,
+   "UseExactKeywordFlag": false,
+   "SuggestedKeyword": null,
+   "ExecuteSpellCheckFlag": true,
+   "Location": "Sri Lanka",
+   "LocationId": null,
+   "Radius": 0,
+   "RadiusUnit": "MI",
+   "SelectedTitlesFacet": null,
+   "SelectedCategoriesFacet": null,
+   "SelectedPostingDatesFacet": null,
+   "SelectedLocationsFacet": null,
+   "LastSelectedFacet": null,
+   "Facets": "LOCATIONS;WORK_LOCATIONS;WORKPLACE_TYPES;TITLES;CATEGORIES;ORGANIZATIONS;POSTING_DATES;FLEX_FIELDS",
+   "Offset": 0,
+   "Limit": 25,
+   "SortBy": "POSTING_DATES_DESC",
+   "TotalJobsCount": 3,
+   "Latitude": null,
+   "Longitude": null,
+   "SiteNumber": "CX_2",
+   "JobFamilyId": null,
+   "PostingStartDate": null,
+   "PostingEndDate": null,
+   "SelectedWorkLocationsFacet": null,
+   "RequisitionId": null,
+   "CandidateNumber": null,
+   "WorkLocationZipCode": null,
+   "WorkLocationCountryCode": null,
+   "SelectedFlexFieldsFacets": null,
+   "OrganizationId": null,
+   "SelectedOrganizationsFacet": null,
+   "UserTargetFacetName": null,
+   "UserTargetFacetInputTerm": null,
+   "HotJobFlag": null,
+   "WorkplaceType": null,
+   "SelectedWorkplaceTypesFacet": null,
+   "BotQRShortCode": null,
+   "requisitionList": [
+    {
+     "Id": "26069",
+     "Title": "Manager, Program Management",
+     "PostedDate": "2026-09-26",
+     "PostingEndDate": null,
+     "Language": "US",
+     "PrimaryLocationCountry": "LK",
+     "GeographyId": 300000000258323,
+     "HotJobFlag": false,
+     "WorkplaceTypeCode": "ORA_HYBRID",
+     "JobFamily": null,
+     "JobFunction": null,
+     "WorkerType": null,
+     "ContractType": null,
+     "ManagerLevel": null,
+     "JobSchedule": null,
+     "JobShift": null,
+     "JobType": null,
+     "StudyLevel": null,
+     "DomesticTravelRequired": null,
+     "InternationalTravelRequired": null,
+     "WorkDurationYears": null,
+     "WorkDurationMonths": null,
+     "WorkHours": null,
+     "WorkDays": null,
+     "LegalEmployer": null,
+     "BusinessUnit": null,
+     "Department": null,
+     "Organization": null,
+     "BusinessUnitId": 300000003682240,
+     "LegalEmployerId": 300000008274025,
+     "OrganizationId": 1,
+     "MediaThumbURL": null,
+     "ShortDescriptionStr": "",
+     "PrimaryLocation": "Sri Lanka",
+     "Distance": 1790380800000,
+     "TrendingFlag": true,
+     "BeFirstToApplyFlag": false,
+     "Relevancy": 7,
+     "WorkplaceType": "Hybrid",
+     "ExternalQualificationsStr": null,
+     "ExternalResponsibilitiesStr": null,
+     "secondaryLocations": [],
+     "otherWorkLocations": [],
+     "workLocation": [
+      {
+       "LocationId": null,
+       "LocationName": null,
+       "AddressLine1": null,
+       "AddressLine2": null,
+       "AddressLine3": null,
+       "AddressLine4": null,
+       "Building": null,
+       "TownOrCity": null,
+       "PostalCode": null,
+       "Country": null,
+       "Region1": null,
+       "Region2": null,
+       "Region3": null,
+       "Latitude": null,
+       "Longitude": null
+      }
+     ],
+     "requisitionFlexFields": []
+    },
+    {
+     "Id": "25844",
+     "Title": "Advanced Specialist, Project Management",
+     "PostedDate": "2026-09-04",
+     "PostingEndDate": null,
+     "Language": "US",
+     "PrimaryLocationCountry": "LK",
+     "GeographyId": 300000000258323,
+     "HotJobFlag": false,
+     "WorkplaceTypeCode": "ORA_HYBRID",
+     "JobFamily": null,
+     "JobFunction": null,
+     "WorkerType": null,
+     "ContractType": null,
+     "ManagerLevel": null,
+     "JobSchedule": null,
+     "JobShift": null,
+     "JobType": null,
+     "StudyLevel": null,
+     "DomesticTravelRequired": null,
+     "InternationalTravelRequired": null,
+     "WorkDurationYears": null,
+     "WorkDurationMonths": null,
+     "WorkHours": null,
+     "WorkDays": null,
+     "LegalEmployer": null,
+     "BusinessUnit": null,
+     "Department": null,
+     "Organization": null,
+     "BusinessUnitId": 300000003682240,
+     "LegalEmployerId": 300000008274025,
+     "OrganizationId": 1,
+     "MediaThumbURL": null,
+     "ShortDescriptionStr": "",
+     "PrimaryLocation": "Sri Lanka",
+     "Distance": 1788480000000,
+     "TrendingFlag": true,
+     "BeFirstToApplyFlag": false,
+     "Relevancy": 2,
+     "WorkplaceType": "Hybrid",
+     "ExternalQualificationsStr": null,
+     "ExternalResponsibilitiesStr": null,
+     "secondaryLocations": [],
+     "otherWorkLocations": [],
+     "workLocation": [
+      {
+       "LocationId": null,
+       "LocationName": null,
+       "AddressLine1": null,
+       "AddressLine2": null,
+       "AddressLine3": null,
+       "AddressLine4": null,
+       "Building": null,
+       "TownOrCity": null,
+       "PostalCode": null,
+       "Country": null,
+       "Region1": null,
+       "Region2": null,
+       "Region3": null,
+       "Latitude": null,
+       "Longitude": null
+      }
+     ],
+     "requisitionFlexFields": []
+    },
+    {
+     "Id": "25064",
+     "Title": "Senior Quality Assurance Engineer",
+     "PostedDate": "2026-07-20",
+     "PostingEndDate": null,
+     "Language": "US",
+     "PrimaryLocationCountry": "LK",
+     "GeographyId": 300000000258323,
+     "HotJobFlag": false,
+     "WorkplaceTypeCode": "ORA_HYBRID",
+     "JobFamily": null,
+     "JobFunction": null,
+     "WorkerType": null,
+     "ContractType": null,
+     "ManagerLevel": null,
+     "JobSchedule": null,
+     "JobShift": null,
+     "JobType": null,
+     "StudyLevel": null,
+     "DomesticTravelRequired": null,
+     "InternationalTravelRequired": null,
+     "WorkDurationYears": null,
+     "WorkDurationMonths": null,
+     "WorkHours": null,
+     "WorkDays": null,
+     "LegalEmployer": null,
+     "BusinessUnit": null,
+     "Department": null,
+     "Organization": null,
+     "BusinessUnitId": 300000003682240,
+     "LegalEmployerId": 300000008274025,
+     "OrganizationId": 1,
+     "MediaThumbURL": null,
+     "ShortDescriptionStr": "",
+     "PrimaryLocation": "Sri Lanka",
+     "Distance": 1784505600000,
+     "TrendingFlag": true,
+     "BeFirstToApplyFlag": false,
+     "Relevancy": 2,
+     "WorkplaceType": "Hybrid",
+     "ExternalQualificationsStr": null,
+     "ExternalResponsibilitiesStr": null,
+     "secondaryLocations": [],
+     "otherWorkLocations": [],
+     "workLocation": [
+      {
+       "LocationId": null,
+       "LocationName": null,
+       "AddressLine1": null,
+       "AddressLine2": null,
+       "AddressLine3": null,
+       "AddressLine4": null,
+       "Building": null,
+       "TownOrCity": null,
+       "PostalCode": null,
+       "Country": null,
+       "Region1": null,
+       "Region2": null,
+       "Region3": null,
+       "Latitude": null,
+       "Longitude": null
+      }
+     ],
+     "requisitionFlexFields": []
+    }
+   ],
+   "categoriesFacet": [
+    {
+     "Id": 300003569269240,
+     "Name": "Enterprise",
+     "TotalCount": 2
+    },
+    {
+     "Id": 300000003770041,
+     "Name": "Technology",
+     "TotalCount": 1
+    }
+   ],
+   "locationsFacet": [
+    {
+     "Id": 300000000258323,
+     "Name": "Sri Lanka",
+     "TotalCount": 3
+    }
+   ],
+   "postingDatesFacet": [
+    {
+     "Id": 7,
+     "Name": "Less than 7 days",
+     "TotalCount": 1
+    },
+    {
+     "Id": 30,
+     "Name": "Less than 30 days",
+     "TotalCount": 2
+    },
+    {
+     "Id": 31,
+     "Name": "Greater than 30 days",
+     "TotalCount": 1
+    }
+   ],
+   "titlesFacet": [
+    {
+     "Id": "1006",
+     "Name": "Program Management",
+     "TotalCount": 2
+    },
+    {
+     "Id": "1502",
+     "Name": "Engineering",
+     "TotalCount": 1
+    }
+   ],
+   "workLocationsFacet": [
+    {
+     "Id": 300001040942799,
+     "Name": "LK-Colombo-200 Nawala Maga One",
+     "TotalCount": 3
+    }
+   ],
+   "flexFieldsFacet": [],
+   "organizationsFacet": [
+    {
+     "Id": 1,
+     "Name": "Pearson",
+     "TotalCount": 3
+    }
+   ],
+   "workplaceTypesFacet": [
+    {
+     "Id": "ORA_HYBRID",
+     "Name": "Hybrid",
+     "TotalCount": 3
+    }
+   ]
+  }
+ ],
+ "count": 1,
+ "hasMore": false,
+ "limit": 200,
+ "offset": 0,
+ "links": [
+  {
+   "rel": "self",
+   "href": "https://hccz.fa.em3.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions",
+   "name": "recruitingCEJobRequisitions",
+   "kind": "collection"
+  },
+  {
+   "rel": "action",
+   "href": "https://hccz.fa.em3.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/action/getRequisitionsLocationCoordinates",
+   "name": "getRequisitionsLocationCoordinates",
+   "kind": "other"
+  },
+  {
+   "rel": "action",
+   "href": "https://hccz.fa.em3.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/action/getRequisitionDetailsForMap",
+   "name": "getRequisitionDetailsForMap",
+   "kind": "other"
+  }
+ ]
+}

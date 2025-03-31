@@ -1,0 +1,465 @@
+{
+ "Status": {
+  "IsSuccessfull": false,
+  "Message": null
+ },
+ "Vacancys": [
+  {
+   "Vacancy": "Junior Executive I - Card Underwriting ",
+   "OpenDate": "/Date(1790101800000)/",
+   "CloseDate": "/Date(1790792999000)/",
+   "BizUnit": "Card Underwriting & Verification",
+   "Location": null,
+   "IsActive": 0,
+   "ReqId": "000042",
+   "AdvId": 37,
+   "AppCount": 57,
+   "AppliedCount": 0,
+   "ShowJP": true,
+   "JPMode": 0,
+   "JPEmp": "MAAwADQAOAAyADIA",
+   "JPEmpName": "Amesha de Silva ",
+   "JPEmpDsg": "Executive - Talent Acquisition",
+   "JpEmpTel": "2145",
+   "JpEmpEmail": "ameshas@unionb.com",
+   "DaysAgo": 8,
+   "CorporateTitle": "Junior Executive I",
+   "CTcode": "000028",
+   "EmployeementType": "Permanent",
+   "EmpTypeCode": null,
+   "AdvertismentDesc": null,
+   "SelectedFunctionalRoles": null,
+   "IsFavourite": false,
+   "IsTaskAssigned": false,
+   "SkillMacthingPercentage": 0
+  },
+  {
+   "Vacancy": "Collection Advisor ",
+   "OpenDate": "/Date(1790101800000)/",
+   "CloseDate": "/Date(1790792999000)/",
+   "BizUnit": "Retail Recoveries",
+   "Location": null,
+   "IsActive": 0,
+   "ReqId": "000044",
+   "AdvId": 39,
+   "AppCount": 0,
+   "AppliedCount": 0,
+   "ShowJP": false,
+   "JPMode": 0,
+   "JPEmp": null,
+   "JPEmpName": null,
+   "JPEmpDsg": null,
+   "JpEmpTel": null,
+   "JpEmpEmail": null,
+   "DaysAgo": 8,
+   "CorporateTitle": "FTC - Recoveries",
+   "CTcode": "000017",
+   "EmployeementType": "Contract",
+   "EmpTypeCode": null,
+   "AdvertismentDesc": null,
+   "SelectedFunctionalRoles": null,
+   "IsFavourite": false,
+   "IsTaskAssigned": false,
+   "SkillMacthingPercentage": 0
+  }
+ ],
+ "JobTypes": [
+  {
+   "JobTypeName": "Permanent",
+   "JobTypeCode": "000001",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Expatriate",
+   "JobTypeCode": "000002",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Contract",
+   "JobTypeCode": "000003",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Temporary",
+   "JobTypeCode": "000004",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Probation",
+   "JobTypeCode": "000005",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Others",
+   "JobTypeCode": "000006",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Trainee",
+   "JobTypeCode": "000007",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Trainee Officer",
+   "JobTypeCode": "000008",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Management Trainee",
+   "JobTypeCode": "000009",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Business Development Assistant",
+   "JobTypeCode": "000010",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "test",
+   "JobTypeCode": "000011",
+   "IsJobTypeSelected": false
+  },
+  {
+   "JobTypeName": "Intern",
+   "JobTypeCode": "000012",
+   "IsJobTypeSelected": false
+  }
+ ],
+ "FunctionalRoles": [
+  {
+   "Key": "",
+   "Value": "All"
+  },
+  {
+   "Key": "000001",
+   "Value": "Budgeted"
+  },
+  {
+   "Key": "000003",
+   "Value": "Replacement"
+  },
+  {
+   "Key": "000002",
+   "Value": "Un-budgeted"
+  }
+ ],
+ "JobAlertCorporateTitles": [
+  {
+   "Key": "",
+   "Value": "Select...",
+   "Other": ""
+  },
+  {
+   "Key": "000008",
+   "Value": "Assistant Manager",
+   "Other": "000008"
+  },
+  {
+   "Key": "000004",
+   "Value": "Assistant Vice President",
+   "Other": "000005"
+  },
+  {
+   "Key": "000010",
+   "Value": "Banking Assistant",
+   "Other": "000010"
+  },
+  {
+   "Key": "000001",
+   "Value": "Chief Executive Officer",
+   "Other": "000012"
+  },
+  {
+   "Key": "000005",
+   "Value": "Chief Manager",
+   "Other": "000004"
+  },
+  {
+   "Key": "000002",
+   "Value": "Chief Operating Officer",
+   "Other": "000012"
+  },
+  {
+   "Key": "000018",
+   "Value": "Executive",
+   "Other": "000019"
+  },
+  {
+   "Key": "000033",
+   "Value": "Executive",
+   "Other": "000031"
+  },
+  {
+   "Key": "000034",
+   "Value": "Executive Officer",
+   "Other": "000032"
+  },
+  {
+   "Key": "000009",
+   "Value": "Executive Officer",
+   "Other": "000009"
+  },
+  {
+   "Key": "000016",
+   "Value": "Fixed Term Contract",
+   "Other": "000017"
+  },
+  {
+   "Key": "000023",
+   "Value": "Fixed Term Contract  - Intern",
+   "Other": "000017"
+  },
+  {
+   "Key": "000021",
+   "Value": "Fixed Term Contract – Senior staff",
+   "Other": "000021"
+  },
+  {
+   "Key": "000037",
+   "Value": "FTC - Assistant Manager",
+   "Other": "000040"
+  },
+  {
+   "Key": "000038",
+   "Value": "FTC - Assistant Vice President",
+   "Other": "000044"
+  },
+  {
+   "Key": "000039",
+   "Value": "FTC - Chief Manager",
+   "Other": "000039"
+  },
+  {
+   "Key": "000019",
+   "Value": "FTC - Contact Center",
+   "Other": "000020"
+  },
+  {
+   "Key": "000040",
+   "Value": "FTC - Executive Officer",
+   "Other": "000043"
+  },
+  {
+   "Key": "000046",
+   "Value": "FTC - Junior Executive Trainee",
+   "Other": "000046"
+  },
+  {
+   "Key": "000036",
+   "Value": "FTC - Leasing",
+   "Other": "000034"
+  },
+  {
+   "Key": "000045",
+   "Value": "FTC - Leasing",
+   "Other": "000045"
+  },
+  {
+   "Key": "000041",
+   "Value": "FTC - Manager",
+   "Other": "000035"
+  },
+  {
+   "Key": "000017",
+   "Value": "FTC - Recoveries",
+   "Other": "000018"
+  },
+  {
+   "Key": "000015",
+   "Value": "FTC - Sales",
+   "Other": "000016"
+  },
+  {
+   "Key": "000042",
+   "Value": "FTC - Senior Manager",
+   "Other": "000036"
+  },
+  {
+   "Key": "000043",
+   "Value": "FTC - Senior Vice President",
+   "Other": "000037"
+  },
+  {
+   "Key": "000044",
+   "Value": "FTC - Vice President",
+   "Other": "000042"
+  },
+  {
+   "Key": "000024",
+   "Value": "Intern",
+   "Other": "000017"
+  },
+  {
+   "Key": "000022",
+   "Value": "Intern",
+   "Other": "000022"
+  },
+  {
+   "Key": "000025",
+   "Value": "Intern - TBA",
+   "Other": "000023"
+  },
+  {
+   "Key": "000028",
+   "Value": "Junior Executive I",
+   "Other": "000026"
+  },
+  {
+   "Key": "000029",
+   "Value": "Junior Executive II",
+   "Other": "000027"
+  },
+  {
+   "Key": "000032",
+   "Value": "Junior Executive II",
+   "Other": "000030"
+  },
+  {
+   "Key": "000030",
+   "Value": "Junior Executive Trainee",
+   "Other": "000028"
+  },
+  {
+   "Key": "000011",
+   "Value": "Junior Executive Trainee",
+   "Other": "000011"
+  },
+  {
+   "Key": "000031",
+   "Value": "Junior Executive I",
+   "Other": "000029"
+  },
+  {
+   "Key": "000014",
+   "Value": "Management Trainee",
+   "Other": "000015"
+  },
+  {
+   "Key": "000007",
+   "Value": "Manager",
+   "Other": "000007"
+  },
+  {
+   "Key": "000035",
+   "Value": "Senior Executive Officer",
+   "Other": "000033"
+  },
+  {
+   "Key": "000006",
+   "Value": "Senior Manager",
+   "Other": "000006"
+  },
+  {
+   "Key": "000026",
+   "Value": "Senior Vice President",
+   "Other": "000024"
+  },
+  {
+   "Key": "000012",
+   "Value": "Support Staff",
+   "Other": "000013"
+  },
+  {
+   "Key": "000027",
+   "Value": "Test",
+   "Other": "000025"
+  },
+  {
+   "Key": "000013",
+   "Value": "Trainee Officer",
+   "Other": "000014"
+  },
+  {
+   "Key": "000003",
+   "Value": "Vice President",
+   "Other": "000003"
+  }
+ ],
+ "JobAlertEmploymentTypes": [
+  {
+   "Key": "",
+   "Value": "Select..."
+  },
+  {
+   "Key": "000010",
+   "Value": "Business Development Assistant"
+  },
+  {
+   "Key": "000003",
+   "Value": "Contract"
+  },
+  {
+   "Key": "000002",
+   "Value": "Expatriate"
+  },
+  {
+   "Key": "000012",
+   "Value": "Intern"
+  },
+  {
+   "Key": "000009",
+   "Value": "Management Trainee"
+  },
+  {
+   "Key": "000006",
+   "Value": "Others"
+  },
+  {
+   "Key": "000001",
+   "Value": "Permanent"
+  },
+  {
+   "Key": "000005",
+   "Value": "Probation"
+  },
+  {
+   "Key": "000004",
+   "Value": "Temporary"
+  },
+  {
+   "Key": "000011",
+   "Value": "test"
+  },
+  {
+   "Key": "000007",
+   "Value": "Trainee"
+  },
+  {
+   "Key": "000008",
+   "Value": "Trainee Officer"
+  }
+ ],
+ "JobAlertFunctionalRoles": [
+  {
+   "Key": "",
+   "Value": "Select..."
+  },
+  {
+   "Key": "000001",
+   "Value": "Budgeted"
+  },
+  {
+   "Key": "000003",
+   "Value": "Replacement"
+  },
+  {
+   "Key": "000002",
+   "Value": "Un-budgeted"
+  }
+ ],
+ "JobAlertFrequencies": [
+  {
+   "Key": "",
+   "Value": "Select..."
+  },
+  {
+   "Key": "1",
+   "Value": "Weekly"
+  },
+  {
+   "Key": "2",
+   "Value": "Monthly"
+  }
+ ],
+ "SkillMatchedAdverticements": null
+}

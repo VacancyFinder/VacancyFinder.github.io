@@ -100,8 +100,13 @@ describe("groups and crawl targets", () => {
     const keells = first.targets.find((t) => t.canonicalUrl === "https://keells.com/careers");
     expect(keells?.companySlugs).toHaveLength(5);
     expect(keells?.parentGroup).toBe("keells");
-    expect(first.targets).toHaveLength(41);
-    expect(new Set(first.targets.map((t) => t.id)).size).toBe(41);
+    // The spec's 60 CSE careers URLs collapse to 41 pages; tech-only careers pages add their own targets.
+    const bySlugMap = new Map(first.companies.map((c) => [c.slug, c]));
+    const cseTargets = first.targets.filter((t) => t.companySlugs.some((s) => bySlugMap.get(s)?.cseSymbol));
+    expect(cseTargets).toHaveLength(41);
+    const techOnly = first.companies.filter((c) => !c.cseSymbol && c.careersUrl).length;
+    expect(first.targets).toHaveLength(41 + techOnly);
+    expect(new Set(first.targets.map((t) => t.id)).size).toBe(first.targets.length);
   });
 
   it("gives single-company targets no parent group", () => {
@@ -110,9 +115,12 @@ describe("groups and crawl targets", () => {
   });
 
   it("derives the expected careers-page groups", () => {
-    const careersGroups = first.report.groups.filter((g) => g.via === "careers").map((g) => g.slug).sort();
+    const careersGroups = first.report.groups
+      .filter((g) => g.via === "careers")
+      .map((g) => g.slug)
+      .sort();
     expect(careersGroups).toEqual(
-      ["aitkenspence", "brownsgroup", "cargillsceylon", "dialog", "hayleys", "keells", "lolc", "softlogic"].sort(),
+      ["aitkenspence", "brownsgroup", "cargillsceylon", "dialog", "hayleys-group", "keells", "lolc", "softlogic"].sort(),
     );
   });
 });
@@ -132,7 +140,13 @@ describe("idempotency and hand edits", () => {
     );
     const r = run(edited);
     const h = bySlug(r.companies, "hayleys");
-    expect(h).toMatchObject({ adapter: "html", adapterConfig: { listSelector: ".job" }, notes: "checked by hand", active: false, status: "ready" });
+    expect(h).toMatchObject({
+      adapter: "html",
+      adapterConfig: { listSelector: ".job" },
+      notes: "checked by hand",
+      active: false,
+      status: "ready",
+    });
   });
 
   it("keeps a careers URL added by hand to a needs-discovery company", () => {
@@ -207,5 +221,46 @@ describe("slug collisions", () => {
     const slugOf = (list: Company[], name: string) => list.find((c) => c.name === name)?.slug;
     for (const t of twins) expect(slugOf(r2.companies, t.name)).toBe(slugOf(r1.companies, t.name));
     expect(() => CompaniesFile.parse(r2.companies)).not.toThrow();
+  });
+});
+
+describe("community companies", () => {
+  it("keeps hand-added community entries across re-imports and crawls them", () => {
+    const community: Company = {
+      slug: "acme-labs",
+      name: "Acme Labs",
+      website: "https://acmelabs.lk",
+      careersUrl: "https://acmelabs.lk/careers",
+      adapter: "none",
+      adapterConfig: {},
+      industry: "technology",
+      cseSymbol: null,
+      parentGroup: null,
+      sourceLists: ["community"],
+      status: "needs-adapter",
+      active: false,
+      notes: "Requested in #12",
+    };
+    const r = run([...first.companies, community]);
+    expect(bySlug(r.companies, "acme-labs")).toMatchObject({ active: false, notes: "Requested in #12", status: "needs-adapter" });
+    // Inactive: no crawl target until someone reviews and activates it.
+    expect(r.targets.some((t) => t.companySlugs.includes("acme-labs"))).toBe(false);
+    const active = run([...first.companies, { ...community, active: true, adapter: "html", adapterConfig: { listSelector: ".job" } }]);
+    expect(bySlug(active.companies, "acme-labs").status).toBe("ready");
+    expect(active.targets.some((t) => t.companySlugs.includes("acme-labs"))).toBe(true);
+  });
+});
+
+describe("group slugs never collide with company slugs", () => {
+  it("names the Hayleys group hayleys-group, not hayleys (the company)", () => {
+    const slugs = new Set(first.companies.map((c) => c.slug));
+    for (const g of first.groups) expect(slugs.has(g.slug), g.slug).toBe(false);
+    expect(first.groups.find((g) => g.slug === "hayleys-group")?.name).toBe("Hayleys Group");
+    expect(bySlug(first.companies, "haycarb").parentGroup).toBe("hayleys-group");
+  });
+  it("migrates an existing parentGroup that collides", () => {
+    const old = first.companies.map((c) => (c.parentGroup === "hayleys-group" ? { ...c, parentGroup: "hayleys" } : c));
+    const r = run(old);
+    expect(bySlug(r.companies, "hayleys").parentGroup).toBe("hayleys-group");
   });
 });

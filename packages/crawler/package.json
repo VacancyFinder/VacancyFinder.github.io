@@ -4,10 +4,31 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "import:cse": "tsx src/import/cli.ts",
+    "import:cse": "tsx src/import/cli.ts && tsx src/import/coverage.ts",
+    "discover": "tsx src/discover/cli.ts",
+    "probe": "tsx src/probe/run.ts",
+    "crawl": "tsx src/pipeline/run.ts",
     "typecheck": "tsc -p tsconfig.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "validate:data": "tsx src/pipeline/validate.ts",
+    "notify": "tsx src/alerts/notify.ts",
+    "request:company": "tsx src/import/request.ts",
+    "report:coverage": "tsx src/import/coverage.ts"
   },
-  "dependencies": { "@rekiya/shared": "workspace:*", "zod": "^3.23.8" },
-  "devDependencies": { "tsx": "^4.19.2", "vitest": "^2.1.8", "@types/node": "^20.17.0" }
+  "dependencies": {
+    "@rekiya/shared": "workspace:*",
+    "cheerio": "^1.2.0",
+    "domhandler": "^6.0.1",
+    "entities": "^8.1.0",
+    "p-limit": "^7.3.3",
+    "robots-parser": "^3.0.1",
+    "undici": "^7.30.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "playwright": "1.56.1",
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.8"
+  }
 }

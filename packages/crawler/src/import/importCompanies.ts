@@ -192,9 +192,7 @@ export function importCompanies(input: ImportInput): ImportResult {
         industry: "technology",
         cseSymbol: null,
         sourceLists: new Set<SourceList>(["tech"]),
-        notes: ambiguous
-          ? [t.notes, "Ambiguous domain overlap with CSE list — resolve by hand."].filter(Boolean).join(" ")
-          : t.notes,
+        notes: ambiguous ? [t.notes, "Ambiguous domain overlap with CSE list — resolve by hand."].filter(Boolean).join(" ") : t.notes,
       });
     }
   }
@@ -203,17 +201,13 @@ export function importCompanies(input: ImportInput): ImportResult {
   const existingBySymbol = new Map(input.existing.filter((c) => c.cseSymbol).map((c) => [c.cseSymbol!, c]));
   const existingBySlug = new Map(input.existing.map((c) => [c.slug, c]));
   // Tech-only entries have no symbol; their name is the stable key (two names may share a slug).
-  const existingTechByName = new Map(
-    input.existing.filter((c) => !c.cseSymbol).map((c) => [c.name.trim().toLowerCase(), c]),
-  );
+  const existingTechByName = new Map(input.existing.filter((c) => !c.cseSymbol).map((c) => [c.name.trim().toLowerCase(), c]));
   // Resolved once, before any slug is changed, so later lookups cannot drift.
   const prevOf = new Map<Draft, Company>();
   const claimed = new Set<Company>();
   for (const d of drafts) {
     const prev =
-      (d.cseSymbol
-        ? existingBySymbol.get(d.cseSymbol)
-        : existingTechByName.get(d.name.trim().toLowerCase())) ?? existingBySlug.get(d.slug);
+      (d.cseSymbol ? existingBySymbol.get(d.cseSymbol) : existingTechByName.get(d.name.trim().toLowerCase())) ?? existingBySlug.get(d.slug);
     // Never let two drafts inherit the same existing record.
     if (prev && !claimed.has(prev)) {
       prevOf.set(d, prev);
@@ -258,6 +252,11 @@ export function importCompanies(input: ImportInput): ImportResult {
     taken.add(slug);
   }
 
+  // Group slugs share a namespace with company slugs (a job's `company` may be either), so a group
+  // derived from e.g. hayleys.com must not reuse the slug of the company "hayleys".
+  const companySlugs = new Set(drafts.map((d) => d.slug));
+  const groupSlug = (g: string) => (companySlugs.has(g) ? `${g}-group` : g);
+
   // ---- 4. Derive parent groups (shared careers domain, else shared website) -
   const parentOf = new Map<Draft, string>();
   const groupVia = new Map<string, "careers" | "website">();
@@ -272,14 +271,14 @@ export function importCompanies(input: ImportInput): ImportResult {
   };
   for (const [dom, members] of bucket((d) => ownerDomainOf(d.careersUrl))) {
     if (members.length < 2) continue;
-    const g = groupSlugFromDomain(dom);
+    const g = groupSlug(groupSlugFromDomain(dom));
     groupVia.set(g, "careers");
     for (const m of members) parentOf.set(m, g);
   }
   for (const [dom, members] of bucket((d) => ownerDomainOf(d.website))) {
     const ungrouped = members.filter((m) => !parentOf.has(m));
     if (members.length < 2 || ungrouped.length === 0) continue;
-    const g = groupSlugFromDomain(dom);
+    const g = groupSlug(groupSlugFromDomain(dom));
     if (!groupVia.has(g)) groupVia.set(g, "website");
     for (const m of ungrouped) parentOf.set(m, g);
   }
@@ -303,12 +302,12 @@ export function importCompanies(input: ImportInput): ImportResult {
       adapterConfig: prev?.adapterConfig ?? {},
       industry: d.industry,
       cseSymbol: d.cseSymbol,
-      parentGroup: prev?.parentGroup ?? parentOf.get(d) ?? null,
-      sourceLists: (["tech", "cse"] as const).filter((s) => d.sourceLists.has(s)),
+      parentGroup: (prev?.parentGroup ? groupSlug(prev.parentGroup) : null) ?? parentOf.get(d) ?? null,
+      sourceLists: (["tech", "cse", "community"] as const).filter((s) => d.sourceLists.has(s)),
       status,
       active: prev?.active ?? true,
     };
-    const notes = prev ? prev.notes : d.notes;
+    const notes = prev?.notes ?? d.notes;
     if (notes) base.notes = notes;
     if (prev?.logo) base.logo = prev.logo;
     if (prev) {
@@ -326,10 +325,22 @@ export function importCompanies(input: ImportInput): ImportResult {
     }
     return base;
   });
+  // Community entries (added by hand / issue form) are in no source list: keep them, recomputing status.
+  const produced = new Set(companies.map((c) => c.slug));
+  for (const prev of input.existing) {
+    if (produced.has(prev.slug) || !prev.sourceLists.includes("community")) continue;
+    let status: CompanyStatus;
+    if (prev.status === "disabled") status = "disabled";
+    else if (prev.careersUrl) status = prev.adapter === "none" ? "needs-adapter" : "ready";
+    else if (prev.website) status = "needs-discovery";
+    else status = "needs-research";
+    companies.push({ ...prev, status });
+    produced.add(prev.slug);
+  }
   companies.sort((a, b) => a.slug.localeCompare(b.slug));
 
   // ---- 6. Groups -----------------------------------------------------------
-  const prevGroupNames = new Map(input.existingGroups.map((g) => [g.slug, g.name]));
+  const prevGroupNames = new Map(input.existingGroups.map((g) => [groupSlug(g.slug), g.name]));
   const usedGroups = new Set(companies.map((c) => c.parentGroup).filter((g): g is string => !!g));
   const groups: Group[] = [...usedGroups].sort().map((slug) => ({ slug, name: prevGroupNames.get(slug) ?? groupName(slug) }));
   for (const g of groups) {

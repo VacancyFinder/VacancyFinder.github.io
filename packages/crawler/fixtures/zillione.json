@@ -1,0 +1,82 @@
+{
+ "success": true,
+ "count": 3,
+ "data": [
+  {
+   "id": 11,
+   "category": "Business Development",
+   "title": "Business Development Manager",
+   "location": "Sri Lanka",
+   "responsibilities": [
+    "Drive business growth by identifying, developing, and converting new business opportunities.",
+    "Build and nurture strong, long-term relationships with clients, partners, and key stakeholders.",
+    "Conduct market and competitor research to identify new trends, customer needs, and emerging opportunities.",
+    "Develop, execute, and monitor strategic business development plans aligned with company objectives.",
+    "Collaborate closely with internal teams (Sales, Marketing, Product, Technical) to ensure smooth execution of business strategies.",
+    "Prepare and deliver compelling business proposals, pitches, and presentations to senior management and clients.",
+    "Track sales pipelines, forecasting, and performance metrics to support effective decision-making."
+   ],
+   "idealCandidate": [
+    "Bachelor's degree in Business, Marketing, Management, or a related field.",
+    "3–5 years of proven experience in Business Development, Sales, or Account Management, preferably within the IT or Technology Solutions industry.",
+    "Strong understanding of market dynamics, B2B sales cycles, and enterprise technology solutions.",
+    "Excellent communication, negotiation, and presentation skills.",
+    "Strong analytical skills with the ability to translate data into actionable insights.",
+    "Proficiency in CRM systems and Microsoft Office Suite.",
+    "Demonstrated ability to work independently, manage multiple priorities, and deliver results within deadlines."
+   ],
+   "isActive": true,
+   "createdAt": "2026-02-07T16:29:54.095Z",
+   "updatedAt": "2026-02-07T16:29:54.095Z"
+  },
+  {
+   "id": 10,
+   "category": "Quality Assurance",
+   "title": "Intern – Quality Assurance",
+   "location": "Sri Lanka",
+   "responsibilities": [
+    "Collaborate with the Product Engineering team to understand project requirements.",
+    "Assist in creating and maintaining test plans, test cases, and test result reports.",
+    "Execute manual and automated test cases to ensure product quality.",
+    "Identify, document, and track bugs using industry-standard bug tracking tools.",
+    "Share updates on progress, challenges, and findings with respective teams.",
+    "Partner with cross-functional teams to drive quality improvements.",
+    "Learn and apply QA best practices, tools, and methodologies throughout the development lifecycle."
+   ],
+   "idealCandidate": [
+    "Undergraduates or individuals genuinely interested in Quality Assurance or Computer Science.",
+    "Candidates who can commit full-time for 12 months.",
+    "Detail-oriented learners with strong analytical and problem-solving skills.",
+    "Passionate individuals eager to grow, adapt, and learn new technologies."
+   ],
+   "isActive": true,
+   "createdAt": "2026-02-07T16:29:54.087Z",
+   "updatedAt": "2026-02-07T16:29:54.087Z"
+  },
+  {
+   "id": 9,
+   "category": "Customer Service",
+   "title": "Customer Service Executive",
+   "location": "Sri Lanka",
+   "responsibilities": [
+    "Respond promptly to customer inquiries via phone, email, and live chat.",
+    "Provide accurate information about products and services in a professional manner.",
+    "Record and maintain detailed logs of customer interactions and transactions.",
+    "Conduct timely follow-ups to ensure resolution and satisfaction.",
+    "Escalate unresolved issues to relevant departments for further investigation.",
+    "Collaborate with internal teams to address customer needs effectively."
+   ],
+   "idealCandidate": [
+    "Proven experience in a customer service or related role.",
+    "Excellent verbal and written communication skills.",
+    "Strong problem-solving abilities and attention to detail.",
+    "Ability to remain calm and professional in high-pressure situations.",
+    "Proficiency in customer service software and CRM systems.",
+    "Flexibility to adapt in a fast-paced and dynamic environment."
+   ],
+   "isActive": true,
+   "createdAt": "2026-02-07T16:29:54.080Z",
+   "updatedAt": "2026-03-27T12:31:29.616Z"
+  }
+ ]
+}
