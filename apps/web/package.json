@@ -12,6 +12,7 @@
     "e2e": "playwright test"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5",
     "@rekiya/shared": "workspace:^",
     "minisearch": "^7",
     "react": "^18",
