@@ -1,10 +1,12 @@
 import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
-import { INDUSTRY_LABELS } from "@rekiya/shared/constants";
+import { FIELD_LABELS, INDUSTRY_LABELS, type FieldSlug } from "@rekiya/shared/constants";
 import { CompanyBadge } from "../components/CompanyBadge";
-import { ExternalIcon } from "../components/Icons";
-import { JobCard } from "../components/JobCard";
+import { ExternalIcon, EyeOffIcon } from "../components/Icons";
+import { JobList } from "../components/JobList";
 import { SUGGEST_URL } from "../components/Layout";
+import { JobListSkeleton, PageSkeleton } from "../components/Skeleton";
+import { useToast } from "../components/Toast";
 import { useApp } from "../lib/app-state";
 import { useData, useJobs } from "../lib/data";
 import { sortNewest } from "../lib/filters";
@@ -14,8 +16,9 @@ import { trackingState } from "./Companies";
 
 export function Company() {
   const { slug = "" } = useParams();
-  const { directory, companyBySlug, employer, companyMatches } = useData();
-  const { saved, toggleSave, isNew } = useApp();
+  const { directory, companyBySlug, companyMatches } = useData();
+  const { hiddenCompanies, toggleHiddenCompany } = useApp();
+  const toast = useToast();
   const { jobs } = useJobs("all");
   const c = companyBySlug.get(slug);
   const group = directory?.groups.find((g) => g.slug === slug);
@@ -28,7 +31,13 @@ export function Company() {
   );
   const list = useMemo(() => sortNewest((jobs ?? []).filter((j) => companyMatches(j.company, slug))), [jobs, slug, companyMatches]);
 
-  if (!directory) return <p role="status">Loading…</p>;
+  const byField = useMemo(() => {
+    const m = new Map<FieldSlug, number>();
+    for (const j of list) for (const f of j.fields) m.set(f, (m.get(f) ?? 0) + 1);
+    return [...m.entries()].sort((a, b) => b[1] - a[1]);
+  }, [list]);
+
+  if (!directory) return <PageSkeleton />;
   if (!c && !group) {
     return (
       <div>
@@ -44,6 +53,15 @@ export function Company() {
   const careers = safeHref(c?.careersUrl);
   const site = safeHref(c?.website);
   const parent = c?.parentGroup ? directory.groups.find((g) => g.slug === c.parentGroup) : null;
+  const isHiddenCo = hiddenCompanies.includes(slug);
+  const toggleHide = () => {
+    toggleHiddenCompany(slug);
+    toast(
+      isHiddenCo
+        ? { message: `${name}'s jobs will show in your feed again` }
+        : { message: `${name}'s jobs are hidden from your feed`, action: { label: "Undo", onClick: () => toggleHiddenCompany(slug) } },
+    );
+  };
 
   return (
     <div>
@@ -84,6 +102,14 @@ export function Company() {
                 {hostOf(site)} <ExternalIcon width={16} height={16} />
               </a>
             )}
+            {list.length > 0 && (
+              <Link to={`/jobs?company=${slug}`} className="btn-secondary">
+                Filter these jobs
+              </Link>
+            )}
+            <button type="button" className="btn-ghost" aria-pressed={isHiddenCo} onClick={toggleHide}>
+              <EyeOffIcon width={16} height={16} /> {isHiddenCo ? "Hidden from feed — show again" : "Hide from my feed"}
+            </button>
           </div>
         </div>
       </div>
@@ -139,22 +165,32 @@ export function Company() {
         {parent && list.some((j) => j.company === parent.slug) && (
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Includes jobs posted on the shared {parent.name} careers page.</p>
         )}
-        {!jobs && <p role="status">Loading jobs…</p>}
-        {jobs && list.length === 0 && <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">No open jobs right now.</p>}
-        <ul className="mt-3 grid gap-3 xl:grid-cols-2">
-          {list.map((j) => (
-            <li key={j.id}>
-              <JobCard
-                job={j}
-                employer={employer(j.company)}
-                isNew={isNew(j)}
-                saved={!!saved[j.id]}
-                applied={!!saved[j.id]?.applied}
-                onToggleSave={toggleSave}
-              />
-            </li>
-          ))}
-        </ul>
+        {byField.length > 1 && (
+          <ul className="mt-3 flex flex-wrap gap-1.5" aria-label="Open jobs by field">
+            {byField.map(([f, n]) => (
+              <li key={f}>
+                <Link to={`/jobs?company=${slug}&fields=${f}`} className="pill pill-off">
+                  {FIELD_LABELS[f]} <span className="muted">{n}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+        {!jobs && (
+          <div className="mt-3">
+            <JobListSkeleton rows={3} />
+          </div>
+        )}
+        {jobs && list.length === 0 && (
+          <p className="card muted mt-3 p-4 text-sm">
+            No open jobs right now. Save a search for this company from the{" "}
+            <Link to={`/jobs?company=${slug}`} className="link">
+              job feed
+            </Link>{" "}
+            to see new ones as soon as they're posted.
+          </p>
+        )}
+        <JobList jobs={list} className="mt-3 xl:grid-cols-2" allowHide={false} />
       </section>
     </div>
   );
