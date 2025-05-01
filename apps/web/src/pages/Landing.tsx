@@ -11,7 +11,9 @@ import { useApp } from "../lib/app-state";
 import { useData, useJobs } from "../lib/data";
 import { sortNewest } from "../lib/filters";
 import { relativeTime } from "../lib/format";
-import { usePageTitle } from "../lib/usePageTitle";
+import { fieldPath, HOME_META } from "../lib/paths";
+import { usePrivatePage, useSeo, SITE_URL } from "../lib/seo";
+import { faqLd, FAQ_TEXT, organizationLd, websiteLd } from "../lib/structured-data";
 
 const POPULAR = ["Software engineer", "Intern", "Accountant", "Data", "Marketing", "HR"];
 
@@ -71,7 +73,7 @@ function HeroSearch() {
   const [q, setQ] = useState("");
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    nav(q.trim() ? `/jobs?q=${encodeURIComponent(q.trim())}` : "/jobs");
+    nav(q.trim() ? `/jobs/?q=${encodeURIComponent(q.trim())}` : "/jobs/");
   };
   return (
     <form role="search" onSubmit={submit} className="mt-6 max-w-2xl">
@@ -101,7 +103,7 @@ function HeroSearch() {
         {POPULAR.map((p) => (
           <Link
             key={p}
-            to={`/jobs?q=${encodeURIComponent(p)}`}
+            to={`/jobs/?q=${encodeURIComponent(p)}`}
             className="inline-flex min-h-[32px] items-center rounded-full border border-white/25 px-3 text-white hover:bg-white/10"
           >
             {p}
@@ -113,9 +115,13 @@ function HeroSearch() {
 }
 
 export function Landing() {
-  usePageTitle("");
   const { prefs } = useApp();
   const { meta, directory, employer } = useData();
+  useSeo({
+    ...HOME_META(meta?.totals.open ?? 0, meta?.totals.companiesWithJobs ?? 0),
+    path: "/",
+    jsonLd: [websiteLd(SITE_URL), organizationLd(SITE_URL), faqLd(FAQ_TEXT)],
+  });
   const { jobs } = useJobs("all");
   const tracked = directory?.companies.filter((c) => c.status === "ready" && c.active).length;
   const hasData = meta && Date.parse(meta.generatedAt) > 0;
@@ -137,20 +143,20 @@ export function Landing() {
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(251,191,36,0.18),transparent_45%),radial-gradient(circle_at_10%_90%,rgba(134,169,216,0.25),transparent_40%)]"
         />
         <div className="container-page relative pb-14 pt-10 sm:pb-16 sm:pt-14">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber-300">Sri Lanka job search</p>
+          <p className="text-sm font-semibold uppercase tracking-widest text-amber-300">Let us do the searching. You do the applying.</p>
           <h1 className="mt-2 max-w-3xl text-3xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-            Let us do the searching. You do the applying.
+            Latest job vacancies in Sri Lanka
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-brand-100">
-            Every open vacancy from the career pages of Sri Lankan companies — CSE-listed firms and tech employers — in one place, sorted by
-            field and experience level.
+            Every open job from the career pages of Sri Lankan companies — CSE-listed firms and leading tech employers — in one place,
+            updated every 3 hours and sorted by field and experience level.
           </p>
           <HeroSearch />
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link to={prefs.onboarded ? "/jobs" : "/onboarding"} className="btn bg-amber-400 text-brand-950 hover:bg-amber-300">
+            <Link to={prefs.onboarded ? "/jobs/" : "/onboarding/"} className="btn bg-amber-400 text-brand-950 hover:bg-amber-300">
               {prefs.onboarded ? "See my jobs" : "Get started"}
             </Link>
-            <Link to="/jobs" className="btn border border-white/40 text-white hover:bg-white/10">
+            <Link to="/jobs/" className="btn border border-white/40 text-white hover:bg-white/10">
               Browse all jobs
             </Link>
             <InstallButton className="btn border border-white/40 text-white hover:bg-white/10" />
@@ -180,7 +186,7 @@ export function Landing() {
             <h2 id="latest-h" className="text-xl font-bold sm:text-2xl">
               Latest jobs
             </h2>
-            <Link to="/jobs" className="link inline-flex items-center gap-1 text-sm">
+            <Link to="/jobs/" className="link inline-flex items-center gap-1 text-sm">
               View all <ChevronRightIcon width={16} height={16} />
             </Link>
           </div>
@@ -200,7 +206,7 @@ export function Landing() {
           <ul className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {TECH_FIELD_SLUGS.map((f) => (
               <li key={f}>
-                <Link to={`/jobs?fields=${f}`} className="card card-hover flex min-h-[72px] items-center gap-3 p-3">
+                <Link to={fieldPath(f)} className="card card-hover flex min-h-[72px] items-center gap-3 p-3">
                   <span className="min-w-0 flex-1">
                     <span className="block font-semibold">{FIELD_LABELS[f]}</span>
                     <span className="muted block truncate text-sm">{FIELD_DESCRIPTIONS[f]}</span>
@@ -213,7 +219,7 @@ export function Landing() {
           <ul className="mt-3 flex flex-wrap gap-2" aria-label="More fields">
             {EXTENDED_FIELD_SLUGS.filter((f) => f !== "other").map((f) => (
               <li key={f}>
-                <Link to={`/jobs?fields=${f}`} className="pill pill-off">
+                <Link to={fieldPath(f)} className="pill pill-off">
                   {FIELD_LABELS[f]} <span className="muted">{fieldCount(f)}</span>
                 </Link>
               </li>
@@ -227,7 +233,7 @@ export function Landing() {
               <h2 id="co-h" className="text-xl font-bold sm:text-2xl">
                 Top hiring companies
               </h2>
-              <Link to="/companies" className="link inline-flex items-center gap-1 text-sm">
+              <Link to="/companies/" className="link inline-flex items-center gap-1 text-sm">
                 All {directory ? directory.companies.length : ""} companies <ChevronRightIcon width={16} height={16} />
               </Link>
             </div>
@@ -296,7 +302,7 @@ export function Landing() {
             <a href={SUGGEST_URL} className="btn-primary" rel="noopener">
               Suggest a careers page
             </a>
-            <Link to="/companies" className="btn-secondary">
+            <Link to="/companies/" className="btn-secondary">
               Browse the company directory
             </Link>
           </div>
@@ -307,14 +313,14 @@ export function Landing() {
 }
 
 export function NotFound() {
-  usePageTitle("Page not found");
+  usePrivatePage("Page not found");
   return (
     <div className="py-12 text-center">
       <p className="text-5xl font-extrabold text-brand-800 dark:text-brand-300">404</p>
       <h1 className="mt-2 text-2xl font-bold">Page not found</h1>
       <p className="muted mt-2">That page doesn't exist or has moved.</p>
       <div className="mt-6 flex justify-center gap-2">
-        <Link to="/jobs" className="btn-primary">
+        <Link to="/jobs/" className="btn-primary">
           Browse jobs
         </Link>
         <Link to="/" className="btn-secondary">
