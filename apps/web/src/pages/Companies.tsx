@@ -7,7 +7,8 @@ import { SUGGEST_URL } from "../components/Layout";
 import { PageSkeleton } from "../components/Skeleton";
 import { useData } from "../lib/data";
 import type { DirectoryCompany } from "../lib/types";
-import { usePageTitle } from "../lib/usePageTitle";
+import { COMPANIES_META } from "../lib/paths";
+import { useSeo } from "../lib/seo";
 
 type Show = "all" | "tracked" | "soon";
 
@@ -28,8 +29,8 @@ function Status({ c }: { c: DirectoryCompany }) {
 }
 
 export function Companies() {
-  usePageTitle("Companies");
   const { directory, meta, error } = useData();
+  useSeo({ ...COMPANIES_META(directory?.companies.length ?? 0), path: "/companies/" });
   const [params, setParams] = useSearchParams();
   const q = (params.get("q") ?? "").toLowerCase();
   const show = (["all", "tracked", "soon"].includes(params.get("show") ?? "") ? params.get("show") : "all") as Show;

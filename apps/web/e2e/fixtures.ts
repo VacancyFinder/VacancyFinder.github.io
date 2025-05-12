@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import type { Page } from "@playwright/test";
 import type { Directory, Job, Meta } from "../src/lib/types";
 
@@ -8,7 +9,8 @@ let n = 0;
 function job(p: Partial<Job> & Pick<Job, "title" | "company" | "fields">): Job {
   n++;
   return {
-    id: n.toString(16).padStart(40, "0"),
+    // Real ids are sha1 hashes; so are these (job URLs use the first 12 hex chars).
+    id: createHash("sha1").update(`job-${n}`).digest("hex"),
     industry: "technology",
     seniority: "unspecified",
     type: "full-time",

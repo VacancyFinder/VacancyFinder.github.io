@@ -2,15 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rekiya — Sri Lanka jobs from company career pages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Jobs in Sri Lanka — Latest Vacancies Updated Every 3 Hours | Rekiya</title>
     <meta
       name="description"
-      content="Let us do the searching. You do the applying. Open vacancies from Sri Lankan company career pages, sorted by field and seniority."
+      content="Search the latest job vacancies in Sri Lanka from employers' own career pages — IT, software, banking, finance, marketing, engineering, HR and more. Updated every 3 hours. Free, no sign-up."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://vacancyfinder.github.io/" />
+    <meta name="application-name" content="Rekiya" />
+    <meta name="author" content="Rekiya" />
+    <meta
+      name="keywords"
+      content="jobs in Sri Lanka, job vacancies Sri Lanka, Sri Lanka jobs, IT jobs Sri Lanka, Colombo jobs, careers Sri Lanka, රැකියා, வேலைவாய்ப்பு"
+    />
+    <meta name="geo.region" content="LK" />
+    <meta name="geo.placename" content="Sri Lanka" />
     <meta name="theme-color" content="#123760" />
     <meta name="color-scheme" content="light dark" />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-title" content="Rekiya" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
     <link
       rel="preload"
       as="font"
@@ -18,29 +32,159 @@
       crossorigin
       href="./node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2"
     />
-    <link rel="apple-touch-icon" href="./icon-192.png" />
-    <link rel="canonical" href="https://vacancyfinder.github.io/" />
+    <link rel="alternate" type="text/plain" title="Rekiya summary for AI assistants" href="/llms.txt" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Rekiya — Sri Lanka jobs" />
-    <meta property="og:description" content="Open vacancies from Sri Lankan company career pages, in one place." />
-    <meta property="og:url" content="https://vacancyfinder.github.io/" />
     <meta property="og:site_name" content="Rekiya" />
     <meta property="og:locale" content="en_LK" />
-    <meta property="og:image" content="https://vacancyfinder.github.io/icon-512.png" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Rekiya — Sri Lanka jobs" />
-    <meta name="twitter:description" content="Open vacancies from Sri Lankan company career pages, in one place." />
+    <meta property="og:title" content="Jobs in Sri Lanka — Latest Vacancies Updated Every 3 Hours | Rekiya" />
+    <meta
+      property="og:description"
+      content="The latest job vacancies in Sri Lanka from employers' own career pages, updated every 3 hours."
+    />
+    <meta property="og:url" content="https://vacancyfinder.github.io/" />
+    <meta property="og:image" content="https://vacancyfinder.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rekiya — latest job vacancies in Sri Lanka" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jobs in Sri Lanka — Latest Vacancies Updated Every 3 Hours | Rekiya" />
+    <meta
+      name="twitter:description"
+      content="The latest job vacancies in Sri Lanka from employers' own career pages, updated every 3 hours."
+    />
+    <meta name="twitter:image" content="https://vacancyfinder.github.io/og-image.png" />
     <script>
-      // Apply the saved theme before first paint (no flash).
-      try {
-        var t = JSON.parse(localStorage.getItem("rekiya.theme.v1") || '"system"');
-        var dark = t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
-        if (dark) document.documentElement.classList.add("dark");
-      } catch (e) {}
+      // Before first paint: saved theme (no flash), and whether the prerendered content belongs to this URL.
+      // The offline cache serves one HTML file for every route, so a mismatch shows the splash instead.
+      (function () {
+        var d = document.documentElement;
+        try {
+          var t = JSON.parse(localStorage.getItem("rekiya.theme.v1") || '"system"');
+          if (t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches)) d.classList.add("dark");
+        } catch (e) {}
+        var norm = function (p) {
+          return (p || "").replace(/\/+$/, "") || "/";
+        };
+        if (!d.dataset.pr || norm(d.dataset.pr) !== norm(location.pathname) || location.hash.indexOf("#/") === 0)
+          d.classList.add("pr-miss");
+      })();
     </script>
+    <style>
+      /* Boot preloader: a progress bar while the app starts, and a splash when there's nothing prerendered to show. */
+      #boot-bar {
+        position: fixed;
+        inset: 0 0 auto 0;
+        height: 3px;
+        z-index: 60;
+        overflow: hidden;
+        background: rgba(18, 55, 96, 0.15);
+      }
+      #boot-bar::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 40%;
+        background: linear-gradient(90deg, #fbbf24, #86a9d8);
+        animation: boot-bar 1.1s ease-in-out infinite;
+      }
+      @keyframes boot-bar {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(250%);
+        }
+      }
+      #boot-splash {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        background: #f8fafc;
+        color: #123760;
+        font:
+          600 15px/1.4 system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+      }
+      .dark #boot-splash {
+        background: #020617;
+        color: #d9e5f4;
+      }
+      #boot-splash img {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(18, 55, 96, 0.25);
+        animation: boot-pulse 1.4s ease-in-out infinite;
+      }
+      #boot-splash .dots {
+        display: flex;
+        gap: 6px;
+      }
+      #boot-splash .dots i {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: currentColor;
+        opacity: 0.25;
+        animation: boot-dot 1s ease-in-out infinite;
+      }
+      #boot-splash .dots i:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      #boot-splash .dots i:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      @keyframes boot-pulse {
+        50% {
+          transform: scale(1.06);
+        }
+      }
+      @keyframes boot-dot {
+        50% {
+          opacity: 1;
+          transform: translateY(-3px);
+        }
+      }
+      html.pr-miss #boot-splash {
+        display: flex;
+      }
+      html.pr-miss #prerender {
+        visibility: hidden;
+      }
+      html.app-ready #boot-bar,
+      html.app-ready #boot-splash {
+        display: none;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #boot-bar::before,
+        #boot-splash img,
+        #boot-splash .dots i {
+          animation: none;
+        }
+      }
+    </style>
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
-    <noscript><p style="padding: 16px">Rekiya needs JavaScript to load and filter jobs.</p></noscript>
+    <div id="boot-bar" aria-hidden="true"></div>
+    <div id="boot-splash" role="status" aria-live="polite">
+      <img src="/favicon.svg" alt="" width="64" height="64" />
+      <span>Finding the latest jobs in Sri Lanka…</span>
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    </div>
+    <noscript>
+      <p style="padding: 16px">
+        Rekiya works best with JavaScript. You can still browse the job pages and <a href="/sitemap.xml">sitemap</a>.
+      </p>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

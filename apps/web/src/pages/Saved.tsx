@@ -12,12 +12,13 @@ import { downloadFile, formatDate, relativeDays, safeHref, toCsv } from "../lib/
 import { APP_STATUSES, APP_STATUS_LABELS, type AppStatus, type SavedJob } from "../lib/storage";
 import type { Job } from "../lib/types";
 import { useJobActions } from "../lib/useJobActions";
-import { usePageTitle } from "../lib/usePageTitle";
+import { jobPath } from "../lib/paths";
+import { usePrivatePage } from "../lib/seo";
 
 type Tab = AppStatus | "all";
 
 export function Saved() {
-  usePageTitle("Saved jobs");
+  usePrivatePage("Saved jobs");
   const [params, setParams] = useSearchParams();
   const tab = ((["all", ...APP_STATUSES] as string[]).includes(params.get("status") ?? "") ? params.get("status") : "all") as Tab;
   const { saved } = useApp();
@@ -98,7 +99,7 @@ export function Saved() {
             <p className="muted mx-auto mt-1 max-w-md text-sm">
               Tap the bookmark on any job to save it. Then track each application from “Saved” to “Offer”, add notes, and export the list.
             </p>
-            <Link to="/jobs" className="btn-primary mt-5">
+            <Link to="/jobs/" className="btn-primary mt-5">
               Browse jobs
             </Link>
           </div>
@@ -267,7 +268,7 @@ function SavedSearches({ jobs }: { jobs: Job[] | null }) {
       {searches.length === 0 ? (
         <p className="muted mt-2 text-sm">
           Filter the{" "}
-          <Link to="/jobs" className="link">
+          <Link to="/jobs/" className="link">
             job feed
           </Link>{" "}
           and press “Save search”. We'll count new matches here.
@@ -283,7 +284,7 @@ function SavedSearches({ jobs }: { jobs: Job[] | null }) {
                   className="-mx-2 flex min-h-[44px] min-w-0 flex-1 flex-col items-start justify-center rounded-lg px-2 text-left hover:bg-slate-100 dark:hover:bg-slate-800"
                   onClick={() => {
                     markSearchSeen(s.id);
-                    nav(`/jobs?${s.params}`);
+                    nav(`/jobs/?${s.params}`);
                   }}
                 >
                   <span className="w-full truncate text-sm font-medium">{s.name}</span>
@@ -333,7 +334,10 @@ function RecentlyViewed() {
         <ul className="mt-2 grid gap-1">
           {recent.slice(0, 8).map((r) => (
             <li key={r.id}>
-              <Link to={`/job/${r.id}`} className="-mx-2 block rounded-lg px-2 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800">
+              <Link
+                to={jobPath(r, employer(r.company).name)}
+                className="-mx-2 block rounded-lg px-2 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800"
+              >
                 <span className="block truncate text-sm font-medium">{r.title}</span>
                 <span className="muted block truncate text-xs">
                   {employer(r.company).name} · {relativeDays(r.at)}

@@ -117,8 +117,7 @@ export function downloadFile(name: string, content: string, type: string): void 
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-/** Absolute link to an in-app route (hash routing), for sharing. */
+/** Absolute link to an in-app route, for sharing. */
 export function appUrl(path: string): string {
-  const base = `${window.location.origin}${import.meta.env.BASE_URL}`;
-  return `${base}#${path.startsWith("/") ? path : `/${path}`}`;
+  return `${window.location.origin}${path.startsWith("/") ? path : `/${path}`}`;
 }

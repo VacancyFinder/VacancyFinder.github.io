@@ -15,27 +15,57 @@ import { appUrl, cleanSnippet, formatDate, hostOf, relativeTime, safeHref } from
 import { APP_STATUSES, APP_STATUS_LABELS, type AppStatus } from "../lib/storage";
 import type { Job } from "../lib/types";
 import { useJobActions } from "../lib/useJobActions";
-import { usePageTitle } from "../lib/usePageTitle";
+import { fieldPath, jobKeyFromParam, jobPath, JOB_META, matchesJobKey, SITE_NAME } from "../lib/paths";
+import { SITE_URL, useSeo } from "../lib/seo";
+import { breadcrumbLd, jobPostingLd } from "../lib/structured-data";
 
 function BackLink() {
   const nav = useNavigate();
   // Go back to the exact feed (filters, scroll) when we came from inside the app.
   const canGoBack = typeof window !== "undefined" && (window.history.state as { idx?: number } | null)?.idx;
   return (
-    <button type="button" className="btn-ghost -ml-3 px-3" onClick={() => (canGoBack ? nav(-1) : nav("/jobs"))}>
+    <button type="button" className="btn-ghost -ml-3 px-3" onClick={() => (canGoBack ? nav(-1) : nav("/jobs/"))}>
       <ChevronLeftIcon width={18} height={18} /> Back to jobs
     </button>
   );
 }
 
 export function JobDetail() {
-  const { id = "" } = useParams();
+  const { key: param = "" } = useParams();
+  const key = jobKeyFromParam(param);
+  const nav = useNavigate();
   const { jobs, error } = useJobs("all");
   const { saved, recent, hidden } = useApp();
-  const job = jobs?.find((j) => j.id === id) ?? null;
-  const known = saved[id] ?? recent.find((r) => r.id === id) ?? hidden[id];
+  const { employer, companyBySlug } = useData();
+  const job = jobs?.find((j) => matchesJobKey(j.id, key)) ?? null;
+  const known =
+    Object.values(saved).find((s) => matchesJobKey(s.id, key)) ??
+    recent.find((r) => matchesJobKey(r.id, key)) ??
+    Object.values(hidden).find((h) => matchesJobKey(h.id, key));
+  const emp = job ? employer(job.company) : null;
+  const canonical = job && emp ? jobPath(job, emp.name) : null;
 
-  usePageTitle(job ? job.title : known ? known.title : "Job");
+  useSeo(
+    job && emp && canonical
+      ? {
+          ...JOB_META(job, emp.name),
+          path: canonical,
+          jsonLd: [
+            jobPostingLd(SITE_URL, job, { name: emp.name, website: companyBySlug.get(job.company)?.website }),
+            breadcrumbLd(SITE_URL, [
+              ["Home", "/"],
+              ["Jobs", "/jobs/"],
+              [job.title, canonical],
+            ]),
+          ],
+        }
+      : { title: `${known?.title ?? "Job"} · ${SITE_NAME}`, noindex: !!jobs },
+  );
+
+  // Old links (#/job/<full id>, or a changed title) move to the canonical address.
+  useEffect(() => {
+    if (canonical && window.location.pathname !== canonical) nav(canonical, { replace: true });
+  }, [canonical, nav]);
 
   if (error) return <p role="alert">This job couldn't be loaded ({error}).</p>;
   if (!jobs) return <PageSkeleton />;
@@ -60,7 +90,7 @@ function Gone({ title, company }: { title?: string; company?: string }) {
               Other jobs at {employer(company).name}
             </Link>
           )}
-          <Link to={title ? `/jobs?q=${encodeURIComponent(title)}` : "/jobs"} className="btn-secondary">
+          <Link to={title ? `/jobs/?q=${encodeURIComponent(title)}` : "/jobs/"} className="btn-secondary">
             Find similar jobs
           </Link>
         </div>
@@ -98,7 +128,7 @@ function Detail({ job, all }: { job: Job; all: Job[] }) {
   );
 
   const share = async () => {
-    const url = appUrl(`/job/${job.id}`);
+    const url = appUrl(jobPath(job, emp.name));
     const text = `${job.title} at ${emp.name}`;
     try {
       if (navigator.share) {
@@ -126,7 +156,7 @@ function Detail({ job, all }: { job: Job; all: Job[] }) {
       "Field",
       <span key="f" className="flex flex-wrap gap-x-3 gap-y-1">
         {job.fields.map((f) => (
-          <Link key={f} to={`/jobs?fields=${f}`} className="link">
+          <Link key={f} to={fieldPath(f)} className="link">
             {FIELD_LABELS[f]}
           </Link>
         ))}

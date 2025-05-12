@@ -89,8 +89,21 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: pnpm --filter @rekiya/crawler notify
 
-      - name: Build web app (copies /data into the build)
+      - name: Build web app (copies /data into the build, prerenders every page, writes sitemap / llms.txt)
+        env:
+          # Optional repo variables (Settings → Secrets and variables → Actions → Variables):
+          SITE_URL: ${{ vars.SITE_URL }} # custom domain, e.g. https://rekiya.lk (default: the GitHub Pages URL)
+          GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }} # Search Console "HTML tag" content value
+          BING_SITE_VERIFICATION: ${{ vars.BING_SITE_VERIFICATION }} # Bing Webmaster Tools msvalidate.01 value
         run: pnpm build
+
+      - name: Keep the IndexNow URL list for the deploy job
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-urls
+          path: apps/web/.seo/indexnow-urls.json
+          include-hidden-files: true
+          retention-days: 1
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -106,3 +119,23 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      # Tell Bing, Yandex, Seznam and Naver (IndexNow) about new job pages straight away.
+      # Google reads the sitemap; submit it once in Search Console.
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: indexnow-urls
+      - name: Ping IndexNow
+        continue-on-error: true
+        env:
+          SITE: ${{ vars.SITE_URL || 'https://vacancyfinder.github.io' }}
+          KEY: 3c277cd06152b8097384b94d3edb0b3b
+        run: |
+          [ -f indexnow-urls.json ] || exit 0
+          HOST=$(echo "$SITE" | sed -E 's#^https?://##; s#/.*$##')
+          jq -n --arg host "$HOST" --arg key "$KEY" --arg loc "$SITE/$KEY.txt" --slurpfile urls indexnow-urls.json \
+            '{host: $host, key: $key, keyLocation: $loc, urlList: $urls[0]}' > body.json
+          echo "Submitting $(jq '.urlList | length' body.json) URLs"
+          curl -sS -o /dev/null -w "IndexNow: HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H "content-type: application/json; charset=utf-8" --data @body.json

@@ -14,6 +14,9 @@ web app. Applications always happen on the company's own listing.
 - For job seekers: search with filters, sorting and quick filters; a page per job with similar jobs; an application tracker
   with notes and CSV export; saved searches with new-match counts; hide jobs or companies; market insights; dark mode;
   offline support. No accounts — everything personal stays in the browser. Full list: [docs/FEATURES.md](docs/FEATURES.md).
+- **SEO & AI search:** clean URLs, a prerendered HTML page for every job, field and company, Google for Jobs
+  (`JobPosting`) structured data, sitemap, `llms.txt` for AI assistants and IndexNow pings after each crawl.
+  Owner setup (Search Console, Bing, custom domain): [docs/SEO.md](docs/SEO.md).
 
 ## Architecture
 

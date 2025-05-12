@@ -4,10 +4,10 @@ import type { FieldSlug, Seniority } from "@rekiya/shared/constants";
 import { FieldPicker, SeniorityPicker } from "../components/FieldPicker";
 import { useApp } from "../lib/app-state";
 import { useData } from "../lib/data";
-import { usePageTitle } from "../lib/usePageTitle";
+import { usePrivatePage } from "../lib/seo";
 
 export function Onboarding() {
-  usePageTitle("Choose your fields");
+  usePrivatePage("Choose your fields");
   const { prefs, setPrefs } = useApp();
   const { meta } = useData();
   const nav = useNavigate();
@@ -16,7 +16,7 @@ export function Onboarding() {
 
   const finish = (skip = false) => {
     setPrefs({ fields: skip ? [] : fields, seniority: skip ? [] : seniority, onboarded: true });
-    nav("/jobs");
+    nav("/jobs/");
   };
 
   return (
