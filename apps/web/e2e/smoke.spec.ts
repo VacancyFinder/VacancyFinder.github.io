@@ -1,6 +1,6 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
-import { mockData } from "./fixtures";
+import { job, JOBS, mockData } from "./fixtures";
 
 async function noAxeViolations(page: Page) {
   const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze();
@@ -317,4 +317,22 @@ test("SEO: prerendered HTML, sitemap, robots.txt and llms.txt are published", as
   expect((await request.get("/og-image.png")).headers()["content-type"]).toContain("image/png");
   const notFound = await (await request.get("/404.html")).text();
   expect(notFound).toContain('content="noindex, follow"');
+});
+
+test("a new 3-hourly sync appears without reloading the page", async ({ page }) => {
+  await page.goto("/jobs/");
+  await expect(page.getByRole("status").filter({ hasText: "open job" })).toHaveText("6 open jobs");
+  await expect(page.getByText(/Updated 1 h ago · next update around \d{1,2}:\d{2} [ap]m/)).toBeVisible();
+
+  // The crawler deploys a newer sync with one more job; the open tab picks it up when it's next checked.
+  await page.unroute("**/data/**");
+  await mockData(page, {
+    generatedHoursAgo: 0,
+    jobs: [...JOBS, job({ title: "Platform Engineer", company: "wso2", fields: ["cloud-devops"], firstSeenAt: new Date().toISOString() })],
+  });
+  await page.evaluate(() => document.dispatchEvent(new Event("visibilitychange")));
+
+  await expect(page.getByText("Jobs updated just now — 7 open (+1)")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Platform Engineer" })).toBeVisible();
+  await expect(page.getByRole("status").filter({ hasText: "open job" })).toHaveText("7 open jobs");
 });

@@ -1,11 +1,16 @@
-# Crawl → validate → commit data (only if it changed) → alert → build → deploy, all in one workflow
-# (commits pushed with GITHUB_TOKEN do not trigger other workflows).
+# The 3-hour job sync: crawl → validate → commit data (only if it changed) → alert → build → deploy, all in
+# one workflow (commits pushed with GITHUB_TOKEN do not trigger other workflows).
+#
+# Schedule: GitHub starts scheduled runs late (often 10–40 min) and sometimes drops them, so instead of a single
+# 3-hourly cron the workflow checks every hour and crawls when the last crawl started ≥ ~3 hours ago. A late or
+# missed tick is then made up within the hour. Manual runs (Actions → Crawl and deploy → Run workflow, or
+# scripts/trigger-sync.sh) always crawl; code pushes only rebuild and redeploy.
 # Requires Settings → Pages → Source: "GitHub Actions".
 name: Crawl and deploy
 
 on:
   schedule:
-    - cron: "17 */3 * * *" # every 3 hours, off the top of the hour
+    - cron: "17 * * * *" # hourly check; crawls only when a 3-hour sync is due (see the gate job)
   workflow_dispatch:
     inputs:
       only:
@@ -31,7 +36,43 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    name: Is a sync due?
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      crawl: ${{ steps.due.outputs.crawl }}
+    steps:
+      - name: Look up when the last crawl started
+        id: last
+        uses: actions/cache/restore@v4
+        with:
+          path: .last-crawl
+          key: last-crawl-none # never saved: the prefix below finds the newest stamp
+          restore-keys: last-crawl-
+          lookup-only: true
+      - name: Decide
+        id: due
+        env:
+          EVENT: ${{ github.event_name }}
+          MATCHED: ${{ steps.last.outputs.cache-matched-key }}
+          SYNC_MINUTES: "180"
+        run: |
+          case "$EVENT" in
+            push) echo "Code push: rebuild and redeploy without crawling."; echo "crawl=false" >> "$GITHUB_OUTPUT"; exit 0 ;;
+            workflow_dispatch) echo "Manual run: crawl now."; echo "crawl=true" >> "$GITHUB_OUTPUT"; exit 0 ;;
+          esac
+          last=${MATCHED##last-crawl-}
+          case "$last" in ''|*[!0-9]*) last=0 ;; esac
+          age=$(( ($(date +%s) - last) / 60 ))
+          # 10 minutes' tolerance so an on-time hourly tick isn't skipped by a few seconds.
+          if [ "$age" -ge $(( SYNC_MINUTES - 10 )) ]; then crawl=true; else crawl=false; fi
+          echo "Last crawl started ${age} min ago (sync every ${SYNC_MINUTES} min) → crawl=${crawl}"
+          echo "crawl=${crawl}" >> "$GITHUB_OUTPUT"
+
   crawl-build:
+    needs: gate
+    if: needs.gate.outputs.crawl == 'true' || github.event_name == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -52,12 +93,22 @@ jobs:
 
       - name: Crawl
         id: crawl
-        # Code pushes only rebuild and redeploy; the schedule and manual runs crawl.
-        if: github.event_name != 'push'
+        # Code pushes only rebuild and redeploy; due scheduled runs and manual runs crawl.
+        if: needs.gate.outputs.crawl == 'true'
         env:
           ONLY: ${{ inputs.only }}
         run: |
+          echo "started=$(date +%s)" >> "$GITHUB_OUTPUT"
           if [ -n "$ONLY" ]; then pnpm crawl --only "$ONLY"; else pnpm crawl; fi
+
+      - name: Remember when this crawl started (drives the 3-hour schedule)
+        if: steps.crawl.outcome == 'success' && inputs.only == ''
+        run: mkdir -p .last-crawl && echo "${{ steps.crawl.outputs.started }}" > .last-crawl/started
+      - uses: actions/cache/save@v4
+        if: steps.crawl.outcome == 'success' && inputs.only == ''
+        with:
+          path: .last-crawl
+          key: last-crawl-${{ steps.crawl.outputs.started }}
 
       - name: Save HTTP cache
         if: always() && steps.crawl.outcome == 'success'
