@@ -121,3 +121,14 @@ export function downloadFile(name: string, content: string, type: string): void 
 export function appUrl(path: string): string {
   return `${window.location.origin}${path.startsWith("/") ? path : `/${path}`}`;
 }
+
+/**
+ * When the next 3-hourly sync should land, in Sri Lanka time: "around 6:17 pm", or "any minute now"
+ * once it's due (GitHub's scheduler can run late).
+ */
+export function nextSyncLabel(generatedAt: string, everyMs: number, now = Date.now()): string {
+  const next = Date.parse(generatedAt) + everyMs;
+  if (Number.isNaN(next) || next - now <= 5 * 60_000) return "any minute now";
+  const t = new Date(next).toLocaleTimeString("en-GB", { hour: "numeric", minute: "2-digit", hour12: true, timeZone: "Asia/Colombo" });
+  return `around ${t.replace(/\s?([ap])m$/i, " $1m").toLowerCase()}`;
+}

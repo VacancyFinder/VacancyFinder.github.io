@@ -10,7 +10,7 @@ import {
   sortJobs,
   type Filters,
 } from "../src/lib/filters";
-import { cleanSnippet, formatDate, toCsv } from "../src/lib/format";
+import { cleanSnippet, formatDate, nextSyncLabel, toCsv } from "../src/lib/format";
 import { clearAll, exportBackup, importBackup, KEYS, loadSaved, normalizeSaved } from "../src/lib/storage";
 import type { Job } from "../src/lib/types";
 
@@ -149,5 +149,17 @@ describe("storage", () => {
     expect(importBackup(JSON.parse(JSON.stringify(b)))).toBe(2);
     expect(loadSaved().a!.status).toBe("applied");
     expect(() => importBackup({ hello: "world" })).toThrow(/isn't a Rekiya backup/);
+  });
+});
+
+describe("sync schedule label", () => {
+  const H = 3600_000;
+  it("gives the next 3-hourly sync in Sri Lanka time", () => {
+    // 10:00 UTC = 15:30 in Colombo; +3 h = 18:30 → "6:30 pm".
+    expect(nextSyncLabel("2026-09-30T10:00:00Z", 3 * H, Date.parse("2026-09-30T11:00:00Z"))).toBe("around 6:30 pm");
+  });
+  it("says 'any minute now' once a sync is due or late", () => {
+    expect(nextSyncLabel("2026-09-30T10:00:00Z", 3 * H, Date.parse("2026-09-30T13:30:00Z"))).toBe("any minute now");
+    expect(nextSyncLabel("not a date", 3 * H)).toBe("any minute now");
   });
 });

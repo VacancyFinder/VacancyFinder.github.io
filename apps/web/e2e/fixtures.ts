@@ -6,7 +6,7 @@ const now = Date.now();
 const iso = (hoursAgo: number) => new Date(now - hoursAgo * 3600_000).toISOString();
 
 let n = 0;
-function job(p: Partial<Job> & Pick<Job, "title" | "company" | "fields">): Job {
+export function job(p: Partial<Job> & Pick<Job, "title" | "company" | "fields">): Job {
   n++;
   return {
     // Real ids are sha1 hashes; so are these (job URLs use the first 12 hex chars).
@@ -117,8 +117,8 @@ export const DIRECTORY: Directory = {
   ],
 };
 
-export function meta(generatedHoursAgo = 1): Meta {
-  const open = JOBS.filter((j) => j.status === "open");
+export function meta(generatedHoursAgo = 1, jobs: Job[] = JOBS): Meta {
+  const open = jobs.filter((j) => j.status === "open");
   const count = (key: (j: Job) => string[]) => {
     const m: Record<string, number> = {};
     for (const j of open) for (const k of key(j)) m[k] = (m[k] ?? 0) + 1;
@@ -136,15 +136,16 @@ export function meta(generatedHoursAgo = 1): Meta {
 }
 
 /** Serve fixture data instead of the build's /data. */
-export async function mockData(page: Page, opts: { generatedHoursAgo?: number } = {}): Promise<void> {
+export async function mockData(page: Page, opts: { generatedHoursAgo?: number; jobs?: Job[] } = {}): Promise<void> {
+  const jobs = opts.jobs ?? JOBS;
   await page.route("**/data/**", (route) => {
     const path = new URL(route.request().url()).pathname;
     const json = (body: unknown) => route.fulfill({ contentType: "application/json", body: JSON.stringify(body) });
-    if (path.endsWith("/meta.json")) return json(meta(opts.generatedHoursAgo));
+    if (path.endsWith("/meta.json")) return json(meta(opts.generatedHoursAgo, jobs));
     if (path.endsWith("/directory.json")) return json(DIRECTORY);
-    if (path.endsWith("/jobs.json")) return json(JOBS);
+    if (path.endsWith("/jobs.json")) return json(jobs);
     const m = path.match(/\/fields\/([a-z-]+)\.json$/);
-    if (m) return json(JOBS.filter((j) => j.status === "open" && j.fields.includes(m[1] as Job["fields"][number])));
+    if (m) return json(jobs.filter((j) => j.status === "open" && j.fields.includes(m[1] as Job["fields"][number])));
     return route.fulfill({ status: 404, body: "" });
   });
 }

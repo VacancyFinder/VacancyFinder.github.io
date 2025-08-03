@@ -2,7 +2,9 @@ import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Suspense, useEffect, useRef, useState, type FormEvent } from "react";
 import { useApp } from "../lib/app-state";
 import { useData } from "../lib/data";
-import { isStale, relativeTime } from "../lib/format";
+import { isStale, nextSyncLabel, relativeTime } from "../lib/format";
+import { SYNC_EVERY_MS } from "../lib/data";
+import { useToast } from "./Toast";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { AlertIcon, ArrowUpIcon, BookmarkIcon, BriefcaseIcon, BuildingIcon, ChartIcon, GearIcon, SearchIcon } from "./Icons";
 import { UpdatePrompt } from "./Pwa";
@@ -113,6 +115,30 @@ function useSearchShortcut() {
   }, [nav, loc.pathname]);
 }
 
+/** A sync landed while the site was open: say so (the data has already been swapped in). */
+function LiveUpdateNotice() {
+  const { lastUpdate } = useData();
+  const toast = useToast();
+  useEffect(() => {
+    if (!lastUpdate) return;
+    const diff = lastUpdate.open - lastUpdate.previousOpen;
+    toast({
+      message: `Jobs updated just now — ${lastUpdate.open.toLocaleString()} open${diff > 0 ? ` (+${diff})` : ""}`,
+    });
+  }, [lastUpdate, toast]);
+  return null;
+}
+
+function SyncStatus() {
+  const { meta } = useData();
+  if (!meta || Date.parse(meta.generatedAt) === 0) return null;
+  return (
+    <p className="mt-3 text-xs">
+      Jobs sync every 3 hours · last sync {relativeTime(meta.generatedAt)} · next {nextSyncLabel(meta.generatedAt, SYNC_EVERY_MS)}
+    </p>
+  );
+}
+
 export function Layout() {
   const { saved } = useApp();
   const savedCount = Object.keys(saved).length;
@@ -199,6 +225,7 @@ export function Layout() {
               Open vacancies from the official career pages of Sri Lankan companies. Rekiya links to each company's own listing — we never
               host or handle applications.
             </p>
+            <SyncStatus />
           </div>
           <nav aria-label="Explore">
             <p className="font-semibold text-slate-900 dark:text-white">Explore</p>
@@ -270,6 +297,7 @@ export function Layout() {
           ))}
         </ul>
       </nav>
+      <LiveUpdateNotice />
       <BackToTop />
       <UpdatePrompt />
     </div>

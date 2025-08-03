@@ -9,7 +9,8 @@ web app. Applications always happen on the company's own listing.
 **Live site:** https://vacancyfinder.github.io/
 
 - Static site on **GitHub Pages**; all background work runs in **GitHub Actions** (zero recurring cost).
-- A crawl runs every 3 hours: crawl → classify → diff → commit data (only if it changed) → build → deploy.
+- Jobs sync every 3 hours: crawl → classify → diff → commit data (only if it changed) → build → deploy. The open
+  website picks up each new sync by itself (see [Job sync](#job-sync-every-3-hours)).
 - Per-field **RSS feeds** at `/feeds/<field>.xml`, optional **Telegram** channel alerts.
 - For job seekers: search with filters, sorting and quick filters; a page per job with similar jobs; an application tracker
   with notes and CSV export; saved searches with new-match counts; hide jobs or companies; market insights; dark mode;
@@ -55,6 +56,24 @@ flowchart LR
 | `apps/web`                      | Vite + React + Tailwind PWA (HashRouter, MiniSearch)                                                                                       |
 | `data/`                         | curated + generated JSON, committed                                                                                                        |
 | `.github/workflows`             | `ci.yml`, `crawl-and-deploy.yml`, `company-request.yml`, `probe.yml`                                                                       |
+
+## Job sync (every 3 hours)
+
+Everything runs in `.github/workflows/crawl-and-deploy.yml` on GitHub's servers — nothing needs to stay on.
+
+- **Schedule.** GitHub starts scheduled runs late (often 10–40 minutes) and occasionally drops one, so the
+  workflow checks every hour and crawls only when the last crawl started about 3 hours ago or more. A late or
+  missed tick is made up within the hour, keeping a steady 3-hour cycle. The gate's log line says why a run did
+  or didn't crawl ("Last crawl started 182 min ago → crawl=true").
+- **Each sync:** crawl every company careers page → validate → commit `data/` when jobs changed → Telegram alert
+  (optional) → build and prerender the site → deploy to GitHub Pages → notify Bing & co. via IndexNow.
+- **The website updates itself.** An open tab checks for a newer sync every 5 minutes and when it's brought back to
+  the front, then swaps in the new jobs with a "Jobs updated" notice — no reload. Pages show when the next sync is due.
+- **Sync now:** Actions → Crawl and deploy → Run workflow, or `pnpm sync:remote` (`scripts/trigger-sync.sh`, needs
+  the GitHub CLI or a `GITHUB_TOKEN`). Pass target ids to crawl only some sites: `scripts/trigger-sync.sh wso2,dialog`.
+- **Sync locally** (no deploy): `pnpm sync` — crawl, validate and build into `apps/web/dist`.
+- **Change the interval:** `SYNC_MINUTES` in the gate job, and `SYNC_EVERY_MS` in `apps/web/src/lib/data.tsx` for the
+  "next update" label.
 
 ## Setup
 
