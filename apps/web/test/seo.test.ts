@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Company, Job as SharedJob } from "@rekiya/shared";
-import { buildPages, llmsFullTxt, llmsTxt, renderDocument, robotsTxt, sitemapXml, type SeoInput } from "../build/seo";
+import { buildPages, llmsFullTxt, llmsTxt, ogImagePath, renderDocument, robotsTxt, sitemapXml, type SeoInput } from "../build/seo";
 import { fieldFeed } from "../build/feeds";
 import { HOME_META, JOB_META, jobKeyFromParam, jobPath, matchesJobKey, slugify } from "../src/lib/paths";
 import { jobPostingLd, ldJson } from "../src/lib/structured-data";
@@ -158,6 +158,29 @@ describe("prerendered site", () => {
     const noindex = renderDocument(template, SITE, byPath.get("/saved/")!);
     expect(noindex).toContain('content="noindex, follow"');
     expect(noindex).not.toContain('rel="canonical"');
+  });
+
+  it("gives every shareable page its own WhatsApp / social preview image", () => {
+    expect(ogImagePath("/")).toBe("/og/home.png");
+    expect(ogImagePath("/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e/")).toBe(
+      "/og/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e.png",
+    );
+    const p = byPath.get("/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e/")!;
+    expect(p.og).toMatchObject({
+      title: "Senior QA Engineer",
+      subtitle: "Acme PLC · Colombo, Kandy",
+      chips: ["Senior", "Hybrid", "Full-time"],
+    });
+    expect(p.og!.badge!.text).toBe("AC"); // same initials as the in-app company badge
+    const template = `<html><head><meta property="og:image" content="x" /><meta property="og:image:secure_url" content="x" /><meta property="og:image:alt" content="x" /><meta name="twitter:image" content="x" /></head><body></body></html>`;
+    const img = `${SITE}/og/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e.png`;
+    const html = renderDocument(template, SITE, p);
+    expect(html).toContain(`<meta property="og:image" content="${img}" />`);
+    expect(html).toContain(`<meta property="og:image:secure_url" content="${img}" />`);
+    expect(html).toContain(`<meta name="twitter:image" content="${img}" />`);
+    expect(html).toContain('<meta property="og:image:alt" content="Senior QA Engineer" />');
+    // Private pages keep the site-wide image.
+    expect(renderDocument(template, SITE, byPath.get("/saved/")!)).toContain('<meta property="og:image" content="x" />');
   });
 
   it("robots.txt and llms.txt point crawlers and AI assistants at the content", () => {
