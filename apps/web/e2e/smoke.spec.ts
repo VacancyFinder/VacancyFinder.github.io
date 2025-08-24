@@ -113,6 +113,11 @@ test("job detail page: facts, apply, save, similar jobs, back", async ({ page })
   await expect(page.getByRole("link", { name: /Apply on careers\.example\.lk/ })).toHaveAttribute("target", "_blank");
   await expect(page.getByText("Remote", { exact: true })).toBeVisible();
   await expect(page.getByRole("link", { name: "Cybersecurity" })).toHaveAttribute("href", "/jobs/cybersecurity/");
+  const wa = new URL((await page.getByRole("link", { name: "Share on WhatsApp" }).getAttribute("href"))!);
+  expect(wa.origin).toBe("https://wa.me");
+  expect(wa.searchParams.get("text")).toMatch(
+    /^\*DevSecOps Engineer\*\nWSO2 · .+\n[\s\S]*\nhttp:\/\/127\.0\.0\.1:4173\/job\/devsecops-engineer-at-wso2-[0-9a-f]{12}\/$/,
+  );
   await noAxeViolations(page);
 
   await page.getByLabel("Track your application").or(page.locator("#status")).selectOption("interviewing");
@@ -315,6 +320,15 @@ test("SEO: prerendered HTML, sitemap, robots.txt and llms.txt are published", as
   expect(llms).toMatch(/^# Rekiya — latest job vacancies in Sri Lanka/);
   expect((await request.get("/llms-full.txt")).ok()).toBe(true);
   expect((await request.get("/og-image.png")).headers()["content-type"]).toContain("image/png");
+  // WhatsApp / social previews: each page points at its own card, and the card exists and is small enough for WhatsApp.
+  const ogOf = (html: string) => html.match(/<meta property="og:image" content="([^"]+)"/)![1]!;
+  expect(ogOf(home)).toBe("https://vacancyfinder.github.io/og/home.png");
+  expect(ogOf(job)).toBe(jobUrl.replace("/job/", "/og/job/").replace(/\/$/, ".png"));
+  for (const img of [ogOf(home), ogOf(job)]) {
+    const res = await request.get(new URL(img).pathname);
+    expect(res.headers()["content-type"]).toContain("image/png");
+    expect((await res.body()).length).toBeLessThan(300_000);
+  }
   const notFound = await (await request.get("/404.html")).text();
   expect(notFound).toContain('content="noindex, follow"');
 });

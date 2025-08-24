@@ -8,6 +8,7 @@ import { useToast } from "./Toast";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { AlertIcon, ArrowUpIcon, BookmarkIcon, BriefcaseIcon, BuildingIcon, ChartIcon, GearIcon, SearchIcon } from "./Icons";
 import { UpdatePrompt } from "./Pwa";
+import { ShareSiteLink } from "./ShareSite";
 import { PageSkeleton } from "./Skeleton";
 
 const NAV = [
@@ -264,6 +265,9 @@ export function Layout() {
                 <a href={REPO_URL} className="link font-normal" rel="noopener">
                   Source code
                 </a>
+              </li>
+              <li>
+                <ShareSiteLink />
               </li>
             </ul>
           </nav>

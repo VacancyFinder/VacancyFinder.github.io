@@ -6,6 +6,7 @@ import { ChevronDownIcon, ChevronRightIcon, SearchIcon } from "../components/Ico
 import { JobList } from "../components/JobList";
 import { REPO_URL, SUGGEST_URL } from "../components/Layout";
 import { InstallButton } from "../components/Pwa";
+import { ShareSite } from "../components/ShareSite";
 import { JobListSkeleton } from "../components/Skeleton";
 import { useApp } from "../lib/app-state";
 import { useData, useJobs } from "../lib/data";
@@ -291,6 +292,8 @@ export function Landing() {
             ))}
           </div>
         </section>
+
+        <ShareSite />
 
         <section className="mt-14 rounded-2xl bg-brand-50 p-6 dark:bg-brand-900/40 sm:p-8">
           <h2 className="text-xl font-bold">Know a company we should track?</h2>
