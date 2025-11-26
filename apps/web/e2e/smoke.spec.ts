@@ -350,3 +350,60 @@ test("a new 3-hourly sync appears without reloading the page", async ({ page }) 
   await expect(page.getByRole("heading", { name: "Platform Engineer" })).toBeVisible();
   await expect(page.getByRole("status").filter({ hasText: "open job" })).toHaveText("7 open jobs");
 });
+
+test("status page: website, data freshness, sync runs, career pages and publishing", async ({ page }) => {
+  const at = (h: number) => new Date(Date.now() - h * 3600_000).toISOString();
+  const run = (id: number, h: number, conclusion: string, event = "workflow_dispatch", minutes = 4) => ({
+    id,
+    status: "completed",
+    conclusion,
+    event,
+    created_at: at(h),
+    run_started_at: at(h),
+    updated_at: at(h - minutes / 60),
+    html_url: `https://github.com/VacancyFinder/VacancyFinder.github.io/actions/runs/${id}`,
+  });
+  let runs = [run(1, 0.2, "success", "schedule", 0.3), run(2, 1, "success"), run(3, 4, "success"), run(4, 7, "failure")];
+  await page.route("https://api.github.com/**", (route) =>
+    route.fulfill({ contentType: "application/json", body: JSON.stringify({ workflow_runs: runs }) }),
+  );
+  await page.route("https://raw.githubusercontent.com/**", (route) =>
+    route.fulfill({ contentType: "application/json", body: JSON.stringify({ generatedAt: at(1) }) }),
+  );
+  await page.route(/\/data\/health\.json/, (route) =>
+    route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({
+        "acme-careers": {
+          target: "acme-careers",
+          url: "https://careers.acme.lk/jobs",
+          lastError: "HTTP 503",
+          consecutiveFailures: 2,
+          lastSuccessAt: at(8),
+        },
+      }),
+    }),
+  );
+
+  await page.goto("/");
+  await page.getByRole("contentinfo").getByRole("link", { name: "All systems operational" }).click();
+  await expect(page).toHaveURL(/\/status\/$/);
+  await expect(page.getByRole("heading", { level: 1, name: "System status" })).toBeVisible();
+  // Fixture: 3 of 4 career pages read → a minor issue; everything else is healthy.
+  await expect(page.getByText("Minor issue: career pages — 3 of 4 read successfully")).toBeVisible();
+  await expect(page.locator('[data-component="website"]')).toHaveAttribute("data-level", "ok");
+  await expect(page.locator('[data-component="freshness"]')).toContainText("Up to date");
+  await expect(page.locator('[data-component="automation"]')).toContainText("Running every 3 hours");
+  await expect(page.locator('[data-component="publishing"]')).toContainText("Website shows the latest data");
+  // The quick backup check is hidden from the history; real runs are listed with their result.
+  await expect(page.locator("tr[data-run]")).toHaveCount(3);
+  await expect(page.getByRole("link", { name: /Failed/ })).toHaveAttribute("href", /\/actions\/runs\/4$/);
+  await expect(page.getByRole("link", { name: /careers\.acme\.lk/ })).toBeVisible();
+  await expect(page.getByText("failed 2 times in a row")).toBeVisible();
+  await noAxeViolations(page);
+
+  // Two failed syncs in a row is a problem, shown at the top.
+  runs = [run(5, 0.5, "failure"), run(6, 1.5, "failure"), run(7, 4, "success")];
+  await page.getByRole("button", { name: "Check again" }).click();
+  await expect(page.getByText("Problem: automatic sync — the last 2 sync attempts failed")).toBeVisible();
+});

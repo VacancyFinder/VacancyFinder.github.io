@@ -7,6 +7,7 @@ import { buildDirectory } from "./directory.js";
 import { fieldFeed } from "./feeds.js";
 import { generateSeo } from "./seo.js";
 import { DEFAULT_SITE_URL } from "../src/lib/paths.js";
+import type { BuildInfo } from "../src/lib/status.js";
 
 /** Canonical origin: set SITE_URL (e.g. a custom domain) at build time; defaults to the GitHub Pages URL. */
 export const siteUrl = () => (process.env.SITE_URL || DEFAULT_SITE_URL).replace(/\/+$/, "");
@@ -23,6 +24,21 @@ export interface SiteData {
   companies: z.infer<typeof CompaniesFile>;
   groups: Group[];
   generatedAt: string;
+}
+
+/** /build.json: which build is live and what its sync did — read by the status page and the deploy check. */
+export function buildInfo(dataGeneratedAt: string, env: NodeJS.ProcessEnv = process.env, now = new Date()): BuildInfo {
+  const sync = env.BUILD_SYNC;
+  return {
+    id: env.BUILD_ID || `local-${now.getTime()}`,
+    builtAt: now.toISOString(),
+    commit: env.BUILD_COMMIT || null,
+    runUrl: env.BUILD_RUN_URL || null,
+    event: env.BUILD_EVENT || null,
+    sync: sync === "ok" || sync === "failed" || sync === "skipped" ? sync : "local",
+    dataGeneratedAt,
+    pagesSource: env.BUILD_PAGES_SOURCE || null,
+  };
 }
 
 export function generateSiteData(dataDir: string, outDir: string): SiteData {
@@ -105,6 +121,7 @@ export function rekiyaData(dataDir: string): Plugin {
     },
     async closeBundle() {
       const d = generateSiteData(dataDir, outDir);
+      writeFileSync(resolve(outDir, "build.json"), JSON.stringify(buildInfo(d.generatedAt)));
       // Prerendered pages, sitemap, robots.txt, llms.txt — after the data, in the same hook, so order is fixed.
       const seo = await generateSeo({
         outDir,

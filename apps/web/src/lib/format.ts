@@ -43,7 +43,7 @@ export function hue(slug: string): number {
   return h;
 }
 
-export const STALE_AFTER_MS = 12 * 3600 * 1000;
+export const STALE_AFTER_MS = 6 * 3600 * 1000; // two missed 3-hour syncs
 export const isStale = (generatedAt: string, now = Date.now()) => now - Date.parse(generatedAt) > STALE_AFTER_MS;
 
 /** Only ever link http(s). */

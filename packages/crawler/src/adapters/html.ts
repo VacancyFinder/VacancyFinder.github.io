@@ -142,10 +142,11 @@ export const html: AdapterFn = async (ctx) => {
   const cfg = { ...(ctx.config as unknown as HtmlConfig), listSelector: requireString(ctx.config, "listSelector") };
   const r = await ctx.fetcher.get(ctx.url, { validators: ctx.validators });
   if (r.notModified) return { jobs: [], notModified: true, validators: r.validators };
-  let jobs = parseHtmlList(r.text, r.url, cfg);
+  const now = new Date(ctx.now ?? Date.now());
+  let jobs = parseHtmlList(r.text, r.url, cfg, now);
   for (const extra of cfg.extraPages ?? []) {
     const e = await ctx.fetcher.get(new URL(extra, r.url).href);
-    jobs = jobs.concat(parseHtmlList(e.text, e.url, cfg));
+    jobs = jobs.concat(parseHtmlList(e.text, e.url, cfg, now));
   }
   const pg = cfg.pagination;
   if (pg) {
@@ -156,7 +157,7 @@ export const html: AdapterFn = async (ctx) => {
       let page: RawJob[];
       try {
         const e = await ctx.fetcher.get(url);
-        page = parseHtmlList(e.text, e.url, cfg).filter((j) => !seen.has(j.url));
+        page = parseHtmlList(e.text, e.url, cfg, now).filter((j) => !seen.has(j.url));
       } catch {
         break; // past the last page (404) or a transient error: keep what we have
       }

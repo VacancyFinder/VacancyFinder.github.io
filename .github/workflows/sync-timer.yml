@@ -1,0 +1,57 @@
+# Keeps the 3-hour job sync on time without relying on GitHub's cron (which delays and drops scheduled runs).
+#
+# Every "Crawl and deploy" run ends by starting this workflow with the time the next sync is due. It waits until
+# then and starts "Crawl and deploy", which in turn starts the next timer — a self-sustaining chain. Only one
+# timer ever waits: starting a new one cancels the old one. The hourly cron in crawl-and-deploy.yml re-starts the
+# chain if it is ever broken. Waiting costs nothing on a public repository.
+name: Sync timer
+
+on:
+  workflow_dispatch:
+    inputs:
+      due_at:
+        description: "When the next sync is due (Unix seconds). Empty or past = start it now."
+        required: false
+        default: ""
+      reason:
+        description: "timer = crawl if due · retry = crawl now (after a failed sync)"
+        required: false
+        default: timer
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: sync-timer
+  cancel-in-progress: true
+
+jobs:
+  wait:
+    name: Wait for the next sync
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - name: Wait until the next sync is due
+        env:
+          DUE: ${{ inputs.due_at }}
+        run: |
+          case "$DUE" in ''|*[!0-9]*) DUE=0 ;; esac
+          wait=$(( DUE - $(date +%s) ))
+          # Stay well inside the 6-hour job limit; the cron backup covers anything longer.
+          [ "$wait" -gt 19200 ] && wait=19200
+          if [ "$wait" -gt 0 ]; then
+            echo "Next sync due $(date -u -d "@$DUE" '+%Y-%m-%d %H:%M UTC'); waiting $(( wait / 60 )) min."
+            sleep "$wait"
+          fi
+      - name: Start the sync
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REASON: ${{ inputs.reason || 'timer' }}
+        run: |
+          for i in 1 2 3; do
+            gh workflow run crawl-and-deploy.yml --repo "$GITHUB_REPOSITORY" --ref "$GITHUB_REF_NAME" -f reason="$REASON" \
+              && echo "Started a sync ($REASON)." && exit 0
+            sleep 20
+          done
+          exit 1

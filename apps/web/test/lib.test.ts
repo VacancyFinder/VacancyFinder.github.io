@@ -135,7 +135,8 @@ describe("format", () => {
   it("relative time and staleness", () => {
     expect(relativeTime("2026-09-30T07:00:00Z", now.getTime())).toBe("3 h ago");
     expect(isStale("2026-09-29T21:00:00Z", now.getTime())).toBe(true);
-    expect(isStale("2026-09-30T00:00:00Z", now.getTime())).toBe(false);
+    expect(isStale("2026-09-30T05:00:00Z", now.getTime())).toBe(false); // 5 h: one late sync is not "stale"
+    expect(isStale("2026-09-30T03:00:00Z", now.getTime())).toBe(true); // 7 h: two syncs missed
   });
   it("initials and stable colours", () => {
     expect(initials("John Keells Holdings PLC")).toBe("JK");
