@@ -3,6 +3,7 @@ import { Suspense, useEffect, useRef, useState, type FormEvent } from "react";
 import { useApp } from "../lib/app-state";
 import { useData } from "../lib/data";
 import { isStale, nextSyncLabel, relativeTime } from "../lib/format";
+import { freshnessLevel } from "../lib/status";
 import { SYNC_EVERY_MS } from "../lib/data";
 import { useToast } from "./Toast";
 import { ErrorBoundary } from "./ErrorBoundary";
@@ -39,7 +40,10 @@ function StaleNotice() {
         <AlertIcon width={16} height={16} />
         {never
           ? "Jobs haven't been collected yet — check back soon."
-          : `Job data may be out of date (last updated ${relativeTime(meta.generatedAt)}).`}
+          : `Job data may be out of date (last updated ${relativeTime(meta.generatedAt)}).`}{" "}
+        <NavLink to="/status/" className="underline">
+          Check status
+        </NavLink>
       </p>
     </div>
   );
@@ -130,13 +134,27 @@ function LiveUpdateNotice() {
   return null;
 }
 
+const FRESHNESS = {
+  ok: { dot: "bg-emerald-500", label: "All systems operational" },
+  warn: { dot: "bg-amber-500", label: "Job update is late" },
+  down: { dot: "bg-red-600", label: "Job updates are delayed" },
+  unknown: { dot: "bg-slate-400", label: "System status" },
+} as const;
+
 function SyncStatus() {
   const { meta } = useData();
   if (!meta || Date.parse(meta.generatedAt) === 0) return null;
+  const f = FRESHNESS[freshnessLevel(meta.generatedAt, SYNC_EVERY_MS)];
   return (
-    <p className="mt-3 text-xs">
-      Jobs sync every 3 hours · last sync {relativeTime(meta.generatedAt)} · next {nextSyncLabel(meta.generatedAt, SYNC_EVERY_MS)}
-    </p>
+    <>
+      <p className="mt-3 text-xs">
+        Jobs sync every 3 hours · last sync {relativeTime(meta.generatedAt)} · next {nextSyncLabel(meta.generatedAt, SYNC_EVERY_MS)}
+      </p>
+      <NavLink to="/status/" className="link mt-2 inline-flex items-center gap-2 text-xs font-normal">
+        <span aria-hidden="true" className={`inline-block h-2 w-2 rounded-full ${f.dot}`} />
+        {f.label}
+      </NavLink>
+    </>
   );
 }
 
@@ -265,6 +283,11 @@ export function Layout() {
                 <a href={REPO_URL} className="link font-normal" rel="noopener">
                   Source code
                 </a>
+              </li>
+              <li>
+                <NavLink to="/status/" className="link font-normal">
+                  System status
+                </NavLink>
               </li>
               <li>
                 <ShareSiteLink />

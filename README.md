@@ -62,19 +62,26 @@ flowchart LR
 
 Everything runs in `.github/workflows/crawl-and-deploy.yml` on GitHub's servers — nothing needs to stay on.
 
-- **Schedule.** GitHub starts scheduled runs late (often 10–40 minutes) and occasionally drops one, so the
-  workflow checks every hour and crawls only when the last crawl started about 3 hours ago or more. A late or
-  missed tick is made up within the hour, keeping a steady 3-hour cycle. The gate's log line says why a run did
-  or didn't crawl ("Last crawl started 182 min ago → crawl=true").
-- **Each sync:** crawl every company careers page → validate → commit `data/` when jobs changed → Telegram alert
-  (optional) → build and prerender the site → deploy to GitHub Pages → notify Bing & co. via IndexNow.
+- **Schedule (self-sustaining).** GitHub's cron is best-effort: it starts runs late and on busy days drops most of
+  them (an hourly cron here produced 8 runs in 3 days, leaving 7-hour-old data). So every sync ends by starting
+  `.github/workflows/sync-timer.yml`, which waits until the next sync is due and starts it — each sync schedules the
+  next. A cron check twice an hour is the backup: it crawls only when a sync is overdue and restarts the timer if the
+  chain ever breaks. The gate's log line says why a run did or didn't crawl.
+- **Each sync:** crawl every company careers page (one automatic retry) → validate → commit `data/` when jobs
+  changed → Telegram alert (optional) → build and prerender the site → deploy to GitHub Pages → check the live site
+  is serving the new build (redeploy if not) → notify Bing & co. via IndexNow.
+- **When something fails:** a failed or invalid crawl never reaches the site — the previous data is restored and
+  redeployed, the run is marked failed, and a retry runs 45 minutes later. Deploys wait and retry while another Pages
+  deployment is in progress. Details: [docs/OPERATIONS.md](docs/OPERATIONS.md).
+- **Status page:** `/status/` shows anyone whether the website, job data, automatic sync, career pages and publishing
+  are healthy, with the recent sync history (linked from every page's footer).
 - **The website updates itself.** An open tab checks for a newer sync every 5 minutes and when it's brought back to
   the front, then swaps in the new jobs with a "Jobs updated" notice — no reload. Pages show when the next sync is due.
 - **Sync now:** Actions → Crawl and deploy → Run workflow, or `pnpm sync:remote` (`scripts/trigger-sync.sh`, needs
   the GitHub CLI or a `GITHUB_TOKEN`). Pass target ids to crawl only some sites: `scripts/trigger-sync.sh wso2,dialog`.
 - **Sync locally** (no deploy): `pnpm sync` — crawl, validate and build into `apps/web/dist`.
-- **Change the interval:** `SYNC_MINUTES` in the gate job, and `SYNC_EVERY_MS` in `apps/web/src/lib/data.tsx` for the
-  "next update" label.
+- **Change the interval:** `SYNC_MINUTES` in `crawl-and-deploy.yml`, and `SYNC_EVERY_MS` in `apps/web/src/lib/data.tsx`
+  for the "next update" label and the status page.
 
 ## Setup
 

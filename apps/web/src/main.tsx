@@ -18,6 +18,7 @@ const Company = lazy(() => import("./pages/Company").then((m) => ({ default: m.C
 const Insights = lazy(() => import("./pages/Insights").then((m) => ({ default: m.Insights })));
 const Onboarding = lazy(() => import("./pages/Onboarding").then((m) => ({ default: m.Onboarding })));
 const Saved = lazy(() => import("./pages/Saved").then((m) => ({ default: m.Saved })));
+const Status = lazy(() => import("./pages/Status").then((m) => ({ default: m.Status })));
 const Settings = lazy(() => import("./pages/Settings").then((m) => ({ default: m.Settings })));
 
 /** Returning users land on their feed; first-timers on the overview. */
@@ -57,6 +58,7 @@ createRoot(document.getElementById("root")!).render(
                 <Route path="insights" element={<Insights />} />
                 <Route path="saved" element={<Saved />} />
                 <Route path="settings" element={<Settings />} />
+                <Route path="status" element={<Status />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>

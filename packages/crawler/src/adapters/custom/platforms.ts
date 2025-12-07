@@ -45,7 +45,7 @@ export function parsePeoplesHr(body: unknown, portal: string, now = Date.now()):
 export const peopleshr: AdapterFn = async (ctx) => {
   const portal = requireString(ctx.config, "portal");
   const body = await json(ctx, `${portal.replace(/\/+$/, "")}/Home/GetVacanciesToApply`);
-  return { jobs: parsePeoplesHr(body, portal) };
+  return { jobs: parsePeoplesHr(body, portal, ctx.now) };
 };
 
 // ---- SimplifiedHR career page (Browns: simplifiedhr.brownsgroup.com) -----------------------------------
