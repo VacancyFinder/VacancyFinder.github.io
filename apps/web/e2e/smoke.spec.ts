@@ -1,6 +1,6 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
-import { job, JOBS, mockData } from "./fixtures";
+import { DIRECTORY, job, JOBS, mockData } from "./fixtures";
 
 async function noAxeViolations(page: Page) {
   const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze();
@@ -225,6 +225,24 @@ test("company directory: industries, groups, health and coming soon", async ({ p
   await expect(page.getByRole("link", { name: /Acme Plantations PLC.*Coming soon/ })).toBeVisible();
   await noAxeViolations(page);
   await noHorizontalScroll(page);
+
+  // Phones: a very long company name truncates instead of widening the page, and the filter labels fit.
+  await page.setViewportSize({ width: 360, height: 760 });
+  await page.route("**/data/directory.json", (route) => {
+    const long = { ...DIRECTORY.companies[0]!, slug: "long-name", name: "Commercial Leasing and Finance Holdings of Sri Lanka PLC" };
+    return route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({ ...DIRECTORY, companies: [...DIRECTORY.companies, long] }),
+    });
+  });
+  await page.reload();
+  await expect(page.getByRole("link", { name: /Commercial Leasing and Finance Holdings/ })).toBeVisible();
+  await noHorizontalScroll(page);
+  for (const radio of await page.getByRole("radio").all()) {
+    expect(await radio.evaluate((e) => e.scrollWidth <= e.clientWidth && e.getBoundingClientRect().right <= innerWidth)).toBe(true);
+  }
+  await page.unroute("**/data/directory.json");
+  await page.setViewportSize({ width: 1280, height: 800 });
 
   await page.getByRole("link", { name: /John Keells Holdings PLC/ }).click();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("John Keells Holdings PLC");
