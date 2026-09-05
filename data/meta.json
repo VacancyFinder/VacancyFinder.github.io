@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-05T15:57:42.739Z",
-  "runDurationMs": 133884,
+  "generatedAt": "2026-10-05T18:58:17.747Z",
+  "runDurationMs": 141231,
   "totals": {
-    "open": 399,
+    "open": 396,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 27
@@ -12,7 +12,7 @@
     "banking-insurance": 19,
     "cloud-devops": 37,
     "cybersecurity": 12,
-    "data-ai-ml": 39,
+    "data-ai-ml": 37,
     "digital-graphics": 4,
     "engineering-manufacturing": 26,
     "finance-accounting": 45,
@@ -21,10 +21,10 @@
     "legal-compliance": 17,
     "operations-logistics": 42,
     "other": 17,
-    "product-project-business": 25,
+    "product-project-business": 24,
     "qa-testing": 18,
     "sales-marketing": 56,
-    "software-engineering": 55,
+    "software-engineering": 54,
     "ui-ux-design": 3
   },
   "byCompany": {
@@ -40,7 +40,7 @@
     "dialog-axiata": 31,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
-    "fortude": 23,
+    "fortude": 20,
     "hayleys-group": 87,
     "john-keells-hotels": 3,
     "keells": 30,
@@ -62,10 +62,10 @@
   "bySeniority": {
     "intern": 44,
     "junior": 20,
-    "lead": 52,
-    "manager": 71,
+    "lead": 51,
+    "manager": 70,
     "principal": 11,
-    "senior": 65,
+    "senior": 64,
     "trainee": 8,
     "unspecified": 128
   },
@@ -78,7 +78,7 @@
     "financial-services": 20,
     "food-beverage-tobacco": 1,
     "hotels-leisure": 3,
-    "technology": 193,
+    "technology": 190,
     "telecommunications": 32
   }
 }
