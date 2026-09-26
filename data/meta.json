@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-10-05T21:58:49.089Z",
-  "runDurationMs": 124559,
+  "generatedAt": "2026-10-06T00:59:21.216Z",
+  "runDurationMs": 131690,
   "totals": {
-    "open": 391,
+    "open": 381,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 27
   },
   "byField": {
     "admin-customer-service": 30,
-    "banking-insurance": 19,
+    "banking-insurance": 15,
     "cloud-devops": 37,
     "cybersecurity": 12,
-    "data-ai-ml": 37,
+    "data-ai-ml": 36,
     "digital-graphics": 4,
     "engineering-manufacturing": 26,
-    "finance-accounting": 44,
+    "finance-accounting": 42,
     "hospitality-tourism": 7,
     "human-resource": 19,
-    "legal-compliance": 17,
-    "operations-logistics": 42,
-    "other": 16,
+    "legal-compliance": 13,
+    "operations-logistics": 41,
+    "other": 15,
     "product-project-business": 24,
     "qa-testing": 18,
-    "sales-marketing": 54,
+    "sales-marketing": 53,
     "software-engineering": 54,
     "ui-ux-design": 3
   },
@@ -37,7 +37,7 @@
     "citizens-development-business-finance": 13,
     "creative-software": 9,
     "dialog": 1,
-    "dialog-axiata": 29,
+    "dialog-axiata": 28,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
     "fortude": 20,
@@ -47,7 +47,7 @@
     "keells-food-products": 1,
     "lanka-ioc": 2,
     "lseg": 26,
-    "national-development-bank": 18,
+    "national-development-bank": 9,
     "octave": 5,
     "pearson": 4,
     "rootcode": 8,
@@ -60,18 +60,18 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 42,
-    "junior": 19,
-    "lead": 51,
-    "manager": 70,
+    "intern": 40,
+    "junior": 18,
+    "lead": 50,
+    "manager": 67,
     "principal": 11,
     "senior": 64,
     "trainee": 8,
-    "unspecified": 126
+    "unspecified": 123
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 19,
+    "banking": 10,
     "consumer-goods-retail": 2,
     "diversified": 123,
     "energy": 2,
@@ -79,6 +79,6 @@
     "food-beverage-tobacco": 1,
     "hotels-leisure": 3,
     "technology": 190,
-    "telecommunications": 30
+    "telecommunications": 29
   }
 }
