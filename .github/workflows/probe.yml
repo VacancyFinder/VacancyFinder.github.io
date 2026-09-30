@@ -47,11 +47,12 @@ jobs:
           git pull --rebase && git push
       - name: Discover careers pages for needs-discovery companies
         if: ${{ hashFiles('packages/crawler/probe/skip-discover') == '' }}
-        run: pnpm --filter @rekiya/crawler discover
+        # Refresh the coverage report too: CI checks it matches the candidates.
+        run: pnpm --filter @rekiya/crawler discover && pnpm --filter @rekiya/crawler report:coverage
       - name: Commit discovery results
         if: ${{ hashFiles('packages/crawler/probe/skip-discover') == '' }}
         run: |
-          git add data/discovery-candidates.json
+          git add data/discovery-candidates.json data/reports/coverage.md
           git commit -m "discover: candidates $(date -u +'%Y-%m-%d %H:%M') UTC" || echo "nothing to commit"
           git pull --rebase && git push
       - name: Real crawl preview (writes /data on this branch)

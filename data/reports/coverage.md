@@ -104,7 +104,6 @@ copies an approved URL into `careersUrl` and picks an adapter (see README → Ad
 
 | Companies | Best candidate | Score | Evidence |
 |---|---|---|---|
-| 99x | https://99x.io/careers | 10 | homepage link "Careers"; common path /careers → 200; common path /careers/ → 200 |
 | acl-plastics | https://www.acl.lk/careers | 10 | homepage link "CAREERS"; common path /careers → 200; common path /careers/ → 200 |
 | alliance-finance-company | https://www.alliancefinance.lk/about-us/careers/ | 9 | homepage link "Careers"; sitemap entry in /sitemap.xml |
 | alumex | https://alumexgroup.com/careers/ | 24 | homepage link "Careers"; sitemap entry in /page-sitemap.xml; common path /careers → 200 (/careers/) |
@@ -117,47 +116,36 @@ copies an approved URL into `careersUrl` and picks an adapter (see README → Ad
 | bukit-darah, carson-cumberbatch, ceylon-guardian-investment-trust, ceylon-investment | https://www.carsoncumberbatch.com/careers/ | 18 | homepage link "Careers"; homepage link "Join now"; homepage link "" |
 | colombo-dockyard | https://www.cdl.lk/careers | 4 | common path /careers → 200; common path /careers/ → 200 |
 | cic-holdings | https://www.cic.lk/careers-page/ | 6 | homepage link "Careers"; sitemap entry in /sitemap.xml |
-| citrus-leisure | https://citrusleisure.com/careers/ | 16 | homepage link "Careers"; common path /careers → 200 (/careers/); common path /career → 200 (/careers/) |
-| creative-software | https://www.creativesoftware.com/careers | 20 | homepage link "Careers"; sitemap entry in /sitemap.xml; common path /careers → 200 |
 | dipped-products | https://www.dplgroup.com/careers/ | 9 | sitemap entry in /wp-sitemap-posts-page-1.xml; common path /careers → 200 (/careers/); common path /careers/ → 200 |
 | ceylon-hospitals | https://www.durdans.com/careers/ | 18 | homepage link "Careers"; sitemap entry in /sitemap.xml; common path /careers → 200 (/careers/) |
 | e-b-creasy-and-company | https://www.ebcreasy.com/careers | 4 | common path /careers → 200; common path /careers/ → 200 |
 | e-channelling | https://www.echannelling.com/careers | 7 | common path /careers → 200; common path /careers/ → 200 (/careers) |
 | expolanka-holdings | https://www.expolanka.com/careers-and-people/ | 20 | homepage link "Careers & People"; sitemap entry in /sitemap.xml; sitemap entry in /image-sitemap.xml |
-| flat-rock-technology | https://flatrocktech.com/careers | 15 | homepage link "Careers"; homepage link "Open Positions0"; common path /careers → 200 |
-| fortude | https://careers.fortude.co/ | 6 | homepage link "Explore Jobs" |
 | hdfc-bank-of-sri-lanka | https://www.hdfc.lk/careers | 15 | homepage link "Careers"; sitemap entry in /sitemap.xml; common path /careers → 200 |
 | hype-invention | https://hypeinvention.com/careers | 6 | common path /careers → 200; common path /careers/ → 200 |
 | janashakthi-insurance | https://www.janashakthi.com/careers | 17 | homepage link "Careers"; homepage link "Life at Janashakthi"; homepage link "Join Us" |
 | jat-holdings | https://www.jatholdings.com/careers/ | 12 | homepage link "Careers"; sitemap entry in /sitemap.xml; common path /careers → 200 (/careers/) |
 | kapruka-holdings | https://blog.kapruka.com/kapruka_careers | 7 | homepage link "Kapruka Careers"; homepage link "Careers" |
 | octave | https://www.keells.com/careers/ | 3 | sitemap entry in /sitemap.xml |
+| kelani-cables | https://kelanicables.com/careers | 23 | homepage link "Careers"; sitemap entry in /sitemap.xml; common path /careers → 200 |
 | lake-house-printers-and-publishers | https://lakehouse.lk/observer-jobs/ | 9 | homepage link "Observer Jobs"; sitemap entry in /wp-sitemap-posts-page-1.xml |
 | the-lanka-hospitals-corporation | https://www.lankahospitals.com/careers/ | 22 | homepage link "Careers"; common path /careers → 200 (/careers/); common path /career → 200 (/careers/) |
 | laugfs-gas, laugfs-power | https://www.laugfs.lk/careers/ | 80 | homepage link "Careers"; homepage link "Why Work at LAUGFS"; homepage link "Vacancies" |
 | ceylon-beverage-holdings, lion-brewery-ceylon | https://www.lionbeer.com/careers | 4 | common path /careers → 200; common path /careers/ → 200 |
-| lseg | https://www.lseg.com/en/careers | 15 | homepage link "Explore our job opportunities"; homepage link "Careers"; sitemap entry in /en/sitemap-index.xml |
-| pearson | https://www.pearson.com/work.html | 3 | homepage link "Workforce & Career Development" |
 | people-s-insurance | https://peoplesinsurance.lk/careers/ | 24 | homepage link "Careers"; sitemap entry in /page-sitemap.xml; common path /careers → 200 (/careers/) |
 | prime-lands-residencies | https://www.primelands.lk/careers/en | 12 | homepage link "Careers"; sitemap entry in /sitemap.xml |
 | printcare | https://printcare.lk/careers/ | 15 | homepage link "Careers"; sitemap entry in /wp-sitemap-posts-page-1.xml; common path /careers → 200 |
 | renuka-agri-foods, renuka-city-hotels, renuka-foods, renuka-holdings, renuka-hotels | https://www.renukagroup.com/careers/index.php | 7 | homepage link "Careers" |
 | resus-energy | https://www.resusenergy.lk/careers.html | 9 | homepage link "Careers"; sitemap entry in /sitemap.xml |
-| rootcode | https://rootcode.ai/careers | 2 | sitemap entry in /sitemap.xml |
 | sanasa-development-bank | https://www.sdb.lk/en/about-us/careers | 9 | sitemap entry in /sitemap.xml; common path /careers → 200 (/en/about-us/careers); common path /careers/ → 200 (/en/about-us/careers) |
 | sierra-cables | https://www.sierracables.com/career/ | 9 | homepage link "Careers"; sitemap entry in /sitemap.xml; common path /career → 200 (/career/) |
 | singhe-hospitals | https://www.singhehospital.com/careers | 2 | sitemap entry in /pages-sitemap.xml |
 | snapdrum | https://snapdrum.com/careers | 4 | common path /careers → 200; common path /careers/ → 200 |
-| surge-global | https://surge.global/careers/ | 18 | homepage link "Careers"; sitemap entry in /page-sitemap.xml; common path /careers → 200 (/careers/) |
-| sysco-labs | https://syscolabs.lk/careers | 4 | common path /careers → 200; common path /careers/ → 200 |
 | tokyo-cement-company-lanka | https://tokyocement.com/careers | 14 | homepage link "Careers"; sitemap entry in /wp-sitemap-posts-page-1.xml; common path /careers → 200 (/careers/) |
 | vallibel-finance | https://vallibelfinance.com/careers/ | 24 | homepage link "Careers"; sitemap entry in /page-sitemap.xml; common path /careers → 200 |
 | vidullanka | https://vidullanka.com/careers/ | 17 | homepage link "Careers"; homepage link "Learn More"; sitemap entry in /wp-sitemap-posts-page-1.xml |
 | windforce | https://windforce.lk/careers/ | 21 | homepage link "Careers"; sitemap entry in /page-sitemap.xml; common path /careers → 200 (/careers/) |
-| wso2 | https://wso2.com/careers/ | 18 | homepage link "Careers"; sitemap entry in /sitemap.xml; common path /careers → 200 |
 | zegates | https://zegates.com/careers/ | 14 | homepage link "Careers"; homepage link "CareersOpen roles & internships"; sitemap entry in /sitemap.xml |
-| zone24x7 | https://zone24x7.com/careers/ | 23 | homepage link "Careers"; homepage link "1 More open vacancies"; homepage link "None Available" |
-| zyner-io | https://careers.zyner.io/ | 10 | homepage link "Careers" |
 
-40 domains gave no candidate (unreachable, blocked by robots.txt, or no careers link).
+38 domains gave no candidate (unreachable, blocked by robots.txt, or no careers link).
 

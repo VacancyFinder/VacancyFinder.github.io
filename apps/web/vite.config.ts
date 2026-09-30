@@ -49,6 +49,12 @@ export default defineConfig({
         navigateFallbackDenylist: [/\.(xml|txt|json)$/, /^\/feeds\//, /^\/data\//],
         runtimeCaching: [
           {
+            // Sync status: always ask the network first so the app sees a new 3-hourly sync straight away.
+            urlPattern: ({ url }) => /\/data\/(meta|directory)\.json$/.test(url.pathname),
+            handler: "NetworkFirst",
+            options: { cacheName: "rekiya-meta", networkTimeoutSeconds: 4 },
+          },
+          {
             // Job data: show the last copy instantly (and offline), refresh in the background.
             urlPattern: ({ url }) => url.pathname.includes("/data/"),
             handler: "StaleWhileRevalidate",
