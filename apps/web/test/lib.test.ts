@@ -55,6 +55,8 @@ describe("filters ↔ URL", () => {
       type: "internship",
       location: "Kandy",
       newOnly: true,
+      posted: "7",
+      sort: "company",
     };
     expect(parseFilters(serializeFilters(f))).toEqual(f);
   });

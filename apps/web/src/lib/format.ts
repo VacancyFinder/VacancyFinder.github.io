@@ -64,3 +64,61 @@ export function hostOf(url: string): string {
     return url;
   }
 }
+
+/** "30 Sep 2026" — unambiguous in Sri Lanka, where both d/m and m/d are seen. */
+export function formatDate(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+}
+
+const norm = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+/**
+ * Many career pages start the description with the job title again; drop that echo so the card
+ * doesn't show the title twice. Returns "" when nothing useful is left.
+ */
+export function cleanSnippet(title: string, snippet: string): string {
+  let s = snippet.trim();
+  const t = norm(title);
+  if (t && norm(s).startsWith(t)) {
+    // Consume snippet characters until they spell the title, then drop them and any separator.
+    let i = 0;
+    while (i < s.length && norm(s.slice(0, i)).length < t.length) i++;
+    if (norm(s.slice(0, i)) === t) s = s.slice(i).replace(/^[\s:–—\-|,.)]+/, "");
+  }
+  return s.length >= 20 ? s : "";
+}
+
+/** RFC 4180 CSV (quotes doubled, fields with commas/quotes/newlines quoted). */
+export function toCsv(rows: (string | number | null | undefined)[][]): string {
+  const cell = (v: string | number | null | undefined) => {
+    const s = v === null || v === undefined ? "" : String(v);
+    // Guard against spreadsheet formula injection from scraped text.
+    const safe = /^[=+\-@\t\r]/.test(s) ? `'${s}` : s;
+    return /[",\n\r]/.test(safe) ? `"${safe.replace(/"/g, '""')}"` : safe;
+  };
+  return rows.map((r) => r.map(cell).join(",")).join("\r\n") + "\r\n";
+}
+
+/** Offer a file to the user (no server involved). */
+export function downloadFile(name: string, content: string, type: string): void {
+  const url = URL.createObjectURL(new Blob([content], { type }));
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+/** Absolute link to an in-app route (hash routing), for sharing. */
+export function appUrl(path: string): string {
+  const base = `${window.location.origin}${import.meta.env.BASE_URL}`;
+  return `${base}#${path.startsWith("/") ? path : `/${path}`}`;
+}

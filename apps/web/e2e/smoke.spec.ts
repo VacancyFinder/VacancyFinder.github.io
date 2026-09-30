@@ -80,16 +80,137 @@ test("job card links to the original listing in a new tab", async ({ page }) => 
   await expect(apply).toHaveAttribute("rel", /noopener/);
 });
 
-test("save a job and mark it applied", async ({ page }) => {
+test("save a job, track the application and export", async ({ page }) => {
   await page.goto("./#/jobs");
   await page.getByRole("button", { name: "Save Data Scientist" }).click();
+  await expect(page.getByText("Saved — find it under Saved")).toBeVisible();
   await page.goto("./#/saved");
   await expect(page.getByRole("heading", { name: "Data Scientist" })).toBeVisible();
-  await page.getByRole("button", { name: "Mark as applied" }).click();
-  await expect(page.getByRole("button", { name: "Applied" })).toHaveAttribute("aria-pressed", "true");
+  await page.getByLabel("Application status for Data Scientist").selectOption("applied");
+  await page.getByRole("button", { name: "Add notes" }).click();
+  await page.getByLabel("Notes for Data Scientist").fill("Call HR on Monday");
+  await page.getByRole("button", { name: "Save notes" }).click();
   await page.reload();
-  await expect(page.getByText("1 saved · 1 marked as applied")).toBeVisible();
+  await expect(page.getByRole("tab", { name: /Applied\s*1/ })).toBeVisible();
+  await expect(page.getByText("Call HR on Monday")).toBeVisible();
   await noAxeViolations(page);
+  const download = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Export CSV" }).click();
+  expect((await download).suggestedFilename()).toMatch(/^rekiya-applications-\d{4}-\d{2}-\d{2}\.csv$/);
+
+  // Remove, then undo.
+  await page.getByRole("button", { name: "Remove Data Scientist", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Data Scientist" })).toHaveCount(0);
+  await page.getByRole("button", { name: "Undo" }).click();
+  await expect(page.getByRole("heading", { name: "Data Scientist" })).toBeVisible();
+});
+
+test("job detail page: facts, apply, save, similar jobs, back", async ({ page }) => {
+  await page.goto("./#/jobs");
+  await page.getByRole("link", { name: "DevSecOps Engineer", exact: true }).click();
+  await expect(page).toHaveURL(/#\/job\/[0-9a-f]{40}$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("DevSecOps Engineer");
+  await expect(page.getByRole("link", { name: /Apply on careers\.example\.lk/ })).toHaveAttribute("target", "_blank");
+  await expect(page.getByText("Remote", { exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Cybersecurity" })).toHaveAttribute("href", /fields=cybersecurity/);
+  await noAxeViolations(page);
+
+  await page.getByLabel("Track your application").or(page.locator("#status")).selectOption("interviewing");
+  await expect(page.getByText("Marked as “Interviewing”")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Saved", exact: true })).toHaveAttribute("aria-pressed", "true");
+
+  await page.getByRole("button", { name: "Back to jobs" }).click();
+  await expect(page).toHaveURL(/#\/jobs$/);
+  // The card now shows the status and that it was viewed.
+  const card = page.getByRole("article", { name: "DevSecOps Engineer" });
+  await expect(card.getByText("Interviewing")).toBeVisible();
+  await expect(card.getByText("Viewed")).toBeVisible();
+
+  await page.goto("./#/job/does-not-exist");
+  await expect(page.getByRole("heading", { name: "This job is no longer listed" })).toBeVisible();
+});
+
+test("hide a job with undo, and manage hidden jobs", async ({ page }) => {
+  await page.goto("./#/jobs");
+  await page.getByRole("button", { name: "Hide UI/UX Designer" }).click();
+  await expect(page.getByRole("heading", { name: "UI/UX Designer" })).toHaveCount(0);
+  await expect(page.getByRole("status").filter({ hasText: "open job" })).toHaveText("5 open jobs");
+  await page.getByRole("button", { name: "Undo" }).click();
+  await expect(page.getByRole("heading", { name: "UI/UX Designer" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Hide UI/UX Designer" }).click();
+  await page.getByRole("link", { name: "Manage hidden jobs" }).click();
+  await expect(page.getByText("UI/UX Designer")).toBeVisible();
+  await page.getByRole("button", { name: "Show again" }).click();
+  await expect(page.getByText("Nothing hidden.")).toBeVisible();
+});
+
+test("quick filters, sort and removable filter chips", async ({ page }) => {
+  await page.goto("./#/jobs");
+  await page.getByRole("group", { name: "Quick filters" }).getByRole("button", { name: "Remote" }).click();
+  await expect(page).toHaveURL(/workMode=remote/);
+  await expect(page.getByRole("status").filter({ hasText: "open job" })).toHaveText("1 open job");
+  await page.getByRole("button", { name: "Remove filter: Remote" }).click();
+  await expect(page.getByRole("status").filter({ hasText: "open job" })).toHaveText("6 open jobs");
+
+  await page.getByLabel("Sort by").selectOption("company");
+  await expect(page).toHaveURL(/sort=company/);
+  // 99x first alphabetically.
+  await expect(page.getByRole("article").first()).toContainText("99x");
+});
+
+test("save a search and see it on the Saved page", async ({ page }) => {
+  await page.goto("./#/jobs?fields=software-engineering");
+  await page.getByRole("button", { name: "Save search" }).click();
+  await expect(page.getByRole("button", { name: "Search saved" })).toHaveAttribute("aria-pressed", "true");
+  await page.goto("./#/saved");
+  const item = page.getByRole("button", { name: /Software Engineering\s*1 open/ });
+  await expect(item).toBeVisible();
+  await item.click();
+  await expect(page).toHaveURL(/fields=software-engineering/);
+});
+
+test("mobile filter sheet", async ({ page, isMobile }) => {
+  test.skip(!isMobile, "phones only");
+  await page.goto("./#/jobs");
+  await page.getByRole("button", { name: /^Filters/ }).click();
+  const sheet = page.getByRole("dialog", { name: "Filters" });
+  await expect(sheet).toBeVisible();
+  await sheet.getByText("Last 7 days").click();
+  await sheet.locator("label", { hasText: "Intern" }).first().click();
+  await noAxeViolations(page);
+  await sheet.getByRole("button", { name: /Show \d+ jobs?/ }).click();
+  await expect(sheet).toBeHidden();
+  await expect(page).toHaveURL(/posted=7/);
+  await noHorizontalScroll(page);
+});
+
+test("insights page and 404", async ({ page }) => {
+  await page.goto("./#/insights");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Job market insights");
+  await expect(page.getByRole("link", { name: /Software Engineering\s*1 open jobs/ })).toHaveAttribute(
+    "href",
+    /fields=software-engineering/,
+  );
+  await noAxeViolations(page);
+  await noHorizontalScroll(page);
+  await page.goto("./#/nope");
+  await expect(page.getByRole("heading", { name: "Page not found" })).toBeVisible();
+});
+
+test("landing search goes to the feed", async ({ page }) => {
+  await page.goto("./#/about");
+  await page.getByLabel("Search jobs").fill("react");
+  await page.getByRole("button", { name: "Search jobs" }).click();
+  await expect(page).toHaveURL(/#\/jobs\?q=react/);
+  await expect(page.getByRole("heading", { name: "Senior React Developer" })).toBeVisible();
+});
+
+test("settings: backup download", async ({ page }) => {
+  await page.goto("./#/settings");
+  const download = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download backup" }).click();
+  expect((await download).suggestedFilename()).toMatch(/^rekiya-backup-.*\.json$/);
 });
 
 test("company directory: industries, groups, health and coming soon", async ({ page }) => {
