@@ -1,0 +1,75 @@
+name: Suggest a company
+description: Tell us about a Sri Lankan company whose careers page Rekiya should track.
+title: "Add company: "
+labels: ["company-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! A maintainer checks every suggestion before anything is crawled. We only track a company's **own** careers page or its official applicant-tracking system (Lever, Greenhouse, Workable, …), not third-party job boards.
+  - type: input
+    id: name
+    attributes:
+      label: Company name
+      placeholder: e.g. Acme Lanka (Pvt) Ltd
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      placeholder: https://www.example.lk
+    validations:
+      required: false
+  - type: input
+    id: careers
+    attributes:
+      label: Careers page URL
+      description: The page that lists open vacancies.
+      placeholder: https://www.example.lk/careers
+    validations:
+      required: false
+  - type: input
+    id: cse
+    attributes:
+      label: CSE symbol (if listed)
+      placeholder: e.g. JKH.N0000
+    validations:
+      required: false
+  - type: dropdown
+    id: industry
+    attributes:
+      label: Industry
+      options:
+        - "Banking"
+        - "Insurance"
+        - "Financial Services"
+        - "Investment"
+        - "Diversified Holdings"
+        - "Hotels & Leisure"
+        - "Plantations & Agriculture"
+        - "Food, Beverage & Tobacco"
+        - "Consumer Goods & Retail"
+        - "Materials & Chemicals"
+        - "Manufacturing & Industrials"
+        - "Construction & Engineering"
+        - "Automotive"
+        - "Energy"
+        - "Real Estate"
+        - "Healthcare"
+        - "Telecommunications"
+        - "Technology"
+        - "Apparel & Textiles"
+        - "Logistics & Shipping"
+        - "Media & Printing"
+        - "Trading"
+        - "Services"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: e.g. "They also post on LinkedIn", "The careers page needs JavaScript".
+    validations:
+      required: false

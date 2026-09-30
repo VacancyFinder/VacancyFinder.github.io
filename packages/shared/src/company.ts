@@ -1,17 +1,7 @@
 import { z } from "zod";
 import { IndustrySlug } from "./industries.js";
 
-export const ADAPTERS = [
-  "lever",
-  "greenhouse",
-  "workable",
-  "smartrecruiters",
-  "teamtailor",
-  "jsonld",
-  "html",
-  "custom",
-  "none",
-] as const;
+export const ADAPTERS = ["lever", "greenhouse", "workable", "smartrecruiters", "teamtailor", "jsonld", "html", "custom", "none"] as const;
 export const Adapter = z.enum(ADAPTERS);
 export type Adapter = z.infer<typeof Adapter>;
 
@@ -22,16 +12,11 @@ export type Adapter = z.infer<typeof Adapter>;
  * needs-research   no website → manual work, never crawled
  * disabled         deliberately not crawled (see notes)
  */
-export const CompanyStatus = z.enum([
-  "ready",
-  "needs-adapter",
-  "needs-discovery",
-  "needs-research",
-  "disabled",
-]);
+export const CompanyStatus = z.enum(["ready", "needs-adapter", "needs-discovery", "needs-research", "disabled"]);
 export type CompanyStatus = z.infer<typeof CompanyStatus>;
 
-export const SourceList = z.enum(["tech", "cse"]);
+/** tech/cse: the two source lists; community: added by hand or via the suggest-a-company issue form. */
+export const SourceList = z.enum(["tech", "cse", "community"]);
 export type SourceList = z.infer<typeof SourceList>;
 
 const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "kebab-case slug");
@@ -45,7 +30,10 @@ export const Company = z
     adapter: Adapter,
     adapterConfig: z.record(z.unknown()),
     industry: IndustrySlug,
-    cseSymbol: z.string().regex(/^[A-Z0-9]+\.[A-Z]\d{4}$/).nullable(),
+    cseSymbol: z
+      .string()
+      .regex(/^[A-Z0-9]+\.[A-Z]\d{4}$/)
+      .nullable(),
     parentGroup: slug.nullable(),
     sourceLists: z.array(SourceList).min(1),
     status: CompanyStatus,

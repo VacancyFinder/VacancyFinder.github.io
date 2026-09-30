@@ -1,0 +1,65 @@
+{
+ "data": {
+  "fetchOneCompanyPublic": {
+   "name": "Surge Global",
+   "activeJobs": [
+    {
+     "id": 516983,
+     "title": "Senior Business Analyst  (BFSI)",
+     "department": "Engineering",
+     "location": "Colombo, Sri Lanka",
+     "jobType": "full-time",
+     "tags": [],
+     "salaryRange": null
+    },
+    {
+     "id": 516982,
+     "title": "Senior Project Manager (BFSI)",
+     "department": "Engineering",
+     "location": "Colombo, Sri Lanka",
+     "jobType": "full-time",
+     "tags": [],
+     "salaryRange": null
+    },
+    {
+     "id": 516992,
+     "title": "Senior QA Automation & Performance Tester  (BFSI) ",
+     "department": "Engineering",
+     "location": "Colombo, Sri Lanka",
+     "jobType": "full-time",
+     "tags": [],
+     "salaryRange": null
+    },
+    {
+     "id": 519504,
+     "title": "Go to Market/Business Development Internship",
+     "department": "Marketing",
+     "location": "Colombo, Sri Lanka",
+     "jobType": "internship",
+     "tags": [
+      "Lead Generation & Prospecting",
+      "Market Research & Analysis",
+      "Communication",
+      "CRM",
+      "Presentations & Pitching"
+     ],
+     "salaryRange": {
+      "currency": "LKR",
+      "min": 60000,
+      "max": 60000,
+      "frequency": "month"
+     }
+    },
+    {
+     "id": 516981,
+     "title": "Software Architect  (BFSI)",
+     "department": "Engineering",
+     "location": "Colombo, Sri Lanka",
+     "jobType": "full-time",
+     "tags": [],
+     "salaryRange": null
+    }
+   ]
+  }
+ }
+}

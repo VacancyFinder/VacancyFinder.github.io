@@ -1,0 +1,65 @@
+# Milestone-1 investigation: probe careers pages and discover candidates from a real network,
+# then commit the results back to the branch that requested them. Runs only on claude/** branches
+# when probe/request.json changes, or by hand.
+name: Probe careers pages
+
+on:
+  push:
+    branches: ["claude/**"]
+    paths: ["packages/crawler/probe/request.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: probe-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Install Chromium for the render phase
+        run: pnpm --filter @rekiya/crawler exec playwright install --with-deps chromium
+      - name: Configure git
+        run: |
+          git config user.name "rekiya-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Probe careers pages
+        run: pnpm --filter @rekiya/crawler probe
+      - name: Commit probe results
+        run: |
+          cd packages/crawler
+          tar -czf probe/results.tar.gz -C .probe-out .
+          cp .probe-out/report.json probe/report.json
+          cd ../..
+          git add packages/crawler/probe/results.tar.gz packages/crawler/probe/report.json
+          git commit -m "probe: careers pages $(date -u +'%Y-%m-%d %H:%M') UTC" || echo "nothing to commit"
+          git pull --rebase && git push
+      - name: Discover careers pages for needs-discovery companies
+        if: ${{ hashFiles('packages/crawler/probe/skip-discover') == '' }}
+        run: pnpm --filter @rekiya/crawler discover
+      - name: Commit discovery results
+        if: ${{ hashFiles('packages/crawler/probe/skip-discover') == '' }}
+        run: |
+          git add data/discovery-candidates.json
+          git commit -m "discover: candidates $(date -u +'%Y-%m-%d %H:%M') UTC" || echo "nothing to commit"
+          git pull --rebase && git push
+      - name: Real crawl preview (writes /data on this branch)
+        if: ${{ hashFiles('packages/crawler/probe/run-crawl') != '' }}
+        run: pnpm crawl && pnpm validate:data
+      - name: Commit crawl preview
+        if: ${{ hashFiles('packages/crawler/probe/run-crawl') != '' }}
+        run: |
+          git add data
+          git commit -m "crawl preview $(date -u +'%Y-%m-%d %H:%M') UTC" || echo "nothing to commit"
+          git pull --rebase && git push

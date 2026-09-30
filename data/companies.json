@@ -3,17 +3,25 @@
     "slug": "99x",
     "name": "99x",
     "website": "https://99x.io",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://99x.io/careers/open-positions?location=sri-lanka",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.rounded-xs:has(> h2)",
+      "titleSelector": "h2",
+      "linkSelector": "a.button-link",
+      "locationSelector": "span",
+      "descriptionSelector": "p",
+      "locationFilter": "sri lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "99x open-positions page, Sri Lanka filter (verified Sep 2026)."
   },
   {
     "slug": "abans-electricals",
@@ -29,23 +37,31 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "The 'Work with us' page has no vacancy listings (verified Sep 2026); nothing to crawl yet."
   },
   {
     "slug": "abans-finance",
     "name": "Abans Finance PLC",
     "website": "https://abansfinance.lk",
     "careersUrl": "https://abansfinance.lk/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "groupSelector": ".vacancy-list-item",
+      "groupTitleSelector": "h3",
+      "listSelector": "li a.show-details-career",
+      "anchorAttr": "rel",
+      "defaultLocation": "Sri Lanka"
+    },
     "industry": "financial-services",
     "cseSymbol": "AFSL.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Vacancies grouped by department; details open in a popup on the same page (verified Sep 2026)."
   },
   {
     "slug": "access-engineering",
@@ -61,7 +77,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "acl-cables",
@@ -77,7 +94,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet."
   },
   {
     "slug": "acl-plastics",
@@ -173,7 +191,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "aitken-spence-hotel-holdings",
@@ -189,7 +208,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "aitken-spence-plantation-managements",
@@ -205,7 +225,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "alliance-finance-company",
@@ -370,19 +391,22 @@
   {
     "slug": "ascentic",
     "name": "Ascentic",
-    "website": null,
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "website": "https://ascentic.se",
+    "careersUrl": "https://career.ascentic.se/jobs",
+    "adapter": "teamtailor",
+    "adapterConfig": {
+      "feedUrl": "https://career.ascentic.se/jobs.rss",
+      "skipTitlePattern": "^talent pool"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "ready",
     "active": true,
-    "notes": "Website not confirmed from here (Swedish-owned, Colombo office) — confirm in M1."
+    "notes": "Teamtailor careers site (career.ascentic.se), read from its public RSS feed. 'Talent pool' entries are CV drop-boxes, not vacancies, and are skipped (verified Sep 2026)."
   },
   {
     "slug": "asia-asset-finance",
@@ -437,16 +461,41 @@
     "name": "Asian Hotels & Properties PLC",
     "website": "https://www.johnkeells.com",
     "careersUrl": "https://www.keells.com/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc",
+      "listSelector": "tr.data-row",
+      "titleSelector": "td.colTitle a.jobTitle-link",
+      "linkSelector": "td.colTitle a.jobTitle-link",
+      "locationSelector": "td.colLocation .jobLocation",
+      "departmentSelector": "td.colDepartment .jobDepartment",
+      "dateSelector": "td.colDate .jobDate",
+      "pagination": {
+        "template": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow={offset}",
+        "step": 10,
+        "start": 2,
+        "maxPages": 15
+      },
+      "attributeTo": [
+        {
+          "company": "octave",
+          "pattern": "\\boctave\\b"
+        },
+        {
+          "company": "john-keells-hotels",
+          "pattern": "\\bcinnamon\\b"
+        }
+      ]
+    },
     "industry": "hotels-leisure",
     "cseSymbol": "AHPL.N0000",
     "parentGroup": "keells",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "keells.com/careers links to the group's SAP SuccessFactors site; its search results (51 roles, 10 per page) are read page by page (verified Sep 2026). The RSS feed is disallowed by robots.txt."
   },
   {
     "slug": "asiri-hospital-holdings",
@@ -499,7 +548,7 @@
   {
     "slug": "atlas-labs",
     "name": "Atlas Labs",
-    "website": null,
+    "website": "https://atlaslabs.com.au",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -509,9 +558,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-discovery",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
     "slug": "bairaha-farms",
@@ -646,48 +695,60 @@
     "name": "Brown and Company PLC",
     "website": "https://www.brownsgroup.lk",
     "careersUrl": "https://www.brownsgroup.lk/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "simplifiedhr",
+      "host": "simplifiedhr.brownsgroup.com"
+    },
     "industry": "diversified",
     "cseSymbol": "BRWN.N0000",
     "parentGroup": "brownsgroup",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "brownsgroup.com/careers links to its SimplifiedHR career page; vacancies come from that page's JSON (8 at probe time, verified Sep 2026)."
   },
   {
     "slug": "browns-beach-hotels",
     "name": "Browns Beach Hotels PLC",
     "website": "https://www.brownsgroup.lk",
     "careersUrl": "https://www.brownsgroup.lk/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "simplifiedhr",
+      "host": "simplifiedhr.brownsgroup.com"
+    },
     "industry": "hotels-leisure",
     "cseSymbol": "BBH.N0000",
     "parentGroup": "brownsgroup",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "brownsgroup.com/careers links to its SimplifiedHR career page; vacancies come from that page's JSON (8 at probe time, verified Sep 2026)."
   },
   {
     "slug": "browns-investments",
     "name": "Browns Investments PLC",
     "website": "https://www.brownsgroup.lk",
     "careersUrl": "https://www.brownsgroup.lk/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "simplifiedhr",
+      "host": "simplifiedhr.brownsgroup.com"
+    },
     "industry": "investment",
     "cseSymbol": "BIL.N0000",
     "parentGroup": "brownsgroup",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "brownsgroup.com/careers links to its SimplifiedHR career page; vacancies come from that page's JSON (8 at probe time, verified Sep 2026)."
   },
   {
     "slug": "bukit-darah",
@@ -726,16 +787,32 @@
     "name": "C T Holdings PLC",
     "website": "https://www.cargillsceylon.com",
     "careersUrl": "https://www.cargillsceylon.com/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "requireLink": true,
+      "linkPattern": "/careers/[a-z0-9-]+/?$",
+      "listSelector": "section:has(a[href*='cargillsceylon.com/careers/']):not(:has(section))",
+      "titleSelector": "h2",
+      "linkSelector": "a[href*='/careers/']",
+      "typeSelector": "li:nth-child(1) span:last-child",
+      "workplaceSelector": "li:nth-child(2) span:last-child",
+      "locationSelector": "li:nth-child(3) span:last-child",
+      "attributeTo": [
+        {
+          "company": "cargills-bank",
+          "pattern": "\\bcargills bank\\b"
+        }
+      ]
+    },
     "industry": "diversified",
     "cseSymbol": "CTHR.N0000",
     "parentGroup": "cargillsceylon",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Cargills careers page lists openings as sections (4 at probe time); its PeoplesHR portal was empty (verified Sep 2026)."
   },
   {
     "slug": "c-t-land-development",
@@ -806,16 +883,32 @@
     "name": "Cargills (Ceylon) PLC",
     "website": "https://www.cargillsceylon.com",
     "careersUrl": "https://www.cargillsceylon.com/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "requireLink": true,
+      "linkPattern": "/careers/[a-z0-9-]+/?$",
+      "listSelector": "section:has(a[href*='cargillsceylon.com/careers/']):not(:has(section))",
+      "titleSelector": "h2",
+      "linkSelector": "a[href*='/careers/']",
+      "typeSelector": "li:nth-child(1) span:last-child",
+      "workplaceSelector": "li:nth-child(2) span:last-child",
+      "locationSelector": "li:nth-child(3) span:last-child",
+      "attributeTo": [
+        {
+          "company": "cargills-bank",
+          "pattern": "\\bcargills bank\\b"
+        }
+      ]
+    },
     "industry": "consumer-goods-retail",
     "cseSymbol": "CARG.N0000",
     "parentGroup": "cargillsceylon",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Cargills careers page lists openings as sections (4 at probe time); its PeoplesHR portal was empty (verified Sep 2026)."
   },
   {
     "slug": "cargo-boat-development-company",
@@ -863,7 +956,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "central-industries",
@@ -895,7 +989,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "ceylinco.com from the CSE list is a parked domain for sale (verified Sep 2026); the insurer's real site needs research."
   },
   {
     "slug": "ceylon-beverage-holdings",
@@ -918,16 +1013,41 @@
     "name": "Ceylon Cold Stores PLC",
     "website": "https://www.keells.com",
     "careersUrl": "https://www.keells.com/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc",
+      "listSelector": "tr.data-row",
+      "titleSelector": "td.colTitle a.jobTitle-link",
+      "linkSelector": "td.colTitle a.jobTitle-link",
+      "locationSelector": "td.colLocation .jobLocation",
+      "departmentSelector": "td.colDepartment .jobDepartment",
+      "dateSelector": "td.colDate .jobDate",
+      "pagination": {
+        "template": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow={offset}",
+        "step": 10,
+        "start": 2,
+        "maxPages": 15
+      },
+      "attributeTo": [
+        {
+          "company": "octave",
+          "pattern": "\\boctave\\b"
+        },
+        {
+          "company": "john-keells-hotels",
+          "pattern": "\\bcinnamon\\b"
+        }
+      ]
+    },
     "industry": "food-beverage-tobacco",
     "cseSymbol": "CCS.N0000",
     "parentGroup": "keells",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "keells.com/careers links to the group's SAP SuccessFactors site; its search results (51 roles, 10 per page) are read page by page (verified Sep 2026). The RSS feed is disallowed by robots.txt."
   },
   {
     "slug": "ceylon-grain-elevators",
@@ -1055,7 +1175,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "ceylontobacco.com from the CSE list is a parked domain (verified Sep 2026); the real careers page needs research."
   },
   {
     "slug": "chemanex",
@@ -1126,16 +1247,22 @@
     "name": "Citizens Development Business Finance PLC",
     "website": "https://www.cdb.lk",
     "careersUrl": "https://www.cdb.lk/life-at-cdb/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".career-single-card",
+      "titleSelector": "h6",
+      "linkSelector": "a.apply-now",
+      "locationSelector": ".tags p"
+    },
     "industry": "financial-services",
     "cseSymbol": "CDB.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "CDB careers page lists open positions (verified Sep 2026)."
   },
   {
     "slug": "citrus-leisure",
@@ -1172,8 +1299,8 @@
   {
     "slug": "codegen",
     "name": "CodeGen",
-    "website": null,
-    "careersUrl": null,
+    "website": "https://codegen.co.uk",
+    "careersUrl": "https://codegen.co.uk/careers/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -1182,9 +1309,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
-    "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "status": "needs-adapter",
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows codegen.co.uk/careers (verified Sep 2026)."
   },
   {
     "slug": "colombo-city-holdings",
@@ -1334,6 +1461,30 @@
     "slug": "creative-software",
     "name": "Creative Software",
     "website": "https://www.creativesoftware.com",
+    "careersUrl": "https://www.creativesoftware.com/careers",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".w-dyn-item",
+      "titleSelector": "h3.careers-job",
+      "linkSelector": "a.link-block-2",
+      "typeSelector": ".div-block-2 .text-block:nth-child(1)",
+      "workplaceSelector": ".div-block-2 .text-block:nth-child(2)",
+      "defaultLocation": "Colombo, Sri Lanka"
+    },
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "ready",
+    "active": true,
+    "notes": "Webflow list of open vacancies on the careers page (verified Sep 2026)."
+  },
+  {
+    "slug": "cryptoworth",
+    "name": "Cryptoworth",
+    "website": "https://www.cryptoworth.com",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -1344,24 +1495,8 @@
       "tech"
     ],
     "status": "needs-discovery",
-    "active": true
-  },
-  {
-    "slug": "cryptoworth",
-    "name": "Cryptoworth",
-    "website": null,
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
-    "industry": "technology",
-    "cseSymbol": null,
-    "parentGroup": null,
-    "sourceLists": [
-      "tech"
-    ],
-    "status": "needs-research",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs and LinkedIn (third-party, not crawled in v1)."
   },
   {
     "slug": "dankotuwa-porcelain",
@@ -1393,15 +1528,26 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "dialog-axiata",
     "name": "Dialog Axiata PLC",
     "website": "https://www.dialog.lk",
     "careersUrl": "https://dialog.lk/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".hcm-jpp-job",
+      "titleSelector": ".hcm-jpp-name span",
+      "departmentSelector": ".hcm-jpp-company",
+      "descriptionSelector": "input#hcm-jpp-description@value",
+      "anchorAttr": "id",
+      "closingDateSelector": ".hcm-jpp-closing_date span:last-child",
+      "url": "https://hcmcloud.dialog.lk/CareerPortal/Careers?q=bEopnWmcv9llMiBG3zygOw%3D%3D",
+      "closingDateFormat": "dmy",
+      "defaultLocation": "Colombo, Sri Lanka"
+    },
     "industry": "telecommunications",
     "cseSymbol": "DIAL.N0000",
     "parentGroup": "dialog",
@@ -1409,48 +1555,81 @@
       "tech",
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "dialog.lk/careers links to Dialog's MiHCM career portal; listings are in its HTML (31 roles at probe time, verified Sep 2026). Office buildings are shown instead of towns, so the location is Colombo."
   },
   {
     "slug": "dialog-finance",
     "name": "Dialog Finance PLC",
     "website": "https://www.dialog.lk",
     "careersUrl": "https://dialog.lk/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".hcm-jpp-job",
+      "titleSelector": ".hcm-jpp-name span",
+      "departmentSelector": ".hcm-jpp-company",
+      "descriptionSelector": "input#hcm-jpp-description@value",
+      "anchorAttr": "id",
+      "closingDateSelector": ".hcm-jpp-closing_date span:last-child",
+      "url": "https://hcmcloud.dialog.lk/CareerPortal/Careers?q=bEopnWmcv9llMiBG3zygOw%3D%3D",
+      "closingDateFormat": "dmy",
+      "defaultLocation": "Colombo, Sri Lanka"
+    },
     "industry": "financial-services",
     "cseSymbol": "CALF.N0000",
     "parentGroup": "dialog",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "dialog.lk/careers links to Dialog's MiHCM career portal; listings are in its HTML (31 roles at probe time, verified Sep 2026). Office buildings are shown instead of towns, so the location is Colombo."
   },
   {
     "slug": "diesel-and-motor-engineering",
     "name": "Diesel & Motor Engineering PLC",
     "website": "https://www.dimolanka.com",
     "careersUrl": "https://www.dimolanka.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://www.dimolanka.com/careers-and-people/vacancies/",
+      "listSelector": "a[href*='/dimo-careers/']",
+      "titleSelector": ".title",
+      "locationSelector": ".location span",
+      "departmentSelector": ".business",
+      "closingDateSelector": ".date",
+      "closingDateFormat": "dmy",
+      "pagination": {
+        "template": "page/{n}/",
+        "start": 2,
+        "maxPages": 5
+      }
+    },
     "industry": "automotive",
     "cseSymbol": "DIMO.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "DIMO vacancies page (paginated). Listings past their closing date are dropped — at probe time all 4 had closed (verified Sep 2026)."
   },
   {
     "slug": "digital-mobility-solutions-lanka-pickme",
     "name": "Digital Mobility Solutions Lanka PLC (PickMe)",
     "website": "https://pickme.lk",
     "careersUrl": "https://pickme.lk/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".job-details",
+      "titleSelector": "h4",
+      "linkSelector": ".job-link a",
+      "locationSelector": ".job-summery strong",
+      "departmentSelector": ".job-summery span",
+      "defaultLocation": "Sri Lanka"
+    },
     "industry": "technology",
     "cseSymbol": "PKME.N0000",
     "parentGroup": null,
@@ -1458,8 +1637,9 @@
       "tech",
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "PickMe's own careers page lists current openings (verified Sep 2026)."
   },
   {
     "slug": "dilmah-ceylon-tea-company",
@@ -1475,7 +1655,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet."
   },
   {
     "slug": "dipped-products",
@@ -1737,33 +1918,41 @@
     "slug": "flat-rock-technology",
     "name": "Flat Rock Technology",
     "website": "https://www.flatrocktech.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://flatrocktech.com/careers",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "flatrock",
+      "locationFilter": "sri lanka|colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": false,
+    "notes": "Careers page is filled from admin.flatrocktech.com/wp-admin/admin-ajax.php, which that host's robots.txt disallows; not crawled (verified Sep 2026)."
   },
   {
     "slug": "fortude",
     "name": "Fortude",
     "website": "https://fortude.co",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://careers.fortude.co/",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "fortude",
+      "locationFilter": "sri lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "careers.fortude.co lists roles from its own job-list endpoint (17 at probe time); Apply goes to Fortude's TalentRecruit ATS (verified Sep 2026)."
   },
   {
     "slug": "galadari-hotels-lanka",
@@ -1875,7 +2064,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "hnb.lk/careers has a general application form but no vacancy listings (verified Sep 2026)."
   },
   {
     "slug": "hatton-plantations",
@@ -1898,86 +2088,121 @@
     "name": "Haycarb PLC",
     "website": "https://www.haycarb.com",
     "careersUrl": "https://www.hayleys.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "oracle-hcm",
+      "host": "emdm.fa.ap1.oraclecloud.com",
+      "siteNumber": "CX_23001",
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
+    },
     "industry": "materials-chemicals",
     "cseSymbol": "HAYC.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026)."
   },
   {
     "slug": "hayleys",
     "name": "Hayleys PLC",
     "website": "https://www.hayleys.com",
     "careersUrl": "https://www.hayleys.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "oracle-hcm",
+      "host": "emdm.fa.ap1.oraclecloud.com",
+      "siteNumber": "CX_23001",
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
+    },
     "industry": "diversified",
     "cseSymbol": "HAYL.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026)."
   },
   {
     "slug": "hayleys-fabric",
     "name": "Hayleys Fabric PLC",
     "website": "https://www.hayleysfabric.com",
     "careersUrl": "https://www.hayleys.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "oracle-hcm",
+      "host": "emdm.fa.ap1.oraclecloud.com",
+      "siteNumber": "CX_23001",
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
+    },
     "industry": "apparel-textiles",
     "cseSymbol": "MGT.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026)."
   },
   {
     "slug": "hayleys-fibre",
     "name": "Hayleys Fibre PLC",
     "website": "https://www.hayleys.com",
     "careersUrl": "https://www.hayleys.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "oracle-hcm",
+      "host": "emdm.fa.ap1.oraclecloud.com",
+      "siteNumber": "CX_23001",
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
+    },
     "industry": "materials-chemicals",
     "cseSymbol": "HEXP.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026)."
   },
   {
     "slug": "hayleys-leisure",
     "name": "Hayleys Leisure PLC",
     "website": "https://www.hayleys.com",
     "careersUrl": "https://www.hayleys.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "oracle-hcm",
+      "host": "emdm.fa.ap1.oraclecloud.com",
+      "siteNumber": "CX_23001",
+      "locationFilter": "sri lanka|colombo",
+      "skipTitlePattern": "^join the hayleys family$"
+    },
     "industry": "hotels-leisure",
     "cseSymbol": "CONN.N0000",
-    "parentGroup": "hayleys",
+    "parentGroup": "hayleys-group",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026)."
   },
   {
     "slug": "hcltech",
     "name": "HCLTech",
     "website": "https://www.hcltech.com",
-    "careersUrl": null,
+    "careersUrl": "https://www.hcltech.com/careers",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -1986,9 +2211,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true,
-    "notes": "Global careers portal; filter to Sri Lanka."
+    "status": "needs-adapter",
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows hcltech.com/careers (verified Sep 2026). Global portal."
   },
   {
     "slug": "hdfc-bank-of-sri-lanka",
@@ -2020,7 +2245,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "hemas-holdings",
@@ -2036,7 +2262,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet."
   },
   {
     "slug": "hikkaduwa-beach-resort",
@@ -2185,24 +2412,7 @@
   {
     "slug": "hype-invention",
     "name": "Hype Invention",
-    "website": null,
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
-    "industry": "technology",
-    "cseSymbol": null,
-    "parentGroup": null,
-    "sourceLists": [
-      "tech"
-    ],
-    "status": "needs-research",
-    "active": true,
-    "notes": "Website not confirmed — confirm in M1."
-  },
-  {
-    "slug": "ifs",
-    "name": "IFS",
-    "website": "https://www.ifs.com",
+    "website": "https://hypeinvention.com",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -2214,7 +2424,24 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "Global site; need the Sri Lanka-filtered listing."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
+  },
+  {
+    "slug": "ifs",
+    "name": "IFS",
+    "website": "https://www.ifs.com",
+    "careersUrl": "https://careers.smartrecruiters.com/ifs1",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": false,
+    "notes": "IFS hires in Sri Lanka through SmartRecruiters (ifs1), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026)."
   },
   {
     "slug": "industrial-asphalts-lanka",
@@ -2278,39 +2505,90 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page groups vacancies by department; every department showed 'no vacancies' at probe time, so the markup of a real listing is unknown (verified Sep 2026)."
   },
   {
     "slug": "john-keells",
     "name": "John Keells PLC",
     "website": "https://www.keells.com",
     "careersUrl": "https://www.keells.com/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc",
+      "listSelector": "tr.data-row",
+      "titleSelector": "td.colTitle a.jobTitle-link",
+      "linkSelector": "td.colTitle a.jobTitle-link",
+      "locationSelector": "td.colLocation .jobLocation",
+      "departmentSelector": "td.colDepartment .jobDepartment",
+      "dateSelector": "td.colDate .jobDate",
+      "pagination": {
+        "template": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow={offset}",
+        "step": 10,
+        "start": 2,
+        "maxPages": 15
+      },
+      "attributeTo": [
+        {
+          "company": "octave",
+          "pattern": "\\boctave\\b"
+        },
+        {
+          "company": "john-keells-hotels",
+          "pattern": "\\bcinnamon\\b"
+        }
+      ]
+    },
     "industry": "trading",
     "cseSymbol": "JKL.N0000",
     "parentGroup": "keells",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "keells.com/careers links to the group's SAP SuccessFactors site; its search results (51 roles, 10 per page) are read page by page (verified Sep 2026). The RSS feed is disallowed by robots.txt."
   },
   {
     "slug": "john-keells-holdings",
     "name": "John Keells Holdings PLC",
     "website": "https://www.keells.com",
     "careersUrl": "https://www.keells.com/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc",
+      "listSelector": "tr.data-row",
+      "titleSelector": "td.colTitle a.jobTitle-link",
+      "linkSelector": "td.colTitle a.jobTitle-link",
+      "locationSelector": "td.colLocation .jobLocation",
+      "departmentSelector": "td.colDepartment .jobDepartment",
+      "dateSelector": "td.colDate .jobDate",
+      "pagination": {
+        "template": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow={offset}",
+        "step": 10,
+        "start": 2,
+        "maxPages": 15
+      },
+      "attributeTo": [
+        {
+          "company": "octave",
+          "pattern": "\\boctave\\b"
+        },
+        {
+          "company": "john-keells-hotels",
+          "pattern": "\\bcinnamon\\b"
+        }
+      ]
+    },
     "industry": "diversified",
     "cseSymbol": "JKH.N0000",
     "parentGroup": "keells",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "keells.com/careers links to the group's SAP SuccessFactors site; its search results (51 roles, 10 per page) are read page by page (verified Sep 2026). The RSS feed is disallowed by robots.txt."
   },
   {
     "slug": "john-keells-hotels",
@@ -2326,7 +2604,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "careers.cinnamonhotels.com's vacancy API returns ~12 MB per request (embedded images), too heavy to poll every 3 hours. Cinnamon roles on the John Keells careers site are still credited here (verified Sep 2026)."
   },
   {
     "slug": "kahawatte-plantations",
@@ -2365,16 +2644,41 @@
     "name": "Keells Food Products PLC",
     "website": "https://www.keells.com",
     "careersUrl": "https://www.keells.com/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc",
+      "listSelector": "tr.data-row",
+      "titleSelector": "td.colTitle a.jobTitle-link",
+      "linkSelector": "td.colTitle a.jobTitle-link",
+      "locationSelector": "td.colLocation .jobLocation",
+      "departmentSelector": "td.colDepartment .jobDepartment",
+      "dateSelector": "td.colDate .jobDate",
+      "pagination": {
+        "template": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow={offset}",
+        "step": 10,
+        "start": 2,
+        "maxPages": 15
+      },
+      "attributeTo": [
+        {
+          "company": "octave",
+          "pattern": "\\boctave\\b"
+        },
+        {
+          "company": "john-keells-hotels",
+          "pattern": "\\bcinnamon\\b"
+        }
+      ]
+    },
     "industry": "food-beverage-tobacco",
     "cseSymbol": "KFP.N0000",
     "parentGroup": "keells",
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "keells.com/careers links to the group's SAP SuccessFactors site; its search results (51 roles, 10 per page) are read page by page (verified Sep 2026). The RSS feed is disallowed by robots.txt."
   },
   {
     "slug": "kegalle-plantations",
@@ -2573,16 +2877,24 @@
     "name": "Lanka IOC PLC",
     "website": "https://www.lankaioc.com",
     "careersUrl": "https://www.lankaioc.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://www.lankaioc.com/current-openings/",
+      "listSelector": ".card-job",
+      "titleSelector": ".text-h6",
+      "linkSelector": "a",
+      "defaultLocation": "Sri Lanka",
+      "titleStripPattern": "^we\\s+are\\s+hiring\\s*!?\\s*[-–:]?\\s*"
+    },
     "industry": "energy",
     "cseSymbol": "LIOC.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "'Current openings' page linked from lankaioc.com/careers (verified Sep 2026)."
   },
   {
     "slug": "lanka-milk-foods-cwe",
@@ -2758,7 +3070,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "lee-hedges",
@@ -2806,7 +3119,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "lolc-general-insurance",
@@ -2822,7 +3136,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "lolc-holdings",
@@ -2838,7 +3153,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "lotus-hydro-power",
@@ -2860,18 +3176,28 @@
     "slug": "lseg",
     "name": "LSEG",
     "website": "https://www.lseg.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://lseg.wd3.myworkdayjobs.com/Careers",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "workday",
+      "host": "lseg.wd3.myworkdayjobs.com",
+      "tenant": "lseg",
+      "site": "Careers",
+      "appliedFacets": {
+        "locationCountry": [
+          "db69e062446c11de98360015c5e6daf6"
+        ]
+      }
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "Global careers portal; filter to Sri Lanka. Millennium IT is now part of LSEG — check whether they share one listing."
+    "notes": "Workday career site, filtered to the Sri Lanka country facet (28 roles at probe time, verified Sep 2026). Millennium IT roles are listed here."
   },
   {
     "slug": "luminex",
@@ -3031,7 +3357,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "mercantile-investments-and-finance",
@@ -3112,7 +3439,7 @@
     ],
     "status": "needs-research",
     "active": true,
-    "notes": "Now part of LSEG; may have no separate careers page. NOT the same as Millennium Housing Developers PLC (CSE)."
+    "notes": "Now part of LSEG; its roles are listed on LSEG's Workday site (crawled under LSEG). NOT the same as Millennium Housing Developers PLC (CSE)."
   },
   {
     "slug": "muller-and-phipps-ceylon",
@@ -3199,16 +3526,27 @@
     "name": "National Development Bank PLC",
     "website": "https://www.ndbbank.com",
     "careersUrl": "https://www.ndbbank.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".hcm-jpp-job",
+      "titleSelector": ".hcm-jpp-name span",
+      "departmentSelector": ".hcm-jpp-company",
+      "descriptionSelector": "input#hcm-jpp-description@value",
+      "anchorAttr": "id",
+      "closingDateSelector": ".hcm-jpp-closing_date span:last-child",
+      "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En",
+      "locationSelector": ".hcm-jpp-location span",
+      "closingDateFormat": "mdy"
+    },
     "industry": "banking",
     "cseSymbol": "NDB.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "ndbbank.com/careers links to NDB's MiHCM career portal (14 roles at probe time, verified Sep 2026). Dates are month/day/year."
   },
   {
     "slug": "nations-trust-bank",
@@ -3224,7 +3562,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers page returns HTTP 403 to automated requests (verified Sep 2026)."
   },
   {
     "slug": "nawaloka-hospitals",
@@ -3245,19 +3584,19 @@
   {
     "slug": "octave",
     "name": "Octave",
-    "website": null,
+    "website": "https://www.keells.com/octave/",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
     "cseSymbol": null,
-    "parentGroup": null,
+    "parentGroup": "keells",
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-discovery",
     "active": true,
-    "notes": "John Keells Group data & AI unit — may list roles on keells.com/careers; confirm in M1."
+    "notes": "John Keells Group data & AI unit. Roles are listed on the John Keells careers site with 'Octave' in the title and are credited to Octave from that crawl."
   },
   {
     "slug": "odel",
@@ -3369,7 +3708,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "panasian-power",
@@ -3407,18 +3747,23 @@
     "slug": "pearson",
     "name": "Pearson",
     "website": "https://www.pearson.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://hccz.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/requisitions?location=Sri+Lanka",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "oracle-hcm",
+      "host": "hccz.fa.em3.oraclecloud.com",
+      "siteNumber": "CX_2",
+      "location": "Sri Lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "Global careers portal; filter to Sri Lanka (Pearson Lanka)."
+    "notes": "Pearson's Oracle Recruiting Cloud site, filtered to Sri Lanka (3 roles at probe time, verified Sep 2026)."
   },
   {
     "slug": "pegasus-hotels-of-ceylon",
@@ -3466,7 +3811,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "pgp-glass-ceylon",
@@ -3744,17 +4090,21 @@
     "slug": "rootcode",
     "name": "Rootcode",
     "website": "https://rootcode.io",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://rootcode.ai/careers",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "rootcode",
+      "locationFilter": "sri lanka|colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Careers page is filled from rootcode.ai/api/jobs; roles in Estonia are filtered out (verified Sep 2026)."
   },
   {
     "slug": "royal-ceramics-lanka",
@@ -3802,7 +4152,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Vacancies are published only as images with an MS Forms link (no text to read) (verified Sep 2026)."
   },
   {
     "slug": "samson-international",
@@ -3946,7 +4297,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "'Available vacancies' is a table that was empty at probe time, so extraction can't be verified yet (verified Sep 2026)."
   },
   {
     "slug": "seylan-developments",
@@ -4058,7 +4410,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "singer.lk/careers redirects to the singersl.com homepage; no careers page found (verified Sep 2026)."
   },
   {
     "slug": "singhe-hospitals",
@@ -4095,7 +4448,7 @@
   {
     "slug": "snapdrum",
     "name": "Snapdrum",
-    "website": null,
+    "website": "https://snapdrum.com",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -4105,9 +4458,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-discovery",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
     "slug": "softlogic-capital",
@@ -4123,7 +4476,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "softlogic-finance",
@@ -4139,7 +4493,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "softlogic-holdings",
@@ -4155,7 +4510,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "softlogic-life-insurance",
@@ -4171,23 +4527,29 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "sri-lanka-telecom",
     "name": "Sri Lanka Telecom PLC",
     "website": "https://www.slt.lk",
     "careersUrl": "https://www.slt.lk/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".inner-rightplain-block ul.common-list li",
+      "titleSelector": "h4",
+      "defaultLocation": "Colombo, Sri Lanka"
+    },
     "industry": "telecommunications",
     "cseSymbol": "SLTL.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Openings are listed as headings on slt.lk/careers; applications go through careers.slt.lk (verified Sep 2026)."
   },
   {
     "slug": "standard-capital",
@@ -4219,23 +4581,28 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to LinkedIn jobs; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "surge-global",
     "name": "Surge Global",
     "website": "https://surge.global",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://surge.global/careers/",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "rooster",
+      "companyId": 3
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Surge's own careers page embeds its roles through Rooster's integration API (company 3; 5 roles at probe time, verified Sep 2026)."
   },
   {
     "slug": "swadeshi-industrial-works",
@@ -4267,13 +4634,14 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "swivel-group",
     "name": "Swivel Group",
-    "website": null,
-    "careersUrl": null,
+    "website": "https://swivelgroup.com.au",
+    "careersUrl": "https://careers.smartrecruiters.com/SwivelGroup",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -4282,25 +4650,38 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
-    "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "status": "needs-adapter",
+    "active": false,
+    "notes": "Careers on SmartRecruiters (SwivelGroup), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026)."
   },
   {
     "slug": "sysco-labs",
     "name": "Sysco LABS",
     "website": "https://syscolabs.lk",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/jobs?locations=b014cc62fe6601b8d666502cd5287f36",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "workday",
+      "host": "wd5.myworkdaysite.com",
+      "tenant": "sysco",
+      "site": "syscocareers",
+      "publicBase": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers",
+      "appliedFacets": {
+        "locations": [
+          "b014cc62fe6601b8d666502cd5287f36"
+        ]
+      },
+      "fetchDetails": false
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "syscolabs.lk/careers links to Sysco's Workday site filtered to 'Sysco LABS - Sri Lanka' (87 roles at probe time, verified Sep 2026)."
   },
   {
     "slug": "tal-lanka-hotels",
@@ -4380,7 +4761,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "tess-agro",
@@ -4573,23 +4955,28 @@
     ],
     "status": "needs-research",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website not found (twistdigital.io is an unrelated agency). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
     "slug": "union-bank-of-colombo",
     "name": "Union Bank of Colombo PLC",
     "website": "https://www.unionb.com",
     "careersUrl": "https://www.unionb.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "peopleshr",
+      "portal": "https://unionbank.peopleshr.com/JobPortal",
+      "defaultLocation": "Colombo, Sri Lanka"
+    },
     "industry": "banking",
     "cseSymbol": "UBC.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "unionb.com/careers redirects to its PeoplesHR job portal; vacancies come from the portal's JSON (2 at probe time, verified Sep 2026). The portal has no per-vacancy link, so Apply opens the portal."
   },
   {
     "slug": "vallibel-finance",
@@ -4612,16 +4999,24 @@
     "name": "Vallibel One PLC",
     "website": "https://www.vallibelone.com",
     "careersUrl": "https://www.vallibelone.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "#openings .group",
+      "titleSelector": "h3",
+      "linkSelector": "a[href*='/apply']",
+      "departmentSelector": ".fa-building + span",
+      "locationSelector": ".fa-map-marker-alt + span",
+      "typeSelector": ".fa-clock + span"
+    },
     "industry": "diversified",
     "cseSymbol": "VONE.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "'Our openings' section on the careers page (verified Sep 2026)."
   },
   {
     "slug": "vidullanka",
@@ -4675,6 +5070,31 @@
     "slug": "wso2",
     "name": "WSO2",
     "website": "https://wso2.com",
+    "careersUrl": "https://wso2.com/careers",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".pd-card",
+      "titleSelector": "h5",
+      "linkSelector": "a.cLinkCTA",
+      "locationSelector": ".cCountry",
+      "departmentSelector": ".pd-tier",
+      "typeSelector": ".pd-tag:not(.cCountry)",
+      "locationFilter": "sri lanka"
+    },
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "ready",
+    "active": true,
+    "notes": "Careers page lists global roles as cards; only Sri Lanka roles are kept (verified Sep 2026)."
+  },
+  {
+    "slug": "zegates",
+    "name": "Zegates",
+    "website": "https://zegates.com",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -4685,72 +5105,74 @@
       "tech"
     ],
     "status": "needs-discovery",
-    "active": true
-  },
-  {
-    "slug": "zegates",
-    "name": "Zegates",
-    "website": null,
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
-    "industry": "technology",
-    "cseSymbol": null,
-    "parentGroup": null,
-    "sourceLists": [
-      "tech"
-    ],
-    "status": "needs-research",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
     "slug": "zillione",
     "name": "ZILLIONe",
-    "website": null,
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "website": "https://www.zillione.com",
+    "careersUrl": "https://www.zillione.com/careers",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "zillione"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "ready",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Careers page is filled from apisv1.zillione.com/api/careers (verified Sep 2026)."
   },
   {
     "slug": "zone24x7",
     "name": "Zone24x7",
     "website": "https://www.zone24x7.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://zone24x7.com/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".card-job-set",
+      "titleSelector": "h2",
+      "linkSelector": "a",
+      "locationSelector": ".footer-of-job-card p",
+      "typeSelector": ".meta-section p"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Careers page lists current vacancies as cards (verified Sep 2026)."
   },
   {
     "slug": "zyner-io",
     "name": "Zyner.io",
     "website": "https://zyner.io",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://careers.zyner.io/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "[data-slot='card']",
+      "titleSelector": "h2",
+      "linkSelector": "a[href*='rooster.jobs']",
+      "typeSelector": "h2 + div span:nth-child(1)",
+      "workplaceSelector": "h2 + div span:nth-child(2)",
+      "descriptionSelector": "p",
+      "defaultLocation": "Sri Lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Zyner's own careers page lists roles; Apply links go to its Rooster postings (verified Sep 2026)."
   }
 ]

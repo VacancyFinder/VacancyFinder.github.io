@@ -22,5 +22,6 @@ export const GROUP_NAMES: Record<string, string> = {
 };
 
 export function groupName(slug: string): string {
-  return GROUP_NAMES[slug] ?? slug.charAt(0).toUpperCase() + slug.slice(1);
+  const base = slug.replace(/-group$/, "");
+  return GROUP_NAMES[slug] ?? GROUP_NAMES[base] ?? `${base.charAt(0).toUpperCase()}${base.slice(1)} Group`;
 }
