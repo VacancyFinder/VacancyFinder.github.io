@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { FIELD_LABELS, INDUSTRY_LABELS, JOB_TYPE_LABELS, SENIORITY_LABELS, WORK_MODE_LABELS } from "@rekiya/shared/constants";
 import { CompanyBadge } from "../components/CompanyBadge";
-import { BookmarkIcon, ChevronLeftIcon, ExternalIcon, EyeOffIcon, FlagIcon, ShareIcon } from "../components/Icons";
+import { BookmarkIcon, ChevronLeftIcon, ExternalIcon, EyeOffIcon, FlagIcon, ShareIcon, WhatsAppIcon } from "../components/Icons";
 import { postedLabel } from "../components/JobCard";
 import { JobList } from "../components/JobList";
 import { REPO_URL } from "../components/Layout";
@@ -17,6 +17,7 @@ import type { Job } from "../lib/types";
 import { useJobActions } from "../lib/useJobActions";
 import { fieldPath, jobKeyFromParam, jobPath, JOB_META, matchesJobKey, SITE_NAME } from "../lib/paths";
 import { SITE_URL, useSeo } from "../lib/seo";
+import { jobShareMessage, whatsappUrl } from "../lib/share";
 import { breadcrumbLd, jobPostingLd } from "../lib/structured-data";
 
 function BackLink() {
@@ -129,10 +130,11 @@ function Detail({ job, all }: { job: Job; all: Job[] }) {
 
   const share = async () => {
     const url = appUrl(jobPath(job, emp.name));
-    const text = `${job.title} at ${emp.name}`;
+    const title = `${job.title} at ${emp.name}`;
     try {
       if (navigator.share) {
-        await navigator.share({ title: text, text, url });
+        // The URL goes separately so apps build their preview card from it.
+        await navigator.share({ title, text: jobShareMessage(job, emp.name, "").trimEnd(), url });
         return;
       }
       await navigator.clipboard.writeText(url);
@@ -205,6 +207,15 @@ function Detail({ job, all }: { job: Job; all: Job[] }) {
                 <BookmarkIcon filled={!!entry} width={18} height={18} />
                 {entry ? "Saved" : "Save"}
               </button>
+              <a
+                href={whatsappUrl(jobShareMessage(job, emp.name, appUrl(jobPath(job, emp.name))))}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary h-12"
+                aria-label="Share on WhatsApp"
+              >
+                <WhatsAppIcon width={18} height={18} className="text-[#128c4b] dark:text-[#25d366]" /> WhatsApp
+              </a>
               <button type="button" className="btn-secondary h-12" onClick={share}>
                 <ShareIcon width={18} height={18} /> Share
               </button>

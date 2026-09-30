@@ -11,6 +11,7 @@ import {
   type Filters,
 } from "../src/lib/filters";
 import { cleanSnippet, formatDate, nextSyncLabel, toCsv } from "../src/lib/format";
+import { jobShareMessage, siteShareMessage, whatsappUrl } from "../src/lib/share";
 import { clearAll, exportBackup, importBackup, KEYS, loadSaved, normalizeSaved } from "../src/lib/storage";
 import type { Job } from "../src/lib/types";
 
@@ -161,5 +162,26 @@ describe("sync schedule label", () => {
   it("says 'any minute now' once a sync is due or late", () => {
     expect(nextSyncLabel("2026-09-30T10:00:00Z", 3 * H, Date.parse("2026-09-30T13:30:00Z"))).toBe("any minute now");
     expect(nextSyncLabel("not a date", 3 * H)).toBe("any minute now");
+  });
+});
+
+describe("share messages", () => {
+  it("writes a WhatsApp-ready job message with the link on its own line", () => {
+    const msg = jobShareMessage(
+      job("x", { title: "QA Lead", seniority: "lead", workMode: "unspecified" }),
+      "Acme PLC",
+      "https://r.lk/job/x/",
+    );
+    expect(msg).toBe(
+      "*QA Lead*\nAcme PLC · Colombo\nLead · Full-time\n\nFound on Rekiya. Apply directly on the company's official careers page:\nhttps://r.lk/job/x/",
+    );
+    expect(whatsappUrl("a b&c")).toBe("https://wa.me/?text=a%20b%26c");
+  });
+  it("introduces Rekiya, with live counts when known", () => {
+    const msg = siteShareMessage("https://r.lk/", { open: 1450, companies: 120 });
+    expect(msg.startsWith("*Rekiya: the latest job vacancies in Sri Lanka*")).toBe(true);
+    expect(msg).toContain("• 1,450 open jobs from 120 employers");
+    expect(msg.endsWith("\nhttps://r.lk/")).toBe(true);
+    expect(siteShareMessage("https://r.lk/")).toContain("• Open jobs from leading Sri Lankan employers");
   });
 });
