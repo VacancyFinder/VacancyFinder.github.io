@@ -1,0 +1,551 @@
+{
+  "99x-io-careers-open-positions-location-sri-lanka": {
+    "target": "99x-io-careers-open-positions-location-sri-lanka",
+    "url": "https://99x.io/careers/open-positions?location=sri-lanka",
+    "adapter": "html",
+    "companies": [
+      "99x"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 1,
+    "suspect": false
+  },
+  "abansfinance-lk-careers": {
+    "target": "abansfinance-lk-careers",
+    "url": "https://abansfinance.lk/careers",
+    "adapter": "html",
+    "companies": [
+      "abans-finance"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 6,
+    "suspect": false
+  },
+  "abansgroup-com-work-with-us": {
+    "target": "abansgroup-com-work-with-us",
+    "url": "https://abansgroup.com/work-with-us",
+    "adapter": "none",
+    "companies": [
+      "abans-electricals"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "acl-lk-careers": {
+    "target": "acl-lk-careers",
+    "url": "https://acl.lk/careers",
+    "adapter": "none",
+    "companies": [
+      "acl-cables"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "aitkenspence-com-careers": {
+    "target": "aitkenspence-com-careers",
+    "url": "https://aitkenspence.com/careers",
+    "adapter": "none",
+    "companies": [
+      "aitken-spence",
+      "aitken-spence-hotel-holdings",
+      "aitken-spence-plantation-managements"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "brownsgroup-lk-careers": {
+    "target": "brownsgroup-lk-careers",
+    "url": "https://brownsgroup.lk/careers",
+    "adapter": "custom",
+    "companies": [
+      "brown-and-company",
+      "browns-beach-hotels",
+      "browns-investments"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 8,
+    "suspect": false
+  },
+  "career-ascentic-se-jobs": {
+    "target": "career-ascentic-se-jobs",
+    "url": "https://career.ascentic.se/jobs",
+    "adapter": "teamtailor",
+    "companies": [
+      "ascentic"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "careers-fortude-co": {
+    "target": "careers-fortude-co",
+    "url": "https://careers.fortude.co/",
+    "adapter": "custom",
+    "companies": [
+      "fortude"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 17,
+    "suspect": false
+  },
+  "careers-zyner-io": {
+    "target": "careers-zyner-io",
+    "url": "https://careers.zyner.io/",
+    "adapter": "html",
+    "companies": [
+      "zyner-io"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 3,
+    "suspect": false
+  },
+  "cargillsceylon-com-careers": {
+    "target": "cargillsceylon-com-careers",
+    "url": "https://cargillsceylon.com/careers",
+    "adapter": "html",
+    "companies": [
+      "c-t-holdings",
+      "cargills-ceylon"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 3,
+    "suspect": false
+  },
+  "cdb-lk-life-at-cdb-careers": {
+    "target": "cdb-lk-life-at-cdb-careers",
+    "url": "https://cdb.lk/life-at-cdb/careers",
+    "adapter": "html",
+    "companies": [
+      "citizens-development-business-finance"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 13,
+    "suspect": false
+  },
+  "creativesoftware-com-careers": {
+    "target": "creativesoftware-com-careers",
+    "url": "https://creativesoftware.com/careers",
+    "adapter": "html",
+    "companies": [
+      "creative-software"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 9,
+    "suspect": false
+  },
+  "dialog-lk-careers": {
+    "target": "dialog-lk-careers",
+    "url": "https://dialog.lk/careers",
+    "adapter": "html",
+    "companies": [
+      "dialog-axiata",
+      "dialog-finance"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 31,
+    "suspect": false
+  },
+  "dilmahtea-com-careers": {
+    "target": "dilmahtea-com-careers",
+    "url": "https://dilmahtea.com/careers",
+    "adapter": "none",
+    "companies": [
+      "dilmah-ceylon-tea-company"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "dimolanka-com-careers": {
+    "target": "dimolanka-com-careers",
+    "url": "https://dimolanka.com/careers",
+    "adapter": "html",
+    "companies": [
+      "diesel-and-motor-engineering"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "flatrocktech-com-careers": {
+    "target": "flatrocktech-com-careers",
+    "url": "https://flatrocktech.com/careers",
+    "adapter": "custom",
+    "companies": [
+      "flat-rock-technology"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": null,
+    "lastError": "robots.txt: robots.txt disallows https://admin.flatrocktech.com/wp-admin/admin-ajax.php?action=frt_jobs",
+    "consecutiveFailures": 1,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "hayleys-com-careers": {
+    "target": "hayleys-com-careers",
+    "url": "https://hayleys.com/careers",
+    "adapter": "custom",
+    "companies": [
+      "haycarb",
+      "hayleys",
+      "hayleys-fabric",
+      "hayleys-fibre",
+      "hayleys-leisure"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 90,
+    "suspect": false
+  },
+  "hccz-fa-em3-oraclecloud-com-hcmui-candidateexperience-en-sites-cx-2-requisitions-location-sri-lanka": {
+    "target": "hccz-fa-em3-oraclecloud-com-hcmui-candidateexperience-en-sites-cx-2-requisitions-location-sri-lanka",
+    "url": "https://hccz.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/requisitions?location=Sri+Lanka",
+    "adapter": "custom",
+    "companies": [
+      "pearson"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 3,
+    "suspect": false
+  },
+  "hemas-com-careers": {
+    "target": "hemas-com-careers",
+    "url": "https://hemas.com/careers",
+    "adapter": "none",
+    "companies": [
+      "hemas-holdings"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "hnb-lk-about-us-careers": {
+    "target": "hnb-lk-about-us-careers",
+    "url": "https://hnb.lk/about-us/careers",
+    "adapter": "none",
+    "companies": [
+      "hatton-national-bank"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "jetwinghotels-com-careers": {
+    "target": "jetwinghotels-com-careers",
+    "url": "https://jetwinghotels.com/careers",
+    "adapter": "none",
+    "companies": [
+      "jetwing-symphony"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "keells-com-careers": {
+    "target": "keells-com-careers",
+    "url": "https://keells.com/careers",
+    "adapter": "html",
+    "companies": [
+      "asian-hotels-and-properties",
+      "ceylon-cold-stores",
+      "john-keells",
+      "john-keells-holdings",
+      "keells-food-products"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 43,
+    "suspect": false
+  },
+  "lankaioc-com-careers": {
+    "target": "lankaioc-com-careers",
+    "url": "https://lankaioc.com/careers",
+    "adapter": "html",
+    "companies": [
+      "lanka-ioc"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 2,
+    "suspect": false
+  },
+  "lseg-wd3-myworkdayjobs-com-careers": {
+    "target": "lseg-wd3-myworkdayjobs-com-careers",
+    "url": "https://lseg.wd3.myworkdayjobs.com/Careers",
+    "adapter": "custom",
+    "companies": [
+      "lseg"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 27,
+    "suspect": false
+  },
+  "ndbbank-com-careers": {
+    "target": "ndbbank-com-careers",
+    "url": "https://ndbbank.com/careers",
+    "adapter": "html",
+    "companies": [
+      "national-development-bank"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 14,
+    "suspect": false
+  },
+  "pickme-lk-careers": {
+    "target": "pickme-lk-careers",
+    "url": "https://pickme.lk/careers",
+    "adapter": "html",
+    "companies": [
+      "digital-mobility-solutions-lanka-pickme"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 12,
+    "suspect": false
+  },
+  "rootcode-ai-careers": {
+    "target": "rootcode-ai-careers",
+    "url": "https://rootcode.ai/careers",
+    "adapter": "custom",
+    "companies": [
+      "rootcode"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 8,
+    "suspect": false
+  },
+  "seylan-lk-careers": {
+    "target": "seylan-lk-careers",
+    "url": "https://seylan.lk/careers",
+    "adapter": "none",
+    "companies": [
+      "seylan-bank"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "slt-lk-careers": {
+    "target": "slt-lk-careers",
+    "url": "https://slt.lk/careers",
+    "adapter": "html",
+    "companies": [
+      "sri-lanka-telecom"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 1,
+    "suspect": false
+  },
+  "softlogic-lk-careers": {
+    "target": "softlogic-lk-careers",
+    "url": "https://softlogic.lk/careers",
+    "adapter": "none",
+    "companies": [
+      "softlogic-capital",
+      "softlogic-finance",
+      "softlogic-holdings",
+      "softlogic-life-insurance"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "sunshineholdings-lk-careers": {
+    "target": "sunshineholdings-lk-careers",
+    "url": "https://sunshineholdings.lk/careers",
+    "adapter": "none",
+    "companies": [
+      "sunshine-holdings"
+    ],
+    "lastRunAt": null,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 0,
+    "suspect": false
+  },
+  "surge-global-careers": {
+    "target": "surge-global-careers",
+    "url": "https://surge.global/careers",
+    "adapter": "custom",
+    "companies": [
+      "surge-global"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 5,
+    "suspect": false
+  },
+  "unionb-com-careers": {
+    "target": "unionb-com-careers",
+    "url": "https://unionb.com/careers",
+    "adapter": "custom",
+    "companies": [
+      "union-bank-of-colombo"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 2,
+    "suspect": false
+  },
+  "vallibelone-com-careers": {
+    "target": "vallibelone-com-careers",
+    "url": "https://vallibelone.com/careers",
+    "adapter": "html",
+    "companies": [
+      "vallibel-one"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 1,
+    "suspect": false
+  },
+  "wd5-myworkdaysite-com-recruiting-sysco-syscocareers-jobs-locations-b014cc62fe6601b8d666502cd5287f36": {
+    "target": "wd5-myworkdaysite-com-recruiting-sysco-syscocareers-jobs-locations-b014cc62fe6601b8d666502cd5287f36",
+    "url": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/jobs?locations=b014cc62fe6601b8d666502cd5287f36",
+    "adapter": "custom",
+    "companies": [
+      "sysco-labs"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 40,
+    "suspect": false
+  },
+  "wso2-com-careers": {
+    "target": "wso2-com-careers",
+    "url": "https://wso2.com/careers",
+    "adapter": "html",
+    "companies": [
+      "wso2"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 7,
+    "suspect": false
+  },
+  "zillione-com-careers": {
+    "target": "zillione-com-careers",
+    "url": "https://zillione.com/careers",
+    "adapter": "custom",
+    "companies": [
+      "zillione"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 3,
+    "suspect": false
+  },
+  "zone24x7-com-careers": {
+    "target": "zone24x7-com-careers",
+    "url": "https://zone24x7.com/careers",
+    "adapter": "html",
+    "companies": [
+      "zone24x7"
+    ],
+    "lastRunAt": "2026-09-30T08:01:31.008Z",
+    "lastSuccessAt": "2026-09-30T08:01:31.008Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "jobCount": 1,
+    "suspect": false
+  }
+}
