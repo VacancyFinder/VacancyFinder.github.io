@@ -7,6 +7,7 @@
     "import:cse": "tsx src/import/cli.ts",
     "discover": "tsx src/discover/cli.ts",
     "probe": "tsx src/probe/run.ts",
+    "crawl": "tsx src/pipeline/run.ts",
     "typecheck": "tsc -p tsconfig.json",
     "test": "vitest run"
   },
