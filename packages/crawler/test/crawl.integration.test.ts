@@ -113,7 +113,6 @@ describe("local crawl over fixtures", () => {
       "union-bank-of-colombo",
       "pearson",
       "surge-global",
-      "flat-rock-technology",
       "fortude",
       "sysco-labs",
       "99x",

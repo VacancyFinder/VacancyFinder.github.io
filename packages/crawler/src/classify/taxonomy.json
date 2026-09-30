@@ -1,5 +1,5 @@
 {
-  "$comment": "Field keywords. Title hit = titleWeight, description hit = descriptionWeight (each distinct term counts once). A field is assigned when its score >= threshold. Terms match whole words, case-insensitively; a trailing * matches any word ending (develop* = developer, development). 'exclude' phrases are removed from the text before that field is scored. Edit freely; run `pnpm --filter @rekiya/crawler test` after. Prefix a term with 'title:' to count it only in the title (for words that are too generic in descriptions).",
+  "$comment": "Field keywords. Title hit = titleWeight, department hit = departmentWeight, description hit = descriptionWeight (each distinct term counts once). A field is assigned when its score >= threshold. Terms match whole words, case-insensitively; a trailing * matches any word ending (develop* = developer, development). 'exclude' phrases are removed from the text before that field is scored. Edit freely; run `pnpm --filter @rekiya/crawler test` after. Prefix a term with 'title:' to count it only in the title (for words that are too generic in descriptions).",
   "titleWeight": 3,
   "descriptionWeight": 1,
   "threshold": 3,
@@ -71,7 +71,17 @@
         "charging system*",
         "converged charging",
         "b2c platform*",
-        "platform engineer*"
+        "platform engineer*",
+        "c++",
+        "c/c++",
+        "embedded",
+        "title:business systems",
+        "operations support system*",
+        "title:oss",
+        "business support system*",
+        "title:bss",
+        "application support",
+        "title:applications"
       ],
       "exclude": ["software sales", "software support"]
     },
@@ -101,7 +111,12 @@
         "etl",
         "data warehouse",
         "statistician",
-        "mlops"
+        "mlops",
+        "databricks",
+        "snowflake",
+        "apache spark",
+        "data platform*",
+        "power platform"
       ],
       "exclude": ["data entry", "data center technician", "data centre technician", "data protection officer"]
     },
@@ -131,7 +146,17 @@
         "systems administrator*",
         "linux administrator*",
         "network engineer*",
-        "noc engineer*"
+        "noc engineer*",
+        "information technology",
+        "title:it",
+        "active directory",
+        "title:infrastructure",
+        "title:network",
+        "windows server",
+        "vmware",
+        "title:patch*",
+        "patch management",
+        "release management"
       ],
       "exclude": ["salesforce cloud", "marketing cloud", "cloud kitchen"]
     },
@@ -158,7 +183,10 @@
         "threat",
         "security analyst*",
         "security architect*",
-        "grc"
+        "grc",
+        "access management",
+        "identity management",
+        "privileged access"
       ],
       "exclude": ["security officer", "security guard", "security supervisor", "security personnel", "social security"]
     },
@@ -227,9 +255,21 @@
         "copywriter*",
         "content writer*",
         "motion design*",
-        "motion graphics"
+        "motion graphics",
+        "content creation",
+        "title:designer"
       ],
-      "exclude": []
+      "exclude": [
+        "ux designer",
+        "ui designer",
+        "ui/ux designer",
+        "ux/ui designer",
+        "product designer",
+        "interaction designer",
+        "service designer",
+        "web designer",
+        "instructional designer"
+      ]
     },
     "human-resource": {
       "terms": [
@@ -282,7 +322,10 @@
         "program management",
         "programme management",
         "process improvement",
-        "business process*"
+        "business process*",
+        "corporate planning",
+        "title:strategy",
+        "business systems analyst*"
       ],
       "exclude": []
     },
@@ -317,7 +360,10 @@
         "payables",
         "receivables",
         "reconciliation*",
-        "issuer services"
+        "issuer services",
+        "corporate reporting",
+        "title:mis",
+        "management information"
       ],
       "exclude": ["taxi"]
     },
@@ -349,7 +395,12 @@
         "title:deposits",
         "title:savings",
         "title:collections",
-        "title:recoveries"
+        "title:recoveries",
+        "bancassurance",
+        "title:underwriting",
+        "title:collection advisor*",
+        "title:collector*",
+        "title:collections officer*"
       ],
       "exclude": ["policy maker", "privacy policy", "credit control"]
     },
@@ -381,7 +432,15 @@
         "lead generation",
         "category manage*",
         "category executive*",
-        "trade partner*"
+        "trade partner*",
+        "title:buying",
+        "title:commercial",
+        "district manager*",
+        "area manager*",
+        "area sales*",
+        "corporate affairs",
+        "product executive*",
+        "title:bancassurance"
       ],
       "exclude": []
     },
@@ -460,42 +519,95 @@
         "title:textile*",
         "garment*",
         "title:apparel",
-        "sewing"
+        "sewing",
+        "title:engineering",
+        "civil",
+        "plumbing",
+        "estimation",
+        "title:qs",
+        "material engineer*",
+        "knitting",
+        "dyeing",
+        "r&d",
+        "technical officer*",
+        "project engineer*",
+        "design engineer*",
+        "electrical",
+        "mechanical",
+        "health, safety",
+        "health and safety",
+        "health & safety",
+        "title:hse",
+        "title:ehs",
+        "occupational safety",
+        "safety officer*"
       ],
-      "exclude": ["plant-based", "production support"]
+      "exclude": [
+        "plant-based",
+        "production support",
+        "software engineering",
+        "data engineering",
+        "sales engineering",
+        "quality engineering",
+        "platform engineering",
+        "site reliability engineering",
+        "reliability engineering",
+        "security engineering",
+        "ml engineering",
+        "machine learning engineering",
+        "devops engineering",
+        "cloud engineering",
+        "network engineering",
+        "solutions engineering",
+        "customer engineering"
+      ]
     },
     "operations-logistics": {
       "terms": [
         "title:operations",
-        "logistics",
-        "supply chain",
-        "procurement",
-        "purchasing",
+        "title:logistics",
+        "title:supply chain",
+        "title:procurement",
+        "title:purchasing",
         "title:purchase",
-        "buyer*",
-        "warehouse",
-        "inventory",
+        "title:buyer*",
+        "title:warehouse",
+        "title:inventory",
         "title:stores",
-        "storekeeper*",
-        "store keeper*",
-        "shipping",
-        "freight",
-        "clearing",
+        "title:storekeeper*",
+        "title:store keeper*",
+        "title:shipping",
+        "title:freight",
+        "title:clearing",
         "title:import*",
         "title:export*",
-        "fleet",
+        "title:fleet",
         "title:transport*",
         "title:distribution",
         "title:dispatch*",
         "title:driver*",
         "title:delivery",
-        "title:planning",
-        "title:planner*",
-        "demand planner*",
-        "customs",
-        "title:ops"
+        "title:demand planner*",
+        "title:customs",
+        "title:ops",
+        "title:supply planning",
+        "title:production planning",
+        "title:demand planning",
+        "title:planning engineer*",
+        "title:planner*"
       ],
-      "exclude": ["devops", "secops", "mlops", "dataops", "noc operations", "security operations"]
+      "exclude": [
+        "devops",
+        "secops",
+        "mlops",
+        "dataops",
+        "noc operations",
+        "security operations",
+        "delivery manager",
+        "delivery lead",
+        "operations support system",
+        "business support system"
+      ]
     },
     "healthcare": {
       "terms": [
@@ -525,7 +637,15 @@
         "title:ward",
         "title:theatre"
       ],
-      "exclude": ["health and safety", "health & safety", "healthcare technology"]
+      "exclude": [
+        "health and safety",
+        "health & safety",
+        "healthcare technology",
+        "health, safety",
+        "health safety",
+        "safety and environment",
+        "occupational health"
+      ]
     },
     "admin-customer-service": {
       "terms": [
@@ -555,7 +675,8 @@
         "document controller*",
         "title:coordinator*",
         "customer complain*",
-        "complaint*"
+        "complaint*",
+        "support staff"
       ],
       "exclude": ["system administrator", "systems administrator", "linux administrator", "database administrator"]
     },
@@ -579,7 +700,9 @@
         "contracts",
         "dispute resolution",
         "litigation",
-        "conveyanc*"
+        "conveyanc*",
+        "regulation",
+        "regulator*"
       ],
       "exclude": []
     },
@@ -587,5 +710,6 @@
       "terms": [],
       "exclude": []
     }
-  }
+  },
+  "departmentWeight": 2
 }

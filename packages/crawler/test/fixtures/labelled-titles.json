@@ -1,0 +1,505 @@
+{
+  "$comment": "100 real job titles from the first live crawl (30 Sep 2026), labelled by hand. 'fields' lists every acceptable primary field; a prediction is correct if it includes any of them. Labels are ground truth: fix the classifier, not the labels.",
+  "titles": [
+    {
+      "title": "District Manager",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Executive - Procurement",
+      "fields": ["operations-logistics"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Credit Controller",
+      "fields": ["finance-accounting"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Senior C++ Engineer",
+      "fields": ["software-engineering"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Customer Service Executive",
+      "fields": ["admin-customer-service"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Senior Quantity Surveyor (Pre-Contract)",
+      "fields": ["engineering-manufacturing"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Research & Business Development Executive",
+      "fields": ["sales-marketing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Assistant Manager - Product Development & Innovation",
+      "fields": ["product-project-business"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Senior Lead Data Engineer - Platform Engineering",
+      "fields": ["data-ai-ml"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Assistant Manager - Group Corporate Planning and Strategy",
+      "fields": ["product-project-business"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Associate Tech Lead, DevOps",
+      "fields": ["cloud-devops"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Executive, Issuer Services, DSM",
+      "fields": ["finance-accounting"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Executive - Unstructured Claims",
+      "fields": ["banking-insurance"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Assistant Manager - Engineering",
+      "fields": ["engineering-manufacturing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Senior Operations Assistant – Service Management | Premium Customer Service",
+      "fields": ["admin-customer-service"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Account Manager",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Trainee Customer Service Assistant - Cargills FoodCity",
+      "fields": ["admin-customer-service"],
+      "seniority": "trainee"
+    },
+    {
+      "title": "Senior Data Engineer",
+      "fields": ["data-ai-ml"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Trade Marketing Manager",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Personal Assistant",
+      "fields": ["admin-customer-service"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "MEP Engineer",
+      "fields": ["engineering-manufacturing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Intern - Project Management",
+      "fields": ["product-project-business"],
+      "seniority": "intern"
+    },
+    {
+      "title": "Contact Center Supervisor",
+      "fields": ["admin-customer-service"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Senior Executive – Product Development",
+      "fields": ["product-project-business"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Technical Lead – Java / Full Stack",
+      "fields": ["software-engineering"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Assistant Manager/Manager - Finance Audit",
+      "fields": ["finance-accounting"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Executive - Digital Learning & Content Creation",
+      "fields": ["digital-graphics"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Lead IFS Technical Consultant (Novacura)",
+      "fields": ["software-engineering"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Assistant Brand Manager (Credit Cards)",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Assistant Manager - Contracts and Dispute Resolution",
+      "fields": ["legal-compliance"],
+      "seniority": "manager"
+    },
+    {
+      "title": "OA Sales Executive - Colombo",
+      "fields": ["sales-marketing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Security Operations Engineer",
+      "fields": ["cybersecurity"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Assistant Manager - Finance",
+      "fields": ["finance-accounting"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Team Lead - Financial Services",
+      "fields": ["finance-accounting"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Executive - Sales Admin",
+      "fields": ["admin-customer-service", "sales-marketing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Senior Executive - Finance",
+      "fields": ["finance-accounting"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Motion Design - Intern",
+      "fields": ["digital-graphics"],
+      "seniority": "intern"
+    },
+    {
+      "title": "QA/QC Engineer - MEP",
+      "fields": ["engineering-manufacturing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Lead - Patch Operations",
+      "fields": ["cloud-devops"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Senior Project Manager",
+      "fields": ["product-project-business"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Senior Boomi Integration Developer",
+      "fields": ["software-engineering"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Trainee Customer Experience Associate",
+      "fields": ["admin-customer-service"],
+      "seniority": "trainee"
+    },
+    {
+      "title": "Team Leader – Premium Contact Centre Operations",
+      "fields": ["admin-customer-service"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Manager - Cyber Security (Brandix Digital)",
+      "fields": ["cybersecurity"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Team Leader - Financial Services",
+      "fields": ["finance-accounting"],
+      "seniority": "lead"
+    },
+    {
+      "title": "SDET",
+      "fields": ["qa-testing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Assistant Manager / Senior Executive / Executive – Fixed Deposits",
+      "fields": ["banking-insurance"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Executive - Human Resources",
+      "fields": ["human-resource"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Technical Officer- Civil",
+      "fields": ["engineering-manufacturing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Intern - Data Analytics",
+      "fields": ["data-ai-ml"],
+      "seniority": "intern"
+    },
+    {
+      "title": "Data Engineer",
+      "fields": ["data-ai-ml"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Senior Manager – Vehicle Sales",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Associate - Finance",
+      "fields": ["finance-accounting"],
+      "seniority": "junior"
+    },
+    {
+      "title": "Executive, Finance",
+      "fields": ["finance-accounting"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Engineer - Converged Charging",
+      "fields": ["software-engineering"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Manager / Assistant Manager – Marketing & Strategic Support",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Specialist - B2C Platforms",
+      "fields": ["software-engineering", "product-project-business"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Regulator, Primary Market and AIM Regulation",
+      "fields": ["legal-compliance"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Banking Associate - Caller",
+      "fields": ["banking-insurance", "admin-customer-service"],
+      "seniority": "junior"
+    },
+    {
+      "title": "Lead Engineer - Operations Support System Architect",
+      "fields": ["software-engineering", "cloud-devops"],
+      "seniority": "principal"
+    },
+    {
+      "title": "Lead Engineer - Enterprise and Fixed Data Core DevOps",
+      "fields": ["cloud-devops"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Manager, Financial Accounting and Control",
+      "fields": ["finance-accounting"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Assistant Manager - Contracts - Group Legal and Regulatory",
+      "fields": ["legal-compliance"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Senior Quality Assurance Engineer",
+      "fields": ["qa-testing"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Senior Product Manager - Digital Content Services",
+      "fields": ["product-project-business"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Consultant Associate - Applications",
+      "fields": ["software-engineering"],
+      "seniority": "junior"
+    },
+    {
+      "title": "Front Desk Executive",
+      "fields": ["admin-customer-service", "hospitality-tourism"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Associate Manager, Financial Reporting and Control",
+      "fields": ["finance-accounting"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Senior Associate, Operations Transformation Automation",
+      "fields": ["operations-logistics", "cloud-devops", "product-project-business"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Executive - Designer",
+      "fields": ["digital-graphics"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Intern - Operations Engineering",
+      "fields": ["engineering-manufacturing", "operations-logistics"],
+      "seniority": "intern"
+    },
+    {
+      "title": "Manager – Data Protection Officer",
+      "fields": ["legal-compliance"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Manager - International Marketing",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "fields": ["cloud-devops"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Gold Loan In Charge & Assessor",
+      "fields": ["banking-insurance"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Manager - Health, Safety and Environment",
+      "fields": ["engineering-manufacturing", "legal-compliance"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Associate Technical Lead (Mobile Engineering - Android)",
+      "fields": ["software-engineering"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Consultant - SAP FICO",
+      "fields": ["software-engineering", "finance-accounting"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Assistant Brand Manager",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Senior Associate - Finance and Accounting Operations",
+      "fields": ["finance-accounting"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Design and Estimation Engineer - Civil",
+      "fields": ["engineering-manufacturing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Manager, Program Management",
+      "fields": ["product-project-business"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Senior Lead - Finance Analyst",
+      "fields": ["finance-accounting"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Collection Advisor",
+      "fields": ["banking-insurance"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Tech Lead - AI",
+      "fields": ["data-ai-ml", "software-engineering"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Project Manager (Civil)",
+      "fields": ["engineering-manufacturing", "product-project-business"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Associate Manager, Financial Control (FTC: 9 to 12 months)",
+      "fields": ["finance-accounting"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Executive – Information System Access Management",
+      "fields": ["cybersecurity", "cloud-devops"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Finance Team Lead",
+      "fields": ["finance-accounting"],
+      "seniority": "lead"
+    },
+    {
+      "title": "Branch Executive (Gampaha/ Badulla)",
+      "fields": ["operations-logistics", "sales-marketing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Software Architect (BFSI)",
+      "fields": ["software-engineering"],
+      "seniority": "principal"
+    },
+    {
+      "title": "Senior Analyst - Data & AI Governance",
+      "fields": ["data-ai-ml"],
+      "seniority": "senior"
+    },
+    {
+      "title": "Banking Associate - Retail Recoveries",
+      "fields": ["banking-insurance"],
+      "seniority": "junior"
+    },
+    {
+      "title": "HR Officer",
+      "fields": ["human-resource"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "fields": ["cloud-devops"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Associate - Payroll Services",
+      "fields": ["human-resource", "finance-accounting"],
+      "seniority": "junior"
+    },
+    {
+      "title": "Business Development Manager",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    },
+    {
+      "title": "Lead Functional Consultant (IFS Projects)",
+      "fields": ["product-project-business", "software-engineering"],
+      "seniority": "lead"
+    },
+    {
+      "title": "QA/QC Engineer – Civil",
+      "fields": ["engineering-manufacturing"],
+      "seniority": "unspecified"
+    },
+    {
+      "title": "Marketing Manager",
+      "fields": ["sales-marketing"],
+      "seniority": "manager"
+    }
+  ]
+}
