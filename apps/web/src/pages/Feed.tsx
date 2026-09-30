@@ -1,5 +1,5 @@
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
-import { Link, useLocation, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { FIELD_LABELS, type IndustrySlug } from "@rekiya/shared/constants";
 import { FilterPanel, type FilterOptions } from "../components/FilterPanel";
 import { BellIcon, CheckIcon, FilterIcon, RssIcon, SearchIcon, XIcon } from "../components/Icons";
@@ -22,18 +22,24 @@ import {
   SORT_LABELS,
   SORTS,
   sortJobs,
+  sortNewest,
   type Filters,
   type SortKey,
 } from "../lib/filters";
 import { relativeTime } from "../lib/format";
 import { buildIndex, searchIds } from "../lib/search";
 import type { Employer, Job } from "../lib/types";
-import { usePageTitle } from "../lib/usePageTitle";
+import { FIELD_META, fieldPath, isFieldSlug, JOBS_META, SITE_NAME } from "../lib/paths";
+import { SITE_URL, useSeo } from "../lib/seo";
+import { breadcrumbLd, fieldCrumbs, jobListLd } from "../lib/structured-data";
 
 const PAGE = 25;
 
 export function Feed() {
-  const [params, setParams] = useSearchParams();
+  const [params] = useSearchParams();
+  const { field: fieldParam } = useParams();
+  const routeField = isFieldSlug(fieldParam) ? fieldParam : null;
+  const navigate = useNavigate();
   const location = useLocation();
   const { prefs, isNew, isHidden, searches, addSearch, removeSearch } = useApp();
   const data = useData();
@@ -44,26 +50,50 @@ export function Feed() {
 
   // First visit to the feed: start from the user's saved preferences (then the URL is the truth).
   useEffect(() => {
-    if ([...params.keys()].length === 0 && (prefs.fields.length || prefs.seniority.length)) {
-      setParams(serializeFilters({ ...EMPTY_FILTERS, fields: prefs.fields, seniority: prefs.seniority }), { replace: true });
+    if (!routeField && [...params.keys()].length === 0 && (prefs.fields.length || prefs.seniority.length)) {
+      navigate(`/jobs/?${serializeFilters({ ...EMPTY_FILTERS, fields: prefs.fields, seniority: prefs.seniority })}`, { replace: true });
     }
     if ((location.state as { focusSearch?: boolean } | null)?.focusSearch) searchRef.current?.focus();
     // eslint-disable-next-line react-hooks/exhaustive-deps -- only on mount
   }, []);
 
-  const f = useMemo(() => parseFilters(params), [params]);
+  // /jobs/<field>/ is the crawlable page for one field; any further filtering continues at /jobs/?….
+  const f = useMemo(() => {
+    const parsed = parseFilters(params);
+    return routeField && !params.has("fields") ? { ...parsed, fields: [routeField] } : parsed;
+  }, [params, routeField]);
   const set = (patch: Partial<Filters>) => {
     setLimit(PAGE);
-    setParams(serializeFilters({ ...f, ...patch }), { replace: true });
+    const next = serializeFilters({ ...f, ...patch });
+    const only = parseFilters(next);
+    const single = only.fields.length === 1 && next.toString() === `fields=${only.fields[0]}`;
+    navigate(single ? fieldPath(only.fields[0]!) : `/jobs/${next.toString() ? `?${next}` : ""}`, { replace: true });
   };
   const clearAll = () => set({ ...EMPTY_FILTERS });
 
   const heading = f.fields.length === 1 ? `${FIELD_LABELS[f.fields[0]!]} jobs` : f.fields.length > 1 ? "Jobs in your fields" : "All jobs";
-  usePageTitle(f.q.trim() ? `“${f.q.trim()}” jobs` : heading);
-
   const { jobs, error } = useJobs(f.fields.length ? f.fields : "all");
   const employer = data.employer;
   const companyName = (s: string) => employer(s).name;
+
+  // Index the plain feed and one-field pages; searches and combined filters are views, not pages.
+  const onlyField = f.fields.length === 1 && activeFilterCount(f) === 0 && !f.q.trim() && !f.sort ? f.fields[0]! : null;
+  const plain = !hasAnyFilter(f) && !f.sort;
+  const fieldCount = onlyField ? (data.meta?.byField[onlyField] ?? jobs?.length ?? 0) : 0;
+  useSeo(
+    onlyField
+      ? {
+          ...FIELD_META(onlyField, fieldCount),
+          path: fieldPath(onlyField),
+          jsonLd: [
+            breadcrumbLd(SITE_URL, fieldCrumbs(onlyField)),
+            ...(jobs ? [jobListLd(SITE_URL, `${FIELD_LABELS[onlyField]} jobs in Sri Lanka`, sortNewest(jobs), companyName)] : []),
+          ],
+        }
+      : plain
+        ? { ...JOBS_META(data.meta?.totals.open ?? 0), path: "/jobs/" }
+        : { title: `${f.q.trim() ? `“${f.q.trim()}” jobs` : heading} in Sri Lanka · ${SITE_NAME}`, noindex: true },
+  );
   const q = useDeferredValue(f.q);
   const sort: SortKey = f.sort || (q.trim() ? "relevance" : "newest");
 
@@ -152,7 +182,7 @@ export function Feed() {
           <span>
             <strong>Personalise your feed.</strong> Tell us which fields you're interested in and we'll show those jobs first.
           </span>
-          <Link to="/onboarding" className="btn-primary">
+          <Link to="/onboarding/" className="btn-primary">
             Choose fields
           </Link>
         </div>
@@ -316,7 +346,7 @@ export function Feed() {
           {hiddenCount > 0 && (
             <p className="muted mt-4 text-center text-sm">
               {hiddenCount} job{hiddenCount > 1 ? "s" : ""} you hid {hiddenCount > 1 ? "aren't" : "isn't"} shown.{" "}
-              <Link to="/settings#hidden" className="link">
+              <Link to="/settings/#hidden" className="link">
                 Manage hidden jobs
               </Link>
             </p>
@@ -373,7 +403,7 @@ function Empty({ f, clear, total }: { f: Filters; clear: () => void; total: numb
             <XIcon width={16} height={16} /> Clear filters
           </button>
         )}
-        <Link to="/companies" className="btn-secondary">
+        <Link to="/companies/" className="btn-secondary">
           Browse companies
         </Link>
       </div>

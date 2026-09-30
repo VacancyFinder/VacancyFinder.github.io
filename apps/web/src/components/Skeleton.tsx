@@ -1,3 +1,12 @@
+/** Thin animated bar at the top of the screen while a page or its jobs load (matches the boot preloader). */
+export function TopProgress() {
+  return (
+    <span aria-hidden="true" className="fixed inset-x-0 top-0 z-[60] block h-[3px] overflow-hidden bg-brand-800/15">
+      <span className="top-progress absolute inset-y-0 w-2/5 bg-gradient-to-r from-amber-400 to-brand-300" />
+    </span>
+  );
+}
+
 /** Placeholder rows shown while jobs load, shaped like the real cards so nothing jumps. */
 export function JobListSkeleton({
   rows = 5,
@@ -10,6 +19,7 @@ export function JobListSkeleton({
 }) {
   return (
     <div role="status" aria-label={label}>
+      <TopProgress />
       <ul className={`grid grid-cols-1 gap-3 ${className}`} aria-hidden="true">
         {Array.from({ length: rows }, (_, i) => (
           <li key={i} className="card flex min-h-[150px] gap-3 p-4">

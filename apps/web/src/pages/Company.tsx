@@ -11,19 +11,20 @@ import { useApp } from "../lib/app-state";
 import { useData, useJobs } from "../lib/data";
 import { sortNewest } from "../lib/filters";
 import { hostOf, relativeTime, safeHref } from "../lib/format";
-import { usePageTitle } from "../lib/usePageTitle";
+import { COMPANY_META, companyPath } from "../lib/paths";
+import { SITE_URL, useSeo } from "../lib/seo";
+import { breadcrumbLd, companyCrumbs, jobListLd } from "../lib/structured-data";
 import { trackingState } from "./Companies";
 
 export function Company() {
   const { slug = "" } = useParams();
-  const { directory, companyBySlug, companyMatches } = useData();
+  const { directory, companyBySlug, companyMatches, employer } = useData();
   const { hiddenCompanies, toggleHiddenCompany } = useApp();
   const toast = useToast();
   const { jobs } = useJobs("all");
   const c = companyBySlug.get(slug);
   const group = directory?.groups.find((g) => g.slug === slug);
   const name = c?.name ?? group?.name ?? slug;
-  usePageTitle(name);
 
   const members = useMemo(
     () => (group ? (directory?.companies ?? []).filter((x) => x.parentGroup === group.slug) : []),
@@ -37,12 +38,20 @@ export function Company() {
     return [...m.entries()].sort((a, b) => b[1] - a[1]);
   }, [list]);
 
+  useSeo({
+    ...COMPANY_META(name, list.length),
+    path: companyPath(slug),
+    // Pages with no open jobs are thin: keep them out of the index until they have some.
+    noindex: !!directory && (!(c || group) || (!!jobs && list.length === 0)),
+    jsonLd: [breadcrumbLd(SITE_URL, companyCrumbs(slug, name)), jobListLd(SITE_URL, `Jobs at ${name}`, list, (s) => employer(s).name)],
+  });
+
   if (!directory) return <PageSkeleton />;
   if (!c && !group) {
     return (
       <div>
         <h1 className="text-2xl font-bold">Company not found</h1>
-        <Link to="/companies" className="link mt-2 inline-block">
+        <Link to="/companies/" className="link mt-2 inline-block">
           Back to companies
         </Link>
       </div>
@@ -66,7 +75,7 @@ export function Company() {
   return (
     <div>
       <nav aria-label="Breadcrumb" className="text-sm">
-        <Link to="/companies" className="link">
+        <Link to="/companies/" className="link">
           Companies
         </Link>
         {parent && (
@@ -103,7 +112,7 @@ export function Company() {
               </a>
             )}
             {list.length > 0 && (
-              <Link to={`/jobs?company=${slug}`} className="btn-secondary">
+              <Link to={`/jobs/?company=${slug}`} className="btn-secondary">
                 Filter these jobs
               </Link>
             )}
@@ -169,7 +178,7 @@ export function Company() {
           <ul className="mt-3 flex flex-wrap gap-1.5" aria-label="Open jobs by field">
             {byField.map(([f, n]) => (
               <li key={f}>
-                <Link to={`/jobs?company=${slug}&fields=${f}`} className="pill pill-off">
+                <Link to={`/jobs/?company=${slug}&fields=${f}`} className="pill pill-off">
                   {FIELD_LABELS[f]} <span className="muted">{n}</span>
                 </Link>
               </li>
@@ -184,7 +193,7 @@ export function Company() {
         {jobs && list.length === 0 && (
           <p className="card muted mt-3 p-4 text-sm">
             No open jobs right now. Save a search for this company from the{" "}
-            <Link to={`/jobs?company=${slug}`} className="link">
+            <Link to={`/jobs/?company=${slug}`} className="link">
               job feed
             </Link>{" "}
             to see new ones as soon as they're posted.

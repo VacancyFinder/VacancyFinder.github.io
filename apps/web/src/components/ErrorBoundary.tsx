@@ -33,7 +33,7 @@ export class ErrorBoundary extends Component<{ children: ReactNode; resetKey?: s
           <button type="button" className="btn-primary" onClick={() => window.location.reload()}>
             Reload
           </button>
-          <a href="#/jobs" className="btn-secondary" onClick={() => this.setState({ error: null })}>
+          <a href="/jobs/" className="btn-secondary" onClick={() => this.setState({ error: null })}>
             Go to jobs
           </a>
         </div>
