@@ -128,7 +128,7 @@ export function normalizeJob(raw: RawJob, ctx: NormalizeContext): { job?: Job; d
   if (seniority === "intern" && type === "unspecified") type = "internship";
   let workMode = detectWorkMode(raw.workplace, raw.location, title);
   if (workMode === "unspecified") workMode = detectWorkMode(desc.slice(0, 800));
-  const fields: FieldSlug[] = classifyFields(`${title} ${raw.department ?? ""}`.trim(), desc);
+  const fields: FieldSlug[] = classifyFields(`${title} ${raw.department ?? ""}`.trim(), desc, industry);
 
   const draft: Job = {
     id: jobId(company, url),

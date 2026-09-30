@@ -1,4 +1,4 @@
-import { FIELD_SLUGS, type FieldSlug } from "@rekiya/shared";
+import { FIELD_SLUGS, type FieldSlug, type IndustrySlug } from "@rekiya/shared";
 import taxonomyJson from "./taxonomy.json" with { type: "json" };
 
 export interface Taxonomy {
@@ -10,7 +10,7 @@ export interface Taxonomy {
 
 interface CompiledField {
   field: FieldSlug;
-  terms: RegExp[];
+  terms: { re: RegExp; titleOnly: boolean }[];
   exclude: RegExp[];
 }
 
@@ -29,7 +29,11 @@ export function compileTaxonomy(tax: Taxonomy): CompiledField[] {
   const out: CompiledField[] = [];
   for (const [field, def] of Object.entries(tax.fields)) {
     if (!(FIELD_SLUGS as readonly string[]).includes(field)) throw new Error(`taxonomy: unknown field "${field}"`);
-    out.push({ field: field as FieldSlug, terms: def.terms.map(termRegex), exclude: def.exclude.map(termRegex) });
+    out.push({
+      field: field as FieldSlug,
+      terms: def.terms.map((t) => ({ re: termRegex(t.replace(/^title:/, "")), titleOnly: t.startsWith("title:") })),
+      exclude: def.exclude.map(termRegex),
+    });
   }
   return out;
 }
@@ -49,18 +53,38 @@ export function scoreFields(title: string, description = "", tax: Taxonomy = DEF
     const t = strip(title, f.exclude);
     const d = strip(description, f.exclude);
     let s = 0;
-    for (const re of f.terms) {
+    for (const { re, titleOnly } of f.terms) {
       if (re.test(t)) s += tax.titleWeight;
-      else if (re.test(d)) s += tax.descriptionWeight;
+      else if (!titleOnly && re.test(d)) s += tax.descriptionWeight;
     }
     if (s > 0) scores.set(f.field, s);
   }
   return scores;
 }
 
-/** Every field scoring >= threshold, best first; ["other"] when none does. */
-export function classifyFields(title: string, description = ""): FieldSlug[] {
+/**
+ * When no keyword matches, the employer's industry is the best signal (a role at a bank is most likely
+ * a banking role). Industries without an obvious field fall back to "other".
+ */
+export const INDUSTRY_FALLBACK: Partial<Record<IndustrySlug, FieldSlug>> = {
+  banking: "banking-insurance",
+  insurance: "banking-insurance",
+  "financial-services": "banking-insurance",
+  "hotels-leisure": "hospitality-tourism",
+  healthcare: "healthcare",
+  "logistics-shipping": "operations-logistics",
+  "manufacturing-industrials": "engineering-manufacturing",
+  "apparel-textiles": "engineering-manufacturing",
+  "plantations-agriculture": "engineering-manufacturing",
+  "construction-engineering": "engineering-manufacturing",
+  "consumer-goods-retail": "sales-marketing",
+};
+
+/** Every field scoring >= threshold, best first; else the industry fallback; else ["other"]. */
+export function classifyFields(title: string, description = "", industry?: IndustrySlug): FieldSlug[] {
   const scores = scoreFields(title, description);
   const hits = [...scores.entries()].filter(([, s]) => s >= DEFAULT_TAX.threshold).sort((a, b) => b[1] - a[1]);
-  return hits.length ? hits.map(([f]) => f) : ["other"];
+  if (hits.length) return hits.map(([f]) => f);
+  const fb = industry ? INDUSTRY_FALLBACK[industry] : undefined;
+  return [fb ?? "other"];
 }

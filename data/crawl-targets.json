@@ -2,7 +2,7 @@
   {
     "id": "abansfinance-lk-careers",
     "canonicalUrl": "https://abansfinance.lk/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "abans-finance"
     ],
@@ -14,15 +14,6 @@
     "adapter": "none",
     "companySlugs": [
       "abans-electricals"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "accessengsl-com-careers",
-    "canonicalUrl": "https://accessengsl.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "access-engineering"
     ],
     "parentGroup": null
   },
@@ -76,6 +67,15 @@
     "parentGroup": null
   },
   {
+    "id": "careers-zyner-io",
+    "canonicalUrl": "https://careers.zyner.io/",
+    "adapter": "html",
+    "companySlugs": [
+      "zyner-io"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "cargillsceylon-com-careers",
     "canonicalUrl": "https://cargillsceylon.com/careers",
     "adapter": "none",
@@ -88,36 +88,9 @@
   {
     "id": "cdb-lk-life-at-cdb-careers",
     "canonicalUrl": "https://cdb.lk/life-at-cdb/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "citizens-development-business-finance"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "centralfinance-lk-careers",
-    "canonicalUrl": "https://centralfinance.lk/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "central-finance-company"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "ceylinco-com-careers",
-    "canonicalUrl": "https://ceylinco.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "ceylinco-insurance"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "ceylontobacco-com-careers",
-    "canonicalUrl": "https://ceylontobacco.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "ceylon-tobacco-company"
     ],
     "parentGroup": null
   },
@@ -131,20 +104,11 @@
     "parentGroup": null
   },
   {
-    "id": "codegen-co-uk-careers",
-    "canonicalUrl": "https://codegen.co.uk/careers",
-    "adapter": "none",
+    "id": "creativesoftware-com-careers",
+    "canonicalUrl": "https://creativesoftware.com/careers",
+    "adapter": "html",
     "companySlugs": [
-      "codegen"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "dfcc-lk-careers",
-    "canonicalUrl": "https://dfcc.lk/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "dfcc-bank"
+      "creative-software"
     ],
     "parentGroup": null
   },
@@ -188,15 +152,6 @@
       "hayleys-leisure"
     ],
     "parentGroup": "hayleys"
-  },
-  {
-    "id": "helaclothing-com-careers",
-    "canonicalUrl": "https://helaclothing.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "hela-apparel-holdings"
-    ],
-    "parentGroup": null
   },
   {
     "id": "hemas-com-careers",
@@ -248,40 +203,11 @@
     "parentGroup": null
   },
   {
-    "id": "lbfinance-com-careers",
-    "canonicalUrl": "https://lbfinance.com/careers",
-    "adapter": "none",
+    "id": "lseg-wd3-myworkdayjobs-com-careers",
+    "canonicalUrl": "https://lseg.wd3.myworkdayjobs.com/Careers",
+    "adapter": "custom",
     "companySlugs": [
-      "lb-finance"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "lolc-com-careers",
-    "canonicalUrl": "https://lolc.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "lolc-finance",
-      "lolc-general-insurance",
-      "lolc-holdings"
-    ],
-    "parentGroup": "lolc"
-  },
-  {
-    "id": "melstacorp-com-careers",
-    "canonicalUrl": "https://melstacorp.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "melstacorp"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "nationstrust-com-careers",
-    "canonicalUrl": "https://nationstrust.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "nations-trust-bank"
+      "lseg"
     ],
     "parentGroup": null
   },
@@ -295,38 +221,20 @@
     "parentGroup": null
   },
   {
-    "id": "pabc-lk-careers",
-    "canonicalUrl": "https://pabc.lk/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "pan-asia-banking-corporation"
-    ],
-    "parentGroup": null
-  },
-  {
     "id": "pickme-lk-careers",
     "canonicalUrl": "https://pickme.lk/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "digital-mobility-solutions-lanka-pickme"
     ],
     "parentGroup": null
   },
   {
-    "id": "plc-lk-careers",
-    "canonicalUrl": "https://plc.lk/careers",
-    "adapter": "none",
+    "id": "rootcode-ai-careers",
+    "canonicalUrl": "https://rootcode.ai/careers",
+    "adapter": "custom",
     "companySlugs": [
-      "people-s-leasing-and-finance"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "sampath-lk-careers",
-    "canonicalUrl": "https://sampath.lk/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "sampath-bank"
+      "rootcode"
     ],
     "parentGroup": null
   },
@@ -340,18 +248,9 @@
     "parentGroup": null
   },
   {
-    "id": "singer-lk-careers",
-    "canonicalUrl": "https://singer.lk/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "singer-sri-lanka"
-    ],
-    "parentGroup": null
-  },
-  {
     "id": "slt-lk-careers",
     "canonicalUrl": "https://slt.lk/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "sri-lanka-telecom"
     ],
@@ -379,24 +278,6 @@
     "parentGroup": null
   },
   {
-    "id": "swisstek-lk-careers",
-    "canonicalUrl": "https://swisstek.lk/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "swisstek-ceylon"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "teejay-com-careers",
-    "canonicalUrl": "https://teejay.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "teejay-lanka"
-    ],
-    "parentGroup": null
-  },
-  {
     "id": "unionb-com-careers",
     "canonicalUrl": "https://unionb.com/careers",
     "adapter": "none",
@@ -408,18 +289,36 @@
   {
     "id": "vallibelone-com-careers",
     "canonicalUrl": "https://vallibelone.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "vallibel-one"
     ],
     "parentGroup": null
   },
   {
+    "id": "wso2-com-careers",
+    "canonicalUrl": "https://wso2.com/careers",
+    "adapter": "html",
+    "companySlugs": [
+      "wso2"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "zillione-com-careers",
     "canonicalUrl": "https://zillione.com/careers",
-    "adapter": "none",
+    "adapter": "custom",
     "companySlugs": [
       "zillione"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "zone24x7-com-careers",
+    "canonicalUrl": "https://zone24x7.com/careers",
+    "adapter": "html",
+    "companySlugs": [
+      "zone24x7"
     ],
     "parentGroup": null
   }

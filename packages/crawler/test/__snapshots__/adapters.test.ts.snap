@@ -1,0 +1,92 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`custom adapters on real API responses > Rootcode: drops roles outside Sri Lanka 1`] = `
+[
+  "Associate - Office Administration & Facilities/IT Coordination | Colombo | junior | unspecified | unspecified | admin-customer-service | https://rootcode.ai/careers/associate-office-administration-facilities-it-coordination-4419191",
+  "Growth Executive | Colombo | unspecified | unspecified | unspecified | sales-marketing | https://rootcode.ai/careers/growth-executive-4184980",
+  "Intern - Branding & Marketing | Colombo | intern | internship | unspecified | sales-marketing | https://rootcode.ai/careers/intern-branding-marketing-4336240",
+  "Intern - Software Engineer Fullstack | Colombo | intern | internship | unspecified | software-engineering | https://rootcode.ai/careers/intern-software-engineer-fullstack-1206830",
+  "Marketing Manager | Colombo | manager | unspecified | unspecified | sales-marketing | https://rootcode.ai/careers/marketing-manager-4358660",
+  "Senior Software Engineer - Full-Stack (React + .NET) | Colombo | senior | unspecified | unspecified | software-engineering | https://rootcode.ai/careers/senior-software-engineer-full-stack-react-net--4419172",
+  "Solutions Architect - AI | Colombo | principal | unspecified | unspecified | software-engineering,data-ai-ml | https://rootcode.ai/careers/solutions-architect-ai-3816312",
+  "Tech Lead - AI | Colombo | lead | unspecified | unspecified | software-engineering,data-ai-ml,cloud-devops | https://rootcode.ai/careers/tech-lead-ai-3636396",
+]
+`;
+
+exports[`html adapter on real careers pages > Abans Finance: grouped by department, anchors keep same-titled roles apart 1`] = `
+[
+  "Gold Loan In Charge & Assessor | Sri Lanka | unspecified | unspecified | unspecified | banking-insurance | https://abansfinance.lk/careers/#job-gold-loan-in-charge-assessor",
+  "Senior Executive/Executive/Junior Executive/Trainee Executive – Marketing | Sri Lanka | trainee | unspecified | unspecified | sales-marketing | https://abansfinance.lk/careers/#job-senior-executive-executive-junior-executive-trainee-executive-marketing-2",
+  "Senior Executive/Executive/Junior Executive/Trainee Executive – Marketing | Sri Lanka | trainee | unspecified | unspecified | sales-marketing | https://abansfinance.lk/careers/#job-senior-executive-executive-junior-executive-trainee-executive-marketing",
+  "Trainee Executive – Sales & Marketing | Sri Lanka | trainee | unspecified | unspecified | sales-marketing | https://abansfinance.lk/careers/#job-trainee-executive-sales-marketing",
+  "Assistant Manager / Senior Executive / Executive – Fixed Deposits | Sri Lanka | manager | unspecified | unspecified | banking-insurance,sales-marketing | https://abansfinance.lk/careers/#job-assistant-manager-senior-executive-executive-fixed-deposits-2",
+  "Assistant Manager / Senior Executive / Executive – Fixed Deposits | Sri Lanka | manager | unspecified | unspecified | banking-insurance | https://abansfinance.lk/careers/#job-assistant-manager-senior-executive-executive-fixed-deposits",
+]
+`;
+
+exports[`html adapter on real careers pages > CDB 1`] = `
+[
+  "Head of Branch – Badulla Unit A | Badulla | manager | unspecified | unspecified | banking-insurance | https://www.cdb.lk/life-at-cdb/careers/head-of-branch-badulla-unit-a",
+  "Product Head – Home Loans | Head Office | manager | unspecified | unspecified | banking-insurance | https://www.cdb.lk/life-at-cdb/careers/product-head-home-loans",
+  "Product Head – Solar Financing | Head Office | manager | unspecified | unspecified | banking-insurance | https://www.cdb.lk/life-at-cdb/careers/product-head-solar-financing",
+  "Assistant Brand Manager (Credit Cards) | Head Office | manager | unspecified | unspecified | sales-marketing,banking-insurance | https://www.cdb.lk/life-at-cdb/careers/assistant-brand-manager-credit-cards",
+  "Management Trainee | Head Office | trainee | unspecified | unspecified | banking-insurance | https://www.cdb.lk/life-at-cdb/careers/management-trainee-1",
+  "Contact Center Supervisor | Head Office | unspecified | unspecified | unspecified | admin-customer-service | https://www.cdb.lk/life-at-cdb/careers/contact-center-supervisor",
+  "Senior Operations Assistant – Service Management | Premium Customer Service | Head Office | senior | unspecified | unspecified | operations-logistics,admin-customer-service | https://www.cdb.lk/life-at-cdb/careers/senior-operations-assistant-service-management-premium-customer-service",
+  "Team Leader – Premium Contact Centre Operations | Head Office | lead | unspecified | unspecified | operations-logistics,admin-customer-service | https://www.cdb.lk/life-at-cdb/careers/team-leader-premium-contact-centre-operations",
+  "Junior Operations Assistant | Head Office | junior | unspecified | unspecified | operations-logistics | https://www.cdb.lk/life-at-cdb/careers/junior-operations-assistant",
+  "Trainee marketing officer / Trainee marketing executive | Islandwide | trainee | unspecified | unspecified | sales-marketing | https://www.cdb.lk/life-at-cdb/careers/trainee-marketing-officer-trainee-marketing-executive",
+  "Contact Centre Associate – Premium Customer Service | Head Office | junior | unspecified | unspecified | admin-customer-service | https://www.cdb.lk/life-at-cdb/careers/contact-centre-associate-premium-customer-service",
+  "Customer Service Associate – Premium Customer Engagement (Outbound) | Head Office | junior | unspecified | unspecified | admin-customer-service | https://www.cdb.lk/life-at-cdb/careers/customer-service-associate-premium-customer-engagement-outbound",
+  "Trainee Customer Experience Associate | Islandwide | trainee | unspecified | unspecified | admin-customer-service | https://www.cdb.lk/life-at-cdb/careers/trainee-customer-experience-associate",
+]
+`;
+
+exports[`html adapter on real careers pages > Creative Software 1`] = `
+[
+  "Senior Boomi Integration Developer | Colombo | senior | full-time | hybrid | software-engineering | https://www.creativesoftware.com/careers/senior-boomi-integration-developer-ref8902",
+  "Junior Marketing & Community Coordinator | Colombo | junior | unspecified | unspecified | sales-marketing,admin-customer-service | https://www.creativesoftware.com/careers/junior-marketing-community-coordinator-ref0113",
+  "Lead Oracle Integration Cloud (OIC) Consultant | Colombo | lead | full-time | hybrid | software-engineering,cloud-devops | https://www.creativesoftware.com/careers/lead-oracle-integration-cloud-oic-consultant-ref9202",
+  "Lead IFS Technical Consultant (Novacura) | Colombo | lead | full-time | hybrid | software-engineering | https://www.creativesoftware.com/careers/lead-ifs-technical-consultant-novacura--ref9201",
+  "Lead Functional Consultant (IFS Projects) | Colombo | lead | unspecified | hybrid | software-engineering,product-project-business | https://www.creativesoftware.com/careers/lead-functional-consultant-ifs-projects--ref9200",
+  "Senior Data Engineer | Colombo | senior | unspecified | unspecified | data-ai-ml | https://www.creativesoftware.com/careers/senior-data-engineer-ref7026",
+  "Data Engineer | Colombo | unspecified | unspecified | unspecified | data-ai-ml | https://www.creativesoftware.com/careers/data-engineer-ref7025",
+  "Business Development & Digital Marketing intern | Colombo | intern | internship | onsite | sales-marketing | https://www.creativesoftware.com/careers/business-development-and-digital-marketing-intern",
+  "Associate Technical Lead | Colombo | lead | unspecified | hybrid | software-engineering | https://www.creativesoftware.com/careers/associate-technical-lead-ref1044",
+]
+`;
+
+exports[`html adapter on real careers pages > PickMe 1`] = `
+[
+  "Senior Business Analyst – Search Experience | Colombo | senior | unspecified | unspecified | product-project-business | https://pickme.lk/vacancy/senior-business-analyst-search-experience-2/",
+  "Executive – Airport Business | Sri Lanka | unspecified | unspecified | unspecified | operations-logistics | https://pickme.lk/vacancy/executive-airport-business/",
+  "Branch Executive (Gampaha/ Badulla) | Badulla · Gampaha | unspecified | unspecified | unspecified | operations-logistics | https://pickme.lk/vacancy/branch-executive-gampaha-badulla/",
+  "Senior Customer Service Analyst | Colombo | senior | unspecified | unspecified | admin-customer-service | https://pickme.lk/vacancy/senior-customer-service-analyst/",
+  "Operations Officer – Legal | Colombo | unspecified | unspecified | unspecified | operations-logistics,legal-compliance | https://pickme.lk/vacancy/operations-officer-legal/",
+  "Executive – Registration & Driver Care | Colombo | unspecified | unspecified | unspecified | operations-logistics | https://pickme.lk/vacancy/executive-registration-driver-care/",
+  "Product Analyst – Courier Operations | Colombo | unspecified | unspecified | unspecified | product-project-business,operations-logistics | https://pickme.lk/vacancy/product-analyst-courier-operations/",
+  "Account Manager – Events Vertical | Colombo | manager | unspecified | unspecified | sales-marketing | https://pickme.lk/vacancy/account-manager-events-vertical/",
+  "Senior Data Scientist | Colombo | senior | unspecified | unspecified | data-ai-ml | https://pickme.lk/vacancy/senior-data-scientist/",
+  "Senior Engineer/Associate Lead – DevOps | Colombo | lead | unspecified | unspecified | cloud-devops | https://pickme.lk/vacancy/senior-engineer-associate-lead-devops/",
+  "Senior Software Engineer – Java | Colombo | senior | unspecified | unspecified | software-engineering | https://pickme.lk/vacancy/senior-software-engineer-java/",
+  "Senior DevOps Engineer | Colombo | senior | unspecified | unspecified | cloud-devops | https://pickme.lk/vacancy/senior-devops-engineer/",
+]
+`;
+
+exports[`html adapter on real careers pages > Vallibel One 1`] = `
+[
+  "Research & Business Development Executive | Colombo | unspecified | full-time | unspecified | sales-marketing | https://vallibelone.com/jobs/3/apply",
+]
+`;
+
+exports[`html adapter on real careers pages > WSO2: keeps only Sri Lanka roles 1`] = `
+[
+  "Account Manager | Sri Lanka | manager | full-time | unspecified | sales-marketing | https://wso2.com/careers/283/2026-09-account-manager-sri-lanka",
+  "Marketing Officer - Content Operations Specialist | Sri Lanka | unspecified | full-time | unspecified | sales-marketing,operations-logistics | https://wso2.com/careers/272/2026-09-marketing-officer-content-operations-specialist-sri-lanka",
+  "Marketing Officer - Website Design | Sri Lanka | unspecified | full-time | unspecified | ui-ux-design,sales-marketing | https://wso2.com/careers/152/2026-09-marketing-officer-website-design-sri-lanka",
+  "Senior Lead - Finance Analyst | Sri Lanka | lead | full-time | unspecified | finance-accounting | https://wso2.com/careers/243/2026-06-senior-lead-finance-analyst-sri-lanka",
+  "Senior Software Engineer - Agent Platform | Sri Lanka | senior | full-time | unspecified | software-engineering,cloud-devops | https://wso2.com/careers/281/2026-09-senior-software-engineer-agent-platform-sri-lanka",
+  "Technical Lead - Agent Platform | Sri Lanka | lead | full-time | unspecified | software-engineering,cloud-devops | https://wso2.com/careers/282/2026-09-technical-lead-agent-platform-sri-lanka",
+  "Technical Lead - AI | Sri Lanka | lead | full-time | unspecified | software-engineering,data-ai-ml | https://wso2.com/careers/278/2026-09-technical-lead-ai-sri-lanka",
+]
+`;

@@ -29,23 +29,31 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "The 'Work with us' page has no vacancy listings (verified Sep 2026); nothing to crawl yet."
   },
   {
     "slug": "abans-finance",
     "name": "Abans Finance PLC",
     "website": "https://abansfinance.lk",
     "careersUrl": "https://abansfinance.lk/careers/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "groupSelector": ".vacancy-list-item",
+      "groupTitleSelector": "h3",
+      "listSelector": "li a.show-details-career",
+      "anchorAttr": "rel",
+      "defaultLocation": "Sri Lanka"
+    },
     "industry": "financial-services",
     "cseSymbol": "AFSL.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Vacancies grouped by department; details open in a popup on the same page (verified Sep 2026)."
   },
   {
     "slug": "access-engineering",
@@ -61,7 +69,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "acl-cables",
@@ -77,7 +86,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet."
   },
   {
     "slug": "acl-plastics",
@@ -173,7 +183,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "aitken-spence-hotel-holdings",
@@ -189,7 +200,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "aitken-spence-plantation-managements",
@@ -205,7 +217,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "alliance-finance-company",
@@ -863,7 +876,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "central-industries",
@@ -895,7 +909,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "ceylinco.com from the CSE list is a parked domain for sale (verified Sep 2026); the insurer's real site needs research."
   },
   {
     "slug": "ceylon-beverage-holdings",
@@ -1055,7 +1070,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "ceylontobacco.com from the CSE list is a parked domain (verified Sep 2026); the real careers page needs research."
   },
   {
     "slug": "chemanex",
@@ -1126,16 +1142,22 @@
     "name": "Citizens Development Business Finance PLC",
     "website": "https://www.cdb.lk",
     "careersUrl": "https://www.cdb.lk/life-at-cdb/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".career-single-card",
+      "titleSelector": "h6",
+      "linkSelector": "a.apply-now",
+      "locationSelector": ".tags p"
+    },
     "industry": "financial-services",
     "cseSymbol": "CDB.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "CDB careers page lists open positions (verified Sep 2026)."
   },
   {
     "slug": "citrus-leisure",
@@ -1183,8 +1205,8 @@
       "tech"
     ],
     "status": "needs-adapter",
-    "active": true,
-    "notes": "CodeGen International, Colombo. Careers page verified by web search (Sep 2026)."
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows codegen.co.uk/careers (verified Sep 2026)."
   },
   {
     "slug": "colombo-city-holdings",
@@ -1334,17 +1356,25 @@
     "slug": "creative-software",
     "name": "Creative Software",
     "website": "https://www.creativesoftware.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.creativesoftware.com/careers",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".w-dyn-item",
+      "titleSelector": "h3.careers-job",
+      "linkSelector": "a.link-block-2",
+      "typeSelector": ".div-block-2 .text-block:nth-child(1)",
+      "workplaceSelector": ".div-block-2 .text-block:nth-child(2)",
+      "defaultLocation": "Colombo, Sri Lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Webflow list of open vacancies on the careers page (verified Sep 2026)."
   },
   {
     "slug": "cryptoworth",
@@ -1393,7 +1423,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "dialog-axiata",
@@ -1449,8 +1480,15 @@
     "name": "Digital Mobility Solutions Lanka PLC (PickMe)",
     "website": "https://pickme.lk",
     "careersUrl": "https://pickme.lk/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".job-details",
+      "titleSelector": "h4",
+      "linkSelector": ".job-link a",
+      "locationSelector": ".job-summery strong",
+      "departmentSelector": ".job-summery span",
+      "defaultLocation": "Sri Lanka"
+    },
     "industry": "technology",
     "cseSymbol": "PKME.N0000",
     "parentGroup": null,
@@ -1458,8 +1496,9 @@
       "tech",
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "PickMe's own careers page lists current openings (verified Sep 2026)."
   },
   {
     "slug": "dilmah-ceylon-tea-company",
@@ -1475,7 +1514,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet."
   },
   {
     "slug": "dipped-products",
@@ -1977,7 +2017,7 @@
     "slug": "hcltech",
     "name": "HCLTech",
     "website": "https://www.hcltech.com",
-    "careersUrl": null,
+    "careersUrl": "https://www.hcltech.com/careers",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -1986,9 +2026,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true,
-    "notes": "Global careers portal; filter to Sri Lanka."
+    "status": "needs-adapter",
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows hcltech.com/careers (verified Sep 2026). Global portal."
   },
   {
     "slug": "hdfc-bank-of-sri-lanka",
@@ -2020,7 +2060,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "hemas-holdings",
@@ -2036,7 +2077,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet."
   },
   {
     "slug": "hikkaduwa-beach-resort",
@@ -2278,7 +2320,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page groups vacancies by department; every department showed 'no vacancies' at probe time, so the markup of a real listing is unknown (verified Sep 2026)."
   },
   {
     "slug": "john-keells",
@@ -2758,7 +2801,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "lee-hedges",
@@ -2806,7 +2850,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "lolc-general-insurance",
@@ -2822,7 +2867,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "lolc-holdings",
@@ -2838,7 +2884,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "lotus-hydro-power",
@@ -2860,18 +2907,28 @@
     "slug": "lseg",
     "name": "LSEG",
     "website": "https://www.lseg.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://lseg.wd3.myworkdayjobs.com/Careers",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "workday",
+      "host": "lseg.wd3.myworkdayjobs.com",
+      "tenant": "lseg",
+      "site": "Careers",
+      "appliedFacets": {
+        "locationCountry": [
+          "db69e062446c11de98360015c5e6daf6"
+        ]
+      }
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "Global careers portal; filter to Sri Lanka. Millennium IT is now part of LSEG — check whether they share one listing."
+    "notes": "Workday career site, filtered to the Sri Lanka country facet (28 roles at probe time, verified Sep 2026). Millennium IT roles are listed here."
   },
   {
     "slug": "luminex",
@@ -3031,7 +3088,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "mercantile-investments-and-finance",
@@ -3224,7 +3282,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers page returns HTTP 403 to automated requests (verified Sep 2026)."
   },
   {
     "slug": "nawaloka-hospitals",
@@ -3369,7 +3428,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "panasian-power",
@@ -3466,7 +3526,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "pgp-glass-ceylon",
@@ -3744,17 +3805,21 @@
     "slug": "rootcode",
     "name": "Rootcode",
     "website": "https://rootcode.io",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://rootcode.ai/careers",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "rootcode",
+      "locationFilter": "sri lanka|colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Careers page is filled from rootcode.ai/api/jobs; roles in Estonia are filtered out (verified Sep 2026)."
   },
   {
     "slug": "royal-ceramics-lanka",
@@ -3802,7 +3867,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Vacancies are published only as images with an MS Forms link (no text to read) (verified Sep 2026)."
   },
   {
     "slug": "samson-international",
@@ -3946,7 +4012,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "'Available vacancies' is a table that was empty at probe time, so extraction can't be verified yet (verified Sep 2026)."
   },
   {
     "slug": "seylan-developments",
@@ -4058,7 +4125,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "singer.lk/careers redirects to the singersl.com homepage; no careers page found (verified Sep 2026)."
   },
   {
     "slug": "singhe-hospitals",
@@ -4123,7 +4191,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "softlogic-finance",
@@ -4139,7 +4208,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "softlogic-holdings",
@@ -4155,7 +4225,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "softlogic-life-insurance",
@@ -4171,23 +4242,29 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "sri-lanka-telecom",
     "name": "Sri Lanka Telecom PLC",
     "website": "https://www.slt.lk",
     "careersUrl": "https://www.slt.lk/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".inner-rightplain-block ul.common-list li",
+      "titleSelector": "h4",
+      "defaultLocation": "Colombo, Sri Lanka"
+    },
     "industry": "telecommunications",
     "cseSymbol": "SLTL.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Openings are listed as headings on slt.lk/careers; applications go through careers.slt.lk (verified Sep 2026)."
   },
   {
     "slug": "standard-capital",
@@ -4219,7 +4296,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": true,
+    "notes": "Careers page points to LinkedIn jobs; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
     "slug": "surge-global",
@@ -4267,7 +4345,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
     "slug": "swivel-group",
@@ -4380,7 +4459,8 @@
       "cse"
     ],
     "status": "needs-adapter",
-    "active": true
+    "active": false,
+    "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
     "slug": "tess-agro",
@@ -4612,16 +4692,24 @@
     "name": "Vallibel One PLC",
     "website": "https://www.vallibelone.com",
     "careersUrl": "https://www.vallibelone.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "#openings .group",
+      "titleSelector": "h3",
+      "linkSelector": "a[href*='/apply']",
+      "departmentSelector": ".fa-building + span",
+      "locationSelector": ".fa-map-marker-alt + span",
+      "typeSelector": ".fa-clock + span"
+    },
     "industry": "diversified",
     "cseSymbol": "VONE.N0000",
     "parentGroup": null,
     "sourceLists": [
       "cse"
     ],
-    "status": "needs-adapter",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "'Our openings' section on the careers page (verified Sep 2026)."
   },
   {
     "slug": "vidullanka",
@@ -4675,17 +4763,26 @@
     "slug": "wso2",
     "name": "WSO2",
     "website": "https://wso2.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://wso2.com/careers",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".pd-card",
+      "titleSelector": "h5",
+      "linkSelector": "a.cLinkCTA",
+      "locationSelector": ".cCountry",
+      "departmentSelector": ".pd-tier",
+      "typeSelector": ".pd-tag:not(.cCountry)",
+      "locationFilter": "sri lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Careers page lists global roles as cards; only Sri Lanka roles are kept (verified Sep 2026)."
   },
   {
     "slug": "zegates",
@@ -4709,48 +4806,66 @@
     "name": "ZILLIONe",
     "website": "https://www.zillione.com",
     "careersUrl": "https://www.zillione.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "zillione"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "Careers page verified by web search (Sep 2026)."
+    "notes": "Careers page is filled from apisv1.zillione.com/api/careers (verified Sep 2026)."
   },
   {
     "slug": "zone24x7",
     "name": "Zone24x7",
     "website": "https://www.zone24x7.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://zone24x7.com/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": ".card-job-set",
+      "titleSelector": "h2",
+      "linkSelector": "a",
+      "locationSelector": ".footer-of-job-card p",
+      "typeSelector": ".meta-section p"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Careers page lists current vacancies as cards (verified Sep 2026)."
   },
   {
     "slug": "zyner-io",
     "name": "Zyner.io",
     "website": "https://zyner.io",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://careers.zyner.io/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "[data-slot='card']",
+      "titleSelector": "h2",
+      "linkSelector": "a[href*='rooster.jobs']",
+      "typeSelector": "h2 + div span:nth-child(1)",
+      "workplaceSelector": "h2 + div span:nth-child(2)",
+      "descriptionSelector": "p",
+      "defaultLocation": "Sri Lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
-    "active": true
+    "status": "ready",
+    "active": true,
+    "notes": "Zyner's own careers page lists roles; Apply links go to its Rooster postings (verified Sep 2026)."
   }
 ]

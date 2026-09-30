@@ -17,8 +17,8 @@ const TITLE_RULES: Rule[] = [
     "principal",
     /\bprincipal\b|\bdistinguished\b|\barchitect\b|\bstaff\s+(?:(?:software|data|ml|machine learning|site reliability|security|backend|back-end|frontend|front-end|full[- ]?stack|platform|devops|qa|test|mobile|cloud)\s+)?(?:engineer|scientist|developer)\b/i,
   ],
-  ["manager", /\bhead\s+of\b|\bdirector\b|\b(?<!product\s)(?<!project\s)manager\b/i],
-  ["lead", /\b(?:team|tech|technical)\s+lead\b|\blead\b(?!\s+generation)/i],
+  ["manager", /\bhead\s+of\b|\bhead\b(?!\s+(?:office|quarters|chef))|\bdirector\b|\b(?<!product\s)(?<!project\s)manager\b/i],
+  ["lead", /\b(?:team|tech|technical)\s+lead(?:er)?\b|\blead\b(?!\s+generation)|\bleader\b/i],
   ["senior", /\bsenior\b|\bsr\b\.?/i],
   ["mid", /\bmid(?:[- ]level|[- ]senior)?\b|\bintermediate\b|\bengineer\s+ii\b(?!i)/i],
 ];

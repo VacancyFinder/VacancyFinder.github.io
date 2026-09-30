@@ -15,12 +15,89 @@ export function cleanText(raw: string | null | undefined): string {
     .trim();
 }
 
-/** Title: clean text, strip trailing reference codes and "Apply now" noise. */
+const ACRONYMS = new Set([
+  "IT",
+  "HR",
+  "QA",
+  "QC",
+  "UI",
+  "UX",
+  "AI",
+  "ML",
+  "BI",
+  "PR",
+  "CEO",
+  "CFO",
+  "CTO",
+  "COO",
+  "CIO",
+  "IOT",
+  "SAP",
+  "ERP",
+  "CRM",
+  "SEO",
+  "SQL",
+  "AWS",
+  "GCP",
+  "API",
+  "PHP",
+  "SME",
+  "BPO",
+  "MEP",
+  "HVAC",
+  "F&B",
+  "IFS",
+  "BA",
+  "PM",
+  "SLT",
+  "CSE",
+  "PLC",
+  "LTD",
+  "II",
+  "III",
+  "IV",
+  "ICT",
+  "GM",
+  "AGM",
+  "DGM",
+  "NOC",
+  "SOC",
+  "SRE",
+  "L&D",
+  "CA",
+  "ACCA",
+  "CIMA",
+  "MBA",
+  "O/L",
+  "A/L",
+]);
+
+/** "MANAGER-INTERNAL AUDIT" → "Manager-Internal Audit"; mixed-case titles are left alone. */
+export function fixAllCaps(title: string): string {
+  const letters = title.replace(/[^A-Za-z]/g, "");
+  if (letters.length < 5 || letters !== letters.toUpperCase()) return title;
+  const small = new Set(["of", "and", "for", "the", "in", "to", "at", "on", "a", "an", "with"]);
+  let first = true;
+  return title.replace(/[A-Za-z&/']+/g, (w) => {
+    const lower = w.toLowerCase();
+    const out = ACRONYMS.has(w.toUpperCase())
+      ? w.toUpperCase()
+      : !first && small.has(lower)
+        ? lower
+        : w.charAt(0) + w.slice(1).toLowerCase();
+    first = false;
+    return out;
+  });
+}
+
+/** Title: clean text, strip trailing "Apply now" noise, fix ALL-CAPS. */
 export function cleanTitle(raw: string): string {
-  return cleanText(raw)
-    .replace(/\s*[-–|]\s*apply\s+now\s*$/i, "")
-    .replace(/\s+/g, " ")
-    .trim();
+  return fixAllCaps(
+    cleanText(raw)
+      .replace(/\s*[-–|]\s*apply\s+now\s*$/i, "")
+      .replace(/\s+/g, " ")
+      .trim(),
+  );
 }
 
 /** ≤ 300 chars, cut on a word boundary with an ellipsis. */
