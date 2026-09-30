@@ -11,6 +11,8 @@
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck",
     "crawl": "pnpm --filter @rekiya/crawler crawl",
+    "sync": "pnpm crawl && pnpm validate:data && pnpm build",
+    "sync:remote": "bash scripts/trigger-sync.sh",
     "discover": "pnpm --filter @rekiya/crawler discover",
     "validate:data": "pnpm --filter @rekiya/crawler validate:data",
     "build": "pnpm --filter @rekiya/web build",

@@ -8,7 +8,7 @@ import { Sheet } from "../components/Sheet";
 import { JobListSkeleton } from "../components/Skeleton";
 import { useToast } from "../components/Toast";
 import { useApp } from "../lib/app-state";
-import { useData, useJobs } from "../lib/data";
+import { SYNC_EVERY_MS, useData, useJobs } from "../lib/data";
 import {
   activeChips,
   activeFilterCount,
@@ -26,7 +26,7 @@ import {
   type Filters,
   type SortKey,
 } from "../lib/filters";
-import { relativeTime } from "../lib/format";
+import { nextSyncLabel, relativeTime } from "../lib/format";
 import { buildIndex, searchIds } from "../lib/search";
 import type { Employer, Job } from "../lib/types";
 import { FIELD_META, fieldPath, isFieldSlug, JOBS_META, SITE_NAME } from "../lib/paths";
@@ -159,7 +159,9 @@ export function Feed() {
           <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{heading}</h1>
           <p className="muted mt-1 text-sm">
             {f.fields.length > 1 ? `${f.fields.map((x) => FIELD_LABELS[x]).join(" · ")} · ` : ""}
-            {data.meta && Date.parse(data.meta.generatedAt) > 0 ? `Updated ${relativeTime(data.meta.generatedAt)}` : ""}
+            {data.meta && Date.parse(data.meta.generatedAt) > 0
+              ? `Updated ${relativeTime(data.meta.generatedAt)} · next update ${nextSyncLabel(data.meta.generatedAt, SYNC_EVERY_MS)}`
+              : ""}
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2">
