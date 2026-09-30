@@ -1,20 +1,21 @@
 import { z } from "zod";
 import { FieldSlug } from "./fields.js";
 import { IndustrySlug } from "./industries.js";
+import { JOB_TYPES, SENIORITIES, SNIPPET_MAX, WORK_MODES } from "./constants.js";
+export { JOB_TYPES, SENIORITIES, SNIPPET_MAX, WORK_MODES };
 
-export const SENIORITIES = ["intern", "trainee", "junior", "mid", "senior", "lead", "manager", "principal", "unspecified"] as const;
+
 export const Seniority = z.enum(SENIORITIES);
 export type Seniority = z.infer<typeof Seniority>;
 
-export const JOB_TYPES = ["full-time", "part-time", "contract", "internship", "unspecified"] as const;
+
 export const JobType = z.enum(JOB_TYPES);
 export type JobType = z.infer<typeof JobType>;
 
-export const WORK_MODES = ["onsite", "hybrid", "remote", "unspecified"] as const;
+
 export const WorkMode = z.enum(WORK_MODES);
 export type WorkMode = z.infer<typeof WorkMode>;
 
-export const SNIPPET_MAX = 300;
 const isoDateTime = z.string().datetime({ offset: true });
 const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 

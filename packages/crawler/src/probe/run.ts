@@ -106,6 +106,10 @@ async function renderAll(entries: ProbeEntry[], fetcher: PoliteFetcher): Promise
     return ["image", "font", "media"].includes(t) ? route.abort() : route.continue();
   });
   for (const e of entries) {
+    // Only pages whose static HTML shows no listings need a browser to understand.
+    const s = e.signals;
+    const needsRender = !s || s.likelyJsRendered || (s.jsonLdJobPostings === 0 && e.atsChecks.every((a) => !a.ok) && s.jobishLinks.length < 3);
+    if (!needsRender) continue;
     if (!(await fetcher.allowed(e.url))) {
       e.rendered = { error: "robots.txt disallows" };
       continue;
@@ -126,8 +130,9 @@ async function renderAll(entries: ProbeEntry[], fetcher: PoliteFetcher): Promise
       }
     });
     try {
-      await page.goto(e.url, { waitUntil: "networkidle", timeout: 45000 });
-      await page.waitForTimeout(2000);
+      await page.goto(e.url, { waitUntil: "domcontentloaded", timeout: 30000 });
+      await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
+      await page.waitForTimeout(1500);
       const html = await page.content();
       writeFileSync(resolve(OUT, "pages", `${safe(e.id)}.rendered.html`), html);
       e.rendered = { finalUrl: page.url(), signals: extractSignals(html, page.url()), json };
