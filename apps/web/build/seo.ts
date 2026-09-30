@@ -45,7 +45,9 @@ import {
   websiteLd,
 } from "../src/lib/structured-data.js";
 import type { Job as WebJob } from "../src/lib/types.js";
-import { cleanSnippet } from "../src/lib/format.js";
+import { cleanSnippet, hue, initials } from "../src/lib/format.js";
+import { renderOgPng, type OgCard } from "./og.js";
+import { placeOf } from "../src/lib/share.js";
 
 export interface SeoInput {
   outDir: string;
@@ -69,7 +71,13 @@ interface Page extends PageMeta {
   head?: string;
   lastmod?: string;
   priority?: number;
+  /** Link-preview card (WhatsApp, Facebook, LinkedIn…). Pages without one use the site image. */
+  og?: Omit<OgCard, "host">;
 }
+
+/** Where a page's preview image lives: "/" → /og/home.png, "/job/x-1/" → /og/job/x-1.png. */
+export const ogImagePath = (path: string) => (path === "/" ? "/og/home.png" : `/og${path.replace(/\/+$/, "")}.png`);
+const hostOf = (siteUrl: string) => siteUrl.replace(/^https?:\/\//, "").replace(/\/+$/, "");
 
 export const esc = (s: string) =>
   s.replace(/[<>&"']/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&#39;" })[c]!);
@@ -138,6 +146,14 @@ export function renderDocument(template: string, siteUrl: string, p: Page, verif
     .replace(/(<meta\s+name="twitter:title"\s+content=")[^"]*(")/, `$1${esc(p.title)}$2`)
     .replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/, `$1${esc(p.description)}$2`)
     .replace(/(<link\s+rel="canonical"\s+href=")[^"]*(")/, `$1${esc(url)}$2`);
+  if (p.og && !p.noindex) {
+    const image = absUrl(siteUrl, ogImagePath(p.path));
+    html = html
+      .replace(/(<meta\s+property="og:image"\s+content=")[^"]*(")/, `$1${esc(image)}$2`)
+      .replace(/(<meta\s+name="twitter:image"\s+content=")[^"]*(")/, `$1${esc(image)}$2`)
+      .replace(/(<meta\s+property="og:image:secure_url"\s+content=")[^"]*(")/, `$1${esc(image)}$2`)
+      .replace(/(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/, `$1${esc(p.og.title)}$2`);
+  }
   if (p.noindex) html = html.replace(/\s*<link\s+rel="canonical"[^>]*>/, "");
   const head = [
     p.head ?? "",
@@ -189,6 +205,16 @@ export function buildPages(inp: SeoInput): Page[] {
     priority: 1,
     lastmod: inp.generatedAt,
     jsonLd: [websiteLd(siteUrl), organizationLd(siteUrl), faqLd(FAQ_TEXT)],
+    og: {
+      eyebrow: "Let us do the searching. You do the applying.",
+      title: "Latest job vacancies in Sri Lanka",
+      titleWidth: 860,
+      stats: [
+        [open.length.toLocaleString("en"), "open jobs"],
+        [String(hiring), "companies hiring"],
+        [String(FIELD_SLUGS.filter((f) => fieldJobs(f).length).length), "fields"],
+      ],
+    },
     body: `<section class="rounded-2xl bg-brand-800 p-6 text-white sm:p-10">
 <p class="text-sm font-semibold uppercase tracking-widest text-amber-300">Let us do the searching. You do the applying.</p>
 <h1 class="mt-2 text-3xl font-extrabold tracking-tight sm:text-5xl">Latest job vacancies in Sri Lanka</h1>
@@ -221,6 +247,12 @@ export function buildPages(inp: SeoInput): Page[] {
   pages.push({
     ...JOBS_META(open.length),
     path: "/jobs/",
+    og: {
+      eyebrow: "Jobs in Sri Lanka",
+      title: "All job vacancies, newest first",
+      subtitle: `${open.length.toLocaleString("en")} open jobs at ${hiring} employers`,
+      chips: ["IT & software", "Banking & finance", "Marketing", "Engineering"],
+    },
     priority: 0.9,
     lastmod: inp.generatedAt,
     jsonLd: [
@@ -244,6 +276,12 @@ export function buildPages(inp: SeoInput): Page[] {
     pages.push({
       ...FIELD_META(f, list.length),
       path: fieldPath(f),
+      og: {
+        eyebrow: "Jobs in Sri Lanka",
+        title: `${FIELD_LABELS[f]} jobs`,
+        subtitle: `${list.length} open ${list.length === 1 ? "vacancy" : "vacancies"} from company career pages`,
+        chips: [...new Set(list.map((j) => name(j.company)))].slice(0, 3),
+      },
       noindex: list.length === 0,
       priority: 0.8,
       lastmod: list[0]?.firstSeenAt ?? inp.generatedAt,
@@ -282,6 +320,17 @@ ${jobList(list, name)}<h2 class="mt-8 text-xl font-bold">Related fields</h2><ul 
     pages.push({
       ...JOB_META(j, co),
       path,
+      og: {
+        eyebrow: `Now hiring · ${FIELD_LABELS[j.fields[0] ?? "other"]}`,
+        title: j.title,
+        subtitle: `${co} · ${placeOf(j.location)}`,
+        badge: { text: initials(co), hue: hue(j.company) },
+        chips: [
+          j.seniority !== "unspecified" ? SENIORITY_LABELS[j.seniority] : "",
+          j.workMode !== "unspecified" ? WORK_MODE_LABELS[j.workMode] : "",
+          j.type !== "unspecified" ? JOB_TYPE_LABELS[j.type] : "",
+        ].filter(Boolean),
+      },
       priority: 0.7,
       lastmod: j.firstSeenAt,
       jsonLd: [jobPostingLd(siteUrl, asWeb(j), { name: co, website: website(j.company) }), breadcrumbLd(siteUrl, jobCrumbs)],
@@ -339,6 +388,13 @@ ${[...byInd.entries()]
     pages.push({
       ...COMPANY_META(c.name, list.length),
       path: companyPath(c.slug),
+      og: {
+        eyebrow: "Careers in Sri Lanka",
+        title: `${c.name}`,
+        subtitle: `${list.length} open ${list.length === 1 ? "job" : "jobs"} · checked every 3 hours`,
+        badge: { text: initials(c.name), hue: hue(c.slug) },
+        chips: [...new Set(list.flatMap((j) => j.fields).map((f) => FIELD_LABELS[f]))].slice(0, 3),
+      },
       // Thin pages (no open jobs) stay out of the index until they have some.
       noindex: list.length === 0,
       priority: 0.5,
@@ -361,6 +417,7 @@ ${jobList(list, name)}`,
   const fieldsCount = FIELD_SLUGS.map((f) => [f, fieldJobs(f).length] as const)
     .filter(([, n]) => n)
     .sort((a, b) => b[1] - a[1]);
+  const fieldsCountTop = fieldsCount.slice(0, 3).map(([f]) => FIELD_LABELS[f]);
   const table = (caption: string, rows: [string, string, number][]) =>
     `<table class="mt-4 w-full max-w-xl text-sm"><caption class="text-left text-lg font-semibold">${esc(caption)}</caption><tbody>${rows
       .map(
@@ -371,6 +428,12 @@ ${jobList(list, name)}`,
   pages.push({
     ...INSIGHTS_META,
     path: "/insights/",
+    og: {
+      eyebrow: "Job market insights",
+      title: "Who's hiring in Sri Lanka right now",
+      subtitle: `${open.length.toLocaleString("en")} open jobs · ${hiring} employers`,
+      chips: fieldsCountTop,
+    },
     priority: 0.6,
     lastmod: inp.generatedAt,
     body: `<h1 class="text-3xl font-bold">Sri Lanka job market insights</h1><p class="mt-2">${open.length} open jobs at ${hiring} employers on ${updated}.</p>
@@ -510,7 +573,7 @@ export function llmsFullTxt(inp: SeoInput): string {
 
 // ---- entry point -----------------------------------------------------------------------------------------
 
-export function generateSeo(inp: SeoInput): { pages: number; indexed: number } {
+export async function generateSeo(inp: SeoInput): Promise<{ pages: number; indexed: number; images: number }> {
   const template = readFileSync(resolve(inp.outDir, "index.html"), "utf8");
   const pages = buildPages(inp);
   for (const p of pages) {
@@ -541,5 +604,15 @@ export function generateSeo(inp: SeoInput): { pages: number; indexed: number } {
     mkdirSync(dirname(inp.indexNowFile), { recursive: true });
     writeFileSync(inp.indexNowFile, JSON.stringify([...hubs, ...fresh].map((p) => absUrl(inp.siteUrl, p.path)).slice(0, 10000)));
   }
-  return { pages: pages.length, indexed: pages.filter((p) => !p.noindex).length };
+  // Link-preview images for every shareable page (≈0.1 s each).
+  let images = 0;
+  const host = hostOf(inp.siteUrl);
+  for (const p of pages) {
+    if (!p.og || p.noindex) continue;
+    const file = resolve(inp.outDir, `.${ogImagePath(p.path)}`);
+    mkdirSync(dirname(file), { recursive: true });
+    writeFileSync(file, await renderOgPng({ ...p.og, host }));
+    images++;
+  }
+  return { pages: pages.length, indexed: pages.filter((p) => !p.noindex).length, images };
 }

@@ -103,17 +103,19 @@ export function rekiyaData(dataDir: string): Plugin {
         res.end(readFileSync(file));
       });
     },
-    closeBundle() {
+    async closeBundle() {
       const d = generateSiteData(dataDir, outDir);
       // Prerendered pages, sitemap, robots.txt, llms.txt — after the data, in the same hook, so order is fixed.
-      const seo = generateSeo({
+      const seo = await generateSeo({
         outDir,
         siteUrl: siteUrl(),
         ...d,
         verify: { google: process.env.GOOGLE_SITE_VERIFICATION, bing: process.env.BING_SITE_VERIFICATION },
         indexNowFile: resolve(root, ".seo/indexnow-urls.json"),
       });
-      console.log(`rekiya-data: ${d.jobs.length} jobs, ${seo.pages} pages (${seo.indexed} indexable) → ${outDir}`);
+      console.log(
+        `rekiya-data: ${d.jobs.length} jobs, ${seo.pages} pages (${seo.indexed} indexable), ${seo.images} preview images → ${outDir}`,
+      );
     },
   };
 }
