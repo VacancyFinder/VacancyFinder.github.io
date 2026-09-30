@@ -370,8 +370,8 @@
   {
     "slug": "ascentic",
     "name": "Ascentic",
-    "website": null,
-    "careersUrl": null,
+    "website": "https://ascentic.se",
+    "careersUrl": "https://career.ascentic.se/jobs",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -380,9 +380,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "Website not confirmed from here (Swedish-owned, Colombo office) — confirm in M1."
+    "notes": "Swedish-owned, Colombo office. Careers site career.ascentic.se (verified by web search, Sep 2026)."
   },
   {
     "slug": "asia-asset-finance",
@@ -499,7 +499,7 @@
   {
     "slug": "atlas-labs",
     "name": "Atlas Labs",
-    "website": null,
+    "website": "https://atlaslabs.com.au",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -509,9 +509,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-discovery",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
     "slug": "bairaha-farms",
@@ -1172,8 +1172,8 @@
   {
     "slug": "codegen",
     "name": "CodeGen",
-    "website": null,
-    "careersUrl": null,
+    "website": "https://codegen.co.uk",
+    "careersUrl": "https://codegen.co.uk/careers/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -1182,9 +1182,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "CodeGen International, Colombo. Careers page verified by web search (Sep 2026)."
   },
   {
     "slug": "colombo-city-holdings",
@@ -1349,7 +1349,7 @@
   {
     "slug": "cryptoworth",
     "name": "Cryptoworth",
-    "website": null,
+    "website": "https://www.cryptoworth.com",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -1359,9 +1359,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-discovery",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs and LinkedIn (third-party, not crawled in v1)."
   },
   {
     "slug": "dankotuwa-porcelain",
@@ -2185,7 +2185,7 @@
   {
     "slug": "hype-invention",
     "name": "Hype Invention",
-    "website": null,
+    "website": "https://hypeinvention.com",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -2195,9 +2195,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-discovery",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
     "slug": "ifs",
@@ -3112,7 +3112,7 @@
     ],
     "status": "needs-research",
     "active": true,
-    "notes": "Now part of LSEG; may have no separate careers page. NOT the same as Millennium Housing Developers PLC (CSE)."
+    "notes": "Now part of LSEG; roles are listed on the LSEG careers portal. NOT the same as Millennium Housing Developers PLC (CSE)."
   },
   {
     "slug": "muller-and-phipps-ceylon",
@@ -3245,19 +3245,19 @@
   {
     "slug": "octave",
     "name": "Octave",
-    "website": null,
+    "website": "https://www.keells.com/octave/",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
     "cseSymbol": null,
-    "parentGroup": null,
+    "parentGroup": "keells",
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-discovery",
     "active": true,
-    "notes": "John Keells Group data & AI unit — may list roles on keells.com/careers; confirm in M1."
+    "notes": "John Keells Group data & AI unit. Roles are listed on the John Keells careers site with 'Octave' in the title, so they are attributed from that crawl. Ambiguous domain overlap with CSE list — resolve by hand."
   },
   {
     "slug": "odel",
@@ -4095,7 +4095,7 @@
   {
     "slug": "snapdrum",
     "name": "Snapdrum",
-    "website": null,
+    "website": "https://snapdrum.com",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -4105,9 +4105,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-discovery",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
     "slug": "softlogic-capital",
@@ -4272,8 +4272,8 @@
   {
     "slug": "swivel-group",
     "name": "Swivel Group",
-    "website": null,
-    "careersUrl": null,
+    "website": "https://swivelgroup.com.au",
+    "careersUrl": "https://careers.smartrecruiters.com/SwivelGroup",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -4282,9 +4282,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Australian HQ with Sri Lanka centre. Careers on SmartRecruiters (verified by web search, Sep 2026)."
   },
   {
     "slug": "sysco-labs",
@@ -4573,7 +4573,7 @@
     ],
     "status": "needs-research",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website not found (twistdigital.io is an unrelated agency). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
     "slug": "union-bank-of-colombo",
@@ -4690,7 +4690,7 @@
   {
     "slug": "zegates",
     "name": "Zegates",
-    "website": null,
+    "website": "https://zegates.com",
     "careersUrl": null,
     "adapter": "none",
     "adapterConfig": {},
@@ -4700,15 +4700,15 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-discovery",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
     "slug": "zillione",
     "name": "ZILLIONe",
-    "website": null,
-    "careersUrl": null,
+    "website": "https://www.zillione.com",
+    "careersUrl": "https://www.zillione.com/careers",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -4717,9 +4717,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-research",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "Website not confirmed — confirm in M1."
+    "notes": "Careers page verified by web search (Sep 2026)."
   },
   {
     "slug": "zone24x7",

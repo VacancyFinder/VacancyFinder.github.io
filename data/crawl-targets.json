@@ -58,6 +58,24 @@
     "parentGroup": "brownsgroup"
   },
   {
+    "id": "career-ascentic-se-jobs",
+    "canonicalUrl": "https://career.ascentic.se/jobs",
+    "adapter": "none",
+    "companySlugs": [
+      "ascentic"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "careers-smartrecruiters-com-swivelgroup",
+    "canonicalUrl": "https://careers.smartrecruiters.com/SwivelGroup",
+    "adapter": "none",
+    "companySlugs": [
+      "swivel-group"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "cargillsceylon-com-careers",
     "canonicalUrl": "https://cargillsceylon.com/careers",
     "adapter": "none",
@@ -109,6 +127,15 @@
     "adapter": "none",
     "companySlugs": [
       "john-keells-hotels"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "codegen-co-uk-careers",
+    "canonicalUrl": "https://codegen.co.uk/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "codegen"
     ],
     "parentGroup": null
   },
@@ -384,6 +411,15 @@
     "adapter": "none",
     "companySlugs": [
       "vallibel-one"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "zillione-com-careers",
+    "canonicalUrl": "https://zillione.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "zillione"
     ],
     "parentGroup": null
   }

@@ -1,0 +1,22 @@
+{
+  "targets": "all",
+  "render": true,
+  "urls": [
+    { "id": "x-wso2", "url": "https://wso2.com/careers/" },
+    { "id": "x-99x", "url": "https://99x.io/careers" },
+    { "id": "x-syscolabs", "url": "https://syscolabs.lk/careers" },
+    { "id": "x-lseg", "url": "https://www.lseg.com/en/careers" },
+    { "id": "x-pickme", "url": "https://pickme.lk/careers" },
+    { "id": "x-surge", "url": "https://surge.global/careers" },
+    { "id": "x-creativesoftware", "url": "https://www.creativesoftware.com/careers" },
+    { "id": "x-zyner", "url": "https://zyner.io/careers" },
+    { "id": "x-flatrock", "url": "https://www.flatrocktech.com/careers" },
+    { "id": "x-zone24x7", "url": "https://www.zone24x7.com/careers" },
+    { "id": "x-pearson", "url": "https://pearson.jobs/" },
+    { "id": "x-fortude", "url": "https://fortude.co/careers" },
+    { "id": "x-hcltech", "url": "https://www.hcltech.com/careers" },
+    { "id": "x-rootcode", "url": "https://rootcode.io/careers" },
+    { "id": "x-ifs", "url": "https://www.ifs.com/about/careers" },
+    { "id": "x-careers-keells", "url": "https://careers.keells.com/" }
+  ]
+}

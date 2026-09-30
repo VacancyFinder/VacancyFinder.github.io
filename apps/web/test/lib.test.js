@@ -80,7 +80,7 @@ describe("filters", () => {
 
   it("filters by industry, group, links and list", () => {
     for (const c of run({ industry: "banking" })) expect(c.industry).toBe("banking");
-    expect(run({ group: "keells" })).toHaveLength(5);
+    expect(run({ group: "keells" })).toHaveLength(companies.filter((c) => c.parentGroup === "keells").length);
     for (const c of run({ access: "careers" })) expect(c.careersUrl).toBeTruthy();
     for (const c of run({ access: "none" })) expect(c.website ?? c.careersUrl).toBeFalsy();
     for (const c of run({ list: "tech" })) expect(c.sourceLists).toContain("tech");
