@@ -46,7 +46,7 @@ function Toggle({
       <span className="min-w-0">
         <span className="block text-sm font-semibold">
           {label}
-          {typeof count === "number" && <span className="ml-1.5 font-normal text-slate-500 dark:text-slate-400">({count})</span>}
+          {typeof count === "number" && <span className="ml-1.5 font-normal text-slate-600 dark:text-slate-400">({count})</span>}
         </span>
         {hint && <span className="block text-xs text-slate-600 dark:text-slate-400">{hint}</span>}
       </span>

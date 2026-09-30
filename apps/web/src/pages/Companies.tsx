@@ -129,7 +129,7 @@ export function Companies() {
       {sections.map(([ind, cs]) => (
         <section key={ind} aria-labelledby={`ind-${ind}`} className="mt-8">
           <h2 id={`ind-${ind}`} className="mb-3 text-lg font-semibold">
-            {INDUSTRY_LABELS[ind]} <span className="font-normal text-slate-500 dark:text-slate-400">({cs.length})</span>
+            {INDUSTRY_LABELS[ind]} <span className="font-normal text-slate-600 dark:text-slate-400">({cs.length})</span>
           </h2>
           <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {cs.map((c) => (

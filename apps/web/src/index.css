@@ -28,7 +28,7 @@
     @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg px-4 text-sm font-semibold transition-colors disabled:opacity-50;
   }
   .btn-primary {
-    @apply btn bg-brand-800 text-white hover:bg-brand-900 dark:bg-brand-400 dark:text-brand-950 dark:hover:bg-brand-300;
+    @apply btn bg-brand-800 text-white hover:bg-brand-900 dark:bg-brand-300 dark:text-brand-950 dark:hover:bg-brand-200;
   }
   .btn-secondary {
     @apply btn border border-slate-300 bg-white text-slate-800 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800;
