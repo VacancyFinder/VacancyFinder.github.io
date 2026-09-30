@@ -106,7 +106,13 @@ export async function main(): Promise<void> {
         try {
           const fn = resolveAdapter(target.adapter, config);
           const res = await withTimeout(
-            fn({ fetcher, url: String(config.url ?? members.find((m) => m.careersUrl)?.careersUrl ?? target.canonicalUrl), config, validators: httpCache[target.id], log: (m) => console.log(`  [${target.id}] ${m}`) }),
+            fn({
+              fetcher,
+              url: String(config.url ?? members.find((m) => m.careersUrl)?.careersUrl ?? target.canonicalUrl),
+              config,
+              validators: httpCache[target.id],
+              log: (m) => console.log(`  [${target.id}] ${m}`),
+            }),
             TARGET_TIMEOUT_MS,
             target.id,
           );
@@ -117,7 +123,13 @@ export async function main(): Promise<void> {
             const locationFilter = typeof config.locationFilter === "string" ? new RegExp(config.locationFilter, "i") : undefined;
             const seen = new Set<string>();
             for (const raw of res.jobs) {
-              const r = normalizeJob(raw, { attribution, source: target.adapter === "custom" ? `custom:${String(config.kind)}` : target.adapter, now, locationFilter, overrides });
+              const r = normalizeJob(raw, {
+                attribution,
+                source: target.adapter === "custom" ? `custom:${String(config.kind)}` : target.adapter,
+                now,
+                locationFilter,
+                overrides,
+              });
               if (!r.job) {
                 run.dropped++;
                 if (r.dropped !== "outside location filter") console.log(`  [${target.id}] dropped "${raw.title}": ${r.dropped}`);
@@ -136,7 +148,9 @@ export async function main(): Promise<void> {
           run.error = err instanceof RobotsDisallowedError ? `robots.txt: ${err.message}` : (err as Error).message;
         }
         setOutcome(slugs, run.outcome);
-        console.log(`${run.outcome === "ok" || run.outcome === "not-modified" ? "✓" : "✗"} ${target.id}: ${run.outcome}, ${run.jobs.length} jobs${run.error ? ` — ${run.error}` : ""}`);
+        console.log(
+          `${run.outcome === "ok" || run.outcome === "not-modified" ? "✓" : "✗"} ${target.id}: ${run.outcome}, ${run.jobs.length} jobs${run.error ? ` — ${run.error}` : ""}`,
+        );
         return run;
       }),
     ),
@@ -151,7 +165,9 @@ export async function main(): Promise<void> {
     const prev = prevHealth[r.target.id];
     const crawled = r.outcome !== "skipped";
     const ok = r.outcome === "ok" || r.outcome === "not-modified";
-    const openHere = diff.jobs.filter((j) => j.status === "open" && (r.target.companySlugs.includes(j.company) || j.company === r.target.parentGroup)).length;
+    const openHere = diff.jobs.filter(
+      (j) => j.status === "open" && (r.target.companySlugs.includes(j.company) || j.company === r.target.parentGroup),
+    ).length;
     health[r.target.id] = {
       target: r.target.id,
       url: r.target.canonicalUrl,
@@ -196,12 +212,15 @@ export async function main(): Promise<void> {
     JSON.stringify(Object.values(h).map((e) => [e.target, e.consecutiveFailures, e.lastError, e.jobCount, e.suspect]));
   const changed = writeData({ dataDir: DATA, jobs: diff.jobs, archived: diff.archived, change, meta, health, httpCache: {} });
   writeIfChanged(CACHE, JSON.stringify(httpCache, null, 2) + "\n");
-  const dataChanged = changed.some((p) => !["meta.json", "health.json", "http-cache.json"].includes(p)) || healthState(health) !== healthState(prevHealth);
+  const dataChanged =
+    changed.some((p) => !["meta.json", "health.json", "http-cache.json"].includes(p)) || healthState(health) !== healthState(prevHealth);
 
   const stamp = now.slice(0, 16).replace("T", " ");
   const message = `data: +${diff.added.length} added, -${diff.closed.length} closed (${stamp} UTC)`;
   console.log(`\n${message}`);
-  console.log(`open ${open.length} · targets ok ${meta.totals.targetsOk}/${meta.totals.targets} · ${fetcher.requests} requests · ${Math.round(meta.runDurationMs / 1000)}s`);
+  console.log(
+    `open ${open.length} · targets ok ${meta.totals.targetsOk}/${meta.totals.targets} · ${fetcher.requests} requests · ${Math.round(meta.runDurationMs / 1000)}s`,
+  );
   console.log(dataChanged ? "data changed" : "no data change");
   if (process.env.GITHUB_OUTPUT) {
     appendFileSync(process.env.GITHUB_OUTPUT, `changed=${dataChanged}\nmessage=${message}\nadded=${diff.added.length}\n`);

@@ -38,7 +38,11 @@ export function Settings() {
         <h2 id="s-theme" className="text-lg font-semibold">
           Appearance
         </h2>
-        <div role="radiogroup" aria-labelledby="s-theme" className="mt-3 inline-flex overflow-hidden rounded-lg border border-slate-300 dark:border-slate-700">
+        <div
+          role="radiogroup"
+          aria-labelledby="s-theme"
+          className="mt-3 inline-flex overflow-hidden rounded-lg border border-slate-300 dark:border-slate-700"
+        >
           {(["system", "light", "dark"] as Theme[]).map((t) => (
             <button
               key={t}
@@ -59,12 +63,16 @@ export function Settings() {
           Alerts
         </h2>
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-          Rekiya shows how many jobs are new since your last visit. To be told elsewhere, subscribe to a field's RSS feed in any feed reader.
+          Rekiya shows how many jobs are new since your last visit. To be told elsewhere, subscribe to a field's RSS feed in any feed
+          reader.
         </p>
         <ul className="mt-3 flex flex-wrap gap-2">
           {(feedFields.length ? feedFields : (Object.keys(FIELD_LABELS) as FieldSlug[])).map((f) => (
             <li key={f}>
-              <a href={`${import.meta.env.BASE_URL}feeds/${f}.xml`} className="chip min-h-[36px] border border-slate-300 bg-white px-3 text-sm dark:border-slate-700 dark:bg-slate-900">
+              <a
+                href={`${import.meta.env.BASE_URL}feeds/${f}.xml`}
+                className="chip min-h-[36px] border border-slate-300 bg-white px-3 text-sm dark:border-slate-700 dark:bg-slate-900"
+              >
                 <RssIcon width={14} height={14} /> {FIELD_LABELS[f]}
               </a>
             </li>
@@ -76,7 +84,9 @@ export function Settings() {
         <h2 id="s-app" className="text-lg font-semibold">
           App
         </h2>
-        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Install Rekiya to open it like an app. Jobs you've already loaded stay available offline.</p>
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+          Install Rekiya to open it like an app. Jobs you've already loaded stay available offline.
+        </p>
         <div className="mt-3">
           <InstallButton />
         </div>

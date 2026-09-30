@@ -1,0 +1,108 @@
+# Crawl → validate → commit data (only if it changed) → alert → build → deploy, all in one workflow
+# (commits pushed with GITHUB_TOKEN do not trigger other workflows).
+# Requires Settings → Pages → Source: "GitHub Actions".
+name: Crawl and deploy
+
+on:
+  schedule:
+    - cron: "17 */3 * * *" # every 3 hours, off the top of the hour
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Crawl only these target ids (comma-separated). Empty = all."
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths:
+      - "apps/web/**"
+      - "packages/**"
+      - "data/companies.json"
+      - "data/overrides.json"
+      - ".github/workflows/crawl-and-deploy.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: crawl-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  crawl-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Restore HTTP cache (ETags)
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: http-cache-${{ github.run_id }}
+          restore-keys: http-cache-
+
+      - name: Crawl
+        id: crawl
+        # Code pushes only rebuild and redeploy; the schedule and manual runs crawl.
+        if: github.event_name != 'push'
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          if [ -n "$ONLY" ]; then pnpm crawl --only "$ONLY"; else pnpm crawl; fi
+
+      - name: Save HTTP cache
+        if: always() && steps.crawl.outcome == 'success'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache
+          key: http-cache-${{ github.run_id }}
+
+      - name: Validate all data against the schemas
+        run: pnpm validate:data
+
+      - name: Commit data
+        if: steps.crawl.outputs.changed == 'true'
+        env:
+          MESSAGE: ${{ steps.crawl.outputs.message }}
+        run: |
+          git config user.name "rekiya-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "$MESSAGE"
+          git pull --rebase
+          git push
+
+      - name: Send alerts
+        if: steps.crawl.outputs.changed == 'true' && steps.crawl.outputs.added != '0'
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: pnpm --filter @rekiya/crawler notify
+
+      - name: Build web app (copies /data into the build)
+        run: pnpm build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/web/dist
+
+  deploy:
+    needs: crawl-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

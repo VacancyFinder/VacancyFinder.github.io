@@ -11,6 +11,7 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -19,9 +20,23 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm typecheck
-      - run: pnpm test
+      - name: Lint
+        run: pnpm lint
+      - name: Formatting
+        run: pnpm format:check
+      - name: Typecheck
+        run: pnpm typecheck
+      - name: Unit + adapter fixture tests
+        run: pnpm test
+      - name: Validate /data against the schemas
+        run: pnpm validate:data
       - name: Committed data matches the importer's output
         run: |
           pnpm import:cse > /dev/null
-          git diff --exit-code -- data
+          git diff --exit-code -- data/companies.json data/groups.json data/crawl-targets.json data/reports
+      - name: Build web app
+        run: pnpm build
+      - name: E2E smoke test
+        run: |
+          pnpm --filter @rekiya/web exec playwright install --with-deps chromium
+          pnpm --filter @rekiya/web e2e

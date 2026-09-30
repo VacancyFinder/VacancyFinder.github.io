@@ -21,10 +21,15 @@ function StaleNotice() {
   if (!meta || !isStale(meta.generatedAt)) return null;
   const never = Date.parse(meta.generatedAt) === 0;
   return (
-    <div role="status" className="border-b border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900/50 dark:bg-amber-950/40 dark:text-amber-100">
+    <div
+      role="status"
+      className="border-b border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900/50 dark:bg-amber-950/40 dark:text-amber-100"
+    >
       <p className="mx-auto flex max-w-6xl items-center gap-2 px-4 py-2 text-sm">
         <AlertIcon width={16} height={16} />
-        {never ? "Jobs haven't been collected yet — check back soon." : `Job data may be out of date (last updated ${relativeTime(meta.generatedAt)}).`}
+        {never
+          ? "Jobs haven't been collected yet — check back soon."
+          : `Job data may be out of date (last updated ${relativeTime(meta.generatedAt)}).`}
       </p>
     </div>
   );
@@ -49,7 +54,11 @@ export function Layout() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-brand-900" onClick={(e) => (e.preventDefault(), mainRef.current?.focus())}>
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-brand-900"
+        onClick={(e) => (e.preventDefault(), mainRef.current?.focus())}
+      >
         Skip to content
       </a>
       <header className="sticky top-0 z-40 bg-brand-800 text-white shadow">
@@ -64,7 +73,9 @@ export function Layout() {
                 <li key={n.to}>
                   <NavLink
                     to={n.to}
-                    className={({ isActive }) => `flex min-h-[44px] items-center gap-2 rounded-lg px-3 text-sm font-medium ${isActive ? "bg-white/15 text-white" : "text-brand-100 hover:bg-white/10 hover:text-white"}`}
+                    className={({ isActive }) =>
+                      `flex min-h-[44px] items-center gap-2 rounded-lg px-3 text-sm font-medium ${isActive ? "bg-white/15 text-white" : "text-brand-100 hover:bg-white/10 hover:text-white"}`
+                    }
                   >
                     <n.icon width={18} height={18} />
                     {n.label}
@@ -99,18 +110,25 @@ export function Layout() {
         </div>
       </footer>
 
-      <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95 md:hidden">
+      <nav
+        aria-label="Main"
+        className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95 md:hidden"
+      >
         <ul className="grid grid-cols-4">
           {NAV.map((n) => (
             <li key={n.to}>
               <NavLink
                 to={n.to}
-                className={({ isActive }) => `flex min-h-[56px] flex-col items-center justify-center gap-0.5 text-xs font-medium ${isActive ? "text-brand-800 dark:text-brand-300" : "text-slate-600 dark:text-slate-400"}`}
+                className={({ isActive }) =>
+                  `flex min-h-[56px] flex-col items-center justify-center gap-0.5 text-xs font-medium ${isActive ? "text-brand-800 dark:text-brand-300" : "text-slate-600 dark:text-slate-400"}`
+                }
               >
                 <span className="relative">
                   <n.icon width={22} height={22} />
                   {n.to === "/saved" && savedCount > 0 && (
-                    <span className="absolute -right-2 -top-1 rounded-full bg-brand-800 px-1 text-[10px] leading-4 text-white dark:bg-brand-300 dark:text-brand-950">{savedCount}</span>
+                    <span className="absolute -right-2 -top-1 rounded-full bg-brand-800 px-1 text-[10px] leading-4 text-white dark:bg-brand-300 dark:text-brand-950">
+                      {savedCount}
+                    </span>
                   )}
                 </span>
                 {n.label}

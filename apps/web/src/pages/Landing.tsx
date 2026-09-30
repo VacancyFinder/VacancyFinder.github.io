@@ -26,9 +26,12 @@ export function Landing() {
       <section className="-mx-4 -mt-6 bg-brand-800 px-4 pb-12 pt-10 text-white">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-amber-300">Sri Lanka job search</p>
-          <h1 className="mt-2 max-w-3xl text-3xl font-bold leading-tight tracking-tight sm:text-5xl">Let us do the searching. You do the applying.</h1>
+          <h1 className="mt-2 max-w-3xl text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
+            Let us do the searching. You do the applying.
+          </h1>
           <p className="mt-4 max-w-2xl text-lg text-brand-100">
-            Rekiya collects open vacancies from the career pages of Sri Lankan companies — CSE-listed firms and tech employers — and sorts them by field and seniority.
+            Rekiya collects open vacancies from the career pages of Sri Lankan companies — CSE-listed firms and tech employers — and sorts
+            them by field and seniority.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link to={prefs.onboarded ? "/jobs" : "/onboarding"} className="btn bg-amber-400 text-brand-950 hover:bg-amber-300">
@@ -65,7 +68,9 @@ export function Landing() {
         <ol className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map(([t, d], i) => (
             <li key={t} className="card p-4">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-800 text-sm font-bold text-white dark:bg-brand-300 dark:text-brand-950">{i + 1}</span>
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-800 text-sm font-bold text-white dark:bg-brand-300 dark:text-brand-950">
+                {i + 1}
+              </span>
               <h3 className="mt-3 font-semibold">{t}</h3>
               <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{d}</p>
             </li>
@@ -80,17 +85,24 @@ export function Landing() {
         <ul className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {TECH_FIELD_SLUGS.map((f) => (
             <li key={f}>
-              <Link to={`/jobs?fields=${f}`} className="card flex min-h-[64px] flex-col justify-center p-3 hover:border-brand-300 dark:hover:border-brand-700">
+              <Link
+                to={`/jobs?fields=${f}`}
+                className="card flex min-h-[64px] flex-col justify-center p-3 hover:border-brand-300 dark:hover:border-brand-700"
+              >
                 <span className="font-semibold">
                   {FIELD_LABELS[f]}
-                  {meta?.byField[f] ? <span className="ml-2 text-sm font-normal text-slate-500 dark:text-slate-400">{meta.byField[f]} open</span> : null}
+                  {meta?.byField[f] ? (
+                    <span className="ml-2 text-sm font-normal text-slate-500 dark:text-slate-400">{meta.byField[f]} open</span>
+                  ) : null}
                 </span>
                 <span className="text-sm text-slate-600 dark:text-slate-400">{FIELD_DESCRIPTIONS[f]}</span>
               </Link>
             </li>
           ))}
         </ul>
-        <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">Plus finance, banking, sales, hospitality, engineering, logistics, healthcare, admin and legal roles.</p>
+        <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">
+          Plus finance, banking, sales, hospitality, engineering, logistics, healthcare, admin and legal roles.
+        </p>
       </section>
 
       <section aria-labelledby="co-h" className="mt-10">
@@ -98,7 +110,8 @@ export function Landing() {
           Companies
         </h2>
         <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
-          {directory ? `${directory.companies.length} employers` : "Hundreds of employers"} — every company listed on the Colombo Stock Exchange plus Sri Lanka's leading tech firms. Many are still being added; you can help by{" "}
+          {directory ? `${directory.companies.length} employers` : "Hundreds of employers"} — every company listed on the Colombo Stock
+          Exchange plus Sri Lanka's leading tech firms. Many are still being added; you can help by{" "}
           <a href={SUGGEST_URL} className="link" rel="noopener">
             suggesting a careers page
           </a>
@@ -114,8 +127,9 @@ export function Landing() {
           How we collect jobs
         </h2>
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-          Rekiya reads public career pages and official job APIs, respects each site's robots.txt, waits between requests and identifies itself as RekiyaBot. It keeps only a job's title, location and a short snippet,
-          and always links to the original listing. Companies can ask to be removed by opening an issue on GitHub.
+          Rekiya reads public career pages and official job APIs, respects each site's robots.txt, waits between requests and identifies
+          itself as RekiyaBot. It keeps only a job's title, location and a short snippet, and always links to the original listing.
+          Companies can ask to be removed by opening an issue on GitHub.
         </p>
       </section>
     </div>

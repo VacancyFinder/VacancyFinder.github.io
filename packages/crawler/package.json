@@ -9,7 +9,10 @@
     "probe": "tsx src/probe/run.ts",
     "crawl": "tsx src/pipeline/run.ts",
     "typecheck": "tsc -p tsconfig.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "validate:data": "tsx src/pipeline/validate.ts",
+    "notify": "tsx src/alerts/notify.ts",
+    "request:company": "tsx src/import/request.ts"
   },
   "dependencies": {
     "@rekiya/shared": "workspace:*",

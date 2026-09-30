@@ -89,7 +89,13 @@ export function useJobs(fields: FieldSlug[] | "all"): { jobs: Job[] | null; erro
       .then((lists) => {
         const seen = new Set<string>();
         const merged: Job[] = [];
-        for (const l of lists) for (const j of l) if (!seen.has(j.id)) (seen.add(j.id), merged.push(j));
+        for (const l of lists) {
+          for (const j of l) {
+            if (seen.has(j.id)) continue;
+            seen.add(j.id);
+            merged.push(j);
+          }
+        }
         if (alive) setState({ key, jobs: merged, error: null });
       })
       .catch((e: Error) => alive && setState({ key, jobs: null, error: e.message }));

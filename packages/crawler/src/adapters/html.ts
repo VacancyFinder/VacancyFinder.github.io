@@ -24,7 +24,11 @@ export interface HtmlConfig {
 const text = ($el: cheerio.Cheerio<never>) => $el.first().text().replace(/\s+/g, " ").trim();
 
 function slugify(s: string): string {
-  return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60);
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 60);
 }
 
 export function parseHtmlList(html: string, pageUrl: string, cfg: HtmlConfig): RawJob[] {
@@ -44,7 +48,9 @@ export function parseHtmlList(html: string, pageUrl: string, cfg: HtmlConfig): R
       url: url ?? `${pageUrl.split("#")[0]}#${slugify(title)}`,
       location: cfg.locationSelector ? text($n.find(cfg.locationSelector) as cheerio.Cheerio<never>) || null : null,
       description: cfg.descriptionSelector ? text($n.find(cfg.descriptionSelector) as cheerio.Cheerio<never>) || null : null,
-      postedAt: cfg.dateSelector ? ($n.find(cfg.dateSelector).first().attr("datetime") ?? text($n.find(cfg.dateSelector) as cheerio.Cheerio<never>)) || null : null,
+      postedAt: cfg.dateSelector
+        ? ($n.find(cfg.dateSelector).first().attr("datetime") ?? text($n.find(cfg.dateSelector) as cheerio.Cheerio<never>)) || null
+        : null,
     });
   });
   return out;

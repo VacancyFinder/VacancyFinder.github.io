@@ -22,7 +22,10 @@ export function Company() {
   const name = c?.name ?? group?.name ?? slug;
   usePageTitle(name);
 
-  const members = useMemo(() => (group ? (directory?.companies ?? []).filter((x) => x.parentGroup === group.slug) : []), [directory, group]);
+  const members = useMemo(
+    () => (group ? (directory?.companies ?? []).filter((x) => x.parentGroup === group.slug) : []),
+    [directory, group],
+  );
   const list = useMemo(() => sortNewest((jobs ?? []).filter((j) => companyMatches(j.company, slug))), [jobs, slug, companyMatches]);
 
   if (!directory) return <p role="status">Loading…</p>;
@@ -62,7 +65,13 @@ export function Company() {
         <div className="min-w-0">
           <h1 className="text-2xl font-bold tracking-tight">{name}</h1>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-            {[c ? INDUSTRY_LABELS[c.industry] : "Group", c?.cseSymbol ? `CSE: ${c.cseSymbol}` : null, c?.sourceLists.includes("tech") ? "Tech employer" : null].filter(Boolean).join(" · ")}
+            {[
+              c ? INDUSTRY_LABELS[c.industry] : "Group",
+              c?.cseSymbol ? `CSE: ${c.cseSymbol}` : null,
+              c?.sourceLists.includes("tech") ? "Tech employer" : null,
+            ]
+              .filter(Boolean)
+              .join(" · ")}
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
             {careers && (
@@ -98,8 +107,8 @@ export function Company() {
       )}
       {c && state === "failing" && c.health && (
         <p className="card mt-6 p-4 text-sm" role="status">
-          We couldn't read this careers page on the last {c.health.consecutiveFailures} attempt{c.health.consecutiveFailures > 1 ? "s" : ""}.
-          {c.health.lastSuccessAt ? ` Jobs below are from ${relativeTime(c.health.lastSuccessAt)}.` : ""}
+          We couldn't read this careers page on the last {c.health.consecutiveFailures} attempt{c.health.consecutiveFailures > 1 ? "s" : ""}
+          .{c.health.lastSuccessAt ? ` Jobs below are from ${relativeTime(c.health.lastSuccessAt)}.` : ""}
         </p>
       )}
 
@@ -111,7 +120,10 @@ export function Company() {
           <ul className="flex flex-wrap gap-2">
             {members.map((m) => (
               <li key={m.slug}>
-                <Link to={`/companies/${m.slug}`} className="chip min-h-[36px] border border-slate-300 bg-white px-3 text-sm dark:border-slate-700 dark:bg-slate-900">
+                <Link
+                  to={`/companies/${m.slug}`}
+                  className="chip min-h-[36px] border border-slate-300 bg-white px-3 text-sm dark:border-slate-700 dark:bg-slate-900"
+                >
                   {m.name}
                 </Link>
               </li>
@@ -132,7 +144,14 @@ export function Company() {
         <ul className="mt-3 grid gap-3 xl:grid-cols-2">
           {list.map((j) => (
             <li key={j.id}>
-              <JobCard job={j} employer={employer(j.company)} isNew={isNew(j)} saved={!!saved[j.id]} applied={!!saved[j.id]?.applied} onToggleSave={toggleSave} />
+              <JobCard
+                job={j}
+                employer={employer(j.company)}
+                isNew={isNew(j)}
+                saved={!!saved[j.id]}
+                applied={!!saved[j.id]?.applied}
+                onToggleSave={toggleSave}
+              />
             </li>
           ))}
         </ul>

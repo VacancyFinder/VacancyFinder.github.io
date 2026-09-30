@@ -18,8 +18,10 @@ export function trackingState(c: DirectoryCompany): "tracked" | "failing" | "soo
 
 function Status({ c }: { c: DirectoryCompany }) {
   const s = trackingState(c);
-  if (s === "tracked") return <span className="chip bg-emerald-50 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">Tracked</span>;
-  if (s === "failing") return <span className="chip bg-amber-50 text-amber-900 dark:bg-amber-900/40 dark:text-amber-200">Temporarily unavailable</span>;
+  if (s === "tracked")
+    return <span className="chip bg-emerald-50 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">Tracked</span>;
+  if (s === "failing")
+    return <span className="chip bg-amber-50 text-amber-900 dark:bg-amber-900/40 dark:text-amber-200">Temporarily unavailable</span>;
   if (s === "off") return <span className="chip bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">Not tracked</span>;
   return <span className="chip bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">Coming soon</span>;
 }
@@ -52,12 +54,19 @@ export function Companies() {
     for (const c of list) byInd.set(c.industry, [...(byInd.get(c.industry) ?? []), c]);
     return [...byInd.entries()]
       .sort((a, b) => INDUSTRY_LABELS[a[0]].localeCompare(INDUSTRY_LABELS[b[0]]))
-      .map(([ind, cs]) => [ind, cs.sort((a, b) => (a.parentGroup ?? "~").localeCompare(b.parentGroup ?? "~") || a.name.localeCompare(b.name))] as const);
+      .map(
+        ([ind, cs]) =>
+          [ind, cs.sort((a, b) => (a.parentGroup ?? "~").localeCompare(b.parentGroup ?? "~") || a.name.localeCompare(b.name))] as const,
+      );
   }, [directory, q, show, groupName]);
 
   const counts = useMemo(() => {
     const cs = directory?.companies ?? [];
-    return { all: cs.length, tracked: cs.filter((c) => ["tracked", "failing"].includes(trackingState(c))).length, soon: cs.filter((c) => trackingState(c) === "soon").length };
+    return {
+      all: cs.length,
+      tracked: cs.filter((c) => ["tracked", "failing"].includes(trackingState(c))).length,
+      soon: cs.filter((c) => trackingState(c) === "soon").length,
+    };
   }, [directory]);
 
   if (error) return <p role="alert">The company list couldn't be loaded ({error}).</p>;
@@ -67,7 +76,8 @@ export function Companies() {
     <div>
       <h1 className="text-2xl font-bold tracking-tight">Companies</h1>
       <p className="mt-1 text-slate-600 dark:text-slate-400">
-        {counts.all} Sri Lankan employers — CSE-listed companies and tech firms. {counts.tracked} are crawled for jobs today; the rest are coming soon.
+        {counts.all} Sri Lankan employers — CSE-listed companies and tech firms. {counts.tracked} are crawled for jobs today; the rest are
+        coming soon.
       </p>
 
       <div className="mt-4 flex flex-col gap-3 sm:flex-row">
@@ -76,7 +86,14 @@ export function Companies() {
             Search companies
           </label>
           <SearchIcon className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
-          <input id="cq" type="search" className="input pl-10" placeholder="Company, CSE symbol or group…" value={params.get("q") ?? ""} onChange={(e) => set("q", e.target.value)} />
+          <input
+            id="cq"
+            type="search"
+            className="input pl-10"
+            placeholder="Company, CSE symbol or group…"
+            value={params.get("q") ?? ""}
+            onChange={(e) => set("q", e.target.value)}
+          />
         </div>
         <div role="radiogroup" aria-label="Show" className="flex overflow-hidden rounded-lg border border-slate-300 dark:border-slate-700">
           {(
@@ -117,12 +134,16 @@ export function Companies() {
           <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {cs.map((c) => (
               <li key={c.slug}>
-                <Link to={`/companies/${c.slug}`} className="card flex min-h-[72px] items-center gap-3 p-3 hover:border-brand-300 dark:hover:border-brand-700">
+                <Link
+                  to={`/companies/${c.slug}`}
+                  className="card flex min-h-[72px] items-center gap-3 p-3 hover:border-brand-300 dark:hover:border-brand-700"
+                >
                   <CompanyBadge slug={c.slug} name={c.name} size="sm" />
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm font-semibold">{c.name}</span>
                     <span className="block truncate text-xs text-slate-600 dark:text-slate-400">
-                      {[c.cseSymbol, c.parentGroup ? groupName.get(c.parentGroup) : null].filter(Boolean).join(" · ") || (c.sourceLists.includes("tech") ? "Tech" : "")}
+                      {[c.cseSymbol, c.parentGroup ? groupName.get(c.parentGroup) : null].filter(Boolean).join(" · ") ||
+                        (c.sourceLists.includes("tech") ? "Tech" : "")}
                     </span>
                   </span>
                   <span className="flex flex-col items-end gap-1">

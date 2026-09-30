@@ -76,11 +76,28 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
             const { [job.id]: _removed, ...rest } = s;
             return rest;
           }
-          return { ...s, [job.id]: { id: job.id, title: job.title, company: job.company, url: job.url, savedAt: new Date().toISOString(), applied: false } };
+          return {
+            ...s,
+            [job.id]: {
+              id: job.id,
+              title: job.title,
+              company: job.company,
+              url: job.url,
+              savedAt: new Date().toISOString(),
+              applied: false,
+            },
+          };
         }),
       toggleApplied: (job) =>
         update((s) => {
-          const cur = s[job.id] ?? { id: job.id, title: job.title, company: job.company, url: job.url, savedAt: new Date().toISOString(), applied: false };
+          const cur = s[job.id] ?? {
+            id: job.id,
+            title: job.title,
+            company: job.company,
+            url: job.url,
+            savedAt: new Date().toISOString(),
+            applied: false,
+          };
           return { ...s, [job.id]: { ...cur, applied: !cur.applied } };
         }),
       removeSaved: (id) =>

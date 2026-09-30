@@ -60,8 +60,13 @@ export function Feed() {
     }
     return {
       industries: [...ind.entries()].sort((a, b) => b[1] - a[1]),
-      companies: [...co.entries()].map(([s, n]) => [employer(s), n] as [Employer, number]).sort((a, b) => a[0].name.localeCompare(b[0].name)),
-      locations: [...loc.entries()].sort((a, b) => b[1] - a[1]).slice(0, 30).map(([l]) => l),
+      companies: [...co.entries()]
+        .map(([s, n]) => [employer(s), n] as [Employer, number])
+        .sort((a, b) => a[0].name.localeCompare(b[0].name)),
+      locations: [...loc.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 30)
+        .map(([l]) => l),
       fieldCounts: data.meta?.byField ?? {},
     };
   }, [jobs, employer, data.meta]);
@@ -75,10 +80,15 @@ export function Feed() {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h1 className="text-2xl font-bold tracking-tight">{heading}</h1>
-          {f.fields.length > 1 && <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{f.fields.map((x) => FIELD_LABELS[x]).join(" · ")}</p>}
+          {f.fields.length > 1 && (
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{f.fields.map((x) => FIELD_LABELS[x]).join(" · ")}</p>
+          )}
         </div>
         {f.fields.length === 1 && (
-          <a href={`${import.meta.env.BASE_URL}feeds/${f.fields[0]}.xml`} className="link inline-flex min-h-[44px] items-center gap-1 text-sm">
+          <a
+            href={`${import.meta.env.BASE_URL}feeds/${f.fields[0]}.xml`}
+            className="link inline-flex min-h-[44px] items-center gap-1 text-sm"
+          >
             <RssIcon width={16} height={16} /> RSS feed
           </a>
         )}
@@ -99,9 +109,23 @@ export function Feed() {
             Search jobs
           </label>
           <SearchIcon className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
-          <input id="q" type="search" className="input pl-10" placeholder="Search title, company, location…" value={f.q} onChange={(e) => set({ q: e.target.value })} autoComplete="off" />
+          <input
+            id="q"
+            type="search"
+            className="input pl-10"
+            placeholder="Search title, company, location…"
+            value={f.q}
+            onChange={(e) => set({ q: e.target.value })}
+            autoComplete="off"
+          />
         </div>
-        <button type="button" className="btn-secondary lg:hidden" aria-expanded={showFilters} aria-controls="filters" onClick={() => setShowFilters((s) => !s)}>
+        <button
+          type="button"
+          className="btn-secondary lg:hidden"
+          aria-expanded={showFilters}
+          aria-controls="filters"
+          onClick={() => setShowFilters((s) => !s)}
+        >
           <FilterIcon width={18} height={18} />
           Filters{nFilters ? ` (${nFilters})` : ""}
         </button>
@@ -145,7 +169,14 @@ export function Feed() {
               <ul className="grid gap-3 xl:grid-cols-2">
                 {results.slice(0, limit).map((j: Job) => (
                   <li key={j.id}>
-                    <JobCard job={j} employer={employer(j.company)} isNew={isNew(j)} saved={!!saved[j.id]} applied={!!saved[j.id]?.applied} onToggleSave={toggleSave} />
+                    <JobCard
+                      job={j}
+                      employer={employer(j.company)}
+                      isNew={isNew(j)}
+                      saved={!!saved[j.id]}
+                      applied={!!saved[j.id]?.applied}
+                      onToggleSave={toggleSave}
+                    />
                   </li>
                 ))}
               </ul>
@@ -169,9 +200,13 @@ function Empty({ f, clear, total }: { f: Filters; clear: () => void; total: numb
   const noData = meta && meta.totals.open === 0;
   return (
     <div className="card p-6 text-center">
-      <p className="font-semibold">{noData ? "No jobs collected yet" : total === 0 ? "No open jobs in these fields right now" : "No jobs match these filters"}</p>
+      <p className="font-semibold">
+        {noData ? "No jobs collected yet" : total === 0 ? "No open jobs in these fields right now" : "No jobs match these filters"}
+      </p>
       <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-        {noData ? "The first crawl hasn't run yet. Browse the companies we track in the meantime." : "Try removing a filter or searching for something broader."}
+        {noData
+          ? "The first crawl hasn't run yet. Browse the companies we track in the meantime."
+          : "Try removing a filter or searching for something broader."}
       </p>
       <div className="mt-4 flex flex-wrap justify-center gap-2">
         {(activeFilterCount(f) > 0 || f.fields.length > 0 || f.q) && (

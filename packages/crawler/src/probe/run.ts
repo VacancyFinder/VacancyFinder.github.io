@@ -78,7 +78,9 @@ async function main(): Promise<void> {
         } catch (err) {
           e.fetch = { error: (err as Error).message };
         }
-        console.log(`${"error" in e.fetch ? "✗" : "✓"} ${it.id} ${JSON.stringify(e.fetch)} ats=${e.atsChecks.map((a) => `${a.ats}:${a.id}=${a.jobs}`).join(",")}`);
+        console.log(
+          `${"error" in e.fetch ? "✗" : "✓"} ${it.id} ${JSON.stringify(e.fetch)} ats=${e.atsChecks.map((a) => `${a.ats}:${a.id}=${a.jobs}`).join(",")}`,
+        );
         return e;
       }),
     ),
@@ -86,7 +88,10 @@ async function main(): Promise<void> {
 
   if (req.render) await renderAll(entries, fetcher);
 
-  writeFileSync(resolve(OUT, "report.json"), JSON.stringify({ at: new Date().toISOString(), ms: Date.now() - started, requests: fetcher.requests, entries }, null, 2));
+  writeFileSync(
+    resolve(OUT, "report.json"),
+    JSON.stringify({ at: new Date().toISOString(), ms: Date.now() - started, requests: fetcher.requests, entries }, null, 2),
+  );
   console.log(`\nProbed ${entries.length} URLs in ${Math.round((Date.now() - started) / 1000)}s with ${fetcher.requests} requests.`);
 }
 
@@ -108,7 +113,8 @@ async function renderAll(entries: ProbeEntry[], fetcher: PoliteFetcher): Promise
   for (const e of entries) {
     // Only pages whose static HTML shows no listings need a browser to understand.
     const s = e.signals;
-    const needsRender = !s || s.likelyJsRendered || (s.jsonLdJobPostings === 0 && e.atsChecks.every((a) => !a.ok) && s.jobishLinks.length < 3);
+    const needsRender =
+      !s || s.likelyJsRendered || (s.jsonLdJobPostings === 0 && e.atsChecks.every((a) => !a.ok) && s.jobishLinks.length < 3);
     if (!needsRender) continue;
     if (!(await fetcher.allowed(e.url))) {
       e.rendered = { error: "robots.txt disallows" };
@@ -124,7 +130,8 @@ async function renderAll(entries: ProbeEntry[], fetcher: PoliteFetcher): Promise
       try {
         const body = await res.text();
         json.push({ url: res.url(), status: res.status(), bytes: body.length });
-        if (body.length < 2_000_000 && n < 15) writeFileSync(resolve(OUT, "api", `${safe(e.id)}--xhr-${n++}.txt`), `${res.url()}\n\n${body}`);
+        if (body.length < 2_000_000 && n < 15)
+          writeFileSync(resolve(OUT, "api", `${safe(e.id)}--xhr-${n++}.txt`), `${res.url()}\n\n${body}`);
       } catch {
         // body unavailable (redirect/aborted)
       }

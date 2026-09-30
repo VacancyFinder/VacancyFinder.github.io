@@ -81,7 +81,10 @@ export const smartrecruiters: AdapterFn = async (ctx) => {
   const company = requireString(ctx.config, "company");
   const jobs: RawJob[] = [];
   for (let offset = 0; offset < 1000; offset += 100) {
-    const r = await getJson(ctx, `https://api.smartrecruiters.com/v1/companies/${encodeURIComponent(company)}/postings?limit=100&offset=${offset}`);
+    const r = await getJson(
+      ctx,
+      `https://api.smartrecruiters.com/v1/companies/${encodeURIComponent(company)}/postings?limit=100&offset=${offset}`,
+    );
     const d = (r.data ?? {}) as Record<string, unknown>;
     const page = asArray(d.content);
     for (const p of page) {
@@ -105,7 +108,10 @@ export const smartrecruiters: AdapterFn = async (ctx) => {
 
 /** Teamtailor: public RSS feed at {sub}.teamtailor.com/jobs.rss (or a custom careers domain). */
 export const teamtailor: AdapterFn = async (ctx) => {
-  const feed = typeof ctx.config.feedUrl === "string" ? ctx.config.feedUrl : `https://${requireString(ctx.config, "subdomain")}.teamtailor.com/jobs.rss`;
+  const feed =
+    typeof ctx.config.feedUrl === "string"
+      ? ctx.config.feedUrl
+      : `https://${requireString(ctx.config, "subdomain")}.teamtailor.com/jobs.rss`;
   const r = await ctx.fetcher.get(feed, { validators: ctx.validators, headers: { accept: "application/rss+xml, application/xml" } });
   if (r.notModified) return { jobs: [], notModified: true, validators: r.validators };
   const tag = (item: string, name: string) => {
@@ -113,7 +119,11 @@ export const teamtailor: AdapterFn = async (ctx) => {
     return m ? m[1]!.replace(/^<!\[CDATA\[([\s\S]*)\]\]>$/, "$1").trim() : null;
   };
   const jobs: RawJob[] = (r.text.match(/<item>[\s\S]*?<\/item>/gi) ?? []).map((item) => {
-    const locations = [...item.matchAll(/<tt:location>[\s\S]*?<tt:city>([\s\S]*?)<\/tt:city>[\s\S]*?(?:<tt:country>([\s\S]*?)<\/tt:country>)?[\s\S]*?<\/tt:location>/gi)]
+    const locations = [
+      ...item.matchAll(
+        /<tt:location>[\s\S]*?<tt:city>([\s\S]*?)<\/tt:city>[\s\S]*?(?:<tt:country>([\s\S]*?)<\/tt:country>)?[\s\S]*?<\/tt:location>/gi,
+      ),
+    ]
       .map((m) => [m[1], m[2]].filter(Boolean).join(", "))
       .join(" / ");
     return {

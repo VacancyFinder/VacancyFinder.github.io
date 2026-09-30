@@ -1,0 +1,79 @@
+# When an issue from the "Suggest a company" form is labelled company-request, open a draft PR that
+# adds the company to data/companies.json with active: false, for a maintainer to review.
+# Needs Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
+name: Company request
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: company-request-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  draft:
+    if: contains(github.event.issue.labels.*.name, 'company-request')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Draft the company entry
+        id: req
+        continue-on-error: true
+        env:
+          # Untrusted text: passed via env, never interpolated into the script.
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: pnpm --filter @rekiya/crawler request:company
+
+      - name: Explain why no PR was opened
+        if: steps.req.outcome == 'failure'
+        env:
+          ERROR: ${{ steps.req.outputs.error }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Thanks for the suggestion! I couldn't create a draft automatically: ${ERROR:-the form could not be read}. A maintainer will take a look.
+
+          ---
+          _Posted by the company-request workflow_"
+
+      - name: Regenerate groups and crawl targets
+        if: steps.req.outcome == 'success'
+        run: pnpm import:cse > /dev/null && pnpm validate:data
+
+      - name: Open a draft pull request
+        if: steps.req.outcome == 'success'
+        env:
+          NAME: ${{ steps.req.outputs.name }}
+          SLUG: ${{ steps.req.outputs.slug }}
+        run: |
+          branch="company-request/${ISSUE_NUMBER}"
+          git config user.name "rekiya-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data
+          git commit -m "data: add draft company ${SLUG} (issue #${ISSUE_NUMBER})"
+          git push --force origin "$branch"
+          body="Adds **${NAME}** (\`${SLUG}\`) to \`data/companies.json\` as a draft (\`active: false\`), from #${ISSUE_NUMBER}.
+
+          Before merging, a maintainer should:
+          - [ ] confirm the website and careers page are the company's own
+          - [ ] check robots.txt and the site's terms allow crawling
+          - [ ] choose an \`adapter\` + \`adapterConfig\` and set \`active: true\` (or leave inactive with a note)
+
+          Closes #${ISSUE_NUMBER}"
+          gh pr create --draft --head "$branch" --title "Add company: ${NAME}" --body "$body" || gh pr edit "$branch" --body "$body"
