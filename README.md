@@ -11,6 +11,9 @@ web app. Applications always happen on the company's own listing.
 - Static site on **GitHub Pages**; all background work runs in **GitHub Actions** (zero recurring cost).
 - A crawl runs every 3 hours: crawl → classify → diff → commit data (only if it changed) → build → deploy.
 - Per-field **RSS feeds** at `/feeds/<field>.xml`, optional **Telegram** channel alerts.
+- For job seekers: search with filters, sorting and quick filters; a page per job with similar jobs; an application tracker
+  with notes and CSV export; saved searches with new-match counts; hide jobs or companies; market insights; dark mode;
+  offline support. No accounts — everything personal stays in the browser. Full list: [docs/FEATURES.md](docs/FEATURES.md).
 
 ## Architecture
 

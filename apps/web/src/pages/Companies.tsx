@@ -4,6 +4,7 @@ import { INDUSTRY_LABELS, type IndustrySlug } from "@rekiya/shared/constants";
 import { CompanyBadge } from "../components/CompanyBadge";
 import { SearchIcon } from "../components/Icons";
 import { SUGGEST_URL } from "../components/Layout";
+import { PageSkeleton } from "../components/Skeleton";
 import { useData } from "../lib/data";
 import type { DirectoryCompany } from "../lib/types";
 import { usePageTitle } from "../lib/usePageTitle";
@@ -32,9 +33,11 @@ export function Companies() {
   const [params, setParams] = useSearchParams();
   const q = (params.get("q") ?? "").toLowerCase();
   const show = (["all", "tracked", "soon"].includes(params.get("show") ?? "") ? params.get("show") : "all") as Show;
+  const sort = (["industry", "jobs", "az"].includes(params.get("sort") ?? "") ? params.get("sort") : "industry") as
+    "industry" | "jobs" | "az";
   const set = (k: string, v: string) => {
     const p = new URLSearchParams(params);
-    if (v && v !== "all") p.set(k, v);
+    if (v && v !== "all" && v !== "industry") p.set(k, v);
     else p.delete(k);
     setParams(p, { replace: true });
   };
@@ -50,15 +53,25 @@ export function Companies() {
       if (!q) return true;
       return `${c.name} ${c.cseSymbol ?? ""} ${c.parentGroup ? groupName.get(c.parentGroup) : ""}`.toLowerCase().includes(q);
     });
+    if (sort !== "industry") {
+      const flat = [...list].sort((a, b) =>
+        sort === "jobs" ? jobsFor(b) - jobsFor(a) || a.name.localeCompare(b.name) : a.name.localeCompare(b.name),
+      );
+      return flat.length ? [[null as IndustrySlug | null, flat] as const] : [];
+    }
     const byInd = new Map<IndustrySlug, DirectoryCompany[]>();
     for (const c of list) byInd.set(c.industry, [...(byInd.get(c.industry) ?? []), c]);
     return [...byInd.entries()]
       .sort((a, b) => INDUSTRY_LABELS[a[0]].localeCompare(INDUSTRY_LABELS[b[0]]))
       .map(
         ([ind, cs]) =>
-          [ind, cs.sort((a, b) => (a.parentGroup ?? "~").localeCompare(b.parentGroup ?? "~") || a.name.localeCompare(b.name))] as const,
+          [
+            ind as IndustrySlug | null,
+            cs.sort((a, b) => (a.parentGroup ?? "~").localeCompare(b.parentGroup ?? "~") || a.name.localeCompare(b.name)),
+          ] as const,
       );
-  }, [directory, q, show, groupName]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- jobsFor reads meta
+  }, [directory, q, show, sort, groupName, meta]);
 
   const counts = useMemo(() => {
     const cs = directory?.companies ?? [];
@@ -70,7 +83,7 @@ export function Companies() {
   }, [directory]);
 
   if (error) return <p role="alert">The company list couldn't be loaded ({error}).</p>;
-  if (!directory) return <p role="status">Loading companies…</p>;
+  if (!directory) return <PageSkeleton />;
 
   return (
     <div>
@@ -94,6 +107,16 @@ export function Companies() {
             value={params.get("q") ?? ""}
             onChange={(e) => set("q", e.target.value)}
           />
+        </div>
+        <div>
+          <label htmlFor="csort" className="sr-only">
+            Sort companies
+          </label>
+          <select id="csort" className="input" value={sort} onChange={(e) => set("sort", e.target.value)}>
+            <option value="industry">By industry</option>
+            <option value="jobs">Most open jobs</option>
+            <option value="az">A–Z</option>
+          </select>
         </div>
         <div role="radiogroup" aria-label="Show" className="flex overflow-hidden rounded-lg border border-slate-300 dark:border-slate-700">
           {(
@@ -127,17 +150,15 @@ export function Companies() {
 
       {sections.length === 0 && <p className="card mt-6 p-6 text-center">No companies match.</p>}
       {sections.map(([ind, cs]) => (
-        <section key={ind} aria-labelledby={`ind-${ind}`} className="mt-8">
-          <h2 id={`ind-${ind}`} className="mb-3 text-lg font-semibold">
-            {INDUSTRY_LABELS[ind]} <span className="font-normal text-slate-600 dark:text-slate-400">({cs.length})</span>
+        <section key={ind ?? "all"} aria-labelledby={`ind-${ind ?? "all"}`} className="mt-8">
+          <h2 id={`ind-${ind ?? "all"}`} className="mb-3 text-lg font-semibold">
+            {ind ? INDUSTRY_LABELS[ind] : sort === "jobs" ? "Most open jobs" : "A–Z"}{" "}
+            <span className="font-normal text-slate-600 dark:text-slate-400">({cs.length})</span>
           </h2>
           <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {cs.map((c) => (
               <li key={c.slug}>
-                <Link
-                  to={`/companies/${c.slug}`}
-                  className="card flex min-h-[72px] items-center gap-3 p-3 hover:border-brand-300 dark:hover:border-brand-700"
-                >
+                <Link to={`/companies/${c.slug}`} className="card card-hover flex min-h-[72px] items-center gap-3 p-3">
                   <CompanyBadge slug={c.slug} name={c.name} size="sm" />
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm font-semibold">{c.name}</span>
