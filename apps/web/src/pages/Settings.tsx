@@ -8,7 +8,7 @@ import { useApp } from "../lib/app-state";
 import { useData } from "../lib/data";
 import { downloadFile, relativeDays } from "../lib/format";
 import { clearAll, exportBackup, importBackup, type Theme } from "../lib/storage";
-import { usePageTitle } from "../lib/usePageTitle";
+import { usePrivatePage } from "../lib/seo";
 
 function Section({ id, title, desc, children }: { id: string; title: string; desc?: string; children: React.ReactNode }) {
   return (
@@ -23,7 +23,7 @@ function Section({ id, title, desc, children }: { id: string; title: string; des
 }
 
 export function Settings() {
-  usePageTitle("Settings");
+  usePrivatePage("Settings");
   const { prefs, setPrefs, theme, setTheme, hidden, hiddenCompanies, unhideJob, toggleHiddenCompany } = useApp();
   const { meta, employer } = useData();
   const toast = useToast();
@@ -32,7 +32,7 @@ export function Settings() {
   const feedFields: FieldSlug[] = prefs.fields.length ? prefs.fields : (Object.keys(FIELD_LABELS) as FieldSlug[]);
   const hiddenList = Object.values(hidden).sort((a, b) => b.hiddenAt.localeCompare(a.hiddenAt));
 
-  // The feed links to "#/settings#hidden": scroll to that section.
+  // The feed links to "/settings/#hidden": scroll to that section.
   useEffect(() => {
     if (window.location.hash.includes("hidden")) document.getElementById("hidden")?.scrollIntoView();
   }, []);

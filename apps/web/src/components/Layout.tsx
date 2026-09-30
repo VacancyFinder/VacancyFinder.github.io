@@ -9,11 +9,11 @@ import { UpdatePrompt } from "./Pwa";
 import { PageSkeleton } from "./Skeleton";
 
 const NAV = [
-  { to: "/jobs", label: "Jobs", icon: BriefcaseIcon },
-  { to: "/companies", label: "Companies", icon: BuildingIcon },
-  { to: "/insights", label: "Insights", icon: ChartIcon },
-  { to: "/saved", label: "Saved", icon: BookmarkIcon },
-  { to: "/settings", label: "Settings", icon: GearIcon },
+  { to: "/jobs/", label: "Jobs", icon: BriefcaseIcon },
+  { to: "/companies/", label: "Companies", icon: BuildingIcon },
+  { to: "/insights/", label: "Insights", icon: ChartIcon },
+  { to: "/saved/", label: "Saved", icon: BookmarkIcon },
+  { to: "/settings/", label: "Settings", icon: GearIcon },
 ];
 
 export const REPO_URL = "https://github.com/VacancyFinder/VacancyFinder.github.io";
@@ -47,7 +47,7 @@ function HeaderSearch() {
   const [q, setQ] = useState("");
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    nav(q.trim() ? `/jobs?q=${encodeURIComponent(q.trim())}` : "/jobs");
+    nav(q.trim() ? `/jobs/?q=${encodeURIComponent(q.trim())}` : "/jobs/");
     setQ("");
   };
   return (
@@ -106,7 +106,7 @@ function useSearchShortcut() {
       const pageSearch = document.getElementById("q") as HTMLInputElement | null;
       const target = pageSearch ?? (document.querySelector("[data-global-search]") as HTMLInputElement | null);
       if (target && target.offsetParent !== null) target.focus();
-      else if (loc.pathname !== "/jobs") nav("/jobs", { state: { focusSearch: true } });
+      else if (!loc.pathname.startsWith("/jobs")) nav("/jobs/", { state: { focusSearch: true } });
     };
     window.addEventListener("keydown", on);
     return () => window.removeEventListener("keydown", on);
@@ -118,8 +118,11 @@ export function Layout() {
   const savedCount = Object.keys(saved).length;
   const loc = useLocation();
   const mainRef = useRef<HTMLElement>(null);
-  const bleed = FULL_BLEED.has(loc.pathname);
+  const bleed = FULL_BLEED.has(loc.pathname.replace(/\/+$/, "") || "/");
   useSearchShortcut();
+
+  // The app has painted: retire the boot preloader (index.html).
+  useEffect(() => document.documentElement.classList.add("app-ready"), []);
 
   // Move focus to the page on navigation so screen-reader users hear the new page.
   const first = useRef(true);
@@ -148,7 +151,7 @@ export function Layout() {
             Rekiya
           </NavLink>
           <div className="flex items-center gap-3">
-            {loc.pathname !== "/jobs" && <HeaderSearch />}
+            {!loc.pathname.startsWith("/jobs") && <HeaderSearch />}
             <nav aria-label="Main" className="hidden md:block">
               <ul className="flex gap-1">
                 {NAV.map((n) => (
@@ -161,7 +164,7 @@ export function Layout() {
                     >
                       <n.icon width={18} height={18} />
                       {n.label}
-                      {n.to === "/saved" && savedCount > 0 && <span className="chip bg-white/20 text-white">{savedCount}</span>}
+                      {n.to === "/saved/" && savedCount > 0 && <span className="chip bg-white/20 text-white">{savedCount}</span>}
                     </NavLink>
                   </li>
                 ))}
@@ -201,17 +204,17 @@ export function Layout() {
             <p className="font-semibold text-slate-900 dark:text-white">Explore</p>
             <ul className="mt-2 grid gap-1">
               <li>
-                <NavLink to="/jobs" className="link font-normal">
+                <NavLink to="/jobs/" className="link font-normal">
                   All jobs
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/companies" className="link font-normal">
+                <NavLink to="/companies/" className="link font-normal">
                   Companies
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/insights" className="link font-normal">
+                <NavLink to="/insights/" className="link font-normal">
                   Job market insights
                 </NavLink>
               </li>
@@ -221,7 +224,7 @@ export function Layout() {
             <p className="font-semibold text-slate-900 dark:text-white">About</p>
             <ul className="mt-2 grid gap-1">
               <li>
-                <NavLink to="/about" className="link font-normal">
+                <NavLink to="/about/" className="link font-normal">
                   How it works &amp; FAQ
                 </NavLink>
               </li>
@@ -255,7 +258,7 @@ export function Layout() {
               >
                 <span className="relative">
                   <n.icon width={22} height={22} />
-                  {n.to === "/saved" && savedCount > 0 && (
+                  {n.to === "/saved/" && savedCount > 0 && (
                     <span className="absolute -right-2 -top-1 rounded-full bg-brand-800 px-1 text-[10px] leading-4 text-white dark:bg-brand-300 dark:text-brand-950">
                       {savedCount}
                     </span>

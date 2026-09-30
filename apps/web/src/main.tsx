@@ -1,11 +1,12 @@
 import { lazy, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, useParams } from "react-router-dom";
 import "./fonts.css";
 import { Layout } from "./components/Layout";
 import { ToastProvider } from "./components/Toast";
 import { AppStateProvider, useApp } from "./lib/app-state";
 import { DataProvider } from "./lib/data";
+import { isFieldSlug } from "./lib/paths";
 import { Landing, NotFound } from "./pages/Landing";
 import "./index.css";
 
@@ -22,22 +23,35 @@ const Settings = lazy(() => import("./pages/Settings").then((m) => ({ default: m
 /** Returning users land on their feed; first-timers on the overview. */
 function Home() {
   const { prefs } = useApp();
-  return prefs.onboarded ? <Navigate to="/jobs" replace /> : <Landing />;
+  return prefs.onboarded ? <Navigate to="/jobs/" replace /> : <Landing />;
 }
 
+// Links from before clean URLs (#/job/…, #/jobs?fields=…) keep working.
+if (window.location.hash.startsWith("#/")) {
+  window.history.replaceState(null, "", window.location.hash.slice(1));
+}
+
+/** /jobs/<field>/ for a real field; anything else under /jobs/ is a 404. */
+function FieldRoute() {
+  const { field } = useParams();
+  return isFieldSlug(field) ? <Feed /> : <NotFound />;
+}
+
+// The prerendered page (for crawlers and the first paint) is replaced by the live app on its first render.
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <AppStateProvider>
       <DataProvider>
         <ToastProvider>
-          <HashRouter>
+          <BrowserRouter>
             <Routes>
               <Route element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="about" element={<Landing />} />
                 <Route path="onboarding" element={<Onboarding />} />
                 <Route path="jobs" element={<Feed />} />
-                <Route path="job/:id" element={<JobDetail />} />
+                <Route path="jobs/:field" element={<FieldRoute />} />
+                <Route path="job/:key" element={<JobDetail />} />
                 <Route path="companies" element={<Companies />} />
                 <Route path="companies/:slug" element={<Company />} />
                 <Route path="insights" element={<Insights />} />
@@ -46,7 +60,7 @@ createRoot(document.getElementById("root")!).render(
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
-          </HashRouter>
+          </BrowserRouter>
         </ToastProvider>
       </DataProvider>
     </AppStateProvider>

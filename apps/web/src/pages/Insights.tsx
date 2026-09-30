@@ -13,7 +13,8 @@ import {
 import { PageSkeleton } from "../components/Skeleton";
 import { useData, useJobs } from "../lib/data";
 import { relativeTime } from "../lib/format";
-import { usePageTitle } from "../lib/usePageTitle";
+import { fieldPath, INSIGHTS_META } from "../lib/paths";
+import { useSeo } from "../lib/seo";
 
 interface Row {
   key: string;
@@ -82,7 +83,7 @@ function Stat({ label, value, sub }: { label: string; value: string; sub?: strin
 }
 
 export function Insights() {
-  usePageTitle("Job market insights");
+  useSeo({ ...INSIGHTS_META, path: "/insights/" });
   const { meta, employer } = useData();
   const { jobs } = useJobs("all");
 
@@ -113,12 +114,12 @@ export function Insights() {
   const fields: Row[] = Object.entries(meta.byField)
     .filter(([, n]) => n > 0)
     .sort((a, b) => b[1] - a[1])
-    .map(([f, n]) => ({ key: f, label: FIELD_LABELS[f as FieldSlug] ?? f, value: n, to: `/jobs?fields=${f}` }));
+    .map(([f, n]) => ({ key: f, label: FIELD_LABELS[f as FieldSlug] ?? f, value: n, to: fieldPath(f as FieldSlug) }));
   const seniority: Row[] = SENIORITIES.filter((s) => s !== "unspecified" && agg.seniority.get(s)).map((s) => ({
     key: s,
     label: SENIORITY_LABELS[s],
     value: agg.seniority.get(s) ?? 0,
-    to: `/jobs?seniority=${s}`,
+    to: `/jobs/?seniority=${s}`,
   }));
   const companies: Row[] = Object.entries(meta.byCompany)
     .sort((a, b) => b[1] - a[1])
@@ -126,13 +127,13 @@ export function Insights() {
     .map(([c, n]) => ({ key: c, label: employer(c).name, value: n, to: `/companies/${c}` }));
   const industries: Row[] = Object.entries(meta.byIndustry)
     .sort((a, b) => b[1] - a[1])
-    .map(([i, n]) => ({ key: i, label: INDUSTRY_LABELS[i as IndustrySlug] ?? i, value: n, to: `/jobs?industry=${i}` }));
+    .map(([i, n]) => ({ key: i, label: INDUSTRY_LABELS[i as IndustrySlug] ?? i, value: n, to: `/jobs/?industry=${i}` }));
   const modes: Row[] = (["onsite", "hybrid", "remote"] as const)
     .filter((m) => agg.workMode.get(m))
-    .map((m) => ({ key: m, label: WORK_MODE_LABELS[m], value: agg.workMode.get(m) ?? 0, to: `/jobs?workMode=${m}` }));
+    .map((m) => ({ key: m, label: WORK_MODE_LABELS[m], value: agg.workMode.get(m) ?? 0, to: `/jobs/?workMode=${m}` }));
   const types: Row[] = (["full-time", "contract", "internship", "part-time"] as const)
     .filter((t) => agg.type.get(t))
-    .map((t) => ({ key: t, label: JOB_TYPE_LABELS[t], value: agg.type.get(t) ?? 0, to: `/jobs?type=${t}` }));
+    .map((t) => ({ key: t, label: JOB_TYPE_LABELS[t], value: agg.type.get(t) ?? 0, to: `/jobs/?type=${t}` }));
   const unstated = (m: Map<string, number>) => m.get("unspecified") ?? 0;
 
   return (
@@ -147,7 +148,7 @@ export function Insights() {
           <p className="muted text-sm">Open jobs right now</p>
           <p className="text-5xl font-extrabold tabular-nums tracking-tight">{total.toLocaleString()}</p>
           <p className="muted mt-1 text-sm">at {meta.totals.companiesWithJobs} employers</p>
-          <Link to="/jobs" className="link mt-3 text-sm">
+          <Link to="/jobs/" className="link mt-3 text-sm">
             Browse them all
           </Link>
         </div>

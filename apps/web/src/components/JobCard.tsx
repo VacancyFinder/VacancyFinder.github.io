@@ -2,6 +2,7 @@ import { memo } from "react";
 import { Link } from "react-router-dom";
 import { JOB_TYPE_LABELS, SENIORITY_LABELS, WORK_MODE_LABELS } from "@rekiya/shared/constants";
 import { cleanSnippet, relativeDays, safeHref } from "../lib/format";
+import { jobPath } from "../lib/paths";
 import { APP_STATUS_LABELS, type AppStatus } from "../lib/storage";
 import type { Employer, Job } from "../lib/types";
 import { CompanyBadge } from "./CompanyBadge";
@@ -45,7 +46,7 @@ function JobCardInner({ job, employer, isNew, saved, status, viewed, onToggleSav
             <h3 id={titleId} className="text-base font-semibold leading-snug text-slate-900 dark:text-white">
               {/* The title link covers the whole card (after:inset-0); buttons and Apply sit above it. */}
               <Link
-                to={`/job/${job.id}`}
+                to={jobPath(job, employer.name)}
                 className={`after:absolute after:inset-0 after:rounded-xl after:content-[''] group-hover:text-brand-700 group-hover:underline dark:group-hover:text-brand-300 ${viewed ? "text-slate-700 dark:text-slate-300" : ""}`}
               >
                 {job.title}

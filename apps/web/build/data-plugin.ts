@@ -5,6 +5,11 @@ import { CompaniesFile, FIELD_SLUGS, Group, HealthFile, JobsFile, type Job } fro
 import { z } from "zod";
 import { buildDirectory } from "./directory.js";
 import { fieldFeed } from "./feeds.js";
+import { generateSeo } from "./seo.js";
+import { DEFAULT_SITE_URL } from "../src/lib/paths.js";
+
+/** Canonical origin: set SITE_URL (e.g. a custom domain) at build time; defaults to the GitHub Pages URL. */
+export const siteUrl = () => (process.env.SITE_URL || DEFAULT_SITE_URL).replace(/\/+$/, "");
 
 /** Files from /data that the site serves. Sources, reports and caches stay out. */
 const PUBLISHED = ["jobs.json", "meta.json", "health.json", "groups.json", "fields", "changes"];
@@ -13,9 +18,16 @@ function readJson<T>(path: string, schema: z.ZodType<T>, fallback: T): T {
   return existsSync(path) ? schema.parse(JSON.parse(readFileSync(path, "utf8"))) : fallback;
 }
 
-export function generateSiteData(dataDir: string, outDir: string): { jobs: number; feeds: number } {
+export interface SiteData {
+  jobs: Job[];
+  companies: z.infer<typeof CompaniesFile>;
+  groups: Group[];
+  generatedAt: string;
+}
+
+export function generateSiteData(dataDir: string, outDir: string): SiteData {
   const companies = readJson(resolve(dataDir, "companies.json"), CompaniesFile, []);
-  const groups = readJson(resolve(dataDir, "groups.json"), z.array(Group), []);
+  const groups: Group[] = readJson(resolve(dataDir, "groups.json"), z.array(Group), []);
   const health = readJson(resolve(dataDir, "health.json"), HealthFile, {});
   const jobs: Job[] = readJson(resolve(dataDir, "jobs.json"), JobsFile, []);
 
@@ -64,7 +76,8 @@ export function generateSiteData(dataDir: string, outDir: string): { jobs: numbe
       ),
     );
   }
-  return { jobs: jobs.length, feeds: FIELD_SLUGS.length };
+  const meta = JSON.parse(readFileSync(resolve(dataOut, "meta.json"), "utf8")) as { generatedAt: string };
+  return { jobs, companies, groups, generatedAt: Date.parse(meta.generatedAt) > 0 ? meta.generatedAt : builtAt };
 }
 
 /** Copies /data into the build and generates directory.json + RSS feeds; serves /data in dev. */
@@ -91,8 +104,16 @@ export function rekiyaData(dataDir: string): Plugin {
       });
     },
     closeBundle() {
-      const r = generateSiteData(dataDir, outDir);
-      console.log(`rekiya-data: ${r.jobs} jobs, ${r.feeds} feeds → ${outDir}`);
+      const d = generateSiteData(dataDir, outDir);
+      // Prerendered pages, sitemap, robots.txt, llms.txt — after the data, in the same hook, so order is fixed.
+      const seo = generateSeo({
+        outDir,
+        siteUrl: siteUrl(),
+        ...d,
+        verify: { google: process.env.GOOGLE_SITE_VERIFICATION, bing: process.env.BING_SITE_VERIFICATION },
+        indexNowFile: resolve(root, ".seo/indexnow-urls.json"),
+      });
+      console.log(`rekiya-data: ${d.jobs.length} jobs, ${seo.pages} pages (${seo.indexed} indexable) → ${outDir}`);
     },
   };
 }
