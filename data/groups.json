@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "acl",
+    "name": "ACL Group"
+  },
+  {
+    "slug": "aitkenspence",
+    "name": "Aitken Spence Group"
+  },
+  {
+    "slug": "amanatakaful",
+    "name": "Amana Takaful Group"
+  },
+  {
+    "slug": "ambeon",
+    "name": "Ambeon Group"
+  },
+  {
+    "slug": "arpico",
+    "name": "Richard Pieris Group (Arpico)"
+  },
+  {
+    "slug": "asirihealth",
+    "name": "Asiri Health"
+  },
+  {
+    "slug": "brownsgroup",
+    "name": "Browns Group"
+  },
+  {
+    "slug": "cargillsceylon",
+    "name": "Cargills Group"
+  },
+  {
+    "slug": "carsoncumberbatch",
+    "name": "Carson Cumberbatch Group"
+  },
+  {
+    "slug": "dialog",
+    "name": "Dialog Axiata Group"
+  },
+  {
+    "slug": "firstcapital",
+    "name": "First Capital Group"
+  },
+  {
+    "slug": "hayleys",
+    "name": "Hayleys Group"
+  },
+  {
+    "slug": "keells",
+    "name": "John Keells Group"
+  },
+  {
+    "slug": "lankatiles",
+    "name": "Lanka Tiles Group"
+  },
+  {
+    "slug": "laugfs",
+    "name": "LAUGFS Group"
+  },
+  {
+    "slug": "lionbeer",
+    "name": "Lion Brewery Group"
+  },
+  {
+    "slug": "lolc",
+    "name": "LOLC Group"
+  },
+  {
+    "slug": "renukagroup",
+    "name": "Renuka Group"
+  },
+  {
+    "slug": "softlogic",
+    "name": "Softlogic Group"
+  }
+]

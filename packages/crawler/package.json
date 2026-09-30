@@ -1,0 +1,13 @@
+{
+  "name": "@rekiya/crawler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:cse": "tsx src/import/cli.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": { "@rekiya/shared": "workspace:*", "zod": "^3.23.8" },
+  "devDependencies": { "tsx": "^4.19.2", "vitest": "^2.1.8", "@types/node": "^20.17.0" }
+}
