@@ -1,0 +1,662 @@
+[
+ {
+  "job_position_id": 2818711,
+  "job_position_ids": {
+   "Tbilisi": 2818711
+  },
+  "locations": [
+   "Tbilisi"
+  ],
+  "name": "Office Administrator",
+  "slug": "office-administrator",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "HR",
+  "occupation": "Hr Systems Administration",
+  "occupation_category": "HR & Administration",
+  "seniority": "entry-level",
+  "salary_information": {
+   "Tbilisi": "1500.00 - 1800.00"
+  },
+  "years_of_experience": "1-2",
+  "created_at": "2026-09-29T12:14:09+00:00",
+  "main_responsibilities": "\n                <ul><li>Keep track on daily basis of supplies in the office</li><li>Send and receive outgoing/incoming document flow</li><li>Prepare various reports for the company departments</li><li>Support the purchase process, delivery of goods and services, etc.</li><li>Maintain day-to-day communication with the landlord representatives, suppliers, answer all incoming calls</li><li>Collect and keep track of all invoices and cash receipts for goods and services paid by the company</li><li>Strongly support the process of booking transfers, accommodations for the employees on business trips, manage business trip receipts and invoices</li><li>Maintain day-to-day communication with the landlord representatives, suppliers, answer all incoming calls</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Fluency in English – both written and spoken</li><li>Excellent communication skills</li><li>Strong decision making, problem solving and can-do attitude</li><li>Strong organizational skills, excellent attention to detail and time management</li><li>Ability to handle multiple tasks and work with tight deadlines</li><li>Ability to keep high level of confidentiality</li><li>Advanced computer skills (MS Office and Outlook)</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2493892,
+  "job_position_ids": {
+   "Colombo": 2493892,
+   "San Jose": 2805971
+  },
+  "locations": [
+   "Colombo",
+   "San Jose"
+  ],
+  "name": "Digital Sales Executive",
+  "slug": "digital-sales-executive",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Digital",
+  "occupation": "Business Development And New Accounts",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "experienced",
+  "salary_information": {
+   "Colombo": "173400.00 - 249200.00",
+   "San Jose": ""
+  },
+  "years_of_experience": "2-5",
+  "created_at": "2026-09-21T16:05:28+00:00",
+  "main_responsibilities": "\n                <ul><li><span><span>Prospect and generate new business opportunities across APAC markets</span></span></li><li><span><span>Pitch digital advertising solutions (programmatic &amp; display)</span></span></li><li><span><span>Build and maintain strong</span><span> client relationships</span></span></li><li><span><span>Collaborate with internal teams to deliver client campaigns</span></span></li><li><span><span>Meet and exceed sales targets</span></span></li><li><span><span>Monitor industry trends and identify new</span><span> opportunities</span></span></li></ul>\n            ",
+  "requirements": "\n                <ul><li><span><span>2–4</span><span>years’ experience in</span><span> sales (digital/media preferred)</span></span></li><li><span><span>Strong communication and</span><span> presentation skills</span></span></li><li><span><span>Proven ability to meet or exceed targets</span></span></li><li><span><span>Knowledge of digital advertising is a plus</span></span></li><li><span><span>Self-driven and results-oriented mindset</span></span></li></ul>\n            "
+ },
+ {
+  "job_position_id": 2789712,
+  "job_position_ids": {
+   "Varna": 2789712,
+   "Ruse": 2789972,
+   "San Jose": 2805968
+  },
+  "locations": [
+   "Varna",
+   "Ruse",
+   "San Jose"
+  ],
+  "name": "Digital Sales & Account Manager",
+  "slug": "digital-sales-account-manager",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Digital",
+  "occupation": "Account Management Commissioned",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "entry-level",
+  "salary_information": {
+   "Varna": "",
+   "Ruse": "",
+   "San Jose": ""
+  },
+  "years_of_experience": "1-2",
+  "created_at": "2026-09-21T16:03:17+00:00",
+  "main_responsibilities": "\n                <ul><li>Explore client goals, KPIs, and audiences to design and implement high-performing advertising campaigns.</li><li>Negotiate access to client budgets and secure investment for key campaigns.</li><li>Collaborate directly with publishers’ team to maximize campaign performance and deliver measurable results.</li><li>Oversee campaign distribution and placement across Mobile and Web marketing channels.</li><li>Align client objectives with business goals to create tailored, data-driven solutions.</li><li>Prepare engaging presentations, craft persuasive proposals, and confidently represent the company in client meetings.</li><li>Build and maintain strong, long-term relationships with new and existing clients.</li><li>Drive revenue growth and profitability through proactive sales strategies and account development.</li><li>Collect, analyze, and share insights on mobile and web acquisition trends to support continuous improvement.</li><li>Consistently exceed monthly financial targets and enjoy a results-based commission plan. </li></ul>\n            ",
+  "requirements": "\n                <ul><li>Solid understanding of the Mobile, Digital, and Affiliate Marketing landscape, with proven experience is a strong advantage.</li><li>Excellent negotiation, presentation, and communication skills - both written and verbal.</li><li>Strong sales acumen with a track record of exceeding targets.</li><li>Ability to build trusted relationships using digital and in-person communication channels.</li><li>Outstanding organizational and planning skills with keen attention to detail.</li><li>A positive, proactive, and adaptable mindset.</li><li>Confident decision-making and problem-solving abilities.</li><li>A team player who thrives in a fast-paced, evolving environment. </li></ul>\n            "
+ },
+ {
+  "job_position_id": 2794097,
+  "job_position_ids": {
+   "Varna": 2794097
+  },
+  "locations": [
+   "Varna"
+  ],
+  "name": "Marketing Lead",
+  "slug": "marketing-lead",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Marketing",
+  "occupation": "Marketing Communications",
+  "occupation_category": "Marketing",
+  "seniority": "experienced",
+  "salary_information": {
+   "Varna": "2095.00"
+  },
+  "years_of_experience": "",
+  "created_at": "2026-09-11T17:21:32+00:00",
+  "main_responsibilities": "\n                <ul><li>Owning and managing multiple B2B campaigns across different services, sectors and markets.</li><li>Leading, supporting and developing our Marketing Operations Specialist.</li><li>Creating campaigns across email, LinkedIn, digital, webinars, events, thought leadership and partnerships.</li><li>Working with our SDRs to turn marketing engagement into quality conversations and sales opportunities.</li><li>Developing messaging and content that makes complex technology and services propositions simple and compelling.</li><li>Helping evolve our websites, landing pages and digital presence to generate leads rather than simply traffic.</li><li>Coordinating designers and internal teams to bring campaigns and commercial ideas to life.</li><li>Making sure our CRM tells us what's actually working - from campaign through MQL and SQL to opportunity.</li><li>Measuring performance, challenging what isn't working and doubling down on what is.</li><li>Supporting the development of sales collateral, case studies, Sales IP, events and wider brand activity.</li></ul>\n            ",
+  "requirements": "\n                <ul><li><p>5+ years' experience in B2B marketing, ideally within technology, professional services, outsourcing, SaaS or another complex B2B environment.</p></li><li><p>Experience managing or developing marketing team members.</p></li><li><p>Strong track record of developing and executing integrated B2B campaigns.</p></li><li><p>Demonstrable experience generating leads and contributing to commercial pipeline.</p></li><li><p>Strong understanding of CRM, email marketing, digital campaigns, social media and marketing analytics.</p></li><li><p>Ability to turn commercial propositions into compelling campaign messaging and content.</p></li><li><p>Experience managing multiple campaigns and priorities simultaneously.</p></li><li><p>Strong analytical skills and confidence using performance data to make decisions.</p></li><li><p>Excellent written and verbal English.</p></li><li><p>Strong stakeholder-management skills and the confidence to challenge, recommend and prioritise.</p></li><li><p>Commercially minded, proactive and comfortable taking ownership.</p></li></ul>\n            "
+ },
+ {
+  "job_position_id": 2775052,
+  "job_position_ids": {
+   "Ruse": 2775052,
+   "Varna": 2775053,
+   "Burgas": 2775054
+  },
+  "locations": [
+   "Ruse",
+   "Varna",
+   "Burgas"
+  ],
+  "name": "Implementation Consultant",
+  "slug": "implementation-consultant",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "BPO",
+  "occupation": "Customer Training",
+  "occupation_category": "Customer Support",
+  "seniority": "experienced",
+  "salary_information": {
+   "Ruse": "1400.00 - 1700.00",
+   "Varna": "1400.00 - 1700.00",
+   "Burgas": "1400.00 - 1700.00"
+  },
+  "years_of_experience": "",
+  "created_at": "2026-08-31T17:14:18+00:00",
+  "main_responsibilities": "\n                <ul><li>Deliver remote training sessions to new and existing customers</li><li>Manage multiple implementation projects from planning through to go-live</li><li>Understand customer processes and recommend effective system workflows</li><li>Collaborate with Technical, Onboarding, and Customer Success teams to coordinate customer requirements</li><li>Support customers during go-live and adoption phases</li><li>Maintain expertise in new product features and industry best practices</li><li>Contribute to internal knowledge sharing and training initiatives</li><li>Ensure a high standard of customer service, training delivery, and project administration</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Excellent written and spoken English communication skills</li><li>Experience delivering software training or implementation services</li><li>Strong communication and presentation skills</li><li>Experience analysing business processes and translating them into training or implementation plans</li><li>Ability to manage multiple projects and stakeholders simultaneously</li><li>Customer-focused with excellent organisational skills</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2772339,
+  "job_position_ids": {
+   "Varna": 2772339
+  },
+  "locations": [
+   "Varna"
+  ],
+  "name": "Service Delivery Manager",
+  "slug": "service-delivery-manager",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "BPO",
+  "occupation": "Business Development And New Accounts",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "experienced",
+  "salary_information": {
+   "Varna": "1500.00 - 1700.00"
+  },
+  "years_of_experience": "2-5",
+  "created_at": "2026-08-28T11:14:53+00:00",
+  "main_responsibilities": "\n                <ul><li>Lead, support and develop a team</li><li>Keep day-to-day operations running smoothly and meeting targets</li><li>Coach the team, give regular feedback and manage performance</li><li>Act as a key point of contact for the client and manage expectations and escalations</li><li>Keep an eye on performance, spot risks early and improve how things are done</li><li>Plan coverage and resourcing to match demand</li><li>Report regularly on how the team and service are performing</li><li>Work with internal teams to remove blockers and raise the bar on delivery</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Solid experience managing people and operational processes.</li><li>A good grasp of performance metrics, targets and service standards</li><li>Confident managing client or stakeholder relationships</li><li>Strong problem-solving and a calm, organised approach to escalations</li><li>Comfortable with common operational and ticketing tools</li><li>Excellent written and spoken English</li><li>Strong leadership and people-development skills</li><li>Happy working in a fast-paced, changing environment</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2762855,
+  "job_position_ids": {
+   "Colombo": 2762855
+  },
+  "locations": [
+   "Colombo"
+  ],
+  "name": "Senior Front-End Developer – React & Next.js",
+  "slug": "senior-front-end-developer-react-next-js",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Software",
+  "occupation": "Software And Web Development",
+  "occupation_category": "Software Development & Cloud",
+  "seniority": "experienced",
+  "salary_information": {
+   "Colombo": "310000.00 - 540000.00"
+  },
+  "years_of_experience": "5-7",
+  "created_at": "2026-08-21T10:17:27+00:00",
+  "main_responsibilities": "\n                <ul><li>Build and maintain responsive, high-performance web applications.</li><li>Develop scalable and maintainable solutions using React, Next.js, TypeScript, and Tailwind CSS.</li><li>Collaborate with clients, designers, product managers, and backend developers to translate requirements into effective technical solutions.</li><li>Participate in client presentations, workshops, and technical discussions.</li><li>Take ownership of front-end architecture and technical decisions.</li><li>Conduct code reviews, mentor developers, and promote best practices.</li><li>Integrate applications with RESTful APIs and third-party services.</li><li>Use AI-assisted development tools, particularly Claude, to improve development efficiency and code quality.</li></ul>\n            ",
+  "requirements": "\n                <ul><li>5+ years of commercial front-end development experience.</li><li>Strong proficiency in React, Next.js, and TypeScript.</li><li>Hands-on experience with Tailwind CSS.</li><li>Strong knowledge of JavaScript, HTML5, and modern CSS.</li><li>Good understanding of front-end architecture, responsive design, performance, and reusable components.</li><li>Experience with RESTful APIs, Git, JWT/OAuth2, and modern development workflows.</li><li>Practical experience using Claude or similar AI development tools.</li><li>Excellent communication, organizational, and problem-solving skills.</li><li>Proactive mindset and ability to take ownership.</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2755230,
+  "job_position_ids": {
+   "Remote UK": 2755230
+  },
+  "locations": [
+   "Remote UK"
+  ],
+  "name": "Outbound Sales Representative",
+  "slug": "outbound-sales-representative",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Sales",
+  "occupation": "Business Development And New Accounts",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "experienced",
+  "salary_information": {
+   "Remote UK": "30000.00"
+  },
+  "years_of_experience": "",
+  "created_at": "2026-08-14T11:07:28+00:00",
+  "main_responsibilities": "\n                <ul><li>Identify and prospect target accounts within BPO, outsourcing, and staff augmentation markets</li><li>Use LinkedIn and other social platforms as primary channels for lead generation and engagement</li><li>Execute outbound campaigns via social selling, email, and phone</li><li>Qualify inbound and outbound leads against defined ICP and hand over sales-ready opportunities</li><li>Conduct initial discovery conversations to understand client needs and outsourcing challenges</li><li>Book qualified meetings for Sales Executives and support pipeline growth</li><li>Maintain accurate CRM records and activity tracking</li><li>Collaborate closely with Sales and Marketing to refine messaging and targeting</li><li>Stay informed on outsourcing trends, delivery models, and competitor offerings</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Strong experience with outbound sales and generating leads.</li><li>Proven experience as an SDR, BDR, or similar role within BPO, outsourcing, IT staffing, or staff augmentation</li><li>Strong understanding of BPO and staff augmentation service models</li><li>Demonstrated success using LinkedIn and social media for B2B lead generation and social selling</li><li>Experience engaging senior stakeholders (Founders, Directors, Heads of Operations, CTOs, HR leaders)</li><li>Confident communicator with strong written and verbal skills</li><li>Comfortable working to targets in a fast-paced sales environment</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2750493,
+  "job_position_ids": {
+   "San Jose": 2750493,
+   "Remote UK": 2753397
+  },
+  "locations": [
+   "San Jose",
+   "Remote UK"
+  ],
+  "name": "Lead Generation Specialist (Staff Augmentation/BPO)",
+  "slug": "lead-generation-specialist-staff-augmentation-bpo",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Sales",
+  "occupation": "General And Other Sales And Business Development",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "entry-level",
+  "salary_information": {
+   "San Jose": "",
+   "Remote UK": ""
+  },
+  "years_of_experience": "1-2",
+  "created_at": "2026-08-13T12:27:41+00:00",
+  "main_responsibilities": "\n                <ul style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:'system-ui', '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';color:rgba(0,0,0,0.9);font-style:normal;font-weight:400;text-transform:none;background-color:rgb(255,255,255);\"><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Proactively identify and engage prospective clients through cold calling, email campaigns, LinkedIn and other outbound sales channels.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Generate qualified meetings and sales opportunities for the Business Development team.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Research target organisations and identify key decision-makers across a variety of industries.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Work closely with the Marketing team to align outreach campaigns, messaging and target accounts.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Consistently achieve or exceed activity, outreach and meeting generation targets.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Build and maintain a healthy pipeline of qualified opportunities.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Accurately maintain CRM records, ensuring all activities, opportunities and customer interactions are up to date.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Continuously test, refine and improve outreach strategies to maximise engagement and conversion rates.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Develop a strong understanding of Flat Rock Technology's services, including software development, staff augmentation, customer support, customer success, BPO and digital transformation solutions.</li></ul><p style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:'system-ui', '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';color:rgba(0,0,0,0.9);font-style:normal;font-weight:400;text-transform:none;background-color:rgb(255,255,255);\"><strong style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;font-weight:600;\"> </strong></p>\n            ",
+  "requirements": "\n                <ul style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:'system-ui', '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';color:rgba(0,0,0,0.9);font-style:normal;font-weight:400;text-transform:none;background-color:rgb(255,255,255);\"><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">At least 1 year's experience in an SDR, Business Development, Lead Generation or similar outbound sales role.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Proven success generating new business through cold calling, cold emailing and LinkedIn outreach.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Comfortable making a high volume of outbound calls every day.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Experience working in a target-driven, KPI-focused sales environment.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Excellent communication and relationship-building skills.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Strong organisational skills with the ability to manage multiple prospects simultaneously.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Experience using CRM systems such as HubSpot, Salesforce or similar.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">Self-motivated, resilient and able to work independently.</li><li style=\"margin:0px;padding:0px;border:0px;font-size:14px;font-family:inherit;\">A genuine passion for sales and developing a career in technology.</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2745900,
+  "job_position_ids": {
+   "Varna": 2745900,
+   "Ruse": 2745903
+  },
+  "locations": [
+   "Varna",
+   "Ruse"
+  ],
+  "name": "Customer Support Agent",
+  "slug": "customer-support-agent",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "BPO",
+  "occupation": "Technical Customer Service",
+  "occupation_category": "Customer Support",
+  "seniority": "entry-level",
+  "salary_information": {
+   "Varna": "",
+   "Ruse": ""
+  },
+  "years_of_experience": "",
+  "created_at": "2026-08-07T15:01:22+00:00",
+  "main_responsibilities": "\n                <ul><li>Respond to customer inquiries via email, and chat in a prompt and professional manner.</li><li>Diagnose and resolve technical issues related to software products for customers.</li><li>Troubleshoot software problems and identify solutions to resolve customer issues.</li><li>Provide clear and concise instructions to customers to assist with product use and configuration.</li><li>Document customer interactions and support solutions in our CRM system.</li><li>Collaborate with internal teams to escalate and resolve complex technical issues.</li><li>Stay up-to-date with new product features and updates to provide the highest level of customer support.</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Fluency in English, both written and spoken.</li><li>Strong attention to detail and problem-solving skills.</li><li>Team player with collaborative attitude.</li><li>Experience with Excel functions, charts, pivot tables, and macros. </li><li>Ability to create and analyze reports and dashboards on case and client data.</li><li>Knowledge or experience in providing web-based software support.</li><li>Familiarity with online marketplaces such as eBay, Amazon, Rakuten, etc.</li><li>Understanding HTML, FTP, SQL, and other web-related protocols and languages is a plus.</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2735554,
+  "job_position_ids": {
+   "San Jose": 2735554
+  },
+  "locations": [
+   "San Jose"
+  ],
+  "name": "Senior IT Infrastructure and Systems Engineer - Network",
+  "slug": "senior-it-infrastructure-and-systems-engineer-network",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Software",
+  "occupation": "Software And System Architecture",
+  "occupation_category": "Software Development & Cloud",
+  "seniority": "experienced",
+  "salary_information": {
+   "San Jose": "1585300.00 - 1811800.00"
+  },
+  "years_of_experience": "7-10",
+  "created_at": "2026-07-30T16:21:42+00:00",
+  "main_responsibilities": "\n                <strong style=\"border:0px solid;margin:0px;font-weight:600;font-size:14px;font-style:normal;text-transform:none;padding:0px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\"><span style=\"border:0px solid;margin:0px;font-size:18px;\">Please note it is US HOURS - </span></strong><br style=\"border:0px solid;margin:0px;color:rgb(32,32,32);font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Open Sans', 'system-ui', '-apple-system', 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';font-size:14px;font-style:normal;font-weight:400;text-transform:none;background-color:rgb(255,255,255);\"><strong style=\"border:0px solid;margin:0px;font-weight:600;font-size:14px;font-style:normal;text-transform:none;padding:0px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\"><span style=\"border:0px solid;margin:0px;font-size:18px;\"><strong style=\"border:0px solid;margin:0px;font-weight:600;font-size:14px;font-style:normal;text-transform:none;padding:0px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\"><span style=\"border:0px solid;margin:0px;font-size:18px;\">in UK you </span></strong>will be working 3:00 pm - 12:00 am</span></strong><br style=\"border:0px solid;margin:0px;color:rgb(32,32,32);font-family:Inter, '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Open Sans', 'system-ui', '-apple-system', 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';font-size:14px;font-style:normal;font-weight:400;text-transform:none;background-color:rgb(255,255,255);\"><strong style=\"border:0px solid;margin:0px;font-weight:600;font-size:14px;font-style:normal;text-transform:none;padding:0px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\"><span style=\"border:0px solid;margin:0px;font-size:18px;\">In Costa Rica it is 8:00am to 5:00pm</span></strong><br><ul><li>Design, implement, and support networks, servers, storage, telephony, and cloud infrastructure (AWS, Azure).</li><li>Lead projects for infrastructure upgrades, migrations (on-premise to cloud), and international expansion.</li><li>Serve as technical lead and escalation point, mentoring junior staff.</li><li>Manage vendors for hardware, software, and services.</li><li>Ensure security, compliance (SOX), and documentation standards are met.</li></ul>\n            ",
+  "requirements": "\n                <p>Personal Qualities</p><ul><li>A self-sufficient, motivated professional who thrives in a fast-paced, high-growth environment.</li><li>Service-oriented with a customer-first mindset.</li><li>Strong communicator who can translate technical detail into business value.</li><li>Flexible, with the ability to adapt to after-hours project work.</li><li>Experienced in working within global 24x7 operations and regulated environments (SOX).</li><li>A natural mentor, eager to guide less experienced team members.</li><li>Bonus: background in healthcare, life sciences, pharma, or biotech.</li></ul><p>Technical Expertise</p><ul><li>8+ years of hands-on engineering experience with enterprise networks, servers, and storage systems.</li><li>Proven expertise with VMware (ESXi, vSphere, vCenter).</li><li>Strong skills in firewalls, switches, wireless infrastructure (physical and virtual).</li><li>Deep knowledge of Microsoft Server OS &amp; Active Directory.</li><li>Solid experience with cloud computing and storage (AWS and Azure).</li><li>Experience delivering disaster recovery and business continuity solutions.</li><li>Proficiency with Microsoft 365 collaboration suite (Teams, SharePoint, OneDrive, Exchange Online).</li><li>Scripting skills to automate and optimize infrastructure management.</li><li>Familiarity with patch management, monitoring tools, and ITIL frameworks.</li><li>Linux knowledge is a plus.</li></ul><p>Education &amp; Certifications</p><ul><li>Degree in Information Systems or a related field (AA minimum) – or equivalent hands-on experience.</li><li>Certifications preferred:</li><li>Cisco (CCNA/CCNP)</li><li>Microsoft O365</li><li>Windows Server</li><li>Networking certifications</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2734053,
+  "job_position_ids": {
+   "Burgas": 2734053
+  },
+  "locations": [
+   "Burgas"
+  ],
+  "name": "Customer Support Agent - Night Shifts",
+  "slug": "customer-support-agent-night-shifts",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "BPO",
+  "occupation": "Technical Customer Service",
+  "occupation_category": "Customer Support",
+  "seniority": "entry-level",
+  "salary_information": {
+   "Burgas": "920.00 - 1050.00"
+  },
+  "years_of_experience": "",
+  "created_at": "2026-07-29T16:36:06+00:00",
+  "main_responsibilities": "\n                <ul><li>Respond to customer inquiries via email, and chat in a prompt and professional manner.</li><li>Diagnose and resolve technical issues related to software products for customers.</li><li>Troubleshoot software problems and identify solutions to resolve customer issues.</li><li>Provide clear and concise instructions to customers to assist with product use and configuration.</li><li>Document customer interactions and support solutions in our CRM system.</li><li>Collaborate with internal teams to escalate and resolve complex technical issues.</li><li>Stay up-to-date with new product features and updates to provide the highest level of customer support.</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Fluency in English, both written and spoken.</li><li>Strong attention to detail and problem-solving skills.</li><li>Team player with collaborative attitude.</li><li>Experience with Excel functions, charts, pivot tables, and macros. </li><li>Ability to create and analyze reports and dashboards on case and client data.</li><li>Knowledge or experience in providing web-based software support.</li><li>Familiarity with online marketplaces such as eBay, Amazon, Rakuten, etc.</li><li>Understanding HTML, FTP, SQL, and other web-related protocols and languages is a plus.</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2732214,
+  "job_position_ids": {
+   "Varna": 2732214
+  },
+  "locations": [
+   "Varna"
+  ],
+  "name": "Customer Success Manager",
+  "slug": "customer-success-manager",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "BPO",
+  "occupation": "Account Management Non Commissioned",
+  "occupation_category": "Customer Support",
+  "seniority": "experienced",
+  "salary_information": {
+   "Varna": ""
+  },
+  "years_of_experience": "1-2",
+  "created_at": "2026-07-28T15:08:29+00:00",
+  "main_responsibilities": "\n                <ul><li>Manage BPO client relationships for the purposes of developing the current partnerships and creating new business opportunities;</li><li>Work Strategically and Commercially;</li><li>Support account leads by developing and managing an active opportunity;</li><li>Provides technical support to the clients before and after-sales;</li><li>Support business practices through developing relationships and account planning within existing accounts and target accounts;</li><li>Evaluating customer needs to suggest upgrades or additional services;</li><li>Prepares analysis on weekly/monthly/yearly basis about cost, quality, productivity, client satisfaction and identifies trends, opportunities, issues, concerns, and successes;</li><li>Design and develop daily, weekly, monthly reporting to senior management;</li><li>Manage client procurement relationships, including negotiating and managing commercial contracts;</li><li>Provide leadership and project oversight for all initiatives - scope statements, budgets, project plans, business requirements, testing and test plans and implementation;</li><li>Utilize data analytics to identify key trends in the business and collaborate with members of the management team to provide recommendations and solutions;</li><li>Negotiating rates and prices with clients;</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Excellent English language skills;</li><li>Experience in technical support, sales, and account management;</li><li>Good technical understanding;</li><li>Excellent communication and interpersonal skills;</li><li>Ability to self-organize and achieve objectives within committed timeframes;</li><li>Familiarity with client on-boarding requirements and an ability to think creatively; </li><li>Collaboration, organization and multi-tasking skills;</li><li>Good critical thinking and problem-solving skills;</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2730619,
+  "job_position_ids": {
+   "Remote UK": 2730619
+  },
+  "locations": [
+   "Remote UK"
+  ],
+  "name": "Head of Strategic Client Partnerships",
+  "slug": "head-of-strategic-client-partnerships",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "BPO",
+  "occupation": "General And Other Customer Support And Client Care",
+  "occupation_category": "Customer Support",
+  "seniority": "experienced",
+  "salary_information": {
+   "Remote UK": "50000.00"
+  },
+  "years_of_experience": "",
+  "created_at": "2026-07-27T15:53:54+00:00",
+  "main_responsibilities": "\n                Strategic Account Management<br><ul><li>Own and develop a portfolio of strategic and high-growth client accounts.</li><li>Build long-term relationships with senior stakeholders, decision-makers, and executive sponsors.</li><li>Develop and execute account growth strategies aligned to customer business objectives.</li><li>Conduct regular business reviews, account planning sessions, and strategic roadmap discussions.</li><li>Understand client priorities, challenges, risks, and future initiatives.</li><li>Create and maintain strategic account plans that identify growth opportunities and risk mitigation strategies.</li></ul>Customer Success &amp; Retention<br><ul><li>Act as the primary escalation point for strategic accounts.</li><li>Drive customer satisfaction and continuous improvement initiatives.</li><li>Monitor customer health, engagement levels, and service performance.</li><li>Proactively identify and address risks to retention.</li><li>Ensure delivery teams remain aligned to client expectations and contractual commitments.</li><li>Lead contract renewals and long-term partnership planning.</li></ul>Revenue Growth &amp; Expansion<br><ul><li>Own account growth targets across your customer portfolio.</li><li>Identify, qualify, and develop expansion opportunities within existing accounts.</li><li>Drive cross-sell and upsell initiatives across Flat Rock's full service offering.</li><li>Collaborate with Sales, Solutions, and Delivery teams to convert opportunities into revenue.</li><li>Support commercial negotiations and strategic partnership agreements.</li><li>Build and manage a healthy account growth pipeline.</li></ul>Executive Relationship Management<br><ul><li>Build trusted relationships with C-suite executives and senior business leaders.</li><li>Act as a strategic advisor on technology, operational, and business challenges.</li><li>Represent Flat Rock Technology at executive meetings, client workshops, and industry events.</li><li>Facilitate governance meetings, strategic reviews, and executive reporting.</li></ul>Leadership &amp; Collaboration<br><ul><li>Partner with Delivery, Operations, Engineering, Consulting, and BPO teams to ensure client success.</li><li>Champion the voice of the customer throughout the organisation.</li><li>Coordinate internal resources to resolve issues and deliver outcomes.</li><li>Support ongoing improvements to customer experience and account management processes.</li></ul>\n            ",
+  "requirements": "\n                Essential Experience<br><ul><li>5+ years' experience in Strategic Account Management, Customer Success, Client Success, or Enterprise Account Management.</li><li>Proven experience managing and growing enterprise-level customer relationships.</li><li>Demonstrated success increasing customer retention, satisfaction, and account revenue.</li><li>Strong executive stakeholder management skills.</li><li>Experience within one or more of the following sectors:</li><li>SaaS</li><li>Technology Services</li><li>Managed Services</li><li>IT Outsourcing</li><li>Software Development</li><li>BPO</li><li>Consulting Services</li><li>Commercially astute with experience supporting renewals and commercial negotiations.</li><li>Excellent communication, presentation, and relationship-building skills.</li><li>Strong analytical, strategic thinking, and problem-solving capabilities.</li></ul>Desirable Experience<br><ul><li>Experience working within offshore, nearshore, or global delivery environments.</li><li>Experience managing accounts worth £500k+ annually.</li><li>Knowledge of CRM platforms such as HubSpot or Salesforce.</li><li>Understanding of software engineering, cloud technologies, AI solutions, managed services, or outsourcing models.</li><li>Experience leading customer growth and expansion programmes.</li></ul>Travel<br><ul><li>Regular travel across the UK for client meetings, business reviews, and workshops.</li><li>Occasional international travel to customer locations and Flat Rock offices.</li><li>Flexibility to travel as required to support strategic accounts and growth opportunities.</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2727715,
+  "job_position_ids": {
+   "San Jose": 2727715
+  },
+  "locations": [
+   "San Jose"
+  ],
+  "name": "Sales Development Specialist B2B Cyber Security (New Logo Hunter)",
+  "slug": "sales-development-specialist-b2b-cyber-security-new-logo-hunter",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Sales",
+  "occupation": "Business Development And New Accounts",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "experienced",
+  "salary_information": {
+   "San Jose": "1500.00"
+  },
+  "years_of_experience": "1-2",
+  "created_at": "2026-07-24T12:17:13+00:00",
+  "main_responsibilities": "\n                <ul style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);list-style-type:disc;font-style:normal;font-weight:400;text-transform:none;\"><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Prospecting and generating net-new B2B opportunities from scratch</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Selling cybersecurity and penetration testing services to mid-market and enterprise clients</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Targeting CISOs, CTOs, IT Directors, and senior security stakeholders</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Building and maintaining a strong pipeline of new logo opportunities</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Consistently hitting and exceeding new business revenue targets</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Identify and prospect target accounts within BPO, outsourcing, and staff augmentation markets</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Use LinkedIn and other social platforms as primary channels for lead generation and engagement</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Execute outbound campaigns via social selling, email, and phone</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Qualify inbound and outbound leads against defined ICP and hand over sales-ready opportunities</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Conduct initial discovery conversations to understand client needs and outsourcing challenges</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Book qualified meetings for Sales Executives and support pipeline growth</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Maintain accurate CRM records and activity tracking</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Collaborate closely with Sales and Marketing to refine messaging and targeting</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Stay informed on outsourcing trends, delivery models, and competitor offerings</li></ul>\n            ",
+  "requirements": "\n                <ul style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);list-style-type:disc;font-style:normal;font-weight:400;text-transform:none;\"><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Proven hunter background in B2B sales</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Track record of winning new logos only (not account management)</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Experience selling cyber security, pen testing, IT security, or complex technical services</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Comfortable with cold calling, outbound prospecting, and rejection</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Telesales Experience</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Experience in social selling and advance use of LinkedIn</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Confident engaging senior technical and business decision-makers</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Experience using CRM (HubSpot)</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Self-motivated, disciplined, and results-driven</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Hunter mentality with strong resilience and self-motivation</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Commercial awareness and curiosity about client challenges</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Highly organised with excellent time management</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Relationship-driven with a consultative sales approach</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Experience selling into US, UK, or European markets (advantageous)</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2727693,
+  "job_position_ids": {
+   "San Jose": 2727693
+  },
+  "locations": [
+   "San Jose"
+  ],
+  "name": "Sales Development Specialist B2B – Staff Augmentation (New Logo Hunter)",
+  "slug": "sales-development-specialist-b2b-staff-augmentation-new-logo-hunter",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Sales",
+  "occupation": "Business Development And New Accounts",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "experienced",
+  "salary_information": {
+   "San Jose": "1500.00"
+  },
+  "years_of_experience": "1-2",
+  "created_at": "2026-07-24T12:07:48+00:00",
+  "main_responsibilities": "\n                <ul style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);list-style-type:disc;font-style:normal;font-weight:400;text-transform:none;\"><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Identify and prospect target accounts within BPO, outsourcing, and staff augmentation markets</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Use LinkedIn and other social platforms as primary channels for lead generation and engagement</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Execute outbound campaigns via social selling, email, and phone</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Qualify inbound and outbound leads against defined ICP and hand over sales-ready opportunities</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Conduct initial discovery conversations to understand client needs and outsourcing challenges</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Book qualified meetings for Sales Executives and support pipeline growth</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Maintain accurate CRM records and activity tracking</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Collaborate closely with Sales and Marketing to refine messaging and targeting</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Stay informed on outsourcing trends, delivery models, and competitor offerings</li></ul>\n            ",
+  "requirements": "\n                <ul style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);list-style-type:disc;font-style:normal;font-weight:400;text-transform:none;\"><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Proven experience as an SDR, BDR, or similar role within BPO, outsourcing, IT staffing, or staff augmentation</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Strong understanding of BPO and staff augmentation service models</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Demonstrated success using LinkedIn and social media for B2B lead generation and social selling</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Experience engaging senior stakeholders (Founders, Directors, Heads of Operations, CTOs, HR leaders)</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Confident communicator with strong written and verbal skills</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Comfortable working to targets in a fast-paced sales environment</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Hunter mentality with strong resilience and self-motivation</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Commercial awareness and curiosity about client challenges</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Highly organised with excellent time management</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Relationship-driven with a consultative sales approach</li><li style=\"margin:0px 0px 0px 1.6rem;padding:0px;border:0px rgba(0,0,0,0.9);font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;color:rgba(0,0,0,0.9);\">Experience selling into US, UK, or European markets (advantageous)</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2720440,
+  "job_position_ids": {
+   "Remote UK": 2720440
+  },
+  "locations": [
+   "Remote UK"
+  ],
+  "name": "Sales Development Representative",
+  "slug": "sales-development-representative",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Sales",
+  "occupation": "Business Development And New Accounts",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "experienced",
+  "salary_information": {
+   "Remote UK": "30000.00"
+  },
+  "years_of_experience": "",
+  "created_at": "2026-07-20T17:40:48+00:00",
+  "main_responsibilities": "\n                <ul><li>Identify and prospect target accounts within BPO, outsourcing, and staff augmentation markets</li><li>Use LinkedIn and other social platforms as primary channels for lead generation and engagement</li><li>Execute outbound campaigns via social selling, email, and phone</li><li>Qualify inbound and outbound leads against defined ICP and hand over sales-ready opportunities</li><li>Conduct initial discovery conversations to understand client needs and outsourcing challenges</li><li>Book qualified meetings for Sales Executives and support pipeline growth</li><li>Maintain accurate CRM records and activity tracking</li><li>Collaborate closely with Sales and Marketing to refine messaging and targeting</li><li>Stay informed on outsourcing trends, delivery models, and competitor offerings</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Proven experience as an SDR, BDR, or similar role within BPO, outsourcing, IT staffing, or staff augmentation</li><li>Strong understanding of BPO and staff augmentation service models</li><li>Demonstrated success using LinkedIn and social media for B2B lead generation and social selling</li><li>Experience engaging senior stakeholders (Founders, Directors, Heads of Operations, CTOs, HR leaders)</li><li>Confident communicator with strong written and verbal skills</li><li>Comfortable working to targets in a fast-paced sales environment</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2715843,
+  "job_position_ids": {
+   "San Jose": 2715843
+  },
+  "locations": [
+   "San Jose"
+  ],
+  "name": "Outbound Email Prospecting Representative - Digital team -  US & LATAM",
+  "slug": "outbound-email-prospecting-representative-digital-team-us-latam",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Digital",
+  "occupation": "Business Development And New Accounts",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "experienced",
+  "salary_information": {
+   "San Jose": "1100.00"
+  },
+  "years_of_experience": "2-5",
+  "created_at": "2026-07-16T16:18:22+00:00",
+  "main_responsibilities": "\n                <ul><li><span>Must have proven hands-on experience with cold email prospecting, including identifying target companies and ideal customer profiles from scratch and generating qualified meetings/opportunities without relying on inbound leads or an existing customer database</span></li><li>Develop and implement effective sales strategies to meet and exceed sales and client’s targets in Programmatic and Standard Display advertising</li><li>Identify and cultivate new business opportunities through proactive prospecting and networking</li><li>Build and maintain strong relationships with existing clients, ensuring high levels of customer satisfaction</li><li>Collaborate with internal teams to ensure seamless delivery of products and services and client management</li><li>Keep abreast of industry trends and competitor activities to identify new opportunities</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Fluency in English – both written and spoken</li><li><span>At least 3 years of proven B2B outbound sales/business development experience, with a strong focus on cold prospecting and new customer acquisition</span></li><li>Hands-on experience with email-based prospecting and outbound lead generation</li><li>Bachelor's degree in Business, Marketing, or a related field is preferred</li><li>Knowledge of online advertising industry/Programmatic &amp; Standard Display advertising will be considered as an advantage</li><li>Strong track record of meeting and exceeding sales targets</li><li>Excellent communication and negotiation skills</li><li>Ability to build and maintain strong client relationships</li><li>Self-motivated with a results-oriented mindset</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2704404,
+  "job_position_ids": {
+   "Colombo": 2704404
+  },
+  "locations": [
+   "Colombo"
+  ],
+  "name": "Digital Account Manager (Client Growth & Performance Marketing)",
+  "slug": "digital-account-manager-client-growth-performance-marketing",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Digital",
+  "occupation": "Account Management Commissioned",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "entry-level",
+  "salary_information": {
+   "Colombo": "173400.00 - 249200.00"
+  },
+  "years_of_experience": "1-2",
+  "created_at": "2026-07-08T13:53:25+00:00",
+  "main_responsibilities": "\n                <ul><li><span><span>Manage and grow relationships with existing clients</span></span></li><li><span><span>Understand client goals and translate them into effective campaign strategies</span></span></li><li><span><span>Work closely with internal teams to optimise campaign</span><span> performance</span></span></li><li><span><span>Monitor and improve campaign results across digital channels</span></span></li><li><span><span>Identify upsell opportunities and drive account growth</span></span></li><li><span><span>Prepare reports, insights, and client presentations</span></span></li><li><span><span>Stay updated on digital marketing and mobile advertising trends</span></span></li></ul>\n            ",
+  "requirements": "\n                <ul><li><span><span>2–4 years’ experience in account management, digital / affiliate marketing</span></span></li><li><span><span>Strong understanding of digital or performance marketing</span></span></li><li><span><span>Excellent communication and client management skills</span></span></li><li><span><span>Ability to manage multiple accounts in a fast-paced environment</span></span></li><li><span><span>Strong analytical and problem-solving skills</span></span></li></ul>\n            "
+ },
+ {
+  "job_position_id": 2696189,
+  "job_position_ids": {
+   "Remote UK": 2696189
+  },
+  "locations": [
+   "Remote UK"
+  ],
+  "name": "Customer Success & Support Manager",
+  "slug": "customer-success-support-manager",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "BPO",
+  "occupation": "General And Other Customer Support And Client Care",
+  "occupation_category": "Customer Support",
+  "seniority": "experienced",
+  "salary_information": {
+   "Remote UK": ""
+  },
+  "years_of_experience": "",
+  "created_at": "2026-07-02T12:36:46+00:00",
+  "main_responsibilities": "\n                <p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\"><strong style=\"margin:0px;padding:0px;font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-weight:600;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;\">Customer Relationship &amp; Journey Ownership</strong></p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Act as the primary operational point of contact for customers post-sales handover</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Build strong, trusted relationships with client stakeholders and guide them through implementation and onboarding</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Navigate customers through their experience lifecycle, ensuring smooth adoption and engagement</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Become a trusted advisor who translates business needs into effective implementation outcomes</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Manage and strengthen relationships to support retention, satisfaction, and long-term success</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\"><strong style=\"margin:0px;padding:0px;font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-weight:600;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;\"> </strong></p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\"><strong style=\"margin:0px;padding:0px;font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-weight:600;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;\">Implementation Coordination &amp; Delivery Oversight</strong></p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Coordinate HRIS and Payroll implementation consultants and track delivery milestones</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Manage the handover from Sales into Implementation, ensuring clarity on scope, timelines, and expectations</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Oversee implementation governance including status tracking, risk identification, issue resolution, and reporting</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Ensure alignment across internal teams including Implementation, Payroll, Product, Engineering, and Customer Success</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Support implementation readiness and ensure customers provide required inputs for successful go-live</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\"><strong style=\"margin:0px;padding:0px;font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-weight:600;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;\"> </strong></p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\"><strong style=\"margin:0px;padding:0px;font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-weight:600;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;\">Customer Enablement &amp; Adoption</strong></p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Train customers on HRIS and payroll processes and platform usage</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Drive product adoption with a focus on long-term customer value and success</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Lead customer interactions with a growth and value-realisation mindset</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Support go-live and early lifecycle stabilisation</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Act as a problem solver, helping customers overcome operational challenges</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\"><strong style=\"margin:0px;padding:0px;font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-weight:600;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;\"> </strong></p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\"><strong style=\"margin:0px;padding:0px;font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-weight:600;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;\">Data, Insights &amp; Problem Solving</strong></p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Use data to assess customer health, identify risks, and surface opportunities</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Synthesize insights into clear, actionable recommendations for stakeholders</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Support decision-making by identifying trends, risks, and opportunities across accounts</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\"><strong style=\"margin:0px;padding:0px;font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-weight:600;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;\"> </strong></p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\"><strong style=\"margin:0px;padding:0px;font-size:14px;background:rgba(0,0,0,0) none repeat scroll 0% 0%;font-weight:600;font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;\">Cross-Functional Collaboration &amp; Growth Enablement</strong></p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Collaborate closely with Account Executives, Customer Success Managers, Onboarding Managers, Product, and Support teams</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Act as the voice of the customer, sharing structured feedback with Revenue and Product teams</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Identify expansion opportunities and refer appropriately to Sales teams</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Contribute to improving customer journey processes, playbooks, and delivery standards</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Maintain the day-to-day operational relationship with the client’s Partner Management team, ensuring strong alignment, communication, and collaboration across all delivery workstreams</p>\n            ",
+  "requirements": "\n                <p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• 1–3+ years of experience in Customer Success, Operations, Support, Consulting, Implementation, or similar customer-facing roles</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Experience in fast-growth startups, payroll/HR tech/SaaS, consulting, or similarly complex environments</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Strong stakeholder management and coordination skills across multiple parties</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Ability to manage competing priorities in fast-paced environments</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Strong analytical mindset with ability to translate data into insights</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Excellent communication skills with senior stakeholders</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Highly collaborative, proactive, and execution-oriented</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Comfortable working in ambiguous environments</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Strong track record of achievement and progression</p><p style=\"margin:0px;padding:0px;font-size:14px;background:rgb(255,255,255) none repeat scroll 0% 0%;font-weight:400;line-height:1.5;color:rgba(0,0,0,0.9);font-family:'-apple-system', 'system-ui', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;font-style:normal;text-align:left;text-transform:none;\">• Fully proficient in English</p>\n            "
+ },
+ {
+  "job_position_id": 579616,
+  "job_position_ids": {
+   "Varna": 579616,
+   "Colombo": 2654545
+  },
+  "locations": [
+   "Varna",
+   "Colombo"
+  ],
+  "name": "Performance Marketing Analyst",
+  "slug": "performance-marketing-analyst",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "BPO",
+  "occupation": "Account Management Commissioned",
+  "occupation_category": "Sales & Business Development",
+  "seniority": "entry-level",
+  "salary_information": {
+   "Varna": "1250.00 - 1600.00",
+   "Colombo": "149079.24 - 198772.32"
+  },
+  "years_of_experience": "1-2",
+  "created_at": "2026-06-02T14:40:39+00:00",
+  "main_responsibilities": "\n                <strong>Campaign Management &amp; Optimization</strong><ul><li>Monitor and optimize campaigns on a daily basis (not organic, no Google or Meta Ads)</li><li>Identify issues and improve performance continuously</li><li>Set up and manage tracking, attribution, and campaign structure</li><li>Work with pixels, tracking logic, and platform settings</li><li>Run A/B tests and performance experiments</li></ul><strong>Data Analysis &amp; Insights</strong><ul><li>Analyze campaign and user acquisition data to identify trends and opportunities</li><li>Build and maintain reports and dashboards (Excel / Google Sheets)</li><li>Turn data into actionable insights for growth and optimization</li><li>Support decisions on scaling and performance improvement</li></ul><strong>AI &amp; Automation</strong><ul><li>Use AI tools to improve analysis, reporting, and workflows</li><li>Build simple automations to reduce manual work</li><li>Continuously look for smarter and faster ways of working</li></ul><strong>Client Communication</strong><br><ul><li>Explain performance results in a clear and simple way</li><li>Share insights and actionable recommendations</li><li>Build trust through transparency and consistency</li><li>Align with clients on goals, KPIs, and expectations</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Strong analytical and data-driven mindset (must-have)</li><li>Comfortable working with tools, data, and technical setups</li><li>Experience in performance marketing / user acquisition is a plus</li><li>Interest in or experience with AI tools</li><li>Very good English skills (written &amp; spoken)</li><li>Proactive, independent, and results-oriented mindset</li><li>Strong problem-solving and prioritization skills</li><li>Ability to manage multiple campaigns/accounts</li><li>Attention to detail and ownership of results</li></ul>\n            "
+ },
+ {
+  "job_position_id": 1974454,
+  "job_position_ids": {
+   "Varna": 1974454,
+   "Tbilisi": 2605285,
+   "Colombo": 2605286,
+   "Ruse": 2649525,
+   "Burgas": 2649526
+  },
+  "locations": [
+   "Varna",
+   "Tbilisi",
+   "Colombo",
+   "Ruse",
+   "Burgas"
+  ],
+  "name": "Cloud Infrastructure & DevOps Engineer",
+  "slug": "cloud-infrastructure-devops-engineer",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Software",
+  "occupation": "General And Other It Software",
+  "occupation_category": "Software Development & Cloud",
+  "seniority": "experienced",
+  "salary_information": {
+   "Varna": "",
+   "Tbilisi": "4200.00 - 8400.00",
+   "Colombo": "288900.00 - 725000.00",
+   "Ruse": "",
+   "Burgas": ""
+  },
+  "years_of_experience": "2-5",
+  "created_at": "2026-05-27T19:06:20+00:00",
+  "main_responsibilities": "\n                <ul><li>Design, implement, and manage scalable infrastructure with Terraform, Ansible, or CloudFormation</li><li>Automate tasks using Bash, Python, or PowerShell</li><li>Manage and optimize Linux/Windows servers for high availability and performance.</li><li>Perform system upgrades, patching, and security updates</li><li>Troubleshoot performance bottlenecks (CPU, memory, I/O, network)</li><li>Manage virtualization using VMware, Hyper-V, or KVM</li><li>Handle patch management with WSUS (Windows) or YUM/DNF/APT (Linux)</li><li>Develop and maintain CI/CD pipelines (Jenkins, GitLab CI/CD, Azure DevOps, GitHub Actions)</li><li>Deploy and manage applications with Docker and Kubernetes</li><li>Optimize cloud resources in AWS, Azure, or Google Cloud, ensuring cost efficiency</li><li>Set up monitoring tools like Prometheus, Grafana, and ELK stack</li><li>Implement security best practices (IAM, encryption, vulnerability scans)</li><li>Ensure compliance with industry standards (ISO 27001)</li><li>Collaborate with development teams and support tools like Ansible, SonarQube, and Sentry</li><li>Document system configurations and processes</li><li>Stay updated with DevOps trends to enhance infrastructure and workflows</li></ul>\n            ",
+  "requirements": "\n                <ul><li>3–5 years in DevOps</li><li>Strong Linux (Ubuntu, CentOS) and/or Windows Server administration</li><li>Proficiency in Terraform, Ansible, or CloudFormation (IaC)</li><li>Scripting skills (Bash, Python, PowerShell)</li><li>Experience with Docker, Kubernetes, and CI/CD tools (Jenkins, GitLab, GitHub Actions, Azure DevOps)</li><li>Strong networking knowledge (DNS, VPN, firewalls, load balancing)</li><li>Cloud expertise (AWS, Azure, GCP)</li><li>Monitoring/logging with Prometheus, Grafana, or ELK</li><li>Security best practices (IAM, secrets management, vulnerability scanning)</li><li>Git and version control experience</li><li>Strong problem-solving skills in fast-paced environments</li><li>Kubernetes operators, Helm charts</li><li>Compliance knowledge (ISO 27001)</li><li>Hybrid/multi-cloud experience</li><li>Infrastructure cost optimization strategies</li><li>Bachelor’s in CS, IT, or equivalent experience</li><li>Relevant certifications (AWS DevOps, CKA, etc.)</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2620875,
+  "job_position_ids": {
+   "Colombo": 2620875
+  },
+  "locations": [
+   "Colombo"
+  ],
+  "name": "Recruiter",
+  "slug": "recruiter",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "HR",
+  "occupation": "Recruiting And Sourcing",
+  "occupation_category": "HR & Administration",
+  "seniority": "experienced",
+  "salary_information": {
+   "Colombo": ""
+  },
+  "years_of_experience": "2-5",
+  "created_at": "2026-05-01T13:19:28+00:00",
+  "main_responsibilities": "\n                <ul><li>Be trusted business partners to our Hiring Managers and stakeholders. You will understand and foresee their business needs, be an extension of their teams and continuously challenge them to raise the bar.</li><li>Recruit top-tier talent to achieve your quarterly hiring goals.</li><li>Source, screen, interview and close candidates - owning the full end-to-end recruitment process.</li><li>Build relevant sourcing strategies tailored to the market and hiring needs.</li><li>Educate hiring managers and interview teams to ensure they are prepared and engaged for every interview process.</li><li>Actively contribute to promoting our employer brand via social media, events, etc.</li><li>Ensure a great candidate experience for every candidate no matter the outcome.</li></ul>\n            ",
+  "requirements": "\n                <ul><li>3+ years of end-to-end recruiting experience within high-growth and fast-scaling organisations.</li><li>In-house recruiting experience, partnering with multiple internal stakeholders to ensure the best possible interview experience and results.</li><li>Successful track record of negotiating with and closing tech talent.</li><li>Experience hiring high volume and niche talent.</li><li>Expertise managing volume in-bound applications, optimising advertising strategies and utilising the ATS (ideally Personio!) to manage application quality.</li><li>A focused approach to attracting and engaging passive candidates, building a diverse pipeline through effective sourcing strategies.</li><li>The ability to think critically, adapt easily to changing priorities, collaborate with fellow recruiters, and optimize your own time to move at pace.</li><li>A Data-driven approach; you’re all about the numbers and using these to optimize and influence.</li><li>Excellent English communication skills, both written and verbal.</li><li>Passion, drive, and enthusiasm to ensure we secure the best talent out there.</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2615222,
+  "job_position_ids": {
+   "Varna": 2615222
+  },
+  "locations": [
+   "Varna"
+  ],
+  "name": "Programmatic Advertising Operations Specialist",
+  "slug": "programmatic-advertising-operations-specialist",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Digital",
+  "occupation": "Media Planning And Buying",
+  "occupation_category": "Marketing",
+  "seniority": "experienced",
+  "salary_information": {
+   "Varna": ""
+  },
+  "years_of_experience": "2-5",
+  "created_at": "2026-04-27T14:55:13+00:00",
+  "main_responsibilities": "\n                <ul><li>Set up, launch, traffic, and optimize direct/programmatic campaigns on platforms like Google DV360, The Trade Desk, or Google Ad Manager, including pixel implementation and third-party tags.</li><li>Monitor performance metrics (viewability, IVT/fraud rates, CPMs), perform QA,troubleshooting, and real-time adjustments to meet KPIs.</li><li>Integrate SSPs/DSPs, manage pre-bid/post-bid verification, and handle deal IDs for PMPs/private auctions.</li><li>Analyze campaign data, generate reports and collaborate with sales/client services on insights and escalations.</li><li>Document processes, automate workflows, and stay compliant with privacy regs (GDPR/CCPA) and MRC standards.</li><li>Liaise with vendors, engineering, and stakeholders to resolve discrepancies and innovate ad stack setups.</li></ul>\n            ",
+  "requirements": "\n                <ul><li>2+ years of experience in digital ad operations, programmatic advertising, media trafficking, or digital media operations.</li><li>Proven hands-on experience with DSPs (e.g., DV360, The Trade Desk), SSPs (e.g., Google AdX), Ad servers (e.g., Google Ad Manager – GAM), Verification tools (e.g., IAS, DoubleVerify, Moat)</li><li>Proficiency in HTML, JavaScript, HTTP protocols, and tag/pixel implementation.</li><li>Strong analytical skills with experience in data analysis tools such as Excel and/or SQL.</li><li>Strong problem-solving skills with attention to detail.</li><li>Excellent organizational skills and ability to manage multiple tasks in deadline-driven environments.</li><li>Effective communication skills with the ability to collaborate across teams.</li><li>Fluency in English (written and spoken).</li></ul><strong>Nice to Have:</strong><ul><li>Industry certifications such as Google DV360 / CM360, The Trade Desk Edge Academy, IAB Digital Ad Operations Certification</li><li>Bachelor’s degree in Marketing, Advertising, Information Technology, or related field is considered an advantage.</li></ul>\n            "
+ },
+ {
+  "job_position_id": 2566965,
+  "job_position_ids": {
+   "Colombo": 2566965
+  },
+  "locations": [
+   "Colombo"
+  ],
+  "name": "Senior Android Developer",
+  "slug": "senior-android-developer",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Software",
+  "occupation": "General And Other It Software",
+  "occupation_category": "Software Development & Cloud",
+  "seniority": "experienced",
+  "salary_information": {
+   "Colombo": "439200.00 - 1001700.00"
+  },
+  "years_of_experience": "5-7",
+  "created_at": "2026-03-17T15:45:18+00:00",
+  "main_responsibilities": "\n                <ul><li><span><span>Design, build, and ship native Android applications in Kotlin </span></span></li><li><span><span>Build modern, responsive UI with Jetpack Compose and the Android Jetpack libraries</span></span></li><li><span><span>Develop and maintain clean, modular, and scalable architectures</span></span></li><li><span><span>Own technical decisions and contribute to architecture discussions across the mobile stack</span></span></li><li><span><span>Collaborate with product managers, designers, and backend teams to deliver high-quality software</span></span></li><li><span><span>Write clean, testable, and maintainable code</span></span></li><li><span><span>Perform code reviews and mentor mid-level and junior developers</span></span></li><li><span><span>Ensure high standards for performance, stability, security, and maintainability</span></span></li><li><span><span>Contribute to CI/CD pipelines, release automation, and automated testing</span></span></li><li><span><span>Take part in the full release cycle, including Google Play distribution and post-release monitoring</span></span></li><li><span><span>Stay up to date with the Kotlin &amp; Android ecosystem and bring improvements back into the team</span></span></li></ul>\n            ",
+  "requirements": "\n                <ul><li><span><span>5+ years of professional software development experience</span></span></li><li><span><span>Strong expertise in Kotlin</span></span></li><li><span><span>Strong hands-on experience with native Android development</span></span></li><li><span><span>Solid experience with Jetpack Compose and modern Android architecture components</span></span></li><li><span><span>Strong understanding of modern software architecture patterns (Clean Architecture, MVI, MVVM, modular architecture)</span></span></li><li><span><span>Experience designing and consuming REST APIs</span></span></li><li><span><span>Experience designing asynchronous and concurrent systems using Kotlin coroutines and Flow</span></span></li><li><span><span>Experience with dependency injection, local persistence, and offline-capable apps</span></span></li><li><span><span>Strong experience with Git-based workflows</span></span></li><li><span><span>Experience working in Agile environments</span></span></li><li><span><span>Strong problem-solving skills, a proactive mindset, and clear communication</span></span><span><span><br></span></span><span><span><br></span></span><strong><span style=\"font-size:24px;\">Nice to have / advantages</span></strong><span><span><br></span></span></li><li><span><span>Hands-on experience with Kotlin Multiplatform (KMP) for cross-platform development — a strong advantage</span></span></li><li><span><span>Hands-on experience with Compose Multiplatform (CMP) for building shared UI — a strong advantage</span></span></li><li><span><span>Experience building applications targeting iOS, Web, or Desktop from a shared Kotlin codebase</span></span></li><li><span><span>Experience integrating Kotlin Multiplatform into existing native apps</span></span></li><li><span><span>A genuine willingness to chase after new technologies — you experiment early, learn fast, and bring what you find back to the team</span></span></li><li><span><span>Experience using AI platforms and AI-assisted tooling in the development process</span></span></li><li><span><span>Familiarity with backend frameworks such as Spring Boot or </span><span>Ktor</span></span></li><li><span><span>Experience with automated testing for mobile or multiplatform projects</span></span></li><li><span><span>Experience with CI/CD pipelines and mobile build pipelines</span></span></li><li><span><span>Knowledge of Docker and cloud platforms (AWS, GCP, Azure, </span><span>DigitalOcean</span><span>)</span></span></li><li><span><span>Experience with multi-platform distribution</span></span></li></ul><br>\n            "
+ },
+ {
+  "job_position_id": 2534354,
+  "job_position_ids": {
+   "Colombo": 2534354
+  },
+  "locations": [
+   "Colombo"
+  ],
+  "name": "Agentic AI Engineer",
+  "slug": "agentic-ai-engineer",
+  "employment_type": "permanent",
+  "schedule": "Full-time",
+  "department": "Software",
+  "occupation": "Software And Web Development",
+  "occupation_category": "Software Development & Cloud",
+  "seniority": "experienced",
+  "salary_information": {
+   "Colombo": "222000.00 - 725000.00"
+  },
+  "years_of_experience": "2-5",
+  "created_at": "2026-02-18T10:02:35+00:00",
+  "main_responsibilities": "\n                <ul><li>Design and develop agentic AI systems including autonomous agents, tool-using agents, multi-agent orchestration, and workflow state machines </li><li>Design, build, and maintain AI-powered automation workflows </li><li>Build LLM-driven agents capable of reasoning, planning, retrieving knowledge, and executing tasks across enterprise systems </li><li>Integrate agents with internal APIs, CRM/ERP platforms, Jira, Confluence, Slack, email, databases, payment systems, and other business tools using function/tool calling, MCP (Model Context Protocol), and A2A patterns </li><li>Develop end-to-end AI automations that combine LLM capabilities solving repetitive tasks such as document processing, lead enrichment, customer support triage, reporting, and data synchronisation across systems </li><li>Connect AI agents to automation platforms via webhooks, API triggers, and custom nodes; manage scheduling, error handling, and conditional branching within automation workflows </li><li>Implement tool-calling schemas, input validation, error handling, retries, rate limits, and fallback logic to ensure reliable agent execution </li><li>Design and maintain RAG pipelines using vector databases, embedding models, reranking, and chunking strategies to ground agent outputs in enterprise knowledge </li><li>Build safety guardrails including content filters, policy constraints, tool access controls, and human-in-the-loop approval flows for high-risk actions </li><li>Create evaluation pipelines to measure agent reliability, task success rate, accuracy, and failure-mode behaviour using tools such as LangSmith, OpenAI Evals, or custom telemetry systems </li><li>Implement observability and tracing of reasoning steps, tool calls, latency, cost, and error rates to support debugging and continuous improvement </li><li>Deploy and operate agent services using Docker, Kubernetes, Terraform, and CI/CD pipelines in cloud environments (AWS, Azure, or GCP) </li><li>Monitor agent behaviour in production, diagnose anomalies, and continuously refine agent policies and performance </li><li>Evaluate emerging agentic AI models, frameworks, and toolkits; prototype and benchmark new approaches for scalability, robustness, and safety </li><li>Prepare technical documentation including architecture diagrams, capability descriptions, limitations, and operational guidelines </li><li>Communicate complex AI concepts to non-technical stakeholders and collaborate across cross-functional teams to align solutions with business needs</li></ul>\n            ",
+  "requirements": "\n                <ul><li>Bachelor's or master's degree in computer science, AI, Data Science, Engineering, or a related field </li><li>3+ years of software engineering experience with strong proficiency in Python and/or TypeScript </li><li>1+ year of hands-on experience building LLM-powered applications or agentic AI systems in production or near-production settings</li><li>Experience with agent frameworks such as LangChain, LangGraph, AutoGen, CrewAI, Semantic Kernel, or equivalents </li><li>Hands-on experience with AI automation and workflow orchestration  </li><li>Solid understanding of LLMs, embeddings, prompt engineering, structured outputs, and function/tool calling </li><li>Experience building and integrating REST APIs, microservices, and backend services </li><li>Familiarity with vector databases (FAISS, Pinecone, Chroma, Weaviate) and RAG pipeline design </li><li>Familiarity with AI-assisted development workflows (e.g., Cursor, GitHub Copilot, Claude Code) for research, architecture, and implementation </li><li>Strong system design, debugging, and problem-solving skills </li><li>Excellent communication skills with the ability to present technical concepts to non-technical audiences </li><li>Experience with agent communication protocols such as MCP (Model Context Protocol) and A2A </li><li>Experience designing AI automation solutions that combine LLMs with workflow engines for use cases such as intelligent document processing, automated reporting, chatbot backends, or AI-assisted decision support </li><li>Experience with cloud platforms (AWS, Azure, or GCP) and cloud AI services such as Azure AI Foundry, AWS Bedrock, or Google Vertex AI</li></ul><br>Preferred: <br><ul><li>Advanced experience with n8n (including custom node development and self-hosting) or Make (including advanced scenario design, iterators, and aggregators) </li><li>Experience with evaluation and observability tools for AI agents (LangSmith, OpenAI Evals, Weights &amp; Biases, or custom telemetry) </li><li>Experience with reinforcement learning, planning algorithms, or multi-agent coordination </li><li>Familiarity with model fine-tuning, RLHF, or distillation techniques </li><li>Experience with CI/CD pipelines (GitHub Actions, GitLab CI, Jenkins) </li><li>Experience with containerisation (Docker, Kubernetes) and infrastructure-as-code tools (Terraform, CloudFormation) </li><li>Knowledge of security best practices: authentication, authorisation, least-privilege access, and audit logging </li><li>Background in a regulated industry (healthcare, finance, defence, or consulting) </li><li>Relevant certifications: AWS ML Specialty, Azure AI Engineer Associate, or GCP Professional ML Engineer </li></ul>\n            "
+ }
+]

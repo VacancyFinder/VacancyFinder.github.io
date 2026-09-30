@@ -1,8 +1,9 @@
 node_modules
 dist
 .env
-packages/crawler/.probe-out
+packages/crawler/.probe-out*
 .cache
 apps/web/dist
 apps/web/test-results
 apps/web/playwright-report
+.probe-out-r1

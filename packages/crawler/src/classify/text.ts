@@ -94,7 +94,9 @@ export function fixAllCaps(title: string): string {
 export function cleanTitle(raw: string): string {
   return fixAllCaps(
     cleanText(raw)
+      .replace(/^[\s~•*·–-]+/, "")
       .replace(/\s*[-–|]\s*apply\s+now\s*$/i, "")
+      .replace(/[\s.,;:]+$/, "")
       .replace(/\s+/g, " ")
       .trim(),
   );

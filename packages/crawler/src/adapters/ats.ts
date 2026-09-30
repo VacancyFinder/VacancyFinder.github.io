@@ -106,6 +106,15 @@ export const smartrecruiters: AdapterFn = async (ctx) => {
   return { jobs };
 };
 
+/** Teamtailor remoteStatus: "fully" | "hybrid" | "temporary" | "none". */
+export function teamtailorWorkplace(v: string | null): string | null {
+  if (!v) return null;
+  if (/fully|remote/i.test(v)) return "Remote";
+  if (/hybrid|temporary/i.test(v)) return "Hybrid";
+  if (/none/i.test(v)) return "On-site";
+  return v;
+}
+
 /** Teamtailor: public RSS feed at {sub}.teamtailor.com/jobs.rss (or a custom careers domain). */
 export const teamtailor: AdapterFn = async (ctx) => {
   const feed =
@@ -132,7 +141,7 @@ export const teamtailor: AdapterFn = async (ctx) => {
       location: locations || null,
       description: tag(item, "description"),
       postedAt: tag(item, "pubDate"),
-      workplace: tag(item, "remoteStatus") ?? tag(item, "tt:remoteStatus"),
+      workplace: teamtailorWorkplace(tag(item, "remoteStatus") ?? tag(item, "tt:remoteStatus")),
       department: tag(item, "tt:department"),
     };
   });
