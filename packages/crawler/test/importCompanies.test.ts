@@ -5,7 +5,9 @@ import {
   CompaniesFile,
   CseSourceFile,
   TechSourceFile,
+  isSharedHost,
   normaliseIndustry,
+  ownerDomainOf,
   type Company,
   type CseSourceRecord,
   type TechSourceRecord,
@@ -146,5 +148,64 @@ describe("idempotency and hand edits", () => {
     const r = run(edited);
     expect(bySlug(r.companies, "sampath-bank").status).toBe("disabled");
     expect(r.targets.some((t) => t.companySlugs.includes("sampath-bank"))).toBe(false);
+  });
+});
+
+describe("shared hosts (job boards / ATS)", () => {
+  const rec = (name: string, symbol: string, site: string, careers: string): CseSourceRecord => ({
+    company_name: name,
+    symbol,
+    website: site,
+    career_page: careers,
+    industry: "Banking",
+  });
+  const cseOnAts = [
+    rec("Alpha PLC", "ALP.N0000", "https://alpha.lk", "https://jobs.lever.co/alpha"),
+    rec("Beta PLC", "BET.N0000", "https://beta.lk", "https://jobs.lever.co/beta"),
+  ];
+
+  it("never derives a parent group from a shared ATS host", () => {
+    const r = run([], [], cseOnAts);
+    expect(r.groups).toEqual([]);
+    for (const c of r.companies) expect(c.parentGroup).toBeNull();
+    expect(r.targets).toHaveLength(2);
+  });
+
+  it("never matches a tech company to a CSE company through a shared ATS host", () => {
+    const r = run([], [{ name: "Gamma Tech", website: null, careersUrl: "https://jobs.lever.co/gamma" }], cseOnAts);
+    expect(r.report.overlaps).toEqual([]);
+    expect(r.report.ambiguousOverlaps).toEqual([]);
+    expect(bySlug(r.companies, "gamma-tech").sourceLists).toEqual(["tech"]);
+  });
+
+  it("identifies shared hosts and their subdomains only", () => {
+    expect(isSharedHost("jobs.lever.co")).toBe(true);
+    expect(isSharedHost("apply.workable.com")).toBe(true);
+    expect(isSharedHost("lk.linkedin.com")).toBe(true);
+    expect(isSharedHost("notlever.co")).toBe(false);
+    expect(isSharedHost("keells.com")).toBe(false);
+    expect(ownerDomainOf("https://www.dialog.lk/careers")).toBe("dialog.lk");
+    expect(ownerDomainOf("https://boards.greenhouse.io/acme")).toBeNull();
+  });
+});
+
+describe("slug collisions", () => {
+  const twins: TechSourceRecord[] = [
+    { name: "Acme", website: "https://acme.com", careersUrl: null },
+    { name: "Acme Ltd", website: "https://acme.io", careersUrl: null },
+  ];
+
+  it("gives two tech companies with the same base slug distinct slugs", () => {
+    const r = run([], twins, []);
+    expect(r.companies.map((c) => c.slug).sort()).toEqual(["acme", "acme-2"]);
+    expect(() => CompaniesFile.parse(r.companies)).not.toThrow();
+  });
+
+  it("keeps those slugs stable when re-run, whatever the source order", () => {
+    const r1 = run([], twins, []);
+    const r2 = run(r1.companies, [...twins].reverse(), []);
+    const slugOf = (list: Company[], name: string) => list.find((c) => c.name === name)?.slug;
+    for (const t of twins) expect(slugOf(r2.companies, t.name)).toBe(slugOf(r1.companies, t.name));
+    expect(() => CompaniesFile.parse(r2.companies)).not.toThrow();
   });
 });
