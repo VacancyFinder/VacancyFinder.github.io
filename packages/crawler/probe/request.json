@@ -1,72 +1,42 @@
 {
-  "note": "Edit this file (on a claude/** branch) to re-run the probe workflow.",
-  "run": 2,
-  "targets": "all",
+  "note": "Edit this file (on a claude/** branch) to re-run the probe workflow. Round 2: portals, APIs and detail pages found in round 1.",
+  "run": 3,
+  "targets": [],
   "render": true,
   "urls": [
-    {
-      "id": "x-wso2",
-      "url": "https://wso2.com/careers/"
-    },
-    {
-      "id": "x-99x",
-      "url": "https://99x.io/careers"
-    },
-    {
-      "id": "x-syscolabs",
-      "url": "https://syscolabs.lk/careers"
-    },
-    {
-      "id": "x-lseg",
-      "url": "https://www.lseg.com/en/careers"
-    },
-    {
-      "id": "x-pickme",
-      "url": "https://pickme.lk/careers"
-    },
-    {
-      "id": "x-surge",
-      "url": "https://surge.global/careers"
-    },
-    {
-      "id": "x-creativesoftware",
-      "url": "https://www.creativesoftware.com/careers"
-    },
-    {
-      "id": "x-zyner",
-      "url": "https://zyner.io/careers"
-    },
-    {
-      "id": "x-flatrock",
-      "url": "https://www.flatrocktech.com/careers"
-    },
-    {
-      "id": "x-zone24x7",
-      "url": "https://www.zone24x7.com/careers"
-    },
-    {
-      "id": "x-pearson",
-      "url": "https://pearson.jobs/"
-    },
-    {
-      "id": "x-fortude",
-      "url": "https://fortude.co/careers"
-    },
-    {
-      "id": "x-hcltech",
-      "url": "https://www.hcltech.com/careers"
-    },
-    {
-      "id": "x-rootcode",
-      "url": "https://rootcode.io/careers"
-    },
-    {
-      "id": "x-ifs",
-      "url": "https://www.ifs.com/about/careers"
-    },
-    {
-      "id": "x-careers-keells",
-      "url": "https://careers.keells.com/"
-    }
+    { "id": "r2-99x-lk", "url": "https://99x.io/careers/open-positions?location=sri-lanka", "render": true },
+    { "id": "r2-keells-sf-search", "url": "https://careers.keells.com/search/?q=&sortColumn=referencedate&sortDirection=desc", "render": false },
+    { "id": "r2-keells-sf-rss", "url": "https://careers.keells.com/services/rss/job/?locale=en_US&keywords=()", "render": false },
+    { "id": "r2-browns-portal", "url": "https://careers.brownsgroup.com/", "render": true },
+    { "id": "r2-slt-portal", "url": "https://careers.slt.lk/", "render": true },
+    { "id": "r2-dimo-vacancies", "url": "https://www.dimolanka.com/careers-and-people/vacancies/", "render": true },
+    { "id": "r2-lankaioc-openings", "url": "https://www.lankaioc.com/current-openings/", "render": false },
+    { "id": "r2-lankaioc-job", "url": "https://www.lankaioc.com/job/we-are-hiring-internship-finance-department/", "render": false },
+    { "id": "r2-dialog-mihcm", "url": "https://hcmcloud.dialog.lk/CareerPortal/Careers?q=bEopnWmcv9llMiBG3zygOw%3D%3D", "render": true },
+    { "id": "r2-ndb-mihcm", "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En", "render": true },
+    { "id": "r2-unionb-peopleshr", "url": "https://unionbank.peopleshr.com/JobPortal/", "render": true },
+    { "id": "r2-cargills-peopleshr", "url": "https://careerscargills.peopleshr.com/", "render": true },
+    { "id": "r2-hayleys-oracle", "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/hayleys-careers/", "render": true },
+    { "id": "r2-pearson-oracle", "url": "https://hccz.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/requisitions?location=Sri+Lanka", "render": true },
+    { "id": "r2-swivel-sr-api", "url": "https://api.smartrecruiters.com/v1/companies/SwivelGroup/postings?limit=100", "render": false },
+    { "id": "r2-ifs-sr-api", "url": "https://api.smartrecruiters.com/v1/companies/ifs1/postings?limit=100&country=lk", "render": false },
+    { "id": "r2-ascentic-tt-rss", "url": "https://career.ascentic.se/jobs.rss", "render": false },
+    { "id": "r2-pickme-wp", "url": "https://pickme.lk/wp-json/wp/v2/vacancy?per_page=100", "render": false },
+    { "id": "r2-pickme-job", "url": "https://pickme.lk/vacancy/senior-data-scientist/", "render": false },
+    { "id": "r2-wso2-job", "url": "https://wso2.com/careers/281/2026-09-senior-software-engineer-agent-platform-sri-lanka", "render": false },
+    { "id": "r2-creative-job", "url": "https://www.creativesoftware.com/careers/senior-data-engineer-ref7026", "render": false },
+    { "id": "r2-zone-job", "url": "https://zone24x7.com/careers/senior-devops-engineer/", "render": false },
+    { "id": "r2-cdb-job", "url": "https://www.cdb.lk/life-at-cdb/careers/management-trainee-1", "render": false },
+    { "id": "r2-cargills-job", "url": "https://www.cargillsceylon.com/careers/key-account-executive/", "render": false },
+    { "id": "r2-cinnamon-portal", "url": "https://careers.cinnamonhotels.com/web/home", "render": true },
+    { "id": "r2-hnb-apply", "url": "https://www.hnb.lk/apply-now", "render": true },
+    { "id": "r2-surge", "url": "https://surge.global/careers/", "render": true },
+    { "id": "r2-flatrock", "url": "https://flatrocktech.com/careers", "render": true },
+    { "id": "r2-sysco-workday", "url": "https://wd5.myworkdaysite.com/wday/cxs/sysco/syscocareers/jobs", "method": "POST", "contentType": "application/json", "body": "{\"appliedFacets\":{\"locations\":[\"b014cc62fe6601b8d666502cd5287f36\"]},\"limit\":20,\"offset\":0,\"searchText\":\"\"}", "render": false },
+    { "id": "r2-lseg-workday-lk", "url": "https://lseg.wd3.myworkdayjobs.com/wday/cxs/lseg/Careers/jobs", "method": "POST", "contentType": "application/json", "body": "{\"appliedFacets\":{\"locationCountry\":[\"db69e062446c11de98360015c5e6daf6\"]},\"limit\":20,\"offset\":0,\"searchText\":\"\"}", "render": false },
+    { "id": "r2-fortude", "url": "https://careers.fortude.co/", "render": true },
+    { "id": "r2-rootcode-api", "url": "https://rootcode.ai/api/jobs", "render": false },
+    { "id": "r2-zillione-api", "url": "https://apisv1.zillione.com/api/careers", "render": false },
+    { "id": "r2-zyner", "url": "https://careers.zyner.io/", "render": false }
   ]
 }
