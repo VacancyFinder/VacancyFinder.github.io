@@ -29,8 +29,8 @@ import { normalizeJob, type Attribution } from "./normalize.js";
 import { readJsonOr, writeData, writeIfChanged } from "./write.js";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../../..");
-const DATA = resolve(ROOT, "data");
-const CACHE = resolve(ROOT, ".cache/http-cache.json");
+const DATA_DIR = resolve(ROOT, "data");
+const CACHE_PATH = resolve(ROOT, ".cache/http-cache.json");
 const TARGET_TIMEOUT_MS = 6 * 60_000;
 const CRAWLABLE = new Set(["ready"]);
 
@@ -61,10 +61,42 @@ async function withTimeout<T>(p: Promise<T>, ms: number, what: string): Promise<
   }
 }
 
+export interface CrawlOptions {
+  dataDir?: string;
+  cachePath?: string;
+  /** Injected for tests; defaults to a polite fetcher. */
+  fetcher?: PoliteFetcher;
+  now?: string;
+  only?: string[];
+  fast?: boolean;
+  quiet?: boolean;
+}
+
+export interface CrawlSummary {
+  added: number;
+  closed: number;
+  open: number;
+  dataChanged: boolean;
+  message: string;
+  runs: TargetRun[];
+}
+
 export async function main(): Promise<void> {
-  const started = Date.now();
-  const now = new Date().toISOString();
   const { only, fast } = args();
+  const r = await runCrawl({ only, fast });
+  if (process.env.GITHUB_OUTPUT) {
+    appendFileSync(process.env.GITHUB_OUTPUT, `changed=${r.dataChanged}\nmessage=${r.message}\nadded=${r.added}\n`);
+  }
+}
+
+export async function runCrawl(opts: CrawlOptions = {}): Promise<CrawlSummary> {
+  const started = Date.now();
+  const now = opts.now ?? new Date().toISOString();
+  const DATA = opts.dataDir ?? DATA_DIR;
+  const CACHE = opts.cachePath ?? CACHE_PATH;
+  const only = opts.only ?? [];
+  const fast = opts.fast ?? false;
+  const console = opts.quiet ? { log: () => {} } : globalThis.console;
 
   const companies = CompaniesFile.parse(readJsonOr(resolve(DATA, "companies.json"), []));
   const groups = z.array(Group).parse(readJsonOr(resolve(DATA, "groups.json"), []));
@@ -76,7 +108,7 @@ export async function main(): Promise<void> {
   const bySlug = new Map(companies.map((c) => [c.slug, c]));
   void groups;
 
-  const fetcher = new PoliteFetcher(fast ? { minDelayMs: 0, maxDelayMs: 0 } : { log: (m) => console.log(`  · ${m}`) });
+  const fetcher = opts.fetcher ?? new PoliteFetcher(fast ? { minDelayMs: 0, maxDelayMs: 0 } : { log: (m) => console.log(`  · ${m}`) });
   const outcomeBySlug = new Map<string, TargetOutcome>();
   const setOutcome = (slugs: string[], o: TargetOutcome) => {
     for (const s of slugs) outcomeBySlug.set(s, o);
@@ -222,9 +254,7 @@ export async function main(): Promise<void> {
     `open ${open.length} · targets ok ${meta.totals.targetsOk}/${meta.totals.targets} · ${fetcher.requests} requests · ${Math.round(meta.runDurationMs / 1000)}s`,
   );
   console.log(dataChanged ? "data changed" : "no data change");
-  if (process.env.GITHUB_OUTPUT) {
-    appendFileSync(process.env.GITHUB_OUTPUT, `changed=${dataChanged}\nmessage=${message}\nadded=${diff.added.length}\n`);
-  }
+  return { added: diff.added.length, closed: diff.closed.length, open: open.length, dataChanged, message, runs };
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
