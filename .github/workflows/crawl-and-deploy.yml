@@ -133,9 +133,20 @@ jobs:
           KEY: 3c277cd06152b8097384b94d3edb0b3b
         run: |
           [ -f indexnow-urls.json ] || exit 0
+          # IndexNow checks the key file on our site, so wait until the new deploy is actually being served.
+          for i in $(seq 1 20); do
+            [ "$(curl -fsS "$SITE/$KEY.txt" 2>/dev/null)" = "$KEY" ] && break
+            echo "Waiting for $SITE/$KEY.txt to go live ($i)…"; sleep 15
+          done
           HOST=$(echo "$SITE" | sed -E 's#^https?://##; s#/.*$##')
           jq -n --arg host "$HOST" --arg key "$KEY" --arg loc "$SITE/$KEY.txt" --slurpfile urls indexnow-urls.json \
             '{host: $host, key: $key, keyLocation: $loc, urlList: $urls[0]}' > body.json
           echo "Submitting $(jq '.urlList | length' body.json) URLs"
-          curl -sS -o /dev/null -w "IndexNow: HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
-            -H "content-type: application/json; charset=utf-8" --data @body.json
+          for attempt in 1 2; do
+            code=$(curl -sS -o resp.txt -w "%{http_code}" -X POST https://api.indexnow.org/indexnow \
+              -H "content-type: application/json; charset=utf-8" --data @body.json)
+            echo "IndexNow: HTTP $code $(cat resp.txt)"
+            case "$code" in 200|202) exit 0 ;; esac
+            sleep 60
+          done
+          echo "::warning::IndexNow did not accept the submission (HTTP $code)"
