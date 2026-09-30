@@ -1,30 +1,7 @@
 {
-  "generatedAt": "2026-09-30T07:46:21.299Z",
+  "generatedAt": "2026-09-30T16:00:25.010Z",
   "note": "Candidates only. Nothing here is crawled until a human copies an approved URL into companies.json via PR.",
   "domains": [
-    {
-      "domain": "99x.io",
-      "website": "https://99x.io",
-      "companies": [
-        "99x"
-      ],
-      "candidates": [
-        {
-          "url": "https://99x.io/careers",
-          "score": 10,
-          "evidence": [
-            "homepage link \"Careers\"",
-            "common path /careers → 200",
-            "common path /careers/ → 200"
-          ],
-          "status": 200,
-          "title": "Careers - Boost your digital potential",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
-      "errors": []
-    },
     {
       "domain": "acl.lk",
       "website": "https://www.acl.lk",
@@ -141,12 +118,15 @@
         },
         {
           "url": "https://careers.amanabank.lk/",
-          "score": 4,
+          "score": 7,
           "evidence": [
             "homepage link \"Current Vacancies\"",
-            "homepage link \"Careers\"",
-            "fetch failed: robots.txt disallows"
-          ]
+            "homepage link \"Careers\""
+          ],
+          "status": 200,
+          "title": "Vacancies Careers | Amana Bank PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
         },
         {
           "url": "https://www.amanabank.lk/ta/careers/",
@@ -178,15 +158,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.amanatakaful.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -297,15 +269,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.ashokleyland.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -316,15 +280,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.asiaasset.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -443,15 +399,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.bpl.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -471,15 +419,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.capitalalliance.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -650,15 +590,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.chevronlubricants.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -689,23 +621,10 @@
       "companies": [
         "citrus-leisure"
       ],
-      "candidates": [
-        {
-          "url": "https://citrusleisure.com/careers/",
-          "score": 16,
-          "evidence": [
-            "homepage link \"Careers\"",
-            "common path /careers → 200 (/careers/)",
-            "common path /career → 200 (/careers/)",
-            "common path /careers/ → 200"
-          ],
-          "status": 200,
-          "title": "Careers at Citrus Leisure | Hospitality Jobs in Sri Lanka",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
-      "errors": []
+      "candidates": [],
+      "errors": [
+        "homepage: The operation was aborted due to timeout"
+      ]
     },
     {
       "domain": "combank.lk",
@@ -734,89 +653,8 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.comcredit.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
-    },
-    {
-      "domain": "creativesoftware.com",
-      "website": "https://www.creativesoftware.com",
-      "companies": [
-        "creative-software"
-      ],
-      "candidates": [
-        {
-          "url": "https://www.creativesoftware.com/careers",
-          "score": 20,
-          "evidence": [
-            "homepage link \"Careers\"",
-            "sitemap entry in /sitemap.xml",
-            "common path /careers → 200",
-            "common path /careers/ → 200 (/careers)"
-          ],
-          "status": 200,
-          "title": "We are Hiring | Let's build the next big thing in tech",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://www.creativesoftware.com/se/careers/associate-technical-lead-lead-ui-ux-engineer-ref-3300",
-          "score": 4,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ]
-        },
-        {
-          "url": "https://www.creativesoftware.com/careers/associate-technical-lead-ref1044",
-          "score": 4,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ]
-        },
-        {
-          "url": "https://www.creativesoftware.com/se/careers/associate-technical-lead-ref1044",
-          "score": 4,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ]
-        },
-        {
-          "url": "https://www.creativesoftware.com/careers/business-development-and-digital-marketing-intern",
-          "score": 4,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ]
-        },
-        {
-          "url": "https://www.creativesoftware.com/se/careers/business-development-and-digital-marketing-intern",
-          "score": 4,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ]
-        },
-        {
-          "url": "https://www.creativesoftware.com/careers/data-engineer-ref7025",
-          "score": 4,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ]
-        },
-        {
-          "url": "https://www.creativesoftware.com/se/careers/data-engineer-ref7025",
-          "score": 4,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ]
-        }
-      ],
-      "errors": []
     },
     {
       "domain": "cryptoworth.com",
@@ -844,15 +682,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.dcs.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -974,11 +804,21 @@
           "title": "Bot Verification",
           "jsonLdJobPostings": 0,
           "ats": []
+        },
+        {
+          "url": "https://www.ebcreasy.com/join-us",
+          "score": 2,
+          "evidence": [
+            "common path /join-us → 200"
+          ],
+          "status": 200,
+          "title": "Bot Verification",
+          "jsonLdJobPostings": 0,
+          "ats": []
         }
       ],
       "errors": [
         "/jobs: robots.txt disallows",
-        "/join-us: HTTP 403",
         "/work-with-us: HTTP 403",
         "/vacancies: HTTP 403"
       ]
@@ -1042,62 +882,6 @@
       "errors": []
     },
     {
-      "domain": "flatrocktech.com",
-      "website": "https://www.flatrocktech.com",
-      "companies": [
-        "flat-rock-technology"
-      ],
-      "candidates": [
-        {
-          "url": "https://flatrocktech.com/careers",
-          "score": 15,
-          "evidence": [
-            "homepage link \"Careers\"",
-            "homepage link \"Open Positions0\"",
-            "common path /careers → 200",
-            "common path /careers/ → 200 (/careers)"
-          ],
-          "status": 200,
-          "title": "Join Flat Rock Technology | Careers",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
-      "errors": []
-    },
-    {
-      "domain": "fortude.co",
-      "website": "https://fortude.co",
-      "companies": [
-        "fortude"
-      ],
-      "candidates": [
-        {
-          "url": "https://careers.fortude.co/",
-          "score": 6,
-          "evidence": [
-            "homepage link \"Explore Jobs\""
-          ],
-          "status": 200,
-          "title": "Fortude",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://fortude.co/our-people",
-          "score": 3,
-          "evidence": [
-            "homepage link \"Careers at Fortude\""
-          ],
-          "status": 200,
-          "title": "Our People | Fortude",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
-      "errors": []
-    },
-    {
       "domain": "galadarihotel.lk",
       "website": "https://www.galadarihotel.lk",
       "companies": [
@@ -1105,15 +889,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.galadarihotel.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -1124,25 +900,6 @@
       ],
       "candidates": [],
       "errors": []
-    },
-    {
-      "domain": "hcltech.com",
-      "website": "https://www.hcltech.com",
-      "companies": [
-        "hcltech"
-      ],
-      "candidates": [],
-      "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.hcltech.com/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
-      ]
     },
     {
       "domain": "hdfc.lk",
@@ -1310,25 +1067,6 @@
         }
       ],
       "errors": []
-    },
-    {
-      "domain": "ifs.com",
-      "website": "https://www.ifs.com",
-      "companies": [
-        "ifs"
-      ],
-      "candidates": [],
-      "errors": [
-        "homepage: HTTP 429",
-        "sitemap https://www.ifs.com/sitemap.xml: HTTP 429",
-        "/careers: HTTP 429",
-        "/career: HTTP 429",
-        "/careers/: HTTP 429",
-        "/jobs: HTTP 429",
-        "/join-us: HTTP 429",
-        "/work-with-us: HTTP 429",
-        "/vacancies: HTTP 429"
-      ]
     },
     {
       "domain": "janashakthi.com",
@@ -1520,18 +1258,23 @@
       "companies": [
         "kelani-cables"
       ],
-      "candidates": [],
-      "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.kelanicables.com/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
-      ]
+      "candidates": [
+        {
+          "url": "https://kelanicables.com/careers",
+          "score": 23,
+          "evidence": [
+            "homepage link \"Careers\"",
+            "sitemap entry in /sitemap.xml",
+            "common path /careers → 200",
+            "common path /careers/ → 200"
+          ],
+          "status": 200,
+          "title": "Kelani Cables PLC",
+          "jsonLdJobPostings": 0,
+          "ats": []
+        }
+      ],
+      "errors": []
     },
     {
       "domain": "kelanityres.com",
@@ -1541,15 +1284,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.kelanityres.com/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -1582,15 +1317,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.lankaceramic.com/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -1636,15 +1363,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.lankamilkfoods.com/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -1799,90 +1518,6 @@
       "errors": []
     },
     {
-      "domain": "lseg.com",
-      "website": "https://www.lseg.com",
-      "companies": [
-        "lseg"
-      ],
-      "candidates": [
-        {
-          "url": "https://www.lseg.com/en/careers",
-          "score": 15,
-          "evidence": [
-            "homepage link \"Explore our job opportunities\"",
-            "homepage link \"Careers\"",
-            "sitemap entry in /en/sitemap-index.xml",
-            "common path /careers → 200 (/en/careers)",
-            "common path /careers/ → 200 (/en/careers)"
-          ],
-          "status": 200,
-          "title": "Careers | LSEG",
-          "jsonLdJobPostings": 0,
-          "ats": [
-            "workday:lseg/wd3/Careers"
-          ]
-        },
-        {
-          "url": "https://www.lseg.com/en/data-analytics/investment-banking/lpc/podcast/lending-lowdown/episode-23-opportunities-in-digital-assets-financing",
-          "score": 3,
-          "evidence": [
-            "sitemap entry in /en/sitemap-index.xml"
-          ],
-          "status": 200,
-          "title": "Opportunities in Digital Assets Financing | Data Analytics",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://www.lseg.com/en/data-analytics/investment-banking/lpc/podcast/lending-lowdown/episode-18-opportunities-in-the-lower-middle-market",
-          "score": 3,
-          "evidence": [
-            "sitemap entry in /en/sitemap-index.xml"
-          ],
-          "status": 200,
-          "title": "Opportunities in the Lower Middle Market | Data Analytics",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://www.lseg.com/en/data-analytics/investment-banking/lpc/podcast/lending-lowdown/episode-36-non-sponsored-lending-opportunities-in-the-european-mid-market",
-          "score": 2,
-          "evidence": [
-            "sitemap entry in /en/sitemap-index.xml"
-          ]
-        },
-        {
-          "url": "https://www.lseg.com/en/data-analytics/market-data/report-financial-data-universe-exploring-challenges-opportunities",
-          "score": 2,
-          "evidence": [
-            "sitemap entry in /en/sitemap-index.xml"
-          ]
-        },
-        {
-          "url": "https://www.lseg.com/en/careers/graduate-internship-programmes",
-          "score": 2,
-          "evidence": [
-            "sitemap entry in /en/sitemap-index.xml"
-          ]
-        },
-        {
-          "url": "https://www.lseg.com/en/careers/graduate-internship-programmes/graduate-programmes",
-          "score": 2,
-          "evidence": [
-            "sitemap entry in /en/sitemap-index.xml"
-          ]
-        },
-        {
-          "url": "https://www.lseg.com/en/careers/graduate-internship-programmes/internship-programmes",
-          "score": 2,
-          "evidence": [
-            "sitemap entry in /en/sitemap-index.xml"
-          ]
-        }
-      ],
-      "errors": []
-    },
-    {
       "domain": "mahawelireach.com",
       "website": "https://www.mahawelireach.com",
       "companies": [
@@ -1890,15 +1525,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.mahawelireach.com/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -1909,15 +1536,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.mbsl.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -1928,15 +1547,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.mi.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -1947,15 +1558,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.nawaloka.com/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -1966,15 +1569,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.odel.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -1993,27 +1588,6 @@
         "panasian-power"
       ],
       "candidates": [],
-      "errors": []
-    },
-    {
-      "domain": "pearson.com",
-      "website": "https://www.pearson.com",
-      "companies": [
-        "pearson"
-      ],
-      "candidates": [
-        {
-          "url": "https://www.pearson.com/work.html",
-          "score": 3,
-          "evidence": [
-            "homepage link \"Workforce & Career Development\""
-          ],
-          "status": 200,
-          "title": "For Work | Pearson",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
       "errors": []
     },
     {
@@ -2303,23 +1877,6 @@
       "errors": []
     },
     {
-      "domain": "rootcode.io",
-      "website": "https://rootcode.io",
-      "companies": [
-        "rootcode"
-      ],
-      "candidates": [
-        {
-          "url": "https://rootcode.ai/careers",
-          "score": 2,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ]
-        }
-      ],
-      "errors": []
-    },
-    {
       "domain": "sdb.lk",
       "website": "https://www.sdb.lk",
       "companies": [
@@ -2426,15 +1983,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.serendibhotels.com/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -2468,15 +2017,7 @@
       ],
       "candidates": [],
       "errors": [
-        "homepage: robots.txt disallows",
-        "sitemap https://www.singerfinance.lk/sitemap.xml: robots.txt disallows",
-        "/careers: robots.txt disallows",
-        "/career: robots.txt disallows",
-        "/careers/: robots.txt disallows",
-        "/jobs: robots.txt disallows",
-        "/join-us: robots.txt disallows",
-        "/work-with-us: robots.txt disallows",
-        "/vacancies: robots.txt disallows"
+        "homepage: robots.txt disallows"
       ]
     },
     {
@@ -2567,108 +2108,6 @@
           ],
           "status": 200,
           "title": "Snapdrum - AI Systems & Agents That Actually Deliver",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
-      "errors": []
-    },
-    {
-      "domain": "surge.global",
-      "website": "https://surge.global",
-      "companies": [
-        "surge-global"
-      ],
-      "candidates": [
-        {
-          "url": "https://surge.global/careers/",
-          "score": 18,
-          "evidence": [
-            "homepage link \"Careers\"",
-            "sitemap entry in /page-sitemap.xml",
-            "common path /careers → 200 (/careers/)",
-            "common path /career → 200 (/careers/)",
-            "common path /careers/ → 200"
-          ],
-          "status": 200,
-          "title": "Careers At Surge - Surge Global",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
-      "errors": []
-    },
-    {
-      "domain": "syscolabs.lk",
-      "website": "https://syscolabs.lk",
-      "companies": [
-        "sysco-labs"
-      ],
-      "candidates": [
-        {
-          "url": "https://syscolabs.lk/careers",
-          "score": 4,
-          "evidence": [
-            "common path /careers → 200",
-            "common path /careers/ → 200"
-          ],
-          "status": 200,
-          "title": "Sysco LABS Sri Lanka",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://syscolabs.lk/career",
-          "score": 2,
-          "evidence": [
-            "common path /career → 200"
-          ],
-          "status": 200,
-          "title": "Sysco LABS Sri Lanka",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://syscolabs.lk/jobs",
-          "score": 2,
-          "evidence": [
-            "common path /jobs → 200"
-          ],
-          "status": 200,
-          "title": "Sysco LABS Sri Lanka",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://syscolabs.lk/join-us",
-          "score": 2,
-          "evidence": [
-            "common path /join-us → 200"
-          ],
-          "status": 200,
-          "title": "Sysco LABS Sri Lanka",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://syscolabs.lk/work-with-us",
-          "score": 2,
-          "evidence": [
-            "common path /work-with-us → 200"
-          ],
-          "status": 200,
-          "title": "Sysco LABS Sri Lanka",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://syscolabs.lk/vacancies",
-          "score": 2,
-          "evidence": [
-            "common path /vacancies → 200"
-          ],
-          "status": 200,
-          "title": "Sysco LABS Sri Lanka",
           "jsonLdJobPostings": 0,
           "ats": []
         }
@@ -2879,52 +2318,6 @@
       "errors": []
     },
     {
-      "domain": "wso2.com",
-      "website": "https://wso2.com",
-      "companies": [
-        "wso2"
-      ],
-      "candidates": [
-        {
-          "url": "https://wso2.com/careers/",
-          "score": 18,
-          "evidence": [
-            "homepage link \"Careers\"",
-            "sitemap entry in /sitemap.xml",
-            "common path /careers → 200",
-            "common path /careers/ → 200 (/careers)"
-          ],
-          "status": 200,
-          "title": "WSO2 Careers",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "http://wso2.com/library/blogs/accelerate-your-career-with-wso2-training-and-certification/",
-          "score": 3,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ],
-          "status": 200,
-          "title": "Accelerate Your Career with WSO2 Training and Certification | WSO2",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "http://wso2.com/library/conference/2025/07/modernising-your-iam-considerations-challenges-and-opportunities/",
-          "score": 3,
-          "evidence": [
-            "sitemap entry in /sitemap.xml"
-          ],
-          "status": 200,
-          "title": "Modernising Your IAM: Considerations, Challenges, and Opportunities | WSO2",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
-      "errors": []
-    },
-    {
       "domain": "zegates.com",
       "website": "https://zegates.com",
       "companies": [
@@ -2943,76 +2336,6 @@
           ],
           "status": 200,
           "title": "Careers | Build with a studio that ships | Zegates",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
-      "errors": []
-    },
-    {
-      "domain": "zone24x7.com",
-      "website": "https://www.zone24x7.com",
-      "companies": [
-        "zone24x7"
-      ],
-      "candidates": [
-        {
-          "url": "https://zone24x7.com/careers/",
-          "score": 23,
-          "evidence": [
-            "homepage link \"Careers\"",
-            "homepage link \"1 More open vacancies\"",
-            "homepage link \"None Available\"",
-            "sitemap entry in /page-sitemap.xml",
-            "common path /careers → 200 (/careers/)",
-            "common path /careers/ → 200"
-          ],
-          "status": 200,
-          "title": "Careers - Zone24x7 Inc",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://zone24x7.com/careers/senior-devops-engineer/",
-          "score": 4,
-          "evidence": [
-            "homepage link \"SDOE Senior DevOps Engineer Full Time Co\"",
-            "sitemap entry in /careers-sitemap.xml"
-          ],
-          "status": 200,
-          "title": "Senior DevOps Engineer - Zone24x7 Inc",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        },
-        {
-          "url": "https://zone24x7.com/partners/",
-          "score": 3,
-          "evidence": [
-            "homepage link \"Join Us\""
-          ],
-          "status": 200,
-          "title": "Partner With us - Zone24x7 Inc",
-          "jsonLdJobPostings": 0,
-          "ats": []
-        }
-      ],
-      "errors": []
-    },
-    {
-      "domain": "zyner.io",
-      "website": "https://zyner.io",
-      "companies": [
-        "zyner-io"
-      ],
-      "candidates": [
-        {
-          "url": "https://careers.zyner.io/",
-          "score": 10,
-          "evidence": [
-            "homepage link \"Careers\""
-          ],
-          "status": 200,
-          "title": "Careers at Zyner.io | Build, Create, and Grow with Top Startups",
           "jsonLdJobPostings": 0,
           "ats": []
         }
