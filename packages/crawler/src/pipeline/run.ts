@@ -152,6 +152,7 @@ export async function runCrawl(opts: CrawlOptions = {}): Promise<CrawlSummary> {
               config,
               validators: httpCache[target.id],
               log: (m) => console.log(`  [${target.id}] ${m}`),
+              now: Date.parse(now),
             }),
             TARGET_TIMEOUT_MS,
             target.id,

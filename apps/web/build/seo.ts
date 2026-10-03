@@ -456,6 +456,7 @@ ${table(
     ["/saved/", "Saved jobs"],
     ["/settings/", "Settings"],
     ["/onboarding/", "Choose your fields"],
+    ["/status/", "System status"],
   ] as const) {
     pages.push({
       title: `${title} · ${SITE_NAME}`,

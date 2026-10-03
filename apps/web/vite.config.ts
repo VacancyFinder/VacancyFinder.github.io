@@ -50,7 +50,7 @@ export default defineConfig({
         runtimeCaching: [
           {
             // Sync status: always ask the network first so the app sees a new 3-hourly sync straight away.
-            urlPattern: ({ url }) => /\/data\/(meta|directory)\.json$/.test(url.pathname),
+            urlPattern: ({ url }) => /\/data\/(meta|directory|health)\.json$/.test(url.pathname),
             handler: "NetworkFirst",
             options: { cacheName: "rekiya-meta", networkTimeoutSeconds: 4 },
           },
