@@ -24,6 +24,8 @@ export interface AdapterContext {
   /** Validators from the last successful run, for If-None-Match / If-Modified-Since. */
   validators?: CacheValidators;
   log: (msg: string) => void;
+  /** The crawl's clock (ms) for closing-date checks, so a run — and its tests — use one consistent "now". */
+  now?: number;
 }
 
 export interface AdapterResult {
