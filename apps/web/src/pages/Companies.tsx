@@ -94,8 +94,9 @@ export function Companies() {
         coming soon.
       </p>
 
-      <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-        <div className="relative flex-1">
+      {/* Phones: stacked. Tablets: search on its own row, sort + filter below. Wide screens: one row. */}
+      <div className="mt-4 grid gap-3 sm:grid-cols-[auto_minmax(0,1fr)] lg:flex">
+        <div className="relative sm:col-span-2 lg:flex-1">
           <label htmlFor="cq" className="sr-only">
             Search companies
           </label>
@@ -119,23 +120,27 @@ export function Companies() {
             <option value="az">A–Z</option>
           </select>
         </div>
-        <div role="radiogroup" aria-label="Show" className="flex overflow-hidden rounded-lg border border-slate-300 dark:border-slate-700">
+        <div
+          role="radiogroup"
+          aria-label="Show"
+          className="grid grid-cols-3 overflow-hidden rounded-lg border border-slate-300 dark:border-slate-700 sm:flex lg:shrink-0"
+        >
           {(
             [
-              ["all", `All (${counts.all})`],
-              ["tracked", `Tracked (${counts.tracked})`],
-              ["soon", `Coming soon (${counts.soon})`],
+              ["all", "All", counts.all],
+              ["tracked", "Tracked", counts.tracked],
+              ["soon", "Coming soon", counts.soon],
             ] as const
-          ).map(([v, label]) => (
+          ).map(([v, label, n]) => (
             <button
               key={v}
               type="button"
               role="radio"
               aria-checked={show === v}
               onClick={() => set("show", v)}
-              className={`min-h-[44px] flex-1 whitespace-nowrap px-3 text-sm font-medium ${show === v ? "bg-brand-800 text-white dark:bg-brand-300 dark:text-brand-950" : "bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300"}`}
+              className={`flex min-h-[44px] min-w-0 flex-1 flex-col items-center justify-center px-2 py-1 text-sm font-medium leading-tight sm:min-w-max sm:flex-auto sm:flex-row sm:gap-1 sm:whitespace-nowrap sm:px-3 ${show === v ? "bg-brand-800 text-white dark:bg-brand-300 dark:text-brand-950" : "bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300"}`}
             >
-              {label}
+              <span>{label}</span> <span className={show === v ? "" : "text-slate-500 dark:text-slate-400"}>({n})</span>
             </button>
           ))}
         </div>
@@ -156,9 +161,9 @@ export function Companies() {
             {ind ? INDUSTRY_LABELS[ind] : sort === "jobs" ? "Most open jobs" : "A–Z"}{" "}
             <span className="font-normal text-slate-600 dark:text-slate-400">({cs.length})</span>
           </h2>
-          <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {cs.map((c) => (
-              <li key={c.slug}>
+              <li key={c.slug} className="min-w-0">
                 <Link to={`/companies/${c.slug}`} className="card card-hover flex min-h-[72px] items-center gap-3 p-3">
                   <CompanyBadge slug={c.slug} name={c.name} size="sm" />
                   <span className="min-w-0 flex-1">
@@ -168,7 +173,7 @@ export function Companies() {
                         (c.sourceLists.includes("tech") ? "Tech" : "")}
                     </span>
                   </span>
-                  <span className="flex flex-col items-end gap-1">
+                  <span className="flex max-w-[45%] shrink-0 flex-col items-end gap-1 text-right">
                     <Status c={c} />
                     {jobsFor(c) > 0 && <span className="text-xs font-semibold text-brand-800 dark:text-brand-300">{jobsFor(c)} open</span>}
                   </span>
