@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-05T18:58:17.747Z",
-  "runDurationMs": 141231,
+  "generatedAt": "2026-10-05T21:58:49.089Z",
+  "runDurationMs": 124559,
   "totals": {
-    "open": 396,
+    "open": 391,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 27
@@ -15,15 +15,15 @@
     "data-ai-ml": 37,
     "digital-graphics": 4,
     "engineering-manufacturing": 26,
-    "finance-accounting": 45,
+    "finance-accounting": 44,
     "hospitality-tourism": 7,
-    "human-resource": 20,
+    "human-resource": 19,
     "legal-compliance": 17,
     "operations-logistics": 42,
-    "other": 17,
+    "other": 16,
     "product-project-business": 24,
     "qa-testing": 18,
-    "sales-marketing": 56,
+    "sales-marketing": 54,
     "software-engineering": 54,
     "ui-ux-design": 3
   },
@@ -37,13 +37,13 @@
     "citizens-development-business-finance": 13,
     "creative-software": 9,
     "dialog": 1,
-    "dialog-axiata": 31,
+    "dialog-axiata": 29,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
     "fortude": 20,
-    "hayleys-group": 87,
+    "hayleys-group": 85,
     "john-keells-hotels": 3,
-    "keells": 30,
+    "keells": 29,
     "keells-food-products": 1,
     "lanka-ioc": 2,
     "lseg": 26,
@@ -60,25 +60,25 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 44,
-    "junior": 20,
+    "intern": 42,
+    "junior": 19,
     "lead": 51,
     "manager": 70,
     "principal": 11,
     "senior": 64,
     "trainee": 8,
-    "unspecified": 128
+    "unspecified": 126
   },
   "byIndustry": {
     "automotive": 1,
     "banking": 19,
     "consumer-goods-retail": 2,
-    "diversified": 126,
+    "diversified": 123,
     "energy": 2,
     "financial-services": 20,
     "food-beverage-tobacco": 1,
     "hotels-leisure": 3,
     "technology": 190,
-    "telecommunications": 32
+    "telecommunications": 30
   }
 }
