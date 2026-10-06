@@ -127,6 +127,25 @@ describe("prerendered site", () => {
   const pages = buildPages(inp);
   const byPath = new Map(pages.map((p) => [p.path, p]));
 
+  it("has an internships landing page that is empty-safe and indexable once there are internships", () => {
+    const p = byPath.get("/internships/")!;
+    expect(p.title).toMatch(/^Internships in Sri Lanka \d{4} — Open Internships & Trainee Jobs \| Rekiya$/);
+    expect(p.noindex).toBe(true); // the fixture has no internships
+    const jobs2 = [
+      ...inp.jobs,
+      job({ id: "bb" + job().id.slice(2), title: "Software Engineering Intern", seniority: "intern", type: "internship" }),
+    ] as unknown as SharedJob[];
+    const withIntern = buildPages({ ...inp, jobs: jobs2 });
+    const ip = withIntern.find((x) => x.path === "/internships/")!;
+    expect(ip.noindex).toBe(false);
+    expect(ip.title).toContain("— 1 Open Internships");
+    expect(ip.body).toContain("Software Engineering Intern");
+    expect(ip.body).not.toContain("Senior QA Engineer");
+    expect(JSON.stringify(ip.jsonLd)).toContain('"@type":"FAQPage"');
+    expect(sitemapXml(SITE, withIntern)).toContain(`<loc>${SITE}/internships/</loc>`);
+    expect(llmsTxt({ ...inp, jobs: jobs2 }, withIntern)).toContain(`[Internships in Sri Lanka](${SITE}/internships/): 1 open internships`);
+  });
+
   it("builds a page per open job, field and company — closed jobs get none", () => {
     expect(byPath.has("/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e/")).toBe(true);
     expect([...byPath.keys()].some((p) => p.includes("closed-role"))).toBe(false);

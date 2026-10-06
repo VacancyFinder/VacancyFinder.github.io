@@ -255,6 +255,11 @@ export function Layout() {
                 </NavLink>
               </li>
               <li>
+                <NavLink to="/internships/" className="link font-normal">
+                  Internships in Sri Lanka
+                </NavLink>
+              </li>
+              <li>
                 <NavLink to="/companies/" className="link font-normal">
                   Companies
                 </NavLink>

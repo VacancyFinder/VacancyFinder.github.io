@@ -45,6 +45,10 @@ export const matchesJobKey = (id: string, key: string) => (key.length === 40 ? i
 
 export const fieldPath = (f: FieldSlug) => `/jobs/${f}/`;
 export const companyPath = (slug: string) => `/companies/${slug}/`;
+export const INTERNSHIPS_PATH = "/internships/";
+/** Internships, traineeships and intern-level roles: what someone searching "internships in Sri Lanka" wants. */
+export const isInternship = (j: { type: string; seniority: string }) =>
+  j.type === "internship" || j.seniority === "intern" || j.seniority === "trainee";
 export const isFieldSlug = (s: string | undefined): s is FieldSlug => !!s && (FIELD_SLUGS as readonly string[]).includes(s);
 
 /** Absolute canonical URL for a path. */
@@ -112,6 +116,13 @@ export const COMPANIES_META = (n: number): PageMeta => ({
   title: `Companies Hiring in Sri Lanka — ${n} Employers | ${SITE_NAME}`,
   description: clip(
     `Directory of ${n} Sri Lankan employers — every CSE-listed company plus leading tech firms — with links to their career pages and current open jobs.`,
+  ),
+});
+
+export const INTERNSHIPS_META = (n: number): PageMeta => ({
+  title: `Internships in Sri Lanka ${new Date().getFullYear()} — ${n ? `${n} ` : ""}Open Internships & Trainee Jobs | ${SITE_NAME}`,
+  description: clip(
+    `${n ? `${n} ` : ""}internships and trainee jobs in Sri Lanka from company career pages — IT, software, finance, marketing, engineering & more. Updated every 3 hours.`,
   ),
 });
 

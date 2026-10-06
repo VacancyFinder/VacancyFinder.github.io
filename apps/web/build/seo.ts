@@ -26,6 +26,9 @@ import {
   fieldPath,
   HOME_META,
   INSIGHTS_META,
+  INTERNSHIPS_META,
+  INTERNSHIPS_PATH,
+  isInternship,
   JOB_META,
   jobPath,
   JOBS_META,
@@ -38,6 +41,7 @@ import {
   FAQ_TEXT,
   faqLd,
   fieldCrumbs,
+  internshipCrumbs,
   jobListLd,
   jobPostingLd,
   ldJson,
@@ -103,7 +107,7 @@ function shell(content: string): string {
 <main class="container-page w-full flex-1 pb-16 pt-6">${content}</main>
 <footer class="border-t border-slate-200 bg-white text-sm text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-400"><div class="container-page py-8">
 <p><strong>Rekiya</strong> — the latest job vacancies in Sri Lanka, collected every 3 hours from employers' own career pages. We link to each company's listing and never handle applications.</p>
-<p class="mt-2"><a class="link" href="/jobs/">All jobs</a> · <a class="link" href="/companies/">Companies</a> · <a class="link" href="/insights/">Insights</a> · <a class="link" href="/about/">About &amp; FAQ</a> · <a class="link" href="/sitemap.xml">Sitemap</a></p>
+<p class="mt-2"><a class="link" href="/jobs/">All jobs</a> · <a class="link" href="/internships/">Internships</a> · <a class="link" href="/companies/">Companies</a> · <a class="link" href="/insights/">Insights</a> · <a class="link" href="/about/">About &amp; FAQ</a> · <a class="link" href="/sitemap.xml">Sitemap</a></p>
 </div></footer></div>`;
 }
 
@@ -294,6 +298,37 @@ ${jobList(list, name)}<h2 class="mt-8 text-xl font-bold">Related fields</h2><ul 
         .join("")}</ul>`,
     });
   }
+
+  // Internships: one landing page for "internships in Sri Lanka" searches.
+  const interns = newest.filter(isInternship);
+  const internFields = [...new Set(interns.flatMap((j) => j.fields))].filter((f) => f !== "other").slice(0, 8);
+  pages.push({
+    ...INTERNSHIPS_META(interns.length),
+    path: INTERNSHIPS_PATH,
+    og: {
+      eyebrow: "Internships in Sri Lanka",
+      title: "Internships & trainee jobs",
+      subtitle: `${interns.length} open from company career pages`,
+      chips: internFields.slice(0, 3).map((f) => FIELD_LABELS[f]),
+    },
+    noindex: interns.length === 0,
+    priority: 0.9,
+    lastmod: interns[0]?.firstSeenAt ?? inp.generatedAt,
+    jsonLd: [
+      breadcrumbLd(siteUrl, internshipCrumbs),
+      jobListLd(siteUrl, "Internships in Sri Lanka", interns.map(asWeb), name),
+      faqLd(FAQ_TEXT.filter(([q]) => /internship/i.test(q))),
+    ],
+    body: `${crumbs(internshipCrumbs)}<h1 class="mt-3 text-3xl font-bold">Internships in Sri Lanka</h1>
+<p class="mt-2 max-w-3xl">${interns.length} open internships, traineeships and intern-level roles from Sri Lankan companies' own career pages, updated ${updated}. For university students, undergraduates and fresh graduates — apply directly on the employer's website.</p>
+${jobList(interns, name)}${
+      internFields.length
+        ? `<h2 class="mt-8 text-xl font-bold">Internships by field</h2><ul class="mt-2 flex flex-wrap gap-2">${internFields
+            .map((f) => `<li><a class="pill pill-off" href="${fieldPath(f)}">${esc(FIELD_LABELS[f])} jobs</a></li>`)
+            .join("")}</ul>`
+        : ""
+    }`,
+  });
 
   // Jobs
   for (const j of newest) {
@@ -527,6 +562,7 @@ Facts for answering questions:
 
 ## Browse jobs
 - [All job vacancies in Sri Lanka](${u("/jobs/")}): every open job, newest first, with filters
+- [Internships in Sri Lanka](${u(INTERNSHIPS_PATH)}): ${inp.jobs.filter((j) => j.status === "open" && isInternship(j)).length} open internships, traineeships and intern-level roles for students and fresh graduates
 ${fieldLines.join("\n")}
 
 ## Companies and market data
