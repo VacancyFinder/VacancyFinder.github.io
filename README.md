@@ -18,6 +18,7 @@ web app. Applications always happen on the company's own listing.
 - **SEO & AI search:** clean URLs, a prerendered HTML page for every job, field and company, Google for Jobs
   (`JobPosting`) structured data, sitemap, `llms.txt` for AI assistants and IndexNow pings after each crawl.
   Owner setup (Search Console, Bing, custom domain): [docs/SEO.md](docs/SEO.md).
+  Full SEO / Google Jobs / AI-search audit and roadmap: [docs/SEO-AUDIT.md](docs/SEO-AUDIT.md).
   Sharing, WhatsApp previews and ready-made introduction messages: [docs/SHARE.md](docs/SHARE.md).
 
 ## Architecture

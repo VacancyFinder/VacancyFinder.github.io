@@ -132,6 +132,7 @@ export function rekiyaData(dataDir: string): Plugin {
         ...d,
         verify: { google: process.env.GOOGLE_SITE_VERIFICATION || GOOGLE_SITE_VERIFICATION, bing: process.env.BING_SITE_VERIFICATION },
         indexNowFile: resolve(root, ".seo/indexnow-urls.json"),
+        googleIndexingFile: resolve(root, ".seo/google-indexing.json"),
       });
       console.log(
         `rekiya-data: ${d.jobs.length} jobs, ${seo.pages} pages (${seo.indexed} indexable), ${seo.images} preview images → ${outDir}`,

@@ -1,18 +1,21 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { FIELD_LABELS, type FieldSlug } from "@rekiya/shared/constants";
+import { Breadcrumbs } from "../components/Breadcrumbs";
 import { JobList } from "../components/JobList";
 import { JobListSkeleton } from "../components/Skeleton";
 import { useData, useJobs } from "../lib/data";
 import { sortNewest } from "../lib/filters";
-import { relativeTime } from "../lib/format";
-import { fieldPath, INTERNSHIPS_META, INTERNSHIPS_PATH, isInternship } from "../lib/paths";
+import { fieldPath, INTERNSHIPS_INTRO, INTERNSHIPS_META, INTERNSHIPS_PATH, isInternship } from "../lib/paths";
 import { SITE_URL, useSeo } from "../lib/seo";
 import { breadcrumbLd, FAQ_TEXT, faqLd, internshipCrumbs, jobListLd } from "../lib/structured-data";
 
-/** Landing page for "internships in Sri Lanka": internships, traineeships and intern-level roles. */
+/**
+ * Landing page for "internships in Sri Lanka": internships, traineeships and intern-level roles.
+ * Above the list, the markup matches the prerendered page exactly, so nothing moves when the app takes over.
+ */
 export function Internships() {
-  const { meta, employer } = useData();
+  const { employer } = useData();
   const { jobs, error } = useJobs("all");
   const list = useMemo(() => sortNewest((jobs ?? []).filter(isInternship)), [jobs]);
 
@@ -35,12 +38,9 @@ export function Internships() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Internships in Sri Lanka</h1>
-      <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">
-        {jobs ? `${list.length} open` : "Open"} internships, traineeships and intern-level roles from Sri Lankan companies' own career pages
-        {meta ? `, updated ${relativeTime(meta.generatedAt)}` : ""}. For university students, undergraduates and fresh graduates — you apply
-        directly on the employer's website.
-      </p>
+      <Breadcrumbs items={internshipCrumbs} />
+      <h1 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">Internships in Sri Lanka</h1>
+      <p className="mt-2 max-w-3xl text-slate-700 dark:text-slate-300">{INTERNSHIPS_INTRO}</p>
       <p className="mt-3 text-sm">
         <Link to="/jobs/?type=internship" className="link">
           Search and filter internships
@@ -51,27 +51,8 @@ export function Internships() {
         </Link>
       </p>
 
-      {byField.length > 0 && (
-        <section aria-labelledby="by-field-h" className="mt-6">
-          <h2 id="by-field-h" className="sr-only">
-            Internships by field
-          </h2>
-          <ul className="flex flex-wrap gap-2">
-            {byField.map(([f, n]) => (
-              <li key={f}>
-                <Link to={fieldPath(f)} className="pill pill-off">
-                  {FIELD_LABELS[f]} <span className="muted">{n}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      <section aria-labelledby="list-h" className="mt-6">
-        <h2 id="list-h" className="sr-only">
-          Open internships
-        </h2>
+      <h2 className="mt-6 text-xl font-bold">Open internships</h2>
+      <div className="mt-3">
         {error && <p role="alert">Internships couldn't be loaded ({error}).</p>}
         {!jobs && !error && <JobListSkeleton rows={4} />}
         {jobs && list.length === 0 && (
@@ -84,7 +65,24 @@ export function Internships() {
           </p>
         )}
         <JobList jobs={list} className="xl:grid-cols-2" />
-      </section>
+      </div>
+
+      {byField.length > 0 && (
+        <section aria-labelledby="by-field-h" className="mt-8">
+          <h2 id="by-field-h" className="text-xl font-bold">
+            Internships by field
+          </h2>
+          <ul className="mt-2 flex flex-wrap gap-2">
+            {byField.map(([f, n]) => (
+              <li key={f}>
+                <Link to={fieldPath(f)} className="pill pill-off">
+                  {FIELD_LABELS[f]} <span className="muted">{n}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </div>
   );
 }

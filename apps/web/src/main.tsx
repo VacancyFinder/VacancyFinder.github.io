@@ -7,6 +7,7 @@ import { ToastProvider } from "./components/Toast";
 import { AppStateProvider, useApp } from "./lib/app-state";
 import { DataProvider } from "./lib/data";
 import { isFieldSlug } from "./lib/paths";
+import { HOW_IT_WORKS, PRIVACY, TERMS } from "./lib/policies";
 import { Landing, NotFound } from "./pages/Landing";
 import "./index.css";
 
@@ -18,6 +19,8 @@ const Company = lazy(() => import("./pages/Company").then((m) => ({ default: m.C
 const Insights = lazy(() => import("./pages/Insights").then((m) => ({ default: m.Insights })));
 const Onboarding = lazy(() => import("./pages/Onboarding").then((m) => ({ default: m.Onboarding })));
 const Saved = lazy(() => import("./pages/Saved").then((m) => ({ default: m.Saved })));
+const Policy = lazy(() => import("./pages/Policy").then((m) => ({ default: m.Policy })));
+const Location = lazy(() => import("./pages/Location").then((m) => ({ default: m.Location })));
 const Internships = lazy(() => import("./pages/Internships").then((m) => ({ default: m.Internships })));
 const Status = lazy(() => import("./pages/Status").then((m) => ({ default: m.Status })));
 const Settings = lazy(() => import("./pages/Settings").then((m) => ({ default: m.Settings })));
@@ -55,6 +58,10 @@ createRoot(document.getElementById("root")!).render(
                 <Route path="jobs/:field" element={<FieldRoute />} />
                 <Route path="job/:key" element={<JobDetail />} />
                 <Route path="internships" element={<Internships />} />
+                <Route path="locations/:place" element={<Location />} />
+                <Route path="how-it-works" element={<Policy page={HOW_IT_WORKS} />} />
+                <Route path="privacy" element={<Policy page={PRIVACY} />} />
+                <Route path="terms" element={<Policy page={TERMS} />} />
                 <Route path="companies" element={<Companies />} />
                 <Route path="companies/:slug" element={<Company />} />
                 <Route path="insights" element={<Insights />} />

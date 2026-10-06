@@ -157,8 +157,8 @@ export function Landing() {
             Latest job vacancies in Sri Lanka
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-brand-100">
-            Every open job from the career pages of Sri Lankan companies — CSE-listed firms and leading tech employers — in one place,
-            updated every 3 hours and sorted by field and experience level.
+            Fresh Sri Lankan job vacancies from employers' official career pages — CSE-listed firms and leading tech employers — in one
+            place, updated every 3 hours. You apply directly on each employer's site.
           </p>
           <HeroSearch />
           <div className="mt-6 flex flex-wrap gap-3">

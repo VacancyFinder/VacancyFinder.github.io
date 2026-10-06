@@ -260,6 +260,11 @@ export function Layout() {
                 </NavLink>
               </li>
               <li>
+                <NavLink to="/locations/colombo/" className="link font-normal">
+                  Jobs in Colombo
+                </NavLink>
+              </li>
+              <li>
                 <NavLink to="/companies/" className="link font-normal">
                   Companies
                 </NavLink>
@@ -277,6 +282,20 @@ export function Layout() {
               <li>
                 <NavLink to="/about/" className="link font-normal">
                   How it works &amp; FAQ
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/how-it-works/" className="link font-normal">
+                  How Rekiya works &amp; sources
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/privacy/" className="link font-normal">
+                  Privacy
+                </NavLink>
+                {" · "}
+                <NavLink to="/terms/" className="link font-normal">
+                  Terms
                 </NavLink>
               </li>
               <li>
