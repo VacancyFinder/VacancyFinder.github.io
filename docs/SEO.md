@@ -1,5 +1,7 @@
 # SEO, AI search and discoverability
 
+Full audit, competitor analysis, Google Jobs readiness and roadmap: [SEO-AUDIT.md](SEO-AUDIT.md).
+
 What the site does to rank for "jobs in Sri Lanka" searches and to be quoted by AI assistants, and the one-time
 steps only the site owner can take.
 
