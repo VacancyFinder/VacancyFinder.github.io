@@ -239,7 +239,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: indexnow-urls
-          path: apps/web/.seo/indexnow-urls.json
+          path: |
+            apps/web/.seo/indexnow-urls.json
+            apps/web/.seo/google-indexing.json
           include-hidden-files: true
           retention-days: 1
 
@@ -339,6 +341,20 @@ jobs:
             sleep 60
           done
           echo "::warning::IndexNow did not accept the submission (HTTP $code)"
+
+      # Google Indexing API for job pages (new → URL_UPDATED, removed → URL_DELETED). Optional: runs only when the
+      # GOOGLE_INDEXING_KEY secret is set (setup steps in scripts/google-indexing.mjs).
+      - uses: actions/checkout@v4
+        if: needs.crawl-build.outputs.sync == 'ok'
+        with:
+          sparse-checkout: scripts
+          path: repo
+      - name: Notify Google (Indexing API)
+        if: needs.crawl-build.outputs.sync == 'ok'
+        continue-on-error: true
+        env:
+          GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
+        run: node repo/scripts/google-indexing.mjs google-indexing.json
 
   # Always runs: schedules the next sync (or a quick retry after a failure) and makes failures visible.
   next-sync:

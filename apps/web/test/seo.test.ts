@@ -1,9 +1,20 @@
 import { describe, expect, it } from "vitest";
 import type { Company, Job as SharedJob } from "@rekiya/shared";
-import { buildPages, llmsFullTxt, llmsTxt, ogImagePath, renderDocument, robotsTxt, sitemapXml, type SeoInput } from "../build/seo";
+import {
+  buildPages,
+  googleIndexingUrls,
+  llmsFullTxt,
+  llmsTxt,
+  ogImagePath,
+  renderDocument,
+  robotsTxt,
+  sitemapIndexXml,
+  sitemapXml,
+  type SeoInput,
+} from "../build/seo";
 import { fieldFeed } from "../build/feeds";
-import { HOME_META, JOB_META, jobKeyFromParam, jobPath, matchesJobKey, slugify } from "../src/lib/paths";
-import { jobPostingLd, ldJson } from "../src/lib/structured-data";
+import { HOME_META, JOB_META, jobKeyFromParam, jobPath, LOCATION_MIN_JOBS, matchesJobKey, placeSlugsOf, slugify } from "../src/lib/paths";
+import { jobPostingLd, ldJson, organizationLd, websiteLd } from "../src/lib/structured-data";
 import type { Job } from "../src/lib/types";
 
 const SITE = "https://vacancyfinder.github.io";
@@ -56,7 +67,10 @@ describe("clean URLs", () => {
     expect(HOME_META(419, 31).description.length).toBeLessThanOrEqual(160);
     const m = JOB_META(job({ location: "Sri Lanka", snippet: "" }), "WSO2");
     expect(m.description).not.toMatch(/Sri Lanka, Sri Lanka/);
-    expect(m.title).toBe("Senior QA Engineer — WSO2, Sri Lanka | Rekiya");
+    expect(m.title).toBe("Senior QA Engineer at WSO2 — Job in Sri Lanka | Rekiya");
+    expect(m.description).toBe(
+      "Senior QA Engineer job at WSO2, Sri Lanka. Full-time, Senior level. Posted 28 Sept 2026. Apply on WSO2's official careers page.",
+    );
   });
 });
 
@@ -79,6 +93,23 @@ describe("JobPosting", () => {
     const ld = jobPostingLd(SITE, job({ workMode: "remote", location: "Head Office" }), { name: "Acme" }) as unknown as PostingLd;
     expect(ld.jobLocationType).toBe("TELECOMMUTE");
     expect(ld.jobLocation[0]!.address).toEqual({ "@type": "PostalAddress", addressCountry: "LK" });
+  });
+  it("adds industry, uses correct grammar and only claims 0 months' experience for intern/trainee roles", () => {
+    const ld = jobPostingLd(SITE, job({ title: "Account Manager", snippet: "", seniority: "junior" }), {
+      name: "WSO2",
+    }) as unknown as Record<string, unknown>;
+    expect(ld.industry).toBe("Technology");
+    expect(ld.description).toContain("WSO2 is hiring an Account Manager in Sri Lanka.");
+    expect(ld.experienceRequirements).toBeUndefined();
+    const intern = jobPostingLd(SITE, job({ seniority: "intern" }), { name: "WSO2" }) as unknown as Record<string, unknown>;
+    expect(intern.experienceRequirements).toMatchObject({ monthsOfExperience: 0 });
+  });
+  it("describes the site as one entity, without the retired sitelinks search box", () => {
+    const site = websiteLd(SITE);
+    expect(site.potentialAction).toBeUndefined();
+    expect(site.alternateName).toContain("VacancyFinder");
+    expect(organizationLd(SITE)).toMatchObject({ name: "Rekiya", alternateName: "VacancyFinder" });
+    expect(String(organizationLd(SITE).description)).toMatch(/employers' official career pages/);
   });
   it("JSON-LD can't close its script tag", () => {
     expect(ldJson({ t: "</script><script>alert(1)</script>" })).not.toContain("</script>");
@@ -146,6 +177,51 @@ describe("prerendered site", () => {
     expect(llmsTxt({ ...inp, jobs: jobs2 }, withIntern)).toContain(`[Internships in Sri Lanka](${SITE}/internships/): 1 open internships`);
   });
 
+  it("gives a city a page only once it has enough open jobs, and links its jobs to it", () => {
+    expect(placeSlugsOf("Colombo 03 · Kandy")).toEqual(["colombo", "kandy"]);
+    expect(placeSlugsOf("Head Office")).toEqual([]);
+    expect(byPath.has("/locations/colombo/")).toBe(false); // the fixture has only one Colombo job
+    const many = Array.from({ length: LOCATION_MIN_JOBS }, (_, i) =>
+      job({ id: (i + 10).toString(16).padStart(2, "0") + job().id.slice(2), title: `Role ${i}`, location: "Colombo" }),
+    );
+    const withCity = buildPages({ ...inp, jobs: many as unknown as SharedJob[] });
+    const city = withCity.find((p) => p.path === "/locations/colombo/")!;
+    expect(city.title).toBe(`Jobs in Colombo — ${LOCATION_MIN_JOBS} Latest Vacancies | Rekiya`);
+    expect(city.noindex).toBeFalsy();
+    expect(city.body).toContain("<h2");
+    const jobPage = withCity.find((p) => p.path.startsWith("/job/"))!;
+    expect(jobPage.body).toContain('href="/locations/colombo/">Jobs in Colombo</a>');
+    expect(withCity.find((p) => p.path === "/")!.body).toContain('href="/locations/colombo/"');
+  });
+
+  it("publishes how-it-works, privacy and terms pages and splits the sitemap", () => {
+    for (const path of ["/how-it-works/", "/privacy/", "/terms/"]) {
+      const p = byPath.get(path)!;
+      expect(p.noindex).toBeFalsy();
+      expect(p.body).toMatch(/<h1[^>]*>/);
+    }
+    expect(byPath.get("/how-it-works/")!.body).toContain("two checks in a row");
+    expect(sitemapIndexXml(SITE, "2026-09-30")).toContain(
+      `<sitemap><loc>${SITE}/sitemap-jobs.xml</loc><lastmod>2026-09-30</lastmod></sitemap>`,
+    );
+  });
+
+  it("tells Google's Indexing API exactly which job pages this sync added and removed", () => {
+    const live = new Set([`${SITE}/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e/`]);
+    const change = {
+      at: inp.generatedAt,
+      added: [{ id: job().id, title: "Senior QA Engineer", company: "acme" }],
+      closed: [{ id: "cc" + job().id.slice(2), title: "Closed Role", company: "acme" }],
+    };
+    const urls = googleIndexingUrls(SITE, change, inp.generatedAt, () => "Acme PLC", live);
+    expect(urls).toEqual({ updated: [...live], deleted: [`${SITE}/job/closed-role-at-acme-plc-cc2a9c1b7d4e/`] });
+    // A change log from another sync (or none) sends nothing.
+    expect(googleIndexingUrls(SITE, { ...change, at: "2026-01-01T00:00:00Z" }, inp.generatedAt, () => "Acme PLC", live)).toEqual({
+      updated: [],
+      deleted: [],
+    });
+  });
+
   it("builds a page per open job, field and company — closed jobs get none", () => {
     expect(byPath.has("/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e/")).toBe(true);
     expect([...byPath.keys()].some((p) => p.includes("closed-role"))).toBe(false);
@@ -169,7 +245,7 @@ describe("prerendered site", () => {
     const p = byPath.get("/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e/")!;
     const html = renderDocument(template, SITE, p, { google: "abc123" });
     expect(html).toContain('data-pr="/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e/"');
-    expect(html).toContain("<title>Senior QA Engineer — Acme PLC, Colombo | Rekiya</title>");
+    expect(html).toContain("<title>Senior QA Engineer at Acme PLC — Job in Colombo | Rekiya</title>");
     expect(html).toContain(`<link rel="canonical" href="${SITE}/job/senior-qa-engineer-at-acme-plc-3f2a9c1b7d4e/"`);
     expect(html).toContain('<meta name="google-site-verification" content="abc123" />');
     expect(html).toContain('"@type":"JobPosting"');

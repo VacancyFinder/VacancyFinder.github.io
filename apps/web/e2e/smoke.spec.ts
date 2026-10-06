@@ -299,7 +299,7 @@ test("SEO: field and job pages set title, canonical and structured data", async 
 
   await page.getByRole("link", { name: "QA Automation Intern", exact: true }).click();
   await expect(page).toHaveURL(/\/job\/qa-automation-intern-at-99x-[0-9a-f]{12}\/$/);
-  await expect(page).toHaveTitle(/^QA Automation Intern — 99x, Colombo \| Rekiya$/);
+  await expect(page).toHaveTitle(/^QA Automation Intern at 99x — Job in Colombo \| Rekiya$/);
   const ld = (await page.locator('script[data-ld="page"]').allTextContents()).map((t) => JSON.parse(t));
   const posting = ld.find((x) => x["@type"] === "JobPosting");
   expect(posting).toMatchObject({ title: "QA Automation Intern", employmentType: "INTERN", hiringOrganization: { name: "99x" } });
@@ -321,16 +321,25 @@ test("SEO: prerendered HTML, sitemap, robots.txt and llms.txt are published", as
   const home = await (await request.get("/")).text();
   expect(home).toContain("<h1");
   expect(home).toContain("Latest job vacancies in Sri Lanka");
-  expect(home).toMatch(/"@type":"WebSite".*"SearchAction"/);
+  expect(home).toMatch(/"@type":"WebSite".*"alternateName":\["VacancyFinder"/);
+  expect(home).not.toContain("SearchAction"); // retired by Google in 2024
   expect(home).toContain('<link rel="canonical" href="https://vacancyfinder.github.io/"');
   expect(home).toContain('<meta name="google-site-verification" content="8yxUGaMetlVc24ha_G0xKeGCbbr0SRW7Rt4HdXPA4TE" />');
   const interns = await (await request.get("/internships/")).text();
   expect(interns).toMatch(/<title>Internships in Sri Lanka \d{4} — /);
   expect(interns).toMatch(/<h1[^>]*>Internships in Sri Lanka<\/h1>/);
 
-  const sitemap = await (await request.get("/sitemap.xml")).text();
-  expect(sitemap).toContain("<loc>https://vacancyfinder.github.io/jobs/</loc>");
-  expect(sitemap).toContain("<loc>https://vacancyfinder.github.io/internships/</loc>");
+  const index = await (await request.get("/sitemap.xml")).text();
+  expect(index).toContain("<sitemap><loc>https://vacancyfinder.github.io/sitemap-pages.xml</loc>");
+  expect(index).toContain("<sitemap><loc>https://vacancyfinder.github.io/sitemap-jobs.xml</loc>");
+  const hubs = await (await request.get("/sitemap-pages.xml")).text();
+  expect(hubs).toContain("<loc>https://vacancyfinder.github.io/jobs/</loc>");
+  expect(hubs).toContain("<loc>https://vacancyfinder.github.io/internships/</loc>");
+  expect(hubs).toContain("<loc>https://vacancyfinder.github.io/how-it-works/</loc>");
+  expect(hubs).toContain("<loc>https://vacancyfinder.github.io/locations/colombo/</loc>"); // real data: well over 10 Colombo jobs
+  expect(await (await request.get("/locations/colombo/")).text()).toMatch(/<h1[^>]*>Jobs in Colombo<\/h1>/);
+  expect(hubs).not.toContain("/job/");
+  const sitemap = await (await request.get("/sitemap-jobs.xml")).text();
   const jobUrl = sitemap.match(/<loc>(https:\/\/vacancyfinder\.github\.io\/job\/[^<]+)<\/loc>/)![1]!;
   const job = await (await request.get(new URL(jobUrl).pathname)).text();
   expect(job).toContain('"@type":"JobPosting"');
@@ -442,4 +451,25 @@ test("internships page lists internships and trainee roles only", async ({ page 
   await expect(page.getByRole("link", { name: /QA & Testing/ })).toHaveAttribute("href", "/jobs/qa-testing/");
   await noAxeViolations(page);
   await noHorizontalScroll(page);
+});
+
+test("location and trust pages", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("contentinfo").getByRole("link", { name: "Jobs in Colombo" }).click();
+  await expect(page).toHaveURL(/\/locations\/colombo\/$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Jobs in Colombo");
+  await expect(page).toHaveTitle(/^Jobs in Colombo — \d+ Latest Vacancies \| Rekiya$/);
+  await expect(page.getByRole("heading", { name: "QA Automation Intern" })).toBeVisible();
+  await noAxeViolations(page);
+  await noHorizontalScroll(page);
+
+  await page.getByRole("contentinfo").getByRole("link", { name: "How Rekiya works & sources" }).click();
+  await expect(page).toHaveURL(/\/how-it-works\/$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("How Rekiya works");
+  await expect(page.getByRole("heading", { name: "Closed and expired vacancies" })).toBeVisible();
+  await noAxeViolations(page);
+  await page.getByRole("contentinfo").getByRole("link", { name: "Privacy" }).click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Privacy policy");
+  await page.goto("/locations/nowhere/");
+  await expect(page.getByRole("heading", { name: "Page not found" })).toBeVisible();
 });

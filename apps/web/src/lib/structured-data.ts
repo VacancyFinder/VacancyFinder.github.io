@@ -2,9 +2,16 @@
  * schema.org JSON-LD for search engines and AI assistants. Pure functions (no DOM): the build uses them
  * for prerendered pages and the app for client-side navigation, so both always agree.
  */
-import { FIELD_LABELS, JOB_TYPE_LABELS, SENIORITY_LABELS, WORK_MODE_LABELS, type FieldSlug } from "@rekiya/shared/constants";
+import {
+  FIELD_LABELS,
+  INDUSTRY_LABELS,
+  JOB_TYPE_LABELS,
+  SENIORITY_LABELS,
+  WORK_MODE_LABELS,
+  type FieldSlug,
+} from "@rekiya/shared/constants";
 import { cleanSnippet } from "./format";
-import { absUrl, companyPath, fieldPath, INTERNSHIPS_PATH, jobPath, SITE_NAME } from "./paths";
+import { absUrl, companyPath, fieldPath, INTERNSHIPS_PATH, jobPath, locationPath, SITE_NAME } from "./paths";
 import type { Job } from "./types";
 
 type Ld = Record<string, unknown>;
@@ -19,23 +26,22 @@ const EMPLOYMENT: Record<string, string> = {
 /** Towns only; "Head Office", "Islandwide" etc. aren't places a map can find. */
 const NOT_A_PLACE = /^(sri lanka|head office|.*head office|islandwide|island ?wide|remote|multiple locations?|various)$/i;
 
+/** One sentence that says what the site is — the same words everywhere (schema, llms.txt, About). */
+export const ENTITY_DESCRIPTION =
+  "Rekiya (VacancyFinder) is a free Sri Lankan job search site that collects open vacancies from employers' official career pages every 3 hours and links each one to the employer's own listing to apply.";
+
 export function websiteLd(siteUrl: string): Ld {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${absUrl(siteUrl, "/")}#website`,
     name: SITE_NAME,
-    alternateName: ["Rekiya Jobs", "රැකියා", "Sri Lanka job vacancies"],
+    // Google's site name uses name + alternateName (the sitelinks search box it once read here was retired in 2024).
+    alternateName: ["VacancyFinder", "Rekiya Jobs", "රැකියා"],
     url: absUrl(siteUrl, "/"),
     inLanguage: "en-LK",
-    description: "Latest job vacancies in Sri Lanka, collected from employers' own career pages every 3 hours.",
+    description: ENTITY_DESCRIPTION,
     publisher: { "@id": `${absUrl(siteUrl, "/")}#organization` },
-    // Sitelinks search box.
-    potentialAction: {
-      "@type": "SearchAction",
-      target: { "@type": "EntryPoint", urlTemplate: `${absUrl(siteUrl, "/jobs/")}?q={search_term_string}` },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 
@@ -45,8 +51,11 @@ export function organizationLd(siteUrl: string): Ld {
     "@type": "Organization",
     "@id": `${absUrl(siteUrl, "/")}#organization`,
     name: SITE_NAME,
+    alternateName: "VacancyFinder",
     url: absUrl(siteUrl, "/"),
     logo: absUrl(siteUrl, "/icon-512.png"),
+    description: ENTITY_DESCRIPTION,
+    knowsAbout: ["Job vacancies in Sri Lanka", "Internships in Sri Lanka", "Employer career pages", "Job search"],
     areaServed: { "@type": "Country", name: "Sri Lanka" },
     sameAs: ["https://github.com/VacancyFinder/VacancyFinder.github.io"],
   };
@@ -80,7 +89,10 @@ export function jobPostingLd(
     `Location: ${job.location || "Sri Lanka"}`,
     `Field: ${job.fields.map((f) => FIELD_LABELS[f]).join(", ")}`,
   ].filter(Boolean);
-  const snippet = cleanSnippet(job.title, job.snippet) || job.snippet || `${company.name} is hiring a ${job.title} in Sri Lanka.`;
+  const snippet =
+    cleanSnippet(job.title, job.snippet) ||
+    job.snippet ||
+    `${company.name} is hiring ${/^[aeiou]/i.test(job.title) ? "an" : "a"} ${job.title} in Sri Lanka.`;
   const ld: Ld = {
     "@context": "https://schema.org",
     "@type": "JobPosting",
@@ -111,7 +123,9 @@ export function jobPostingLd(
   }
   if (extra.validThrough) ld.validThrough = extra.validThrough;
   if (job.fields.length) ld.occupationalCategory = job.fields.map((f) => FIELD_LABELS[f]).join(", ");
-  if (job.seniority === "intern" || job.seniority === "trainee" || job.seniority === "junior")
+  if (INDUSTRY_LABELS[job.industry]) ld.industry = INDUSTRY_LABELS[job.industry];
+  // Only internships and traineeships are entry roles by definition; "junior" can still ask for some experience.
+  if (job.seniority === "intern" || job.seniority === "trainee")
     ld.experienceRequirements = { "@type": "OccupationalExperienceRequirements", monthsOfExperience: 0 };
   return ld;
 }
@@ -148,6 +162,11 @@ export const fieldCrumbs = (f: FieldSlug): [string, string][] => [
 export const internshipCrumbs: [string, string][] = [
   ["Home", "/"],
   ["Internships", INTERNSHIPS_PATH],
+];
+export const locationCrumbs = (slug: string, place: string): [string, string][] => [
+  ["Home", "/"],
+  ["Jobs", "/jobs/"],
+  [`Jobs in ${place}`, locationPath(slug)],
 ];
 export const companyCrumbs = (slug: string, name: string): [string, string][] => [
   ["Home", "/"],
