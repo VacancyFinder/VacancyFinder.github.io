@@ -323,9 +323,14 @@ test("SEO: prerendered HTML, sitemap, robots.txt and llms.txt are published", as
   expect(home).toContain("Latest job vacancies in Sri Lanka");
   expect(home).toMatch(/"@type":"WebSite".*"SearchAction"/);
   expect(home).toContain('<link rel="canonical" href="https://vacancyfinder.github.io/"');
+  expect(home).toContain('<meta name="google-site-verification" content="8yxUGaMetlVc24ha_G0xKeGCbbr0SRW7Rt4HdXPA4TE" />');
+  const interns = await (await request.get("/internships/")).text();
+  expect(interns).toMatch(/<title>Internships in Sri Lanka \d{4} — /);
+  expect(interns).toMatch(/<h1[^>]*>Internships in Sri Lanka<\/h1>/);
 
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).toContain("<loc>https://vacancyfinder.github.io/jobs/</loc>");
+  expect(sitemap).toContain("<loc>https://vacancyfinder.github.io/internships/</loc>");
   const jobUrl = sitemap.match(/<loc>(https:\/\/vacancyfinder\.github\.io\/job\/[^<]+)<\/loc>/)![1]!;
   const job = await (await request.get(new URL(jobUrl).pathname)).text();
   expect(job).toContain('"@type":"JobPosting"');
@@ -424,4 +429,17 @@ test("status page: website, data freshness, sync runs, career pages and publishi
   runs = [run(5, 0.5, "failure"), run(6, 1.5, "failure"), run(7, 4, "success")];
   await page.getByRole("button", { name: "Check again" }).click();
   await expect(page.getByText("Problem: automatic sync — the last 2 sync attempts failed")).toBeVisible();
+});
+
+test("internships page lists internships and trainee roles only", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("contentinfo").getByRole("link", { name: "Internships in Sri Lanka" }).click();
+  await expect(page).toHaveURL(/\/internships\/$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Internships in Sri Lanka");
+  await expect(page).toHaveTitle(/^Internships in Sri Lanka \d{4} — 1 Open Internships/);
+  await expect(page.getByRole("heading", { name: "QA Automation Intern" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "DevSecOps Engineer" })).toHaveCount(0);
+  await expect(page.getByRole("link", { name: /QA & Testing/ })).toHaveAttribute("href", "/jobs/qa-testing/");
+  await noAxeViolations(page);
+  await noHorizontalScroll(page);
 });

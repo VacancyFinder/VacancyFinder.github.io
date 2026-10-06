@@ -12,11 +12,19 @@ import { useApp } from "../lib/app-state";
 import { useData, useJobs } from "../lib/data";
 import { sortNewest } from "../lib/filters";
 import { relativeTime } from "../lib/format";
-import { fieldPath, HOME_META } from "../lib/paths";
+import { fieldPath, HOME_META, INTERNSHIPS_PATH } from "../lib/paths";
 import { usePrivatePage, useSeo, SITE_URL } from "../lib/seo";
 import { faqLd, FAQ_TEXT, organizationLd, websiteLd } from "../lib/structured-data";
 
-const POPULAR = ["Software engineer", "Intern", "Accountant", "Data", "Marketing", "HR"];
+const search = (q: string): [string, string] => [q, `/jobs/?q=${encodeURIComponent(q)}`];
+const POPULAR: [string, string][] = [
+  search("Software engineer"),
+  ["Internships", INTERNSHIPS_PATH],
+  search("Accountant"),
+  search("Data"),
+  search("Marketing"),
+  search("HR"),
+];
 
 const STEPS = [
   ["Pick your fields", "Software, data, design, HR, finance and more — choose what you want to do."],
@@ -101,10 +109,10 @@ function HeroSearch() {
       </div>
       <p className="mt-3 flex flex-wrap items-center gap-2 text-sm text-brand-100">
         <span>Popular:</span>
-        {POPULAR.map((p) => (
+        {POPULAR.map(([p, to]) => (
           <Link
             key={p}
-            to={`/jobs/?q=${encodeURIComponent(p)}`}
+            to={to}
             className="inline-flex min-h-[32px] items-center rounded-full border border-white/25 px-3 text-white hover:bg-white/10"
           >
             {p}

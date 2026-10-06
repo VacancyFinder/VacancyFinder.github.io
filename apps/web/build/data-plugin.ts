@@ -9,6 +9,9 @@ import { generateSeo } from "./seo.js";
 import { DEFAULT_SITE_URL } from "../src/lib/paths.js";
 import type { BuildInfo } from "../src/lib/status.js";
 
+/** Google Search Console "HTML tag" verification for vacancyfinder.github.io. The repo variable overrides it. */
+export const GOOGLE_SITE_VERIFICATION = "8yxUGaMetlVc24ha_G0xKeGCbbr0SRW7Rt4HdXPA4TE";
+
 /** Canonical origin: set SITE_URL (e.g. a custom domain) at build time; defaults to the GitHub Pages URL. */
 export const siteUrl = () => (process.env.SITE_URL || DEFAULT_SITE_URL).replace(/\/+$/, "");
 
@@ -127,7 +130,7 @@ export function rekiyaData(dataDir: string): Plugin {
         outDir,
         siteUrl: siteUrl(),
         ...d,
-        verify: { google: process.env.GOOGLE_SITE_VERIFICATION, bing: process.env.BING_SITE_VERIFICATION },
+        verify: { google: process.env.GOOGLE_SITE_VERIFICATION || GOOGLE_SITE_VERIFICATION, bing: process.env.BING_SITE_VERIFICATION },
         indexNowFile: resolve(root, ".seo/indexnow-urls.json"),
       });
       console.log(

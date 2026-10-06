@@ -4,7 +4,7 @@
  */
 import { FIELD_LABELS, JOB_TYPE_LABELS, SENIORITY_LABELS, WORK_MODE_LABELS, type FieldSlug } from "@rekiya/shared/constants";
 import { cleanSnippet } from "./format";
-import { absUrl, companyPath, fieldPath, jobPath, SITE_NAME } from "./paths";
+import { absUrl, companyPath, fieldPath, INTERNSHIPS_PATH, jobPath, SITE_NAME } from "./paths";
 import type { Job } from "./types";
 
 type Ld = Record<string, unknown>;
@@ -145,6 +145,10 @@ export const fieldCrumbs = (f: FieldSlug): [string, string][] => [
   ["Jobs", "/jobs/"],
   [`${FIELD_LABELS[f]} jobs`, fieldPath(f)],
 ];
+export const internshipCrumbs: [string, string][] = [
+  ["Home", "/"],
+  ["Internships", INTERNSHIPS_PATH],
+];
 export const companyCrumbs = (slug: string, name: string): [string, string][] => [
   ["Home", "/"],
   ["Companies", "/companies/"],
@@ -169,6 +173,10 @@ export const FAQ_TEXT: [string, string][] = [
   [
     "Which fields are covered?",
     "Software engineering, data and AI, cloud and DevOps, cybersecurity, QA, UI/UX, digital and graphics, HR, product and project management, finance and accounting, banking and insurance, sales and marketing, hospitality and tourism, engineering and manufacturing, operations and logistics, healthcare, administration and customer service, and legal roles.",
+  ],
+  [
+    "Can I find internships in Sri Lanka on Rekiya?",
+    "Yes. The Internships page lists every open internship, traineeship and intern-level role from Sri Lankan companies' career pages — in IT and software, finance, marketing, engineering and more — updated every three hours. University students and fresh graduates apply directly on the employer's website.",
   ],
   [
     "What does Rekiya mean?",
