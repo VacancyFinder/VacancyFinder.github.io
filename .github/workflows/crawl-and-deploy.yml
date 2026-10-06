@@ -30,14 +30,11 @@ on:
         description: "manual = crawl now · timer = crawl if due (used by the sync timer) · retry = crawl now after a failure"
         required: false
         default: manual
+  # Every push to main (code, docs, a README edit on github.com, a history rewrite) is followed by a rebuild, so
+  # GitHub's legacy branch build — which runs on every push while Pages deploys from a branch — never stays live.
+  # The bot's own data commits use GITHUB_TOKEN and don't trigger this, so there is no loop.
   push:
     branches: [main]
-    paths:
-      - "apps/web/**"
-      - "packages/**"
-      - "data/companies.json"
-      - "data/overrides.json"
-      - ".github/workflows/crawl-and-deploy.yml"
 
 permissions:
   contents: write

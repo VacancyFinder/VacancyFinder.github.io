@@ -129,4 +129,7 @@ describe("sync workflows", () => {
     expect(crawl).toContain("if: steps.result.outputs.sync == 'ok' && steps.crawl.outputs.changed == 'true'");
     expect(crawl).toContain("$SITE/build.json?check=");
   });
+  it("redeploys after every push to main, so a legacy branch build never stays live", () => {
+    expect(crawl).toMatch(/\n {2}push:\n {4}branches: \[main\]\n\n/);
+  });
 });
