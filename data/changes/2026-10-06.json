@@ -1,0 +1,189 @@
+[
+  {
+    "at": "2026-10-06T00:59:21.216Z",
+    "added": [
+      {
+        "id": "90af0422e3d8ac8e7eec6c86a4e9cbba2217c495",
+        "title": "Manager - Growth Marketing",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19N0OoXBqrcBDEhnqM23paPoR29JeJR8e0%253D"
+      },
+      {
+        "id": "14f12c30aeaf8a2848cb1a74e004e6f29f88564f",
+        "title": "Intern - Database",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX1%252F%252F%252FfbuSi5r1AmvG1Itktv7AjpVV1UOWr8%253D"
+      },
+      {
+        "id": "a34a511df637b46c6bad2af5244f5a872b77ee13",
+        "title": "Intern - Software Engineering",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19YMpEQkmhoFB2tKPpXiJMV5bW5DyQUfkw%253D"
+      },
+      {
+        "id": "b21e0814c7fbec985f0eb0a91b028153525c444e",
+        "title": "Consultant - Data & AI",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19HnR8HnHOsGghlTwxm8mnFLwuSaSpjMBc%253D"
+      },
+      {
+        "id": "6dfae3bf44a017f22b7f6b2aa0204c6ac9bb0f63",
+        "title": "Senior Team Lead – Resource Management",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX1%252F6MDRVKSTRD6F0Qg6bZepth9VHb0S3h%252F8%253D"
+      },
+      {
+        "id": "60b2353e98b29e35606706a211841230adb6ba1c",
+        "title": "Consultant - Digital Business Architecture (Finance) - Brandix Digital",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19T4IWNPKEiiHperbvXQtE0CpPXBMF8nYs%253D"
+      },
+      {
+        "id": "b8ebe16b075214e273464c0660bcc14e33bc3394",
+        "title": "Intern - Functional Consulting",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19gIPahWxvpY7iib5d9v6XbYJSRMpOoCkM%253D"
+      },
+      {
+        "id": "348471685f57a3dc353cb8082a0f309fe23f1d24",
+        "title": "DevOps Engineer",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19PdO1hP8zHpU4GKTDHBDHbFHmsb6VoqUU%253D"
+      },
+      {
+        "id": "a4d1d3513fbf939ecd77915503a5c0eb32116de1",
+        "title": "Tech Lead - DevOps",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX18muG%252FnbJ11F2f8q2AHWjRjH6%252Fy5tkAg%252Fk%253D"
+      },
+      {
+        "id": "def427ba86a96345351a20586da3cfda8e03f99f",
+        "title": "Manager - Cyber Security (Brandix Digital)",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19OWUkuRuAJp8o%252FWLtlEMTC7EEB3d2Eypk%253D"
+      }
+    ],
+    "closed": [
+      {
+        "id": "19ea7ef14ff6fd469fbdc37a758b74018ec51b2f",
+        "title": "DevOps Engineer",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX197MDMXMs4p1a%252B%252B1emU4q7xLVvaVGDMmoM%253D"
+      },
+      {
+        "id": "4efafe9daf6b50337d357f922bc2ff50acf4db67",
+        "title": "Tech Lead - DevOps",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19DJ2%252FGgLVzH%252BkBLqByYPZO0mkWVgS8OAs%253D"
+      },
+      {
+        "id": "5143fe1d578c71de0405fa3cf6fc716ea1fc6e33",
+        "title": "Consultant - Digital Business Architecture (Finance) - Brandix Digital",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19ENnxz%252FKsC0J8i8ndJ9VmHuRqCBrei4n4%253D"
+      },
+      {
+        "id": "56ae83456e41140ee4081bb055333a8bed234197",
+        "title": "Intern - Database",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX1%252FINCzxgj5QvlUmWp2D2hhR0twW2eoQTAQ%253D"
+      },
+      {
+        "id": "56bd044131f97430a01b7c90b3fc1b8510426bdc",
+        "title": "Intern - Functional Consulting",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX18HfihmeI6LoWhXwYCd3sKLGR%252BDGLVcrYc%253D"
+      },
+      {
+        "id": "8beb00b1f8e361775e49105f4ce37a10dedf9b89",
+        "title": "Manager - Growth Marketing",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19wwAiXCRoThX803SOBUvgMv8nQ4u4s%252BNo%253D"
+      },
+      {
+        "id": "bb6d2853c40ba362b7ccf0a36894fefcb4c50042",
+        "title": "Consultant - Data & AI",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX1%252F1KiEMXz8%252FFlcwzb4vaIHAEDBSo68WA4w%253D"
+      },
+      {
+        "id": "be508b4a08666372f169b88c238c611a1670617f",
+        "title": "Intern - Software Engineering",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX19OBr5IgYfiC2uc5YAc8MypzCJmXEctPNM%253D"
+      },
+      {
+        "id": "c0e6f63da19fcb5d771c0a47515fb712c723e014",
+        "title": "Manager - Cyber Security (Brandix Digital)",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX1%252B%252FL6qp%252BYgZ4YnpNy4ttmP3fA%252FcJPMywc8%253D"
+      },
+      {
+        "id": "c1cc0b0a13e282cc60bf852c8f92c4d7dd15436b",
+        "title": "Senior Team Lead – Resource Management",
+        "company": "fortude",
+        "url": "https://fortude.talentrecruit.com/career-page/apply/U2FsdGVkX189ahBwyYUkzK4FTC7OeLkSr%252FG%252BfNQww4M%253D"
+      },
+      {
+        "id": "37a50b35407dc5244cb2f0ab89b61614f2a7cae1",
+        "title": "Intern",
+        "company": "dialog-axiata",
+        "url": "https://hcmcloud.dialog.lk/CareerPortal/Careers?q=bEopnWmcv9llMiBG3zygOw%3D%3D#job-vacant-5155"
+      },
+      {
+        "id": "604b71e45009e35c85e10aabca20f912046d453d",
+        "title": "Team Leader Sales - Supply Chain & Distributor Finance",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2043325"
+      },
+      {
+        "id": "70351a4d81236b85488a815dafbe850a08988b15",
+        "title": "Junior Executive - Fraud Risk Monitoring",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2044135"
+      },
+      {
+        "id": "ec9eac8b73231b27fd9a57c7a5cb1515fa4b359a",
+        "title": "Senior Deputy Manager - Finance Audit",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2044365"
+      },
+      {
+        "id": "389721c9cc97d01a74b191356e49d07c42933224",
+        "title": "Intern - Data Analytics",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2043355"
+      },
+      {
+        "id": "501568633599f3d0eec94c50389c1bdaec09650a",
+        "title": "Senior Manager - Credit Risk",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2043295"
+      },
+      {
+        "id": "7754c29665809dbb211e0fed4d9ead70b6bf6a17",
+        "title": "Business Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2044635"
+      },
+      {
+        "id": "875ce4b4fa6c865847609a7ff062488d0f5632e4",
+        "title": "Manager – Data Protection Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2043225"
+      },
+      {
+        "id": "8ce2ae8dee204b9d51661dba9cd7cf6f8d5a36dc",
+        "title": "Pawning Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2045375"
+      },
+      {
+        "id": "fa373b4c2c1d86288576a3fc383157cdf1c950d8",
+        "title": "Elevate - Client Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2044565"
+      }
+    ]
+  }
+]
