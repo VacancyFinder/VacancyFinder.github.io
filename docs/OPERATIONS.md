@@ -26,7 +26,9 @@ Why: GitHub's scheduled events are best-effort. Between 30 Sep and 3 Oct 2026 an
 
 ## One setting to check
 
-**Settings → Pages → Source must be "GitHub Actions".** If it is "Deploy from a branch", GitHub runs its own
+**Settings → Pages → Source must be "GitHub Actions".** Until it is, every push to main also starts GitHub's
+"pages build and deployment", which publishes the raw repository. The workflow therefore rebuilds and redeploys after
+**every** push to main (not only code changes) and checks the live site afterwards, so the app always ends up live. If it is "Deploy from a branch", GitHub runs its own
 "pages build and deployment" on every data commit, which collides with this workflow's deploy (that caused the
 failed run on 2 Oct 2026). The workflow tries to switch it automatically and warns in the run log; the status page
 also flags it.
