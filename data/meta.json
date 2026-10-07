@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-07T00:40:48.773Z",
-  "runDurationMs": 136868,
+  "generatedAt": "2026-10-07T03:41:11.630Z",
+  "runDurationMs": 142030,
   "totals": {
     "open": 400,
     "companiesWithJobs": 29,
@@ -36,7 +36,7 @@
     "cargillsceylon": 1,
     "citizens-development-business-finance": 13,
     "creative-software": 9,
-    "dialog": 2,
+    "dialog": 1,
     "dialog-axiata": 28,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
@@ -46,7 +46,7 @@
     "keells": 33,
     "lanka-ioc": 2,
     "lseg": 27,
-    "national-development-bank": 18,
+    "national-development-bank": 19,
     "octave": 5,
     "pearson": 4,
     "rootcode": 8,
@@ -59,22 +59,22 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 42,
+    "intern": 41,
     "junior": 19,
     "lead": 50,
     "manager": 73,
     "principal": 11,
     "senior": 67,
-    "trainee": 8,
+    "trainee": 9,
     "unspecified": 130
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 19,
+    "banking": 20,
     "consumer-goods-retail": 2,
     "diversified": 135,
     "energy": 2,
-    "financial-services": 21,
+    "financial-services": 20,
     "hotels-leisure": 3,
     "technology": 188,
     "telecommunications": 29
