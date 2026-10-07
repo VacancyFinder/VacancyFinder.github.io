@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-06T21:40:21.043Z",
-  "runDurationMs": 140626,
+  "generatedAt": "2026-10-07T00:40:48.773Z",
+  "runDurationMs": 136868,
   "totals": {
-    "open": 401,
-    "companiesWithJobs": 30,
+    "open": 400,
+    "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 27
   },
@@ -23,7 +23,7 @@
     "other": 15,
     "product-project-business": 24,
     "qa-testing": 17,
-    "sales-marketing": 56,
+    "sales-marketing": 55,
     "software-engineering": 54,
     "ui-ux-design": 3
   },
@@ -44,7 +44,6 @@
     "hayleys-group": 93,
     "john-keells-hotels": 3,
     "keells": 33,
-    "keells-food-products": 1,
     "lanka-ioc": 2,
     "lseg": 27,
     "national-development-bank": 18,
@@ -63,7 +62,7 @@
     "intern": 42,
     "junior": 19,
     "lead": 50,
-    "manager": 74,
+    "manager": 73,
     "principal": 11,
     "senior": 67,
     "trainee": 8,
@@ -76,7 +75,6 @@
     "diversified": 135,
     "energy": 2,
     "financial-services": 21,
-    "food-beverage-tobacco": 1,
     "hotels-leisure": 3,
     "technology": 188,
     "telecommunications": 29
