@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-08T12:46:40.101Z",
-  "runDurationMs": 140838,
+  "generatedAt": "2026-10-08T15:47:10.702Z",
+  "runDurationMs": 140902,
   "totals": {
-    "open": 419,
+    "open": 420,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 27
@@ -21,7 +21,7 @@
     "legal-compliance": 15,
     "operations-logistics": 48,
     "other": 17,
-    "product-project-business": 25,
+    "product-project-business": 26,
     "qa-testing": 18,
     "sales-marketing": 64,
     "software-engineering": 52,
@@ -52,7 +52,7 @@
     "rootcode": 7,
     "sri-lanka-telecom": 1,
     "surge-global": 5,
-    "sysco-labs": 87,
+    "sysco-labs": 88,
     "union-bank-of-colombo": 1,
     "vallibel-one": 1,
     "wso2": 9,
@@ -60,7 +60,7 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 40,
+    "intern": 41,
     "junior": 20,
     "lead": 49,
     "manager": 81,
@@ -77,7 +77,7 @@
     "energy": 3,
     "financial-services": 22,
     "hotels-leisure": 2,
-    "technology": 194,
+    "technology": 195,
     "telecommunications": 31
   }
 }
