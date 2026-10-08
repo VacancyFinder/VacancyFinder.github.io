@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-08T09:46:03.919Z",
-  "runDurationMs": 142735,
+  "generatedAt": "2026-10-08T12:46:40.101Z",
+  "runDurationMs": 140838,
   "totals": {
-    "open": 415,
+    "open": 419,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 27
@@ -15,15 +15,15 @@
     "data-ai-ml": 39,
     "digital-graphics": 4,
     "engineering-manufacturing": 31,
-    "finance-accounting": 47,
+    "finance-accounting": 48,
     "hospitality-tourism": 6,
     "human-resource": 21,
-    "legal-compliance": 14,
+    "legal-compliance": 15,
     "operations-logistics": 48,
     "other": 17,
     "product-project-business": 25,
     "qa-testing": 18,
-    "sales-marketing": 61,
+    "sales-marketing": 64,
     "software-engineering": 52,
     "ui-ux-design": 3
   },
@@ -34,7 +34,7 @@
     "cargills-bank": 1,
     "cargills-ceylon": 2,
     "cargillsceylon": 1,
-    "citizens-development-business-finance": 13,
+    "citizens-development-business-finance": 15,
     "creative-software": 9,
     "dialog": 1,
     "dialog-axiata": 30,
@@ -45,8 +45,8 @@
     "john-keells-hotels": 2,
     "keells": 38,
     "lanka-ioc": 3,
-    "lseg": 28,
-    "national-development-bank": 17,
+    "lseg": 29,
+    "national-development-bank": 18,
     "octave": 6,
     "pearson": 4,
     "rootcode": 7,
@@ -60,10 +60,10 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 39,
+    "intern": 40,
     "junior": 20,
     "lead": 49,
-    "manager": 78,
+    "manager": 81,
     "principal": 11,
     "senior": 68,
     "trainee": 8,
@@ -71,13 +71,13 @@
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 19,
+    "banking": 20,
     "consumer-goods-retail": 2,
     "diversified": 144,
     "energy": 3,
-    "financial-services": 20,
+    "financial-services": 22,
     "hotels-leisure": 2,
-    "technology": 193,
+    "technology": 194,
     "telecommunications": 31
   }
 }
