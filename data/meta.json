@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-09T00:48:34.691Z",
-  "runDurationMs": 125289,
+  "generatedAt": "2026-10-09T03:49:01.212Z",
+  "runDurationMs": 149564,
   "totals": {
-    "open": 415,
+    "open": 412,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 27
   },
   "byField": {
     "admin-customer-service": 28,
-    "banking-insurance": 20,
+    "banking-insurance": 17,
     "cloud-devops": 40,
     "cybersecurity": 12,
     "data-ai-ml": 39,
@@ -19,11 +19,11 @@
     "hospitality-tourism": 6,
     "human-resource": 20,
     "legal-compliance": 15,
-    "operations-logistics": 47,
+    "operations-logistics": 48,
     "other": 17,
     "product-project-business": 25,
     "qa-testing": 18,
-    "sales-marketing": 63,
+    "sales-marketing": 62,
     "software-engineering": 52,
     "ui-ux-design": 3
   },
@@ -37,7 +37,7 @@
     "citizens-development-business-finance": 15,
     "creative-software": 9,
     "dialog": 1,
-    "dialog-axiata": 30,
+    "dialog-axiata": 31,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
     "fortude": 18,
@@ -46,7 +46,7 @@
     "keells": 36,
     "lanka-ioc": 3,
     "lseg": 29,
-    "national-development-bank": 18,
+    "national-development-bank": 14,
     "octave": 6,
     "pearson": 4,
     "rootcode": 7,
@@ -67,17 +67,17 @@
     "principal": 11,
     "senior": 68,
     "trainee": 8,
-    "unspecified": 141
+    "unspecified": 138
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 20,
+    "banking": 16,
     "consumer-goods-retail": 2,
     "diversified": 139,
     "energy": 3,
     "financial-services": 22,
     "hotels-leisure": 2,
     "technology": 195,
-    "telecommunications": 31
+    "telecommunications": 32
   }
 }
