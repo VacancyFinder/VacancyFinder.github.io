@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-09T12:50:29.456Z",
-  "runDurationMs": 142174,
+  "generatedAt": "2026-10-09T15:50:56.029Z",
+  "runDurationMs": 141996,
   "totals": {
-    "open": 430,
+    "open": 431,
     "companiesWithJobs": 30,
     "targets": 27,
-    "targetsOk": 26
+    "targetsOk": 27
   },
   "byField": {
     "admin-customer-service": 29,
     "banking-insurance": 24,
     "cloud-devops": 41,
     "cybersecurity": 11,
-    "data-ai-ml": 40,
+    "data-ai-ml": 41,
     "digital-graphics": 5,
     "engineering-manufacturing": 32,
     "finance-accounting": 47,
@@ -24,7 +24,7 @@
     "product-project-business": 26,
     "qa-testing": 18,
     "sales-marketing": 63,
-    "software-engineering": 53,
+    "software-engineering": 54,
     "ui-ux-design": 3
   },
   "byCompany": {
@@ -40,7 +40,7 @@
     "dialog-axiata": 30,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
-    "fortude": 19,
+    "fortude": 20,
     "hayleys-group": 100,
     "john-keells-hotels": 2,
     "keells": 37,
@@ -65,7 +65,7 @@
     "lead": 48,
     "manager": 80,
     "mid": 1,
-    "principal": 12,
+    "principal": 13,
     "senior": 70,
     "trainee": 10,
     "unspecified": 142
@@ -78,7 +78,7 @@
     "energy": 3,
     "financial-services": 22,
     "hotels-leisure": 2,
-    "technology": 199,
+    "technology": 200,
     "telecommunications": 31
   }
 }
