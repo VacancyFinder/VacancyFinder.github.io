@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-10T18:53:18.628Z",
-  "runDurationMs": 140149,
+  "generatedAt": "2026-10-10T21:53:41.695Z",
+  "runDurationMs": 141049,
   "totals": {
-    "open": 413,
+    "open": 412,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 26
   },
   "byField": {
-    "admin-customer-service": 29,
+    "admin-customer-service": 28,
     "banking-insurance": 18,
     "cloud-devops": 40,
     "cybersecurity": 11,
@@ -43,7 +43,7 @@
     "fortude": 20,
     "hayleys-group": 96,
     "john-keells-hotels": 2,
-    "keells": 33,
+    "keells": 32,
     "lanka-ioc": 3,
     "lseg": 28,
     "national-development-bank": 14,
@@ -60,7 +60,7 @@
   },
   "bySeniority": {
     "intern": 40,
-    "junior": 24,
+    "junior": 23,
     "lead": 46,
     "manager": 75,
     "mid": 1,
@@ -73,7 +73,7 @@
     "automotive": 1,
     "banking": 15,
     "consumer-goods-retail": 2,
-    "diversified": 138,
+    "diversified": 137,
     "energy": 3,
     "financial-services": 22,
     "hotels-leisure": 2,
