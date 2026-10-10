@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-10T03:51:10.075Z",
-  "runDurationMs": 131743,
+  "generatedAt": "2026-10-10T06:51:36.309Z",
+  "runDurationMs": 33133,
   "totals": {
     "open": 413,
     "companiesWithJobs": 29,
     "targets": 27,
-    "targetsOk": 27
+    "targetsOk": 25
   },
   "byField": {
     "admin-customer-service": 29,
