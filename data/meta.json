@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-11T12:55:48.088Z",
-  "runDurationMs": 133906,
+  "generatedAt": "2026-10-11T15:56:20.039Z",
+  "runDurationMs": 143626,
   "totals": {
-    "open": 415,
+    "open": 416,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 26
   },
   "byField": {
     "admin-customer-service": 28,
-    "banking-insurance": 19,
+    "banking-insurance": 20,
     "cloud-devops": 40,
     "cybersecurity": 11,
     "data-ai-ml": 40,
@@ -36,7 +36,7 @@
     "cargillsceylon": 1,
     "citizens-development-business-finance": 15,
     "creative-software": 10,
-    "dialog": 1,
+    "dialog": 2,
     "dialog-axiata": 30,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
@@ -59,7 +59,7 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 40,
+    "intern": 41,
     "junior": 23,
     "lead": 46,
     "manager": 75,
@@ -75,7 +75,7 @@
     "consumer-goods-retail": 2,
     "diversified": 140,
     "energy": 3,
-    "financial-services": 22,
+    "financial-services": 23,
     "hotels-leisure": 2,
     "technology": 199,
     "telecommunications": 31
