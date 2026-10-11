@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T18:56:47.771Z",
-  "runDurationMs": 127265,
+  "generatedAt": "2026-10-11T21:57:17.835Z",
+  "runDurationMs": 130816,
   "totals": {
     "open": 419,
     "companiesWithJobs": 29,
@@ -8,22 +8,22 @@
     "targetsOk": 26
   },
   "byField": {
-    "admin-customer-service": 28,
+    "admin-customer-service": 30,
     "banking-insurance": 20,
     "cloud-devops": 40,
     "cybersecurity": 11,
     "data-ai-ml": 40,
     "digital-graphics": 4,
-    "engineering-manufacturing": 30,
-    "finance-accounting": 42,
+    "engineering-manufacturing": 31,
+    "finance-accounting": 41,
     "hospitality-tourism": 6,
     "human-resource": 23,
     "legal-compliance": 13,
-    "operations-logistics": 50,
+    "operations-logistics": 52,
     "other": 18,
     "product-project-business": 26,
     "qa-testing": 18,
-    "sales-marketing": 61,
+    "sales-marketing": 60,
     "software-engineering": 54,
     "ui-ux-design": 3
   },
@@ -41,9 +41,9 @@
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
     "fortude": 20,
-    "hayleys-group": 96,
+    "hayleys-group": 95,
     "john-keells-hotels": 2,
-    "keells": 38,
+    "keells": 39,
     "lanka-ioc": 3,
     "lseg": 28,
     "national-development-bank": 14,
@@ -62,12 +62,12 @@
     "intern": 41,
     "junior": 24,
     "lead": 46,
-    "manager": 76,
+    "manager": 74,
     "mid": 1,
     "principal": 13,
     "senior": 71,
     "trainee": 8,
-    "unspecified": 139
+    "unspecified": 141
   },
   "byIndustry": {
     "automotive": 1,
