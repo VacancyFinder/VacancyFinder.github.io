@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-12T09:59:31.858Z",
-  "runDurationMs": 152022,
+  "generatedAt": "2026-10-12T13:00:39.089Z",
+  "runDurationMs": 141399,
   "totals": {
-    "open": 384,
+    "open": 388,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 26
@@ -10,9 +10,9 @@
   "byField": {
     "admin-customer-service": 26,
     "banking-insurance": 20,
-    "cloud-devops": 36,
+    "cloud-devops": 37,
     "cybersecurity": 6,
-    "data-ai-ml": 35,
+    "data-ai-ml": 36,
     "digital-graphics": 4,
     "engineering-manufacturing": 32,
     "finance-accounting": 44,
@@ -20,11 +20,11 @@
     "human-resource": 15,
     "legal-compliance": 13,
     "operations-logistics": 53,
-    "other": 15,
-    "product-project-business": 23,
-    "qa-testing": 10,
+    "other": 16,
+    "product-project-business": 25,
+    "qa-testing": 9,
     "sales-marketing": 61,
-    "software-engineering": 42,
+    "software-engineering": 43,
     "ui-ux-design": 3
   },
   "byCompany": {
@@ -39,19 +39,19 @@
     "dialog": 4,
     "dialog-axiata": 31,
     "diesel-and-motor-engineering": 1,
-    "digital-mobility-solutions-lanka-pickme": 12,
+    "digital-mobility-solutions-lanka-pickme": 16,
     "fortude": 20,
     "hayleys-group": 99,
     "john-keells-hotels": 2,
     "keells": 40,
     "lanka-ioc": 3,
     "lseg": 29,
-    "national-development-bank": 14,
+    "national-development-bank": 15,
     "octave": 6,
     "pearson": 6,
     "rootcode": 7,
     "sri-lanka-telecom": 1,
-    "surge-global": 5,
+    "surge-global": 4,
     "sysco-labs": 43,
     "vallibel-one": 1,
     "wso2": 9,
@@ -59,25 +59,25 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 38,
+    "intern": 39,
     "junior": 24,
     "lead": 32,
-    "manager": 74,
+    "manager": 75,
     "mid": 1,
     "principal": 10,
     "senior": 62,
     "trainee": 8,
-    "unspecified": 135
+    "unspecified": 137
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 15,
+    "banking": 16,
     "consumer-goods-retail": 2,
     "diversified": 149,
     "energy": 3,
     "financial-services": 25,
     "hotels-leisure": 2,
-    "technology": 155,
+    "technology": 158,
     "telecommunications": 32
   }
 }
