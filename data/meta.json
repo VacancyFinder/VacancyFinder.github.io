@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-12T03:58:11.162Z",
-  "runDurationMs": 133574,
+  "generatedAt": "2026-10-12T06:58:42.174Z",
+  "runDurationMs": 141857,
   "totals": {
-    "open": 420,
+    "open": 425,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 26
@@ -10,21 +10,21 @@
   "byField": {
     "admin-customer-service": 30,
     "banking-insurance": 20,
-    "cloud-devops": 40,
+    "cloud-devops": 41,
     "cybersecurity": 11,
     "data-ai-ml": 40,
     "digital-graphics": 4,
     "engineering-manufacturing": 31,
-    "finance-accounting": 42,
+    "finance-accounting": 43,
     "hospitality-tourism": 6,
     "human-resource": 23,
     "legal-compliance": 13,
-    "operations-logistics": 52,
-    "other": 18,
+    "operations-logistics": 54,
+    "other": 19,
     "product-project-business": 26,
     "qa-testing": 18,
-    "sales-marketing": 60,
-    "software-engineering": 54,
+    "sales-marketing": 61,
+    "software-engineering": 55,
     "ui-ux-design": 3
   },
   "byCompany": {
@@ -36,16 +36,16 @@
     "cargillsceylon": 1,
     "citizens-development-business-finance": 15,
     "creative-software": 10,
-    "dialog": 3,
+    "dialog": 4,
     "dialog-axiata": 30,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
     "fortude": 20,
-    "hayleys-group": 95,
+    "hayleys-group": 98,
     "john-keells-hotels": 2,
     "keells": 39,
     "lanka-ioc": 3,
-    "lseg": 28,
+    "lseg": 29,
     "national-development-bank": 14,
     "octave": 6,
     "pearson": 6,
@@ -59,25 +59,25 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 41,
+    "intern": 43,
     "junior": 24,
-    "lead": 46,
+    "lead": 47,
     "manager": 75,
     "mid": 1,
     "principal": 13,
     "senior": 71,
     "trainee": 8,
-    "unspecified": 141
+    "unspecified": 143
   },
   "byIndustry": {
     "automotive": 1,
     "banking": 15,
     "consumer-goods-retail": 2,
-    "diversified": 143,
+    "diversified": 146,
     "energy": 3,
-    "financial-services": 24,
+    "financial-services": 25,
     "hotels-leisure": 2,
-    "technology": 199,
+    "technology": 200,
     "telecommunications": 31
   }
 }
