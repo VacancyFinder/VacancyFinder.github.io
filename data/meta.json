@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-12T00:57:45.562Z",
-  "runDurationMs": 139952,
+  "generatedAt": "2026-10-12T03:58:11.162Z",
+  "runDurationMs": 133574,
   "totals": {
-    "open": 419,
+    "open": 420,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 26
@@ -15,7 +15,7 @@
     "data-ai-ml": 40,
     "digital-graphics": 4,
     "engineering-manufacturing": 31,
-    "finance-accounting": 41,
+    "finance-accounting": 42,
     "hospitality-tourism": 6,
     "human-resource": 23,
     "legal-compliance": 13,
@@ -36,7 +36,7 @@
     "cargillsceylon": 1,
     "citizens-development-business-finance": 15,
     "creative-software": 10,
-    "dialog": 2,
+    "dialog": 3,
     "dialog-axiata": 30,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 12,
@@ -62,7 +62,7 @@
     "intern": 41,
     "junior": 24,
     "lead": 46,
-    "manager": 74,
+    "manager": 75,
     "mid": 1,
     "principal": 13,
     "senior": 71,
@@ -75,7 +75,7 @@
     "consumer-goods-retail": 2,
     "diversified": 143,
     "energy": 3,
-    "financial-services": 23,
+    "financial-services": 24,
     "hotels-leisure": 2,
     "technology": 199,
     "telecommunications": 31
