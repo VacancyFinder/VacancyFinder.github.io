@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T01:02:37.819Z",
-  "runDurationMs": 141908,
+  "generatedAt": "2026-10-13T04:03:00.810Z",
+  "runDurationMs": 147679,
   "totals": {
     "open": 378,
     "companiesWithJobs": 29,
@@ -9,7 +9,7 @@
   },
   "byField": {
     "admin-customer-service": 25,
-    "banking-insurance": 20,
+    "banking-insurance": 19,
     "cloud-devops": 38,
     "cybersecurity": 6,
     "data-ai-ml": 36,
@@ -20,7 +20,7 @@
     "human-resource": 15,
     "legal-compliance": 12,
     "operations-logistics": 49,
-    "other": 14,
+    "other": 15,
     "product-project-business": 22,
     "qa-testing": 9,
     "sales-marketing": 60,
@@ -30,13 +30,13 @@
   "byCompany": {
     "99x": 2,
     "abans-finance": 6,
-    "brownsgroup": 8,
+    "brownsgroup": 9,
     "cargills-bank": 1,
     "cargills-ceylon": 2,
     "cargillsceylon": 1,
     "citizens-development-business-finance": 15,
     "creative-software": 10,
-    "dialog": 4,
+    "dialog": 3,
     "dialog-axiata": 31,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 8,
@@ -59,7 +59,7 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 39,
+    "intern": 38,
     "junior": 24,
     "lead": 32,
     "manager": 74,
@@ -67,15 +67,15 @@
     "principal": 10,
     "senior": 60,
     "trainee": 8,
-    "unspecified": 130
+    "unspecified": 131
   },
   "byIndustry": {
     "automotive": 1,
     "banking": 17,
     "consumer-goods-retail": 2,
-    "diversified": 148,
+    "diversified": 149,
     "energy": 3,
-    "financial-services": 25,
+    "financial-services": 24,
     "hotels-leisure": 2,
     "technology": 148,
     "telecommunications": 32
