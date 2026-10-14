@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-14T13:08:32.024Z",
-  "runDurationMs": 141531,
+  "generatedAt": "2026-10-14T16:08:58.992Z",
+  "runDurationMs": 137211,
   "totals": {
-    "open": 400,
+    "open": 401,
     "companiesWithJobs": 30,
     "targets": 27,
-    "targetsOk": 26
+    "targetsOk": 25
   },
   "byField": {
     "admin-customer-service": 24,
@@ -21,7 +21,7 @@
     "legal-compliance": 16,
     "operations-logistics": 51,
     "other": 17,
-    "product-project-business": 21,
+    "product-project-business": 22,
     "qa-testing": 9,
     "sales-marketing": 61,
     "software-engineering": 48,
@@ -52,7 +52,7 @@
     "rootcode": 7,
     "sri-lanka-telecom": 1,
     "surge-global": 6,
-    "sysco-labs": 40,
+    "sysco-labs": 41,
     "union-bank-of-colombo": 1,
     "vallibel-one": 1,
     "wso2": 9,
@@ -61,7 +61,7 @@
   },
   "bySeniority": {
     "intern": 41,
-    "junior": 29,
+    "junior": 30,
     "lead": 33,
     "manager": 82,
     "mid": 1,
@@ -78,7 +78,7 @@
     "energy": 5,
     "financial-services": 24,
     "hotels-leisure": 2,
-    "technology": 152,
+    "technology": 153,
     "telecommunications": 35
   }
 }
