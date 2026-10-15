@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-15T17:08:25.549Z",
-  "runDurationMs": 144040,
+  "generatedAt": "2026-10-15T20:09:02.880Z",
+  "runDurationMs": 139965,
   "totals": {
-    "open": 406,
+    "open": 402,
     "companiesWithJobs": 30,
     "targets": 27,
-    "targetsOk": 26
+    "targetsOk": 25
   },
   "byField": {
     "admin-customer-service": 24,
-    "banking-insurance": 25,
+    "banking-insurance": 24,
     "cloud-devops": 38,
     "cybersecurity": 6,
     "data-ai-ml": 35,
@@ -18,12 +18,12 @@
     "finance-accounting": 40,
     "hospitality-tourism": 7,
     "human-resource": 14,
-    "legal-compliance": 16,
+    "legal-compliance": 14,
     "operations-logistics": 54,
     "other": 17,
     "product-project-business": 22,
     "qa-testing": 12,
-    "sales-marketing": 63,
+    "sales-marketing": 62,
     "software-engineering": 48,
     "ui-ux-design": 3
   },
@@ -46,7 +46,7 @@
     "keells": 45,
     "lanka-ioc": 5,
     "lseg": 29,
-    "national-development-bank": 26,
+    "national-development-bank": 22,
     "octave": 6,
     "pearson": 8,
     "rootcode": 7,
@@ -60,19 +60,19 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 40,
+    "intern": 39,
     "junior": 30,
     "lead": 32,
-    "manager": 80,
+    "manager": 78,
     "mid": 1,
     "principal": 12,
     "senior": 60,
-    "trainee": 10,
+    "trainee": 9,
     "unspecified": 141
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 28,
+    "banking": 24,
     "consumer-goods-retail": 2,
     "diversified": 158,
     "energy": 5,
