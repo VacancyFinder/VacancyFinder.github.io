@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-15T11:07:25.923Z",
-  "runDurationMs": 125228,
+  "generatedAt": "2026-10-15T14:07:56.630Z",
+  "runDurationMs": 146986,
   "totals": {
     "open": 403,
     "companiesWithJobs": 30,
     "targets": 27,
-    "targetsOk": 26
+    "targetsOk": 25
   },
   "byField": {
     "admin-customer-service": 24,
-    "banking-insurance": 24,
+    "banking-insurance": 25,
     "cloud-devops": 38,
     "cybersecurity": 6,
     "data-ai-ml": 35,
     "digital-graphics": 4,
     "engineering-manufacturing": 38,
-    "finance-accounting": 41,
+    "finance-accounting": 40,
     "hospitality-tourism": 7,
     "human-resource": 14,
     "legal-compliance": 16,
@@ -45,8 +45,8 @@
     "john-keells-hotels": 3,
     "keells": 42,
     "lanka-ioc": 5,
-    "lseg": 30,
-    "national-development-bank": 25,
+    "lseg": 29,
+    "national-development-bank": 26,
     "octave": 6,
     "pearson": 8,
     "rootcode": 7,
@@ -63,22 +63,22 @@
     "intern": 39,
     "junior": 30,
     "lead": 32,
-    "manager": 81,
+    "manager": 80,
     "mid": 1,
     "principal": 11,
     "senior": 60,
-    "trainee": 9,
+    "trainee": 10,
     "unspecified": 140
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 27,
+    "banking": 28,
     "consumer-goods-retail": 2,
     "diversified": 155,
     "energy": 5,
     "financial-services": 24,
     "hotels-leisure": 3,
-    "technology": 154,
+    "technology": 153,
     "telecommunications": 32
   }
 }
