@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-17T17:12:47.941Z",
-  "runDurationMs": 152038,
+  "generatedAt": "2026-10-17T20:13:18.953Z",
+  "runDurationMs": 156350,
   "totals": {
-    "open": 398,
+    "open": 389,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 25
   },
   "byField": {
     "admin-customer-service": 24,
-    "banking-insurance": 25,
-    "cloud-devops": 37,
+    "banking-insurance": 21,
+    "cloud-devops": 36,
     "cybersecurity": 6,
     "data-ai-ml": 32,
     "digital-graphics": 3,
@@ -18,13 +18,13 @@
     "finance-accounting": 42,
     "hospitality-tourism": 5,
     "human-resource": 14,
-    "legal-compliance": 13,
-    "operations-logistics": 53,
+    "legal-compliance": 11,
+    "operations-logistics": 51,
     "other": 19,
     "product-project-business": 22,
     "qa-testing": 12,
     "sales-marketing": 61,
-    "software-engineering": 47,
+    "software-engineering": 46,
     "ui-ux-design": 3
   },
   "byCompany": {
@@ -46,7 +46,7 @@
     "keells": 45,
     "lanka-ioc": 5,
     "lseg": 30,
-    "national-development-bank": 18,
+    "national-development-bank": 9,
     "octave": 6,
     "pearson": 8,
     "rootcode": 7,
@@ -61,18 +61,18 @@
   },
   "bySeniority": {
     "intern": 41,
-    "junior": 31,
+    "junior": 29,
     "lead": 33,
-    "manager": 75,
+    "manager": 71,
     "mid": 1,
     "principal": 12,
     "senior": 59,
     "trainee": 8,
-    "unspecified": 138
+    "unspecified": 135
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 23,
+    "banking": 14,
     "consumer-goods-retail": 2,
     "diversified": 151,
     "energy": 5,
