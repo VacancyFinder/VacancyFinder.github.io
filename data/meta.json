@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-18T17:16:20.035Z",
-  "runDurationMs": 151607,
+  "generatedAt": "2026-10-18T20:16:44.993Z",
+  "runDurationMs": 139304,
   "totals": {
-    "open": 393,
+    "open": 382,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 25
   },
   "byField": {
     "admin-customer-service": 23,
-    "banking-insurance": 25,
-    "cloud-devops": 37,
+    "banking-insurance": 21,
+    "cloud-devops": 36,
     "cybersecurity": 6,
     "data-ai-ml": 31,
     "digital-graphics": 3,
@@ -18,13 +18,13 @@
     "finance-accounting": 41,
     "hospitality-tourism": 5,
     "human-resource": 14,
-    "legal-compliance": 12,
-    "operations-logistics": 53,
+    "legal-compliance": 10,
+    "operations-logistics": 51,
     "other": 17,
     "product-project-business": 22,
     "qa-testing": 12,
     "sales-marketing": 61,
-    "software-engineering": 47,
+    "software-engineering": 44,
     "ui-ux-design": 3
   },
   "byCompany": {
@@ -46,13 +46,13 @@
     "keells": 43,
     "lanka-ioc": 5,
     "lseg": 30,
-    "national-development-bank": 18,
+    "national-development-bank": 9,
     "octave": 6,
     "pearson": 8,
     "rootcode": 7,
     "sri-lanka-telecom": 1,
     "surge-global": 6,
-    "sysco-labs": 40,
+    "sysco-labs": 38,
     "union-bank-of-colombo": 4,
     "vallibel-one": 1,
     "wso2": 10,
@@ -60,25 +60,25 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 39,
-    "junior": 31,
+    "intern": 37,
+    "junior": 29,
     "lead": 32,
-    "manager": 75,
+    "manager": 71,
     "mid": 1,
     "principal": 12,
     "senior": 58,
     "trainee": 8,
-    "unspecified": 137
+    "unspecified": 134
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 23,
+    "banking": 14,
     "consumer-goods-retail": 2,
     "diversified": 148,
     "energy": 5,
     "financial-services": 25,
     "hotels-leisure": 3,
-    "technology": 153,
+    "technology": 151,
     "telecommunications": 33
   }
 }
