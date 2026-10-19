@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-19T14:17:18.864Z",
-  "runDurationMs": 160371,
+  "generatedAt": "2026-10-19T17:17:51.342Z",
+  "runDurationMs": 169999,
   "totals": {
-    "open": 399,
+    "open": 391,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 25
   },
   "byField": {
     "admin-customer-service": 21,
-    "banking-insurance": 27,
-    "cloud-devops": 36,
+    "banking-insurance": 23,
+    "cloud-devops": 35,
     "cybersecurity": 6,
     "data-ai-ml": 36,
     "digital-graphics": 3,
@@ -18,14 +18,14 @@
     "finance-accounting": 41,
     "healthcare": 1,
     "hospitality-tourism": 4,
-    "human-resource": 15,
-    "legal-compliance": 14,
-    "operations-logistics": 54,
+    "human-resource": 14,
+    "legal-compliance": 13,
+    "operations-logistics": 53,
     "other": 17,
     "product-project-business": 21,
     "qa-testing": 12,
     "sales-marketing": 62,
-    "software-engineering": 42,
+    "software-engineering": 41,
     "ui-ux-design": 3
   },
   "byCompany": {
@@ -38,7 +38,7 @@
     "citizens-development-business-finance": 15,
     "creative-software": 7,
     "dialog": 6,
-    "dialog-axiata": 34,
+    "dialog-axiata": 36,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 8,
     "fortude": 20,
@@ -47,7 +47,7 @@
     "keells": 39,
     "lanka-ioc": 5,
     "lseg": 34,
-    "national-development-bank": 22,
+    "national-development-bank": 12,
     "octave": 6,
     "pearson": 8,
     "rootcode": 7,
@@ -61,25 +61,25 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 43,
-    "junior": 30,
+    "intern": 44,
+    "junior": 28,
     "lead": 33,
-    "manager": 77,
+    "manager": 73,
     "mid": 1,
     "principal": 13,
     "senior": 60,
     "trainee": 8,
-    "unspecified": 134
+    "unspecified": 131
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 27,
+    "banking": 17,
     "consumer-goods-retail": 2,
     "diversified": 144,
     "energy": 5,
     "financial-services": 27,
     "hotels-leisure": 3,
     "technology": 155,
-    "telecommunications": 35
+    "telecommunications": 37
   }
 }
