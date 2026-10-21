@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-21T11:24:01.342Z",
-  "runDurationMs": 169740,
+  "generatedAt": "2026-10-21T14:24:23.280Z",
+  "runDurationMs": 172777,
   "totals": {
-    "open": 401,
+    "open": 404,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 25
@@ -18,13 +18,13 @@
     "finance-accounting": 40,
     "healthcare": 2,
     "hospitality-tourism": 4,
-    "human-resource": 14,
-    "legal-compliance": 15,
-    "operations-logistics": 55,
+    "human-resource": 15,
+    "legal-compliance": 16,
+    "operations-logistics": 56,
     "other": 21,
     "product-project-business": 24,
     "qa-testing": 12,
-    "sales-marketing": 62,
+    "sales-marketing": 63,
     "software-engineering": 37,
     "ui-ux-design": 3
   },
@@ -44,10 +44,10 @@
     "fortude": 20,
     "hayleys-group": 92,
     "john-keells-hotels": 3,
-    "keells": 45,
+    "keells": 46,
     "lanka-ioc": 5,
-    "lseg": 35,
-    "national-development-bank": 22,
+    "lseg": 36,
+    "national-development-bank": 23,
     "octave": 6,
     "pearson": 8,
     "rootcode": 7,
@@ -61,10 +61,10 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 44,
+    "intern": 45,
     "junior": 30,
     "lead": 31,
-    "manager": 77,
+    "manager": 79,
     "mid": 1,
     "principal": 13,
     "senior": 59,
@@ -73,13 +73,13 @@
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 27,
+    "banking": 28,
     "consumer-goods-retail": 2,
-    "diversified": 147,
+    "diversified": 148,
     "energy": 5,
     "financial-services": 27,
     "hotels-leisure": 3,
-    "technology": 154,
+    "technology": 155,
     "telecommunications": 35
   }
 }
