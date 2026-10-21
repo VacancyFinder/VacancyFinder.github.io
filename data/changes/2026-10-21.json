@@ -801,5 +801,48 @@
         "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/Colombo-Sri-Lanka/Intern--KYC-Operations_R0123605"
       }
     ]
+  },
+  {
+    "at": "2026-10-21T20:25:19.338Z",
+    "added": [
+      {
+        "id": "794c48d045c67ae708a47f1a344a5a43208bed91",
+        "title": "Senior Technical Lead - Privileged Access Management",
+        "company": "sysco-labs",
+        "url": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/job/Sysco-LABS-----Sri-Lanka/Senior-Technical-Lead---Privileged-Access-Management_R267162"
+      },
+      {
+        "id": "ba7fa580ce6b99a375cbf46f55d9351b56110a18",
+        "title": "Senior Engineer - DevOps",
+        "company": "sysco-labs",
+        "url": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/job/Sysco-LABS-----Sri-Lanka/Senior-Engineer---DevOps_R271951"
+      }
+    ],
+    "closed": [
+      {
+        "id": "3aa8fd8a74499f07312733094c4c4fe0c3eaa080",
+        "title": "Senior Manager - Central Operations & Balance Confirmation",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1481891"
+      },
+      {
+        "id": "7937dfa6ae8558308e955cb46c540097f504991e",
+        "title": "Manager – Procurement",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1481881"
+      },
+      {
+        "id": "84ce75f61b8ed0a5cab42a48a760982c494c4943",
+        "title": "Deputy Manager - Risk Analyst",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1477451"
+      },
+      {
+        "id": "cf6372795fb03e8e58f721181972cd0cade8a8bf",
+        "title": "Junior Executive - Legal",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1481911"
+      }
+    ]
   }
 ]
