@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-22T17:20:54.115Z",
-  "runDurationMs": 172074,
+  "generatedAt": "2026-10-22T20:21:25.035Z",
+  "runDurationMs": 158130,
   "totals": {
-    "open": 398,
+    "open": 397,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 25
@@ -19,7 +19,7 @@
     "healthcare": 2,
     "hospitality-tourism": 6,
     "human-resource": 16,
-    "legal-compliance": 12,
+    "legal-compliance": 11,
     "operations-logistics": 52,
     "other": 21,
     "product-project-business": 24,
@@ -47,7 +47,7 @@
     "keells": 46,
     "lanka-ioc": 5,
     "lseg": 34,
-    "national-development-bank": 18,
+    "national-development-bank": 17,
     "octave": 6,
     "pearson": 8,
     "rootcode": 7,
@@ -62,7 +62,7 @@
   },
   "bySeniority": {
     "intern": 42,
-    "junior": 29,
+    "junior": 28,
     "lead": 32,
     "manager": 74,
     "mid": 1,
@@ -73,7 +73,7 @@
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 23,
+    "banking": 22,
     "consumer-goods-retail": 2,
     "diversified": 148,
     "energy": 5,
