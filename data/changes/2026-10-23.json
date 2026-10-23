@@ -591,5 +591,144 @@
       }
     ],
     "closed": []
+  },
+  {
+    "at": "2026-10-23T23:25:30.532Z",
+    "added": [
+      {
+        "id": "29f1dc101a0d22b55316cf76b1fc39b587925dd3",
+        "title": "Business Development Manager - Current Account Sales Team",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1716209"
+      },
+      {
+        "id": "3c2501b3d22b88f37c6740792350d06422693d39",
+        "title": "Project Manager - IT",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1714239"
+      },
+      {
+        "id": "5efdc8e4c172cb89af6c1633fdfa6ac90adfa0f0",
+        "title": "Vice President - Card Center",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1714219"
+      },
+      {
+        "id": "6f4b2eaef5a828c17c6db8d5fe4b354c3e5b8160",
+        "title": "Deputy Manager - Internal Audit",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1714199"
+      },
+      {
+        "id": "9c63d35795f74af78025c0ce40ae14edca6a9e42",
+        "title": "Senior Deputy Manager - Data & Analytics",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1714229"
+      },
+      {
+        "id": "252589939858469ebe6fff90ef1d584b9a81e135",
+        "title": "Elevate - Client Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1717749"
+      },
+      {
+        "id": "34fb300b6d0bf4b829ac62b3dcedaeba62feecee",
+        "title": "Business Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1717699"
+      },
+      {
+        "id": "8d6e9f2beeb774ce4d99f66feae8869cf4262937",
+        "title": "Pawning Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1716959"
+      }
+    ],
+    "closed": [
+      {
+        "id": "462eac54b4df9a22f7e2f063b8205dc8c40b89d6",
+        "title": "Project Manager - IT",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2595136"
+      },
+      {
+        "id": "48bd104d70ffe7062ca083619283a1d14e937c8d",
+        "title": "Senior Deputy Manager - Data & Analytics",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2595126"
+      },
+      {
+        "id": "52f9cc6a365e3d166d0b4e866ebec83854cf7fec",
+        "title": "Vice President - Card Center",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2595156"
+      },
+      {
+        "id": "652383816a5c4d4573bc977ffbe36ad715a85d35",
+        "title": "Business Development Manager - Current Account Sales Team",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2596506"
+      },
+      {
+        "id": "9ffc149e3e0aa502ffa5a7e13861e79dbe87e866",
+        "title": "Deputy Manager - Internal Audit",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2595176"
+      },
+      {
+        "id": "47d4f391e9ca9be848078fac89fb0f3044fef0a0",
+        "title": "Executive Housekeeping",
+        "company": "john-keells-hotels",
+        "url": "https://careers.keells.com/Cinnamon/job/Colombo-Executive-Housekeeping/1368892766/"
+      },
+      {
+        "id": "8a26b0c0362106bc37a3bd7109d067a467a7861b",
+        "title": "Team Lead - Financial Services",
+        "company": "keells",
+        "url": "https://careers.keells.com/InfoMate/job/Colombo-Team-Lead-Financial-Services/1368639166/"
+      },
+      {
+        "id": "d86d14e01ec74ac4351aaf83b0db1cf58e6b0329",
+        "title": "Process Associate",
+        "company": "keells",
+        "url": "https://careers.keells.com/job/Colombo-Process-Associate/1368426666/"
+      },
+      {
+        "id": "730ec01efa825212456621cba3d7d00a799b2c6f",
+        "title": "Pawning Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2597216"
+      },
+      {
+        "id": "8642f00150dafb313b2df1e24fb7304e647823af",
+        "title": "Business Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2598076"
+      },
+      {
+        "id": "da4fcac3ba03534018a46bbbdc2c27b8ff4a0b07",
+        "title": "Elevate - Client Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2598006"
+      },
+      {
+        "id": "600f4850d937a773527498314e51740c4eae749e",
+        "title": "Executive - Operations",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3054"
+      },
+      {
+        "id": "764114e2d9b96594024b6209abc830f8fa87f934",
+        "title": "Regional Manager - Bancassurance",
+        "company": "keells",
+        "url": "https://careers.keells.com/UnionAssurance/job/Colombo-Regional-Manager-Bancassurance/1367434466/"
+      },
+      {
+        "id": "c6cbb1cf74a4eaad09da90cbfbc7304d012c0f3e",
+        "title": "Executive - Business Support/Personal Assistant",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2948"
+      }
+    ]
   }
 ]
