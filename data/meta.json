@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-23T17:24:42.930Z",
-  "runDurationMs": 158174,
+  "generatedAt": "2026-10-23T20:25:06.823Z",
+  "runDurationMs": 143523,
   "totals": {
-    "open": 387,
+    "open": 388,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 25
@@ -10,7 +10,7 @@
   "byField": {
     "admin-customer-service": 17,
     "banking-insurance": 24,
-    "cloud-devops": 41,
+    "cloud-devops": 42,
     "cybersecurity": 7,
     "data-ai-ml": 39,
     "digital-graphics": 4,
@@ -49,7 +49,7 @@
     "lseg": 32,
     "national-development-bank": 16,
     "octave": 6,
-    "pearson": 8,
+    "pearson": 9,
     "rootcode": 7,
     "sri-lanka-telecom": 1,
     "surge-global": 11,
@@ -61,7 +61,7 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 42,
+    "intern": 43,
     "junior": 23,
     "lead": 31,
     "manager": 71,
@@ -79,7 +79,7 @@
     "energy": 5,
     "financial-services": 22,
     "hotels-leisure": 2,
-    "technology": 157,
+    "technology": 158,
     "telecommunications": 32
   }
 }
