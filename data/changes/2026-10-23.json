@@ -65,5 +65,72 @@
         "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-1479401"
       }
     ]
+  },
+  {
+    "at": "2026-10-23T05:22:48.141Z",
+    "added": [
+      {
+        "id": "254942066ea4ca0125bc2e7ff241b3e1e869c1b5",
+        "title": "Intern - Dialog Enterprise",
+        "company": "dialog",
+        "url": "https://hcmcloud.dialog.lk/CareerPortal/Careers?q=bEopnWmcv9llMiBG3zygOw%3D%3D#job-vacant-5205"
+      },
+      {
+        "id": "8463af76ebef5256bc3264659ef05988db18e8f5",
+        "title": "Manager - Facilities Management and Logistics",
+        "company": "keells",
+        "url": "https://careers.keells.com/UnionAssurance/job/Colombo-Manager-Facilities-Management-and-Logistics/1367501166/"
+      },
+      {
+        "id": "796e5ec4f205271f3d7a23c362c329c96fbb5077",
+        "title": "Junior Executive - Operations",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3144"
+      }
+    ],
+    "closed": [
+      {
+        "id": "20315237319cefd9829fca10c0eb2b55cfd31dc0",
+        "title": "Senior Operations Assistant – Service Management | Premium Customer Service",
+        "company": "citizens-development-business-finance",
+        "url": "https://www.cdb.lk/life-at-cdb/careers/senior-operations-assistant-service-management-premium-customer-service"
+      },
+      {
+        "id": "304e1b99490008a9af506b74596d4f440da7da0c",
+        "title": "Contact Center Supervisor",
+        "company": "citizens-development-business-finance",
+        "url": "https://www.cdb.lk/life-at-cdb/careers/contact-center-supervisor"
+      },
+      {
+        "id": "3d6d0d36569a13c4464a001d0819d165f5279fc0",
+        "title": "Assistant Brand Manager (Credit Cards)",
+        "company": "citizens-development-business-finance",
+        "url": "https://www.cdb.lk/life-at-cdb/careers/assistant-brand-manager-credit-cards"
+      },
+      {
+        "id": "605dcc7bb3e298fd2818d39b32370517f80c14ee",
+        "title": "Team Leader – Premium Contact Centre Operations",
+        "company": "citizens-development-business-finance",
+        "url": "https://www.cdb.lk/life-at-cdb/careers/team-leader-premium-contact-centre-operations"
+      },
+      {
+        "id": "96a76518dfbdef3903cf46acda1e7d1712883abb",
+        "title": "Head of Branch – Badulla Unit A",
+        "company": "citizens-development-business-finance",
+        "url": "https://www.cdb.lk/life-at-cdb/careers/head-of-branch-badulla-unit-a"
+      },
+      {
+        "id": "b7502d95aacfcb0c8358d308c27c10fa266b1d56",
+        "title": "Contact Centre Associate – Premium Customer Service",
+        "company": "citizens-development-business-finance",
+        "url": "https://www.cdb.lk/life-at-cdb/careers/contact-centre-associate-premium-customer-service"
+      },
+      {
+        "id": "d77f02bf7171cad00bb49b9e2cbbdd35519b9675",
+        "title": "Product Head – Solar Financing",
+        "company": "citizens-development-business-finance",
+        "url": "https://www.cdb.lk/life-at-cdb/careers/product-head-solar-financing"
+      }
+    ]
   }
 ]
