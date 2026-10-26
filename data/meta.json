@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-26T20:18:45.614Z",
-  "runDurationMs": 139783,
+  "generatedAt": "2026-10-26T23:19:10.432Z",
+  "runDurationMs": 146817,
   "totals": {
-    "open": 399,
+    "open": 395,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 25
@@ -15,7 +15,7 @@
     "data-ai-ml": 40,
     "digital-graphics": 4,
     "engineering-manufacturing": 39,
-    "finance-accounting": 36,
+    "finance-accounting": 34,
     "healthcare": 3,
     "hospitality-tourism": 5,
     "human-resource": 15,
@@ -24,7 +24,7 @@
     "other": 20,
     "product-project-business": 23,
     "qa-testing": 13,
-    "sales-marketing": 62,
+    "sales-marketing": 60,
     "software-engineering": 40,
     "ui-ux-design": 2
   },
@@ -37,15 +37,15 @@
     "citizens-development-business-finance": 10,
     "creative-software": 7,
     "dialog": 4,
-    "dialog-axiata": 35,
+    "dialog-axiata": 34,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 8,
     "fortude": 20,
-    "hayleys-group": 88,
+    "hayleys-group": 87,
     "john-keells-hotels": 1,
     "keells": 44,
     "lanka-ioc": 5,
-    "lseg": 32,
+    "lseg": 30,
     "national-development-bank": 22,
     "octave": 6,
     "pearson": 11,
@@ -63,22 +63,22 @@
     "intern": 40,
     "junior": 24,
     "lead": 32,
-    "manager": 77,
+    "manager": 76,
     "mid": 2,
     "principal": 12,
     "senior": 61,
     "trainee": 9,
-    "unspecified": 142
+    "unspecified": 139
   },
   "byIndustry": {
     "automotive": 1,
     "banking": 28,
     "consumer-goods-retail": 2,
-    "diversified": 145,
+    "diversified": 144,
     "energy": 5,
     "financial-services": 21,
     "hotels-leisure": 1,
-    "technology": 160,
-    "telecommunications": 36
+    "technology": 158,
+    "telecommunications": 35
   }
 }
