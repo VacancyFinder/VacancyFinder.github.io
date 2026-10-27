@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-27T17:21:59.042Z",
-  "runDurationMs": 167583,
+  "generatedAt": "2026-10-27T20:22:27.572Z",
+  "runDurationMs": 168140,
   "totals": {
-    "open": 413,
+    "open": 411,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 24
   },
   "byField": {
     "admin-customer-service": 20,
-    "banking-insurance": 28,
+    "banking-insurance": 26,
     "cloud-devops": 45,
     "cybersecurity": 7,
     "data-ai-ml": 41,
@@ -46,7 +46,7 @@
     "keells": 46,
     "lanka-ioc": 5,
     "lseg": 32,
-    "national-development-bank": 26,
+    "national-development-bank": 24,
     "octave": 6,
     "pearson": 11,
     "rootcode": 7,
@@ -61,18 +61,18 @@
   },
   "bySeniority": {
     "intern": 40,
-    "junior": 29,
+    "junior": 28,
     "lead": 31,
     "manager": 79,
     "mid": 2,
     "principal": 12,
     "senior": 63,
     "trainee": 9,
-    "unspecified": 148
+    "unspecified": 147
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 32,
+    "banking": 30,
     "consumer-goods-retail": 2,
     "diversified": 153,
     "energy": 5,
