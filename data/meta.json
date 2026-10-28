@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T14:25:23.284Z",
-  "runDurationMs": 173131,
+  "generatedAt": "2026-10-28T17:26:02.097Z",
+  "runDurationMs": 169655,
   "totals": {
-    "open": 413,
+    "open": 414,
     "companiesWithJobs": 28,
     "targets": 27,
     "targetsOk": 24
@@ -14,8 +14,8 @@
     "cybersecurity": 7,
     "data-ai-ml": 42,
     "digital-graphics": 3,
-    "engineering-manufacturing": 47,
-    "finance-accounting": 41,
+    "engineering-manufacturing": 48,
+    "finance-accounting": 42,
     "healthcare": 3,
     "hospitality-tourism": 5,
     "human-resource": 15,
@@ -26,7 +26,7 @@
     "qa-testing": 12,
     "sales-marketing": 61,
     "software-engineering": 39,
-    "ui-ux-design": 2
+    "ui-ux-design": 3
   },
   "byCompany": {
     "abans-finance": 7,
@@ -51,7 +51,7 @@
     "rootcode": 7,
     "sri-lanka-telecom": 1,
     "surge-global": 13,
-    "sysco-labs": 41,
+    "sysco-labs": 42,
     "union-bank-of-colombo": 4,
     "vallibel-one": 1,
     "wso2": 10,
@@ -59,7 +59,7 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 39,
+    "intern": 40,
     "junior": 26,
     "lead": 31,
     "manager": 77,
@@ -76,7 +76,7 @@
     "energy": 5,
     "financial-services": 21,
     "hotels-leisure": 1,
-    "technology": 159,
+    "technology": 160,
     "telecommunications": 36
   }
 }
