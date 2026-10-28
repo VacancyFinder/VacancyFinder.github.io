@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-27T23:22:53.597Z",
-  "runDurationMs": 160844,
+  "generatedAt": "2026-10-28T02:23:19.046Z",
+  "runDurationMs": 162412,
   "totals": {
-    "open": 403,
+    "open": 404,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 24
@@ -18,7 +18,7 @@
     "finance-accounting": 38,
     "healthcare": 3,
     "hospitality-tourism": 5,
-    "human-resource": 14,
+    "human-resource": 15,
     "legal-compliance": 14,
     "operations-logistics": 53,
     "other": 19,
@@ -41,7 +41,7 @@
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 8,
     "fortude": 20,
-    "hayleys-group": 89,
+    "hayleys-group": 90,
     "john-keells-hotels": 1,
     "keells": 44,
     "lanka-ioc": 5,
@@ -68,13 +68,13 @@
     "principal": 12,
     "senior": 63,
     "trainee": 9,
-    "unspecified": 143
+    "unspecified": 144
   },
   "byIndustry": {
     "automotive": 1,
     "banking": 27,
     "consumer-goods-retail": 2,
-    "diversified": 149,
+    "diversified": 150,
     "energy": 5,
     "financial-services": 21,
     "hotels-leisure": 1,
