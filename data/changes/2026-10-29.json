@@ -875,5 +875,107 @@
         "url": "https://hccz.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/job/25064"
       }
     ]
+  },
+  {
+    "at": "2026-10-29T23:30:31.916Z",
+    "added": [],
+    "closed": [
+      {
+        "id": "fb365158ae8cd18c5730efdfb42d722374cc25be",
+        "title": "Executive - Health, Wellness & Beauty Category",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3139"
+      },
+      {
+        "id": "08e71a5b258d8cbe96562cfff22a7e41e0df217e",
+        "title": "Assistant Manager - Marketing And Business Development",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3134"
+      },
+      {
+        "id": "d03d2b4b4ac5bc065f9988b93cabe4295e753364",
+        "title": "Executive – HR Business Partner",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2903"
+      },
+      {
+        "id": "8ecd04a2c74eb7848f59e58bcc1244e81eed5a91",
+        "title": "Executive - Quality Assurance",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3131"
+      },
+      {
+        "id": "1263805ff53e7199bda61d22a2a7a189df3ab203",
+        "title": "Junior Associate - Finance Operations",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2872"
+      },
+      {
+        "id": "c28093364514d6c790034b9ae65cf12bbc18386a",
+        "title": "Senior Executive - Digital Marketing",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3016"
+      },
+      {
+        "id": "0048c3509ccf584848d603a4c9ab475a9c54dfcc",
+        "title": "HR Executive- Talent Acquisition",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2990"
+      },
+      {
+        "id": "11702706152ee3c76436996732637416ae5b1751",
+        "title": "Quantity Surveyor - Civil",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2983"
+      },
+      {
+        "id": "2289e6cba631ccdc7ca6701daeb941da072874ff",
+        "title": "Senior Manager – MEP",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3012"
+      },
+      {
+        "id": "3146edee68c8e1f276f14dde0af584097ad130b5",
+        "title": "Material Engineer",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2955"
+      },
+      {
+        "id": "4cc8a21ac84b1cef551c48b49dd2c83807183baf",
+        "title": "Quantity Surveyor - Civil",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2977"
+      },
+      {
+        "id": "83173e815186c16cb4e331c1e8901376af095bd4",
+        "title": "Executive - Marketing and Business Development",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3068"
+      },
+      {
+        "id": "95a9356380f4af2be6b9c0350697f1cad936b1c3",
+        "title": "Civil Engineer",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2991"
+      },
+      {
+        "id": "aba236c0a7d5484f3444f3f9c9b87b15ce8aa738",
+        "title": "Quantity Surveyor (MEP)",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2979"
+      },
+      {
+        "id": "d8eced0c9a8fe0ad7edfe1f67f4e62a40705dd43",
+        "title": "Design and Estimation Engineer - Civil",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3017"
+      },
+      {
+        "id": "fa8a3f95e6985b5c9e6ef1e0fe978164b50a73de",
+        "title": "QA/QC Engineer - MEP",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/2978"
+      }
+    ]
   }
 ]
