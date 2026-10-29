@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-29T17:29:41.265Z",
-  "runDurationMs": 132783,
+  "generatedAt": "2026-10-29T20:30:08.671Z",
+  "runDurationMs": 133489,
   "totals": {
-    "open": 417,
+    "open": 416,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 24
@@ -23,7 +23,7 @@
     "operations-logistics": 58,
     "other": 21,
     "product-project-business": 22,
-    "qa-testing": 11,
+    "qa-testing": 10,
     "sales-marketing": 61,
     "software-engineering": 36,
     "ui-ux-design": 3
@@ -48,7 +48,7 @@
     "lseg": 27,
     "national-development-bank": 18,
     "octave": 6,
-    "pearson": 13,
+    "pearson": 12,
     "rootcode": 7,
     "sri-lanka-telecom": 1,
     "surge-global": 11,
@@ -66,7 +66,7 @@
     "manager": 78,
     "mid": 2,
     "principal": 12,
-    "senior": 65,
+    "senior": 64,
     "trainee": 9,
     "unspecified": 154
   },
@@ -78,7 +78,7 @@
     "energy": 5,
     "financial-services": 22,
     "hotels-leisure": 2,
-    "technology": 155,
+    "technology": 154,
     "telecommunications": 40
   }
 }
