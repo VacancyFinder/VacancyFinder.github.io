@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-30T14:32:49.618Z",
-  "runDurationMs": 134141,
+  "generatedAt": "2026-10-30T17:33:16.437Z",
+  "runDurationMs": 155001,
   "totals": {
-    "open": 418,
+    "open": 420,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 24
   },
   "byField": {
     "admin-customer-service": 26,
-    "banking-insurance": 31,
-    "cloud-devops": 43,
+    "banking-insurance": 32,
+    "cloud-devops": 44,
     "cybersecurity": 7,
     "data-ai-ml": 45,
     "digital-graphics": 3,
@@ -20,11 +20,11 @@
     "hospitality-tourism": 5,
     "human-resource": 16,
     "legal-compliance": 12,
-    "operations-logistics": 60,
+    "operations-logistics": 61,
     "other": 21,
     "product-project-business": 23,
     "qa-testing": 9,
-    "sales-marketing": 63,
+    "sales-marketing": 64,
     "software-engineering": 35,
     "ui-ux-design": 3
   },
@@ -45,8 +45,8 @@
     "john-keells-hotels": 2,
     "keells": 55,
     "lanka-ioc": 5,
-    "lseg": 28,
-    "national-development-bank": 25,
+    "lseg": 29,
+    "national-development-bank": 26,
     "octave": 6,
     "pearson": 12,
     "rootcode": 7,
@@ -63,22 +63,22 @@
     "intern": 38,
     "junior": 27,
     "lead": 31,
-    "manager": 84,
+    "manager": 85,
     "mid": 2,
     "principal": 12,
     "senior": 66,
     "trainee": 9,
-    "unspecified": 149
+    "unspecified": 150
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 31,
+    "banking": 32,
     "consumer-goods-retail": 2,
     "diversified": 160,
     "energy": 5,
     "financial-services": 21,
     "hotels-leisure": 2,
-    "technology": 155,
+    "technology": 156,
     "telecommunications": 41
   }
 }
