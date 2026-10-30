@@ -445,5 +445,54 @@
         "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-10194557"
       }
     ]
+  },
+  {
+    "at": "2026-10-30T11:32:23.500Z",
+    "added": [
+      {
+        "id": "67c1cf33c4bd5b2dcb7a13bca64f6f9e21e13bcf",
+        "title": "Procurement Engineer",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3027"
+      },
+      {
+        "id": "4d9e23521bd8bfe6843cf8d7a0792cfab831241b",
+        "title": "Executive - Human Resources",
+        "company": "keells",
+        "url": "https://careers.keells.com/job/Wattala-Executive-Human-Resources/1369724566/"
+      },
+      {
+        "id": "b5053cec191f374bc971b64947ce585e265e4338",
+        "title": "Analyst, Operational Support, Market Operations",
+        "company": "lseg",
+        "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/Colombo-Sri-Lanka/Analyst--Operational-Support--Market-Operations_R0124271"
+      },
+      {
+        "id": "c4b58baa04a1d81006c560a7487364bafc286267",
+        "title": "Deputy Manager - Transaction Banking",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-7935078"
+      }
+    ],
+    "closed": [
+      {
+        "id": "c8e9389e13699302e78272026355dc11bd6ce70a",
+        "title": "Intern - Innovation and Platform Business",
+        "company": "dialog",
+        "url": "https://hcmcloud.dialog.lk/CareerPortal/Careers?q=bEopnWmcv9llMiBG3zygOw%3D%3D#job-vacant-5214"
+      },
+      {
+        "id": "7ab6897ac9d1333ce897d92888112c50bc055330",
+        "title": "Assistant - Cash Operations",
+        "company": "keells",
+        "url": "https://careers.keells.com/UnionAssurance/job/Galle-Assistant-Cash-Operations/1368556866/"
+      },
+      {
+        "id": "7a45f15f020999d1292cc1981bed9988c2b3e783",
+        "title": "Specialist - B2C Platforms",
+        "company": "dialog-axiata",
+        "url": "https://hcmcloud.dialog.lk/CareerPortal/Careers?q=bEopnWmcv9llMiBG3zygOw%3D%3D#job-vacant-5202"
+      }
+    ]
   }
 ]

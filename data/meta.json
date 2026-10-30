@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-30T08:31:55.583Z",
-  "runDurationMs": 136603,
+  "generatedAt": "2026-10-30T11:32:23.500Z",
+  "runDurationMs": 140501,
   "totals": {
-    "open": 415,
+    "open": 416,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 24
@@ -18,14 +18,14 @@
     "finance-accounting": 43,
     "healthcare": 2,
     "hospitality-tourism": 5,
-    "human-resource": 15,
+    "human-resource": 16,
     "legal-compliance": 12,
-    "operations-logistics": 59,
+    "operations-logistics": 60,
     "other": 21,
     "product-project-business": 23,
     "qa-testing": 9,
     "sales-marketing": 63,
-    "software-engineering": 36,
+    "software-engineering": 35,
     "ui-ux-design": 3
   },
   "byCompany": {
@@ -36,17 +36,17 @@
     "cargillsceylon": 1,
     "citizens-development-business-finance": 10,
     "creative-software": 5,
-    "dialog": 5,
-    "dialog-axiata": 41,
+    "dialog": 4,
+    "dialog-axiata": 40,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 8,
     "fortude": 20,
-    "hayleys-group": 91,
+    "hayleys-group": 92,
     "john-keells-hotels": 2,
     "keells": 55,
     "lanka-ioc": 5,
-    "lseg": 27,
-    "national-development-bank": 22,
+    "lseg": 28,
+    "national-development-bank": 23,
     "octave": 6,
     "pearson": 12,
     "rootcode": 7,
@@ -60,25 +60,25 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 39,
+    "intern": 38,
     "junior": 27,
     "lead": 31,
-    "manager": 81,
+    "manager": 82,
     "mid": 2,
     "principal": 12,
     "senior": 66,
     "trainee": 9,
-    "unspecified": 148
+    "unspecified": 149
   },
   "byIndustry": {
     "automotive": 1,
-    "banking": 28,
+    "banking": 29,
     "consumer-goods-retail": 2,
-    "diversified": 159,
+    "diversified": 160,
     "energy": 5,
-    "financial-services": 22,
+    "financial-services": 21,
     "hotels-leisure": 2,
-    "technology": 154,
-    "telecommunications": 42
+    "technology": 155,
+    "telecommunications": 41
   }
 }
