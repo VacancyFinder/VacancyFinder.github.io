@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-01T05:37:49.226Z",
-  "runDurationMs": 144788,
+  "generatedAt": "2026-11-01T08:38:12.985Z",
+  "runDurationMs": 143873,
   "totals": {
-    "open": 369,
+    "open": 370,
     "companiesWithJobs": 28,
     "targets": 27,
     "targetsOk": 24
@@ -20,11 +20,11 @@
     "hospitality-tourism": 4,
     "human-resource": 13,
     "legal-compliance": 11,
-    "operations-logistics": 52,
+    "operations-logistics": 53,
     "other": 20,
     "product-project-business": 21,
     "qa-testing": 8,
-    "sales-marketing": 54,
+    "sales-marketing": 55,
     "software-engineering": 31,
     "ui-ux-design": 3
   },
@@ -36,7 +36,7 @@
     "cargillsceylon": 1,
     "citizens-development-business-finance": 10,
     "creative-software": 5,
-    "dialog": 2,
+    "dialog": 3,
     "dialog-axiata": 26,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 8,
@@ -59,7 +59,7 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 37,
+    "intern": 38,
     "junior": 23,
     "lead": 27,
     "manager": 77,
@@ -75,7 +75,7 @@
     "consumer-goods-retail": 2,
     "diversified": 134,
     "energy": 5,
-    "financial-services": 19,
+    "financial-services": 20,
     "technology": 152,
     "telecommunications": 27
   }
