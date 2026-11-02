@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-02T00:36:09.440Z",
-  "runDurationMs": 144992,
+  "generatedAt": "2026-11-02T03:36:33.389Z",
+  "runDurationMs": 140919,
   "totals": {
-    "open": 366,
+    "open": 367,
     "companiesWithJobs": 28,
     "targets": 27,
     "targetsOk": 24
@@ -22,7 +22,7 @@
     "legal-compliance": 11,
     "operations-logistics": 51,
     "other": 19,
-    "product-project-business": 21,
+    "product-project-business": 22,
     "qa-testing": 8,
     "sales-marketing": 55,
     "software-engineering": 31,
@@ -37,7 +37,7 @@
     "citizens-development-business-finance": 10,
     "creative-software": 5,
     "dialog": 3,
-    "dialog-axiata": 26,
+    "dialog-axiata": 27,
     "diesel-and-motor-engineering": 1,
     "digital-mobility-solutions-lanka-pickme": 8,
     "fortude": 20,
@@ -65,7 +65,7 @@
     "manager": 76,
     "mid": 2,
     "principal": 10,
-    "senior": 56,
+    "senior": 57,
     "trainee": 9,
     "unspecified": 126
   },
@@ -77,6 +77,6 @@
     "energy": 5,
     "financial-services": 20,
     "technology": 152,
-    "telecommunications": 27
+    "telecommunications": 28
   }
 }
