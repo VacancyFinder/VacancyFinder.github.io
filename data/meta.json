@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-03T15:42:38.695Z",
-  "runDurationMs": 140755,
+  "generatedAt": "2026-11-03T18:43:20.666Z",
+  "runDurationMs": 154225,
   "totals": {
-    "open": 399,
+    "open": 398,
     "companiesWithJobs": 29,
     "targets": 27,
     "targetsOk": 24
@@ -24,9 +24,9 @@
     "other": 23,
     "product-project-business": 24,
     "qa-testing": 7,
-    "sales-marketing": 62,
+    "sales-marketing": 61,
     "software-engineering": 34,
-    "ui-ux-design": 3
+    "ui-ux-design": 2
   },
   "byCompany": {
     "abans-finance": 7,
@@ -55,7 +55,7 @@
     "sysco-labs": 45,
     "union-bank-of-colombo": 4,
     "vallibel-one": 1,
-    "wso2": 11,
+    "wso2": 10,
     "zillione": 3,
     "zyner-io": 3
   },
@@ -68,7 +68,7 @@
     "principal": 10,
     "senior": 57,
     "trainee": 9,
-    "unspecified": 147
+    "unspecified": 146
   },
   "byIndustry": {
     "automotive": 4,
@@ -78,7 +78,7 @@
     "energy": 5,
     "financial-services": 21,
     "food-beverage-tobacco": 1,
-    "technology": 156,
+    "technology": 155,
     "telecommunications": 29
   }
 }
