@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-04T15:46:36.806Z",
-  "runDurationMs": 173393,
+  "generatedAt": "2026-11-04T18:47:03.985Z",
+  "runDurationMs": 177952,
   "totals": {
     "open": 414,
     "companiesWithJobs": 29,
@@ -10,7 +10,7 @@
   "byField": {
     "admin-customer-service": 24,
     "banking-insurance": 27,
-    "cloud-devops": 40,
+    "cloud-devops": 41,
     "cybersecurity": 9,
     "data-ai-ml": 37,
     "digital-graphics": 4,
@@ -20,7 +20,7 @@
     "hospitality-tourism": 7,
     "human-resource": 16,
     "legal-compliance": 14,
-    "operations-logistics": 58,
+    "operations-logistics": 57,
     "other": 22,
     "product-project-business": 25,
     "qa-testing": 7,
@@ -46,9 +46,9 @@
     "keells-food-products": 2,
     "lanka-ioc": 5,
     "lseg": 36,
-    "national-development-bank": 28,
+    "national-development-bank": 27,
     "octave": 5,
-    "pearson": 12,
+    "pearson": 13,
     "rootcode": 4,
     "sri-lanka-telecom": 1,
     "surge-global": 11,
@@ -60,10 +60,10 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 42,
+    "intern": 43,
     "junior": 26,
     "lead": 31,
-    "manager": 83,
+    "manager": 82,
     "mid": 2,
     "principal": 11,
     "senior": 62,
@@ -72,13 +72,13 @@
   },
   "byIndustry": {
     "automotive": 4,
-    "banking": 33,
+    "banking": 32,
     "consumer-goods-retail": 2,
     "diversified": 155,
     "energy": 5,
     "financial-services": 21,
     "food-beverage-tobacco": 2,
-    "technology": 162,
+    "technology": 163,
     "telecommunications": 30
   }
 }
