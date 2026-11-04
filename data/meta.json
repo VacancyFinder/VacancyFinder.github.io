@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-11-04T06:45:20.294Z",
-  "runDurationMs": 157150,
+  "generatedAt": "2026-11-04T09:45:49.518Z",
+  "runDurationMs": 163851,
   "totals": {
-    "open": 397,
+    "open": 410,
     "companiesWithJobs": 29,
     "targets": 27,
-    "targetsOk": 24
+    "targetsOk": 23
   },
   "byField": {
     "admin-customer-service": 24,
-    "banking-insurance": 25,
-    "cloud-devops": 38,
+    "banking-insurance": 29,
+    "cloud-devops": 39,
     "cybersecurity": 9,
-    "data-ai-ml": 36,
+    "data-ai-ml": 37,
     "digital-graphics": 2,
-    "engineering-manufacturing": 37,
-    "finance-accounting": 43,
+    "engineering-manufacturing": 38,
+    "finance-accounting": 45,
     "healthcare": 1,
     "hospitality-tourism": 7,
-    "human-resource": 15,
+    "human-resource": 16,
     "legal-compliance": 12,
     "operations-logistics": 57,
     "other": 22,
     "product-project-business": 24,
     "qa-testing": 7,
-    "sales-marketing": 61,
-    "software-engineering": 35,
+    "sales-marketing": 63,
+    "software-engineering": 37,
     "ui-ux-design": 2
   },
   "byCompany": {
@@ -41,12 +41,12 @@
     "diesel-and-motor-engineering": 4,
     "digital-mobility-solutions-lanka-pickme": 8,
     "fortude": 20,
-    "hayleys-group": 94,
-    "keells": 40,
+    "hayleys-group": 98,
+    "keells": 41,
     "keells-food-products": 2,
     "lanka-ioc": 5,
-    "lseg": 32,
-    "national-development-bank": 21,
+    "lseg": 35,
+    "national-development-bank": 26,
     "octave": 5,
     "pearson": 12,
     "rootcode": 4,
@@ -60,25 +60,25 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 42,
+    "intern": 43,
     "junior": 26,
-    "lead": 27,
-    "manager": 78,
+    "lead": 29,
+    "manager": 82,
     "mid": 2,
     "principal": 11,
     "senior": 60,
     "trainee": 9,
-    "unspecified": 142
+    "unspecified": 148
   },
   "byIndustry": {
     "automotive": 4,
-    "banking": 26,
+    "banking": 31,
     "consumer-goods-retail": 2,
-    "diversified": 150,
+    "diversified": 155,
     "energy": 5,
     "financial-services": 21,
     "food-beverage-tobacco": 2,
-    "technology": 158,
+    "technology": 161,
     "telecommunications": 29
   }
 }
