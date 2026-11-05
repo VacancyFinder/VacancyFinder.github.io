@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-05T09:49:20.130Z",
-  "runDurationMs": 174010,
+  "generatedAt": "2026-11-05T12:49:50.030Z",
+  "runDurationMs": 173523,
   "totals": {
-    "open": 430,
-    "companiesWithJobs": 30,
+    "open": 429,
+    "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
   },
   "byField": {
     "admin-customer-service": 27,
     "banking-insurance": 29,
-    "cloud-devops": 44,
+    "cloud-devops": 42,
     "cybersecurity": 9,
-    "data-ai-ml": 37,
+    "data-ai-ml": 38,
     "digital-graphics": 4,
     "engineering-manufacturing": 39,
     "finance-accounting": 44,
@@ -21,14 +21,15 @@
     "human-resource": 16,
     "legal-compliance": 19,
     "operations-logistics": 57,
-    "other": 25,
+    "other": 26,
     "product-project-business": 25,
     "qa-testing": 7,
     "sales-marketing": 69,
-    "software-engineering": 38,
+    "software-engineering": 39,
     "ui-ux-design": 2
   },
   "byCompany": {
+    "99x": 2,
     "abans-finance": 7,
     "brownsgroup": 15,
     "cargills-bank": 1,
@@ -56,20 +57,20 @@
     "sysco-labs": 46,
     "union-bank-of-colombo": 4,
     "vallibel-one": 1,
-    "wso2": 11,
+    "wso2": 8,
     "zillione": 3,
     "zyner-io": 3
   },
   "bySeniority": {
     "intern": 44,
-    "junior": 26,
-    "lead": 31,
+    "junior": 27,
+    "lead": 32,
     "manager": 91,
     "mid": 2,
     "principal": 11,
     "senior": 65,
     "trainee": 9,
-    "unspecified": 151
+    "unspecified": 148
   },
   "byIndustry": {
     "automotive": 4,
@@ -80,7 +81,7 @@
     "financial-services": 21,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 1,
-    "technology": 163,
+    "technology": 162,
     "telecommunications": 31
   }
 }
