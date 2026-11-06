@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-06T09:53:00.657Z",
-  "runDurationMs": 189631,
+  "generatedAt": "2026-11-06T12:53:25.029Z",
+  "runDurationMs": 184603,
   "totals": {
-    "open": 429,
+    "open": 432,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
@@ -11,7 +11,7 @@
     "admin-customer-service": 24,
     "banking-insurance": 30,
     "cloud-devops": 42,
-    "cybersecurity": 9,
+    "cybersecurity": 10,
     "data-ai-ml": 38,
     "digital-graphics": 4,
     "engineering-manufacturing": 39,
@@ -21,11 +21,11 @@
     "human-resource": 18,
     "legal-compliance": 21,
     "operations-logistics": 57,
-    "other": 26,
+    "other": 27,
     "product-project-business": 23,
     "qa-testing": 7,
     "sales-marketing": 67,
-    "software-engineering": 39,
+    "software-engineering": 41,
     "ui-ux-design": 2
   },
   "byCompany": {
@@ -38,11 +38,11 @@
     "citizens-development-business-finance": 11,
     "creative-software": 3,
     "dialog": 2,
-    "dialog-axiata": 26,
+    "dialog-axiata": 27,
     "diesel-and-motor-engineering": 4,
     "digital-mobility-solutions-lanka-pickme": 8,
     "fortude": 20,
-    "hayleys-group": 105,
+    "hayleys-group": 106,
     "john-keells-hotels": 1,
     "keells": 44,
     "keells-food-products": 2,
@@ -54,7 +54,7 @@
     "rootcode": 5,
     "sri-lanka-telecom": 1,
     "surge-global": 13,
-    "sysco-labs": 46,
+    "sysco-labs": 47,
     "union-bank-of-colombo": 4,
     "vallibel-one": 1,
     "wso2": 8,
@@ -64,24 +64,24 @@
   "bySeniority": {
     "intern": 42,
     "junior": 30,
-    "lead": 32,
+    "lead": 33,
     "manager": 89,
     "mid": 2,
     "principal": 11,
-    "senior": 66,
+    "senior": 67,
     "trainee": 9,
-    "unspecified": 148
+    "unspecified": 149
   },
   "byIndustry": {
     "automotive": 4,
     "banking": 39,
     "consumer-goods-retail": 2,
-    "diversified": 166,
+    "diversified": 167,
     "energy": 5,
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 1,
-    "technology": 163,
-    "telecommunications": 27
+    "technology": 164,
+    "telecommunications": 28
   }
 }
