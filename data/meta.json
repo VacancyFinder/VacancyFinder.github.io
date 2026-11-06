@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-05T21:51:14.217Z",
-  "runDurationMs": 175351,
+  "generatedAt": "2026-11-06T00:51:39.515Z",
+  "runDurationMs": 185408,
   "totals": {
-    "open": 416,
+    "open": 413,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
@@ -21,10 +21,10 @@
     "human-resource": 16,
     "legal-compliance": 20,
     "operations-logistics": 56,
-    "other": 25,
+    "other": 23,
     "product-project-business": 23,
     "qa-testing": 7,
-    "sales-marketing": 67,
+    "sales-marketing": 66,
     "software-engineering": 39,
     "ui-ux-design": 2
   },
@@ -44,7 +44,7 @@
     "fortude": 20,
     "hayleys-group": 99,
     "john-keells-hotels": 1,
-    "keells": 44,
+    "keells": 41,
     "keells-food-products": 2,
     "lanka-ioc": 5,
     "lseg": 36,
@@ -62,7 +62,7 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 43,
+    "intern": 42,
     "junior": 27,
     "lead": 32,
     "manager": 84,
@@ -70,13 +70,13 @@
     "principal": 11,
     "senior": 65,
     "trainee": 9,
-    "unspecified": 143
+    "unspecified": 141
   },
   "byIndustry": {
     "automotive": 4,
     "banking": 37,
     "consumer-goods-retail": 2,
-    "diversified": 160,
+    "diversified": 157,
     "energy": 5,
     "financial-services": 20,
     "food-beverage-tobacco": 2,
