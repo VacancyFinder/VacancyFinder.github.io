@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-11-09T14:00:45.236Z",
-  "runDurationMs": 182012,
+  "generatedAt": "2026-11-09T17:01:15.784Z",
+  "runDurationMs": 182482,
   "totals": {
-    "open": 422,
+    "open": 408,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
   },
   "byField": {
-    "admin-customer-service": 23,
-    "banking-insurance": 26,
-    "cloud-devops": 41,
+    "admin-customer-service": 21,
+    "banking-insurance": 19,
+    "cloud-devops": 39,
     "cybersecurity": 11,
     "data-ai-ml": 37,
-    "digital-graphics": 4,
+    "digital-graphics": 3,
     "engineering-manufacturing": 42,
     "finance-accounting": 43,
     "healthcare": 2,
-    "hospitality-tourism": 8,
+    "hospitality-tourism": 7,
     "human-resource": 14,
-    "legal-compliance": 21,
+    "legal-compliance": 16,
     "operations-logistics": 53,
-    "other": 26,
+    "other": 27,
     "product-project-business": 23,
     "qa-testing": 7,
-    "sales-marketing": 68,
+    "sales-marketing": 65,
     "software-engineering": 40,
     "ui-ux-design": 2
   },
@@ -38,7 +38,7 @@
     "citizens-development-business-finance": 11,
     "creative-software": 3,
     "dialog": 1,
-    "dialog-axiata": 27,
+    "dialog-axiata": 28,
     "diesel-and-motor-engineering": 6,
     "digital-mobility-solutions-lanka-pickme": 3,
     "fortude": 20,
@@ -48,7 +48,7 @@
     "keells-food-products": 2,
     "lanka-ioc": 5,
     "lseg": 37,
-    "national-development-bank": 30,
+    "national-development-bank": 15,
     "octave": 5,
     "pearson": 10,
     "rootcode": 5,
@@ -63,18 +63,18 @@
   },
   "bySeniority": {
     "intern": 40,
-    "junior": 28,
-    "lead": 32,
-    "manager": 85,
+    "junior": 26,
+    "lead": 31,
+    "manager": 80,
     "mid": 2,
     "principal": 11,
     "senior": 67,
     "trainee": 9,
-    "unspecified": 148
+    "unspecified": 142
   },
   "byIndustry": {
     "automotive": 6,
-    "banking": 35,
+    "banking": 20,
     "consumer-goods-retail": 2,
     "diversified": 164,
     "energy": 5,
@@ -82,6 +82,6 @@
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
     "technology": 159,
-    "telecommunications": 28
+    "telecommunications": 29
   }
 }
