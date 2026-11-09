@@ -626,5 +626,41 @@
         "url": "https://hcmcloud.dialog.lk/CareerPortal/Careers?q=bEopnWmcv9llMiBG3zygOw%3D%3D#job-vacant-5267"
       }
     ]
+  },
+  {
+    "at": "2026-11-09T11:00:17.572Z",
+    "added": [],
+    "closed": [
+      {
+        "id": "2507a7c8651f2312d01ef800c7521416fd49027d",
+        "title": "Intern – Project Management",
+        "company": "digital-mobility-solutions-lanka-pickme",
+        "url": "https://pickme.lk/vacancy/intern-project-management/"
+      },
+      {
+        "id": "7275a5b223e67add37b43315ee56d6d3b91b8d67",
+        "title": "Senior Database Engineer",
+        "company": "digital-mobility-solutions-lanka-pickme",
+        "url": "https://pickme.lk/vacancy/senior-database-engineer/"
+      },
+      {
+        "id": "e8003e4403a5e34da42c0c9766d725182a0886b7",
+        "title": "Business Intelligence (BI) Analyst/Engineer",
+        "company": "digital-mobility-solutions-lanka-pickme",
+        "url": "https://pickme.lk/vacancy/business-intelligence-bi-analyst/"
+      },
+      {
+        "id": "e43bc878ba91b4244d711b110e7e1d3709afbeff",
+        "title": "Senior Software Engineer – Java",
+        "company": "digital-mobility-solutions-lanka-pickme",
+        "url": "https://pickme.lk/vacancy/senior-software-engineer-java/"
+      },
+      {
+        "id": "e6595b2eb8f191e12347c13ed795eb6b7dd7a929",
+        "title": "Senior Engineer/Associate Lead – DevOps",
+        "company": "digital-mobility-solutions-lanka-pickme",
+        "url": "https://pickme.lk/vacancy/senior-engineer-associate-lead-devops/"
+      }
+    ]
   }
 ]
