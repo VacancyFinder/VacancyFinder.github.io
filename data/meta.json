@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-10T02:02:41.101Z",
-  "runDurationMs": 183880,
+  "generatedAt": "2026-11-10T05:03:09.974Z",
+  "runDurationMs": 181747,
   "totals": {
-    "open": 398,
+    "open": 404,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
@@ -15,16 +15,16 @@
     "data-ai-ml": 35,
     "digital-graphics": 3,
     "engineering-manufacturing": 41,
-    "finance-accounting": 42,
+    "finance-accounting": 44,
     "healthcare": 2,
     "hospitality-tourism": 7,
-    "human-resource": 13,
+    "human-resource": 14,
     "legal-compliance": 15,
-    "operations-logistics": 51,
-    "other": 27,
+    "operations-logistics": 53,
+    "other": 28,
     "product-project-business": 23,
     "qa-testing": 7,
-    "sales-marketing": 64,
+    "sales-marketing": 65,
     "software-engineering": 40,
     "ui-ux-design": 2
   },
@@ -38,16 +38,16 @@
     "citizens-development-business-finance": 11,
     "creative-software": 1,
     "dialog": 1,
-    "dialog-axiata": 27,
+    "dialog-axiata": 29,
     "diesel-and-motor-engineering": 6,
     "digital-mobility-solutions-lanka-pickme": 3,
     "fortude": 20,
-    "hayleys-group": 110,
+    "hayleys-group": 112,
     "john-keells-hotels": 2,
-    "keells": 33,
+    "keells": 34,
     "keells-food-products": 2,
     "lanka-ioc": 5,
-    "lseg": 37,
+    "lseg": 38,
     "national-development-bank": 13,
     "octave": 5,
     "pearson": 10,
@@ -62,26 +62,26 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 39,
-    "junior": 25,
+    "intern": 41,
+    "junior": 26,
     "lead": 31,
-    "manager": 78,
+    "manager": 80,
     "mid": 2,
     "principal": 11,
     "senior": 65,
     "trainee": 9,
-    "unspecified": 138
+    "unspecified": 139
   },
   "byIndustry": {
     "automotive": 6,
     "banking": 17,
     "consumer-goods-retail": 2,
-    "diversified": 160,
+    "diversified": 163,
     "energy": 5,
     "financial-services": 19,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 157,
-    "telecommunications": 28
+    "technology": 158,
+    "telecommunications": 30
   }
 }
