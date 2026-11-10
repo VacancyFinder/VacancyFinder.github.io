@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-10T11:04:10.058Z",
-  "runDurationMs": 192117,
+  "generatedAt": "2026-11-10T14:04:39.210Z",
+  "runDurationMs": 182182,
   "totals": {
     "open": 422,
     "companiesWithJobs": 31,
@@ -20,11 +20,11 @@
     "hospitality-tourism": 8,
     "human-resource": 15,
     "legal-compliance": 22,
-    "operations-logistics": 53,
+    "operations-logistics": 52,
     "other": 29,
     "product-project-business": 22,
     "qa-testing": 7,
-    "sales-marketing": 67,
+    "sales-marketing": 68,
     "software-engineering": 40,
     "ui-ux-design": 2
   },
@@ -47,8 +47,8 @@
     "keells": 35,
     "keells-food-products": 3,
     "lanka-ioc": 5,
-    "lseg": 38,
-    "national-development-bank": 29,
+    "lseg": 37,
+    "national-development-bank": 30,
     "octave": 5,
     "pearson": 10,
     "rootcode": 5,
@@ -65,23 +65,23 @@
     "intern": 41,
     "junior": 28,
     "lead": 32,
-    "manager": 89,
+    "manager": 90,
     "mid": 2,
     "principal": 11,
     "senior": 66,
     "trainee": 9,
-    "unspecified": 144
+    "unspecified": 143
   },
   "byIndustry": {
     "automotive": 6,
-    "banking": 33,
+    "banking": 34,
     "consumer-goods-retail": 2,
     "diversified": 166,
     "energy": 5,
     "financial-services": 19,
     "food-beverage-tobacco": 3,
     "hotels-leisure": 2,
-    "technology": 156,
+    "technology": 155,
     "telecommunications": 30
   }
 }
