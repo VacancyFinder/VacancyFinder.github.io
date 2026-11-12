@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-12T10:01:25.254Z",
-  "runDurationMs": 172061,
+  "generatedAt": "2026-11-12T13:01:53.162Z",
+  "runDurationMs": 152003,
   "totals": {
     "open": 413,
     "companiesWithJobs": 31,
@@ -9,22 +9,22 @@
   },
   "byField": {
     "admin-customer-service": 25,
-    "banking-insurance": 23,
+    "banking-insurance": 24,
     "cloud-devops": 40,
     "cybersecurity": 11,
     "data-ai-ml": 36,
     "digital-graphics": 2,
     "engineering-manufacturing": 39,
-    "finance-accounting": 45,
+    "finance-accounting": 44,
     "healthcare": 2,
     "hospitality-tourism": 6,
     "human-resource": 13,
-    "legal-compliance": 21,
-    "operations-logistics": 51,
+    "legal-compliance": 22,
+    "operations-logistics": 52,
     "other": 28,
-    "product-project-business": 21,
+    "product-project-business": 20,
     "qa-testing": 8,
-    "sales-marketing": 62,
+    "sales-marketing": 63,
     "software-engineering": 44,
     "ui-ux-design": 2
   },
@@ -35,10 +35,10 @@
     "cargills-bank": 1,
     "cargills-ceylon": 2,
     "cargillsceylon": 1,
-    "citizens-development-business-finance": 11,
+    "citizens-development-business-finance": 12,
     "creative-software": 2,
     "dialog": 2,
-    "dialog-axiata": 30,
+    "dialog-axiata": 29,
     "diesel-and-motor-engineering": 5,
     "digital-mobility-solutions-lanka-pickme": 3,
     "fortude": 20,
@@ -62,15 +62,15 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 41,
+    "intern": 42,
     "junior": 26,
     "lead": 31,
-    "manager": 86,
+    "manager": 87,
     "mid": 2,
     "principal": 11,
     "senior": 65,
     "trainee": 9,
-    "unspecified": 142
+    "unspecified": 140
   },
   "byIndustry": {
     "automotive": 5,
@@ -78,10 +78,10 @@
     "consumer-goods-retail": 2,
     "diversified": 162,
     "energy": 5,
-    "financial-services": 20,
+    "financial-services": 21,
     "food-beverage-tobacco": 3,
     "hotels-leisure": 2,
     "technology": 157,
-    "telecommunications": 31
+    "telecommunications": 30
   }
 }
