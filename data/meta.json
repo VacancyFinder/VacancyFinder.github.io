@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-12T13:01:53.162Z",
-  "runDurationMs": 152003,
+  "generatedAt": "2026-11-12T16:02:25.381Z",
+  "runDurationMs": 159810,
   "totals": {
-    "open": 413,
+    "open": 411,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
@@ -10,7 +10,7 @@
   "byField": {
     "admin-customer-service": 25,
     "banking-insurance": 24,
-    "cloud-devops": 40,
+    "cloud-devops": 39,
     "cybersecurity": 11,
     "data-ai-ml": 36,
     "digital-graphics": 2,
@@ -20,7 +20,7 @@
     "hospitality-tourism": 6,
     "human-resource": 13,
     "legal-compliance": 22,
-    "operations-logistics": 52,
+    "operations-logistics": 51,
     "other": 28,
     "product-project-business": 20,
     "qa-testing": 8,
@@ -47,7 +47,7 @@
     "keells": 37,
     "keells-food-products": 3,
     "lanka-ioc": 5,
-    "lseg": 34,
+    "lseg": 32,
     "national-development-bank": 22,
     "octave": 6,
     "pearson": 9,
@@ -63,12 +63,12 @@
   },
   "bySeniority": {
     "intern": 42,
-    "junior": 26,
+    "junior": 25,
     "lead": 31,
     "manager": 87,
     "mid": 2,
     "principal": 11,
-    "senior": 65,
+    "senior": 64,
     "trainee": 9,
     "unspecified": 140
   },
@@ -81,7 +81,7 @@
     "financial-services": 21,
     "food-beverage-tobacco": 3,
     "hotels-leisure": 2,
-    "technology": 157,
+    "technology": 155,
     "telecommunications": 30
   }
 }
