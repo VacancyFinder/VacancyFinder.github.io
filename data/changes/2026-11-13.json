@@ -523,5 +523,48 @@
         "url": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/job/Sysco-LABS-----Sri-Lanka/Engineer---Senior-Engineer---Cloud-Services--Windows-_R268219"
       }
     ]
+  },
+  {
+    "at": "2026-11-13T13:06:01.527Z",
+    "added": [
+      {
+        "id": "730ec01efa825212456621cba3d7d00a799b2c6f",
+        "title": "Pawning Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2597216"
+      },
+      {
+        "id": "da4fcac3ba03534018a46bbbdc2c27b8ff4a0b07",
+        "title": "Elevate - Client Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2598006"
+      },
+      {
+        "id": "bdd285f7c8770aa29f2d32313d08b4a71f0be797",
+        "title": "Assistant Brand Manager",
+        "company": "keells",
+        "url": "https://careers.keells.com/ElephantHouse/job/colombo-Assistant-Brand-Manager/1367468266/"
+      }
+    ],
+    "closed": [
+      {
+        "id": "a04fa5f0813b316ff38545a37a63cc74a642e702",
+        "title": "Intern - Site Reliability Engineering",
+        "company": "sysco-labs",
+        "url": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/job/Sysco-LABS-----Sri-Lanka/Intern---Site-Reliability-Engineering_R267862"
+      },
+      {
+        "id": "60dfecd0bc0f4bfba2034018f979ca02afe9e9ad",
+        "title": "Pawning Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2867820"
+      },
+      {
+        "id": "b647ef4beaaf7ed15cc52ede40d06df2271ed231",
+        "title": "Elevate - Client Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2868310"
+      }
+    ]
   }
 ]
