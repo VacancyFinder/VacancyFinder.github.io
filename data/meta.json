@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-13T07:04:58.376Z",
-  "runDurationMs": 167532,
+  "generatedAt": "2026-11-13T10:05:33.164Z",
+  "runDurationMs": 173781,
   "totals": {
-    "open": 412,
+    "open": 416,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
@@ -10,22 +10,22 @@
   "byField": {
     "admin-customer-service": 25,
     "banking-insurance": 24,
-    "cloud-devops": 39,
+    "cloud-devops": 38,
     "cybersecurity": 11,
-    "data-ai-ml": 36,
+    "data-ai-ml": 38,
     "digital-graphics": 2,
     "engineering-manufacturing": 38,
-    "finance-accounting": 46,
+    "finance-accounting": 48,
     "healthcare": 2,
     "hospitality-tourism": 6,
-    "human-resource": 13,
+    "human-resource": 14,
     "legal-compliance": 22,
     "operations-logistics": 53,
-    "other": 25,
+    "other": 26,
     "product-project-business": 19,
     "qa-testing": 8,
     "sales-marketing": 64,
-    "software-engineering": 44,
+    "software-engineering": 45,
     "ui-ux-design": 2
   },
   "byCompany": {
@@ -42,9 +42,9 @@
     "diesel-and-motor-engineering": 5,
     "digital-mobility-solutions-lanka-pickme": 3,
     "fortude": 20,
-    "hayleys-group": 112,
+    "hayleys-group": 116,
     "john-keells-hotels": 2,
-    "keells": 37,
+    "keells": 39,
     "keells-food-products": 3,
     "lanka-ioc": 5,
     "lseg": 32,
@@ -54,7 +54,7 @@
     "rootcode": 5,
     "sri-lanka-telecom": 1,
     "surge-global": 15,
-    "sysco-labs": 49,
+    "sysco-labs": 47,
     "union-bank-of-colombo": 2,
     "vallibel-one": 1,
     "wso2": 7,
@@ -63,25 +63,25 @@
   },
   "bySeniority": {
     "intern": 42,
-    "junior": 28,
+    "junior": 30,
     "lead": 31,
     "manager": 85,
     "mid": 2,
     "principal": 11,
     "senior": 64,
     "trainee": 9,
-    "unspecified": 140
+    "unspecified": 142
   },
   "byIndustry": {
     "automotive": 5,
     "banking": 25,
     "consumer-goods-retail": 2,
-    "diversified": 163,
+    "diversified": 169,
     "energy": 5,
     "financial-services": 21,
     "food-beverage-tobacco": 3,
     "hotels-leisure": 2,
-    "technology": 156,
+    "technology": 154,
     "telecommunications": 30
   }
 }
