@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-13T04:04:31.174Z",
-  "runDurationMs": 163462,
+  "generatedAt": "2026-11-13T07:04:58.376Z",
+  "runDurationMs": 167532,
   "totals": {
-    "open": 405,
+    "open": 412,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
@@ -10,21 +10,21 @@
   "byField": {
     "admin-customer-service": 25,
     "banking-insurance": 24,
-    "cloud-devops": 38,
+    "cloud-devops": 39,
     "cybersecurity": 11,
     "data-ai-ml": 36,
     "digital-graphics": 2,
     "engineering-manufacturing": 38,
-    "finance-accounting": 43,
+    "finance-accounting": 46,
     "healthcare": 2,
     "hospitality-tourism": 6,
     "human-resource": 13,
     "legal-compliance": 22,
-    "operations-logistics": 51,
+    "operations-logistics": 53,
     "other": 25,
     "product-project-business": 19,
     "qa-testing": 8,
-    "sales-marketing": 63,
+    "sales-marketing": 64,
     "software-engineering": 44,
     "ui-ux-design": 2
   },
@@ -42,7 +42,7 @@
     "diesel-and-motor-engineering": 5,
     "digital-mobility-solutions-lanka-pickme": 3,
     "fortude": 20,
-    "hayleys-group": 106,
+    "hayleys-group": 112,
     "john-keells-hotels": 2,
     "keells": 37,
     "keells-food-products": 3,
@@ -53,7 +53,7 @@
     "pearson": 9,
     "rootcode": 5,
     "sri-lanka-telecom": 1,
-    "surge-global": 14,
+    "surge-global": 15,
     "sysco-labs": 49,
     "union-bank-of-colombo": 2,
     "vallibel-one": 1,
@@ -63,25 +63,25 @@
   },
   "bySeniority": {
     "intern": 42,
-    "junior": 25,
+    "junior": 28,
     "lead": 31,
     "manager": 85,
     "mid": 2,
     "principal": 11,
-    "senior": 63,
+    "senior": 64,
     "trainee": 9,
-    "unspecified": 137
+    "unspecified": 140
   },
   "byIndustry": {
     "automotive": 5,
     "banking": 25,
     "consumer-goods-retail": 2,
-    "diversified": 157,
+    "diversified": 163,
     "energy": 5,
     "financial-services": 21,
     "food-beverage-tobacco": 3,
     "hotels-leisure": 2,
-    "technology": 155,
+    "technology": 156,
     "telecommunications": 30
   }
 }
