@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-15T16:12:36.140Z",
-  "runDurationMs": 153273,
+  "generatedAt": "2026-11-15T19:13:04.199Z",
+  "runDurationMs": 151658,
   "totals": {
-    "open": 398,
+    "open": 392,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
   },
   "byField": {
     "admin-customer-service": 22,
-    "banking-insurance": 22,
+    "banking-insurance": 18,
     "cloud-devops": 33,
     "cybersecurity": 11,
     "data-ai-ml": 37,
@@ -19,12 +19,12 @@
     "healthcare": 1,
     "hospitality-tourism": 5,
     "human-resource": 13,
-    "legal-compliance": 14,
+    "legal-compliance": 13,
     "operations-logistics": 51,
     "other": 25,
     "product-project-business": 19,
     "qa-testing": 8,
-    "sales-marketing": 66,
+    "sales-marketing": 65,
     "software-engineering": 45,
     "ui-ux-design": 2
   },
@@ -48,7 +48,7 @@
     "keells-food-products": 2,
     "lanka-ioc": 5,
     "lseg": 31,
-    "national-development-bank": 12,
+    "national-development-bank": 6,
     "octave": 6,
     "pearson": 9,
     "rootcode": 5,
@@ -63,18 +63,18 @@
   },
   "bySeniority": {
     "intern": 40,
-    "junior": 28,
+    "junior": 27,
     "lead": 31,
-    "manager": 76,
+    "manager": 74,
     "mid": 2,
     "principal": 11,
     "senior": 63,
     "trainee": 9,
-    "unspecified": 138
+    "unspecified": 135
   },
   "byIndustry": {
     "automotive": 5,
-    "banking": 15,
+    "banking": 9,
     "consumer-goods-retail": 2,
     "diversified": 166,
     "energy": 5,
