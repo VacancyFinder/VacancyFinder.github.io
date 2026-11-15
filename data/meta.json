@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-15T07:11:23.210Z",
-  "runDurationMs": 150796,
+  "generatedAt": "2026-11-15T10:11:46.925Z",
+  "runDurationMs": 144371,
   "totals": {
-    "open": 394,
+    "open": 395,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
@@ -20,7 +20,7 @@
     "hospitality-tourism": 5,
     "human-resource": 13,
     "legal-compliance": 14,
-    "operations-logistics": 49,
+    "operations-logistics": 50,
     "other": 25,
     "product-project-business": 19,
     "qa-testing": 8,
@@ -44,7 +44,7 @@
     "fortude": 20,
     "hayleys-group": 110,
     "john-keells-hotels": 1,
-    "keells": 37,
+    "keells": 38,
     "keells-food-products": 3,
     "lanka-ioc": 5,
     "lseg": 31,
@@ -70,13 +70,13 @@
     "principal": 11,
     "senior": 63,
     "trainee": 9,
-    "unspecified": 135
+    "unspecified": 136
   },
   "byIndustry": {
     "automotive": 5,
     "banking": 15,
     "consumer-goods-retail": 2,
-    "diversified": 161,
+    "diversified": 162,
     "energy": 5,
     "financial-services": 22,
     "food-beverage-tobacco": 3,
