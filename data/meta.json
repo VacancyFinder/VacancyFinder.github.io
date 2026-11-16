@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T07:14:43.907Z",
-  "runDurationMs": 150096,
+  "generatedAt": "2026-11-16T10:15:08.451Z",
+  "runDurationMs": 150300,
   "totals": {
-    "open": 387,
+    "open": 388,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
@@ -14,10 +14,10 @@
     "cybersecurity": 11,
     "data-ai-ml": 38,
     "digital-graphics": 2,
-    "engineering-manufacturing": 36,
+    "engineering-manufacturing": 37,
     "finance-accounting": 43,
     "hospitality-tourism": 4,
-    "human-resource": 11,
+    "human-resource": 12,
     "legal-compliance": 13,
     "operations-logistics": 48,
     "other": 26,
@@ -41,9 +41,9 @@
     "diesel-and-motor-engineering": 5,
     "digital-mobility-solutions-lanka-pickme": 3,
     "fortude": 20,
-    "hayleys-group": 109,
+    "hayleys-group": 110,
     "john-keells-hotels": 1,
-    "keells": 33,
+    "keells": 34,
     "keells-food-products": 2,
     "lanka-ioc": 5,
     "lseg": 30,
@@ -56,7 +56,7 @@
     "sysco-labs": 45,
     "union-bank-of-colombo": 2,
     "vallibel-one": 1,
-    "wso2": 7,
+    "wso2": 6,
     "zillione": 3,
     "zyner-io": 3
   },
@@ -67,20 +67,20 @@
     "manager": 72,
     "mid": 2,
     "principal": 11,
-    "senior": 59,
+    "senior": 58,
     "trainee": 9,
-    "unspecified": 134
+    "unspecified": 136
   },
   "byIndustry": {
     "automotive": 5,
     "banking": 15,
     "consumer-goods-retail": 2,
-    "diversified": 156,
+    "diversified": 158,
     "energy": 5,
     "financial-services": 21,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 1,
-    "technology": 151,
+    "technology": 150,
     "telecommunications": 29
   }
 }
