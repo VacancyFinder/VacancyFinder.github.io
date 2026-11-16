@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T10:15:08.451Z",
-  "runDurationMs": 150300,
+  "generatedAt": "2026-11-16T13:15:33.130Z",
+  "runDurationMs": 151309,
   "totals": {
-    "open": 388,
+    "open": 389,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 24
@@ -19,18 +19,18 @@
     "hospitality-tourism": 4,
     "human-resource": 12,
     "legal-compliance": 13,
-    "operations-logistics": 48,
-    "other": 26,
-    "product-project-business": 18,
-    "qa-testing": 8,
+    "operations-logistics": 49,
+    "other": 27,
+    "product-project-business": 17,
+    "qa-testing": 9,
     "sales-marketing": 64,
-    "software-engineering": 45,
+    "software-engineering": 44,
     "ui-ux-design": 2
   },
   "byCompany": {
     "99x": 2,
     "abans-finance": 7,
-    "brownsgroup": 12,
+    "brownsgroup": 11,
     "cargills-bank": 1,
     "cargills-ceylon": 2,
     "cargillsceylon": 1,
@@ -46,14 +46,14 @@
     "keells": 34,
     "keells-food-products": 2,
     "lanka-ioc": 5,
-    "lseg": 30,
+    "lseg": 31,
     "national-development-bank": 12,
     "octave": 7,
     "pearson": 9,
     "rootcode": 5,
     "sri-lanka-telecom": 1,
     "surge-global": 15,
-    "sysco-labs": 45,
+    "sysco-labs": 46,
     "union-bank-of-colombo": 2,
     "vallibel-one": 1,
     "wso2": 6,
@@ -67,20 +67,20 @@
     "manager": 72,
     "mid": 2,
     "principal": 11,
-    "senior": 58,
+    "senior": 57,
     "trainee": 9,
-    "unspecified": 136
+    "unspecified": 138
   },
   "byIndustry": {
     "automotive": 5,
     "banking": 15,
     "consumer-goods-retail": 2,
-    "diversified": 158,
+    "diversified": 157,
     "energy": 5,
     "financial-services": 21,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 1,
-    "technology": 150,
+    "technology": 152,
     "telecommunications": 29
   }
 }
