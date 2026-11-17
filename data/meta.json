@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-17T01:17:27.690Z",
-  "runDurationMs": 156566,
+  "generatedAt": "2026-11-17T04:17:50.837Z",
+  "runDurationMs": 157879,
   "totals": {
-    "open": 383,
+    "open": 380,
     "companiesWithJobs": 30,
     "targets": 27,
-    "targetsOk": 24
+    "targetsOk": 22
   },
   "byField": {
     "admin-customer-service": 21,
@@ -21,10 +21,10 @@
     "human-resource": 11,
     "legal-compliance": 12,
     "operations-logistics": 48,
-    "other": 28,
+    "other": 27,
     "product-project-business": 17,
     "qa-testing": 9,
-    "sales-marketing": 61,
+    "sales-marketing": 59,
     "software-engineering": 44,
     "ui-ux-design": 2
   },
@@ -39,7 +39,7 @@
     "creative-software": 2,
     "dialog": 1,
     "dialog-axiata": 28,
-    "diesel-and-motor-engineering": 5,
+    "diesel-and-motor-engineering": 2,
     "digital-mobility-solutions-lanka-pickme": 3,
     "fortude": 20,
     "hayleys-group": 111,
@@ -64,15 +64,15 @@
     "intern": 39,
     "junior": 29,
     "lead": 30,
-    "manager": 66,
+    "manager": 65,
     "mid": 2,
     "principal": 11,
     "senior": 56,
     "trainee": 9,
-    "unspecified": 141
+    "unspecified": 139
   },
   "byIndustry": {
-    "automotive": 5,
+    "automotive": 2,
     "banking": 11,
     "consumer-goods-retail": 2,
     "diversified": 157,
