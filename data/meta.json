@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-16T22:17:03.679Z",
-  "runDurationMs": 161935,
+  "generatedAt": "2026-11-17T01:17:27.690Z",
+  "runDurationMs": 156566,
   "totals": {
-    "open": 378,
+    "open": 383,
     "companiesWithJobs": 30,
     "targets": 27,
     "targetsOk": 24
   },
   "byField": {
     "admin-customer-service": 21,
-    "banking-insurance": 15,
+    "banking-insurance": 19,
     "cloud-devops": 32,
     "cybersecurity": 9,
     "data-ai-ml": 38,
@@ -19,7 +19,7 @@
     "healthcare": 1,
     "hospitality-tourism": 5,
     "human-resource": 11,
-    "legal-compliance": 11,
+    "legal-compliance": 12,
     "operations-logistics": 48,
     "other": 28,
     "product-project-business": 17,
@@ -48,7 +48,7 @@
     "keells-food-products": 2,
     "lanka-ioc": 5,
     "lseg": 31,
-    "national-development-bank": 5,
+    "national-development-bank": 10,
     "octave": 7,
     "pearson": 9,
     "rootcode": 4,
@@ -62,18 +62,18 @@
   },
   "bySeniority": {
     "intern": 39,
-    "junior": 28,
+    "junior": 29,
     "lead": 30,
-    "manager": 65,
+    "manager": 66,
     "mid": 2,
     "principal": 11,
     "senior": 56,
     "trainee": 9,
-    "unspecified": 138
+    "unspecified": 141
   },
   "byIndustry": {
     "automotive": 5,
-    "banking": 6,
+    "banking": 11,
     "consumer-goods-retail": 2,
     "diversified": 157,
     "energy": 5,
