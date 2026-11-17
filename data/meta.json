@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-17T19:19:59.977Z",
-  "runDurationMs": 170531,
+  "generatedAt": "2026-11-17T22:20:36.750Z",
+  "runDurationMs": 172561,
   "totals": {
-    "open": 393,
+    "open": 392,
     "companiesWithJobs": 30,
     "targets": 27,
-    "targetsOk": 23
+    "targetsOk": 22
   },
   "byField": {
     "admin-customer-service": 21,
@@ -15,7 +15,7 @@
     "data-ai-ml": 40,
     "digital-graphics": 3,
     "engineering-manufacturing": 37,
-    "finance-accounting": 46,
+    "finance-accounting": 45,
     "healthcare": 1,
     "hospitality-tourism": 5,
     "human-resource": 11,
@@ -42,7 +42,7 @@
     "diesel-and-motor-engineering": 2,
     "digital-mobility-solutions-lanka-pickme": 3,
     "fortude": 20,
-    "hayleys-group": 114,
+    "hayleys-group": 113,
     "john-keells-hotels": 1,
     "keells": 35,
     "keells-food-products": 2,
@@ -69,13 +69,13 @@
     "principal": 11,
     "senior": 57,
     "trainee": 9,
-    "unspecified": 145
+    "unspecified": 144
   },
   "byIndustry": {
     "automotive": 2,
     "banking": 15,
     "consumer-goods-retail": 2,
-    "diversified": 162,
+    "diversified": 161,
     "energy": 5,
     "financial-services": 21,
     "food-beverage-tobacco": 2,
