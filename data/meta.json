@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-18T13:22:55.550Z",
-  "runDurationMs": 174999,
+  "generatedAt": "2026-11-18T16:23:34.119Z",
+  "runDurationMs": 170371,
   "totals": {
-    "open": 410,
+    "open": 408,
     "companiesWithJobs": 31,
     "targets": 27,
     "targetsOk": 23
@@ -15,16 +15,16 @@
     "data-ai-ml": 40,
     "digital-graphics": 3,
     "engineering-manufacturing": 37,
-    "finance-accounting": 48,
+    "finance-accounting": 47,
     "healthcare": 2,
     "hospitality-tourism": 7,
     "human-resource": 12,
-    "legal-compliance": 15,
+    "legal-compliance": 14,
     "operations-logistics": 50,
     "other": 28,
     "product-project-business": 16,
     "qa-testing": 10,
-    "sales-marketing": 64,
+    "sales-marketing": 63,
     "software-engineering": 46,
     "ui-ux-design": 2
   },
@@ -37,7 +37,7 @@
     "cargillsceylon": 1,
     "citizens-development-business-finance": 12,
     "creative-software": 2,
-    "dialog": 2,
+    "dialog": 1,
     "dialog-axiata": 27,
     "diesel-and-motor-engineering": 2,
     "digital-mobility-solutions-lanka-pickme": 3,
@@ -52,7 +52,7 @@
     "octave": 7,
     "pearson": 10,
     "rootcode": 5,
-    "sri-lanka-telecom": 2,
+    "sri-lanka-telecom": 1,
     "surge-global": 18,
     "sysco-labs": 48,
     "union-bank-of-colombo": 1,
@@ -62,7 +62,7 @@
     "zyner-io": 3
   },
   "bySeniority": {
-    "intern": 41,
+    "intern": 40,
     "junior": 29,
     "lead": 31,
     "manager": 73,
@@ -70,7 +70,7 @@
     "principal": 11,
     "senior": 59,
     "trainee": 9,
-    "unspecified": 154
+    "unspecified": 153
   },
   "byIndustry": {
     "automotive": 2,
@@ -78,10 +78,10 @@
     "consumer-goods-retail": 2,
     "diversified": 168,
     "energy": 5,
-    "financial-services": 21,
+    "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
     "technology": 161,
-    "telecommunications": 29
+    "telecommunications": 28
   }
 }
