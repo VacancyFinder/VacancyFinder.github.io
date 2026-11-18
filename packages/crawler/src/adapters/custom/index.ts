@@ -1,5 +1,5 @@
 import type { AdapterFn } from "../types.js";
-import { flatrock, fortude, oracleHcm, peopleshr, rooster, simplifiedhr, bambooHr } from "./platforms.js";
+import { flatrock, fortude, oracleHcm, peopleshr, rooster, simplifiedhr, bambooHr, manatal } from "./platforms.js";
 import { rootcode } from "./rootcode.js";
 import { zillione } from "./zillione.js";
 
@@ -14,4 +14,5 @@ export const CUSTOM: Record<string, AdapterFn> = {
   flatrock,
   fortude,
   bamboohr: bambooHr,
+  manatal,
 };

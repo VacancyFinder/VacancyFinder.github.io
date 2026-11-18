@@ -385,3 +385,61 @@ describe("Sri Lanka IT companies list (Nov 2026)", () => {
     expect(jobs[0]).toMatch(/^Technical Lead - \.NET \| Colombo \|/);
   });
 });
+
+describe("Sri Lanka IT companies list (Nov 2026), round 3", () => {
+  it("Amazoft", async () => {
+    const { jobs } = await crawl("amazoft", { "https://www.amazoft.com/careers": "amazoft.html" });
+    expect(jobs).toHaveLength(6);
+  });
+
+  it("Bank of Ceylon: vacancies only, not interview-result notices", async () => {
+    const { jobs } = await crawl("bank-of-ceylon", { "https://www.boc.lk/careers": "boc.html" });
+    expect(jobs).toHaveLength(5);
+    expect(jobs.some((j) => /interview results/i.test(j))).toBe(false);
+  });
+
+  it("CMS, Orysys, TekGeeks, BeesPoint", async () => {
+    expect((await crawl("cms", { "https://www.cms.lk/careers/": "cms.html" })).jobs).toHaveLength(3);
+    expect((await crawl("orysys", { "https://orysys.com/careers/": "orysys.html" })).jobs).toHaveLength(18);
+    expect((await crawl("tekgeeks", { "https://www.tekgeeks.net/careers": "tekgeeks.html" })).jobs).toHaveLength(3);
+    expect((await crawl("beespoint", { "https://www.beespoint.com/company/career.php": "beespoint.html" })).jobs).toHaveLength(3);
+  });
+
+  it("Platned: only the Sri Lanka vacancies", async () => {
+    const { jobs } = await crawl("platned", { "https://platned.com/careers": "platned.html" });
+    expect(jobs).toHaveLength(6);
+    expect(jobs.every((j) => j.includes("| Sri Lanka |") && !j.includes("(Sri Lanka)"))).toBe(true);
+  });
+
+  it("Eyepax: the list its job-openings page loads", async () => {
+    const { jobs } = await crawl("eyepax-it-consulting", { "https://eyepax.com/wp-admin/admin-ajax.php": "eyepax-jobs.html" });
+    expect(jobs).toHaveLength(2);
+    expect(jobs[0]).toMatch(/^Senior Software Engineer – Java \/ Spring Boot \(EC-66\) \|/);
+  });
+
+  it("Manatal (careers-page.com): Creately", async () => {
+    const { jobs } = await crawl("creately", { "https://www.careers-page.com/api/v1.0/c/creately/jobs/": "manatal-creately.json" });
+    expect(jobs).toEqual([
+      expect.stringMatching(/^Junior UI UX Designer \| Colombo \|.*careers-page\.com\/creately\/job\/L3473778$/),
+      expect.stringMatching(/^Senior SEO Specialist \| Colombo \|.*\/L45767Y5$/),
+    ]);
+  });
+
+  it("MAS Oracle Recruiting Cloud: Sri Lanka roles, paginated", async () => {
+    const { jobs } = await crawl("mas-holdings", {
+      "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,":
+        "oracle-mas.json",
+      "https://egmh.fa.us6.oraclecloud.com/": () => JSON.stringify({ items: [{ TotalJobsCount: 145, requisitionList: [] }] }),
+    });
+    expect(jobs).toHaveLength(25);
+    expect(jobs[0]).toMatch(/^Intern - Lean Enterprise \| Sri Lanka \| intern \|/);
+  });
+
+  it("Innodata Greenhouse: no Sri Lanka roles right now", async () => {
+    const { raw, jobs } = await crawl("innodata", {
+      "https://boards-api.greenhouse.io/v1/boards/innodatainc/": "greenhouse-innodata.json",
+    });
+    expect(raw).toHaveLength(5);
+    expect(jobs).toEqual([]);
+  });
+});

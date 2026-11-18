@@ -58,9 +58,25 @@ const ROUTES: Record<string, string> = {
   "https://codegen.co.uk/en/company/careers": "codegen.html",
   "https://www.alliontechnologies.com/jobs": "allion.html",
   "https://www.insighture.com/work-with-us": "insighture.html",
+  "https://www.amazoft.com/careers": "amazoft.html",
+  "https://www.boc.lk/careers": "boc.html",
+  "https://www.cms.lk/careers/": "cms.html",
+  "https://orysys.com/careers/": "orysys.html",
+  "https://platned.com/careers": "platned.html",
+  "https://www.tekgeeks.net/careers": "tekgeeks.html",
+  "https://www.beespoint.com/company/career.php": "beespoint.html",
+  "https://eyepax.com/wp-admin/admin-ajax.php": "eyepax-jobs.html",
+  "https://careers.tgtglobal.com/jobs.rss": "teamtailor-cambio.xml",
+  "https://boards-api.greenhouse.io/v1/boards/innodatainc/": "greenhouse-innodata.json",
+  "https://www.careers-page.com/api/v1.0/c/creately/": "manatal-creately.json",
+  "https://www.careers-page.com/api/v1.0/c/": "@manatal-empty",
+  "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,":
+    "oracle-mas.json",
+  "https://egmh.fa.us6.oraclecloud.com/": "@oracle-empty",
 };
 const CANNED: Record<string, string> = {
   "@empty": "<html><body></body></html>",
+  "@manatal-empty": JSON.stringify({ count: 0, next: null, results: [] }),
   "@oracle-empty": JSON.stringify({ items: [{ TotalJobsCount: 0, requisitionList: [] }] }),
   "@fortude-empty": JSON.stringify({ joblist: [], noOfTotalRecords: { totalCount: 10 } }),
 };

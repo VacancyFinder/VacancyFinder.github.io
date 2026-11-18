@@ -92,6 +92,51 @@
     "parentGroup": null
   },
   {
+    "id": "amazoft-com-careers",
+    "canonicalUrl": "https://amazoft.com/careers",
+    "adapter": "html",
+    "companySlugs": [
+      "amazoft"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "apts-lk-careers",
+    "canonicalUrl": "https://apts.lk/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "asia-pacific-technology-systems"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "avenirit-com-careers",
+    "canonicalUrl": "https://avenirit.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "avenir-it"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "azendtech-com-careers",
+    "canonicalUrl": "https://azendtech.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "azend-technologies"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "beespoint-com-company-career-php",
+    "canonicalUrl": "https://beespoint.com/company/career.php",
+    "adapter": "html",
+    "companySlugs": [
+      "beespoint"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "bileeta-com-careers",
     "canonicalUrl": "https://bileeta.com/careers",
     "adapter": "none",
@@ -106,6 +151,15 @@
     "adapter": "none",
     "companySlugs": [
       "blue-lotus-360"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "boc-lk-careers",
+    "canonicalUrl": "https://boc.lk/careers",
+    "adapter": "html",
+    "companySlugs": [
+      "bank-of-ceylon"
     ],
     "parentGroup": null
   },
@@ -159,7 +213,7 @@
   {
     "id": "careers-page-com-axonect",
     "canonicalUrl": "https://careers-page.com/axonect",
-    "adapter": "none",
+    "adapter": "custom",
     "companySlugs": [
       "axiata-digital-labs"
     ],
@@ -168,9 +222,27 @@
   {
     "id": "careers-page-com-creately",
     "canonicalUrl": "https://careers-page.com/creately",
-    "adapter": "none",
+    "adapter": "custom",
     "companySlugs": [
       "creately"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "careers-page-com-mitesp",
+    "canonicalUrl": "https://careers-page.com/mitesp",
+    "adapter": "custom",
+    "companySlugs": [
+      "millenniumit-esp"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "careers-tgtglobal-com",
+    "canonicalUrl": "https://careers.tgtglobal.com/",
+    "adapter": "teamtailor",
+    "companySlugs": [
+      "tgt-global"
     ],
     "parentGroup": null
   },
@@ -199,6 +271,33 @@
     "adapter": "html",
     "companySlugs": [
       "citizens-development-business-finance"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "ceyentra-com-company-careers",
+    "canonicalUrl": "https://ceyentra.com/company/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "ceyentra-technologies"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "chakray-com-careers",
+    "canonicalUrl": "https://chakray.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "chakray-consulting"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "cms-lk-careers",
+    "canonicalUrl": "https://cms.lk/careers",
+    "adapter": "html",
+    "companySlugs": [
+      "cms"
     ],
     "parentGroup": null
   },
@@ -296,7 +395,7 @@
   {
     "id": "eyepax-com-job-openings",
     "canonicalUrl": "https://eyepax.com/job-openings",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "eyepax-it-consulting"
     ],
@@ -361,6 +460,15 @@
     "parentGroup": null
   },
   {
+    "id": "hexacorp-com-careers",
+    "canonicalUrl": "https://hexacorp.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "hexacorp"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "hnb-lk-about-us-careers",
     "canonicalUrl": "https://hnb.lk/about-us/careers",
     "adapter": "none",
@@ -388,9 +496,9 @@
     "parentGroup": null
   },
   {
-    "id": "innodata-com-careers",
-    "canonicalUrl": "https://innodata.com/careers",
-    "adapter": "none",
+    "id": "innodatacareers-com",
+    "canonicalUrl": "https://innodatacareers.com/",
+    "adapter": "greenhouse",
     "companySlugs": [
       "innodata"
     ],
@@ -455,6 +563,15 @@
     "parentGroup": null
   },
   {
+    "id": "loonslab-com-resources-careers",
+    "canonicalUrl": "https://loonslab.com/resources/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "loons-lab"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "lseg-wd3-myworkdayjobs-com-careers",
     "canonicalUrl": "https://lseg.wd3.myworkdayjobs.com/Careers",
     "adapter": "custom",
@@ -464,9 +581,9 @@
     "parentGroup": null
   },
   {
-    "id": "masholdings-com-careers",
-    "canonicalUrl": "https://masholdings.com/careers",
-    "adapter": "none",
+    "id": "masholdings-com-join-us",
+    "canonicalUrl": "https://masholdings.com/join-us",
+    "adapter": "custom",
     "companySlugs": [
       "mas-holdings"
     ],
@@ -518,6 +635,15 @@
     "parentGroup": null
   },
   {
+    "id": "orysys-com-careers",
+    "canonicalUrl": "https://orysys.com/careers",
+    "adapter": "html",
+    "companySlugs": [
+      "orysys"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "persistent-com-careers",
     "canonicalUrl": "https://persistent.com/careers",
     "adapter": "none",
@@ -541,6 +667,24 @@
     "adapter": "html",
     "companySlugs": [
       "digital-mobility-solutions-lanka-pickme"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "platned-com-careers",
+    "canonicalUrl": "https://platned.com/careers",
+    "adapter": "html",
+    "companySlugs": [
+      "platned"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "pragicts-com-careers",
+    "canonicalUrl": "https://pragicts.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "pragicts"
     ],
     "parentGroup": null
   },
@@ -620,6 +764,15 @@
     "parentGroup": "softlogic"
   },
   {
+    "id": "sterlingbpo-com-careers",
+    "canonicalUrl": "https://sterlingbpo.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "sterling-bpo-solutions"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "sunshineholdings-lk-careers",
     "canonicalUrl": "https://sunshineholdings.lk/careers",
     "adapter": "none",
@@ -634,6 +787,24 @@
     "adapter": "custom",
     "companySlugs": [
       "surge-global"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "synergenhealth-com-careers",
+    "canonicalUrl": "https://synergenhealth.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "synergen-health"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "tekgeeks-net-careers",
+    "canonicalUrl": "https://tekgeeks.net/careers",
+    "adapter": "html",
+    "companySlugs": [
+      "tekgeeks"
     ],
     "parentGroup": null
   },

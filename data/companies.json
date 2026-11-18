@@ -14,7 +14,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI apps and full-stack (Jaffna)."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "99x",
@@ -112,7 +112,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services & consultants."
+    "notes": "No careers page found on the website (checked Nov 2026)."
   },
   {
     "slug": "acl-cables",
@@ -178,7 +178,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Knowledge services / research."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "ada",
@@ -195,7 +195,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Customer engagement solutions."
+    "notes": "Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026)."
   },
   {
     "slug": "aeturnum",
@@ -212,7 +212,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software for startups and ISVs."
+    "notes": "Openings are on peopleHum, which only renders in the browser; not crawled yet (checked Nov 2026)."
   },
   {
     "slug": "affno-asia-pacific",
@@ -229,7 +229,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software & digital solutions."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "agalawatte-plantations",
@@ -345,7 +345,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software engineering."
+    "notes": "No careers page found on the website (checked Nov 2026)."
   },
   {
     "slug": "alliance-finance-company",
@@ -471,18 +471,26 @@
     "slug": "amazoft",
     "name": "Amazoft",
     "website": "https://www.amazoft.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.amazoft.com/careers",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "article.rounded-lg:has(a[href*=\"/careers/\"])",
+      "titleSelector": "h2",
+      "linkSelector": "a[href*=\"/careers/\"]",
+      "typeSelector": "span",
+      "descriptionSelector": "p",
+      "defaultLocation": "Sri Lanka",
+      "requireLink": true
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software."
+    "notes": "Amazoft careers page (verified by the probe, Nov 2026)."
   },
   {
     "slug": "ambeon-capital",
@@ -547,7 +555,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Creative / digital."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "arimac",
@@ -638,7 +646,7 @@
     "slug": "asia-pacific-technology-systems",
     "name": "Asia Pacific Technology Systems",
     "website": "https://www.apts.lk",
-    "careersUrl": null,
+    "careersUrl": "https://apts.lk/careers/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -647,9 +655,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT systems."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "asia-siyaka-commodities",
@@ -723,7 +731,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software solutions."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "asiri-hospital-holdings",
@@ -794,7 +802,7 @@
     "slug": "avenir-it",
     "name": "Avenir IT",
     "website": "https://www.avenirit.com",
-    "careersUrl": null,
+    "careersUrl": "https://avenirit.com/careers/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -803,32 +811,36 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT solutions."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "axiata-digital-labs",
     "name": "Axiata Digital Labs",
     "website": "https://www.axiatadigitallabs.com",
     "careersUrl": "https://www.careers-page.com/axonect",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "manatal",
+      "slug": "axonect",
+      "locationFilter": "sri lanka|colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": "careers-page",
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "Axiata Digital Labs (Axonect) lists vacancies on careers-page.com (Manatal), rendered in the browser; not crawled yet (Nov 2026)."
+    "notes": "Vacancies on careers-page.com/axonect (Manatal), read from its public jobs API; Sri Lanka roles only (verified by the probe, Nov 2026)."
   },
   {
     "slug": "azend-technologies",
     "name": "Azend Technologies",
     "website": "https://www.azendtech.com",
-    "careersUrl": null,
+    "careersUrl": "https://azendtech.com/careers/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -837,9 +849,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software / tech."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "bairaha-farms",
@@ -877,18 +889,26 @@
     "slug": "bank-of-ceylon",
     "name": "Bank of Ceylon",
     "website": "https://www.boc.lk",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.boc.lk/careers",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.careers-list div.expand-block.career",
+      "titleSelector": "a[id]",
+      "linkSelector": "a[href*=\"/details\"]",
+      "descriptionSelector": "div.editor-content",
+      "defaultLocation": "Sri Lanka",
+      "skipTitlePattern": "result|notice|shortlist|postpone|cancel",
+      "requireLink": true
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Bank IT subsidiary."
+    "notes": "Bank of Ceylon careers page, including BOC IT Solutions roles; interview-result notices are skipped (verified by the probe, Nov 2026)."
   },
   {
     "slug": "bansei-royal-resorts-hikkaduwa",
@@ -910,18 +930,24 @@
     "slug": "beespoint",
     "name": "BeesPoint",
     "website": "https://www.beespoint.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.beespoint.com/company/career.php",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.job-detail",
+      "titleSelector": "h4",
+      "linkSelector": "a[href*=\"jobs-in-sri-lanka\"]",
+      "locationSelector": "p:contains(\"Sri Lanka\")",
+      "requireLink": true
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT company."
+    "notes": "BeesPoint careers page (verified by the probe, Nov 2026)."
   },
   {
     "slug": "beruwala-resorts",
@@ -954,7 +980,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Cloud ERP and eLMIS."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "bima-lanka",
@@ -971,7 +997,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Healthcare / insurance tech."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "bistec-global-services",
@@ -1021,7 +1047,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): ERP / business software."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "bogala-graphite-lanka",
@@ -1242,7 +1268,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Full-stack product development."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "cambio-software-engineering",
@@ -1396,7 +1422,7 @@
     "slug": "ceyentra-technologies",
     "name": "Ceyentra Technologies",
     "website": "https://www.ceyentra.com",
-    "careersUrl": null,
+    "careersUrl": "https://ceyentra.com/company/careers",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -1405,9 +1431,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI-driven product engineering."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "ceylinco-insurance",
@@ -1616,7 +1642,7 @@
     "slug": "chakray-consulting",
     "name": "Chakray Consulting",
     "website": "https://www.chakray.com",
-    "careersUrl": null,
+    "careersUrl": "https://chakray.com/careers/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -1625,9 +1651,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Integration / middleware consulting."
+    "notes": "Chakray's careers page doesn't say where each role is based, so Sri Lanka roles can't be picked out; not crawled (Nov 2026)."
   },
   {
     "slug": "chemanex",
@@ -1735,18 +1761,24 @@
     "slug": "cms",
     "name": "CMS",
     "website": "https://www.cms.lk",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.cms.lk/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.opening-item",
+      "titleSelector": "div.opening-item-inner > div",
+      "linkSelector": "a[href*=\"/careers/\"]",
+      "defaultLocation": "Colombo",
+      "requireLink": true
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT / security services."
+    "notes": "CMS careers page (verified by the probe, Nov 2026)."
   },
   {
     "slug": "co-operative-insurance-company",
@@ -1966,24 +1998,28 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Check site / LinkedIn."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "creately",
     "name": "Creately",
     "website": "https://creately.com",
     "careersUrl": "https://www.careers-page.com/creately",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "manatal",
+      "slug": "creately",
+      "locationFilter": "sri lanka|colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": "careers-page",
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "Creately's openings are on careers-page.com (Manatal), rendered in the browser; not crawled yet (Nov 2026)."
+    "notes": "Vacancies on careers-page.com/creately (Manatal), read from its public jobs API; Sri Lanka roles only (verified by the probe, Nov 2026)."
   },
   {
     "slug": "creative-software",
@@ -2057,7 +2093,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Consulting & technology."
+    "notes": "Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026)."
   },
   {
     "slug": "dfcc-bank",
@@ -2225,7 +2261,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI / ML (check LinkedIn)."
+    "notes": "No careers page found on the website (checked Nov 2026)."
   },
   {
     "slug": "dilmah-ceylon-tea-company",
@@ -2275,7 +2311,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Financial tech / trading platforms."
+    "notes": "Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026)."
   },
   {
     "slug": "distilleries-company-of-sri-lanka",
@@ -2453,7 +2489,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Extended office software teams."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "epic-lanka",
@@ -2470,7 +2506,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Banking and payments software."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "equity-two",
@@ -2503,7 +2539,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital services."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "ex-pack-corrugated-cartons",
@@ -2558,17 +2594,25 @@
     "name": "Eyepax IT Consulting",
     "website": "https://www.eyepax.com",
     "careersUrl": "https://eyepax.com/job-openings/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://eyepax.com/wp-admin/admin-ajax.php?action=filter_jobs&job_location=",
+      "listSelector": "div.e-loop-item",
+      "titleSelector": "h3",
+      "linkSelector": "a[href*=\"/job-openings/\"]",
+      "locationSelector": "span",
+      "requireLink": true,
+      "locationFilter": "sri lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "Eyepax lists openings at eyepax.com/job-openings, loaded by an AJAX call; not crawled yet (Nov 2026)."
+    "notes": "Eyepax job openings page, read from the list it loads (admin-ajax filter_jobs; robots.txt allows it); Sri Lanka roles only (verified by the probe, Nov 2026)."
   },
   {
     "slug": "fcode-labs",
@@ -2585,7 +2629,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Product engineering, AI & cloud."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "first-capital-holdings",
@@ -2746,7 +2790,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Tech services."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "greentech-energy",
@@ -2779,7 +2823,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Restaurant / cloud kitchen SaaS."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "h-connect-international",
@@ -2796,7 +2840,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "hapugastenne-plantations",
@@ -2845,7 +2889,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Mobile / software."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "hatton-national-bank",
@@ -3066,7 +3110,7 @@
     "slug": "hexacorp",
     "name": "Hexacorp",
     "website": "https://www.hexacorp.com",
-    "careersUrl": null,
+    "careersUrl": "https://hexacorp.com/careers/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -3075,9 +3119,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software engineering."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "hikkaduwa-beach-resort",
@@ -3174,7 +3218,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Banking GSC / captive."
+    "notes": "Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026)."
   },
   {
     "slug": "hsenid-business-solutions",
@@ -3322,24 +3366,27 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Automation / RPA."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "innodata",
     "name": "Innodata",
     "website": "https://innodata.com",
-    "careersUrl": "https://innodata.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://innodatacareers.com/",
+    "adapter": "greenhouse",
+    "adapterConfig": {
+      "board": "innodatainc",
+      "locationFilter": "sri lanka|colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Content & data services."
+    "notes": "Innodata hires through Greenhouse (innodatainc); only Sri Lanka roles (none open at the time of the probe) (verified by the probe, Nov 2026)."
   },
   {
     "slug": "inova-it-systems",
@@ -3356,7 +3403,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Enterprise and e-government software."
+    "notes": "No careers page found on the website (checked Nov 2026)."
   },
   {
     "slug": "insighture",
@@ -3397,7 +3444,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software development & IT support."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "intrepid-travel",
@@ -3414,7 +3461,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Travel tech captive-style."
+    "notes": "No careers page found on the website (checked Nov 2026)."
   },
   {
     "slug": "janashakthi-insurance",
@@ -3579,7 +3626,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Check site / LinkedIn for careers."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "kahawatte-plantations",
@@ -3805,7 +3852,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Consulting (IT services)."
+    "notes": "Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026)."
   },
   {
     "slug": "lake-house-printers-and-publishers",
@@ -4006,7 +4053,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Payments infrastructure."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "lankem-ceylon",
@@ -4192,7 +4239,7 @@
     "slug": "loons-lab",
     "name": "Loons Lab",
     "website": "https://www.loonslab.com",
-    "careersUrl": null,
+    "careersUrl": "https://loonslab.com/resources/careers",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -4201,9 +4248,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Government & healthcare digitalisation."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "lotus-hydro-power",
@@ -4380,18 +4427,24 @@
     "slug": "mas-holdings",
     "name": "MAS Holdings",
     "website": "https://www.masholdings.com",
-    "careersUrl": "https://www.masholdings.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://masholdings.com/join-us/",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "oracle-hcm",
+      "host": "egmh.fa.us6.oraclecloud.com",
+      "siteNumber": "CX_1",
+      "location": "Sri Lanka",
+      "locationFilter": "sri lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Apparel tech / digital."
+    "notes": "MAS hires through Oracle Recruiting Cloud (site CX_1); Sri Lanka roles (verified by the probe, Nov 2026)."
   },
   {
     "slug": "maskeliya-plantations",
@@ -4489,7 +4542,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Limited local hiring; global careers."
+    "notes": "Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026)."
   },
   {
     "slug": "millennium-housing-developers",
@@ -4528,18 +4581,22 @@
     "slug": "millenniumit-esp",
     "name": "MillenniumIT ESP",
     "website": "https://www.mitesp.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.careers-page.com/mitesp",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "manatal",
+      "slug": "mitesp",
+      "locationFilter": "sri lanka|colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
-    "parentGroup": null,
+    "parentGroup": "careers-page",
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Enterprise solutions (infra, cloud, security, apps) | Check LinkedIn for openings."
+    "notes": "Vacancies on careers-page.com/mitesp (Manatal), read from its public jobs API; Sri Lanka roles only (verified by the probe, Nov 2026)."
   },
   {
     "slug": "mitra-innovations",
@@ -4556,7 +4613,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI consultancy & legacy modernisation."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "mobitel",
@@ -4573,7 +4630,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Telco IT."
+    "notes": "SLT-Mobitel roles are listed on SLT's careers page, which is already crawled (sri-lanka-telecom) (checked Nov 2026)."
   },
   {
     "slug": "moksh-tech",
@@ -4590,7 +4647,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Cloud services."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "moody-s",
@@ -4607,7 +4664,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Research / analytics captive."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "muller-and-phipps-ceylon",
@@ -4781,7 +4838,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software / digital."
+    "notes": "No careers page found on the website (checked Nov 2026)."
   },
   {
     "slug": "nimi",
@@ -4798,7 +4855,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Fintech software."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "northwood-consulting",
@@ -4815,7 +4872,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Consulting (check LinkedIn)."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "octave",
@@ -4897,7 +4954,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): HR management software."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "orel-it",
@@ -4914,7 +4971,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "orient-finance",
@@ -4936,18 +4993,25 @@
     "slug": "orysys",
     "name": "Orysys Limited",
     "website": "https://www.orysys.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://orysys.com/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "li.job_listing",
+      "titleSelector": "h3",
+      "linkSelector": "a",
+      "locationSelector": "li:eq(0)",
+      "typeSelector": "li:eq(2)",
+      "requireLink": true
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software services."
+    "notes": "Orysys careers page (WP Job Manager list) (verified by the probe, Nov 2026)."
   },
   {
     "slug": "overseas-realty-ceylon",
@@ -5083,7 +5147,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital / tech."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "people-s-insurance",
@@ -5133,7 +5197,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital engineering (Colombo presence)."
+    "notes": "Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026)."
   },
   {
     "slug": "petdesk",
@@ -5175,18 +5239,26 @@
     "slug": "platned",
     "name": "Platned",
     "website": "https://www.platned.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://platned.com/careers",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.co_img_col:has(a[href*=\"/vacancy/\"])",
+      "titleSelector": "p",
+      "linkSelector": "a[href*=\"/vacancy/\"]",
+      "requireLink": true,
+      "skipTitlePattern": "united kingdom|usa|\\((uk|us)\\)|india|australia|pre-sales",
+      "titleStripPattern": "\\s*\\(Sri Lanka\\)",
+      "defaultLocation": "Sri Lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI / platform engineering."
+    "notes": "Platned careers page; only vacancies marked (Sri Lanka) (verified by the probe, Nov 2026)."
   },
   {
     "slug": "pmf-finance",
@@ -5208,7 +5280,7 @@
     "slug": "pragicts",
     "name": "PragICTS",
     "website": "https://www.pragicts.com",
-    "careersUrl": null,
+    "careersUrl": "https://www.pragicts.com/careers",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -5217,9 +5289,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software with IT operations."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "prime-lands-residencies",
@@ -5252,7 +5324,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software & digital services."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "printcare",
@@ -5285,7 +5357,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Custom software and AI agents."
+    "notes": "Not crawled: robots.txt disallows crawling this site (checked Nov 2026)."
   },
   {
     "slug": "r-i-l-property",
@@ -5830,7 +5902,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Simulation & training tech."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "singer-finance-lanka",
@@ -6050,13 +6122,13 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Banking shared services."
+    "notes": "Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026)."
   },
   {
     "slug": "sterling-bpo-solutions",
     "name": "Sterling BPO Solutions",
     "website": "https://www.sterlingbpo.com",
-    "careersUrl": null,
+    "careersUrl": "https://sterlingbpo.com/careers/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -6065,9 +6137,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): BPO."
+    "notes": "Sterling BPO's careers page has no list of openings to read (Nov 2026)."
   },
   {
     "slug": "sunshine-holdings",
@@ -6171,13 +6243,13 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software development."
+    "notes": "No careers page found on the website (checked Nov 2026)."
   },
   {
     "slug": "synergen-health",
     "name": "Synergen Health",
     "website": "https://www.synergenhealth.com",
-    "careersUrl": null,
+    "careersUrl": "https://www.synergenhealth.com/careers/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -6186,9 +6258,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Healthcare BPO / KPO."
+    "notes": "Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026)."
   },
   {
     "slug": "sysco-labs",
@@ -6304,18 +6376,24 @@
     "slug": "tekgeeks",
     "name": "TekGeeks",
     "website": "https://www.tekgeeks.net",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.tekgeeks.net/careers",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "a[href*=\"career-detail\"]",
+      "titleSelector": "h3",
+      "locationSelector": "p:contains(\"Location\")",
+      "typeSelector": "p:contains(\"Employment Type\")",
+      "descriptionSelector": "p:eq(0)"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Web apps and workflow automation."
+    "notes": "TekGeeks careers page (verified by the probe, Nov 2026)."
   },
   {
     "slug": "tess-agro",
@@ -6337,18 +6415,21 @@
     "slug": "tgt-global",
     "name": "TGT Global",
     "website": "https://www.tgtglobal.com",
-    "careersUrl": null,
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://careers.tgtglobal.com/",
+    "adapter": "teamtailor",
+    "adapterConfig": {
+      "feedUrl": "https://careers.tgtglobal.com/jobs.rss",
+      "locationFilter": "sri lanka|colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-discovery",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Security / tech."
+    "notes": "TGT's careers site runs on Teamtailor; only Sri Lanka roles (verified by the probe, Nov 2026)."
   },
   {
     "slug": "the-autodrome",
@@ -6509,7 +6590,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Offshore software, AI and cloud."
+    "notes": "Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026)."
   },
   {
     "slug": "tokyo-cement-company-lanka",
@@ -6542,7 +6623,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Corporate IT."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "twist-digital",
@@ -6653,7 +6734,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Global digital engineering & IT services | Major Colombo delivery centre."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "vitalhub",
@@ -6724,7 +6805,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Captive - Publishing & learning product engineering."
+    "notes": "Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026)."
   },
   {
     "slug": "windforce",
@@ -6757,7 +6838,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): BPM / KPO."
+    "notes": "Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026)."
   },
   {
     "slug": "wso2",
@@ -6823,7 +6904,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Custom software and mobile apps."
+    "notes": "Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026)."
   },
   {
     "slug": "xitricon",
@@ -6866,7 +6947,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Capital markets trading platforms."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "zegates",
@@ -6919,7 +7000,7 @@
     ],
     "status": "needs-discovery",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT solutions."
+    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
   },
   {
     "slug": "zone24x7",

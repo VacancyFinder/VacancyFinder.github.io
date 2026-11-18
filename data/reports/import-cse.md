@@ -25,13 +25,13 @@ Ambiguous (kept separate, resolve by hand):
 
 | Status | Companies |
 |---|---|
-| ready | 53 |
-| needs-adapter | 79 |
-| needs-discovery | 145 |
+| ready | 67 |
+| needs-adapter | 84 |
+| needs-discovery | 126 |
 | needs-research | 120 |
 | disabled | 0 |
 
-`needs-discovery`: 145 companies across 127 unique website domains (discovery probes each domain once).
+`needs-discovery`: 126 companies across 108 unique website domains (discovery probes each domain once).
 
 ## Parent groups
 
@@ -44,7 +44,7 @@ Ambiguous (kept separate, resolve by hand):
 | Richard Pieris Group (Arpico) (`arpico`) | shared website domain | 5: arpico-insurance, kegalle-plantations, maskeliya-plantations, namunukula-plantations, richard-pieris-and-company |
 | Asiri Health (`asirihealth`) | shared website domain | 2: asiri-hospital-holdings, asiri-surgical-hospital |
 | Browns Group (`brownsgroup`) | shared careers domain | 3: brown-and-company, browns-beach-hotels, browns-investments |
-| Careers-page Group (`careers-page`) | shared careers domain | 2: axiata-digital-labs, creately |
+| Careers-page Group (`careers-page`) | shared careers domain | 3: axiata-digital-labs, creately, millenniumit-esp |
 | Cargills Group (`cargillsceylon`) | shared careers domain | 2: c-t-holdings, cargills-ceylon |
 | Carson Cumberbatch Group (`carsoncumberbatch`) | shared website domain | 4: bukit-darah, carson-cumberbatch, ceylon-guardian-investment-trust, ceylon-investment |
 | Dialog Axiata Group (`dialog`) | shared careers domain | 2: dialog-axiata, dialog-finance |
@@ -75,11 +75,14 @@ Check whether these belong to a group that the domain rule can't see.
 - swivel-group: website `swivelgroup.com.au`, careers `careers.smartrecruiters.com`
 - pearson: website `pearson.com`, careers `hccz.fa.em3.oraclecloud.com`
 - fortude: website `fortude.co`, careers `careers.fortude.co`
+- millenniumit-esp: website `mitesp.com`, careers `careers-page.com`
 - axiata-digital-labs: website `axiatadigitallabs.com`, careers `careers-page.com`
 - cambio-software-engineering: website `cambio.se`, careers `careers.cambio.lk`
 - creately: website `creately.com`, careers `careers-page.com`
+- innodata: website `innodata.com`, careers `innodatacareers.com`
 - vitalhub: website `vitalhub.com`, careers `vitalhub.bamboohr.com`
 - codimite: website `codimite.com`, careers `codimite.ai`
+- tgt-global: website `tgtglobal.com`, careers `careers.tgtglobal.com`
 - kaleris: website `kaleris.com`, careers `kaleris.wd501.myworkdayjobs.com`
 - meta: website `meta.com`, careers `metacareers.com`
 
@@ -95,7 +98,9 @@ Check whether these belong to a group that the domain rule can't see.
 - creately.careersUrl
 - eyepax-it-consulting.careersUrl
 - digiratina-technology-solutions.careersUrl
+- innodata.careersUrl
 - vitalhub.careersUrl
+- mas-holdings.careersUrl
 - codimite.careersUrl
 - bistec-global-services.careersUrl
 - xitricon.careersUrl
@@ -110,31 +115,110 @@ Check whether these belong to a group that the domain rule can't see.
 - zillione.notes
 - octave.notes
 - hcltech.notes
+- virtusa.notes
+- millenniumit-esp.notes
 - axiata-digital-labs.notes
+- wiley.notes
 - cambio-software-engineering.notes
 - allion-technologies.notes
 - arimac.notes
+- calcey-technologies.notes
 - efutures.notes
+- epic-lanka.notes
 - gapstars.notes
 - informatics-international.notes
+- aeturnum.notes
+- embla-software-innovation.notes
 - wavenet.notes
 - insighture.notes
+- fcode-labs.notes
 - senzmate.notes
 - xeynergy.notes
+- bileeta.notes
 - creately.notes
 - eyepax-it-consulting.notes
+- orangehrm.notes
+- yaala-labs.notes
 - digiratina-technology-solutions.notes
 - sanmark-solutions.notes
+- tiqri.notes
+- xiteb.notes
+- 3axislabs.notes
+- intervest-software-technologies.notes
+- persistent-systems.notes
+- innodata.notes
 - nagarro.notes
+- deloitte-sri-lanka.notes
+- kpmg-sri-lanka.notes
+- wns.notes
+- simcentric-technologies.notes
+- covalent-systems.notes
+- just-in-time-technologies.notes
+- blue-lotus-360.notes
 - vitalhub.notes
+- grubtech.notes
+- acecam.notes
+- synergen-health.notes
+- mas-holdings.notes
+- lankaclear.notes
+- affno-asia-pacific.notes
 - codimite.notes
 - bistec-global-services.notes
+- directfn.notes
 - xitricon.notes
+- digital-turtles.notes
+- prime-one-global.notes
+- avenir-it.notes
+- cms.notes
+- orysys.notes
+- hatchyard.notes
+- algospring.notes
+- sygnisys.notes
+- zitech-solutions.notes
+- pentagon-i-runway.notes
+- era-biz-solutions.notes
+- platned.notes
+- asipiya-soft-solution.notes
+- hexacorp.notes
+- h-connect-international.notes
+- bank-of-ceylon.notes
+- innobot.notes
+- tgt-global.notes
+- moksh-tech.notes
 - petdesk.notes
 - kaleris.notes
+- amazoft.notes
+- beespoint.notes
+- ceyentra-technologies.notes
+- loons-lab.notes
+- nimi.notes
+- pragicts.notes
+- purple-software.notes
+- tekgeeks.notes
+- inova-it-systems.notes
+- mitra-innovations.notes
+- northwood-consulting.notes
+- azend-technologies.notes
+- orel-it.notes
+- global-frontiers.notes
+- ncinga.notes
+- sterling-bpo-solutions.notes
+- ada.notes
+- intrepid-travel.notes
+- bima-lanka.notes
+- meta.notes
+- hsbc-electronic-data-processing-lanka.notes
+- standard-chartered.notes
+- acuity-knowledge-partners.notes
+- moody-s.notes
+- mobitel.notes
+- ants-creation.notes
+- asia-pacific-technology-systems.notes
+- chakray-consulting.notes
+- toyota-lanka.notes
 
 ## Output
 
 - companies.json: 397
 - groups.json: 20
-- crawl-targets.json: 85
+- crawl-targets.json: 104
