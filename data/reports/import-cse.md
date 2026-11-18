@@ -25,8 +25,8 @@ Ambiguous (kept separate, resolve by hand):
 
 | Status | Companies |
 |---|---|
-| ready | 48 |
-| needs-adapter | 84 |
+| ready | 53 |
+| needs-adapter | 79 |
 | needs-discovery | 145 |
 | needs-research | 120 |
 | disabled | 0 |
@@ -44,6 +44,7 @@ Ambiguous (kept separate, resolve by hand):
 | Richard Pieris Group (Arpico) (`arpico`) | shared website domain | 5: arpico-insurance, kegalle-plantations, maskeliya-plantations, namunukula-plantations, richard-pieris-and-company |
 | Asiri Health (`asirihealth`) | shared website domain | 2: asiri-hospital-holdings, asiri-surgical-hospital |
 | Browns Group (`brownsgroup`) | shared careers domain | 3: brown-and-company, browns-beach-hotels, browns-investments |
+| Careers-page Group (`careers-page`) | shared careers domain | 2: axiata-digital-labs, creately |
 | Cargills Group (`cargillsceylon`) | shared careers domain | 2: c-t-holdings, cargills-ceylon |
 | Carson Cumberbatch Group (`carsoncumberbatch`) | shared website domain | 4: bukit-darah, carson-cumberbatch, ceylon-guardian-investment-trust, ceylon-investment |
 | Dialog Axiata Group (`dialog`) | shared careers domain | 2: dialog-axiata, dialog-finance |
@@ -74,19 +75,31 @@ Check whether these belong to a group that the domain rule can't see.
 - swivel-group: website `swivelgroup.com.au`, careers `careers.smartrecruiters.com`
 - pearson: website `pearson.com`, careers `hccz.fa.em3.oraclecloud.com`
 - fortude: website `fortude.co`, careers `careers.fortude.co`
+- axiata-digital-labs: website `axiatadigitallabs.com`, careers `careers-page.com`
 - cambio-software-engineering: website `cambio.se`, careers `careers.cambio.lk`
+- creately: website `creately.com`, careers `careers-page.com`
+- vitalhub: website `vitalhub.com`, careers `vitalhub.bamboohr.com`
 - codimite: website `codimite.com`, careers `codimite.ai`
+- kaleris: website `kaleris.com`, careers `kaleris.wd501.myworkdayjobs.com`
 - meta: website `meta.com`, careers `metacareers.com`
 
 ## Hand edits preserved over source values
 
+- codegen.careersUrl
+- axiata-digital-labs.careersUrl
+- allion-technologies.careersUrl
 - gapstars.careersUrl
+- insighture.careersUrl
 - senzmate.careersUrl
 - xeynergy.careersUrl
+- creately.careersUrl
+- eyepax-it-consulting.careersUrl
 - digiratina-technology-solutions.careersUrl
+- vitalhub.careersUrl
 - codimite.careersUrl
 - bistec-global-services.careersUrl
 - xitricon.careersUrl
+- kaleris.careersUrl
 - ascentic.notes
 - ifs.notes
 - lseg.notes
@@ -97,22 +110,31 @@ Check whether these belong to a group that the domain rule can't see.
 - zillione.notes
 - octave.notes
 - hcltech.notes
+- axiata-digital-labs.notes
+- cambio-software-engineering.notes
+- allion-technologies.notes
 - arimac.notes
 - efutures.notes
 - gapstars.notes
 - informatics-international.notes
 - wavenet.notes
+- insighture.notes
 - senzmate.notes
 - xeynergy.notes
+- creately.notes
+- eyepax-it-consulting.notes
 - digiratina-technology-solutions.notes
 - sanmark-solutions.notes
+- nagarro.notes
+- vitalhub.notes
 - codimite.notes
 - bistec-global-services.notes
 - xitricon.notes
 - petdesk.notes
+- kaleris.notes
 
 ## Output
 
 - companies.json: 397
-- groups.json: 19
-- crawl-targets.json: 86
+- groups.json: 20
+- crawl-targets.json: 85

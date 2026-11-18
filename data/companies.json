@@ -367,18 +367,25 @@
     "slug": "allion-technologies",
     "name": "Allion Technologies",
     "website": "https://www.alliontechnologies.com",
-    "careersUrl": "https://www.alliontechnologies.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.alliontechnologies.com/jobs",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.oe_website_jobs div.card:has(a[href*=\"/jobs/\"])",
+      "titleSelector": "h3",
+      "linkSelector": "a[href*=\"/jobs/\"]",
+      "descriptionSelector": "div.oe_empty",
+      "defaultLocation": "Colombo",
+      "requireLink": true
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Offshore development & dedicated teams."
+    "notes": "Allion's jobs page (Odoo website) (verified by the probe, Nov 2026)."
   },
   {
     "slug": "alpha-fire-services",
@@ -804,18 +811,18 @@
     "slug": "axiata-digital-labs",
     "name": "Axiata Digital Labs",
     "website": "https://www.axiatadigitallabs.com",
-    "careersUrl": "https://www.axiatadigitallabs.com/careers",
+    "careersUrl": "https://www.careers-page.com/axonect",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
     "cseSymbol": null,
-    "parentGroup": null,
+    "parentGroup": "careers-page",
     "sourceLists": [
       "tech"
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Telco BSS/OSS & fintech (verify)."
+    "notes": "Axiata Digital Labs (Axonect) lists vacancies on careers-page.com (Manatal), rendered in the browser; not crawled yet (Nov 2026)."
   },
   {
     "slug": "azend-technologies",
@@ -971,21 +978,17 @@
     "name": "BISTEC Global Services",
     "website": "https://www.bistecglobal.com",
     "careersUrl": "https://bistecglobal.com/careers/",
-    "adapter": "custom",
-    "adapterConfig": {
-      "kind": "zohorecruit",
-      "portal": "bistecglobal",
-      "page": "Careers"
-    },
+    "adapter": "none",
+    "adapterConfig": {},
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "ready",
-    "active": true,
-    "notes": "BISTEC careers page loads its openings from Zoho Recruit's public API (bistecglobal.zohorecruit.com) (verified by the probe, Nov 2026)."
+    "status": "needs-adapter",
+    "active": false,
+    "notes": "Not crawled: BISTEC's openings come from Zoho Recruit's API, which robots.txt disallows (checked Nov 2026)."
   },
   {
     "slug": "blue-diamonds-jewellery-worldwide",
@@ -1246,17 +1249,19 @@
     "name": "Cambio Software Engineering",
     "website": "https://www.cambio.se",
     "careersUrl": "https://careers.cambio.lk/",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "teamtailor",
+    "adapterConfig": {
+      "feedUrl": "https://careers.cambio.lk/jobs.rss"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Captive - Healthcare IT / EMR."
+    "notes": "Cambio Sri Lanka's careers site runs on Teamtailor; the RSS feed lists its openings (none open at the time of the probe) (verified by the probe, Nov 2026)."
   },
   {
     "slug": "capital-alliance-holdings",
@@ -1763,8 +1768,8 @@
     "slug": "codegen",
     "name": "CodeGen",
     "website": "https://codegen.co.uk",
-    "careersUrl": "https://codegen.co.uk/careers/",
-    "adapter": "none",
+    "careersUrl": "https://codegen.co.uk/en/company/careers",
+    "adapter": "jsonld",
     "adapterConfig": {},
     "industry": "technology",
     "cseSymbol": null,
@@ -1772,9 +1777,9 @@
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
-    "active": false,
-    "notes": "Not crawled: robots.txt disallows codegen.co.uk/careers (verified Sep 2026)."
+    "status": "ready",
+    "active": true,
+    "notes": "CodeGen's current careers page (/en/company/careers) carries JobPosting JSON-LD and robots.txt allows it; the old /careers/ path is disallowed (verified by the probe, Nov 2026)."
   },
   {
     "slug": "codimite",
@@ -1967,18 +1972,18 @@
     "slug": "creately",
     "name": "Creately",
     "website": "https://creately.com",
-    "careersUrl": "https://creately.com/careers",
+    "careersUrl": "https://www.careers-page.com/creately",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
     "cseSymbol": null,
-    "parentGroup": null,
+    "parentGroup": "careers-page",
     "sourceLists": [
       "tech"
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Diagramming and visual collaboration."
+    "notes": "Creately's openings are on careers-page.com (Manatal), rendered in the browser; not crawled yet (Nov 2026)."
   },
   {
     "slug": "creative-software",
@@ -2552,7 +2557,7 @@
     "slug": "eyepax-it-consulting",
     "name": "Eyepax IT Consulting",
     "website": "https://www.eyepax.com",
-    "careersUrl": "https://www.eyepax.com/careers",
+    "careersUrl": "https://eyepax.com/job-openings/",
     "adapter": "none",
     "adapterConfig": {},
     "industry": "technology",
@@ -2563,7 +2568,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Custom software and team-as-a-service."
+    "notes": "Eyepax lists openings at eyepax.com/job-openings, loaded by an AJAX call; not crawled yet (Nov 2026)."
   },
   {
     "slug": "fcode-labs",
@@ -2690,7 +2695,7 @@
     "slug": "gapstars",
     "name": "Gapstars",
     "website": "https://www.gapstars.net",
-    "careersUrl": "https://gapstars.net/tech/careers/",
+    "careersUrl": "https://gapstars.net/tech/jobs/",
     "adapter": "html",
     "adapterConfig": {
       "listSelector": "div.jet-listing-grid__item",
@@ -2708,7 +2713,7 @@
     ],
     "status": "ready",
     "active": true,
-    "notes": "Gapstars careers page; Colombo roles only (the Portugal hub has its own page) (verified by the probe, Nov 2026)."
+    "notes": "Gapstars jobs page (all Sri Lanka openings; the Portugal hub has its own page) (verified by the probe, Nov 2026)."
   },
   {
     "slug": "gestetner-of-ceylon",
@@ -3357,18 +3362,25 @@
     "slug": "insighture",
     "name": "Insighture",
     "website": "https://www.insighture.com",
-    "careersUrl": "https://www.insighture.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.insighture.com/work-with-us",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.job-row",
+      "titleSelector": "a.job-row__title",
+      "linkSelector": "a.job-row__title",
+      "departmentSelector": "span.job-tag:eq(0)",
+      "locationSelector": "span.job-tag:eq(1)",
+      "requireLink": true
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Cloud consulting & app modernisation."
+    "notes": "Insighture's 'Work with us' page lists its open roles (verified by the probe, Nov 2026)."
   },
   {
     "slug": "intervest-software-technologies",
@@ -3589,18 +3601,25 @@
     "slug": "kaleris",
     "name": "Kaleris",
     "website": "https://www.kaleris.com",
-    "careersUrl": "https://www.kaleris.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://kaleris.wd501.myworkdayjobs.com/kaleris_careers",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "workday",
+      "host": "kaleris.wd501.myworkdayjobs.com",
+      "tenant": "kaleris",
+      "site": "kaleris_careers",
+      "fetchDetails": false,
+      "locationFilter": "colombo|sri lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Supply chain tech."
+    "notes": "Kaleris hires through Workday; only Colombo roles (verified by the probe, Nov 2026)."
   },
   {
     "slug": "kapruka-holdings",
@@ -4652,8 +4671,8 @@
       "tech"
     ],
     "status": "needs-adapter",
-    "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital engineering services."
+    "active": false,
+    "notes": "Not crawled: Nagarro's Sri Lanka roles are on SmartRecruiters (Nagarro1), whose robots.txt disallows its public API (checked Nov 2026)."
   },
   {
     "slug": "namunukula-plantations",
@@ -6640,18 +6659,22 @@
     "slug": "vitalhub",
     "name": "VitalHub",
     "website": "https://www.vitalhub.com",
-    "careersUrl": "https://www.vitalhub.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://vitalhub.bamboohr.com/careers",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "bamboohr",
+      "subdomain": "vitalhub",
+      "locationFilter": "colombo|sri lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Healthcare software (offshore)."
+    "notes": "VitalHub hires through BambooHR (vitalhub.bamboohr.com); only Colombo roles (verified by the probe, Nov 2026)."
   },
   {
     "slug": "watawala-plantations",

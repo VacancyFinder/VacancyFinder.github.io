@@ -181,38 +181,26 @@ export const fortude: AdapterFn = async (ctx) => {
   return { jobs };
 };
 
-// ---- Zoho Recruit careers site (BISTEC Global: bistecglobal.zohorecruit.com/jobs/Careers) ----------------
-/** "07/16/2026" (MM/DD/YYYY, as Zoho returns it) → ms, or null. */
-const zohoDate = (v: unknown): number | null => {
-  const m = typeof v === "string" ? v.match(/^(\d{2})\/(\d{2})\/(\d{4})$/) : null;
-  return m ? Date.UTC(Number(m[3]), Number(m[1]) - 1, Number(m[2])) : null;
-};
-
-export function parseZohoRecruit(body: unknown, portal: string, page: string): RawJob[] {
-  return arr((body as Record<string, unknown>)?.data)
-    .filter((j) => str(j.Posting_Title ?? j.Job_Opening_Name) && String(j.Publish ?? "true") !== "false")
+// ---- BambooHR careers site (VitalHub: vitalhub.bamboohr.com/careers) -------------------------------------
+export function parseBambooHr(body: unknown, subdomain: string): RawJob[] {
+  return arr((body as Record<string, unknown>)?.result)
+    .filter((j) => str(j.jobOpeningName))
     .map((j) => {
-      const title = str(j.Posting_Title ?? j.Job_Opening_Name)!;
-      const id = String(j.id ?? "");
+      const loc = (j.location ?? {}) as Record<string, unknown>;
+      const ats = (j.atsLocation ?? {}) as Record<string, unknown>;
+      const place = [str(loc.city) ?? str(ats.city), str(loc.state) ?? str(ats.state), str(ats.country)].filter(Boolean).join(", ");
       return {
-        title,
-        url: str(j.$url) ?? `https://${portal}.zohorecruit.com/jobs/${page}/${id}`,
-        location: [str(j.City), str(j.Country)].filter(Boolean).join(", ") || null,
-        employmentType: str(j.Job_Type),
-        workplace: String(j.Remote_Job) === "true" ? "Remote" : null,
-        department: str(j.Industry),
-        description: str(j.Job_Description),
-        postedAt: zohoDate(j.Date_Opened),
+        title: str(j.jobOpeningName)!,
+        url: `https://${subdomain}.bamboohr.com/careers/${String(j.id ?? "")}`,
+        location: place || null,
+        department: str(j.departmentLabel),
+        employmentType: str(j.employmentStatusLabel),
+        workplace: j.isRemote === true ? "Remote" : null,
       };
     });
 }
 
-export const zohoRecruit: AdapterFn = async (ctx) => {
-  const portal = requireString(ctx.config, "portal"); // {portal}.zohorecruit.com
-  const page = typeof ctx.config.page === "string" ? ctx.config.page : "Careers";
-  const body = await json(
-    ctx,
-    `https://${portal}.zohorecruit.com/recruit/v2/public/Job_Openings?pagename=${encodeURIComponent(page)}&source=CareerSite`,
-  );
-  return { jobs: parseZohoRecruit(body, portal, page) };
+export const bambooHr: AdapterFn = async (ctx) => {
+  const subdomain = requireString(ctx.config, "subdomain"); // {subdomain}.bamboohr.com
+  return { jobs: parseBambooHr(await json(ctx, `https://${subdomain}.bamboohr.com/careers/list`), subdomain) };
 };

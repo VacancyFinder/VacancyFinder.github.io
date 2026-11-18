@@ -308,8 +308,8 @@ describe("Sri Lanka IT companies list (Nov 2026)", () => {
   });
 
   it("Gapstars: Colombo roles", async () => {
-    const { jobs } = await crawl("gapstars", { "https://gapstars.net/tech/careers/": "gapstars.html" });
-    expect(jobs).toHaveLength(6);
+    const { jobs } = await crawl("gapstars", { "https://gapstars.net/tech/jobs/": "gapstars.html" });
+    expect(jobs).toHaveLength(10);
     expect(jobs.every((j) => j.includes("| Colombo |"))).toBe(true);
   });
 
@@ -338,11 +338,50 @@ describe("Sri Lanka IT companies list (Nov 2026)", () => {
     expect(jobs).toEqual([expect.stringMatching(/^Technical Lead - Data Engineering \| Colombo \| lead \|/)]);
   });
 
-  it("BISTEC Global via Zoho Recruit's public API", async () => {
-    const { jobs } = await crawl("bistec-global-services", { "https://bistecglobal.zohorecruit.com/recruit/": "zohorecruit-bistec.json" });
-    expect(jobs).toHaveLength(5);
-    expect(jobs.find((j) => j.startsWith("Senior QA Engineer"))).toMatch(
-      /\| Sri Lanka \| senior \| full-time \|.*bistecglobal\.zohorecruit\.com\/jobs\/Careers\/833746000002434008\//,
-    );
+  it("VitalHub BambooHR: Colombo roles only", async () => {
+    const { raw, jobs } = await crawl("vitalhub", { "https://vitalhub.bamboohr.com/careers/list": "bamboohr-vitalhub.json" });
+    expect(raw).toHaveLength(6);
+    expect(jobs).toHaveLength(3);
+    expect(jobs.every((j) => /\| Colombo \|.*vitalhub\.bamboohr\.com\/careers\/\d+$/.test(j))).toBe(true);
+  });
+
+  it("Kaleris Workday: Colombo roles only", async () => {
+    const c = company("kaleris");
+    const fn = resolveAdapter(c.adapter, c.adapterConfig);
+    const res = await fn({
+      fetcher: fakeFetcher({
+        "https://kaleris.wd501.myworkdayjobs.com/wday/cxs/kaleris/kaleris_careers/jobs": (req) =>
+          ((JSON.parse(req.body ?? "{}") as { offset?: number }).offset ?? 0) === 0
+            ? readFileSync(resolve(FIX, "workday-kaleris.json"), "utf8")
+            : JSON.stringify({ total: 0, jobPostings: [] }),
+      }),
+      url: c.careersUrl!,
+      config: c.adapterConfig,
+      log: () => {},
+    });
+    const lk = applyCommonConfig(res.jobs, c.adapterConfig).filter((j) => /colombo|sri lanka/i.test(j.location ?? ""));
+    expect(lk.map((j) => j.title)).toEqual(expect.arrayContaining(["Cloud Ops Engineer", "Sr DevOps Engineer"]));
+  });
+
+  it("Cambio Teamtailor RSS: an empty feed is a valid answer", async () => {
+    const { raw } = await crawl("cambio-software-engineering", { "https://careers.cambio.lk/jobs.rss": "teamtailor-cambio.xml" });
+    expect(raw).toEqual([]);
+  });
+
+  it("CodeGen: JobPosting JSON-LD", async () => {
+    const { jobs } = await crawl("codegen", { "https://codegen.co.uk/en/company/careers": "codegen.html" });
+    expect(jobs).toHaveLength(4);
+    expect(jobs.find((j) => j.startsWith("Trainee Engineer"))).toMatch(/\| Colombo \| trainee \|.*recruit\.kriyo\.net\/jobs\/17$/);
+  });
+
+  it("Allion: Odoo jobs page", async () => {
+    const { jobs } = await crawl("allion-technologies", { "https://www.alliontechnologies.com/jobs": "allion.html" });
+    expect(jobs).toEqual([expect.stringMatching(/^Associate Software Engineer - Infrastructure Support \| Colombo \|/)]);
+  });
+
+  it("Insighture: work-with-us rows", async () => {
+    const { jobs } = await crawl("insighture", { "https://www.insighture.com/work-with-us": "insighture.html" });
+    expect(jobs).toHaveLength(8);
+    expect(jobs[0]).toMatch(/^Technical Lead - \.NET \| Colombo \|/);
   });
 });

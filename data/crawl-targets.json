@@ -83,20 +83,11 @@
     "parentGroup": "aitkenspence"
   },
   {
-    "id": "alliontechnologies-com-careers",
-    "canonicalUrl": "https://alliontechnologies.com/careers",
-    "adapter": "none",
+    "id": "alliontechnologies-com-jobs",
+    "canonicalUrl": "https://alliontechnologies.com/jobs",
+    "adapter": "html",
     "companySlugs": [
       "allion-technologies"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "axiatadigitallabs-com-careers",
-    "canonicalUrl": "https://axiatadigitallabs.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "axiata-digital-labs"
     ],
     "parentGroup": null
   },
@@ -106,15 +97,6 @@
     "adapter": "none",
     "companySlugs": [
       "bileeta"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "bistecglobal-com-careers",
-    "canonicalUrl": "https://bistecglobal.com/careers",
-    "adapter": "custom",
-    "companySlugs": [
-      "bistec-global-services"
     ],
     "parentGroup": null
   },
@@ -159,7 +141,7 @@
   {
     "id": "careers-cambio-lk",
     "canonicalUrl": "https://careers.cambio.lk/",
-    "adapter": "none",
+    "adapter": "teamtailor",
     "companySlugs": [
       "cambio-software-engineering"
     ],
@@ -171,6 +153,24 @@
     "adapter": "custom",
     "companySlugs": [
       "fortude"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "careers-page-com-axonect",
+    "canonicalUrl": "https://careers-page.com/axonect",
+    "adapter": "none",
+    "companySlugs": [
+      "axiata-digital-labs"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "careers-page-com-creately",
+    "canonicalUrl": "https://careers-page.com/creately",
+    "adapter": "none",
+    "companySlugs": [
+      "creately"
     ],
     "parentGroup": null
   },
@@ -203,20 +203,20 @@
     "parentGroup": null
   },
   {
+    "id": "codegen-co-uk-en-company-careers",
+    "canonicalUrl": "https://codegen.co.uk/en/company/careers",
+    "adapter": "jsonld",
+    "companySlugs": [
+      "codegen"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "codimite-ai-careers",
     "canonicalUrl": "https://codimite.ai/careers",
     "adapter": "html",
     "companySlugs": [
       "codimite"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "creately-com-careers",
-    "canonicalUrl": "https://creately.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "creately"
     ],
     "parentGroup": null
   },
@@ -294,8 +294,8 @@
     "parentGroup": null
   },
   {
-    "id": "eyepax-com-careers",
-    "canonicalUrl": "https://eyepax.com/careers",
+    "id": "eyepax-com-job-openings",
+    "canonicalUrl": "https://eyepax.com/job-openings",
     "adapter": "none",
     "companySlugs": [
       "eyepax-it-consulting"
@@ -312,8 +312,8 @@
     "parentGroup": null
   },
   {
-    "id": "gapstars-net-tech-careers",
-    "canonicalUrl": "https://gapstars.net/tech/careers",
+    "id": "gapstars-net-tech-jobs",
+    "canonicalUrl": "https://gapstars.net/tech/jobs",
     "adapter": "html",
     "companySlugs": [
       "gapstars"
@@ -397,9 +397,9 @@
     "parentGroup": null
   },
   {
-    "id": "insighture-com-careers",
-    "canonicalUrl": "https://insighture.com/careers",
-    "adapter": "none",
+    "id": "insighture-com-work-with-us",
+    "canonicalUrl": "https://insighture.com/work-with-us",
+    "adapter": "html",
     "companySlugs": [
       "insighture"
     ],
@@ -424,9 +424,9 @@
     "parentGroup": null
   },
   {
-    "id": "kaleris-com-careers",
-    "canonicalUrl": "https://kaleris.com/careers",
-    "adapter": "none",
+    "id": "kaleris-wd501-myworkdayjobs-com-kaleris-careers",
+    "canonicalUrl": "https://kaleris.wd501.myworkdayjobs.com/kaleris_careers",
+    "adapter": "custom",
     "companySlugs": [
       "kaleris"
     ],
@@ -496,15 +496,6 @@
     "adapter": "none",
     "companySlugs": [
       "moody-s"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "nagarro-com-en-careers",
-    "canonicalUrl": "https://nagarro.com/en/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "nagarro"
     ],
     "parentGroup": null
   },
@@ -683,9 +674,9 @@
     "parentGroup": null
   },
   {
-    "id": "vitalhub-com-careers",
-    "canonicalUrl": "https://vitalhub.com/careers",
-    "adapter": "none",
+    "id": "vitalhub-bamboohr-com-careers",
+    "canonicalUrl": "https://vitalhub.bamboohr.com/careers",
+    "adapter": "custom",
     "companySlugs": [
       "vitalhub"
     ],

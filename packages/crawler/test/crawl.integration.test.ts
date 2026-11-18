@@ -48,12 +48,16 @@ const ROUTES: Record<string, string> = {
   "https://career.ascentic.se/jobs.rss": "teamtailor-ascentic.xml",
   "https://codimite.ai/careers/": "codimite.html",
   "https://www.digiratina.com/careers/": "digiratina.html",
-  "https://gapstars.net/tech/careers/": "gapstars.html",
+  "https://gapstars.net/tech/jobs/": "gapstars.html",
   "https://www.senzmate.com/careers/": "senzmate.html",
   "https://www.xeynergy.com/careers/": "xeynergy.html",
   "https://xitricon.com/careers/": "xitricon.html",
   "https://api.lever.co/v0/postings/petdesk": "lever-petdesk.json",
-  "https://bistecglobal.zohorecruit.com/recruit/": "zohorecruit-bistec.json",
+  "https://vitalhub.bamboohr.com/careers/list": "bamboohr-vitalhub.json",
+  "https://careers.cambio.lk/jobs.rss": "teamtailor-cambio.xml",
+  "https://codegen.co.uk/en/company/careers": "codegen.html",
+  "https://www.alliontechnologies.com/jobs": "allion.html",
+  "https://www.insighture.com/work-with-us": "insighture.html",
 };
 const CANNED: Record<string, string> = {
   "@empty": "<html><body></body></html>",
@@ -72,6 +76,12 @@ function fakeFetcher(opts: { down?: RegExp } = {}): PoliteFetcher {
     if (url.includes("myworkdaysite.com/wday/cxs/sysco/syscocareers/jobs")) {
       const offset = (JSON.parse(req.body ?? "{}") as { offset?: number }).offset ?? 0;
       const text = offset === 0 ? readFileSync(resolve(FIX, "workday-sysco.json"), "utf8") : JSON.stringify({ total: 20, jobPostings: [] });
+      return { status: 200, url, headers: {}, text, notModified: false, validators: {} };
+    }
+    if (url.includes("myworkdayjobs.com/wday/cxs/kaleris/kaleris_careers/jobs")) {
+      const offset = (JSON.parse(req.body ?? "{}") as { offset?: number }).offset ?? 0;
+      const text =
+        offset === 0 ? readFileSync(resolve(FIX, "workday-kaleris.json"), "utf8") : JSON.stringify({ total: 0, jobPostings: [] });
       return { status: 200, url, headers: {}, text, notModified: false, validators: {} };
     }
     if (url.includes("myworkdayjobs.com/wday/cxs/")) throw new Error("HTTP 404 (detail not in fixtures)");
