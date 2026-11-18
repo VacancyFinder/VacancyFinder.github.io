@@ -11,7 +11,7 @@
 | Empty website | 118 |
 | Unique careers pages | 41 |
 
-Tech list: 130 companies, 128 with a known website.
+Tech list: 129 companies, 127 with a known website.
 
 ## Tech ↔ CSE overlaps (matched by domain)
 
@@ -25,8 +25,8 @@ Ambiguous (kept separate, resolve by hand):
 
 | Status | Companies |
 |---|---|
-| ready | 40 |
-| needs-adapter | 93 |
+| ready | 48 |
+| needs-adapter | 84 |
 | needs-discovery | 145 |
 | needs-research | 120 |
 | disabled | 0 |
@@ -75,10 +75,18 @@ Check whether these belong to a group that the domain rule can't see.
 - pearson: website `pearson.com`, careers `hccz.fa.em3.oraclecloud.com`
 - fortude: website `fortude.co`, careers `careers.fortude.co`
 - cambio-software-engineering: website `cambio.se`, careers `careers.cambio.lk`
+- codimite: website `codimite.com`, careers `codimite.ai`
 - meta: website `meta.com`, careers `metacareers.com`
 
 ## Hand edits preserved over source values
 
+- gapstars.careersUrl
+- senzmate.careersUrl
+- xeynergy.careersUrl
+- digiratina-technology-solutions.careersUrl
+- codimite.careersUrl
+- bistec-global-services.careersUrl
+- xitricon.careersUrl
 - ascentic.notes
 - ifs.notes
 - lseg.notes
@@ -89,9 +97,22 @@ Check whether these belong to a group that the domain rule can't see.
 - zillione.notes
 - octave.notes
 - hcltech.notes
+- arimac.notes
+- efutures.notes
+- gapstars.notes
+- informatics-international.notes
+- wavenet.notes
+- senzmate.notes
+- xeynergy.notes
+- digiratina-technology-solutions.notes
+- sanmark-solutions.notes
+- codimite.notes
+- bistec-global-services.notes
+- xitricon.notes
+- petdesk.notes
 
 ## Output
 
-- companies.json: 398
+- companies.json: 397
 - groups.json: 19
-- crawl-targets.json: 92
+- crawl-targets.json: 86

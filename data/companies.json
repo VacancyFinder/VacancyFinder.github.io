@@ -556,8 +556,8 @@
       "tech"
     ],
     "status": "needs-adapter",
-    "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital products, fintech & immersive tech."
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page on arimac.lk (checked Nov 2026)."
   },
   {
     "slug": "arpico-insurance",
@@ -970,18 +970,22 @@
     "slug": "bistec-global-services",
     "name": "BISTEC Global Services",
     "website": "https://www.bistecglobal.com",
-    "careersUrl": "https://www.bistecglobal.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://bistecglobal.com/careers/",
+    "adapter": "custom",
+    "adapterConfig": {
+      "kind": "zohorecruit",
+      "portal": "bistecglobal",
+      "page": "Careers"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services."
+    "notes": "BISTEC careers page loads its openings from Zoho Recruit's public API (bistecglobal.zohorecruit.com) (verified by the probe, Nov 2026)."
   },
   {
     "slug": "blue-diamonds-jewellery-worldwide",
@@ -1773,38 +1777,30 @@
     "notes": "Not crawled: robots.txt disallows codegen.co.uk/careers (verified Sep 2026)."
   },
   {
-    "slug": "codegen-international",
-    "name": "CodeGen International",
-    "website": "https://www.codegen.net",
-    "careersUrl": "https://www.codegen.net/careers",
-    "adapter": "none",
-    "adapterConfig": {},
-    "industry": "technology",
-    "cseSymbol": null,
-    "parentGroup": null,
-    "sourceLists": [
-      "tech"
-    ],
-    "status": "needs-adapter",
-    "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Travel tech & leisure industry software (verify current URL)."
-  },
-  {
     "slug": "codimite",
     "name": "Codimite",
     "website": "https://www.codimite.com",
-    "careersUrl": "https://www.codimite.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://codimite.ai/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.job-cards",
+      "titleSelector": "h3.job-title",
+      "linkSelector": "a.apply-now-btn",
+      "locationSelector": "p.address",
+      "departmentSelector": "p.job-tag",
+      "typeSelector": "p.time",
+      "workplaceSelector": "p.location",
+      "requireLink": true
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software development."
+    "notes": "Codimite careers page lists every opening with its BambooHR apply link (verified by the probe, Nov 2026)."
   },
   {
     "slug": "colombo-city-holdings",
@@ -2164,18 +2160,25 @@
     "slug": "digiratina-technology-solutions",
     "name": "Digiratina Technology Solutions",
     "website": "https://www.digiratina.com",
-    "careersUrl": "https://www.digiratina.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.digiratina.com/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "ul.grid > li:has(a[href*=\"/careers/\"])",
+      "linkSelector": "a",
+      "titleSelector": "h3",
+      "typeSelector": "h3 + div > span:eq(0)",
+      "locationSelector": "h3 + div > span:eq(1)",
+      "requireLink": true
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Product engineering and custom AI."
+    "notes": "Digiratina careers page, one card per opening (verified by the probe, Nov 2026)."
   },
   {
     "slug": "digital-mobility-solutions-lanka-pickme",
@@ -2411,8 +2414,8 @@
       "tech"
     ],
     "status": "needs-adapter",
-    "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Bespoke software, data & AI."
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page on efutures.com (checked Nov 2026)."
   },
   {
     "slug": "elpitiya-plantations",
@@ -2687,18 +2690,25 @@
     "slug": "gapstars",
     "name": "Gapstars",
     "website": "https://www.gapstars.net",
-    "careersUrl": "https://www.gapstars.net/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://gapstars.net/tech/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.jet-listing-grid__item",
+      "titleSelector": "h3",
+      "locationSelector": "div.elementor-heading-title",
+      "linkSelector": "a[href*=\"career-listings\"]",
+      "requireLink": true,
+      "locationFilter": "colombo|sri lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Embedded offshore engineering teams."
+    "notes": "Gapstars careers page; Colombo roles only (the Portugal hub has its own page) (verified by the probe, Nov 2026)."
   },
   {
     "slug": "gestetner-of-ceylon",
@@ -3289,8 +3299,8 @@
       "tech"
     ],
     "status": "needs-adapter",
-    "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Insurance, billing and border software."
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page on informaticsi.com (checked Nov 2026)."
   },
   {
     "slug": "innobot",
@@ -5111,17 +5121,20 @@
     "name": "PetDesk",
     "website": "https://www.petdesk.com",
     "careersUrl": "https://www.petdesk.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "adapter": "lever",
+    "adapterConfig": {
+      "site": "petdesk",
+      "locationFilter": "sri lanka|colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Product company with SL presence."
+    "notes": "PetDesk hires through Lever (jobs.lever.co/petdesk); only Colombo roles (verified by the probe, Nov 2026)."
   },
   {
     "slug": "pgp-glass-ceylon",
@@ -5578,8 +5591,8 @@
       "tech"
     ],
     "status": "needs-adapter",
-    "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Odoo ERP and staff augmentation."
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page on sanmark.com (checked Nov 2026)."
   },
   {
     "slug": "sarvodaya-development-finance",
@@ -5633,18 +5646,26 @@
     "slug": "senzmate",
     "name": "SenzMate",
     "website": "https://www.senzmate.com",
-    "careersUrl": "https://www.senzmate.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.senzmate.com/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.job-card",
+      "titleSelector": "h3",
+      "linkSelector": "a",
+      "locationSelector": ".job-meta:nth-of-type(2) span",
+      "typeSelector": ".job-meta:first-child span",
+      "descriptionSelector": "p.job-description",
+      "skipTitlePattern": "^(join our journey|internships)$"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AIoT platforms and IoT solutions."
+    "notes": "SenzMate careers page; the general 'Join Our Journey' and 'Internships' cards are not vacancies (verified by the probe, Nov 2026)."
   },
   {
     "slug": "serendib-engineering-group",
@@ -6662,8 +6683,8 @@
       "tech"
     ],
     "status": "needs-adapter",
-    "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Telecom customer-experience software."
+    "active": false,
+    "notes": "Not crawled: robots.txt disallows the careers page on wavenet.lk (checked Nov 2026)."
   },
   {
     "slug": "wiley",
@@ -6744,18 +6765,25 @@
     "slug": "xeynergy",
     "name": "Xeynergy",
     "website": "https://www.xeynergy.com",
-    "careersUrl": "https://www.xeynergy.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://www.xeynergy.com/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "a.accxis-job-card",
+      "titleSelector": "h3.accxis-job-title",
+      "typeSelector": "p.accxis-job-type",
+      "workplaceSelector": "span.accxis-job-chip",
+      "descriptionSelector": "p.accxis-job-excerpt",
+      "defaultLocation": "Colombo"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Staff augmentation & dedicated teams."
+    "notes": "Xeynergy careers page, filled from its accxis360 job board (verified by the probe, Nov 2026)."
   },
   {
     "slug": "xiteb",
@@ -6778,18 +6806,27 @@
     "slug": "xitricon",
     "name": "Xitricon",
     "website": "https://www.xitricon.com",
-    "careersUrl": "https://www.xitricon.com/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://xitricon.com/careers/",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "div.e-loop-item:has(a[href*=\"/career/\"])",
+      "titleSelector": "p.elementor-heading-title",
+      "linkSelector": "a[href*=\"/career/\"]",
+      "departmentSelector": ".elementor-widget-icon-list:eq(0) .elementor-icon-list-text",
+      "locationSelector": ".elementor-widget-icon-list:eq(1) .elementor-icon-list-text",
+      "dateSelector": "time",
+      "requireLink": true,
+      "locationFilter": "sri lanka"
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IFS / ERP consulting & engineering."
+    "notes": "Xitricon careers page; only roles that include Sri Lanka (verified by the probe, Nov 2026)."
   },
   {
     "slug": "yaala-labs",

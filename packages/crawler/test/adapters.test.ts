@@ -291,3 +291,58 @@ describe("round-2 sources (portals and platforms)", () => {
     expect(res.jobs[0]!.url).toMatch(/^https:\/\/wd5\.myworkdaysite\.com\/recruiting\/sysco\/syscocareers\/job\//);
   });
 });
+
+describe("Sri Lanka IT companies list (Nov 2026)", () => {
+  it("Codimite: cards with BambooHR apply links", async () => {
+    const { jobs } = await crawl("codimite", { "https://codimite.ai/careers/": "codimite.html" });
+    expect(jobs).toHaveLength(13);
+    expect(jobs[0]).toMatch(
+      /^Sales Development Representative \| Nugegoda \| unspecified \| full-time \| onsite \|.*codimitepvt\.bamboohr\.com\/careers\/131$/,
+    );
+  });
+
+  it("Digiratina: type and location from each card", async () => {
+    const { jobs } = await crawl("digiratina-technology-solutions", { "https://www.digiratina.com/careers/": "digiratina.html" });
+    expect(jobs).toHaveLength(12);
+    expect(jobs[0]).toMatch(/^Intern Sales and Marketing \| Sri Lanka \| intern \| internship \|/);
+  });
+
+  it("Gapstars: Colombo roles", async () => {
+    const { jobs } = await crawl("gapstars", { "https://gapstars.net/tech/careers/": "gapstars.html" });
+    expect(jobs).toHaveLength(6);
+    expect(jobs.every((j) => j.includes("| Colombo |"))).toBe(true);
+  });
+
+  it("SenzMate: general interest cards are not vacancies", async () => {
+    const { jobs } = await crawl("senzmate", { "https://www.senzmate.com/careers/": "senzmate.html" });
+    expect(jobs).toHaveLength(24);
+    expect(jobs.some((j) => /^(Join Our Journey|Internships) \|/.test(j))).toBe(false);
+  });
+
+  it("Xeynergy: accxis360 job cards", async () => {
+    const { jobs } = await crawl("xeynergy", { "https://www.xeynergy.com/careers/": "xeynergy.html" });
+    expect(jobs).toHaveLength(6);
+    expect(jobs.find((j) => j.startsWith("Intern - Software Engineering"))).toMatch(/\| Colombo \| intern \| internship \| hybrid \|/);
+  });
+
+  it("Xitricon: only roles that include Sri Lanka", async () => {
+    const { raw, jobs } = await crawl("xitricon", { "https://xitricon.com/careers/": "xitricon.html" });
+    expect(raw).toHaveLength(6);
+    expect(jobs).toHaveLength(5);
+    expect(jobs.some((j) => j.startsWith("ERP Consulting Manager"))).toBe(false); // United States only
+  });
+
+  it("PetDesk Lever: Colombo roles only", async () => {
+    const { raw, jobs } = await crawl("petdesk", { "https://api.lever.co/v0/postings/petdesk": "lever-petdesk.json" });
+    expect(raw).toHaveLength(8);
+    expect(jobs).toEqual([expect.stringMatching(/^Technical Lead - Data Engineering \| Colombo \| lead \|/)]);
+  });
+
+  it("BISTEC Global via Zoho Recruit's public API", async () => {
+    const { jobs } = await crawl("bistec-global-services", { "https://bistecglobal.zohorecruit.com/recruit/": "zohorecruit-bistec.json" });
+    expect(jobs).toHaveLength(5);
+    expect(jobs.find((j) => j.startsWith("Senior QA Engineer"))).toMatch(
+      /\| Sri Lanka \| senior \| full-time \|.*bistecglobal\.zohorecruit\.com\/jobs\/Careers\/833746000002434008\//,
+    );
+  });
+});

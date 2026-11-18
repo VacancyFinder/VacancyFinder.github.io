@@ -46,7 +46,7 @@ describe("source file report", () => {
 
   it("produces schema-valid output", () => {
     expect(() => CompaniesFile.parse(first.companies)).not.toThrow();
-    expect(first.companies).toHaveLength(270 + 28 - first.report.overlaps.length);
+    expect(first.companies).toHaveLength(270 + tech.length - first.report.overlaps.length);
   });
 });
 

@@ -92,15 +92,6 @@
     "parentGroup": null
   },
   {
-    "id": "arimac-lk-careers",
-    "canonicalUrl": "https://arimac.lk/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "arimac"
-    ],
-    "parentGroup": null
-  },
-  {
     "id": "axiatadigitallabs-com-careers",
     "canonicalUrl": "https://axiatadigitallabs.com/careers",
     "adapter": "none",
@@ -121,7 +112,7 @@
   {
     "id": "bistecglobal-com-careers",
     "canonicalUrl": "https://bistecglobal.com/careers",
-    "adapter": "none",
+    "adapter": "custom",
     "companySlugs": [
       "bistec-global-services"
     ],
@@ -212,18 +203,9 @@
     "parentGroup": null
   },
   {
-    "id": "codegen-net-careers",
-    "canonicalUrl": "https://codegen.net/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "codegen-international"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "codimite-com-careers",
-    "canonicalUrl": "https://codimite.com/careers",
-    "adapter": "none",
+    "id": "codimite-ai-careers",
+    "canonicalUrl": "https://codimite.ai/careers",
+    "adapter": "html",
     "companySlugs": [
       "codimite"
     ],
@@ -260,7 +242,7 @@
   {
     "id": "digiratina-com-careers",
     "canonicalUrl": "https://digiratina.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "digiratina-technology-solutions"
     ],
@@ -290,15 +272,6 @@
     "adapter": "none",
     "companySlugs": [
       "directfn"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "efutures-com-careers",
-    "canonicalUrl": "https://efutures.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "efutures"
     ],
     "parentGroup": null
   },
@@ -339,9 +312,9 @@
     "parentGroup": null
   },
   {
-    "id": "gapstars-net-careers",
-    "canonicalUrl": "https://gapstars.net/careers",
-    "adapter": "none",
+    "id": "gapstars-net-tech-careers",
+    "canonicalUrl": "https://gapstars.net/tech/careers",
+    "adapter": "html",
     "companySlugs": [
       "gapstars"
     ],
@@ -411,15 +384,6 @@
     "adapter": "none",
     "companySlugs": [
       "hsbc-electronic-data-processing-lanka"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "informaticsi-com-careers",
-    "canonicalUrl": "https://informaticsi.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "informatics-international"
     ],
     "parentGroup": null
   },
@@ -574,7 +538,7 @@
   {
     "id": "petdesk-com-careers",
     "canonicalUrl": "https://petdesk.com/careers",
-    "adapter": "none",
+    "adapter": "lever",
     "companySlugs": [
       "petdesk"
     ],
@@ -608,15 +572,6 @@
     "parentGroup": null
   },
   {
-    "id": "sanmark-com-careers",
-    "canonicalUrl": "https://sanmark.com/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "sanmark-solutions"
-    ],
-    "parentGroup": null
-  },
-  {
     "id": "sc-com-careers",
     "canonicalUrl": "https://sc.com/careers",
     "adapter": "none",
@@ -628,7 +583,7 @@
   {
     "id": "senzmate-com-careers",
     "canonicalUrl": "https://senzmate.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "senzmate"
     ],
@@ -737,15 +692,6 @@
     "parentGroup": null
   },
   {
-    "id": "wavenet-lk-careers",
-    "canonicalUrl": "https://wavenet.lk/careers",
-    "adapter": "none",
-    "companySlugs": [
-      "wavenet"
-    ],
-    "parentGroup": null
-  },
-  {
     "id": "wd5-myworkdaysite-com-recruiting-sysco-syscocareers-jobs-locations-b014cc62fe6601b8d666502cd5287f36",
     "canonicalUrl": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/jobs?locations=b014cc62fe6601b8d666502cd5287f36",
     "adapter": "custom",
@@ -793,7 +739,7 @@
   {
     "id": "xeynergy-com-careers",
     "canonicalUrl": "https://xeynergy.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "xeynergy"
     ],
@@ -811,7 +757,7 @@
   {
     "id": "xitricon-com-careers",
     "canonicalUrl": "https://xitricon.com/careers",
-    "adapter": "none",
+    "adapter": "html",
     "companySlugs": [
       "xitricon"
     ],

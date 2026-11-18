@@ -46,6 +46,14 @@ const ROUTES: Record<string, string> = {
   "https://careers.fortude.co/get-job-list.php?limit=10&offset=0": "fortude.json",
   "https://careers.fortude.co/get-job-list.php": "@fortude-empty",
   "https://career.ascentic.se/jobs.rss": "teamtailor-ascentic.xml",
+  "https://codimite.ai/careers/": "codimite.html",
+  "https://www.digiratina.com/careers/": "digiratina.html",
+  "https://gapstars.net/tech/careers/": "gapstars.html",
+  "https://www.senzmate.com/careers/": "senzmate.html",
+  "https://www.xeynergy.com/careers/": "xeynergy.html",
+  "https://xitricon.com/careers/": "xitricon.html",
+  "https://api.lever.co/v0/postings/petdesk": "lever-petdesk.json",
+  "https://bistecglobal.zohorecruit.com/recruit/": "zohorecruit-bistec.json",
 };
 const CANNED: Record<string, string> = {
   "@empty": "<html><body></body></html>",
