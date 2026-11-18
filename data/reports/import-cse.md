@@ -11,7 +11,7 @@
 | Empty website | 118 |
 | Unique careers pages | 41 |
 
-Tech list: 28 companies, 26 with a known website.
+Tech list: 130 companies, 128 with a known website.
 
 ## Tech ↔ CSE overlaps (matched by domain)
 
@@ -26,12 +26,12 @@ Ambiguous (kept separate, resolve by hand):
 | Status | Companies |
 |---|---|
 | ready | 40 |
-| needs-adapter | 38 |
-| needs-discovery | 98 |
+| needs-adapter | 93 |
+| needs-discovery | 145 |
 | needs-research | 120 |
 | disabled | 0 |
 
-`needs-discovery`: 98 companies across 80 unique website domains (discovery probes each domain once).
+`needs-discovery`: 145 companies across 127 unique website domains (discovery probes each domain once).
 
 ## Parent groups
 
@@ -74,6 +74,8 @@ Check whether these belong to a group that the domain rule can't see.
 - swivel-group: website `swivelgroup.com.au`, careers `careers.smartrecruiters.com`
 - pearson: website `pearson.com`, careers `hccz.fa.em3.oraclecloud.com`
 - fortude: website `fortude.co`, careers `careers.fortude.co`
+- cambio-software-engineering: website `cambio.se`, careers `careers.cambio.lk`
+- meta: website `meta.com`, careers `metacareers.com`
 
 ## Hand edits preserved over source values
 
@@ -90,6 +92,6 @@ Check whether these belong to a group that the domain rule can't see.
 
 ## Output
 
-- companies.json: 296
+- companies.json: 398
 - groups.json: 19
-- crawl-targets.json: 37
+- crawl-targets.json: 92

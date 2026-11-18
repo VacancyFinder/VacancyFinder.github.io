@@ -1,5 +1,22 @@
 [
   {
+    "slug": "3axislabs",
+    "name": "3axislabs",
+    "website": "https://www.3axislabs.com",
+    "careersUrl": "https://www.3axislabs.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI apps and full-stack (Jaffna)."
+  },
+  {
     "slug": "99x",
     "name": "99x",
     "website": "https://99x.io",
@@ -81,6 +98,23 @@
     "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
+    "slug": "acecam",
+    "name": "ACECAM",
+    "website": "https://www.acecamtech.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services & consultants."
+  },
+  {
     "slug": "acl-cables",
     "name": "ACL Cables PLC",
     "website": "https://www.acl.lk",
@@ -128,6 +162,74 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "acuity-knowledge-partners",
+    "name": "Acuity Knowledge Partners",
+    "website": "https://www.acuitykp.com",
+    "careersUrl": "https://www.acuitykp.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Knowledge services / research."
+  },
+  {
+    "slug": "ada",
+    "name": "ADA",
+    "website": "https://www.ada-asia.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Customer engagement solutions."
+  },
+  {
+    "slug": "aeturnum",
+    "name": "Aeturnum",
+    "website": "https://www.aeturnum.com",
+    "careersUrl": "https://www.aeturnum.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software for startups and ISVs."
+  },
+  {
+    "slug": "affno-asia-pacific",
+    "name": "Affno Asia Pacific",
+    "website": "https://www.affno.com",
+    "careersUrl": "https://www.affno.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software & digital solutions."
   },
   {
     "slug": "agalawatte-plantations",
@@ -229,6 +331,23 @@
     "notes": "Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026)."
   },
   {
+    "slug": "algospring",
+    "name": "Algospring",
+    "website": "https://www.algospring.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software engineering."
+  },
+  {
     "slug": "alliance-finance-company",
     "name": "Alliance Finance Company PLC",
     "website": "https://www.alliancefinance.lk",
@@ -243,6 +362,23 @@
     ],
     "status": "needs-discovery",
     "active": true
+  },
+  {
+    "slug": "allion-technologies",
+    "name": "Allion Technologies",
+    "website": "https://www.alliontechnologies.com",
+    "careersUrl": "https://www.alliontechnologies.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Offshore development & dedicated teams."
   },
   {
     "slug": "alpha-fire-services",
@@ -325,6 +461,23 @@
     "active": true
   },
   {
+    "slug": "amazoft",
+    "name": "Amazoft",
+    "website": "https://www.amazoft.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software."
+  },
+  {
     "slug": "ambeon-capital",
     "name": "Ambeon Capital PLC",
     "website": "https://www.ambeon.com",
@@ -371,6 +524,40 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "ants-creation",
+    "name": "Ants Creation",
+    "website": "https://www.antscreation.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Creative / digital."
+  },
+  {
+    "slug": "arimac",
+    "name": "Arimac",
+    "website": "https://www.arimac.lk",
+    "careersUrl": "https://www.arimac.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital products, fintech & immersive tech."
   },
   {
     "slug": "arpico-insurance",
@@ -441,6 +628,23 @@
     "active": true
   },
   {
+    "slug": "asia-pacific-technology-systems",
+    "name": "Asia Pacific Technology Systems",
+    "website": "https://www.apts.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT systems."
+  },
+  {
     "slug": "asia-siyaka-commodities",
     "name": "Asia Siyaka Commodities PLC",
     "website": null,
@@ -496,6 +700,23 @@
     "status": "ready",
     "active": true,
     "notes": "keells.com/careers links to the group's SAP SuccessFactors site; its search results (51 roles, 10 per page) are read page by page (verified Sep 2026). The RSS feed is disallowed by robots.txt."
+  },
+  {
+    "slug": "asipiya-soft-solution",
+    "name": "Asipiya Soft Solution",
+    "website": "https://www.asipiya.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software solutions."
   },
   {
     "slug": "asiri-hospital-holdings",
@@ -563,6 +784,57 @@
     "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
   },
   {
+    "slug": "avenir-it",
+    "name": "Avenir IT",
+    "website": "https://www.avenirit.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT solutions."
+  },
+  {
+    "slug": "axiata-digital-labs",
+    "name": "Axiata Digital Labs",
+    "website": "https://www.axiatadigitallabs.com",
+    "careersUrl": "https://www.axiatadigitallabs.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Telco BSS/OSS & fintech (verify)."
+  },
+  {
+    "slug": "azend-technologies",
+    "name": "Azend Technologies",
+    "website": "https://www.azendtech.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software / tech."
+  },
+  {
     "slug": "bairaha-farms",
     "name": "Bairaha Farms PLC",
     "website": "https://www.bairaha.com",
@@ -595,6 +867,23 @@
     "active": true
   },
   {
+    "slug": "bank-of-ceylon",
+    "name": "Bank of Ceylon",
+    "website": "https://www.boc.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Bank IT subsidiary."
+  },
+  {
     "slug": "bansei-royal-resorts-hikkaduwa",
     "name": "Bansei Royal Resorts Hikkaduwa PLC",
     "website": null,
@@ -609,6 +898,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "beespoint",
+    "name": "BeesPoint",
+    "website": "https://www.beespoint.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT company."
   },
   {
     "slug": "beruwala-resorts",
@@ -627,6 +933,57 @@
     "active": true
   },
   {
+    "slug": "bileeta",
+    "name": "Bileeta",
+    "website": "https://www.bileeta.com",
+    "careersUrl": "https://www.bileeta.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Cloud ERP and eLMIS."
+  },
+  {
+    "slug": "bima-lanka",
+    "name": "BIMA Lanka",
+    "website": "https://www.bima.co",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Healthcare / insurance tech."
+  },
+  {
+    "slug": "bistec-global-services",
+    "name": "BISTEC Global Services",
+    "website": "https://www.bistecglobal.com",
+    "careersUrl": "https://www.bistecglobal.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services."
+  },
+  {
     "slug": "blue-diamonds-jewellery-worldwide",
     "name": "Blue Diamonds Jewellery Worldwide PLC",
     "website": null,
@@ -641,6 +998,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "blue-lotus-360",
+    "name": "Blue Lotus 360",
+    "website": "https://www.bluelotus360.com",
+    "careersUrl": "https://www.bluelotus360.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): ERP / business software."
   },
   {
     "slug": "bogala-graphite-lanka",
@@ -847,6 +1221,40 @@
     "active": true
   },
   {
+    "slug": "calcey-technologies",
+    "name": "Calcey Technologies",
+    "website": "https://calcey.com",
+    "careersUrl": "https://calcey.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Full-stack product development."
+  },
+  {
+    "slug": "cambio-software-engineering",
+    "name": "Cambio Software Engineering",
+    "website": "https://www.cambio.se",
+    "careersUrl": "https://careers.cambio.lk/",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Captive - Healthcare IT / EMR."
+  },
+  {
     "slug": "capital-alliance-holdings",
     "name": "Capital Alliance Holdings PLC",
     "website": "https://www.capitalalliance.lk",
@@ -974,6 +1382,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "ceyentra-technologies",
+    "name": "Ceyentra Technologies",
+    "website": "https://www.ceyentra.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI-driven product engineering."
   },
   {
     "slug": "ceylinco-insurance",
@@ -1179,6 +1604,23 @@
     "notes": "ceylontobacco.com from the CSE list is a parked domain (verified Sep 2026); the real careers page needs research."
   },
   {
+    "slug": "chakray-consulting",
+    "name": "Chakray Consulting",
+    "website": "https://www.chakray.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Integration / middleware consulting."
+  },
+  {
     "slug": "chemanex",
     "name": "Chemanex PLC",
     "website": null,
@@ -1281,6 +1723,23 @@
     "active": true
   },
   {
+    "slug": "cms",
+    "name": "CMS",
+    "website": "https://www.cms.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT / security services."
+  },
+  {
     "slug": "co-operative-insurance-company",
     "name": "Co-Operative Insurance Company PLC",
     "website": null,
@@ -1312,6 +1771,40 @@
     "status": "needs-adapter",
     "active": false,
     "notes": "Not crawled: robots.txt disallows codegen.co.uk/careers (verified Sep 2026)."
+  },
+  {
+    "slug": "codegen-international",
+    "name": "CodeGen International",
+    "website": "https://www.codegen.net",
+    "careersUrl": "https://www.codegen.net/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Travel tech & leisure industry software (verify current URL)."
+  },
+  {
+    "slug": "codimite",
+    "name": "Codimite",
+    "website": "https://www.codimite.com",
+    "careersUrl": "https://www.codimite.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software development."
   },
   {
     "slug": "colombo-city-holdings",
@@ -1458,6 +1951,40 @@
     "active": true
   },
   {
+    "slug": "covalent-systems",
+    "name": "Covalent Systems",
+    "website": "https://www.covalentsystems.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Check site / LinkedIn."
+  },
+  {
+    "slug": "creately",
+    "name": "Creately",
+    "website": "https://creately.com",
+    "careersUrl": "https://creately.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Diagramming and visual collaboration."
+  },
+  {
     "slug": "creative-software",
     "name": "Creative Software",
     "website": "https://www.creativesoftware.com",
@@ -1513,6 +2040,23 @@
     ],
     "status": "needs-discovery",
     "active": true
+  },
+  {
+    "slug": "deloitte-sri-lanka",
+    "name": "Deloitte Sri Lanka",
+    "website": "https://www2.deloitte.com/lk",
+    "careersUrl": "https://www2.deloitte.com/lk/en/careers.html",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Consulting & technology."
   },
   {
     "slug": "dfcc-bank",
@@ -1617,6 +2161,23 @@
     "notes": "DIMO vacancies page (paginated). Listings past their closing date are dropped — at probe time all 4 had closed (verified Sep 2026)."
   },
   {
+    "slug": "digiratina-technology-solutions",
+    "name": "Digiratina Technology Solutions",
+    "website": "https://www.digiratina.com",
+    "careersUrl": "https://www.digiratina.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Product engineering and custom AI."
+  },
+  {
     "slug": "digital-mobility-solutions-lanka-pickme",
     "name": "Digital Mobility Solutions Lanka PLC (PickMe)",
     "website": "https://pickme.lk",
@@ -1640,6 +2201,23 @@
     "status": "ready",
     "active": true,
     "notes": "PickMe's own careers page lists current openings (verified Sep 2026)."
+  },
+  {
+    "slug": "digital-turtles",
+    "name": "Digital Turtles",
+    "website": "https://www.digitalturtles.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI / ML (check LinkedIn)."
   },
   {
     "slug": "dilmah-ceylon-tea-company",
@@ -1673,6 +2251,23 @@
     ],
     "status": "needs-discovery",
     "active": true
+  },
+  {
+    "slug": "directfn",
+    "name": "DirectFN",
+    "website": "https://www.directfn.com",
+    "careersUrl": "https://www.directfn.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Financial tech / trading platforms."
   },
   {
     "slug": "distilleries-company-of-sri-lanka",
@@ -1803,6 +2398,23 @@
     "active": true
   },
   {
+    "slug": "efutures",
+    "name": "EFutures",
+    "website": "https://www.efutures.com",
+    "careersUrl": "https://www.efutures.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Bespoke software, data & AI."
+  },
+  {
     "slug": "elpitiya-plantations",
     "name": "Elpitiya Plantations PLC",
     "website": null,
@@ -1819,6 +2431,40 @@
     "active": true
   },
   {
+    "slug": "embla-software-innovation",
+    "name": "Embla Software Innovation",
+    "website": "https://www.embla.no",
+    "careersUrl": "https://www.embla.no/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Extended office software teams."
+  },
+  {
+    "slug": "epic-lanka",
+    "name": "Epic Lanka",
+    "website": "https://www.epiclanka.com",
+    "careersUrl": "https://www.epiclanka.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Banking and payments software."
+  },
+  {
     "slug": "equity-two",
     "name": "Equity Two PLC",
     "website": null,
@@ -1833,6 +2479,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "era-biz-solutions",
+    "name": "Era Biz Solutions",
+    "website": "https://www.erabiz.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital services."
   },
   {
     "slug": "ex-pack-corrugated-cartons",
@@ -1881,6 +2544,40 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "eyepax-it-consulting",
+    "name": "Eyepax IT Consulting",
+    "website": "https://www.eyepax.com",
+    "careersUrl": "https://www.eyepax.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Custom software and team-as-a-service."
+  },
+  {
+    "slug": "fcode-labs",
+    "name": "Fcode Labs",
+    "website": "https://www.fcodelabs.com",
+    "careersUrl": "https://www.fcodelabs.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Product engineering, AI & cloud."
   },
   {
     "slug": "first-capital-holdings",
@@ -1987,6 +2684,23 @@
     "active": true
   },
   {
+    "slug": "gapstars",
+    "name": "Gapstars",
+    "website": "https://www.gapstars.net",
+    "careersUrl": "https://www.gapstars.net/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Embedded offshore engineering teams."
+  },
+  {
     "slug": "gestetner-of-ceylon",
     "name": "Gestetner of Ceylon PLC",
     "website": null,
@@ -2003,6 +2717,23 @@
     "active": true
   },
   {
+    "slug": "global-frontiers",
+    "name": "Global Frontiers",
+    "website": "https://www.globalfrontiers.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Tech services."
+  },
+  {
     "slug": "greentech-energy",
     "name": "Greentech Energy PLC",
     "website": null,
@@ -2017,6 +2748,40 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "grubtech",
+    "name": "GrubTech",
+    "website": "https://www.grubtech.com",
+    "careersUrl": "https://www.grubtech.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Restaurant / cloud kitchen SaaS."
+  },
+  {
+    "slug": "h-connect-international",
+    "name": "H Connect International",
+    "website": "https://www.hconnect.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services."
   },
   {
     "slug": "hapugastenne-plantations",
@@ -2049,6 +2814,23 @@
     ],
     "status": "needs-discovery",
     "active": true
+  },
+  {
+    "slug": "hatchyard",
+    "name": "Hatchyard",
+    "website": "https://www.hatchyard.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Mobile / software."
   },
   {
     "slug": "hatton-national-bank",
@@ -2266,6 +3048,23 @@
     "notes": "The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet."
   },
   {
+    "slug": "hexacorp",
+    "name": "Hexacorp",
+    "website": "https://www.hexacorp.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software engineering."
+  },
+  {
     "slug": "hikkaduwa-beach-resort",
     "name": "Hikkaduwa Beach Resort PLC",
     "website": null,
@@ -2344,6 +3143,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "hsbc-electronic-data-processing-lanka",
+    "name": "HSBC Electronic Data Processing Lanka",
+    "website": "https://www.hsbc.com",
+    "careersUrl": "https://www.hsbc.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Banking GSC / captive."
   },
   {
     "slug": "hsenid-business-solutions",
@@ -2458,6 +3274,125 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "informatics-international",
+    "name": "Informatics International",
+    "website": "https://www.informaticsi.com",
+    "careersUrl": "https://www.informaticsi.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Insurance, billing and border software."
+  },
+  {
+    "slug": "innobot",
+    "name": "Innobot",
+    "website": "https://www.innobot.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Automation / RPA."
+  },
+  {
+    "slug": "innodata",
+    "name": "Innodata",
+    "website": "https://innodata.com",
+    "careersUrl": "https://innodata.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Content & data services."
+  },
+  {
+    "slug": "inova-it-systems",
+    "name": "Inova IT Systems",
+    "website": "https://www.inova.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Enterprise and e-government software."
+  },
+  {
+    "slug": "insighture",
+    "name": "Insighture",
+    "website": "https://www.insighture.com",
+    "careersUrl": "https://www.insighture.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Cloud consulting & app modernisation."
+  },
+  {
+    "slug": "intervest-software-technologies",
+    "name": "Intervest Software Technologies",
+    "website": "https://www.intervest.lk",
+    "careersUrl": "https://www.intervest.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software development & IT support."
+  },
+  {
+    "slug": "intrepid-travel",
+    "name": "Intrepid Travel",
+    "website": "https://www.intrepidgroup.travel",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Travel tech captive-style."
   },
   {
     "slug": "janashakthi-insurance",
@@ -2608,6 +3543,23 @@
     "notes": "careers.cinnamonhotels.com's vacancy API returns ~12 MB per request (embedded images), too heavy to poll every 3 hours. Cinnamon roles on the John Keells careers site are still credited here (verified Sep 2026)."
   },
   {
+    "slug": "just-in-time-technologies",
+    "name": "Just In Time Technologies",
+    "website": "https://www.jit.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Check site / LinkedIn for careers."
+  },
+  {
     "slug": "kahawatte-plantations",
     "name": "Kahawatte Plantations PLC",
     "website": null,
@@ -2622,6 +3574,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "kaleris",
+    "name": "Kaleris",
+    "website": "https://www.kaleris.com",
+    "careersUrl": "https://www.kaleris.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Supply chain tech."
   },
   {
     "slug": "kapruka-holdings",
@@ -2791,6 +3760,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "kpmg-sri-lanka",
+    "name": "KPMG Sri Lanka",
+    "website": "https://home.kpmg/lk",
+    "careersUrl": "https://home.kpmg/lk/en/home/careers.html",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Consulting (IT services)."
   },
   {
     "slug": "lake-house-printers-and-publishers",
@@ -2977,6 +3963,23 @@
     "active": true
   },
   {
+    "slug": "lankaclear",
+    "name": "LankaClear",
+    "website": "https://www.lankaclear.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Payments infrastructure."
+  },
+  {
     "slug": "lankem-ceylon",
     "name": "Lankem Ceylon PLC",
     "website": "https://www.lankem.com",
@@ -3157,6 +4160,23 @@
     "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
+    "slug": "loons-lab",
+    "name": "Loons Lab",
+    "website": "https://www.loonslab.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Government & healthcare digitalisation."
+  },
+  {
     "slug": "lotus-hydro-power",
     "name": "Lotus Hydro Power PLC",
     "website": null,
@@ -3328,6 +4348,23 @@
     "active": true
   },
   {
+    "slug": "mas-holdings",
+    "name": "MAS Holdings",
+    "website": "https://www.masholdings.com",
+    "careersUrl": "https://www.masholdings.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Apparel tech / digital."
+  },
+  {
     "slug": "maskeliya-plantations",
     "name": "Maskeliya Plantations PLC",
     "website": "https://www.arpico.com",
@@ -3409,6 +4446,23 @@
     "active": true
   },
   {
+    "slug": "meta",
+    "name": "Meta",
+    "website": "https://www.meta.com",
+    "careersUrl": "https://www.metacareers.com",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Limited local hiring; global careers."
+  },
+  {
     "slug": "millennium-housing-developers",
     "name": "Millennium Housing Developers PLC",
     "website": null,
@@ -3440,6 +4494,91 @@
     "status": "needs-research",
     "active": true,
     "notes": "Now part of LSEG; its roles are listed on LSEG's Workday site (crawled under LSEG). NOT the same as Millennium Housing Developers PLC (CSE)."
+  },
+  {
+    "slug": "millenniumit-esp",
+    "name": "MillenniumIT ESP",
+    "website": "https://www.mitesp.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Enterprise solutions (infra, cloud, security, apps) | Check LinkedIn for openings."
+  },
+  {
+    "slug": "mitra-innovations",
+    "name": "Mitra Innovations",
+    "website": "https://www.mitra.ai",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI consultancy & legacy modernisation."
+  },
+  {
+    "slug": "mobitel",
+    "name": "Mobitel",
+    "website": "https://www.mobitel.lk",
+    "careersUrl": "https://www.mobitel.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Telco IT."
+  },
+  {
+    "slug": "moksh-tech",
+    "name": "Moksh Tech",
+    "website": "https://www.mokshtech.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Cloud services."
+  },
+  {
+    "slug": "moody-s",
+    "name": "Moody's",
+    "website": "https://www.moodys.com",
+    "careersUrl": "https://www.moodys.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Research / analytics captive."
   },
   {
     "slug": "muller-and-phipps-ceylon",
@@ -3488,6 +4627,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "nagarro",
+    "name": "Nagarro",
+    "website": "https://www.nagarro.com",
+    "careersUrl": "https://www.nagarro.com/en/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital engineering services."
   },
   {
     "slug": "namunukula-plantations",
@@ -3582,6 +4738,57 @@
     "active": true
   },
   {
+    "slug": "ncinga",
+    "name": "NCINGA",
+    "website": "https://www.ncinga.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software / digital."
+  },
+  {
+    "slug": "nimi",
+    "name": "Nimi",
+    "website": "https://www.nimi.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Fintech software."
+  },
+  {
+    "slug": "northwood-consulting",
+    "name": "Northwood Consulting",
+    "website": "https://www.northwood.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Consulting (check LinkedIn)."
+  },
+  {
     "slug": "octave",
     "name": "Octave",
     "website": "https://www.keells.com/octave/",
@@ -3647,6 +4854,40 @@
     "active": true
   },
   {
+    "slug": "orangehrm",
+    "name": "OrangeHRM",
+    "website": "https://www.orangehrm.com",
+    "careersUrl": "https://www.orangehrm.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): HR management software."
+  },
+  {
+    "slug": "orel-it",
+    "name": "Orel IT",
+    "website": "https://www.orel.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services."
+  },
+  {
     "slug": "orient-finance",
     "name": "Orient Finance PLC",
     "website": null,
@@ -3661,6 +4902,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "orysys",
+    "name": "Orysys Limited",
+    "website": "https://www.orysys.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software services."
   },
   {
     "slug": "overseas-realty-ceylon",
@@ -3782,6 +5040,23 @@
     "active": true
   },
   {
+    "slug": "pentagon-i-runway",
+    "name": "Pentagon I Runway",
+    "website": "https://www.pentagonirunway.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital / tech."
+  },
+  {
     "slug": "people-s-insurance",
     "name": "People's Insurance PLC",
     "website": "https://www.peoplesinsurance.lk",
@@ -3815,6 +5090,40 @@
     "notes": "Not crawled: robots.txt disallows the careers page (verified Sep 2026)."
   },
   {
+    "slug": "persistent-systems",
+    "name": "Persistent Systems",
+    "website": "https://www.persistent.com",
+    "careersUrl": "https://www.persistent.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital engineering (Colombo presence)."
+  },
+  {
+    "slug": "petdesk",
+    "name": "PetDesk",
+    "website": "https://www.petdesk.com",
+    "careersUrl": "https://www.petdesk.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Product company with SL presence."
+  },
+  {
     "slug": "pgp-glass-ceylon",
     "name": "PGP Glass Ceylon PLC",
     "website": null,
@@ -3829,6 +5138,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "platned",
+    "name": "Platned",
+    "website": "https://www.platned.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI / platform engineering."
   },
   {
     "slug": "pmf-finance",
@@ -3847,6 +5173,23 @@
     "active": true
   },
   {
+    "slug": "pragicts",
+    "name": "PragICTS",
+    "website": "https://www.pragicts.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software with IT operations."
+  },
+  {
     "slug": "prime-lands-residencies",
     "name": "Prime Lands Residencies PLC",
     "website": "https://www.primelands.lk",
@@ -3863,6 +5206,23 @@
     "active": true
   },
   {
+    "slug": "prime-one-global",
+    "name": "Prime One Global",
+    "website": "https://www.primeoneglobal.com",
+    "careersUrl": "https://www.primeoneglobal.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software & digital services."
+  },
+  {
     "slug": "printcare",
     "name": "Printcare PLC",
     "website": "https://www.printcare.lk",
@@ -3877,6 +5237,23 @@
     ],
     "status": "needs-discovery",
     "active": true
+  },
+  {
+    "slug": "purple-software",
+    "name": "Purple Software",
+    "website": "https://www.purplesoftware.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Custom software and AI agents."
   },
   {
     "slug": "r-i-l-property",
@@ -4188,6 +5565,23 @@
     "active": true
   },
   {
+    "slug": "sanmark-solutions",
+    "name": "Sanmark Solutions",
+    "website": "https://www.sanmark.com",
+    "careersUrl": "https://www.sanmark.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Odoo ERP and staff augmentation."
+  },
+  {
     "slug": "sarvodaya-development-finance",
     "name": "Sarvodaya Development Finance PLC",
     "website": null,
@@ -4234,6 +5628,23 @@
     ],
     "status": "needs-discovery",
     "active": true
+  },
+  {
+    "slug": "senzmate",
+    "name": "SenzMate",
+    "website": "https://www.senzmate.com",
+    "careersUrl": "https://www.senzmate.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AIoT platforms and IoT solutions."
   },
   {
     "slug": "serendib-engineering-group",
@@ -4363,6 +5774,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "simcentric-technologies",
+    "name": "SimCentric Technologies",
+    "website": "https://www.simcentric.com",
+    "careersUrl": "https://www.simcentric.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Simulation & training tech."
   },
   {
     "slug": "singer-finance-lanka",
@@ -4568,6 +5996,40 @@
     "active": true
   },
   {
+    "slug": "standard-chartered",
+    "name": "Standard Chartered",
+    "website": "https://www.sc.com",
+    "careersUrl": "https://www.sc.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Banking shared services."
+  },
+  {
+    "slug": "sterling-bpo-solutions",
+    "name": "Sterling BPO Solutions",
+    "website": "https://www.sterlingbpo.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): BPO."
+  },
+  {
     "slug": "sunshine-holdings",
     "name": "Sunshine Holdings PLC",
     "website": "https://www.sunshineholdings.lk",
@@ -4653,6 +6115,40 @@
     "status": "needs-adapter",
     "active": false,
     "notes": "Careers on SmartRecruiters (SwivelGroup), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026)."
+  },
+  {
+    "slug": "sygnisys",
+    "name": "Sygnisys",
+    "website": "https://www.sygnisys.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software development."
+  },
+  {
+    "slug": "synergen-health",
+    "name": "Synergen Health",
+    "website": "https://www.synergenhealth.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Healthcare BPO / KPO."
   },
   {
     "slug": "sysco-labs",
@@ -4765,6 +6261,23 @@
     "notes": "Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page."
   },
   {
+    "slug": "tekgeeks",
+    "name": "TekGeeks",
+    "website": "https://www.tekgeeks.net",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Web apps and workflow automation."
+  },
+  {
     "slug": "tess-agro",
     "name": "Tess Agro PLC",
     "website": null,
@@ -4779,6 +6292,23 @@
     ],
     "status": "needs-research",
     "active": true
+  },
+  {
+    "slug": "tgt-global",
+    "name": "TGT Global",
+    "website": "https://www.tgtglobal.com",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Security / tech."
   },
   {
     "slug": "the-autodrome",
@@ -4925,6 +6455,23 @@
     "active": true
   },
   {
+    "slug": "tiqri",
+    "name": "TIQRI",
+    "website": "https://www.tiqri.com",
+    "careersUrl": "https://www.tiqri.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Offshore software, AI and cloud."
+  },
+  {
     "slug": "tokyo-cement-company-lanka",
     "name": "Tokyo Cement Company (Lanka) PLC",
     "website": "https://www.tokyocement.com",
@@ -4939,6 +6486,23 @@
     ],
     "status": "needs-discovery",
     "active": true
+  },
+  {
+    "slug": "toyota-lanka",
+    "name": "Toyota Lanka",
+    "website": "https://www.toyota.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Corporate IT."
   },
   {
     "slug": "twist-digital",
@@ -5035,6 +6599,40 @@
     "active": true
   },
   {
+    "slug": "virtusa",
+    "name": "Virtusa",
+    "website": "https://www.virtusa.com",
+    "careersUrl": "https://www.virtusa.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Global digital engineering & IT services | Major Colombo delivery centre."
+  },
+  {
+    "slug": "vitalhub",
+    "name": "VitalHub",
+    "website": "https://www.vitalhub.com",
+    "careersUrl": "https://www.vitalhub.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Healthcare software (offshore)."
+  },
+  {
     "slug": "watawala-plantations",
     "name": "Watawala Plantations PLC",
     "website": null,
@@ -5051,6 +6649,40 @@
     "active": true
   },
   {
+    "slug": "wavenet",
+    "name": "Wavenet",
+    "website": "https://www.wavenet.lk",
+    "careersUrl": "https://www.wavenet.lk/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Telecom customer-experience software."
+  },
+  {
+    "slug": "wiley",
+    "name": "Wiley",
+    "website": "https://www.wiley.com",
+    "careersUrl": "https://www.wiley.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Captive - Publishing & learning product engineering."
+  },
+  {
     "slug": "windforce",
     "name": "WindForce PLC",
     "website": "https://www.windforce.lk",
@@ -5065,6 +6697,23 @@
     ],
     "status": "needs-discovery",
     "active": true
+  },
+  {
+    "slug": "wns",
+    "name": "WNS",
+    "website": "https://www.wns.com",
+    "careersUrl": "https://www.wns.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): BPM / KPO."
   },
   {
     "slug": "wso2",
@@ -5090,6 +6739,74 @@
     "status": "ready",
     "active": true,
     "notes": "Careers page lists global roles as cards; only Sri Lanka roles are kept (verified Sep 2026)."
+  },
+  {
+    "slug": "xeynergy",
+    "name": "Xeynergy",
+    "website": "https://www.xeynergy.com",
+    "careersUrl": "https://www.xeynergy.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Staff augmentation & dedicated teams."
+  },
+  {
+    "slug": "xiteb",
+    "name": "Xiteb",
+    "website": "https://www.xiteb.com",
+    "careersUrl": "https://www.xiteb.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Custom software and mobile apps."
+  },
+  {
+    "slug": "xitricon",
+    "name": "Xitricon",
+    "website": "https://www.xitricon.com",
+    "careersUrl": "https://www.xitricon.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IFS / ERP consulting & engineering."
+  },
+  {
+    "slug": "yaala-labs",
+    "name": "Yaala Labs",
+    "website": "https://www.yaalalabs.com",
+    "careersUrl": "https://www.yaalalabs.com/careers",
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-adapter",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Capital markets trading platforms."
   },
   {
     "slug": "zegates",
@@ -5126,6 +6843,23 @@
     "status": "ready",
     "active": true,
     "notes": "Careers page is filled from apisv1.zillione.com/api/careers (verified Sep 2026)."
+  },
+  {
+    "slug": "zitech-solutions",
+    "name": "Zitech Solutions",
+    "website": "https://www.zitech.lk",
+    "careersUrl": null,
+    "adapter": "none",
+    "adapterConfig": {},
+    "industry": "technology",
+    "cseSymbol": null,
+    "parentGroup": null,
+    "sourceLists": [
+      "tech"
+    ],
+    "status": "needs-discovery",
+    "active": true,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT solutions."
   },
   {
     "slug": "zone24x7",

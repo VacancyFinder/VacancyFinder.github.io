@@ -3,11 +3,11 @@
 | | Companies |
 |---|---|
 | Crawled (ready + active) | 39 |
-| Careers page known, not crawled yet (needs-adapter) | 15 |
+| Careers page known, not crawled yet (needs-adapter) | 70 |
 | Deliberately not crawled (active: false) | 24 |
-| Website known, careers page unknown (needs-discovery) | 98 |
+| Website known, careers page unknown (needs-discovery) | 145 |
 | No website known (needs-research) | 120 |
-| **Total** | **296** |
+| **Total** | **398** |
 
 ## Crawled
 
@@ -81,21 +81,76 @@
 | Swisstek (Ceylon) PLC | Not crawled: robots.txt disallows the careers page (verified Sep 2026). |
 | Swivel Group | Careers on SmartRecruiters (SwivelGroup), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026). |
 | Teejay Lanka PLC | Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page. |
+| 3axislabs | From the Sri Lanka IT companies careers list (Nov 2026): AI apps and full-stack (Jaffna). |
 | Abans Electricals PLC | The 'Work with us' page has no vacancy listings (verified Sep 2026); nothing to crawl yet. |
 | ACL Cables PLC | The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet. |
+| Acuity Knowledge Partners | From the Sri Lanka IT companies careers list (Nov 2026): Knowledge services / research. |
+| Aeturnum | From the Sri Lanka IT companies careers list (Nov 2026): Software for startups and ISVs. |
+| Affno Asia Pacific | From the Sri Lanka IT companies careers list (Nov 2026): Software & digital solutions. |
 | Aitken Spence PLC | Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026). |
 | Aitken Spence Hotel Holdings PLC | Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026). |
 | Aitken Spence Plantation Managements PLC | Careers page points to topjobs.lk and a Google Form; third-party boards are not crawled in v1 (verified Sep 2026). |
+| Allion Technologies | From the Sri Lanka IT companies careers list (Nov 2026): Offshore development & dedicated teams. |
+| Arimac | From the Sri Lanka IT companies careers list (Nov 2026): Digital products, fintech & immersive tech. |
+| Axiata Digital Labs | From the Sri Lanka IT companies careers list (Nov 2026): Telco BSS/OSS & fintech (verify). |
+| Bileeta | From the Sri Lanka IT companies careers list (Nov 2026): Cloud ERP and eLMIS. |
+| BISTEC Global Services | From the Sri Lanka IT companies careers list (Nov 2026): IT services. |
+| Blue Lotus 360 | From the Sri Lanka IT companies careers list (Nov 2026): ERP / business software. |
+| Calcey Technologies | From the Sri Lanka IT companies careers list (Nov 2026): Full-stack product development. |
+| Cambio Software Engineering | From the Sri Lanka IT companies careers list (Nov 2026): Captive - Healthcare IT / EMR. |
+| CodeGen International | From the Sri Lanka IT companies careers list (Nov 2026): Travel tech & leisure industry software (verify current URL). |
+| Codimite | From the Sri Lanka IT companies careers list (Nov 2026): Software development. |
+| Creately | From the Sri Lanka IT companies careers list (Nov 2026): Diagramming and visual collaboration. |
+| Deloitte Sri Lanka | From the Sri Lanka IT companies careers list (Nov 2026): Consulting & technology. |
+| Digiratina Technology Solutions | From the Sri Lanka IT companies careers list (Nov 2026): Product engineering and custom AI. |
 | Dilmah Ceylon Tea Company PLC | The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet. |
+| DirectFN | From the Sri Lanka IT companies careers list (Nov 2026): Financial tech / trading platforms. |
+| EFutures | From the Sri Lanka IT companies careers list (Nov 2026): Bespoke software, data & AI. |
+| Embla Software Innovation | From the Sri Lanka IT companies careers list (Nov 2026): Extended office software teams. |
+| Epic Lanka | From the Sri Lanka IT companies careers list (Nov 2026): Banking and payments software. |
+| Eyepax IT Consulting | From the Sri Lanka IT companies careers list (Nov 2026): Custom software and team-as-a-service. |
+| Fcode Labs | From the Sri Lanka IT companies careers list (Nov 2026): Product engineering, AI & cloud. |
+| Gapstars | From the Sri Lanka IT companies careers list (Nov 2026): Embedded offshore engineering teams. |
+| GrubTech | From the Sri Lanka IT companies careers list (Nov 2026): Restaurant / cloud kitchen SaaS. |
 | Hatton National Bank PLC | hnb.lk/careers has a general application form but no vacancy listings (verified Sep 2026). |
 | Hemas Holdings PLC | The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet. |
+| HSBC Electronic Data Processing Lanka | From the Sri Lanka IT companies careers list (Nov 2026): Banking GSC / captive. |
+| Informatics International | From the Sri Lanka IT companies careers list (Nov 2026): Insurance, billing and border software. |
+| Innodata | From the Sri Lanka IT companies careers list (Nov 2026): Content & data services. |
+| Insighture | From the Sri Lanka IT companies careers list (Nov 2026): Cloud consulting & app modernisation. |
+| Intervest Software Technologies | From the Sri Lanka IT companies careers list (Nov 2026): Software development & IT support. |
 | Jetwing Symphony PLC | Careers page groups vacancies by department; every department showed 'no vacancies' at probe time, so the markup of a real listing is unknown (verified Sep 2026). |
+| Kaleris | From the Sri Lanka IT companies careers list (Nov 2026): Supply chain tech. |
+| KPMG Sri Lanka | From the Sri Lanka IT companies careers list (Nov 2026): Consulting (IT services). |
+| MAS Holdings | From the Sri Lanka IT companies careers list (Nov 2026): Apparel tech / digital. |
+| Meta | From the Sri Lanka IT companies careers list (Nov 2026): Limited local hiring; global careers. |
+| Mobitel | From the Sri Lanka IT companies careers list (Nov 2026): Telco IT. |
+| Moody's | From the Sri Lanka IT companies careers list (Nov 2026): Research / analytics captive. |
+| Nagarro | From the Sri Lanka IT companies careers list (Nov 2026): Digital engineering services. |
+| OrangeHRM | From the Sri Lanka IT companies careers list (Nov 2026): HR management software. |
+| Persistent Systems | From the Sri Lanka IT companies careers list (Nov 2026): Digital engineering (Colombo presence). |
+| PetDesk | From the Sri Lanka IT companies careers list (Nov 2026): Product company with SL presence. |
+| Prime One Global | From the Sri Lanka IT companies careers list (Nov 2026): Software & digital services. |
+| Sanmark Solutions | From the Sri Lanka IT companies careers list (Nov 2026): Odoo ERP and staff augmentation. |
+| SenzMate | From the Sri Lanka IT companies careers list (Nov 2026): AIoT platforms and IoT solutions. |
 | Seylan Bank PLC | 'Available vacancies' is a table that was empty at probe time, so extraction can't be verified yet (verified Sep 2026). |
+| SimCentric Technologies | From the Sri Lanka IT companies careers list (Nov 2026): Simulation & training tech. |
 | Softlogic Capital PLC | Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026). |
 | Softlogic Finance PLC | Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026). |
 | Softlogic Holdings PLC | Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026). |
 | Softlogic Life Insurance PLC | Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026). |
+| Standard Chartered | From the Sri Lanka IT companies careers list (Nov 2026): Banking shared services. |
 | Sunshine Holdings PLC | Careers page points to LinkedIn jobs; third-party boards are not crawled in v1 (verified Sep 2026). |
+| TIQRI | From the Sri Lanka IT companies careers list (Nov 2026): Offshore software, AI and cloud. |
+| Virtusa | From the Sri Lanka IT companies careers list (Nov 2026): Global digital engineering & IT services \| Major Colombo delivery centre. |
+| VitalHub | From the Sri Lanka IT companies careers list (Nov 2026): Healthcare software (offshore). |
+| Wavenet | From the Sri Lanka IT companies careers list (Nov 2026): Telecom customer-experience software. |
+| Wiley | From the Sri Lanka IT companies careers list (Nov 2026): Captive - Publishing & learning product engineering. |
+| WNS | From the Sri Lanka IT companies careers list (Nov 2026): BPM / KPO. |
+| Xeynergy | From the Sri Lanka IT companies careers list (Nov 2026): Staff augmentation & dedicated teams. |
+| Xiteb | From the Sri Lanka IT companies careers list (Nov 2026): Custom software and mobile apps. |
+| Xitricon | From the Sri Lanka IT companies careers list (Nov 2026): IFS / ERP consulting & engineering. |
+| Yaala Labs | From the Sri Lanka IT companies careers list (Nov 2026): Capital markets trading platforms. |
 
 ## Discovery candidates awaiting review
 

@@ -1,5 +1,14 @@
 [
   {
+    "id": "3axislabs-com-careers",
+    "canonicalUrl": "https://3axislabs.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "3axislabs"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "99x-io-careers-open-positions-location-sri-lanka",
     "canonicalUrl": "https://99x.io/careers/open-positions?location=sri-lanka",
     "adapter": "html",
@@ -36,6 +45,33 @@
     "parentGroup": null
   },
   {
+    "id": "acuitykp-com-careers",
+    "canonicalUrl": "https://acuitykp.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "acuity-knowledge-partners"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "aeturnum-com-careers",
+    "canonicalUrl": "https://aeturnum.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "aeturnum"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "affno-com-careers",
+    "canonicalUrl": "https://affno.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "affno-asia-pacific"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "aitkenspence-com-careers",
     "canonicalUrl": "https://aitkenspence.com/careers",
     "adapter": "none",
@@ -45,6 +81,60 @@
       "aitken-spence-plantation-managements"
     ],
     "parentGroup": "aitkenspence"
+  },
+  {
+    "id": "alliontechnologies-com-careers",
+    "canonicalUrl": "https://alliontechnologies.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "allion-technologies"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "arimac-lk-careers",
+    "canonicalUrl": "https://arimac.lk/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "arimac"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "axiatadigitallabs-com-careers",
+    "canonicalUrl": "https://axiatadigitallabs.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "axiata-digital-labs"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "bileeta-com-careers",
+    "canonicalUrl": "https://bileeta.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "bileeta"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "bistecglobal-com-careers",
+    "canonicalUrl": "https://bistecglobal.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "bistec-global-services"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "bluelotus360-com-careers",
+    "canonicalUrl": "https://bluelotus360.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "blue-lotus-360"
+    ],
+    "parentGroup": null
   },
   {
     "id": "brownsgroup-lk-careers",
@@ -58,11 +148,29 @@
     "parentGroup": "brownsgroup"
   },
   {
+    "id": "calcey-com-careers",
+    "canonicalUrl": "https://calcey.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "calcey-technologies"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "career-ascentic-se-jobs",
     "canonicalUrl": "https://career.ascentic.se/jobs",
     "adapter": "teamtailor",
     "companySlugs": [
       "ascentic"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "careers-cambio-lk",
+    "canonicalUrl": "https://careers.cambio.lk/",
+    "adapter": "none",
+    "companySlugs": [
+      "cambio-software-engineering"
     ],
     "parentGroup": null
   },
@@ -104,6 +212,33 @@
     "parentGroup": null
   },
   {
+    "id": "codegen-net-careers",
+    "canonicalUrl": "https://codegen.net/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "codegen-international"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "codimite-com-careers",
+    "canonicalUrl": "https://codimite.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "codimite"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "creately-com-careers",
+    "canonicalUrl": "https://creately.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "creately"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "creativesoftware-com-careers",
     "canonicalUrl": "https://creativesoftware.com/careers",
     "adapter": "html",
@@ -123,6 +258,15 @@
     "parentGroup": "dialog"
   },
   {
+    "id": "digiratina-com-careers",
+    "canonicalUrl": "https://digiratina.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "digiratina-technology-solutions"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "dilmahtea-com-careers",
     "canonicalUrl": "https://dilmahtea.com/careers",
     "adapter": "none",
@@ -137,6 +281,78 @@
     "adapter": "html",
     "companySlugs": [
       "diesel-and-motor-engineering"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "directfn-com-careers",
+    "canonicalUrl": "https://directfn.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "directfn"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "efutures-com-careers",
+    "canonicalUrl": "https://efutures.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "efutures"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "embla-no-careers",
+    "canonicalUrl": "https://embla.no/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "embla-software-innovation"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "epiclanka-com-careers",
+    "canonicalUrl": "https://epiclanka.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "epic-lanka"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "eyepax-com-careers",
+    "canonicalUrl": "https://eyepax.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "eyepax-it-consulting"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "fcodelabs-com-careers",
+    "canonicalUrl": "https://fcodelabs.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "fcode-labs"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "gapstars-net-careers",
+    "canonicalUrl": "https://gapstars.net/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "gapstars"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "grubtech-com-careers",
+    "canonicalUrl": "https://grubtech.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "grubtech"
     ],
     "parentGroup": null
   },
@@ -181,11 +397,74 @@
     "parentGroup": null
   },
   {
+    "id": "home-kpmg-lk-en-home-careers-html",
+    "canonicalUrl": "https://home.kpmg/lk/en/home/careers.html",
+    "adapter": "none",
+    "companySlugs": [
+      "kpmg-sri-lanka"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "hsbc-com-careers",
+    "canonicalUrl": "https://hsbc.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "hsbc-electronic-data-processing-lanka"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "informaticsi-com-careers",
+    "canonicalUrl": "https://informaticsi.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "informatics-international"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "innodata-com-careers",
+    "canonicalUrl": "https://innodata.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "innodata"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "insighture-com-careers",
+    "canonicalUrl": "https://insighture.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "insighture"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "intervest-lk-careers",
+    "canonicalUrl": "https://intervest.lk/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "intervest-software-technologies"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "jetwinghotels-com-careers",
     "canonicalUrl": "https://jetwinghotels.com/careers",
     "adapter": "none",
     "companySlugs": [
       "jetwing-symphony"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "kaleris-com-careers",
+    "canonicalUrl": "https://kaleris.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "kaleris"
     ],
     "parentGroup": null
   },
@@ -221,11 +500,83 @@
     "parentGroup": null
   },
   {
+    "id": "masholdings-com-careers",
+    "canonicalUrl": "https://masholdings.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "mas-holdings"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "metacareers-com",
+    "canonicalUrl": "https://metacareers.com/",
+    "adapter": "none",
+    "companySlugs": [
+      "meta"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "mobitel-lk-careers",
+    "canonicalUrl": "https://mobitel.lk/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "mobitel"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "moodys-com-careers",
+    "canonicalUrl": "https://moodys.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "moody-s"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "nagarro-com-en-careers",
+    "canonicalUrl": "https://nagarro.com/en/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "nagarro"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "ndbbank-com-careers",
     "canonicalUrl": "https://ndbbank.com/careers",
     "adapter": "html",
     "companySlugs": [
       "national-development-bank"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "orangehrm-com-careers",
+    "canonicalUrl": "https://orangehrm.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "orangehrm"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "persistent-com-careers",
+    "canonicalUrl": "https://persistent.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "persistent-systems"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "petdesk-com-careers",
+    "canonicalUrl": "https://petdesk.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "petdesk"
     ],
     "parentGroup": null
   },
@@ -239,6 +590,15 @@
     "parentGroup": null
   },
   {
+    "id": "primeoneglobal-com-careers",
+    "canonicalUrl": "https://primeoneglobal.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "prime-one-global"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "rootcode-ai-careers",
     "canonicalUrl": "https://rootcode.ai/careers",
     "adapter": "custom",
@@ -248,11 +608,47 @@
     "parentGroup": null
   },
   {
+    "id": "sanmark-com-careers",
+    "canonicalUrl": "https://sanmark.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "sanmark-solutions"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "sc-com-careers",
+    "canonicalUrl": "https://sc.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "standard-chartered"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "senzmate-com-careers",
+    "canonicalUrl": "https://senzmate.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "senzmate"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "seylan-lk-careers",
     "canonicalUrl": "https://seylan.lk/careers",
     "adapter": "none",
     "companySlugs": [
       "seylan-bank"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "simcentric-com-careers",
+    "canonicalUrl": "https://simcentric.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "simcentric-technologies"
     ],
     "parentGroup": null
   },
@@ -296,6 +692,15 @@
     "parentGroup": null
   },
   {
+    "id": "tiqri-com-careers",
+    "canonicalUrl": "https://tiqri.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "tiqri"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "unionb-com-careers",
     "canonicalUrl": "https://unionb.com/careers",
     "adapter": "custom",
@@ -314,6 +719,33 @@
     "parentGroup": null
   },
   {
+    "id": "virtusa-com-careers",
+    "canonicalUrl": "https://virtusa.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "virtusa"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "vitalhub-com-careers",
+    "canonicalUrl": "https://vitalhub.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "vitalhub"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "wavenet-lk-careers",
+    "canonicalUrl": "https://wavenet.lk/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "wavenet"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "wd5-myworkdaysite-com-recruiting-sysco-syscocareers-jobs-locations-b014cc62fe6601b8d666502cd5287f36",
     "canonicalUrl": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/jobs?locations=b014cc62fe6601b8d666502cd5287f36",
     "adapter": "custom",
@@ -323,11 +755,74 @@
     "parentGroup": null
   },
   {
+    "id": "wiley-com-careers",
+    "canonicalUrl": "https://wiley.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "wiley"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "wns-com-careers",
+    "canonicalUrl": "https://wns.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "wns"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "wso2-com-careers",
     "canonicalUrl": "https://wso2.com/careers",
     "adapter": "html",
     "companySlugs": [
       "wso2"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "www2-deloitte-com-lk-en-careers-html",
+    "canonicalUrl": "https://www2.deloitte.com/lk/en/careers.html",
+    "adapter": "none",
+    "companySlugs": [
+      "deloitte-sri-lanka"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "xeynergy-com-careers",
+    "canonicalUrl": "https://xeynergy.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "xeynergy"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "xiteb-com-careers",
+    "canonicalUrl": "https://xiteb.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "xiteb"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "xitricon-com-careers",
+    "canonicalUrl": "https://xitricon.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "xitricon"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "yaalalabs-com-careers",
+    "canonicalUrl": "https://yaalalabs.com/careers",
+    "adapter": "none",
+    "companySlugs": [
+      "yaala-labs"
     ],
     "parentGroup": null
   },
