@@ -1,29 +1,26 @@
 {
-  "at": "2026-11-18T05:53:30.226Z",
-  "ms": 113328,
-  "requests": 43,
+  "at": "2026-11-18T06:03:05.113Z",
+  "ms": 22587,
+  "requests": 51,
   "entries": [
     {
-      "id": "codegen-careers-en",
-      "url": "https://codegen.co.uk/en/company/careers",
+      "id": "amazoft",
+      "url": "https://www.amazoft.com/careers",
       "render": false,
       "companies": [],
       "fetch": {
         "status": 200,
-        "finalUrl": "https://codegen.co.uk/en/company/careers",
-        "bytes": 205906,
+        "finalUrl": "https://www.amazoft.com/careers",
+        "bytes": 63346,
         "contentType": "text/html; charset=utf-8"
       },
       "atsChecks": [],
       "signals": {
-        "title": "Careers at CodeGen | Join Our Travel Technology Team",
-        "textLength": 6052,
-        "jsonLdJobPostings": 4,
+        "title": "Amazoft | Software Development & AI Automation Company in Sri Lanka",
+        "textLength": 2239,
+        "jsonLdJobPostings": 0,
         "jsonLdTypes": [
-          "Organization",
-          "BreadcrumbList",
-          "ListItem",
-          "JobPosting"
+          "Organization"
         ],
         "ats": [],
         "iframes": [],
@@ -31,1447 +28,61 @@
         "imageHeavy": false,
         "jobishLinks": [
           {
-            "text": "Careers",
-            "href": "https://codegen.co.uk/en/company/careers"
-          },
-          {
-            "text": "",
-            "href": "https://recruit.kriyo.net/jobs/18"
-          },
-          {
-            "text": "View Job",
-            "href": "https://recruit.kriyo.net/jobs/18"
-          },
-          {
-            "text": "View Job",
-            "href": "https://recruit.kriyo.net/jobs/18"
-          },
-          {
-            "text": "",
-            "href": "https://recruit.kriyo.net/jobs/17"
-          },
-          {
-            "text": "View Job",
-            "href": "https://recruit.kriyo.net/jobs/17"
-          },
-          {
-            "text": "View Job",
-            "href": "https://recruit.kriyo.net/jobs/17"
-          },
-          {
-            "text": "",
-            "href": "https://recruit.kriyo.net/jobs/16"
-          },
-          {
-            "text": "View Job",
-            "href": "https://recruit.kriyo.net/jobs/16"
-          },
-          {
-            "text": "View Job",
-            "href": "https://recruit.kriyo.net/jobs/16"
-          },
-          {
-            "text": "",
-            "href": "https://recruit.kriyo.net/jobs/1"
-          },
-          {
-            "text": "View Job",
-            "href": "https://recruit.kriyo.net/jobs/1"
-          },
-          {
-            "text": "View Job",
-            "href": "https://recruit.kriyo.net/jobs/1"
+            "text": "nipuneXAI-powered job portal",
+            "href": "https://www.amazoft.com/products/nipunex"
           },
           {
             "text": "Careers",
-            "href": "https://codegen.co.uk/en/company/careers"
+            "href": "https://www.amazoft.com/careers"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://www.amazoft.com/careers/full-stack-developer"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://www.amazoft.com/careers/project-management-intern"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://www.amazoft.com/careers/mobile-app-developer-intern"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://www.amazoft.com/careers/digital-marketing-coordinator-intern"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://www.amazoft.com/careers/graphic-designer"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://www.amazoft.com/careers/content-presenter"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.amazoft.com/careers"
           }
         ],
-        "emails": [
-          "careers@codegen.net",
-          "you@company.com"
-        ],
-        "hints": [],
-        "likelyJsRendered": false
-      }
-    },
-    {
-      "id": "cambio-jobs-rss",
-      "url": "https://careers.cambio.lk/jobs.rss",
-      "render": false,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://careers.cambio.lk/jobs.rss",
-        "bytes": 271,
-        "contentType": "application/rss+xml; charset=utf-8"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "Cambio Sri Lanka",
-        "textLength": 68,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [],
-        "emails": [],
-        "hints": [],
-        "likelyJsRendered": true
-      }
-    },
-    {
-      "id": "vitalhub-bamboohr-list",
-      "url": "https://vitalhub.bamboohr.com/careers/list",
-      "render": false,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://vitalhub.bamboohr.com/careers/list",
-        "bytes": 2090,
-        "contentType": "application/json"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "",
-        "textLength": 2090,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [],
         "emails": [],
         "hints": [],
         "likelyJsRendered": false
       }
     },
     {
-      "id": "codimite-careers",
-      "url": "https://codimite.ai/careers/",
+      "id": "apts",
+      "url": "https://apts.lk/careers/",
       "render": false,
       "companies": [],
       "fetch": {
-        "status": 200,
-        "finalUrl": "https://codimite.ai/careers/",
-        "bytes": 518462,
-        "contentType": "text/html; charset=UTF-8"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "Careers at Codimite | Software Jobs in Sri Lanka",
-        "textLength": 12463,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [
-          "WebPage",
-          "BreadcrumbList",
-          "ListItem",
-          "WebSite",
-          "Organization",
-          "CollectionPage",
-          "ItemList"
-        ],
-        "ats": [
-          {
-            "ats": "bamboohr",
-            "id": "codimitepvt",
-            "url": "https://codimitepvt.bamboohr.com"
-          }
-        ],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [
-          {
-            "text": "Careers",
-            "href": "https://codimite.ai/careers/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://codimite.ai/careers/"
-          },
-          {
-            "text": "View Openings",
-            "href": "https://codimite.ai/careers/#openings-section"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/131"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/120"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/115"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/97"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/74"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/26"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/46"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/126"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/98"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/43"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/129"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/128"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://codimitepvt.bamboohr.com/careers/127"
-          },
-          {
-            "text": "Careers",
-            "href": "https://codimite.ai/careers/"
-          },
-          {
-            "text": "Job Vacancy",
-            "href": "https://codimite.ai/careers/"
-          }
-        ],
-        "emails": [
-          "info@codimite.com"
-        ],
-        "hints": [
-          "wordpress"
-        ],
-        "likelyJsRendered": false
-      }
-    },
-    {
-      "id": "bistec-zoho-api",
-      "url": "https://bistecglobal.zohorecruit.com/recruit/v2/public/Job_Openings?pagename=Careers&source=CareerSite",
-      "render": false,
-      "companies": [],
-      "fetch": {
-        "error": "robots.txt disallows https://bistecglobal.zohorecruit.com/recruit/v2/public/Job_Openings?pagename=Careers&source=CareerSite"
-      },
-      "atsChecks": []
-    },
-    {
-      "id": "creately-careers-page",
-      "url": "https://www.careers-page.com/creately",
-      "render": true,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://www.careers-page.com/creately",
-        "bytes": 24184,
-        "contentType": "text/html; charset=utf-8"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "- Creately | Career Page",
-        "textLength": 786,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [
-          {
-            "text": "",
-            "href": "mailto:jobs@creately.com"
-          },
-          {
-            "text": "View Openings",
-            "href": "https://www.careers-page.com/creately#openings"
-          },
-          {
-            "text": "Senior SEO Specialist",
-            "href": "https://www.careers-page.com/creately/job/L45767Y5"
-          },
-          {
-            "text": "Apply",
-            "href": "https://www.careers-page.com/creately/job/L45767Y5"
-          },
-          {
-            "text": "Junior UI UX Designer",
-            "href": "https://www.careers-page.com/creately/job/L3473778"
-          },
-          {
-            "text": "Apply",
-            "href": "https://www.careers-page.com/creately/job/L3473778"
-          },
-          {
-            "text": "Apply now",
-            "href": "https://www.careers-page.com/creately/apply"
-          }
-        ],
-        "emails": [
-          "jobs@creately.com"
-        ],
-        "hints": [
-          "spa-root",
-          "cloudflare-challenge"
-        ],
-        "likelyJsRendered": false
-      },
-      "rendered": {
-        "finalUrl": "https://www.careers-page.com/creately",
-        "signals": {
-          "title": "- Creately | Career Page",
-          "textLength": 644,
-          "jsonLdJobPostings": 0,
-          "jsonLdTypes": [],
-          "ats": [],
-          "iframes": [],
-          "pdfLinks": 0,
-          "imageHeavy": false,
-          "jobishLinks": [
-            {
-              "text": "",
-              "href": "mailto:jobs@creately.com"
-            },
-            {
-              "text": "View Openings",
-              "href": "https://www.careers-page.com/creately#openings"
-            },
-            {
-              "text": "Senior SEO Specialist",
-              "href": "https://www.careers-page.com/creately/job/L45767Y5"
-            },
-            {
-              "text": "Apply",
-              "href": "https://www.careers-page.com/creately/job/L45767Y5"
-            },
-            {
-              "text": "Junior UI UX Designer",
-              "href": "https://www.careers-page.com/creately/job/L3473778"
-            },
-            {
-              "text": "Apply",
-              "href": "https://www.careers-page.com/creately/job/L3473778"
-            },
-            {
-              "text": "Apply now",
-              "href": "https://www.careers-page.com/creately/apply"
-            }
-          ],
-          "emails": [
-            "jobs@creately.com"
-          ],
-          "hints": [
-            "spa-root",
-            "cloudflare-challenge"
-          ],
-          "likelyJsRendered": false
-        },
-        "json": []
-      }
-    },
-    {
-      "id": "gapstars-jobs",
-      "url": "https://gapstars.net/tech/jobs/",
-      "render": false,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://gapstars.net/tech/jobs/",
-        "bytes": 295515,
-        "contentType": "text/html; charset=UTF-8"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "Jobs at Gapstars - Empowering Talent, Driving Technology",
-        "textLength": 3000,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [
-          "Person",
-          "Organization",
-          "WebSite",
-          "WebPage",
-          "Article"
-        ],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [
-          {
-            "text": "Careers",
-            "href": "https://gapstars.net/tech/careers/"
-          },
-          {
-            "text": "Portugal Hub",
-            "href": "https://gapstars.net/tech/careers-portugal/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://gapstars.net/tech/careers/"
-          },
-          {
-            "text": "Portugal Hub",
-            "href": "https://gapstars.net/tech/careers-portugal/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://gapstars.net/tech/careers/"
-          },
-          {
-            "text": "How We Hire",
-            "href": "https://gapstars.net/tech/careers/#ourvalues"
-          },
-          {
-            "text": "Your Benefits",
-            "href": "https://gapstars.net/tech/careers/#ourvalues"
-          },
-          {
-            "text": "Latest Vacancies",
-            "href": "https://gapstars.net/tech/careers/#vacancies"
-          },
-          {
-            "text": "Life At Gapstars",
-            "href": "https://gapstars.net/tech/careers/#life"
-          },
-          {
-            "text": "Gapstars Academy",
-            "href": "https://gapstars.net/tech/careers/#academy"
-          },
-          {
-            "text": "Portugal Hub",
-            "href": "https://gapstars.net/tech/careers-portugal/"
-          },
-          {
-            "text": "Show (10)",
-            "href": "https://gapstars.net/jobs/"
-          },
-          {
-            "text": "Cancel",
-            "href": "https://gapstars.net/jobs/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1726/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1725/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1724/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1723/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1719/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1716/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1713/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1711/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1670/"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://gapstars.net/tech/career-listings/job-1646/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://gapstars.net/tech/careers/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://gapstars.net/tech/careers/"
-          },
-          {
-            "text": "Portugal Hub",
-            "href": "https://gapstars.net/tech/careers-portugal/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://gapstars.net/tech/careers/"
-          },
-          {
-            "text": "Portugal Hub",
-            "href": "https://gapstars.net/tech/careers-portugal/"
-          }
-        ],
-        "emails": [
-          "joran@gapstars.net",
-          "rick@gapstars.net",
-          "amani@gapstars.net",
-          "johndoe@email.com",
-          "Jhon@company.com"
-        ],
-        "hints": [
-          "wordpress",
-          "elementor"
-        ],
-        "likelyJsRendered": false
-      }
-    },
-    {
-      "id": "nagarro-sri-lanka",
-      "url": "https://www.nagarro.com/en/careers/sri-lanka",
-      "render": true,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://www.nagarro.com/en/careers/sri-lanka",
-        "bytes": 188977,
-        "contentType": "text/html; charset=UTF-8"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "Careers at Nagarro | Jobs in Sri Lanka | Explore open positions",
-        "textLength": 6553,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [
-          "Organization"
-        ],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 1,
-        "imageHeavy": false,
-        "jobishLinks": [
-          {
-            "text": "careers",
-            "href": "https://www.nagarro.com/en/careers?hsLang=en"
-          },
-          {
-            "text": "get to know us",
-            "href": "https://www.nagarro.com/en/careers?hsLang=en"
-          },
-          {
-            "text": "China",
-            "href": "https://www.nagarro.com/en/careers/china?hsLang=en"
-          },
-          {
-            "text": "India",
-            "href": "https://www.nagarro.com/en/careers/india?hsLang=en"
-          },
-          {
-            "text": "Japan",
-            "href": "https://www.nagarro.com/en/careers/japan?hsLang=en"
-          },
-          {
-            "text": "Philippines",
-            "href": "https://www.nagarro.com/en/careers/philippines?hsLang=en"
-          },
-          {
-            "text": "Singapore",
-            "href": "https://www.nagarro.com/en/careers/singapore?hsLang=en"
-          },
-          {
-            "text": "South Africa",
-            "href": "https://www.nagarro.com/en/careers/south-africa?hsLang=en"
-          },
-          {
-            "text": "Sri Lanka",
-            "href": "https://www.nagarro.com/en/careers/sri-lanka"
-          },
-          {
-            "text": "Thailand",
-            "href": "https://www.nagarro.com/en/careers/thailand?hsLang=en"
-          },
-          {
-            "text": "Colombia",
-            "href": "https://www.nagarro.com/en/careers/colombia?hsLang=en"
-          },
-          {
-            "text": "Ecuador",
-            "href": "https://www.nagarro.com/en/careers/ecuador?hsLang=en"
-          },
-          {
-            "text": "Austria",
-            "href": "https://www.nagarro.com/en/careers/austria?hsLang=en"
-          },
-          {
-            "text": "Denmark",
-            "href": "https://www.nagarro.com/en/careers/denmark?hsLang=en"
-          },
-          {
-            "text": "Finland",
-            "href": "https://www.nagarro.com/en/careers/finland?hsLang=en"
-          },
-          {
-            "text": "France",
-            "href": "https://www.nagarro.com/en/careers/france?hsLang=en"
-          },
-          {
-            "text": "Germany",
-            "href": "https://www.nagarro.com/en/careers/germany?hsLang=en"
-          },
-          {
-            "text": "Hungary",
-            "href": "https://www.nagarro.com/en/careers/hungary?hsLang=en"
-          },
-          {
-            "text": "Norway",
-            "href": "https://www.nagarro.com/en/careers/norway?hsLang=en"
-          },
-          {
-            "text": "Poland",
-            "href": "https://www.nagarro.com/en/careers/poland?hsLang=en"
-          },
-          {
-            "text": "Portugal",
-            "href": "https://www.nagarro.com/en/careers/portugal?hsLang=en"
-          },
-          {
-            "text": "Romania",
-            "href": "https://www.nagarro.com/en/careers/romania?hsLang=en"
-          },
-          {
-            "text": "Spain",
-            "href": "https://www.nagarro.com/en/careers/spain?hsLang=en"
-          },
-          {
-            "text": "Sweden",
-            "href": "https://www.nagarro.com/en/careers/sweden?hsLang=en"
-          },
-          {
-            "text": "Switzerland",
-            "href": "https://www.nagarro.com/en/careers/switzerland?hsLang=en"
-          },
-          {
-            "text": "United Kingdom",
-            "href": "https://www.nagarro.com/en/careers/united-kingdom?hsLang=en"
-          },
-          {
-            "text": "UAE",
-            "href": "https://www.nagarro.com/en/careers/uae?hsLang=en"
-          },
-          {
-            "text": "Canada",
-            "href": "https://www.nagarro.com/en/careers/canada?hsLang=en"
-          },
-          {
-            "text": "Mexico",
-            "href": "https://www.nagarro.com/en/careers/mexico?hsLang=en"
-          },
-          {
-            "text": "United States",
-            "href": "https://www.nagarro.com/en/careers/us?hsLang=en"
-          },
-          {
-            "text": "China",
-            "href": "https://www.nagarro.com/en/careers/china?hsLang=en"
-          },
-          {
-            "text": "India",
-            "href": "https://www.nagarro.com/en/careers/india?hsLang=en"
-          },
-          {
-            "text": "Japan",
-            "href": "https://www.nagarro.com/en/careers/japan?hsLang=en"
-          },
-          {
-            "text": "Philippines",
-            "href": "https://www.nagarro.com/en/careers/philippines?hsLang=en"
-          },
-          {
-            "text": "Singapore",
-            "href": "https://www.nagarro.com/en/careers/singapore?hsLang=en"
-          },
-          {
-            "text": "South Africa",
-            "href": "https://www.nagarro.com/en/careers/south-africa?hsLang=en"
-          },
-          {
-            "text": "Sri Lanka",
-            "href": "https://www.nagarro.com/en/careers/sri-lanka"
-          },
-          {
-            "text": "Thailand",
-            "href": "https://www.nagarro.com/en/careers/thailand?hsLang=en"
-          },
-          {
-            "text": "Colombia",
-            "href": "https://www.nagarro.com/en/careers/colombia?hsLang=en"
-          },
-          {
-            "text": "Ecuador",
-            "href": "https://www.nagarro.com/en/careers/ecuador?hsLang=en"
-          }
-        ],
-        "emails": [
-          "info@nagarro.com",
-          "info.de@nagarro.com",
-          "info.us@nagarro.com",
-          "info.in@nagarro.com",
-          "info.jp@nagarro.com",
-          "press@nagarro.com",
-          "ir@nagarro.com",
-          "marketing@nagarro.com"
-        ],
-        "hints": [],
-        "likelyJsRendered": false
-      },
-      "rendered": {
-        "finalUrl": "https://www.nagarro.com/en/careers/sri-lanka",
-        "signals": {
-          "title": "Careers at Nagarro | Jobs in Sri Lanka | Explore open positions",
-          "textLength": 9188,
-          "jsonLdJobPostings": 0,
-          "jsonLdTypes": [
-            "Organization"
-          ],
-          "ats": [
-            {
-              "ats": "smartrecruiters",
-              "id": "Nagarro1",
-              "url": "https://jobs.smartrecruiters.com/Nagarro1"
-            }
-          ],
-          "iframes": [],
-          "pdfLinks": 1,
-          "imageHeavy": false,
-          "jobishLinks": [
-            {
-              "text": "careers",
-              "href": "https://www.nagarro.com/en/careers?hsLang=en"
-            },
-            {
-              "text": "get to know us",
-              "href": "https://www.nagarro.com/en/careers?hsLang=en"
-            },
-            {
-              "text": "China",
-              "href": "https://www.nagarro.com/en/careers/china?hsLang=en"
-            },
-            {
-              "text": "India",
-              "href": "https://www.nagarro.com/en/careers/india?hsLang=en"
-            },
-            {
-              "text": "Japan",
-              "href": "https://www.nagarro.com/en/careers/japan?hsLang=en"
-            },
-            {
-              "text": "Philippines",
-              "href": "https://www.nagarro.com/en/careers/philippines?hsLang=en"
-            },
-            {
-              "text": "Singapore",
-              "href": "https://www.nagarro.com/en/careers/singapore?hsLang=en"
-            },
-            {
-              "text": "South Africa",
-              "href": "https://www.nagarro.com/en/careers/south-africa?hsLang=en"
-            },
-            {
-              "text": "Sri Lanka",
-              "href": "https://www.nagarro.com/en/careers/sri-lanka"
-            },
-            {
-              "text": "Thailand",
-              "href": "https://www.nagarro.com/en/careers/thailand?hsLang=en"
-            },
-            {
-              "text": "Colombia",
-              "href": "https://www.nagarro.com/en/careers/colombia?hsLang=en"
-            },
-            {
-              "text": "Ecuador",
-              "href": "https://www.nagarro.com/en/careers/ecuador?hsLang=en"
-            },
-            {
-              "text": "Austria",
-              "href": "https://www.nagarro.com/en/careers/austria?hsLang=en"
-            },
-            {
-              "text": "Denmark",
-              "href": "https://www.nagarro.com/en/careers/denmark?hsLang=en"
-            },
-            {
-              "text": "Finland",
-              "href": "https://www.nagarro.com/en/careers/finland?hsLang=en"
-            },
-            {
-              "text": "France",
-              "href": "https://www.nagarro.com/en/careers/france?hsLang=en"
-            },
-            {
-              "text": "Germany",
-              "href": "https://www.nagarro.com/en/careers/germany?hsLang=en"
-            },
-            {
-              "text": "Hungary",
-              "href": "https://www.nagarro.com/en/careers/hungary?hsLang=en"
-            },
-            {
-              "text": "Norway",
-              "href": "https://www.nagarro.com/en/careers/norway?hsLang=en"
-            },
-            {
-              "text": "Poland",
-              "href": "https://www.nagarro.com/en/careers/poland?hsLang=en"
-            },
-            {
-              "text": "Portugal",
-              "href": "https://www.nagarro.com/en/careers/portugal?hsLang=en"
-            },
-            {
-              "text": "Romania",
-              "href": "https://www.nagarro.com/en/careers/romania?hsLang=en"
-            },
-            {
-              "text": "Spain",
-              "href": "https://www.nagarro.com/en/careers/spain?hsLang=en"
-            },
-            {
-              "text": "Sweden",
-              "href": "https://www.nagarro.com/en/careers/sweden?hsLang=en"
-            },
-            {
-              "text": "Switzerland",
-              "href": "https://www.nagarro.com/en/careers/switzerland?hsLang=en"
-            },
-            {
-              "text": "United Kingdom",
-              "href": "https://www.nagarro.com/en/careers/united-kingdom?hsLang=en"
-            },
-            {
-              "text": "UAE",
-              "href": "https://www.nagarro.com/en/careers/uae?hsLang=en"
-            },
-            {
-              "text": "Canada",
-              "href": "https://www.nagarro.com/en/careers/canada?hsLang=en"
-            },
-            {
-              "text": "Mexico",
-              "href": "https://www.nagarro.com/en/careers/mexico?hsLang=en"
-            },
-            {
-              "text": "United States",
-              "href": "https://www.nagarro.com/en/careers/us?hsLang=en"
-            },
-            {
-              "text": "China",
-              "href": "https://www.nagarro.com/en/careers/china?hsLang=en"
-            },
-            {
-              "text": "India",
-              "href": "https://www.nagarro.com/en/careers/india?hsLang=en"
-            },
-            {
-              "text": "Japan",
-              "href": "https://www.nagarro.com/en/careers/japan?hsLang=en"
-            },
-            {
-              "text": "Philippines",
-              "href": "https://www.nagarro.com/en/careers/philippines?hsLang=en"
-            },
-            {
-              "text": "Singapore",
-              "href": "https://www.nagarro.com/en/careers/singapore?hsLang=en"
-            },
-            {
-              "text": "South Africa",
-              "href": "https://www.nagarro.com/en/careers/south-africa?hsLang=en"
-            },
-            {
-              "text": "Sri Lanka",
-              "href": "https://www.nagarro.com/en/careers/sri-lanka"
-            },
-            {
-              "text": "Thailand",
-              "href": "https://www.nagarro.com/en/careers/thailand?hsLang=en"
-            },
-            {
-              "text": "Colombia",
-              "href": "https://www.nagarro.com/en/careers/colombia?hsLang=en"
-            },
-            {
-              "text": "Ecuador",
-              "href": "https://www.nagarro.com/en/careers/ecuador?hsLang=en"
-            }
-          ],
-          "emails": [
-            "info@nagarro.com",
-            "info.de@nagarro.com",
-            "info.us@nagarro.com",
-            "info.in@nagarro.com",
-            "info.jp@nagarro.com",
-            "press@nagarro.com",
-            "ir@nagarro.com",
-            "marketing@nagarro.com"
-          ],
-          "hints": [],
-          "likelyJsRendered": false
-        },
-        "json": [
-          {
-            "url": "https://cdn.cookielaw.org/consent/019d4d1b-d621-7a93-bc5b-71f9109d06e7/019d4d1b-d621-7a93-bc5b-71f9109d06e7.json",
-            "status": 200,
-            "bytes": 4561
-          },
-          {
-            "url": "https://www.nagarro.com/hubfs/NagarroWebsiteRedesign-Aug2020/Assets/Lottie%20Animation/jobList_loader.json",
-            "status": 200,
-            "bytes": 46083
-          },
-          {
-            "url": "https://www.nagarro.com/hubfs/NagarroWebsiteRedesign-Aug2020/Assets/Lottie%20Animation/jobList_loader.json",
-            "status": 200,
-            "bytes": 46083
-          },
-          {
-            "url": "https://www.nagarro.com/de/careers/sri-lanka",
-            "status": 404,
-            "bytes": 0
-          },
-          {
-            "url": "https://cdn.cookielaw.org/consent/019d4d1b-d621-7a93-bc5b-71f9109d06e7/019f11d2-5a0f-7810-8604-41a7d4ca1caf/en.json",
-            "status": 200,
-            "bytes": 91076
-          },
-          {
-            "url": "https://cdn.cookielaw.org/scripttemplates/202606.1.0/assets/otFlat.json",
-            "status": 200,
-            "bytes": 15298
-          },
-          {
-            "url": "https://cdn.cookielaw.org/scripttemplates/202606.1.0/assets/v2/otPcCenter.json",
-            "status": 200,
-            "bytes": 68849
-          },
-          {
-            "url": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
-            "status": 200,
-            "bytes": 497
-          },
-          {
-            "url": "https://www.nagarro.com/ja/careers/sri-lanka",
-            "status": 404,
-            "bytes": 0
-          },
-          {
-            "url": "https://www.nagarro.com/tr/careers/sri-lanka",
-            "status": 404,
-            "bytes": 0
-          },
-          {
-            "url": "https://www.nagarro.com/es/careers/sri-lanka",
-            "status": 404,
-            "bytes": 0
-          },
-          {
-            "url": "https://nagcareersite.table.core.windows.net/Main?sv=2019-02-02&spr=https%2Chttp&st=2023-09-26T11%3A18%3A20Z&se=2090-09-27T11%3A18%3A00Z&sp=r&sig=fvEYRZx0bQbrZxJIdob72MVhS5DTzT8q%2FvptRm8Y6yc%3D&tn=Main&$select=Expertise,Job_Title,Job_City,Job_Country,Level_name,Value,Job_Url,Is_job_remote_friendly,is_multiple_experience_required,is_similar_jobs,Job_type,Count_opening,index&$filter=Job_Country%20eq%20%27Sri%20Lanka%27",
-            "status": 200,
-            "bytes": 730
-          },
-          {
-            "url": "https://cta-eu1.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=2148167&currentUrl=https%3A%2F%2Fwww.nagarro.com%2Fen%2Fcareers%2Fsri-lanka&contentId=77536093548",
-            "status": 200,
-            "bytes": 86
-          },
-          {
-            "url": "https://nagcareersite.table.core.windows.net/Main?sv=2019-02-02&spr=https%2Chttp&st=2023-09-26T11%3A18%3A20Z&se=2090-09-27T11%3A18%3A00Z&sp=r&sig=fvEYRZx0bQbrZxJIdob72MVhS5DTzT8q%2FvptRm8Y6yc%3D&tn=Main&$select=Expertise,Job_Title,Job_City,Job_Country,Level_name,Value,Job_Url,Is_job_remote_friendly,is_multiple_experience_required,is_similar_jobs,Job_type,Count_opening,index&$filter=Job_Country%20eq%20%27Sri%20Lanka%27",
-            "status": 200,
-            "bytes": 730
-          },
-          {
-            "url": "https://www.nagarro.com/fr/careers/sri-lanka",
-            "status": 404,
-            "bytes": 0
-          }
-        ]
-      }
-    },
-    {
-      "id": "eyepax-job-openings",
-      "url": "https://eyepax.com/job-openings/",
-      "render": true,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://eyepax.com/job-openings/",
-        "bytes": 105958,
-        "contentType": "text/html; charset=UTF-8"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "Join Us | Eyepax",
-        "textLength": 4760,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [
-          "WebPage",
-          "BreadcrumbList",
-          "ListItem",
-          "WebSite",
-          "Organization"
-        ],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [
-          {
-            "text": "Careers",
-            "href": "https://eyepax.com/careers/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://eyepax.com/careers/"
-          },
-          {
-            "text": "Contact Us Are you interested in developing your next project with us, or want t",
-            "href": "https://eyepax.com/contact/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://eyepax.com/careers/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://eyepax.com/careers/"
-          }
-        ],
-        "emails": [
-          "careers@eyepax.com"
-        ],
-        "hints": [
-          "wordpress",
-          "elementor",
-          "cloudflare-challenge"
-        ],
-        "likelyJsRendered": false
-      },
-      "rendered": {
-        "finalUrl": "https://eyepax.com/job-openings/",
-        "signals": {
-          "title": "Join Us | Eyepax",
-          "textLength": 5278,
-          "jsonLdJobPostings": 0,
-          "jsonLdTypes": [
-            "WebPage",
-            "BreadcrumbList",
-            "ListItem",
-            "WebSite",
-            "Organization"
-          ],
-          "ats": [],
-          "iframes": [],
-          "pdfLinks": 0,
-          "imageHeavy": false,
-          "jobishLinks": [
-            {
-              "text": "Careers",
-              "href": "https://eyepax.com/careers/"
-            },
-            {
-              "text": "Careers",
-              "href": "https://eyepax.com/careers/"
-            },
-            {
-              "text": "Careers",
-              "href": "https://eyepax.com/careers/"
-            },
-            {
-              "text": "Careers",
-              "href": "https://eyepax.com/careers/"
-            },
-            {
-              "text": "Senior Software Engineer – Java / Spring Boot (EC-66)",
-              "href": "https://eyepax.com/job-openings/senior-software-engineer-java-spring-boot-ec-66/"
-            },
-            {
-              "text": "Senior Software Engineer – Angular (EC-67)",
-              "href": "https://eyepax.com/job-openings/senior-software-engineer-angular-ec-67/"
-            },
-            {
-              "text": "Contact Us Are you interested in developing your next project with us, or want t",
-              "href": "https://eyepax.com/contact/"
-            },
-            {
-              "text": "Careers",
-              "href": "https://eyepax.com/careers/"
-            },
-            {
-              "text": "Careers",
-              "href": "https://eyepax.com/careers/"
-            }
-          ],
-          "emails": [
-            "careers@eyepax.com"
-          ],
-          "hints": [
-            "wordpress",
-            "elementor",
-            "cloudflare-challenge"
-          ],
-          "likelyJsRendered": false
-        },
-        "json": [
-          {
-            "url": "https://ipapi.co/json/",
-            "status": 200,
-            "bytes": 775
-          },
-          {
-            "url": "https://eyepax.com/wp-admin/admin-ajax.php?action=filter_jobs&job_location=",
-            "status": 200,
-            "bytes": 18660
-          }
-        ]
-      }
-    },
-    {
-      "id": "allion-jobs",
-      "url": "https://www.alliontechnologies.com/jobs",
-      "render": true,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://www.alliontechnologies.com/jobs",
-        "bytes": 40566,
-        "contentType": "text/html; charset=utf-8"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "Jobs | Allion",
-        "textLength": 5196,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [
-          {
-            "text": "Careers",
-            "href": "https://www.alliontechnologies.com/careers"
-          },
-          {
-            "text": "Jobs",
-            "href": "https://www.alliontechnologies.com/jobs"
-          },
-          {
-            "text": "Careers",
-            "href": "https://www.alliontechnologies.com/careers"
-          },
-          {
-            "text": "Jobs",
-            "href": "https://www.alliontechnologies.com/jobs"
-          },
-          {
-            "text": "Associate Software Engineer - Infrastructure Support 4 open positions Job Title:",
-            "href": "https://www.alliontechnologies.com/jobs/associate-software-engineer-infrastructure-support-12"
-          },
-          {
-            "text": "Careers",
-            "href": "https://www.alliontechnologies.com/careers"
-          }
-        ],
-        "emails": [
-          "info@alliontechnologies.com",
-          "careers@alliontechnologies.com"
-        ],
-        "hints": [],
-        "likelyJsRendered": false
-      },
-      "rendered": {
-        "finalUrl": "https://www.alliontechnologies.com/jobs",
-        "signals": {
-          "title": "Jobs | Allion",
-          "textLength": 5196,
-          "jsonLdJobPostings": 0,
-          "jsonLdTypes": [],
-          "ats": [],
-          "iframes": [],
-          "pdfLinks": 0,
-          "imageHeavy": false,
-          "jobishLinks": [
-            {
-              "text": "Careers",
-              "href": "https://www.alliontechnologies.com/careers"
-            },
-            {
-              "text": "Jobs",
-              "href": "https://www.alliontechnologies.com/jobs"
-            },
-            {
-              "text": "Careers",
-              "href": "https://www.alliontechnologies.com/careers"
-            },
-            {
-              "text": "Jobs",
-              "href": "https://www.alliontechnologies.com/jobs"
-            },
-            {
-              "text": "Associate Software Engineer - Infrastructure Support 4 open positions Job Title:",
-              "href": "https://www.alliontechnologies.com/jobs/associate-software-engineer-infrastructure-support-12"
-            },
-            {
-              "text": "Careers",
-              "href": "https://www.alliontechnologies.com/careers"
-            }
-          ],
-          "emails": [
-            "info@alliontechnologies.com",
-            "careers@alliontechnologies.com"
-          ],
-          "hints": [],
-          "likelyJsRendered": false
-        },
-        "json": [
-          {
-            "url": "https://www.alliontechnologies.com/website/translations?hash=&lang=en_US",
-            "status": 200,
-            "bytes": 1694
-          },
-          {
-            "url": "https://www.alliontechnologies.com/mail/data",
-            "status": 200,
-            "bytes": 41
-          }
-        ]
-      }
-    },
-    {
-      "id": "allion-odoo",
-      "url": "https://alliontechnologies-aus.odoo.com/jobs",
-      "render": true,
-      "companies": [],
-      "fetch": {
-        "error": "robots.txt disallows https://alliontechnologies-aus.odoo.com/jobs"
-      },
-      "atsChecks": [],
-      "rendered": {
-        "error": "robots.txt disallows"
-      }
-    },
-    {
-      "id": "innodata-careers",
-      "url": "https://innodatacareers.com/",
-      "render": true,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://innodatacareers.com/",
-        "bytes": 96856,
-        "contentType": "text/html; charset=UTF-8"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "Home - Innodata Inc.",
-        "textLength": 4618,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [
-          "WebPage",
-          "ImageObject",
-          "BreadcrumbList",
-          "ListItem",
-          "WebSite",
-          "Organization"
-        ],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [
-          {
-            "text": "",
-            "href": "https://innodatacareers.com/"
-          },
-          {
-            "text": "View Open Positions",
-            "href": "https://innodatacareers.com/#open-positions"
-          },
-          {
-            "text": "View Open Positions",
-            "href": "https://innodatacareers.com/#open-positions"
-          },
-          {
-            "text": "consumer.ftc.gov/articles/job-scams",
-            "href": "https://consumer.ftc.gov/articles/job-scams"
-          },
-          {
-            "text": "verifyjoboffer@innodata.com",
-            "href": "mailto://verifyjoboffer@innodata.com%20"
-          },
-          {
-            "text": "",
-            "href": "https://innodatacareers.com/"
-          }
-        ],
-        "emails": [
-          "verifyjoboffer@innodata.com"
-        ],
-        "hints": [
-          "wordpress",
-          "elementor"
-        ],
-        "likelyJsRendered": false
-      },
-      "rendered": {
-        "finalUrl": "https://innodatacareers.com/",
-        "signals": {
-          "title": "Home - Innodata Inc.",
-          "textLength": 10800,
-          "jsonLdJobPostings": 0,
-          "jsonLdTypes": [
-            "WebPage",
-            "ImageObject",
-            "BreadcrumbList",
-            "ListItem",
-            "WebSite",
-            "Organization"
-          ],
-          "ats": [
-            {
-              "ats": "greenhouse",
-              "id": "innodatainc",
-              "url": "https://job-boards.greenhouse.io/innodatainc"
-            }
-          ],
-          "iframes": [],
-          "pdfLinks": 0,
-          "imageHeavy": false,
-          "jobishLinks": [
-            {
-              "text": "",
-              "href": "https://innodatacareers.com/"
-            },
-            {
-              "text": "View Open Positions",
-              "href": "https://innodatacareers.com/#open-positions"
-            },
-            {
-              "text": "View Open Positions",
-              "href": "https://innodatacareers.com/#open-positions"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4412191009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4266638009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4266649009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4266786009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4266627009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4266629009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4307857009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4266625009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4412197009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4508284009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4429353009"
-            },
-            {
-              "text": "Apply",
-              "href": "https://job-boards.greenhouse.io/innodatainc/jobs/4266794009"
-            },
-            {
-              "text": "consumer.ftc.gov/articles/job-scams",
-              "href": "https://consumer.ftc.gov/articles/job-scams"
-            },
-            {
-              "text": "verifyjoboffer@innodata.com",
-              "href": "mailto://verifyjoboffer@innodata.com%20"
-            },
-            {
-              "text": "",
-              "href": "https://innodatacareers.com/"
-            }
-          ],
-          "emails": [
-            "verifyjoboffer@innodata.com"
-          ],
-          "hints": [
-            "wordpress",
-            "elementor"
-          ],
-          "likelyJsRendered": false
-        },
-        "json": [
-          {
-            "url": "https://innodatacareers.com/wp-admin/admin-ajax.php",
-            "status": 200,
-            "bytes": 76900
-          }
-        ]
-      }
-    },
-    {
-      "id": "aeturnum-peoplehum",
-      "url": "https://hire.peoplehum.com/jobs/aeturnum",
-      "render": true,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://hris.peoplehum.com/ehire/jobs/aeturnum",
-        "bytes": 34038,
+        "status": 202,
+        "finalUrl": "https://apts.lk/careers/",
+        "bytes": 177,
         "contentType": "text/html"
       },
       "atsChecks": [],
       "signals": {
-        "title": "peopleHum",
+        "title": "",
         "textLength": 0,
         "jsonLdJobPostings": 0,
         "jsonLdTypes": [],
@@ -1481,54 +92,25 @@
         "imageHeavy": false,
         "jobishLinks": [],
         "emails": [],
-        "hints": [
-          "cloudflare-challenge"
-        ],
+        "hints": [],
         "likelyJsRendered": true
-      },
-      "rendered": {
-        "finalUrl": "https://hris.peoplehum.com/ehire/jobs/aeturnum",
-        "signals": {
-          "title": "peopleHum",
-          "textLength": 0,
-          "jsonLdJobPostings": 0,
-          "jsonLdTypes": [],
-          "ats": [],
-          "iframes": [],
-          "pdfLinks": 0,
-          "imageHeavy": false,
-          "jobishLinks": [],
-          "emails": [],
-          "hints": [
-            "angular",
-            "cloudflare-challenge"
-          ],
-          "likelyJsRendered": true
-        },
-        "json": [
-          {
-            "url": "https://webapi.peoplehum.com/api/internal-api/set-token",
-            "status": 200,
-            "bytes": 41
-          }
-        ]
       }
     },
     {
-      "id": "axiata-digital-labs-careers",
-      "url": "https://www.axiatadigitallabs.com/adl-careers/",
-      "render": true,
+      "id": "avenir-it",
+      "url": "https://avenirit.com/careers/",
+      "render": false,
       "companies": [],
       "fetch": {
         "status": 200,
-        "finalUrl": "https://www.axiatadigitallabs.com/adl-careers/",
-        "bytes": 717658,
+        "finalUrl": "https://avenirit.com/careers/",
+        "bytes": 99515,
         "contentType": "text/html; charset=UTF-8"
       },
       "atsChecks": [],
       "signals": {
-        "title": "ADL Careers at Axiata Digital Labs - Axiata Digital Labs - Advancing Digital Labs",
-        "textLength": 6441,
+        "title": "Ready to level up your career? Join the Avenir IT team!",
+        "textLength": 3771,
         "jsonLdJobPostings": 0,
         "jsonLdTypes": [
           "WebPage",
@@ -1545,75 +127,23 @@
         "jobishLinks": [
           {
             "text": "Careers",
-            "href": "https://www.axiatadigitallabs.com/adl-careers/"
+            "href": "https://avenirit.com/careers/"
           },
           {
-            "text": "View All Vacancies",
-            "href": "https://www.careers-page.com/axonect"
+            "text": "Careers",
+            "href": "https://avenirit.com/careers/"
           },
           {
-            "text": "View All Vacancies",
-            "href": "https://www.careers-page.com/axonect"
+            "text": "Apply Today!",
+            "href": "https://ca.indeed.com/job/level-3-it-technician-de5d561b938f2544"
           },
           {
-            "text": "View All Vacancies",
-            "href": "https://www.careers-page.com/axonect"
+            "text": "Apply Today!",
+            "href": "https://apply.intellihire.com/JobDetails.aspx?postid=d71a356ef40442cb9b81e3a45cf9ed33&trackRefJAS=c392edd2c6f341c6905e95ae7d0f5777"
           },
           {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "Apply Now",
-            "href": "https://www.careers-page.com/axonect"
-          },
-          {
-            "text": "View All Vacancies",
-            "href": "https://www.careers-page.com/axonect"
+            "text": "Work Here",
+            "href": "https://avenirit.com/careers/"
           }
         ],
         "emails": [],
@@ -1622,556 +152,774 @@
           "elementor"
         ],
         "likelyJsRendered": false
-      },
-      "rendered": {
-        "finalUrl": "https://www.axiatadigitallabs.com/adl-careers/",
-        "signals": {
-          "title": "ADL Careers at Axiata Digital Labs - Axiata Digital Labs - Advancing Digital Labs",
-          "textLength": 6441,
-          "jsonLdJobPostings": 0,
-          "jsonLdTypes": [
-            "WebPage",
-            "ImageObject",
-            "BreadcrumbList",
-            "ListItem",
-            "WebSite",
-            "Organization"
-          ],
-          "ats": [],
-          "iframes": [],
-          "pdfLinks": 0,
-          "imageHeavy": false,
-          "jobishLinks": [
-            {
-              "text": "Careers",
-              "href": "https://www.axiatadigitallabs.com/adl-careers/"
-            },
-            {
-              "text": "View All Vacancies",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "View All Vacancies",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "View All Vacancies",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "Apply Now",
-              "href": "https://www.careers-page.com/axonect"
-            },
-            {
-              "text": "View All Vacancies",
-              "href": "https://www.careers-page.com/axonect"
-            }
-          ],
-          "emails": [],
-          "hints": [
-            "wordpress",
-            "elementor"
-          ],
-          "likelyJsRendered": false
-        },
-        "json": []
       }
     },
     {
-      "id": "insighture-work-with-us",
-      "url": "https://www.insighture.com/work-with-us",
-      "render": true,
+      "id": "azend",
+      "url": "https://azendtech.com/careers/",
+      "render": false,
       "companies": [],
       "fetch": {
         "status": 200,
-        "finalUrl": "https://www.insighture.com/work-with-us",
-        "bytes": 108614,
-        "contentType": "text/html; charset=utf-8"
+        "finalUrl": "https://azendtech.com/careers/",
+        "bytes": 170444,
+        "contentType": "text/html; charset=UTF-8"
       },
       "atsChecks": [],
       "signals": {
-        "title": "Work with us | Careers at Insighture",
-        "textLength": 3979,
+        "title": "Careers at Azend Technologies | Join Our Innovative Team",
+        "textLength": 4254,
         "jsonLdJobPostings": 0,
-        "jsonLdTypes": [
-          "WebPage"
-        ],
-        "ats": [
-          {
-            "ats": "linkedin-jobs",
-            "id": "https://www.linkedin.com/jobs/view/4472515037/\\",
-            "url": "https://www.linkedin.com/jobs/view/4472515037/\\"
-          },
-          {
-            "ats": "linkedin-jobs",
-            "id": "https://www.linkedin.com/jobs/view/4474228791/\\",
-            "url": "https://www.linkedin.com/jobs/view/4474228791/\\"
-          }
-        ],
+        "jsonLdTypes": [],
+        "ats": [],
         "iframes": [],
         "pdfLinks": 0,
         "imageHeavy": false,
         "jobishLinks": [
           {
-            "text": "Work with us",
-            "href": "https://www.insighture.com/work-with-us"
+            "text": "Careers",
+            "href": "https://azendtech.com/careers/"
           },
           {
-            "text": "Work with us",
-            "href": "https://www.insighture.com/work-with-us"
+            "text": "careers@azendtech.com",
+            "href": "mailto:careers@azendtech.com"
           },
           {
-            "text": "Technical Lead - .NET",
-            "href": "https://www.insighture.com/work-with-us/jobs/Technical-Lead.NET"
+            "text": "Careers",
+            "href": "https://azendtech.com/careers/"
           },
           {
-            "text": "Apply here",
-            "href": "https://www.insighture.com/work-with-us/jobs/Technical-Lead.NET"
-          },
-          {
-            "text": "Senior Software Engineer - Full Stack (1 year contract)",
-            "href": "https://www.insighture.com/work-with-us/jobs/senior-software-engineer-full-stack"
-          },
-          {
-            "text": "Apply here",
-            "href": "https://www.insighture.com/work-with-us/jobs/senior-software-engineer-full-stack"
-          },
-          {
-            "text": "Technical Lead - Full Stack",
-            "href": "https://www.insighture.com/work-with-us/jobs/technical-lead-fullstack"
-          },
-          {
-            "text": "Apply here",
-            "href": "https://www.insighture.com/work-with-us/jobs/technical-lead-fullstack"
-          },
-          {
-            "text": "Associate Technical Lead - Full Stack",
-            "href": "https://www.insighture.com/work-with-us/jobs/Associate-Technical-Lead-Full-Stack"
-          },
-          {
-            "text": "Apply here",
-            "href": "https://www.insighture.com/work-with-us/jobs/Associate-Technical-Lead-Full-Stack"
-          },
-          {
-            "text": "Senior Software Engineer - .NET",
-            "href": "https://www.insighture.com/work-with-us/jobs/-Senior-Software-Engineer-.NET-"
-          },
-          {
-            "text": "Apply here",
-            "href": "https://www.insighture.com/work-with-us/jobs/-Senior-Software-Engineer-.NET-"
-          },
-          {
-            "text": "Associate Quality Engineering Lead",
-            "href": "https://www.insighture.com/work-with-us/jobs/associate-quality-engineering-lead"
-          },
-          {
-            "text": "Apply here",
-            "href": "https://www.insighture.com/work-with-us/jobs/associate-quality-engineering-lead"
-          },
-          {
-            "text": "Senior Quality Engineer - Automation",
-            "href": "https://www.insighture.com/work-with-us/jobs/Senior-Quality-Engineer-Automation"
-          },
-          {
-            "text": "Apply here",
-            "href": "https://www.insighture.com/work-with-us/jobs/Senior-Quality-Engineer-Automation"
-          },
-          {
-            "text": "Quality Engineering Lead",
-            "href": "https://www.insighture.com/work-with-us/jobs/quality-engineering-lead"
-          },
-          {
-            "text": "Apply here",
-            "href": "https://www.insighture.com/work-with-us/jobs/quality-engineering-lead"
-          },
-          {
-            "text": "Work With Us",
-            "href": "https://www.insighture.com/work-with-us"
+            "text": "Careers",
+            "href": "https://azendtech.com/careers/"
           }
         ],
         "emails": [
-          "hello@insighture.com"
+          "careers@azendtech.com"
         ],
-        "hints": [],
+        "hints": [
+          "wordpress"
+        ],
         "likelyJsRendered": false
-      },
-      "rendered": {
-        "finalUrl": "https://www.insighture.com/work-with-us",
-        "signals": {
-          "title": "Work with us | Careers at Insighture",
-          "textLength": 4035,
-          "jsonLdJobPostings": 0,
-          "jsonLdTypes": [
-            "WebPage"
-          ],
-          "ats": [
-            {
-              "ats": "linkedin-jobs",
-              "id": "https://www.linkedin.com/jobs/view/4472515037/\\",
-              "url": "https://www.linkedin.com/jobs/view/4472515037/\\"
-            },
-            {
-              "ats": "linkedin-jobs",
-              "id": "https://www.linkedin.com/jobs/view/4474228791/\\",
-              "url": "https://www.linkedin.com/jobs/view/4474228791/\\"
-            }
-          ],
-          "iframes": [],
-          "pdfLinks": 0,
-          "imageHeavy": false,
-          "jobishLinks": [
-            {
-              "text": "Work with us",
-              "href": "https://www.insighture.com/work-with-us"
-            },
-            {
-              "text": "Work with us",
-              "href": "https://www.insighture.com/work-with-us"
-            },
-            {
-              "text": "Technical Lead - .NET",
-              "href": "https://www.insighture.com/work-with-us/jobs/Technical-Lead.NET"
-            },
-            {
-              "text": "Apply here",
-              "href": "https://www.insighture.com/work-with-us/jobs/Technical-Lead.NET"
-            },
-            {
-              "text": "Senior Software Engineer - Full Stack (1 year contract)",
-              "href": "https://www.insighture.com/work-with-us/jobs/senior-software-engineer-full-stack"
-            },
-            {
-              "text": "Apply here",
-              "href": "https://www.insighture.com/work-with-us/jobs/senior-software-engineer-full-stack"
-            },
-            {
-              "text": "Technical Lead - Full Stack",
-              "href": "https://www.insighture.com/work-with-us/jobs/technical-lead-fullstack"
-            },
-            {
-              "text": "Apply here",
-              "href": "https://www.insighture.com/work-with-us/jobs/technical-lead-fullstack"
-            },
-            {
-              "text": "Associate Technical Lead - Full Stack",
-              "href": "https://www.insighture.com/work-with-us/jobs/Associate-Technical-Lead-Full-Stack"
-            },
-            {
-              "text": "Apply here",
-              "href": "https://www.insighture.com/work-with-us/jobs/Associate-Technical-Lead-Full-Stack"
-            },
-            {
-              "text": "Senior Software Engineer - .NET",
-              "href": "https://www.insighture.com/work-with-us/jobs/-Senior-Software-Engineer-.NET-"
-            },
-            {
-              "text": "Apply here",
-              "href": "https://www.insighture.com/work-with-us/jobs/-Senior-Software-Engineer-.NET-"
-            },
-            {
-              "text": "Associate Quality Engineering Lead",
-              "href": "https://www.insighture.com/work-with-us/jobs/associate-quality-engineering-lead"
-            },
-            {
-              "text": "Apply here",
-              "href": "https://www.insighture.com/work-with-us/jobs/associate-quality-engineering-lead"
-            },
-            {
-              "text": "Senior Quality Engineer - Automation (1 month contract)",
-              "href": "https://www.insighture.com/work-with-us/jobs/Senior-Quality-Engineer-Automation"
-            },
-            {
-              "text": "Apply here",
-              "href": "https://www.insighture.com/work-with-us/jobs/Senior-Quality-Engineer-Automation"
-            },
-            {
-              "text": "Quality Engineering Lead",
-              "href": "https://www.insighture.com/work-with-us/jobs/quality-engineering-lead"
-            },
-            {
-              "text": "Apply here",
-              "href": "https://www.insighture.com/work-with-us/jobs/quality-engineering-lead"
-            },
-            {
-              "text": "Work With Us",
-              "href": "https://www.insighture.com/work-with-us"
-            }
-          ],
-          "emails": [
-            "hello@insighture.com"
-          ],
-          "hints": [],
-          "likelyJsRendered": false
-        },
-        "json": [
-          {
-            "url": "https://www.insighture.com/api/job-openings",
-            "status": 200,
-            "bytes": 3354
-          },
-          {
-            "url": "https://www.chatbase.co/api/get-chatbot-styles/_tWhKIFqF8vw3JnCSUXob",
-            "status": 200,
-            "bytes": 1593
-          }
-        ]
       }
     },
     {
-      "id": "mas-join-us",
-      "url": "https://masholdings.com/join-us/",
-      "render": true,
+      "id": "boc",
+      "url": "https://www.boc.lk/careers",
+      "render": false,
       "companies": [],
       "fetch": {
         "status": 200,
-        "finalUrl": "https://masholdings.com/join-us/",
-        "bytes": 100695,
+        "finalUrl": "https://www.boc.lk/careers",
+        "bytes": 217633,
         "contentType": "text/html; charset=UTF-8"
       },
       "atsChecks": [],
       "signals": {
-        "title": "MAS Holdings - Join our family of Changemakers today",
-        "textLength": 2181,
+        "title": "Vacancies at BOC | Bank of Ceylon | Bank of Ceylon",
+        "textLength": 13064,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "සිංහල",
+            "href": "https://www.boc.lk/lang/change?lang=si&from=https%3A%2F%2Fwww.boc.lk%2Fcareers"
+          },
+          {
+            "text": "தமிழ்",
+            "href": "https://www.boc.lk/lang/change?lang=ta&from=https%3A%2F%2Fwww.boc.lk%2Fcareers"
+          },
+          {
+            "text": "English",
+            "href": "https://www.boc.lk/lang/change?lang=en&from=https%3A%2F%2Fwww.boc.lk%2Fcareers"
+          },
+          {
+            "text": "Personal Data Protection Notice for Recruitment",
+            "href": "https://www.boc.lk/boc-personal-data-protection-notice-for-recruitment"
+          },
+          {
+            "text": "More Details",
+            "href": "https://www.boc.lk/careers/interview-results-post-of-trainee-staff-assistant-2025/details"
+          },
+          {
+            "text": "More Details",
+            "href": "https://www.boc.lk/careers/communication-network-engineer-boc-it-solutions-pvt-ltd/details"
+          },
+          {
+            "text": "More Details",
+            "href": "https://www.boc.lk/careers/boc-it-technical-support-administrator-atm-boc-it-solutions-pvt-ltd/details"
+          },
+          {
+            "text": "More Details",
+            "href": "https://www.boc.lk/careers/boc-core-banking-system-support-analyst-boc-it-solutions-pvt-ltd/details"
+          },
+          {
+            "text": "More Details",
+            "href": "https://www.boc.lk/careers/document-quality-controller-boc-it-solutions-pvt-ltd/details"
+          },
+          {
+            "text": "More Details",
+            "href": "https://www.boc.lk/careers/secretary-to-the-board/details"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.boc.lk/careers"
+          }
+        ],
+        "emails": [
+          "boc@boc.lk"
+        ],
+        "hints": [],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "ceyentra",
+      "url": "https://ceyentra.com/company/careers",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://ceyentra.com/company/careers",
+        "bytes": 34937,
+        "contentType": "text/html"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Careers | Ceyentra",
+        "textLength": 3291,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "BreadcrumbList",
+          "ListItem"
+        ],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://ceyentra.com/company/careers"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://ceyentra.com/company/careers#apply"
+          },
+          {
+            "text": "careers@ceyentra.com",
+            "href": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=careers@ceyentra.com"
+          },
+          {
+            "text": "Careers",
+            "href": "https://ceyentra.com/company/careers"
+          }
+        ],
+        "emails": [
+          "careers@ceyentra.com",
+          "info@ceyentra.com"
+        ],
+        "hints": [],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "chakray",
+      "url": "https://chakray.com/careers/",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://chakray.com/careers/",
+        "bytes": 174660,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Open Careers at Chakray: Find jobs openings | Join the team",
+        "textLength": 6574,
         "jsonLdJobPostings": 0,
         "jsonLdTypes": [
           "WebPage",
           "BreadcrumbList",
           "ListItem",
+          "WebSite"
+        ],
+        "ats": [],
+        "iframes": [
+          "about:blank"
+        ],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://chakray.com/careers/"
+          },
+          {
+            "text": "English",
+            "href": "https://chakray.com/careers/"
+          },
+          {
+            "text": "Send Message",
+            "href": "https://chakray.com/careers/#careers-form"
+          },
+          {
+            "text": "Read More",
+            "href": "https://chakray.com/careers/market-business-development-executive/"
+          },
+          {
+            "text": "Read More",
+            "href": "https://chakray.com/careers/senior-software-engineer-solutions/"
+          },
+          {
+            "text": "Read More",
+            "href": "https://chakray.com/careers/associate-devops-engineer-ms/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://chakray.com/careers/"
+          }
+        ],
+        "emails": [],
+        "hints": [
+          "wordpress"
+        ],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "cms",
+      "url": "https://www.cms.lk/careers/",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://www.cms.lk/careers/",
+        "bytes": 58155,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "CMS - Careers",
+        "textLength": 2195,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "WebPage",
+          "ImageObject",
+          "BreadcrumbList",
+          "ListItem",
           "WebSite",
           "Organization"
         ],
-        "ats": [
-          {
-            "ats": "oracle-hcm",
-            "id": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/",
-            "url": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/"
-          },
-          {
-            "ats": "linkedin-jobs",
-            "id": "https://www.linkedin.com/jobs/search/?locationId=OTHERS.worldwide&f_C=18236&position=1&pageNum=0",
-            "url": "https://www.linkedin.com/jobs/search/?locationId=OTHERS.worldwide&f_C=18236&position=1&pageNum=0"
-          }
-        ],
+        "ats": [],
         "iframes": [],
         "pdfLinks": 0,
         "imageHeavy": false,
         "jobishLinks": [
           {
-            "text": "",
-            "href": "https://www.cognitoforms.com/MASLegato1/WelcomeToTheMASCareerCanvas"
+            "text": "JOIN OUR TEAM",
+            "href": "https://www.cms.lk/careers/"
           },
           {
-            "text": "Facebook",
-            "href": "https://www.facebook.com/careersatMASHoldings?mibextid=LQQJ4d"
+            "text": "Apply to future opening",
+            "href": "https://cms.catsone.com/careers/index.php?m=portal&a=apply&jobOrderID=10996579&portalID=73180&widget"
           },
           {
-            "text": "LinkedIn",
-            "href": "https://www.linkedin.com/jobs/search/?locationId=OTHERS.worldwide&f_C=18236&position=1&pageNum=0"
+            "text": "Find out more",
+            "href": "https://www.cms.lk/careers/senior-application-security-engineer/"
           },
           {
-            "text": "Instagram",
-            "href": "https://www.instagram.com/careersatmasholdings/"
+            "text": "Find out more",
+            "href": "https://www.cms.lk/careers/internal-sales-assistant/"
           },
           {
-            "text": "Join Us",
-            "href": "https://masholdings.com/join-us/"
+            "text": "Find out more",
+            "href": "https://www.cms.lk/careers/information-security-engineer/"
           },
           {
-            "text": "",
-            "href": "https://www.tiktok.com/@careersatmas"
+            "text": "Careers",
+            "href": "https://www.cms.lk/careers/"
+          }
+        ],
+        "emails": [
+          "info@cms.lk",
+          "info@bluecorp.cloud"
+        ],
+        "hints": [
+          "wordpress"
+        ],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "hexacorp",
+      "url": "https://hexacorp.com/careers/",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://hexacorp.com/careers/",
+        "bytes": 315018,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Careers",
+        "textLength": 10046,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "Person",
+          "Organization",
+          "WebSite",
+          "ImageObject",
+          "WebPage",
+          "Article"
+        ],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://hexacorp.com/careers/"
+          }
+        ],
+        "emails": [
+          "Indta@hexacorp.com",
+          "Usta@hexacorp.com",
+          "info@hexacorp.com",
+          "usta@hexacorp.com"
+        ],
+        "hints": [
+          "wordpress",
+          "elementor",
+          "angular"
+        ],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "loonslab",
+      "url": "https://loonslab.com/resources/careers",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://loonslab.com/resources/careers/",
+        "bytes": 40278,
+        "contentType": "text/html"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Careers at Loons Lab | Join Sri Lanka's National-Scale Engineering Team",
+        "textLength": 2408,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "Organization",
+          "CollectionPage",
+          "BreadcrumbList",
+          "ListItem"
+        ],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://loonslab.com/resources/careers"
+          }
+        ],
+        "emails": [
+          "info@loonslab.com",
+          "john@company.com"
+        ],
+        "hints": [
+          "spa-root"
+        ],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "mitesp",
+      "url": "https://www.mitesp.com/careers/",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://www.mitesp.com/careers/",
+        "bytes": 48043,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Careers – MIT",
+        "textLength": 1241,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 6,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://www.mitesp.com/careers/"
+          },
+          {
+            "text": "Explore Vacancies",
+            "href": "https://www.careers-page.com/mitesp"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.mitesp.com/careers/"
           }
         ],
         "emails": [],
         "hints": [
           "wordpress",
-          "elementor",
           "cloudflare-challenge"
         ],
         "likelyJsRendered": false
-      },
-      "rendered": {
-        "finalUrl": "https://masholdings.com/join-us/",
-        "signals": {
-          "title": "MAS Holdings - Join our family of Changemakers today",
-          "textLength": 6515,
-          "jsonLdJobPostings": 0,
-          "jsonLdTypes": [
-            "WebPage",
-            "BreadcrumbList",
-            "ListItem",
-            "WebSite",
-            "Organization",
-            "Article"
-          ],
-          "ats": [
-            {
-              "ats": "oracle-hcm",
-              "id": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/",
-              "url": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/"
-            },
-            {
-              "ats": "linkedin-jobs",
-              "id": "https://www.linkedin.com/jobs/search/?locationId=OTHERS.worldwide&amp;f_C=18236&amp;position=1&amp;pageNum=0",
-              "url": "https://www.linkedin.com/jobs/search/?locationId=OTHERS.worldwide&amp;f_C=18236&amp;position=1&amp;pageNum=0"
-            }
-          ],
-          "iframes": [
-            "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LckLu4nAAAAAPwmTx3g6Jq4gmj-ynsSjsbeo1dG&co=aHR0cHM6Ly9tYXNob2xkaW5ncy5jb206NDQz&hl=en&v=4i3aN5wAweL7i3ADI7BSX4B-&theme=dark&size=normal&anchor-ms=20000&execute-ms=30000&ovv=CADq00gF&cb=hlagftc0cqmt",
-            "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdeuoEsAAAAAF0ok6nR6U8OIok-nr-O2LTdP9sq&co=aHR0cHM6Ly9tYXNob2xkaW5ncy5jb206NDQz&hl=en&v=4i3aN5wAweL7i3ADI7BSX4B-&theme=dark&size=normal&anchor-ms=20000&execute-ms=30000&ovv=CADq00gF&cb=ry4rxqsfyjpq",
-            "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdeuoEsAAAAAF0ok6nR6U8OIok-nr-O2LTdP9sq&co=aHR0cHM6Ly9tYXNob2xkaW5ncy5jb206NDQz&hl=en&v=4i3aN5wAweL7i3ADI7BSX4B-&size=invisible&anchor-ms=20000&execute-ms=30000&ovv=CADq00gF&cb=x5uvpwtjaf2",
-            "https://www.google.com/recaptcha/api2/bframe?hl=en&v=4i3aN5wAweL7i3ADI7BSX4B-&k=6LckLu4nAAAAAPwmTx3g6Jq4gmj-ynsSjsbeo1dG&bft=0dAFcWeA6Hd-mpxRHRUhk-E052UyojoIKsbDloWjes0g6q1KqaEy316k3Llhqm-8ackr4d8bFVRO_x4fqfdK4W8vNtHZZYDH3lyQ"
-          ],
-          "pdfLinks": 1,
-          "imageHeavy": false,
-          "jobishLinks": [
-            {
-              "text": "",
-              "href": "https://www.cognitoforms.com/MASLegato1/WelcomeToTheMASCareerCanvas"
-            },
-            {
-              "text": "Facebook",
-              "href": "https://www.facebook.com/careersatMASHoldings?mibextid=LQQJ4d"
-            },
-            {
-              "text": "LinkedIn",
-              "href": "https://www.linkedin.com/jobs/search/?locationId=OTHERS.worldwide&f_C=18236&position=1&pageNum=0"
-            },
-            {
-              "text": "Instagram",
-              "href": "https://www.instagram.com/careersatmasholdings/"
-            },
-            {
-              "text": "",
-              "href": "https://www.facebook.com/careersatMASHoldings"
-            },
-            {
-              "text": "",
-              "href": "https://www.instagram.com/careersatmasholdings/"
-            },
-            {
-              "text": "Join Us",
-              "href": "https://masholdings.com/join-us/"
-            },
-            {
-              "text": "",
-              "href": "https://www.tiktok.com/@careersatmas"
-            }
-          ],
-          "emails": [],
-          "hints": [
-            "wordpress",
-            "elementor",
-            "cloudflare-challenge"
-          ],
-          "likelyJsRendered": false
-        },
-        "json": [
-          {
-            "url": "https://cdn.cookielaw.org/consent/a2c5c3df-02fb-447c-91d6-c6ae78c1c177/a2c5c3df-02fb-447c-91d6-c6ae78c1c177.json",
-            "status": 200,
-            "bytes": 8557
-          },
-          {
-            "url": "https://cdn.cookielaw.org/consent/a2c5c3df-02fb-447c-91d6-c6ae78c1c177/62ea36e9-5168-4385-9725-67616dab5f7b/en.json",
-            "status": 200,
-            "bytes": 36380
-          },
-          {
-            "url": "https://cdn.cookielaw.org/scripttemplates/6.35.0/assets/otCookieSettingsButton.json",
-            "status": 200,
-            "bytes": 4753
-          },
-          {
-            "url": "https://cdn.cookielaw.org/scripttemplates/6.35.0/assets/otFlat.json",
-            "status": 200,
-            "bytes": 12867
-          },
-          {
-            "url": "https://cdn.cookielaw.org/scripttemplates/6.35.0/assets/v2/otPcCenter.json",
-            "status": 200,
-            "bytes": 60295
-          },
-          {
-            "url": "https://cdn.acsbapp.com/config/masholdings.com/config.json",
-            "status": 200,
-            "bytes": 919
-          },
-          {
-            "url": "https://masholdings.com/wp-admin/admin-ajax.php",
-            "status": 200,
-            "bytes": 36
-          }
-        ]
       }
     },
     {
-      "id": "xitricon-careers",
-      "url": "https://xitricon.com/careers/",
+      "id": "orysys",
+      "url": "https://orysys.com/careers/",
       "render": false,
       "companies": [],
       "fetch": {
         "status": 200,
-        "finalUrl": "https://xitricon.com/careers/",
-        "bytes": 258867,
+        "finalUrl": "https://orysys.com/careers/",
+        "bytes": 173017,
         "contentType": "text/html; charset=UTF-8"
       },
       "atsChecks": [],
       "signals": {
-        "title": "Careers - Xitricon",
-        "textLength": 2653,
+        "title": "Careers – ORYSYS",
+        "textLength": 6239,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://orysys.com/careers/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://orysys.com/careers/"
+          },
+          {
+            "text": "Security Tech Lead Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/security-tech-lead/"
+          },
+          {
+            "text": "Senior Java Engineer – VA Fixing Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/senior-java-engineer-va-fixing/"
+          },
+          {
+            "text": "Java Engineer – VA Fixing Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/java-engineer-va-fixing/"
+          },
+          {
+            "text": "Assistant Manager – Network / Infrastructure Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/assistant-manager-network-infrastructure/"
+          },
+          {
+            "text": "DevOps & Application Support Engineer Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/devops-application-support-engineer/"
+          },
+          {
+            "text": "Executive – Procurement – IT Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/executive-procurement-it/"
+          },
+          {
+            "text": "Associate Engineer – IT Support Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/associate-engineer-it-support-2/"
+          },
+          {
+            "text": "Senior Data Engineer Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/senior-data-engineer/"
+          },
+          {
+            "text": "Data Engineer Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/data-engineer/"
+          },
+          {
+            "text": "Engineer – QA Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/engineer-qa/"
+          },
+          {
+            "text": "SE / SSE – Full Stack (Frontend Focused) Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/se-sse-full-stack-frontend-focused/"
+          },
+          {
+            "text": "Tech Lead – Machine Learning Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/tech-lead-machine-learning/"
+          },
+          {
+            "text": "Associate Engineer – IT First Level Support Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/associate-engineer-it-first-level-support/"
+          },
+          {
+            "text": "Tech Lead – AI Solutions Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/tech-lead-ai-solutions/"
+          },
+          {
+            "text": "Tech Lead – AI Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/tech-lead-ai/"
+          },
+          {
+            "text": "Associate – IT Helpdesk Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/associate-it-helpdesk/"
+          },
+          {
+            "text": "Senior Business Analyst / Business Analyst Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/senior-business-analyst-business-analyst/"
+          },
+          {
+            "text": "Tech Lead – RPG Colombo Orysys Ltd. Full Time",
+            "href": "https://orysys.com/job/tech-lead-rpg/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://orysys.com/careers/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://orysys.com/careers/"
+          },
+          {
+            "text": "careers@orysys.com",
+            "href": "mailto:careers@orysys.com"
+          }
+        ],
+        "emails": [
+          "careers@orysys.com",
+          "careers@cbctechsol.com",
+          "info@orysys.com"
+        ],
+        "hints": [
+          "wordpress",
+          "elementor"
+        ],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "platned",
+      "url": "https://platned.com/careers",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://platned.com/careers",
+        "bytes": 223822,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Explore Exciting | Career Opportunities at Platned",
+        "textLength": 6584,
         "jsonLdJobPostings": 0,
         "jsonLdTypes": [
-          "ProfessionalService",
+          "WebPage",
+          "ImageObject",
+          "BreadcrumbList",
+          "ListItem",
+          "WebSite"
+        ],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://platned.com/careers"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/senior-applied-ai-engineer-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/senior-applied-ai-engineer-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/senior-ai-platform-engineer-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/senior-ai-platform-engineer-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/business-development-representative-uk"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/business-development-representative-uk"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/senior-technical-consultant-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/senior-technical-consultant-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/erp-consultant-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/erp-consultant-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/senior-site-reliability-engineer-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/senior-site-reliability-engineer-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/site-reliability-engineer-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/site-reliability-engineer-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/ifs-pre-sales-consultant"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/ifs-pre-sales-consultant"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/ifs-functional-consultant-supply-chain-manufacturing-usa-based"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/ifs-functional-consultant-supply-chain-manufacturing-usa-based"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/ifs-functional-consultant-finance-usa-based"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/ifs-functional-consultant-finance-usa-based"
+          },
+          {
+            "text": "What career opportunities are currently available?",
+            "href": "https://platned.com/careers#"
+          },
+          {
+            "text": "What is the recruitment process?",
+            "href": "https://platned.com/careers#"
+          },
+          {
+            "text": "Are there opportunities for professional development?",
+            "href": "https://platned.com/careers#"
+          },
+          {
+            "text": "Careers",
+            "href": "https://platned.com/careers"
+          },
+          {
+            "text": "Careers",
+            "href": "https://platned.com/careers"
+          }
+        ],
+        "emails": [
+          "info@platned.com"
+        ],
+        "hints": [
+          "wordpress"
+        ],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "pragicts",
+      "url": "https://www.pragicts.com/careers",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://www.pragicts.com/careers/",
+        "bytes": 360635,
+        "contentType": "text/html"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "PragICTS | Careers",
+        "textLength": 3699,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://www.pragicts.com/careers"
+          }
+        ],
+        "emails": [
+          "info@pragICTS.com",
+          "info@pragicts.com",
+          "support@pragicts.com",
+          "escalations@pragicts.com"
+        ],
+        "hints": [
+          "elementor",
+          "drupal"
+        ],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "sterlingbpo",
+      "url": "https://sterlingbpo.com/careers/",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://sterlingbpo.com/careers/",
+        "bytes": 180828,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Careers - Sterling BPO",
+        "textLength": 2291,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "Corporation",
           "Organization",
           "WebSite",
+          "ImageObject",
+          "BreadcrumbList",
+          "ListItem",
           "WebPage",
           "Person",
           "Article"
@@ -2183,46 +931,21 @@
         "jobishLinks": [
           {
             "text": "Careers",
-            "href": "https://xitricon.com/careers"
+            "href": "https://sterlingbpo.com/careers/"
+          },
+          {
+            "text": "Apply",
+            "href": "https://sterlingbpo.com/open-position/call-center-executive/"
           },
           {
             "text": "Careers",
-            "href": "https://xitricon.com/careers/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://xitricon.com/careers/"
-          },
-          {
-            "text": "Apply",
-            "href": "https://xitricon.com/career/erp-project-manager/"
-          },
-          {
-            "text": "Apply",
-            "href": "https://xitricon.com/career/ai-engineer/"
-          },
-          {
-            "text": "Apply",
-            "href": "https://xitricon.com/career/lead-ai-engineer/"
-          },
-          {
-            "text": "Apply",
-            "href": "https://xitricon.com/career/erp-consulting-manager-project-manager/"
-          },
-          {
-            "text": "Apply",
-            "href": "https://xitricon.com/career/assistant-manager-sales-bdr/"
-          },
-          {
-            "text": "Apply",
-            "href": "https://xitricon.com/career/ifs-hr-consultant/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://xitricon.com/careers/"
+            "href": "https://sterlingbpo.com/careers/"
           }
         ],
-        "emails": [],
+        "emails": [
+          "20info@sterlinglanka.com",
+          "info@sterlinglanka.com"
+        ],
         "hints": [
           "wordpress",
           "elementor"
@@ -2231,315 +954,73 @@
       }
     },
     {
-      "id": "senzmate-careers",
-      "url": "https://www.senzmate.com/careers/",
+      "id": "synergen",
+      "url": "https://www.synergenhealth.com/careers/",
       "render": false,
       "companies": [],
       "fetch": {
         "status": 200,
-        "finalUrl": "https://www.senzmate.com/careers/",
-        "bytes": 116555,
-        "contentType": "text/html"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "Build the Future with Us | SenzMate Careers",
-        "textLength": 7226,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [
-          "CollectionPage",
-          "Organization",
-          "BreadcrumbList",
-          "ListItem"
-        ],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [
-          {
-            "text": "日本語",
-            "href": "https://www.senzmate.com/ja/careers/"
-          },
-          {
-            "text": "Full Stack Engineer (TypeScript / .NET)We are looking for a skilled and motivate",
-            "href": "https://www.senzmate.com/careers/fullstack-engineer-typescript-dotnet/"
-          },
-          {
-            "text": "Business Development RepresentativeSenzMate is seeking a dynamic and results-dri",
-            "href": "https://www.senzmate.com/careers/business-development-representative/"
-          },
-          {
-            "text": "Senior Machine Learning Engineer - LLMs & Agentic AIWe are seeking a Senior Mach",
-            "href": "https://www.senzmate.com/careers/senior-machine-learning-engineer-llms-agentic-ai/"
-          },
-          {
-            "text": "Senior Machine Learning Engineer with AI Tool ExperienceEvaluate and implement e",
-            "href": "https://www.senzmate.com/careers/senior-machine-learning-engineer-ai-tool-experience/"
-          },
-          {
-            "text": "Full-Stack AI EngineerBuild and enhance the intelligence layer of enterprise-gra",
-            "href": "https://www.senzmate.com/careers/fullstack-ai-engineer-telecom-analytics/"
-          },
-          {
-            "text": "Senior Software Engineer - React.jsWe are looking for a Senior Software Engineer",
-            "href": "https://www.senzmate.com/careers/senior-software-engineer-reactjs/"
-          },
-          {
-            "text": "Senior QA Engineer (Automation)We are seeking an experienced Senior QA Engineer ",
-            "href": "https://www.senzmate.com/careers/senior-qa-engineer/"
-          },
-          {
-            "text": "Senior Software Engineer Develop systems by studying operations; designing, deve",
-            "href": "https://www.senzmate.com/careers/senior-software-engineer/"
-          },
-          {
-            "text": "Senior Software Engineer [Java]We are looking for a Senior Software Engineer [Ja",
-            "href": "https://www.senzmate.com/careers/java-engineer/"
-          },
-          {
-            "text": "Tech Lead - React.jsWe are looking for a great JavaScript developer who is profi",
-            "href": "https://www.senzmate.com/careers/tech-lead-react/"
-          },
-          {
-            "text": "Front End Developer Develop systems by studying operations; designing, developin",
-            "href": "https://www.senzmate.com/careers/front-end-developer/"
-          },
-          {
-            "text": "Software EngineerResearch, design and write software solutions and evaluate the ",
-            "href": "https://www.senzmate.com/careers/software-engineer/"
-          },
-          {
-            "text": "Mechanical Engineers We are looking for a creative Mechanical Engineer to work o",
-            "href": "https://www.senzmate.com/careers/mechanical-engineers/"
-          },
-          {
-            "text": "Quality Assurance Engineer We are looking for a Quality Assurance (QA) engineer ",
-            "href": "https://www.senzmate.com/careers/qa-automation/"
-          },
-          {
-            "text": "Assistant Engineer We are searching for a skilled and detail-oriented Assistant ",
-            "href": "https://www.senzmate.com/careers/assistant-engineer/"
-          },
-          {
-            "text": "Engineering Technician We are currently seeking an Engineering Technician to pro",
-            "href": "https://www.senzmate.com/careers/engineering-technician/"
-          },
-          {
-            "text": "Project Manager We are looking for an experienced Project Manager to manage and ",
-            "href": "https://www.senzmate.com/careers/project-manager/"
-          },
-          {
-            "text": "Embedded Engineer We are looking for a professional Embedded Software Engineer t",
-            "href": "https://www.senzmate.com/careers/embedded-engineer/"
-          },
-          {
-            "text": "Machine Learning Engineer We are looking for a Machine Learning (ML) Engineer to",
-            "href": "https://www.senzmate.com/careers/machine-learning-engineer/"
-          },
-          {
-            "text": "InternshipsWe always welcome undergraduates and students with STEM backgrounds t",
-            "href": "https://www.senzmate.com/careers/internships/"
-          },
-          {
-            "text": "Data Engineer You will have an important role and be an integral part of a small",
-            "href": "https://www.senzmate.com/careers/data-engineer/"
-          },
-          {
-            "text": "Senior Software Engineer C++We are looking for a Senior Software Engineer and Te",
-            "href": "https://www.senzmate.com/careers/senior-software-engineer-cpp/"
-          },
-          {
-            "text": "Senior Embedded Engineer We are looking for a Senior Embedded Engineer to design",
-            "href": "https://www.senzmate.com/careers/senior-embedded-engineer/"
-          },
-          {
-            "text": "Senior Machine Learning Engineer You will have an important role and be an integ",
-            "href": "https://www.senzmate.com/careers/senior-machine-learning-engineer/"
-          },
-          {
-            "text": "Full-Stack EngineerSenzMate is looking for a Full-Stack Engineer to build scalab",
-            "href": "https://www.senzmate.com/careers/fullstack-engineer/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://www.senzmate.com/careers/"
-          }
-        ],
-        "emails": [],
-        "hints": [
-          "nextjs",
-          "spa-root"
-        ],
-        "likelyJsRendered": false
-      }
-    },
-    {
-      "id": "digiratina-careers",
-      "url": "https://www.digiratina.com/careers/",
-      "render": false,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://www.digiratina.com/careers/",
-        "bytes": 508678,
-        "contentType": "text/html"
-      },
-      "atsChecks": [],
-      "signals": {
-        "title": "Careers | Explore Exciting Careers in Software Development & IT",
-        "textLength": 5819,
-        "jsonLdJobPostings": 0,
-        "jsonLdTypes": [
-          "Organization",
-          "WebSite",
-          "BreadcrumbList",
-          "ListItem"
-        ],
-        "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
-        "imageHeavy": false,
-        "jobishLinks": [
-          {
-            "text": "Careers",
-            "href": "https://www.digiratina.com/careers/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://www.digiratina.com/careers/"
-          },
-          {
-            "text": "View All Openings",
-            "href": "https://www.digiratina.com/careers/#openings"
-          },
-          {
-            "text": "12 open rolesHiring now",
-            "href": "https://www.digiratina.com/careers/#openings"
-          },
-          {
-            "text": "Intern Sales and MarketingInternshipSri LankaPosted Oct 25, 2026View role",
-            "href": "https://www.digiratina.com/careers/intern-sales-and-marketing/"
-          },
-          {
-            "text": "Business AnalystFull timeSri LankaPosted Oct 1, 2026View role",
-            "href": "https://www.digiratina.com/careers/business-analyst/"
-          },
-          {
-            "text": "Intern Business AnalystInternshipSri LankaPosted Sep 30, 2026View role",
-            "href": "https://www.digiratina.com/careers/intern-business-analyst/"
-          },
-          {
-            "text": "Associate Business AnalystFull timeSri LankaPosted Sep 29, 2026View role",
-            "href": "https://www.digiratina.com/careers/associate-business-analyst/"
-          },
-          {
-            "text": "Intern Project ManagerInternshipSri LankaPosted Sep 7, 2026View role",
-            "href": "https://www.digiratina.com/careers/intern-project-manager/"
-          },
-          {
-            "text": "Intern Software EngineerInternshipSri LankaPosted Sep 6, 2026View role",
-            "href": "https://www.digiratina.com/careers/intern-software-engineer-java/"
-          },
-          {
-            "text": "Associate Software EngineerFull timeSri LankaPosted Sep 5, 2026View role",
-            "href": "https://www.digiratina.com/careers/associate-software-engineer-java/"
-          },
-          {
-            "text": "Software EngineerFull timeSri LankaPosted Sep 4, 2026View role",
-            "href": "https://www.digiratina.com/careers/software-engineer-java/"
-          },
-          {
-            "text": "Senior Software EngineerFull timeSri LankaPosted Sep 3, 2026View role",
-            "href": "https://www.digiratina.com/careers/senior-software-engineer-java/"
-          },
-          {
-            "text": "Associate Tech LeadFull timeSri LankaPosted Sep 2, 2026View role",
-            "href": "https://www.digiratina.com/careers/associate-tech-lead-java/"
-          },
-          {
-            "text": "Tech LeadFull timeSri LankaPosted Sep 1, 2026View role",
-            "href": "https://www.digiratina.com/careers/tech-lead-java/"
-          },
-          {
-            "text": "Software Quality Assurance (QA) EngineerFull timeSri LankaPosted Aug 30, 2026Vie",
-            "href": "https://www.digiratina.com/careers/software-quality-assurance-engineer/"
-          },
-          {
-            "text": "Careers",
-            "href": "https://www.digiratina.com/careers/"
-          }
-        ],
-        "emails": [
-          "info@digiratina.com",
-          "you@company.com"
-        ],
-        "hints": [
-          "wordpress"
-        ],
-        "likelyJsRendered": false
-      }
-    },
-    {
-      "id": "xeynergy-careers",
-      "url": "https://www.xeynergy.com/careers/",
-      "render": false,
-      "companies": [],
-      "fetch": {
-        "status": 200,
-        "finalUrl": "https://www.xeynergy.com/careers/",
-        "bytes": 92200,
+        "finalUrl": "https://www.synergenhealth.com/careers/",
+        "bytes": 147769,
         "contentType": "text/html; charset=UTF-8"
       },
       "atsChecks": [],
       "signals": {
-        "title": "Careers • Xeynergy",
-        "textLength": 2676,
+        "title": "Careers - Revenue Cycle Management (RCM) | SYNERGEN",
+        "textLength": 3807,
         "jsonLdJobPostings": 0,
         "jsonLdTypes": [
+          "WebPage",
           "BreadcrumbList",
           "ListItem",
-          "Organization",
-          "WebPage",
           "WebSite"
         ],
         "ats": [],
-        "iframes": [],
-        "pdfLinks": 0,
+        "iframes": [
+          "https://www.youtube.com/embed/cqROm9mu7kA?feature=oembed"
+        ],
+        "pdfLinks": 1,
         "imageHeavy": false,
         "jobishLinks": [
           {
             "text": "Careers",
-            "href": "https://www.xeynergy.com/careers/"
+            "href": "https://www.synergenhealth.com/careers/"
           },
           {
-            "text": "Senior Software Engineer - .NET Permanent Active Hybrid 1 position Xeynergy is a",
-            "href": "https://xeynergy.accxis360.com/jobs/6af6b0d169995781aa5e1fe1"
+            "text": "Opportunity Assessment",
+            "href": "https://www.synergenhealth.com/end-to-end-rcm/opportunity-assessment/"
           },
           {
-            "text": "Customer Support Specialist Permanent Active Remote 1 position About Us Xeynergy",
-            "href": "https://xeynergy.accxis360.com/jobs/6aed8fee505bb1c36078b9a8"
+            "text": "Explore available positions",
+            "href": "https://www.synergenhealth.com/careers/#jobs"
           },
           {
-            "text": "Finance Executive Permanent Active Hybrid 1 position Xeynergy is a Software Deve",
-            "href": "https://xeynergy.accxis360.com/jobs/6aec1d00505bb1c360777206"
+            "text": "",
+            "href": "https://www.synergenhealth.com/wp-content/uploads/2026/09/Careers-Page-Awards-Night.png"
           },
           {
-            "text": "Intern - Software Engineering Internship Active Hybrid 1 position Xeynergy is a ",
-            "href": "https://xeynergy.accxis360.com/jobs/6ae42a169d4b9a5b2de8672a"
+            "text": "",
+            "href": "https://www.synergenhealth.com/wp-content/uploads/2026/09/Careers-Page-IWD.png"
           },
           {
-            "text": "Administrative Assistant Contract Active Remote 1 position Xeynergy is looking f",
-            "href": "https://xeynergy.accxis360.com/jobs/6adae8852dac50529e415a11"
+            "text": "",
+            "href": "https://www.synergenhealth.com/wp-content/uploads/2026/09/Careers-Page-GPTW.png"
           },
           {
-            "text": "Executive - Marketing & Business Development (2 years Contract) Contract Active ",
-            "href": "https://xeynergy.accxis360.com/jobs/6ad05d44d13e2c928f7882b8"
+            "text": "Careers",
+            "href": "https://www.synergenhealth.com/careers/"
+          },
+          {
+            "text": "Opportunity Assessment",
+            "href": "https://www.synergenhealth.com/end-to-end-rcm/opportunity-assessment/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.synergenhealth.com/careers/"
           }
         ],
         "emails": [
-          "info@xeynergy.com",
-          "careers@xeynergy.com"
+          "info@synergenhealth.com"
         ],
         "hints": [
           "wordpress"
@@ -2548,36 +1029,368 @@
       }
     },
     {
-      "id": "petdesk-lever",
-      "url": "https://api.lever.co/v0/postings/petdesk?mode=json",
+      "id": "tekgeeks",
+      "url": "https://www.tekgeeks.net/careers",
       "render": false,
       "companies": [],
       "fetch": {
         "status": 200,
-        "finalUrl": "https://api.lever.co/v0/postings/petdesk?mode=json",
-        "bytes": 84120,
-        "contentType": "application/json; charset=utf-8"
+        "finalUrl": "https://www.tekgeeks.net/careers",
+        "bytes": 83096,
+        "contentType": "text/html; charset=utf-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Join Our Team | TekGeeks",
+        "textLength": 5186,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "LocalBusiness"
+        ],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://www.tekgeeks.net/careers"
+          },
+          {
+            "text": "Full-Stack Developer We’re seeking a Full-Stack Developer with 3 to 5 years of i",
+            "href": "https://www.tekgeeks.net/career-detail/full-stack-developer"
+          },
+          {
+            "text": "System Administrator We’re seeking a System Administrator with a minimum of 3 ye",
+            "href": "https://www.tekgeeks.net/career-detail/system-administrator"
+          },
+          {
+            "text": "Business Development Executive We're looking for a Business Development Executiv",
+            "href": "https://www.tekgeeks.net/career-detail/business-development-executive"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.tekgeeks.net/careers"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.tekgeeks.net/careers"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.tekgeeks.net/careers"
+          }
+        ],
+        "emails": [
+          "info@tekgeeks.net",
+          "hrm@tekgeeks.net"
+        ],
+        "hints": [],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "tgt-careers",
+      "url": "https://careers.tgtglobal.com/",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://careers.tgtglobal.com/",
+        "bytes": 127012,
+        "contentType": "text/html; charset=utf-8"
       },
       "atsChecks": [
         {
-          "ats": "lever",
-          "id": "petdesk",
-          "api": "https://api.lever.co/v0/postings/petdesk?mode=json",
-          "ok": true,
-          "jobs": 8,
-          "sriLankaJobs": 1
+          "ats": "teamtailor",
+          "id": "www",
+          "api": "https://www.teamtailor.com/jobs.rss",
+          "ok": false,
+          "jobs": null,
+          "sriLankaJobs": null,
+          "error": "HTTP 404 for https://www.teamtailor.com/jobs.rss"
         }
       ],
       "signals": {
-        "title": "",
-        "textLength": 75572,
+        "title": "A ViTALizing Career Begins Here - TGT Global",
+        "textLength": 7179,
         "jsonLdJobPostings": 0,
         "jsonLdTypes": [],
         "ats": [
           {
-            "ats": "lever",
-            "id": "petdesk",
-            "url": "https://jobs.lever.co/petdesk"
+            "ats": "teamtailor",
+            "id": "www",
+            "url": "https://www.teamtailor.com"
+          }
+        ],
+        "iframes": [
+          "https://player.vimeo.com/video/1173114843",
+          "https://player.vimeo.com/video/1173114680"
+        ],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Cookie Policy",
+            "href": "https://careers.tgtglobal.com/cookie-policy"
+          },
+          {
+            "text": "Cookie Policy",
+            "href": "https://careers.tgtglobal.com/cookie-policy"
+          },
+          {
+            "text": "Jobs",
+            "href": "https://careers.tgtglobal.com/jobs"
+          },
+          {
+            "text": "Start",
+            "href": "https://careers.tgtglobal.com/"
+          },
+          {
+            "text": "About TGT",
+            "href": "https://careers.tgtglobal.com/pages/about-us"
+          },
+          {
+            "text": "ViTAL",
+            "href": "https://careers.tgtglobal.com/pages/vital"
+          },
+          {
+            "text": "ViTAL Benefits",
+            "href": "https://careers.tgtglobal.com/pages/vital-benefits"
+          },
+          {
+            "text": "Internal Referral Program Terms & Conditions",
+            "href": "https://careers.tgtglobal.com/pages/internal-referral-program-terms-conditions"
+          },
+          {
+            "text": "Log in as employee",
+            "href": "https://careers.tgtglobal.com/sso_login"
+          },
+          {
+            "text": "Log in to Connect",
+            "href": "https://careers.tgtglobal.com/connect/login"
+          },
+          {
+            "text": "",
+            "href": "https://careers.tgtglobal.com/"
+          },
+          {
+            "text": "",
+            "href": "https://careers.tgtglobal.com/"
+          },
+          {
+            "text": "Connect",
+            "href": "https://careers.tgtglobal.com/connect"
+          },
+          {
+            "text": "Job openings",
+            "href": "https://careers.tgtglobal.com/#jobs"
+          },
+          {
+            "text": "Content & Digital Marketing Officer Marketing & Creatives · BGC, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/8640272-content-digital-marketing-officer"
+          },
+          {
+            "text": "Learning and Development Trainer Administration · BGC, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/8612888-learning-and-development-trainer"
+          },
+          {
+            "text": "Product Lister Marketing & Creatives · BGC, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/8581379-product-lister"
+          },
+          {
+            "text": "Inside Sales Representative (PC Hardware) Sales · BGC, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/8580743-inside-sales-representative-pc-hardware"
+          },
+          {
+            "text": "Sales Admin Sales · BGC, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/8580727-sales-admin"
+          },
+          {
+            "text": "Digital Marketing Assistant Marketing & Creatives · BGC, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/8492923-digital-marketing-assistant"
+          },
+          {
+            "text": "Operations Manager Administration · BGC, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/8357481-operations-manager"
+          },
+          {
+            "text": "Senior Digital Marketing Officer Marketing & Creatives · Eastwood, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/8319041-senior-digital-marketing-officer"
+          },
+          {
+            "text": "Business Development Representative Sales · Eastwood, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/8318980-business-development-representative"
+          },
+          {
+            "text": "Senior Technical Consultant IT · Alabang, Philippines, Cebu, Philippines, Eastwo",
+            "href": "https://careers.tgtglobal.com/jobs/8140306-senior-technical-consultant"
+          },
+          {
+            "text": "Recruitment Officer Human Resources · Eastwood, Philippines, Alabang, Philippine",
+            "href": "https://careers.tgtglobal.com/jobs/7855503-recruitment-officer"
+          },
+          {
+            "text": "Senior Export Coordinator Administration · BGC, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/7702917-senior-export-coordinator"
+          },
+          {
+            "text": "Senior Systems Engineer - Eastwood Nightshift IT · Eastwood, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/7670254-senior-systems-engineer-eastwood-nightshift"
+          },
+          {
+            "text": "Senior Operations Manager Administration · Eastwood, Philippines, BGC, Philippin",
+            "href": "https://careers.tgtglobal.com/jobs/7380021-senior-operations-manager"
+          },
+          {
+            "text": "Senior L3 IT Support Engineer IT · Eastwood, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/6979011-senior-l3-it-support-engineer"
+          },
+          {
+            "text": "Level 2 IT Support Engineer - Eastwood (Night) IT · Eastwood, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/6978984-level-2-it-support-engineer-eastwood-night"
+          },
+          {
+            "text": "IT Support Engineer L2 - Eastwood IT · Eastwood, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/6978965-it-support-engineer-l2-eastwood"
+          },
+          {
+            "text": "Level 2 IT Support Engineer - BGC Night IT · BGC, Philippines",
+            "href": "https://careers.tgtglobal.com/jobs/6970104-level-2-it-support-engineer-bgc-night"
+          },
+          {
+            "text": "All jobs",
+            "href": "https://careers.tgtglobal.com/jobs"
+          },
+          {
+            "text": "I'm interested!",
+            "href": "https://careers.tgtglobal.com/connect"
+          },
+          {
+            "text": "Explore Career Opportunities",
+            "href": "https://careers.tgtglobal.com/jobs"
+          },
+          {
+            "text": "Jobs",
+            "href": "https://careers.tgtglobal.com/jobs"
+          },
+          {
+            "text": "Start",
+            "href": "https://careers.tgtglobal.com/"
+          },
+          {
+            "text": "About TGT",
+            "href": "https://careers.tgtglobal.com/pages/about-us"
+          },
+          {
+            "text": "ViTAL",
+            "href": "https://careers.tgtglobal.com/pages/vital"
+          },
+          {
+            "text": "ViTAL Benefits",
+            "href": "https://careers.tgtglobal.com/pages/vital-benefits"
+          }
+        ],
+        "emails": [],
+        "hints": [],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "beespoint",
+      "url": "https://www.beespoint.com/company/career.php",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://www.beespoint.com/company/career.php",
+        "bytes": 71921,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Careers | Company | BeesPoint (Pvt) Ltd - Software Company",
+        "textLength": 7399,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [
+          "https://shareables.clutch.co/share/badges/982079/49233?utm_source=clutch_top_company_badge&utm_medium=image_embed"
+        ],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://www.beespoint.com/company/career.php"
+          },
+          {
+            "text": "JOBSY",
+            "href": "https://jobsy.lk/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.beespoint.com/company/career.php"
+          },
+          {
+            "text": "Join Our Team",
+            "href": "https://www.beespoint.com/company/career.php#job"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://www.beespoint.com/company/sales-and-marketing-jobs-in-sri-lanka.php"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://www.beespoint.com/company/full-stack-developer-jobs-in-sri-lanka.php"
+          },
+          {
+            "text": "Apply Now",
+            "href": "https://www.beespoint.com/company/business-development-manager-jobs-in-sri-lanka.php"
+          },
+          {
+            "text": "JOBSY",
+            "href": "https://jobsy.lk/"
+          }
+        ],
+        "emails": [],
+        "hints": [
+          "cloudflare-challenge"
+        ],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "innodata-greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/innodatainc/jobs",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://boards-api.greenhouse.io/v1/boards/innodatainc/jobs",
+        "bytes": 66270,
+        "contentType": "application/json"
+      },
+      "atsChecks": [
+        {
+          "ats": "greenhouse",
+          "id": "innodatainc",
+          "api": "https://boards-api.greenhouse.io/v1/boards/innodatainc/jobs",
+          "ok": true,
+          "jobs": 107,
+          "sriLankaJobs": 0
+        }
+      ],
+      "signals": {
+        "title": "",
+        "textLength": 66157,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [
+          {
+            "ats": "greenhouse",
+            "id": "innodatainc",
+            "url": "https://job-boards.greenhouse.io/innodatainc"
           }
         ],
         "iframes": [],
@@ -2590,23 +1403,20 @@
       }
     },
     {
-      "id": "kaleris-workday-jobs",
-      "url": "https://kaleris.wd501.myworkdayjobs.com/wday/cxs/kaleris/kaleris_careers/jobs",
-      "method": "POST",
-      "body": "{\"appliedFacets\": {}, \"limit\": 20, \"offset\": 0, \"searchText\": \"\"}",
-      "contentType": "application/json",
+      "id": "mas-oracle",
+      "url": "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,sortBy=POSTING_DATES_DESC",
       "render": false,
       "companies": [],
       "fetch": {
         "status": 200,
-        "finalUrl": "https://kaleris.wd501.myworkdayjobs.com/wday/cxs/kaleris/kaleris_careers/jobs",
-        "bytes": 6963,
+        "finalUrl": "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,sortBy=POSTING_DATES_DESC",
+        "bytes": 56853,
         "contentType": "application/json"
       },
       "atsChecks": [],
       "signals": {
         "title": "",
-        "textLength": 6963,
+        "textLength": 49573,
         "jsonLdJobPostings": 0,
         "jsonLdTypes": [],
         "ats": [],
@@ -2616,6 +1426,289 @@
         "jobishLinks": [],
         "emails": [],
         "hints": [],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "mas-oracle-lk",
+      "url": "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,location=Sri%20Lanka,sortBy=POSTING_DATES_DESC",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,location=Sri%20Lanka,sortBy=POSTING_DATES_DESC",
+        "bytes": 56860,
+        "contentType": "application/json"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "",
+        "textLength": 49580,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [],
+        "emails": [],
+        "hints": [],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "eyepax-ajax",
+      "url": "https://eyepax.com/wp-admin/admin-ajax.php?action=filter_jobs&job_location=",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://eyepax.com/wp-admin/admin-ajax.php?action=filter_jobs&job_location=",
+        "bytes": 18660,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "",
+        "textLength": 182,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Senior Software Engineer – Java / Spring Boot (EC-66)",
+            "href": "https://eyepax.com/job-openings/senior-software-engineer-java-spring-boot-ec-66/"
+          },
+          {
+            "text": "Senior Software Engineer – Angular (EC-67)",
+            "href": "https://eyepax.com/job-openings/senior-software-engineer-angular-ec-67/"
+          }
+        ],
+        "emails": [],
+        "hints": [
+          "wordpress",
+          "elementor"
+        ],
+        "likelyJsRendered": true
+      }
+    },
+    {
+      "id": "creately-api",
+      "url": "https://www.careers-page.com/api/v1.0/c/creately/jobs/",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://www.careers-page.com/api/v1.0/c/creately/jobs/",
+        "bytes": 5989,
+        "contentType": "application/json"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "",
+        "textLength": 4227,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [],
+        "emails": [],
+        "hints": [],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "axonect-page",
+      "url": "https://www.careers-page.com/axonect",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://www.careers-page.com/axonect",
+        "bytes": 56384,
+        "contentType": "text/html; charset=utf-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "- Axonect | Career Page",
+        "textLength": 3197,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Start Your Journey!",
+            "href": "https://www.careers-page.com/axonect#openings"
+          },
+          {
+            "text": "",
+            "href": "https://manatal-backend-public-assets.s3.amazonaws.com/media/career_portal_image_direct_upload/9647608d-e510-463e-86dd-3b1a9d9352bb_1.jpg"
+          },
+          {
+            "text": "",
+            "href": "https://manatal-backend-public-assets.s3.amazonaws.com/media/career_portal_image_direct_upload/b8cb1212-2930-496f-8139-254ec6287429_4.jpg"
+          },
+          {
+            "text": "",
+            "href": "https://manatal-backend-public-assets.s3.amazonaws.com/media/career_portal_image_direct_upload/4e9aecb1-7ee4-4fa1-aec9-6905c0247862_3.jpg"
+          },
+          {
+            "text": "Intern - Group Internal Audit",
+            "href": "https://www.careers-page.com/axonect/job/5W783WV5"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/5W783WV5"
+          },
+          {
+            "text": "Head of Finance Operations",
+            "href": "https://www.careers-page.com/axonect/job/93V769WY"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/93V769WY"
+          },
+          {
+            "text": "Manager – Financial Accounting & Reporting",
+            "href": "https://www.careers-page.com/axonect/job/7X7V6XX3"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/7X7V6XX3"
+          },
+          {
+            "text": "Intern - Talent Acquisition",
+            "href": "https://www.careers-page.com/axonect/job/RYW6797X"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/RYW6797X"
+          },
+          {
+            "text": "Senior Solutions Sales - Indonesia",
+            "href": "https://www.careers-page.com/axonect/job/X947Y993"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/X947Y993"
+          },
+          {
+            "text": "Senior Manager – HR Business Partnering",
+            "href": "https://www.careers-page.com/axonect/job/X97Y38YY"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/X97Y38YY"
+          },
+          {
+            "text": "Senior Manager – Sales & Business Development",
+            "href": "https://www.careers-page.com/axonect/job/W3945779"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/W3945779"
+          },
+          {
+            "text": "Senior Manager – Sales & Business Development",
+            "href": "https://www.careers-page.com/axonect/job/4R768355"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/4R768355"
+          },
+          {
+            "text": "[Internal Role] Senior Lead - Business Systems",
+            "href": "https://www.careers-page.com/axonect/job/4R766VR5"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/4R766VR5"
+          },
+          {
+            "text": "Senior Lead - Business Systems",
+            "href": "https://www.careers-page.com/axonect/job/Y6755369"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/Y6755369"
+          },
+          {
+            "text": "Senior Engineer - Data Science",
+            "href": "https://www.careers-page.com/axonect/job/RY9647V6"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/RY9647V6"
+          },
+          {
+            "text": "SOC L2 Analyst",
+            "href": "https://www.careers-page.com/axonect/job/4R783VYV"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/4R783VYV"
+          },
+          {
+            "text": "Regional Sales Manager - Africa",
+            "href": "https://www.careers-page.com/axonect/job/93VRR95Y"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/93VRR95Y"
+          },
+          {
+            "text": "Manager - Product Marketing",
+            "href": "https://www.careers-page.com/axonect/job/7XW345V5"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/7XW345V5"
+          },
+          {
+            "text": "Senior Quality Assurance Engineer",
+            "href": "https://www.careers-page.com/axonect/job/3W7R6YYV"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/3W7R6YYV"
+          },
+          {
+            "text": "Project Manager",
+            "href": "https://www.careers-page.com/axonect/job/638XXW55"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/638XXW55"
+          },
+          {
+            "text": "[Internal Role] - Solution Architect - Client Engineering",
+            "href": "https://www.careers-page.com/axonect/job/63R9W33R"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/63R9W33R"
+          },
+          {
+            "text": "Project Manager (Migration Lead)",
+            "href": "https://www.careers-page.com/axonect/job/8XR3Y6X3"
+          },
+          {
+            "text": "Apply",
+            "href": "https://www.careers-page.com/axonect/job/8XR3Y6X3"
+          }
+        ],
+        "emails": [],
+        "hints": [
+          "spa-root"
+        ],
         "likelyJsRendered": false
       }
     }
