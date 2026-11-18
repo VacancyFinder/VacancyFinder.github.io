@@ -86,14 +86,15 @@ export const HOW_IT_WORKS: PolicyPage = {
 export const PRIVACY: PolicyPage = {
   path: "/privacy/",
   title: `Privacy Policy | ${SITE_NAME}`,
-  description: "Rekiya has no accounts, no tracking and no ads. Saved jobs and settings stay in your own browser.",
+  description:
+    "Rekiya has no accounts or sign-up. Saved jobs and settings stay in your own browser. Ads are served by Google AdSense, which uses cookies.",
   h1: "Privacy policy",
   intro: "Rekiya is built to work without knowing who you are.",
   sections: [
     {
       heading: "What Rekiya does not collect",
       body: [
-        "There are no accounts, no sign-up, no advertising, no analytics or tracking scripts and no third-party cookies.",
+        "There are no accounts and no sign-up, and Rekiya itself runs no analytics or tracking scripts.",
         "Rekiya never sees your job applications: when you press Apply you go to the employer's own website, whose privacy policy then applies.",
       ],
     },
@@ -102,6 +103,14 @@ export const PRIVACY: PolicyPage = {
       body: [
         "Saved jobs, application notes, saved searches, hidden jobs and settings are stored only in your browser (local storage). Clearing your browser data deletes them; the Settings page lets you export or delete them at any time.",
         "The site can work offline: your browser keeps a copy of recently loaded pages and job data.",
+      ],
+    },
+    {
+      heading: "Advertising",
+      body: [
+        "Rekiya shows ads served by Google AdSense to keep the site free. Google and its partners use cookies to serve ads based on your previous visits to this and other websites.",
+        "You can opt out of personalised advertising in Google's Ads Settings (https://adssettings.google.com), or opt out of some third-party vendors' cookies at https://www.aboutads.info/choices.",
+        "Learn how Google uses information from sites that use its services at https://policies.google.com/technologies/partner-sites.",
       ],
     },
     {

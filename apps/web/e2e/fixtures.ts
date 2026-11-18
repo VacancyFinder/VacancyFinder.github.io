@@ -138,6 +138,8 @@ export function meta(generatedHoursAgo = 1, jobs: Job[] = JOBS): Meta {
 /** Serve fixture data instead of the build's /data. */
 export async function mockData(page: Page, opts: { generatedHoursAgo?: number; jobs?: Job[] } = {}): Promise<void> {
   const jobs = opts.jobs ?? JOBS;
+  // Keep tests offline and deterministic: the Google AdSense loader is replaced with an empty script.
+  await page.route(/^https:\/\/pagead2\.googlesyndication\.com\//, (route) => route.fulfill({ contentType: "text/javascript", body: "" }));
   await page.route("**/data/**", (route) => {
     const path = new URL(route.request().url()).pathname;
     const json = (body: unknown) => route.fulfill({ contentType: "application/json", body: JSON.stringify(body) });

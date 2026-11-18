@@ -325,6 +325,8 @@ test("SEO: prerendered HTML, sitemap, robots.txt and llms.txt are published", as
   expect(home).not.toContain("SearchAction"); // retired by Google in 2024
   expect(home).toContain('<link rel="canonical" href="https://vacancyfinder.github.io/"');
   expect(home).toContain('<meta name="google-site-verification" content="8yxUGaMetlVc24ha_G0xKeGCbbr0SRW7Rt4HdXPA4TE" />');
+  expect(home).toContain("pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1834282818031674");
+  expect(await (await request.get("/ads.txt")).text()).toContain("google.com, pub-1834282818031674, DIRECT, f08c47fec0942fa0");
   const interns = await (await request.get("/internships/")).text();
   expect(interns).toMatch(/<title>Internships in Sri Lanka \d{4} — /);
   expect(interns).toMatch(/<h1[^>]*>Internships in Sri Lanka<\/h1>/);
