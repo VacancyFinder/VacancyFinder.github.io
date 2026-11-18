@@ -1,120 +1,132 @@
 {
-  "note": "Run 8: follow-up URLs found by run 7 (ATS feeds, listing pages, moved careers pages) and robots checks for the final careers URLs.",
-  "run": 8,
+  "note": "Run 9: careers pages found by discovery for the new IT companies, plus ATS feeds to confirm (Greenhouse, Oracle, careers-page.com).",
+  "run": 9,
   "targets": [],
-  "render": true,
+  "render": false,
   "urls": [
     {
-      "id": "codegen-careers-en",
-      "url": "https://codegen.co.uk/en/company/careers",
+      "id": "amazoft",
+      "url": "https://www.amazoft.com/careers",
       "render": false
     },
     {
-      "id": "cambio-jobs-rss",
-      "url": "https://careers.cambio.lk/jobs.rss",
+      "id": "apts",
+      "url": "https://apts.lk/careers/",
       "render": false
     },
     {
-      "id": "vitalhub-bamboohr-list",
-      "url": "https://vitalhub.bamboohr.com/careers/list",
+      "id": "avenir-it",
+      "url": "https://avenirit.com/careers/",
       "render": false
     },
     {
-      "id": "codimite-careers",
-      "url": "https://codimite.ai/careers/",
+      "id": "azend",
+      "url": "https://azendtech.com/careers/",
       "render": false
     },
     {
-      "id": "bistec-zoho-api",
-      "url": "https://bistecglobal.zohorecruit.com/recruit/v2/public/Job_Openings?pagename=Careers&source=CareerSite",
+      "id": "boc",
+      "url": "https://www.boc.lk/careers",
       "render": false
     },
     {
-      "id": "creately-careers-page",
-      "url": "https://www.careers-page.com/creately",
-      "render": true
-    },
-    {
-      "id": "gapstars-jobs",
-      "url": "https://gapstars.net/tech/jobs/",
+      "id": "ceyentra",
+      "url": "https://ceyentra.com/company/careers",
       "render": false
     },
     {
-      "id": "nagarro-sri-lanka",
-      "url": "https://www.nagarro.com/en/careers/sri-lanka",
-      "render": true
-    },
-    {
-      "id": "eyepax-job-openings",
-      "url": "https://eyepax.com/job-openings/",
-      "render": true
-    },
-    {
-      "id": "allion-jobs",
-      "url": "https://www.alliontechnologies.com/jobs",
-      "render": true
-    },
-    {
-      "id": "allion-odoo",
-      "url": "https://alliontechnologies-aus.odoo.com/jobs",
-      "render": true
-    },
-    {
-      "id": "innodata-careers",
-      "url": "https://innodatacareers.com/",
-      "render": true
-    },
-    {
-      "id": "aeturnum-peoplehum",
-      "url": "https://hire.peoplehum.com/jobs/aeturnum",
-      "render": true
-    },
-    {
-      "id": "axiata-digital-labs-careers",
-      "url": "https://www.axiatadigitallabs.com/adl-careers/",
-      "render": true
-    },
-    {
-      "id": "insighture-work-with-us",
-      "url": "https://www.insighture.com/work-with-us",
-      "render": true
-    },
-    {
-      "id": "mas-join-us",
-      "url": "https://masholdings.com/join-us/",
-      "render": true
-    },
-    {
-      "id": "xitricon-careers",
-      "url": "https://xitricon.com/careers/",
+      "id": "chakray",
+      "url": "https://chakray.com/careers/",
       "render": false
     },
     {
-      "id": "senzmate-careers",
-      "url": "https://www.senzmate.com/careers/",
+      "id": "cms",
+      "url": "https://www.cms.lk/careers/",
       "render": false
     },
     {
-      "id": "digiratina-careers",
-      "url": "https://www.digiratina.com/careers/",
+      "id": "hexacorp",
+      "url": "https://hexacorp.com/careers/",
       "render": false
     },
     {
-      "id": "xeynergy-careers",
-      "url": "https://www.xeynergy.com/careers/",
+      "id": "loonslab",
+      "url": "https://loonslab.com/resources/careers",
       "render": false
     },
     {
-      "id": "petdesk-lever",
-      "url": "https://api.lever.co/v0/postings/petdesk?mode=json",
+      "id": "mitesp",
+      "url": "https://www.mitesp.com/careers/",
       "render": false
     },
     {
-      "id": "kaleris-workday-jobs",
-      "url": "https://kaleris.wd501.myworkdayjobs.com/wday/cxs/kaleris/kaleris_careers/jobs",
-      "method": "POST",
-      "contentType": "application/json",
-      "body": "{\"appliedFacets\": {}, \"limit\": 20, \"offset\": 0, \"searchText\": \"\"}",
+      "id": "orysys",
+      "url": "https://orysys.com/careers/",
+      "render": false
+    },
+    {
+      "id": "platned",
+      "url": "https://platned.com/careers",
+      "render": false
+    },
+    {
+      "id": "pragicts",
+      "url": "https://www.pragicts.com/careers",
+      "render": false
+    },
+    {
+      "id": "sterlingbpo",
+      "url": "https://sterlingbpo.com/careers/",
+      "render": false
+    },
+    {
+      "id": "synergen",
+      "url": "https://www.synergenhealth.com/careers/",
+      "render": false
+    },
+    {
+      "id": "tekgeeks",
+      "url": "https://www.tekgeeks.net/careers",
+      "render": false
+    },
+    {
+      "id": "tgt-careers",
+      "url": "https://careers.tgtglobal.com/",
+      "render": false
+    },
+    {
+      "id": "beespoint",
+      "url": "https://www.beespoint.com/company/career.php",
+      "render": false
+    },
+    {
+      "id": "innodata-greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/innodatainc/jobs",
+      "render": false
+    },
+    {
+      "id": "mas-oracle",
+      "url": "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,sortBy=POSTING_DATES_DESC",
+      "render": false
+    },
+    {
+      "id": "mas-oracle-lk",
+      "url": "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,location=Sri%20Lanka,sortBy=POSTING_DATES_DESC",
+      "render": false
+    },
+    {
+      "id": "eyepax-ajax",
+      "url": "https://eyepax.com/wp-admin/admin-ajax.php?action=filter_jobs&job_location=",
+      "render": false
+    },
+    {
+      "id": "creately-api",
+      "url": "https://www.careers-page.com/api/v1.0/c/creately/jobs/",
+      "render": false
+    },
+    {
+      "id": "axonect-page",
+      "url": "https://www.careers-page.com/axonect",
       "render": false
     }
   ]
