@@ -1,63 +1,121 @@
 {
-  "note": "Run 7: probe the careers pages added from the Sri Lanka IT companies list (Nov 2026), and discover careers pages for companies with only a website.",
-  "run": 7,
-  "targets": [
-    "3axislabs-com-careers",
-    "acuitykp-com-careers",
-    "aeturnum-com-careers",
-    "affno-com-careers",
-    "alliontechnologies-com-careers",
-    "arimac-lk-careers",
-    "axiatadigitallabs-com-careers",
-    "bileeta-com-careers",
-    "bistecglobal-com-careers",
-    "bluelotus360-com-careers",
-    "calcey-com-careers",
-    "careers-cambio-lk",
-    "codegen-net-careers",
-    "codimite-com-careers",
-    "creately-com-careers",
-    "digiratina-com-careers",
-    "directfn-com-careers",
-    "efutures-com-careers",
-    "embla-no-careers",
-    "epiclanka-com-careers",
-    "eyepax-com-careers",
-    "fcodelabs-com-careers",
-    "gapstars-net-careers",
-    "grubtech-com-careers",
-    "home-kpmg-lk-en-home-careers-html",
-    "hsbc-com-careers",
-    "informaticsi-com-careers",
-    "innodata-com-careers",
-    "insighture-com-careers",
-    "intervest-lk-careers",
-    "kaleris-com-careers",
-    "masholdings-com-careers",
-    "metacareers-com",
-    "mobitel-lk-careers",
-    "moodys-com-careers",
-    "nagarro-com-en-careers",
-    "orangehrm-com-careers",
-    "persistent-com-careers",
-    "petdesk-com-careers",
-    "primeoneglobal-com-careers",
-    "sanmark-com-careers",
-    "sc-com-careers",
-    "senzmate-com-careers",
-    "simcentric-com-careers",
-    "tiqri-com-careers",
-    "virtusa-com-careers",
-    "vitalhub-com-careers",
-    "wavenet-lk-careers",
-    "wiley-com-careers",
-    "wns-com-careers",
-    "www2-deloitte-com-lk-en-careers-html",
-    "xeynergy-com-careers",
-    "xiteb-com-careers",
-    "xitricon-com-careers",
-    "yaalalabs-com-careers"
-  ],
+  "note": "Run 8: follow-up URLs found by run 7 (ATS feeds, listing pages, moved careers pages) and robots checks for the final careers URLs.",
+  "run": 8,
+  "targets": [],
   "render": true,
-  "urls": []
+  "urls": [
+    {
+      "id": "codegen-careers-en",
+      "url": "https://codegen.co.uk/en/company/careers",
+      "render": false
+    },
+    {
+      "id": "cambio-jobs-rss",
+      "url": "https://careers.cambio.lk/jobs.rss",
+      "render": false
+    },
+    {
+      "id": "vitalhub-bamboohr-list",
+      "url": "https://vitalhub.bamboohr.com/careers/list",
+      "render": false
+    },
+    {
+      "id": "codimite-careers",
+      "url": "https://codimite.ai/careers/",
+      "render": false
+    },
+    {
+      "id": "bistec-zoho-api",
+      "url": "https://bistecglobal.zohorecruit.com/recruit/v2/public/Job_Openings?pagename=Careers&source=CareerSite",
+      "render": false
+    },
+    {
+      "id": "creately-careers-page",
+      "url": "https://www.careers-page.com/creately",
+      "render": true
+    },
+    {
+      "id": "gapstars-jobs",
+      "url": "https://gapstars.net/tech/jobs/",
+      "render": false
+    },
+    {
+      "id": "nagarro-sri-lanka",
+      "url": "https://www.nagarro.com/en/careers/sri-lanka",
+      "render": true
+    },
+    {
+      "id": "eyepax-job-openings",
+      "url": "https://eyepax.com/job-openings/",
+      "render": true
+    },
+    {
+      "id": "allion-jobs",
+      "url": "https://www.alliontechnologies.com/jobs",
+      "render": true
+    },
+    {
+      "id": "allion-odoo",
+      "url": "https://alliontechnologies-aus.odoo.com/jobs",
+      "render": true
+    },
+    {
+      "id": "innodata-careers",
+      "url": "https://innodatacareers.com/",
+      "render": true
+    },
+    {
+      "id": "aeturnum-peoplehum",
+      "url": "https://hire.peoplehum.com/jobs/aeturnum",
+      "render": true
+    },
+    {
+      "id": "axiata-digital-labs-careers",
+      "url": "https://www.axiatadigitallabs.com/adl-careers/",
+      "render": true
+    },
+    {
+      "id": "insighture-work-with-us",
+      "url": "https://www.insighture.com/work-with-us",
+      "render": true
+    },
+    {
+      "id": "mas-join-us",
+      "url": "https://masholdings.com/join-us/",
+      "render": true
+    },
+    {
+      "id": "xitricon-careers",
+      "url": "https://xitricon.com/careers/",
+      "render": false
+    },
+    {
+      "id": "senzmate-careers",
+      "url": "https://www.senzmate.com/careers/",
+      "render": false
+    },
+    {
+      "id": "digiratina-careers",
+      "url": "https://www.digiratina.com/careers/",
+      "render": false
+    },
+    {
+      "id": "xeynergy-careers",
+      "url": "https://www.xeynergy.com/careers/",
+      "render": false
+    },
+    {
+      "id": "petdesk-lever",
+      "url": "https://api.lever.co/v0/postings/petdesk?mode=json",
+      "render": false
+    },
+    {
+      "id": "kaleris-workday-jobs",
+      "url": "https://kaleris.wd501.myworkdayjobs.com/wday/cxs/kaleris/kaleris_careers/jobs",
+      "method": "POST",
+      "contentType": "application/json",
+      "body": "{\"appliedFacets\": {}, \"limit\": 20, \"offset\": 0, \"searchText\": \"\"}",
+      "render": false
+    }
+  ]
 }
