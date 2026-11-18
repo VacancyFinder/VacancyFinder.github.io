@@ -62,7 +62,7 @@
 | Orysys Limited | html | Orysys careers page (WP Job Manager list) (verified by the probe, Nov 2026). |
 | Pearson | custom: oracle-hcm | Pearson's Oracle Recruiting Cloud site, filtered to Sri Lanka (3 roles at probe time, verified Sep 2026). |
 | PetDesk | lever | PetDesk hires through Lever (jobs.lever.co/petdesk); only Colombo roles (verified by the probe, Nov 2026). |
-| Platned | html | Platned careers page; only vacancies marked (Sri Lanka) (verified by the probe, Nov 2026). |
+| Platned | html | Platned careers page; only vacancies marked (Sri Lanka). The probe read it, but the crawl preview got HTTP 403 (Nov 2026): if it keeps failing, the status page will show it. |
 | Rootcode | custom: rootcode | Careers page is filled from rootcode.ai/api/jobs; roles in Estonia are filtered out (verified Sep 2026). |
 | SenzMate | html | SenzMate careers page; the general 'Join Our Journey' and 'Internships' cards are not vacancies (verified by the probe, Nov 2026). |
 | Sri Lanka Telecom PLC | html | Openings are listed as headings on slt.lk/careers; applications go through careers.slt.lk (verified Sep 2026). |
