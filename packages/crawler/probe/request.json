@@ -1,7 +1,51 @@
 {
-  "note": "Run 10: real crawl preview with the new IT companies (probe/run-crawl marker); no probing or discovery.",
-  "run": 10,
+  "note": "Run 11: sources failing in production (Fortude, Zyner, Lanka IOC, WSO2, Platned).",
+  "run": 11,
   "targets": [],
-  "render": false,
-  "urls": []
+  "render": true,
+  "urls": [
+    {
+      "id": "zyner-rooster",
+      "url": "https://api.rooster.jobs/integration/graphql",
+      "method": "POST",
+      "contentType": "application/json",
+      "body": "{\"query\": \"query FetchCompanyJobs($id: Int!) { fetchOneCompanyPublic(id: $id) { name activeJobs { id title department location jobType } } }\", \"variables\": {\"id\": 152597}}",
+      "render": false
+    },
+    {
+      "id": "fortude-talentrecruit",
+      "url": "https://fortude.talentrecruit.com/",
+      "render": true
+    },
+    {
+      "id": "fortude-careers",
+      "url": "https://careers.fortude.co/",
+      "render": true
+    },
+    {
+      "id": "lankaioc-openings",
+      "url": "https://www.lankaioc.com/current-openings/",
+      "render": true
+    },
+    {
+      "id": "lankaioc-careers",
+      "url": "https://www.lankaioc.com/careers",
+      "render": true
+    },
+    {
+      "id": "wso2-careers",
+      "url": "https://wso2.com/careers/",
+      "render": true
+    },
+    {
+      "id": "platned-careers",
+      "url": "https://platned.com/careers",
+      "render": false
+    },
+    {
+      "id": "zyner-careers",
+      "url": "https://careers.zyner.io/",
+      "render": false
+    }
+  ]
 }
