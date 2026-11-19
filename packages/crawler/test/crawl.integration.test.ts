@@ -46,9 +46,37 @@ const ROUTES: Record<string, string> = {
   "https://careers.fortude.co/get-job-list.php?limit=10&offset=0": "fortude.json",
   "https://careers.fortude.co/get-job-list.php": "@fortude-empty",
   "https://career.ascentic.se/jobs.rss": "teamtailor-ascentic.xml",
+  "https://codimite.ai/careers/": "codimite.html",
+  "https://www.digiratina.com/careers/": "digiratina.html",
+  "https://gapstars.net/tech/jobs/": "gapstars.html",
+  "https://www.senzmate.com/careers/": "senzmate.html",
+  "https://www.xeynergy.com/careers/": "xeynergy.html",
+  "https://xitricon.com/careers/": "xitricon.html",
+  "https://api.lever.co/v0/postings/petdesk": "lever-petdesk.json",
+  "https://vitalhub.bamboohr.com/careers/list": "bamboohr-vitalhub.json",
+  "https://careers.cambio.lk/jobs.rss": "teamtailor-cambio.xml",
+  "https://codegen.co.uk/en/company/careers": "codegen.html",
+  "https://www.alliontechnologies.com/jobs": "allion.html",
+  "https://www.insighture.com/work-with-us": "insighture.html",
+  "https://www.amazoft.com/careers": "amazoft.html",
+  "https://www.boc.lk/careers": "boc.html",
+  "https://www.cms.lk/careers/": "cms.html",
+  "https://orysys.com/careers/": "orysys.html",
+  "https://platned.com/careers": "platned.html",
+  "https://www.tekgeeks.net/careers": "tekgeeks.html",
+  "https://www.beespoint.com/company/career.php": "beespoint.html",
+  "https://eyepax.com/wp-admin/admin-ajax.php": "eyepax-jobs.html",
+  "https://careers.tgtglobal.com/jobs.rss": "teamtailor-cambio.xml",
+  "https://boards-api.greenhouse.io/v1/boards/innodatainc/": "greenhouse-innodata.json",
+  "https://www.careers-page.com/api/v1.0/c/creately/": "manatal-creately.json",
+  "https://www.careers-page.com/api/v1.0/c/": "@manatal-empty",
+  "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,":
+    "oracle-mas.json",
+  "https://egmh.fa.us6.oraclecloud.com/": "@oracle-empty",
 };
 const CANNED: Record<string, string> = {
   "@empty": "<html><body></body></html>",
+  "@manatal-empty": JSON.stringify({ count: 0, next: null, results: [] }),
   "@oracle-empty": JSON.stringify({ items: [{ TotalJobsCount: 0, requisitionList: [] }] }),
   "@fortude-empty": JSON.stringify({ joblist: [], noOfTotalRecords: { totalCount: 10 } }),
 };
@@ -64,6 +92,12 @@ function fakeFetcher(opts: { down?: RegExp } = {}): PoliteFetcher {
     if (url.includes("myworkdaysite.com/wday/cxs/sysco/syscocareers/jobs")) {
       const offset = (JSON.parse(req.body ?? "{}") as { offset?: number }).offset ?? 0;
       const text = offset === 0 ? readFileSync(resolve(FIX, "workday-sysco.json"), "utf8") : JSON.stringify({ total: 20, jobPostings: [] });
+      return { status: 200, url, headers: {}, text, notModified: false, validators: {} };
+    }
+    if (url.includes("myworkdayjobs.com/wday/cxs/kaleris/kaleris_careers/jobs")) {
+      const offset = (JSON.parse(req.body ?? "{}") as { offset?: number }).offset ?? 0;
+      const text =
+        offset === 0 ? readFileSync(resolve(FIX, "workday-kaleris.json"), "utf8") : JSON.stringify({ total: 0, jobPostings: [] });
       return { status: 200, url, headers: {}, text, notModified: false, validators: {} };
     }
     if (url.includes("myworkdayjobs.com/wday/cxs/")) throw new Error("HTTP 404 (detail not in fixtures)");

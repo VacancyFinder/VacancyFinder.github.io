@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap">
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap" />
+    </noscript>
+    <!-- Japanese pages: draw JP characters with Noto Sans JP instead of a
+         random visitor-machine fallback (which often has Chinese letterforms).
+         Scoped to html[lang="ja"], which the JP Translator plugin sets on /jp/
+         pages via the language_attributes filter — EN pages are unaffected.
+         Latin letters still render with Inter (it sits first in the stack);
+         only CJK glyphs fall through to Noto Sans JP. -->
+    
+    <!-- PWA CONFIG START -->
+    <link rel="manifest" href="https://codimite.ai/wp-content/themes/twentynineteen-child/pwa-manifest.json">
+    <link rel="prefetch" href="https://codimite.ai/wp-content/themes/twentynineteen-child/pwa-manifest.json">
+    <meta name="theme-color" content="#D5E0EB">
+    <!-- PWA CONFIG END -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            
+    
+        
+
+    <!-- Imgae opimization -->
+    <!--<link rel="preload" href="/wp-content/uploads/bgmobilehero.webp" as="image" />-->
+    <!-- icons -->
+    <link rel="shortcut icon" href="/wp-content/uploads/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/wp-content/uploads/fav/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/wp-content/uploads/fav/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/wp-content/uploads/fav/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/wp-content/uploads/fav/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/wp-content/uploads/fav/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/wp-content/uploads/fav/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/wp-content/uploads/fav/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/wp-content/uploads/fav/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fav/apple-touch-icon-180x180.png" />
+    <!-- <title>Careers</title> -->
+    <!-- including the wordpress head -->
+    <!---->
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Careers at Codimite | Software Jobs in Sri Lanka</title>
+	<meta name="description" content="Join Codimite to explore software engineering jobs and IT careers in Sri Lanka. Grow in a supportive and innovative culture." />
+	<link rel="canonical" href="https://codimite.ai/careers/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Careers at Codimite | Software Jobs in Sri Lanka" />
+	<meta property="og:description" content="Join Codimite to explore software jobs, software engineering careers, and software engineering jobs in Sri Lanka. Thrive in a supportive, innovative culture." />
+	<meta property="og:url" content="https://codimite.ai/careers/" />
+	<meta property="og:site_name" content="Codimite" />
+	<meta property="article:publisher" content="https://www.facebook.com/codimite" />
+	<meta property="article:modified_time" content="2026-04-10T03:49:45+00:00" />
+	<meta property="og:image" content="https://codimite.ai/wp-content/uploads/Untitled-design.webp" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/webp" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Careers at Codimite | Software Jobs in Sri Lanka" />
+	<meta name="twitter:description" content="Join Codimite to explore software jobs, software engineering careers, and software engineering jobs in Sri Lanka. Thrive in a supportive, innovative culture." />
+	<meta name="twitter:image" content="https://codimite.ai/wp-content/uploads/Untitled-design.webp" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/codimite.ai\/careers\/","url":"https:\/\/codimite.ai\/careers\/","name":"Careers at Codimite | Software Jobs in Sri Lanka","isPartOf":{"@id":"https:\/\/codimite.ai\/#website"},"datePublished":"2024-02-27T05:30:58+00:00","dateModified":"2026-04-10T03:49:45+00:00","description":"Join Codimite to explore software engineering jobs and IT careers in Sri Lanka. Grow in a supportive and innovative culture.","breadcrumb":{"@id":"https:\/\/codimite.ai\/careers\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/codimite.ai\/careers\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/codimite.ai\/careers\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/codimite.ai\/"},{"@type":"ListItem","position":2,"name":"Careers"}]},{"@type":"WebSite","@id":"https:\/\/codimite.ai\/#website","url":"https:\/\/codimite.ai\/","name":"Codimite","description":"","publisher":{"@id":"https:\/\/codimite.ai\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/codimite.ai\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/codimite.ai\/#organization","name":"Codimite","url":"https:\/\/codimite.ai\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/codimite.ai\/#\/schema\/logo\/image\/","url":"https:\/\/codimite.ai\/wp-content\/uploads\/logo_codimite.webp","contentUrl":"https:\/\/codimite.ai\/wp-content\/uploads\/logo_codimite.webp","width":1000,"height":184,"caption":"Codimite"},"image":{"@id":"https:\/\/codimite.ai\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/codimite","https:\/\/www.linkedin.com\/company\/codimite\/"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="Codimite &raquo; Feed" href="https://codimite.ai/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://codimite.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodimite.ai%2Fcareers%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://codimite.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodimite.ai%2Fcareers%2F&#038;format=xml" />
+
+
+
+
+
+
+
+<link rel='stylesheet' id='contact-form-7-css' href='https://codimite.ai/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.2.5' media='all' />
+<link rel='stylesheet' id='walcf7-datepicker-css-css' href='https://codimite.ai/wp-content/plugins/date-time-picker-for-contact-form-7/assets/css/jquery.datetimepicker.min.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='plyr-css-css' href='https://codimite.ai/wp-content/plugins/easy-video-player/lib/plyr.css?ver=7.1.4' media='all' />
+<link rel='stylesheet' id='codimite-jp-switcher-css' href='https://codimite.ai/wp-content/plugins/codimite-jp-translator/assets/switcher.css?ver=1.4.2' media='all' />
+<link rel='stylesheet' id='twentynineteen-style-css' href='https://codimite.ai/wp-content/themes/twentynineteen-child/style.css?ver=1.5.52' media='all' />
+<link rel='stylesheet' id='twentynineteen-print-style-css' href='https://codimite.ai/wp-content/themes/twentynineteen/print.css?ver=1.5.52' media='print' />
+<link rel='stylesheet' id='child-style-css' href='https://codimite.ai/wp-content/themes/twentynineteen-child/style.css?ver=1.5.52' media='all' />
+
+
+
+
+
+<link rel="https://api.w.org/" href="https://codimite.ai/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://codimite.ai/wp-json/wp/v2/pages/17" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://codimite.ai/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.4" />
+<link rel='shortlink' href='https://codimite.ai/?p=17' />
+<link rel="preconnect" href="//code.tidio.co">    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://codimite.ai/careers/#webpage",
+        "url": "https://codimite.ai/careers/",
+        "name": "Careers at Codimite",
+        "description": "Explore software jobs, software engineering careers, and career opportunities at Codimite. Join a supportive, innovative culture with growth opportunities, flexible work options, and meaningful technology projects.",
+        "isPartOf": {
+            "@id": "https://codimite.ai/#website"
+        },
+        "publisher": {
+            "@id": "https://codimite.ai/#organization"
+        },
+        "about": {
+            "@id": "https://codimite.ai/#organization"
+        },
+        "mainEntity": {
+            "@id": "https://codimite.ai/careers/#career-opportunities"
+        },
+        "inLanguage": "en-US"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "@id": "https://codimite.ai/careers/#career-opportunities",
+        "name": "Codimite Career Opportunities",
+        "description": "A collection of career opportunities at Codimite across product and delivery, people and operations, design and UX, engineering, marketing, and other business functions.",
+        "url": "https://codimite.ai/careers/",
+        "numberOfItems": 19,
+        "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Product and Delivery Careers",
+                "description": "Career opportunities in business analysis, product delivery, and project coordination at Codimite."
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "People and Operations Careers",
+                "description": "Career opportunities in talent acquisition, administration, facilities, finance, and executive support at Codimite."
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Design and UX Careers",
+                "description": "Career opportunities in graphic design, user experience, and creative design roles at Codimite."
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Engineering Careers",
+                "description": "Career opportunities in software engineering, trainee engineering, development, quality, security, and technical delivery at Codimite."
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Marketing Careers",
+                "description": "Career opportunities in brand experience, marketing, content, communication, and growth-focused roles at Codimite."
+            }
+        ]
+    }
+    </script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!---->
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" id="child-style-css"
+            href="https://codimite.ai/wp-content/themes/twentynineteen-child/style.css?ver=1.5.52" media="all">
+        <!-- setting the scroll animation -->
+    
+
+    
+    
+    <!--
+        EN/JP language switcher — design is intentionally external to the
+        codimite-jp-translator plugin so visuals can change without touching
+        the plugin. The TRIGGER changes color based on .is-dark (set by JS
+        when scrolling within a configured dark-mode section); the DROPDOWN
+        always uses a light/white card. See the 
+
+
+    <!--
+        ===========================================================
+        CM Language Switcher behavior
+        ===========================================================
+        - Detects current language from URL (presence of /jp/ prefix).
+        - Sets the trigger flag/label + dropdown option hrefs accordingly.
+        - Toggles dropdown on trigger click; closes on outside click / Esc.
+        - Applies .is-dark on the switcher while scrolled INTO a configured
+          section on a configured page (e.g. home hero). Outside of those,
+          the light theme renders.
+
+        Edit CM_LANG_DARK_RULES below to add more pages/sections to the
+        dark-theme list. Each rule is { path, sections: [...selectors] }.
+        path is matched against the current URL with the /jp/ prefix
+        stripped, so a single '/' rule covers both '/' and '/jp/'.
+    -->
+    
+<section class="hero-section-rest hero-section--career pb-120">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-lg-6 content">
+                <h1 class="title jp" data-jp-key="car-hero-title">
+                    Build Bold. Dream Big.<br class="d-none d-lg-block" />
+                    Join Codimite.
+                </h1>
+                <p class="des jp" data-jp-key="car-hero-des">
+                    Meet the talented and passionate team who work tirelessly behind the scenes to bring our vision to
+                    life,
+                    ensuring excellence in everything we do. At Codimite, we believe in empowering people, fostering
+                    creativity, and building meaningful innovations. Join us and be part of shaping the future together.
+                </p>
+                <div class="btn-wrap">
+                    <a href="#openings-section" class="btn-fill jp" data-jp-key="car-hero-btn-1">View Openings</a>
+                    <a href="#lifeatcodimite" class="btn-outline jp" data-jp-key="car-hero-btn-2">Life at Codimite</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="img-wrap">
+                    <img src="/wp-content/uploads/car-hero-img-scaled.webp" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class="section section--img-gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 img-wrap">
+                <img src="/wp-content/uploads/award-1-scaled.webp" alt="" />
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 img-wrap">
+                <img src="/wp-content/uploads/award-2-scaled.webp" alt="" />
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 img-wrap">
+                <img src="/wp-content/uploads/award-3-scaled.webp" alt="" />
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 img-wrap">
+                <img src="/wp-content/uploads/award-4-scaled.webp" alt="" />
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 img-wrap">
+                <img src="/wp-content/uploads/award-5-scaled.webp" alt="" />
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 img-wrap">
+                <img src="/wp-content/uploads/award-6-scaled.webp" alt="" />
+            </div>
+        </div>
+    </div>
+</section>-->
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 img-wrap">
+                <img src="/wp-content/uploads/Codimite-Team-2026.webp" alt="" width="100%" height="auto" />
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class="section section--theproof">
+    <div class="container">
+        <div class="row">
+            <div class="tag">
+                <svg></svg>
+                <p>The Proof</p>
+            </div>
+            <h2 class="title">Why Clients and Teams Choose Codimite</h2>
+            <p class="des">
+                Don’t just take our word for it, here’s what employees and clients are saying about working with
+                <br class="d-none d-lg-block" />
+                Codimite:
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-4">
+                <div class="shadow-card inner--v2">
+                    <div class="img-wrap">
+                        <img src="/wp-content/uploads/google.webp" alt="Google Cloud Partner" class="left-img" />
+                    </div>
+                    <div class="shadowInnner--content">
+                        <h3 class="title">Rated 4.9/5.0</h3>
+                        <img src="/wp-content/uploads/rating.webp" alt="" class="rating" />
+                        <p class="des">More than 100 business use this</p>
+                        <img src="/wp-content/uploads/google-bottom.webp" alt="" class="img--cardBottom" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="shadow-card inner--v2">
+                    <div class="img-wrap">
+                        <img src="/wp-content/uploads/glassdoor.webp" alt="Google Cloud Partner" class="left-img" />
+                    </div>
+                    <div class="shadowInnner--content">
+                        <h3 class="title">Rated 4.9/5.0</h3>
+                        <img src="/wp-content/uploads/rating.webp" alt="" class="rating" />
+                        <p class="des">More than 100 business use this</p>
+                        <img src="/wp-content/uploads/glassdoor-bottom.webp" alt="" class="img--cardBottomv2" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="shadow-card inner--v2">
+                    <div class="img-wrap">
+                        <img src="/wp-content/uploads/facebook-1.webp" alt="Google Cloud Partner" class="left-img" />
+                    </div>
+                    <div class="shadowInnner--content">
+                        <h3 class="title">Rated 5.0/5.0</h3>
+                        <img src="/wp-content/uploads/rating.webp" alt="" class="rating" />
+                        <p class="des">More than 100 business use this</p>
+                        <img src="/wp-content/uploads/Facebook_Logo_.webp" alt="" class="img--cardBottomv2" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<section class="section section--ourDirection section--coreBelif">
+    <div class="container">
+        <div class="row">
+            <div class="tag">
+                <svg></svg>
+                <p class="jp" data-jp-key="car-why-tag">Our Promise</p>
+            </div>
+            <h2 class="title jp" data-jp-key="car-why-title">Why Join Us</h2>
+            <p class="des jp" data-jp-key="car-why-des">
+                At Codimite, we create an environment where you can grow, thrive, and make a real impact. With exciting
+                <br class="d-none d-lg-block" />
+                projects, supportive culture, and the right tools, it’s the perfect place to build your future.
+            </p>
+        </div>
+        <div class="row jusfify-content-center">
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+                <div class="line-card">
+                    <div class="img-wrap">
+                        <img src="/wp-content/uploads/up-new-imge-c.webp" alt="Why Join Us" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 content">
+                <div class="point">
+                    <div class="point-number">
+                        <p class="number">01</p>
+                    </div>
+                    <div>
+                        <h3 class="point-title jp" data-jp-key="car-why-1-title">Skills Over Stamps</h3>
+                        <p class="point-des jp" data-jp-key="car-why-1-des">We hire for talent and obsessed passion.
+                            Your ceiling is limitless with us.
+                        </p>
+                    </div>
+                </div>
+                <div class="point">
+                    <div class="point-number">
+                        <p class="number">02</p>
+                    </div>
+                    <div>
+                        <h3 class="point-title jp" data-jp-key="car-why-2-title">Real Stakes, Day One</h3>
+                        <p class="point-des jp" data-jp-key="car-why-2-des">Own enterprise-level solutions and drive
+                            global impact from the day you
+                            start.</p>
+                    </div>
+                </div>
+                <div class="point">
+                    <div class="point-number">
+                        <p class="number">03</p>
+                    </div>
+                    <div>
+                        <h3 class="point-title jp" data-jp-key="car-why-3-title">The Growth Forge</h3>
+                        <p class="point-des jp" data-jp-key="car-why-3-des">Level up fast. We provide the safety net,
+                            but you’re in the driver’s seat.
+                        </p>
+                    </div>
+                </div>
+                <div class="point">
+                    <div class="point-number">
+                        <p class="number">04</p>
+                    </div>
+                    <div>
+                        <h3 class="point-title jp" data-jp-key="car-why-4-title">Work How You Work Best</h3>
+                        <p class="point-des jp" data-jp-key="car-why-4-des">Results over corporate optics. Enjoy a flat,
+                            friendly culture with the
+                            flexibility to own your day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section--empower">
+    <div class="container">
+        <div class="row">
+            <div class="tag">
+                <svg></svg>
+                <p class="jp" data-jp-key="car-benefit-tag">What We Offer</p>
+            </div>
+            <h2 class="title jp" data-jp-key="car-benefit-title">Benefits and Perks</h2>
+            <p class="des jp" data-jp-key="car-benefit-des">
+                At Codimite, we invest in more than just your career we support your growth, health, and happiness with
+                <br class="d-none d-lg-block" />
+                benefits designed to help you thrive inside and outside of work.
+            </p>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <div class="shadow-card">
+                    <div class="svg-wrap">
+                        <svg></svg>
+                    </div>
+                    <h3 class="card-title jp" data-jp-key="car-benefit-1-title">Competitive Pay</h3>
+                    <p class="card-name jp" data-jp-key="car-benefit-1-des">Attractive salaries and bonuses.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <div class="shadow-card">
+                    <div class="svg-wrap">
+                        <svg></svg>
+                    </div>
+                    <h3 class="card-title jp" data-jp-key="car-benefit-2-title">Growth Opportunities</h3>
+                    <p class="card-name jp" data-jp-key="car-benefit-2-des">Budget for learning and development.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <div class="shadow-card">
+                    <div class="svg-wrap">
+                        <svg></svg>
+                    </div>
+                    <h3 class="card-title jp" data-jp-key="car-benefit-3-title">Health Coverage</h3>
+                    <p class="card-name jp" data-jp-key="car-benefit-3-des">Medical, dental, and vision plans.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <div class="shadow-card">
+                    <div class="svg-wrap">
+                        <svg></svg>
+                    </div>
+                    <h3 class="card-title jp" data-jp-key="car-benefit-4-title">Flexible Work</h3>
+                    <p class="card-name jp" data-jp-key="car-benefit-4-des">Remote and hybrid options.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <div class="shadow-card">
+                    <div class="svg-wrap">
+                        <svg></svg>
+                    </div>
+                    <h3 class="card-title jp" data-jp-key="car-benefit-5-title">Time Off</h3>
+                    <p class="card-name jp" data-jp-key="car-benefit-5-des">Generous vacation and personal leave.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <div class="shadow-card">
+                    <div class="svg-wrap">
+                        <svg></svg>
+                    </div>
+                    <h3 class="card-title jp" data-jp-key="car-benefit-6-title">Wellness Support</h3>
+                    <p class="card-name jp" data-jp-key="car-benefit-6-des">Fitness and mental health programs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section--ourVibes" id="lifeatcodimite">
+    <div class="container">
+        <div class="row">
+            <div class="tag">
+                <svg></svg>
+                <p class="jp" data-jp-key="car-life-tag">Our Culture</p>
+            </div>
+            <h2 class="title jp" data-jp-key="car-life-title">Life & Growth at Codimite</h2>
+            <p class="des jp" data-jp-key="car-life-des">
+                Get a closer look at our culture, people, and projects. From team moments to inspiring journeys, these
+                <br class="d-none d-lg-block" />
+                stories show what it’s really like to be part of Codimite.
+            </p>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-8">
+                <div class="main-video-wrap">
+                    <!-- Loading skeleton -->
+                    <div class="video-loading-skeleton" style="animation: none;">
+                        <div class="skeleton-content">
+                            <div class="loading-spinner">
+                                <div class="spinner"></div>
+                                <p class="jp" data-jp-key="car-life-loading">Loading video...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main video thumbnail -->
+                    <img src="/wp-content/uploads/awurudu-video-thumbnail-scaled.webp" alt="" class="video-thumbnail" />
+                    <!-- Main video element -->
+                    <video id="mainVideo" src="https://codimite.ai/wp-content/uploads/Codimite-aurudu-full-1st1mb.webm"
+                        preload="metadata" style="display: none"></video>
+                    <!-- Play button overlay -->
+                    <div class="main-play-button">
+                        <svg></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="more-video-wrap">
+                    <div class="top-title-section">
+                        <div class="right-side">
+                            <h3 class="playlist-title jp" data-jp-key="car-life-playlist-title">More Videos</h3>
+                            <p class="playlist-des jp" data-jp-key="car-life-playlist-des">See what’s happening inside
+                                Codimite.</p>
+                        </div>
+                        <div class="leftside">
+                            <div class="wrap">
+                                <svg></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-video-list-section">
+                        <div class="plylist">
+                            <div class="current-play-video video-content-wrap">
+                                <div class="playicon">
+                                    <svg></svg>
+                                </div>
+                                <div class="video-wrap">
+                                    <img src="/wp-content/uploads/awurudu-video-thumbnail-scaled.webp" alt="" />
+                                    <video
+                                        src="https://codimite.ai/wp-content/uploads/Codimite-aurudu-full-1st1mb.webm"></video>
+                                </div>
+                                <div class="video-details">
+                                    <h3 class="video-title jp" data-jp-key="car-video-1-title">
+                                        A Look Back | Codimite Soorya <br />
+                                        Mangalyaya
+                                    </h3>
+                                    <p class="video-issuse jp" data-jp-key="car-video-issuer">Codimite</p>
+                                </div>
+                            </div>
+                            <div class="video-content-wrap">
+                                <div class="playicon invisible">
+                                    <svg></svg>
+                                </div>
+                                <div class="video-wrap">
+                                    <img src="/wp-content/uploads/rehana-video-thumbnail-scaled.webp" alt="" />
+                                    <video src="https://codimite.ai/wp-content/uploads/rehana.webm"></video>
+                                </div>
+                                <div class="video-details">
+                                    <h3 class="video-title jp" data-jp-key="car-video-2-title">
+                                        People First |
+                                        The Philosophy <br /> Behind Codimite
+                                    </h3>
+                                    <p class="video-issuse jp" data-jp-key="car-video-issuer">Codimite</p>
+                                </div>
+                            </div>
+                            <div class="video-content-wrap">
+                                <div class="playicon invisible">
+                                    <svg></svg>
+                                </div>
+                                <div class="video-wrap">
+                                    <img src="/wp-content/uploads/anniversary-video-thumbnail-scaled.webp" alt="" />
+                                    <video src="https://codimite.ai/wp-content/uploads/anniversary-six.webm"></video>
+                                </div>
+                                <div class="video-details">
+                                    <h3 class="video-title jp" data-jp-key="car-video-3-title">
+                                        Anniversary Highlights | Codimite <br /> Celebrates 6 Years
+                                    </h3>
+                                    <p class="video-issuse jp" data-jp-key="car-video-issuer">Codimite</p>
+                                </div>
+                            </div>
+                            <div class="video-content-wrap">
+                                <div class="playicon invisible">
+                                    <svg></svg>
+                                </div>
+                                <div class="video-wrap">
+                                    <img src="/wp-content/uploads/playlist-2.webp" alt="" />
+                                    <video
+                                        src="https://codimite.ai/wp-content/uploads/Ruchini-BA-Story-_3-1.webm"></video>
+                                </div>
+                                <div class="video-details">
+                                    <h3 class="video-title jp" data-jp-key="car-video-4-title">
+                                        Life of a Business Analyst at <br />
+                                        Codimite
+                                    </h3>
+                                    <p class="video-issuse jp" data-jp-key="car-video-issuer">Codimite</p>
+                                </div>
+                            </div>
+                            <div class="video-content-wrap">
+                                <div class="playicon invisible">
+                                    <svg></svg>
+                                </div>
+                                <div class="video-wrap">
+                                    <img src="/wp-content/uploads/playlist-4.webp" alt="" />
+                                    <video
+                                        src="https://codimite.ai/wp-content/uploads/Chathuranga-Abeysinghe-02-1.webm"></video>
+                                </div>
+                                <div class="video-details">
+                                    <h3 class="video-title jp" data-jp-key="car-video-5-title">
+                                        Hon. Chathuranga Abeysinghe <br />
+                                        Visits Codimite
+                                    </h3>
+                                    <p class="video-issuse jp" data-jp-key="car-video-issuer">Codimite</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section social-media-cards">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="social-cards-wrap">
+                    <!-- Glassdoor -->
+                    <a href="https://www.glassdoor.com/Reviews/Codimite-Reviews-E4309520.htm" target="_blank"
+                        rel="noopener noreferrer" class="social-card social-card--glassdoor">
+                        <div class="social-card-icon">
+                            <img src="/wp-content/uploads/glassdoor-rating-img.webp" alt="Glassdoor" width="45"
+                                height="45" loading="lazy" />
+                        </div>
+                        <div class="social-card-body">
+                            <p class="social-card-name">Glassdoor</p>
+                            <img src="/wp-content/uploads/glassdoor-stars.webp" alt="4.9 out of 5 stars"
+                                class="social-card-stars" width="103" height="19" loading="lazy" />
+                            <span class="social-card-link jp" data-jp-key="car-social-glassdoor">View on
+                                Glassdoor</span>
+                        </div>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/company/codimite/" target="_blank" rel="noopener noreferrer"
+                        class="social-card">
+                        <div class="social-card-icon">
+                            <img src="/wp-content/uploads/linkedin-icon.webp" alt="LinkedIn" width="45" height="45"
+                                loading="lazy" />
+                        </div>
+                        <div class="social-card-body">
+                            <p class="social-card-name">LinkedIn</p>
+                            <span class="social-card-link jp" data-jp-key="car-social-visit">Visit Profile</span>
+                        </div>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/codimite/" target="_blank" rel="noopener noreferrer"
+                        class="social-card">
+                        <div class="social-card-icon">
+                            <img src="/wp-content/uploads/instagram-icon.webp" alt="Instagram" width="45" height="45"
+                                loading="lazy" />
+                        </div>
+                        <div class="social-card-body">
+                            <p class="social-card-name">Instagram</p>
+                            <span class="social-card-link jp" data-jp-key="car-social-visit">Visit Profile</span>
+                        </div>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@Codimite2020" target="_blank" rel="noopener noreferrer"
+                        class="social-card">
+                        <div class="social-card-icon social-card-icon--wide">
+                            <img src="/wp-content/uploads/youtube-icon.webp" alt="YouTube" width="64" height="45"
+                                loading="lazy" />
+                        </div>
+                        <div class="social-card-body">
+                            <p class="social-card-name">Youtube</p>
+                            <span class="social-card-link jp" data-jp-key="car-social-visit">Visit Profile</span>
+                        </div>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/codimite/" target="_blank" rel="noopener noreferrer"
+                        class="social-card">
+                        <div class="social-card-icon">
+                            <img src="/wp-content/uploads/facebook-icon.webp" alt="Facebook" width="45" height="45"
+                                loading="lazy" />
+                        </div>
+                        <div class="social-card-body">
+                            <p class="social-card-name">Facebook</p>
+                            <span class="social-card-link jp" data-jp-key="car-social-visit">Visit Profile</span>
+                        </div>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@codimite?_t=8qzsbmt8MLf&_r=1" target="_blank"
+                        rel="noopener noreferrer" class="social-card">
+                        <div class="social-card-icon">
+                            <img src="/wp-content/uploads/tiktok-icon.webp" alt="TikTok" width="45" height="45"
+                                loading="lazy" />
+                        </div>
+                        <div class="social-card-body">
+                            <p class="social-card-name">TikTok</p>
+                            <span class="social-card-link jp" data-jp-key="car-social-visit">Visit Profile</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Openings Section -->
+<section class="sec-type-120 section" id="openings-section">
+    <div class="svg-left">
+        <svg></svg>
+    </div>
+    <div class="svg-right">
+        <svg></svg>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="tag">
+                <svg></svg>
+                <p class="jp" data-jp-key="car-hiring-tag">We're Hiring</p>
+            </div>
+            <h2 class="title jp" data-jp-key="car-hiring-title">Come Build with Us</h2>
+            <p class="des col-10 jp" data-jp-key="car-hiring-des">
+                At Codimite, you'll find everyone from deep-tech developers to creative designers, all united by a
+                shared
+                obsession: figuring out what's next. We believe in welcoming diverse voices, supporting each other's
+                growth,
+                and learning something new every single day. We work hard to build things we're incredibly proud of, and
+                things our clients absolutely love.
+            </p>
+
+            <div class="col-12 col-xl-10">
+                <!-- Search + Location Filter Bar -->
+                <div class="openings-filter-bar">
+                    <div class="openings-search">
+                        <svg></svg>
+                        <input type="text" id="openings-search" placeholder="Search roles by title..."
+                            autocomplete="off" />
+                    </div>
+
+                    <div class="location-tabs">
+                        <button class="loc-tab active" data-location="all">All</button>
+                        <button class="loc-tab" data-location="onsite">
+                            <svg></svg>
+                            Onsite
+                        </button>
+                        <button class="loc-tab" data-location="hybrid">
+                            <svg></svg>
+                            Hybrid
+                        </button>
+                        <button class="loc-tab" data-location="remote">
+                            <svg></svg>
+                            Remote
+                        </button>
+                    </div>
+
+                    <div class="loc-all-dropdown" id="city-dropdown">
+                        <button class="loc-all-trigger" type="button">
+                            <span class="loc-all-inner">
+                                <svg></svg>
+                                <span id="city-label">All Locations <span
+                                        class="loc-total">(1)</span></span>
+                            </span>
+                            <svg></svg>
+                        </button>
+                        <div class="loc-city-menu" id="city-menu" hidden>
+                            <button class="loc-city-item active" data-city="all">All Locations</button>
+                                                            <button class="loc-city-item" data-city="Nugegoda">
+                                    Nugegoda (13)
+                                </button>
+                                                    </div>
+                    </div>
+                </div>
+
+                <!-- Category Icon Tabs -->
+                <div class="category-icon-tabs">
+                    <button class="cat-icon-btn active" data-category="all">
+                        <span class="cat-icon-wrap cat-all">
+                            <svg></svg>
+                        </span>
+                        <span class="cat-btn-label">All Openings</span>
+                        <span class="cat-btn-count">13</span>
+                    </button>
+
+                    <button class="cat-icon-btn" data-category="Product & Delivery" title="Product &amp; Delivery">
+                        <span class="cat-icon-wrap cat-product">
+                            <svg></svg>
+                        </span>
+                        <span class="cat-btn-label">Product &amp; Delivery</span>
+                        <span class="cat-btn-count">6</span>
+                    </button>
+
+                    <button class="cat-icon-btn" data-category="People & Operations" title="People &amp; Operations">
+                        <span class="cat-icon-wrap cat-people">
+                            <svg></svg>
+                        </span>
+                        <span class="cat-btn-label">People &amp; Operations</span>
+                        <span class="cat-btn-count">1</span>
+                    </button>
+
+                    <button class="cat-icon-btn" data-category="Design & UX" title="Design &amp; UX">
+                        <span class="cat-icon-wrap cat-design">
+                            <svg></svg>
+                        </span>
+                        <span class="cat-btn-label">Design &amp; UX</span>
+                        <span class="cat-btn-count">1</span>
+                    </button>
+
+                    <button class="cat-icon-btn" data-category="Engineering" title="Engineering">
+                        <span class="cat-icon-wrap cat-engineering">
+                            <svg></svg>
+                        </span>
+                        <span class="cat-btn-label">Engineering</span>
+                        <span class="cat-btn-count">2</span>
+                    </button>
+
+                    <button class="cat-icon-btn" data-category="Data Science & AI" title="Data Science &amp; AI">
+                        <span class="cat-icon-wrap cat-data">
+                            <svg></svg>
+                        </span>
+                        <span class="cat-btn-label">Data Science &amp; AI</span>
+                        <span class="cat-btn-count">1</span>
+                    </button>
+
+                    <button class="cat-icon-btn" data-category="Marketing" title="Marketing">
+                        <span class="cat-icon-wrap cat-marketing">
+                            <svg></svg>
+                        </span>
+                        <span class="cat-btn-label">Marketing</span>
+                        <span class="cat-btn-count">2</span>
+                    </button>
+
+                    <button class="cat-icon-btn" data-category="Other" title="Other">
+                        <span class="cat-icon-wrap cat-other">
+                            <svg></svg>
+                        </span>
+                        <span class="cat-btn-label">Other</span>
+                        <span class="cat-btn-count">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Job Listing Section -->
+            <div class="col-12 col-xl-10 joblist">
+                <div class="job-count-wrap">
+                    <svg></svg>
+                    <p class="job-count">13 Openings</p>
+                </div>
+
+                <div id="job-cards-container" data-version="b68670fea413b8d1ed098afa1b3bda5b">
+                                                                        <div class="job-cards" data-category="Product &amp; Delivery"
+                                data-location="onsite"
+                                data-title="sales development representative"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag product">
+                                        Product &amp; Delivery                                    </p>
+                                    <h3 class="job-title">Sales Development Representative</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Onsite</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/131" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Product &amp; Delivery"
+                                data-location="onsite"
+                                data-title="business development executive"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag product">
+                                        Product &amp; Delivery                                    </p>
+                                    <h3 class="job-title">Business Development Executive</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Onsite</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/120" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Product &amp; Delivery"
+                                data-location="hybrid"
+                                data-title="customer success associate"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag product">
+                                        Product &amp; Delivery                                    </p>
+                                    <h3 class="job-title">Customer Success Associate</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Hybrid</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/115" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Product &amp; Delivery"
+                                data-location="hybrid"
+                                data-title="trainee business analyst"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag product">
+                                        Product &amp; Delivery                                    </p>
+                                    <h3 class="job-title">Trainee Business Analyst</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Hybrid</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/97" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Product &amp; Delivery"
+                                data-location="hybrid"
+                                data-title="associate business analyst/ business analyst"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag product">
+                                        Product &amp; Delivery                                    </p>
+                                    <h3 class="job-title">Associate Business Analyst/ Business Analyst</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Hybrid</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/74" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Product &amp; Delivery"
+                                data-location="hybrid"
+                                data-title="intern - business analyst"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag product">
+                                        Product &amp; Delivery                                    </p>
+                                    <h3 class="job-title">Intern - Business Analyst</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Hybrid</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/26" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="People &amp; Operations"
+                                data-location="hybrid"
+                                data-title="codimite talent pool"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag people">
+                                        People &amp; Operations                                    </p>
+                                    <h3 class="job-title">Codimite Talent Pool</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Hybrid</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/46" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Design &amp; UX"
+                                data-location="hybrid"
+                                data-title="creative designer"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag design">
+                                        Design &amp; UX                                    </p>
+                                    <h3 class="job-title">Creative Designer</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Hybrid</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/126" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Engineering"
+                                data-location="hybrid"
+                                data-title="associate software engineer"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag engineering">
+                                        Engineering                                    </p>
+                                    <h3 class="job-title">Associate Software Engineer</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Hybrid</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/98" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Engineering"
+                                data-location="hybrid"
+                                data-title="intern/ trainee se"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag engineering">
+                                        Engineering                                    </p>
+                                    <h3 class="job-title">Intern/ Trainee SE</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Hybrid</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/43" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Data Science &amp; AI"
+                                data-location="hybrid"
+                                data-title="associate data analyst (6 month contract)"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag data">
+                                        Data Science &amp; AI                                    </p>
+                                    <h3 class="job-title">Associate Data Analyst (6 Month Contract)</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Contractor                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Hybrid</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/129" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Marketing"
+                                data-location="onsite"
+                                data-title="junior videographer &amp; content creator"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag marketing">
+                                        Marketing                                    </p>
+                                    <h3 class="job-title">Junior Videographer &amp; Content Creator</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Onsite</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/128" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                    <div class="job-cards" data-category="Marketing"
+                                data-location="onsite"
+                                data-title="video editing specialist"
+                                data-city="Nugegoda">
+                                <div class="job-details-content">
+                                    <p class="job-tag marketing">
+                                        Marketing                                    </p>
+                                    <h3 class="job-title">Video Editing Specialist</h3>
+                                    <div class="sub-details">
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="time">Full-Time                                            </p>
+                                        </div>
+                                        <div class="sub-warp">
+                                            <div class="svg">
+                                                <svg></svg>
+                                            </div>
+                                            <p class="location">Onsite</p>
+                                        </div>
+                                                                                    <div class="sub-warp">
+                                                <div class="svg">
+                                                    <svg></svg>
+                                                </div>
+                                                <p class="address">
+                                                    Nugegoda, Western                                                </p>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                <div class="appply-now-content">
+                                    <a href="https://codimitepvt.bamboohr.com/careers/127" class="apply-now-btn" target="_blank">Apply
+                                        Now</a>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────────────
+     Filter UI: search, location tabs, city dropdown, category tabs.
+     Cards are server-rendered above; this script only filters them.
+     ────────────────────────────────────────────────────────────────────── -->
+
+<!-- ──────────────────────────────────────────────────────────────────────
+     Deep-link to a category. Lets external links open the openings section
+     with a category pre-selected, e.g.:
+        ?category=product-and-delivery#openings-section   (recommended, standard)
+     Also tolerates the non-standard forms:
+        #openings-section?category=product-and-delivery
+        #openings-section?product-and-delivery
+        #product-and-delivery
+     Pure JS: it just clicks the matching category tab (reusing the existing
+     filter logic above) and smooth-scrolls to the section.
+     ────────────────────────────────────────────────────────────────────── -->
+
+<!-- ──────────────────────────────────────────────────────────────────────
+     Stale-While-Revalidate: ping REST endpoint after page load.
+     If BambooHR has changed since this page was rendered, do one silent reload
+     so the visitor sees the fresh job list. No-op if data unchanged or API down.
+     ────────────────────────────────────────────────────────────────────── -->
+
+
+
+    <section class="section section--insights">
+        <div class="container">
+            <div class="row">
+                <div class="tag">
+                    <svg></svg>
+                    <p class="jp" data-jp-key="car-ins-tag">Insights & Events</p>
+                </div>
+                <h2 class="title jp" data-jp-key="car-ins-title">Check out the Latest at Codimite</h2>
+                <p class="des jp" data-jp-key="car-ins-des">
+                    Stay updated with the latest news, events, and insights from Codimite. Discover how our team is
+                    innovating,
+                    collaborating, <br class="d-none d-lg-block" />
+                    and shaping the future of technology.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="blog-cards-wrap">
+                                                        <div class="blog-card">
+                                    <div class="blog-card-img-wrap">
+                                        <img src="https://codimite.ai/wp-content/uploads/Codimite-Binary-Beats-1024x542.webp" alt="Binary Beats: Rewinding the Bit and Dropping the Beat at Codimite"
+                                            class="blog-card-img" loading="lazy" />
+                                    </div>
+                                    <div class="blog-card-body">
+                                        <div class="blog-card-meta">
+                                            <span class="blog-card-author jp" data-jp-key="car-ins-author">Codimite Blog Team</span>
+                                            <span class="blog-card-divider"></span>
+                                            <svg></svg>
+                                            <span class="blog-card-date">July 08, 2026</span>
+                                            <span class="blog-card-divider"></span>
+                                            <svg></svg>
+                                            <span class="blog-card-read">5 <span class="jp-global"
+                                                    data-jp-key="blog-min-read">min read</span></span>
+                                        </div>
+                                        <h3 class="blog-card-title">Binary Beats: Rewinding the Bit and Dropping the Beat at Codimite</h3>
+                                        <a href="https://codimite.ai/blog/binary-beats-rewinding-the-bit-and-dropping-the-beat-at-codimite/" class="blog-card-link">
+                                            <span class="jp" data-jp-key="car-ins-read-more">Read More</span>
+                                            <svg></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                                                <div class="blog-card">
+                                    <div class="blog-card-img-wrap">
+                                        <img src="https://codimite.ai/wp-content/uploads/Codimite-Soorya-Mangalya-2026-1024x543.webp" alt="Celebrating Awurudu the Codimite Way: Highlights from Soorya Mangalya 2026"
+                                            class="blog-card-img" loading="lazy" />
+                                    </div>
+                                    <div class="blog-card-body">
+                                        <div class="blog-card-meta">
+                                            <span class="blog-card-author jp" data-jp-key="car-ins-author">Codimite Blog Team</span>
+                                            <span class="blog-card-divider"></span>
+                                            <svg></svg>
+                                            <span class="blog-card-date">July 02, 2026</span>
+                                            <span class="blog-card-divider"></span>
+                                            <svg></svg>
+                                            <span class="blog-card-read">5 <span class="jp-global"
+                                                    data-jp-key="blog-min-read">min read</span></span>
+                                        </div>
+                                        <h3 class="blog-card-title">Celebrating Awurudu the Codimite Way: Highlights from Soorya Mangalya 2026</h3>
+                                        <a href="https://codimite.ai/blog/celebrating-awurudu-the-codimite-way-highlights-from-soorya-mangalya-2026/" class="blog-card-link">
+                                            <span class="jp" data-jp-key="car-ins-read-more">Read More</span>
+                                            <svg></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                                                <div class="blog-card">
+                                    <div class="blog-card-img-wrap">
+                                        <img src="https://codimite.ai/wp-content/uploads/Untitled-design-1-42-1024x542.webp" alt="Codimite Premier League 2026: A Day of Teamwork &#038; Thrilling Cricket"
+                                            class="blog-card-img" loading="lazy" />
+                                    </div>
+                                    <div class="blog-card-body">
+                                        <div class="blog-card-meta">
+                                            <span class="blog-card-author jp" data-jp-key="car-ins-author">Codimite Blog Team</span>
+                                            <span class="blog-card-divider"></span>
+                                            <svg></svg>
+                                            <span class="blog-card-date">February 17, 2026</span>
+                                            <span class="blog-card-divider"></span>
+                                            <svg></svg>
+                                            <span class="blog-card-read">10 <span class="jp-global"
+                                                    data-jp-key="blog-min-read">min read</span></span>
+                                        </div>
+                                        <h3 class="blog-card-title">Codimite Premier League 2026: A Day of Teamwork &#038; Thrilling Cricket</h3>
+                                        <a href="https://codimite.ai/blog/codimite-premier-league-2026-a-day-of-teamwork-thrilling-cricket/" class="blog-card-link">
+                                            <span class="jp" data-jp-key="car-ins-read-more">Read More</span>
+                                            <svg></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="https://codimite.ai/blog/" class="btn-insights-more jp" data-jp-key="car-ins-explore"
+                        target="_blank" rel="noopener noreferrer">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="sec-type-119 section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="tag">
+                <svg></svg>
+                <p class="jp" data-jp-key="car-talent-tag">Expert Voices</p>
+            </div>
+            <h2 class="title jp" data-jp-key="car-talent-title">Our Talent</h2>
+            <p class="des col-10 jp" data-jp-key="car-talent-des">
+                Discover what our dedicated experts have to say about our company, its vision, and the
+                <br class="d-none d-lg-block" />
+                innovative solutions we bring to the table.
+            </p>
+        </div>
+        <div class="row testimonials justify-content-center">
+            <div class="col-3 d-none d-lg-block">
+                <div class="side-img-container">
+                    <img src="/wp-content/uploads/car_img-T-1.webp" alt="" class="t-img-1" />
+                    <img src="/wp-content/uploads/car_img-T-2.webp" alt="" class="t-img-2" />
+                    <img src="/wp-content/uploads/car_img-T-3.webp" alt="" class="t-img-3" />
+                </div>
+            </div>
+            <div class="col-12 col-md-10 col-lg-6">
+                <div class="testimonial-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="profile_icon">
+                                <img src="/wp-content/uploads/car_img-f-1.webp" alt="" class="t-img" />
+                            </div>
+                            <div class="swiper-slider-content">
+                                <div class="quotation-mark">
+                                    <img src="/wp-content/uploads/car_img-T-9.webp" alt="" class="quotation-mark-img" />
+                                </div>
+                                <p class="user-expriance-note jp" data-jp-key="car-talent-1-note">
+                                    Codimite fosters a passion for technology with freedom to explore, learn, and grow.
+                                    The
+                                    supportive, friendly environment makes it a perfect place to thrive—proud to be part
+                                    of Codimite!
+                                </p>
+                                <h4 class="user-name">Anuruddha Bandara</h4>
+                                <p class="position jp" data-jp-key="car-talent-1-pos">Senior Software Engineer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="profile_icon">
+                                <img src="/wp-content/uploads/car_img-f-3.webp" alt="" class="t-img" />
+                            </div>
+                            <div class="swiper-slider-content">
+                                <div class="quotation-mark">
+                                    <img src="/wp-content/uploads/car_img-T-9.webp" alt="" class="quotation-mark-img" />
+                                </div>
+                                <p class="user-expriance-note jp" data-jp-key="car-talent-2-note">
+                                    Codimite offers me a supportive, organized, and friendly work environment that
+                                    fosters my personal
+                                    and career growth. It's always a pleasure working with a highly coordinated team
+                                    dedicated to
+                                    delivering rewarding results.
+                                </p>
+                                <h4 class="user-name">Sachintha Madawala</h4>
+                                <p class="position jp" data-jp-key="car-talent-2-pos">Associate Lead Product & Security
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="profile_icon">
+                                <img src="/wp-content/uploads/car_img-f-4.webp" alt="" class="t-img" />
+                            </div>
+                            <div class="swiper-slider-content">
+                                <div class="quotation-mark">
+                                    <img src="/wp-content/uploads/car_img-T-9.webp" alt="" class="quotation-mark-img" />
+                                </div>
+                                <p class="user-expriance-note jp" data-jp-key="car-talent-3-note">
+                                    Codimite provided an exceptional launchpad for my software engineering career. I
+                                    gained valuable
+                                    exposure to diverse technologies and benefited immensely from the supportive and
+                                    positive work
+                                    culture. I am grateful for this invaluable experience.
+                                </p>
+                                <h4 class="user-name">Chanaka Ramanayake</h4>
+                                <p class="position jp" data-jp-key="car-talent-3-pos">Technical lead</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="profile_icon">
+                                <img src="/wp-content/uploads/car_img-f-5.webp" alt="" class="t-img" />
+                            </div>
+                            <div class="swiper-slider-content">
+                                <div class="quotation-mark">
+                                    <img src="/wp-content/uploads/car_img-T-9.webp" alt="" class="quotation-mark-img" />
+                                </div>
+                                <p class="user-expriance-note jp" data-jp-key="car-talent-4-note">
+                                    Codimite is a great place to learn and grow with all the amazing opportunities.
+                                    Enjoy every moment
+                                    of being here and making memories with my colleagues. Looking forward for more
+                                    exciting days with
+                                    new challenges and experiences.
+                                </p>
+                                <h4 class="user-name">Methma Weerasekara</h4>
+                                <p class="position jp" data-jp-key="car-talent-4-pos">Product Engineering Lead</p>
+                            </div>
+                        </div>
+
+                        <!--<div class="swiper-slide">
+                            <div class="profile_icon">
+                                <img src="/wp-content/uploads/car_img-f-7.webp" alt="" class="t-img" />
+                            </div>
+                            <div class="swiper-slider-content">
+                                <div class="quotation-mark">
+                                    <img src="/wp-content/uploads/car_img-T-9.webp" alt="" class="quotation-mark-img" />
+                                </div>
+                                <p class="user-expriance-note">
+                                    I joined Codimite as a trainee Business Analyst. I was the youngest in the company
+                                    at the time,
+                                    but Codimite trusted me and gave me the opportunity to handle major projects.
+                                    Codimite is more
+                                    than just a company—it’s a place where I’ve been empowered to shape my career.
+                                </p>
+                                <h4 class="user-name">Samadhi Pieris</h4>
+                                <p class="position">Codimite</p>
+                            </div>
+                        </div>-->
+                        <div class="swiper-slide">
+                            <div class="profile_icon">
+                                <img src="/wp-content/uploads/car_img-f-2.webp" alt="" class="t-img" />
+                            </div>
+                            <div class="quotation-mark">
+                                <img src="/wp-content/uploads/car_img-T-9.webp" alt="" class="quotation-mark-img" />
+                            </div>
+                            <div class="swiper-slider-content">
+                                <p class="user-expriance-note jp" data-jp-key="car-talent-5-note">
+                                    As a QA Engineer at Codimite, I've experienced incredible growth in a short time,
+                                    thanks to the
+                                    company's opportunities and support. The culture here focuses on helping individuals
+                                    improve their
+                                    knowledge, creating an environment where people can truly grow
+                                </p>
+                                <h4 class="user-name">Sachini Nimasha</h4>
+                                <p class="position jp" data-jp-key="car-talent-5-pos">Senior Quality Assurance Engineer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dot-set">
+                        <svg></svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+                <div class="side-img-container">
+                    <img src="/wp-content/uploads/car_img-T-4.webp" alt="" class="t-img-4" />
+                    <img src="/wp-content/uploads/car_img-T-5.webp" alt="" class="t-img-5" />
+                    <img src="/wp-content/uploads/car_img-T-6.webp" alt="" class="t-img-6" />
+                    <img src="/wp-content/uploads/car_img-T-7.webp" alt="" class="t-img-7" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!-- ===== SITE FOOTER ===== -->
+<footer class="site-footer">
+    <div class="container">
+        <!-- Top: brand + certs -->
+        <div class="site-footer__top">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <a href="/" class="site-footer__logo-link">
+                        <img src="/wp-content/uploads/nav_logo.webp" alt="Codimite" width="200" height="37"
+                            class="site-footer__logo" />
+                    </a>
+                    <p class="site-footer__desc jp-global" data-jp-key="footer-description">
+                        Our expert teams of consultants, architects, and solutions engineers are ready to help with
+                        your bold
+                        ambitions, provide you with more information on our services, and answer your technical
+                        questions.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="site-footer__certs">
+                        <img src="/wp-content/uploads/soc-2-compliant.webp" alt="SOC 2 Compliant"
+                            class="site-footer__cert-badge jp-global" data-jp-key="footer-cert-soc2-alt" />
+                        <img src="/wp-content/uploads/GDPR-compliant.webp" alt="GDPR Compliant"
+                            class="site-footer__cert-badge jp-global" data-jp-key="footer-cert-hipaa-alt" />
+                        <img src="/wp-content/uploads/iso-27001-certified.webp" alt="ISO 27001 Certified"
+                            class="site-footer__cert-badge jp-global" data-jp-key="footer-cert-iso-alt" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="site-footer__divider" />
+
+        <!-- Navigation columns -->
+        <div class="site-footer__nav">
+            <div class="row">
+                <!-- Company -->
+                <div class="col-6 col-md-3 site-footer__col mb-4 mb-md-0">
+                    <h3 class="site-footer__col-heading jp-global" data-jp-key="footer-col-company">Company</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="/company/" class="jp-global" data-jp-key="nav-item-company-about-title">About
+                                Codimite</a></li>
+                        <li><a href="/careers/" class="jp-global" data-jp-key="nav-menu-careers">Careers</a></li>
+                        <li><a href="/partners/" class="jp-global"
+                                data-jp-key="nav-item-company-partners-title">Partners</a></li>
+                        <li><a href="/case-studies/" class="jp-global" data-jp-key="nav-item-resources-cases-title">Case
+                                Studies</a></li>
+                        <li><a href="/blog/" class="jp-global" data-jp-key="footer-link-blog">Blog</a></li>
+                        <li><a href="/contact-us/" class="jp-global" data-jp-key="footer-link-contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="col-6 col-md-3 site-footer__col mb-4 mb-md-0">
+                    <h3 class="site-footer__col-heading jp-global" data-jp-key="footer-col-services">Services</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="/solution/cloud-modernization/" class="jp-global"
+                                data-jp-key="nav-item-svc-cloud-title">Cloud Modernization</a></li>
+                        <li><a href="/progressive-web-applications/" class="jp-global"
+                                data-jp-key="nav-item-svc-pwa-title">Progressive Web Applications</a></li>
+                        <li><a href="/offshore-development/" class="jp-global"
+                                data-jp-key="nav-item-svc-offshore-title">Offshore Development</a></li>
+                        <li><a href="/industrial-solutions/" class="jp-global"
+                                data-jp-key="nav-item-svc-industrial-title">Industrial Solutions</a></li>
+                        <li><a href="/automations/workflow-automation-services-codimite/" class="jp-global"
+                                data-jp-key="nav-item-workflow-auto-title">Agentic Workflow
+                                Automation</a></li>
+                        <li><a href="/ai-augmented-software-development-at-codimite/" class="jp-global"
+                                data-jp-key="nav-item-ai-aug-dev-title">AI-Augmented Development</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Solutions -->
+                <div class="col-6 col-md-3 site-footer__col mb-0">
+                    <h3 class="site-footer__col-heading jp-global" data-jp-key="footer-col-solutions">Solutions</h3>
+                    <ul class="site-footer__links">
+                        <li>
+                            <a href="/enterprise-google-migration-services/chrome-os-migration-integration/"
+                                class="jp-global" data-jp-key="nav-item-sol-chromeos-title">ChromeOS
+                                Services</a>
+                        </li>
+                        <li>
+                            <a href="/enterprise-google-migration-services/chrome-enterprise-premium-migration/"
+                                class="jp-global" data-jp-key="nav-item-sol-chrome-prem-title">Chrome
+                                Enterprise Migration</a>
+                        </li>
+                        <li><a href="/zoom-services/" class="jp-global" data-jp-key="nav-item-sol-zoom-pro-title">Zoom
+                                Professional Services</a></li>
+                        <li><a href="/zoom-migration-services/" class="jp-global"
+                                data-jp-key="nav-item-sol-zoom-migration-title">Zoom Migration Services</a></li>
+                        <li><a href="/n8n/" class="jp-global" data-jp-key="nav-group-n8n-services">n8n Services</a></li>
+                        <li><a href="/our-products/" class="jp-global" data-jp-key="nav-item-sol-products-title">Our
+                                Products &amp; Accelerators</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="col-6 col-md-3 site-footer__col mb-0">
+                    <h3 class="site-footer__col-heading jp-global" data-jp-key="footer-col-contact">Contact</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="/contact-us/" class="jp-global" data-jp-key="footer-link-general-message">General
+                                Message</a></li>
+                        <li><a href="/careers/" class="jp-global" data-jp-key="footer-link-job-vacancy">Job Vacancy</a>
+                        </li>
+                        <li><a href="/contact-us/" class="jp-global" data-jp-key="footer-link-start-project">Start a
+                                Project</a></li>
+                        <li><a href="/partners/" class="jp-global" data-jp-key="footer-link-become-partner">Become a
+                                Partner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="site-footer__divider" />
+
+        <!-- Office locations -->
+        <div class="site-footer__offices">
+            <div class="row">
+                <div class="col-12 col-md-4 border-bottom-0 pb-md-0 mb-md-0">
+                    <div class="site-footer__office ">
+                        <div class="site-footer__office-hd">
+                            <span class="site-footer__office-flag" aria-hidden="true">
+                                <svg></svg>
+                            </span>
+                            <strong class="site-footer__office-name jp-global"
+                                data-jp-key="footer-office-singapore">Singapore</strong>
+                        </div>
+                        <p class="site-footer__office-addr jp-global" data-jp-key="footer-office-singapore-addr">
+                            CODIMITE PTE. LTD.<br />10 Anson Road,<br />#22-02 International
+                            Plaza,<br />Singapore 079903
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 border-bottom-0 pb-md-0 mb-md-0">
+                    <div class="site-footer__office ">
+                        <div class="site-footer__office-hd">
+                            <span class="site-footer__office-flag" aria-hidden="true">
+                                <svg></svg>
+                            </span>
+                            <strong class="site-footer__office-name jp-global" data-jp-key="footer-office-srilanka">Sri
+                                Lanka</strong>
+                        </div>
+                        <p class="site-footer__office-addr jp-global" data-jp-key="footer-office-srilanka-addr">
+                            18, Sri Soratha Mawatha,<br />High Level Road, Nugegoda,<br />+94 112 804
+                            951<br />info@codimite.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 border-bottom-0 pb-md-0 mb-md-0">
+                    <div class="site-footer__office">
+                        <div class="site-footer__office-hd">
+                            <span class="site-footer__office-flag" aria-hidden="true">
+                                <svg></svg>
+                            </span>
+                            <strong class="site-footer__office-name jp-global" data-jp-key="footer-office-us">United
+                                States</strong>
+                        </div>
+                        <p class="site-footer__office-addr jp-global" data-jp-key="footer-office-us-addr">224 W 35th St
+                            Ste 500 PMB,<br />New York<br />NY 10001
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end container -->
+
+    <!-- Bottom bar -->
+    <div class="site-footer__bottom">
+        <div class="container">
+            <div class="site-footer__bottom-inner">
+                <div class="site-footer__legal">
+                    <span class="jp-global me-0 me-lg-2" data-jp-key="footer-copyright">&copy; 2026 CODIMITE PTE LTD ALL
+                        RIGHTS RESERVED.</span>
+                    <a href="/privacy-policy/" class="jp-global" data-jp-key="footer-privacy-policy">PRIVACY POLICY</a>
+                    <span class="site-footer__legal-pipe" aria-hidden="true">|</span>
+                    <a href="/terms-of-service/" class="jp-global" data-jp-key="footer-terms-of-use">TERMS OF
+                        SERVICE</a>
+                    <span class="site-footer__legal-pipe" aria-hidden="true">|</span>
+                    <!-- reopens the cookie preferences modal so consent can be withdrawn at any time -->
+                    <a href="#cookie-settings" class="jp-global" data-jp-key="footer-cookie-settings"
+                        data-cc-open="1">COOKIE SETTINGS</a>
+                </div>
+                <div class="site-footer__social">
+                    <a href="https://www.facebook.com/codimite/" class="site-footer__social-link" aria-label="Facebook">
+                        <svg></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/codimite/" class="site-footer__social-link"
+                        aria-label="LinkedIn">
+                        <svg></svg>
+                    </a>
+                    <a href="https://www.instagram.com/codimite/" class="site-footer__social-link"
+                        aria-label="Instagram">
+                        <svg></svg>
+                    </a>
+                    <a href="https://twitter.com/codimite/" class="site-footer__social-link" aria-label="Twitter">
+                        <svg></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@codimite?_t=8qzsbmt8MLf&_r=1" class="site-footer__social-link"
+                        aria-label="TikTok">
+                        <svg></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@Codimite2020/" class="site-footer__social-link"
+                        aria-label="YouTube">
+                        <svg></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end bottom bar -->
+</footer>
+<!-- ==========================================================================
+     PWA POPUPS - DISABLED
+     The "Install CODIMITE" card, the "send you notifications" popup and their
+     dark overlay are switched off. The markup is kept below, commented out,
+     so it can be restored by removing this comment and the closing one after
+     #install-wrap, plus the small stub script that follows it.
+     ==========================================================================
+<div class="cus-overlay-1" id="cus-overlay-1" onclick="closeOpenedModel()" style="display:none;"></div>
+<div class="permission-wrap" id="permission-wrap">
+    <div class="top">
+        <img src="/wp-content/uploads/app_icons/android/android-launchericon-512-512.webp" loading="lazy" alt="">
+        <div class="t1">"CODIMITE" Would Like To Send You Notifications</div>
+        <div class="t2">Our notifications keep you updated with the latest articles and news. Would you like to
+            receive these notifications and stay connected ? </div>
+    </div>
+    <div class="bottom">
+        <div class="left"
+            onclick="setDeniedTime();document.getElementById('permission-wrap').classList.add('closed');document.getElementById('cus-overlay-1').classList.add('close');document.getElementById('cus-overlay-1').style.display = 'none';">
+            Not Now
+        </div>
+        <div class="right"
+            onclick="requestNotificationPermission();document.getElementById('permission-wrap').classList.add('closed');document.getElementById('cus-overlay-1').classList.add('close');document.getElementById('cus-overlay-1').style.display = 'none';">
+            Yes Please</div>
+    </div>
+
+</div>
+<div class="install-wrap " id="install-wrap" style="display:none;">
+    <div class="top"
+        onclick="document.getElementById('install-wrap').classList.add('opened');document.getElementById('cus-overlay-1').classList.add('show');document.getElementById('cus-overlay-1').style.display = 'block';openedModel='install';">
+
+        <div class="left d-flex align-items-center">
+            <div>
+                <svg></svg>
+            </div>
+            Install CODIMITE ?
+        </div>
+        <div class="right">
+            <svg></svg>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="s1">
+            <img src="/wp-content/uploads/app_icons/android/android-launchericon-512-512.webp" alt="">
+            <div class="text d-flex align-items-center">
+                <div>
+                    <div class="t1">CODIMITE PWA Application</div>
+                    <div class="t2">
+                        Install CODIMITE on your device to easily access it anytime, even offline. No App Stores,
+                        Receive
+                        notifications and read new articles before anyone else.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s2" id="appleSafariSection" style="display:none;">
+            <div>
+                <div class="wrap">
+                    <svg></svg>
+                    1. Tap the <strong>&nbsp;Share&nbsp;</strong> icon in Safari
+                </div>
+                <div class="wrap">
+                    <svg></svg>
+                    2. Scroll down and tap <strong>&nbsp;Add to Home
+                        Screen&nbsp;</strong>
+                </div>
+                <div class="wrap">
+                    <svg></svg>
+                    3. Tap <strong>&nbsp;Add&nbsp;</strong> to confirm
+                </div>
+            </div>
+        </div>
+        <div class="s2" id="androidChromeSection" style="display:none;">
+            <div>
+                <div class="wrap">
+                    <svg></svg>
+                    1. Tap the <strong>&nbsp;Menu&nbsp;</strong> icon in
+                    the top right
+                    corner
+                </div>
+                <div class="wrap">
+                    <svg></svg>
+                    2. Tap<strong>&nbsp;Add to Home Screen&nbsp;</strong> or
+                    <strong>&nbsp;Install</strong>
+                </div>
+            </div>
+        </div>
+        <div class="s2" id="iosChromeSection" style="display:none;">
+            <div>
+                <div class="wrap">
+                    <svg></svg>
+                    1. Tap the <strong>&nbsp;Menu&nbsp;</strong> icon in
+                    the top right
+                    corner
+                </div>
+                <div class="wrap">
+                    <svg></svg>
+                    2. Tap<strong>&nbsp;Add to Home Screen&nbsp;</strong> or
+                    <strong>&nbsp;Install</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+END OF DISABLED PWA POPUPS -->
+
+
+
+<!-- -->
+
+<!-- ==========================================================================
+     COOKIE CONSENT - markup only
+
+     Logic   js/consent.js          linked in <head> by header.php
+     Styles  css/xxl.css + lg / md / sm / xs
+
+     Three panels. consent.js decides which one appears:
+       #cc-card    ask-first card, shown in the EEA / UK / Switzerland
+       #cc-notice  opt-out notice, shown everywhere else
+       #cc-modal   preferences dialog, reachable from either panel and from
+                   the COOKIE SETTINGS link in the legal bar
+
+     Buttons are wired by data-cc-action, footer links by data-cc-open, so this
+     markup can be restyled or moved without touching the JavaScript.
+
+     Categories: Essential (always on) | Analytics | Advertising
+     Advertising is opt-in in every region, including the opt-out ones.
+     ========================================================================== -->
+<div class="cc-card cc-hidden" id="cc-card" role="region" aria-label="Cookie notice" style="display: none !important;">
+    <p class="cc-card__title jp-global" data-jp-key="cookie-card-title">We value your privacy</p>
+    <p class="cc-card__text jp-global" data-jp-key="cookie-card-text">
+        Codimite uses essential cookies to keep our website secure and functional. With your consent, we also use
+        analytics and marketing cookies to improve your experience and understand website usage.
+    </p>
+    <p class="cc-card__text jp-global" data-jp-key="cookie-card-text-2">
+        You can accept all cookies, reject all cookies, or manage your preferences. Learn more in our
+        <a href="/privacy-policy/">Privacy Policy</a>.
+    </p>
+    <div class="cc-actions">
+        <button type="button" class="cc-btn cc-btn--accept jp-global" data-jp-key="cookie-btn-accept"
+            data-cc-action="accept">Accept All</button>
+        <button type="button" class="cc-btn cc-btn--reject jp-global" data-jp-key="cookie-btn-reject"
+            data-cc-action="reject">Reject All</button>
+        <button type="button" class="cc-btn cc-btn--link jp-global" data-jp-key="cookie-btn-prefs"
+            data-cc-action="prefs">Manage Preferences</button>
+    </div>
+</div>
+
+<!-- Opt-out notice, shown only outside the EEA / UK / Switzerland.
+     By the time this appears analytics is already running, so it is a notice
+     and not a request. Deliberately quieter than the card above: no title, no
+     pill buttons, link styled actions. There is no decision to make here, so
+     it must not look like a blocking prompt. Dismissing it means "carry on",
+     which is exactly what the opt-out model intends. -->
+<div class="cc-notice cc-hidden" id="cc-notice" role="region" aria-label="Cookie notice"
+    style="display: none !important;">
+    <p class="cc-notice__text jp-global" data-jp-key="cookie-notice-text">
+        We use cookies to understand how our website is used. You can
+        <button type="button" class="cc-notice__link" data-cc-action="optout">opt out</button> or
+        <button type="button" class="cc-notice__link" data-cc-action="prefs">manage preferences</button>.
+        See our <a href="/privacy-policy/">Privacy Policy</a>.
+    </p>
+    <button type="button" class="cc-notice__close" data-cc-action="dismiss" aria-label="Close cookie notice">
+        <svg></svg>
+    </button>
+</div>
+
+<div class="cc-modal cc-hidden" id="cc-modal" role="dialog" aria-modal="true" aria-labelledby="cc-modal-title"
+    style="display: none !important;">
+    <div class="cc-modal__box">
+        <div class="cc-modal__head">
+            <p class="cc-modal__title jp-global" id="cc-modal-title" data-jp-key="cookie-modal-title">Cookie
+                Preferences</p>
+            <p class="cc-modal__text jp-global" data-jp-key="cookie-modal-text">
+                Choose which cookie categories you allow. Strictly necessary cookies are always active because they
+                are required for the website to function securely.
+            </p>
+        </div>
+
+        <!-- Only this list scrolls. Keeping the scroll on an inner element means
+             the scrollbar can never cut through the box's rounded corners, and
+             the title and buttons stay visible while scrolling. -->
+        <div class="cc-modal__body">
+
+            <!-- Essential: locked on, no consent required -->
+            <div class="cc-opt">
+                <div class="cc-opt__body">
+                    <p class="cc-opt__name">
+                        <span class="jp-global" data-jp-key="cookie-cat-essential">Strictly Necessary Cookies</span>
+                        <span class="cc-opt__always jp-global" data-jp-key="cookie-always-on">Always Active</span>
+                    </p>
+                    <p class="cc-opt__des jp-global" data-jp-key="cookie-cat-essential-des">
+                        Required for essential website functions, form security, and remembering your cookie
+                        preferences.
+                    </p>
+                </div>
+                <label class="cc-switch">
+                    <input type="checkbox" checked disabled aria-label="Essential cookies, always on">
+                    <span class="cc-switch__track"></span>
+                </label>
+            </div>
+
+            <!-- Analytics: GA4 + GTM + page journey / UTM -->
+            <div class="cc-opt">
+                <div class="cc-opt__body">
+                    <p class="cc-opt__name">
+                        <span class="jp-global" data-jp-key="cookie-cat-analytics">Performance Cookies</span>
+                    </p>
+                    <p class="cc-opt__des jp-global" data-jp-key="cookie-cat-analytics-des">
+                        Help us understand how visitors use the website, measure page and campaign performance, and
+                        improve our content and user experience.
+                    </p>
+                </div>
+                <label class="cc-switch">
+                    <input type="checkbox" id="cc-opt-analytics" aria-label="Analytics cookies">
+                    <span class="cc-switch__track"></span>
+                </label>
+            </div>
+
+            <!-- Advertising: LinkedIn Insight Tag -->
+            <div class="cc-opt">
+                <div class="cc-opt__body">
+                    <p class="cc-opt__name">
+                        <span class="jp-global" data-jp-key="cookie-cat-ads">Advertising Cookies</span>
+                    </p>
+                    <p class="cc-opt__des jp-global" data-jp-key="cookie-cat-ads-des">
+                        Help us measure marketing campaigns and show more relevant advertisements on third-party
+                        platforms. These cookies may share information about your visit with our advertising partners.
+                    </p>
+                </div>
+                <label class="cc-switch">
+                    <input type="checkbox" id="cc-opt-ads" aria-label="Advertising cookies">
+                    <span class="cc-switch__track"></span>
+                </label>
+            </div>
+
+        </div>
+        <!-- end scrollable list -->
+
+        <!-- Distinct jp keys from the card buttons on purpose: the wording here is
+             longer ("... Cookies"), and reusing the card keys would make the
+             translation of one overwrite the other. -->
+        <div class="cc-modal__foot">
+            <button type="button" class="cc-btn cc-btn--reject jp-global" data-jp-key="cookie-modal-btn-reject"
+                data-cc-action="reject">Reject All Cookies</button>
+            <button type="button" class="cc-btn cc-btn--reject jp-global" data-jp-key="cookie-modal-btn-save"
+                data-cc-action="save">Save My Choices</button>
+            <button type="button" class="cc-btn cc-btn--accept jp-global" data-jp-key="cookie-modal-btn-accept"
+                data-cc-action="accept">Accept All Cookies</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

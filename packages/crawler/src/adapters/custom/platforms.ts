@@ -180,3 +180,51 @@ export const fortude: AdapterFn = async (ctx) => {
   }
   return { jobs };
 };
+
+// ---- BambooHR careers site (VitalHub: vitalhub.bamboohr.com/careers) -------------------------------------
+export function parseBambooHr(body: unknown, subdomain: string): RawJob[] {
+  return arr((body as Record<string, unknown>)?.result)
+    .filter((j) => str(j.jobOpeningName))
+    .map((j) => {
+      const loc = (j.location ?? {}) as Record<string, unknown>;
+      const ats = (j.atsLocation ?? {}) as Record<string, unknown>;
+      const place = [str(loc.city) ?? str(ats.city), str(loc.state) ?? str(ats.state), str(ats.country)].filter(Boolean).join(", ");
+      return {
+        title: str(j.jobOpeningName)!,
+        url: `https://${subdomain}.bamboohr.com/careers/${String(j.id ?? "")}`,
+        location: place || null,
+        department: str(j.departmentLabel),
+        employmentType: str(j.employmentStatusLabel),
+        workplace: j.isRemote === true ? "Remote" : null,
+      };
+    });
+}
+
+export const bambooHr: AdapterFn = async (ctx) => {
+  const subdomain = requireString(ctx.config, "subdomain"); // {subdomain}.bamboohr.com
+  return { jobs: parseBambooHr(await json(ctx, `https://${subdomain}.bamboohr.com/careers/list`), subdomain) };
+};
+
+// ---- Manatal career page (careers-page.com/{slug}: Creately, Axiata Digital Labs, MillenniumIT ESP) -----
+export function parseManatal(body: unknown, slug: string): RawJob[] {
+  return arr((body as Record<string, unknown>)?.results)
+    .filter((j) => str(j.position_name) && str(j.hash))
+    .map((j) => ({
+      title: str(j.position_name)!,
+      url: `https://www.careers-page.com/${slug}/job/${str(j.hash)!}`,
+      location: str(j.location_display) ?? ([str(j.city), str(j.country)].filter(Boolean).join(", ") || null),
+      description: str(j.description),
+    }));
+}
+
+export const manatal: AdapterFn = async (ctx) => {
+  const slug = requireString(ctx.config, "slug"); // careers-page.com/{slug}
+  const jobs: RawJob[] = [];
+  let url: string | null = `https://www.careers-page.com/api/v1.0/c/${encodeURIComponent(slug)}/jobs/`;
+  for (let page = 0; url && page < 10; page++) {
+    const body = (await json(ctx, url)) as Record<string, unknown>;
+    jobs.push(...parseManatal(body, slug));
+    url = str(body.next);
+  }
+  return { jobs };
+};

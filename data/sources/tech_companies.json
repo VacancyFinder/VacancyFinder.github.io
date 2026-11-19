@@ -1,30 +1,764 @@
 [
-  {"name": "Rootcode", "website": "https://rootcode.io", "careersUrl": null},
-  {"name": "Ascentic", "website": "https://ascentic.se", "careersUrl": "https://career.ascentic.se/jobs", "notes": "Swedish-owned, Colombo office. Careers site career.ascentic.se (verified by web search, Sep 2026)."},
-  {"name": "99x", "website": "https://99x.io", "careersUrl": null},
-  {"name": "IFS", "website": "https://www.ifs.com", "careersUrl": null, "notes": "Global site; need the Sri Lanka-filtered listing."},
-  {"name": "WSO2", "website": "https://wso2.com", "careersUrl": null},
-  {"name": "Sysco LABS", "website": "https://syscolabs.lk", "careersUrl": null},
-  {"name": "LSEG", "website": "https://www.lseg.com", "careersUrl": null, "notes": "Global careers portal; filter to Sri Lanka. Millennium IT is now part of LSEG — check whether they share one listing."},
-  {"name": "Millennium IT", "website": null, "careersUrl": null, "notes": "Now part of LSEG; roles are listed on the LSEG careers portal. NOT the same as Millennium Housing Developers PLC (CSE)."},
-  {"name": "Dialog Axiata", "website": "https://www.dialog.lk", "careersUrl": null},
-  {"name": "PickMe", "website": "https://pickme.lk", "careersUrl": null},
-  {"name": "Surge Global", "website": "https://surge.global", "careersUrl": null},
-  {"name": "Creative Software", "website": "https://www.creativesoftware.com", "careersUrl": null},
-  {"name": "Zyner.io", "website": "https://zyner.io", "careersUrl": null},
-  {"name": "Zegates", "website": "https://zegates.com", "careersUrl": null, "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."},
-  {"name": "Flat Rock Technology", "website": "https://www.flatrocktech.com", "careersUrl": null},
-  {"name": "Hype Invention", "website": "https://hypeinvention.com", "careersUrl": null, "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."},
-  {"name": "Atlas Labs", "website": "https://atlaslabs.com.au", "careersUrl": null, "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."},
-  {"name": "Cryptoworth", "website": "https://www.cryptoworth.com", "careersUrl": null, "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs and LinkedIn (third-party, not crawled in v1)."},
-  {"name": "Zone24x7", "website": "https://www.zone24x7.com", "careersUrl": null},
-  {"name": "Twist Digital", "website": null, "careersUrl": null, "notes": "Website not found (twistdigital.io is an unrelated agency). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."},
-  {"name": "Swivel Group", "website": "https://swivelgroup.com.au", "careersUrl": "https://careers.smartrecruiters.com/SwivelGroup", "notes": "Australian HQ with Sri Lanka centre. Careers on SmartRecruiters (verified by web search, Sep 2026)."},
-  {"name": "Snapdrum", "website": "https://snapdrum.com", "careersUrl": null, "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."},
-  {"name": "CodeGen", "website": "https://codegen.co.uk", "careersUrl": "https://codegen.co.uk/careers/", "notes": "CodeGen International, Colombo. Careers page verified by web search (Sep 2026)."},
-  {"name": "Pearson", "website": "https://www.pearson.com", "careersUrl": null, "notes": "Global careers portal; filter to Sri Lanka (Pearson Lanka)."},
-  {"name": "Fortude", "website": "https://fortude.co", "careersUrl": null},
-  {"name": "ZILLIONe", "website": "https://www.zillione.com", "careersUrl": "https://www.zillione.com/careers", "notes": "Careers page verified by web search (Sep 2026)."},
-  {"name": "Octave", "website": "https://www.keells.com/octave/", "careersUrl": null, "notes": "John Keells Group data & AI unit. Roles are listed on the John Keells careers site with 'Octave' in the title, so they are attributed from that crawl."},
-  {"name": "HCLTech", "website": "https://www.hcltech.com", "careersUrl": null, "notes": "Global careers portal; filter to Sri Lanka."}
+  {
+    "name": "Rootcode",
+    "website": "https://rootcode.io",
+    "careersUrl": null
+  },
+  {
+    "name": "Ascentic",
+    "website": "https://ascentic.se",
+    "careersUrl": "https://career.ascentic.se/jobs",
+    "notes": "Swedish-owned, Colombo office. Careers site career.ascentic.se (verified by web search, Sep 2026)."
+  },
+  {
+    "name": "99x",
+    "website": "https://99x.io",
+    "careersUrl": null
+  },
+  {
+    "name": "IFS",
+    "website": "https://www.ifs.com",
+    "careersUrl": null,
+    "notes": "Global site; need the Sri Lanka-filtered listing."
+  },
+  {
+    "name": "WSO2",
+    "website": "https://wso2.com",
+    "careersUrl": null
+  },
+  {
+    "name": "Sysco LABS",
+    "website": "https://syscolabs.lk",
+    "careersUrl": null
+  },
+  {
+    "name": "LSEG",
+    "website": "https://www.lseg.com",
+    "careersUrl": null,
+    "notes": "Global careers portal; filter to Sri Lanka. Millennium IT is now part of LSEG — check whether they share one listing."
+  },
+  {
+    "name": "Millennium IT",
+    "website": null,
+    "careersUrl": null,
+    "notes": "Now part of LSEG; roles are listed on the LSEG careers portal. NOT the same as Millennium Housing Developers PLC (CSE)."
+  },
+  {
+    "name": "Dialog Axiata",
+    "website": "https://www.dialog.lk",
+    "careersUrl": null
+  },
+  {
+    "name": "PickMe",
+    "website": "https://pickme.lk",
+    "careersUrl": null
+  },
+  {
+    "name": "Surge Global",
+    "website": "https://surge.global",
+    "careersUrl": null
+  },
+  {
+    "name": "Creative Software",
+    "website": "https://www.creativesoftware.com",
+    "careersUrl": null
+  },
+  {
+    "name": "Zyner.io",
+    "website": "https://zyner.io",
+    "careersUrl": null
+  },
+  {
+    "name": "Zegates",
+    "website": "https://zegates.com",
+    "careersUrl": null,
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
+  },
+  {
+    "name": "Flat Rock Technology",
+    "website": "https://www.flatrocktech.com",
+    "careersUrl": null
+  },
+  {
+    "name": "Hype Invention",
+    "website": "https://hypeinvention.com",
+    "careersUrl": null,
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
+  },
+  {
+    "name": "Atlas Labs",
+    "website": "https://atlaslabs.com.au",
+    "careersUrl": null,
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
+  },
+  {
+    "name": "Cryptoworth",
+    "website": "https://www.cryptoworth.com",
+    "careersUrl": null,
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs and LinkedIn (third-party, not crawled in v1)."
+  },
+  {
+    "name": "Zone24x7",
+    "website": "https://www.zone24x7.com",
+    "careersUrl": null
+  },
+  {
+    "name": "Twist Digital",
+    "website": null,
+    "careersUrl": null,
+    "notes": "Website not found (twistdigital.io is an unrelated agency). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
+  },
+  {
+    "name": "Swivel Group",
+    "website": "https://swivelgroup.com.au",
+    "careersUrl": "https://careers.smartrecruiters.com/SwivelGroup",
+    "notes": "Australian HQ with Sri Lanka centre. Careers on SmartRecruiters (verified by web search, Sep 2026)."
+  },
+  {
+    "name": "Snapdrum",
+    "website": "https://snapdrum.com",
+    "careersUrl": null,
+    "notes": "Website verified by web search (Sep 2026). Posts vacancies on rooster.jobs (third-party board, not crawled in v1)."
+  },
+  {
+    "name": "CodeGen",
+    "website": "https://codegen.co.uk",
+    "careersUrl": "https://codegen.co.uk/careers/",
+    "notes": "CodeGen International, Colombo. Careers page verified by web search (Sep 2026)."
+  },
+  {
+    "name": "Pearson",
+    "website": "https://www.pearson.com",
+    "careersUrl": null,
+    "notes": "Global careers portal; filter to Sri Lanka (Pearson Lanka)."
+  },
+  {
+    "name": "Fortude",
+    "website": "https://fortude.co",
+    "careersUrl": null
+  },
+  {
+    "name": "ZILLIONe",
+    "website": "https://www.zillione.com",
+    "careersUrl": "https://www.zillione.com/careers",
+    "notes": "Careers page verified by web search (Sep 2026)."
+  },
+  {
+    "name": "Octave",
+    "website": "https://www.keells.com/octave/",
+    "careersUrl": null,
+    "notes": "John Keells Group data & AI unit. Roles are listed on the John Keells careers site with 'Octave' in the title, so they are attributed from that crawl."
+  },
+  {
+    "name": "HCLTech",
+    "website": "https://www.hcltech.com",
+    "careersUrl": null,
+    "notes": "Global careers portal; filter to Sri Lanka."
+  },
+  {
+    "name": "Virtusa",
+    "website": "https://www.virtusa.com",
+    "careersUrl": "https://www.virtusa.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Global digital engineering & IT services | Major Colombo delivery centre."
+  },
+  {
+    "name": "MillenniumIT ESP",
+    "website": "https://www.mitesp.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Enterprise solutions (infra, cloud, security, apps) | Check LinkedIn for openings."
+  },
+  {
+    "name": "Axiata Digital Labs",
+    "website": "https://www.axiatadigitallabs.com",
+    "careersUrl": "https://www.axiatadigitallabs.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Telco BSS/OSS & fintech (verify)."
+  },
+  {
+    "name": "Wiley",
+    "website": "https://www.wiley.com",
+    "careersUrl": "https://www.wiley.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Captive - Publishing & learning product engineering."
+  },
+  {
+    "name": "Cambio Software Engineering",
+    "website": "https://www.cambio.se",
+    "careersUrl": "https://careers.cambio.lk/",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Captive - Healthcare IT / EMR."
+  },
+  {
+    "name": "Allion Technologies",
+    "website": "https://www.alliontechnologies.com",
+    "careersUrl": "https://www.alliontechnologies.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Offshore development & dedicated teams."
+  },
+  {
+    "name": "Arimac",
+    "website": "https://www.arimac.lk",
+    "careersUrl": "https://www.arimac.lk/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital products, fintech & immersive tech."
+  },
+  {
+    "name": "Calcey Technologies",
+    "website": "https://calcey.com",
+    "careersUrl": "https://calcey.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Full-stack product development."
+  },
+  {
+    "name": "EFutures",
+    "website": "https://www.efutures.com",
+    "careersUrl": "https://www.efutures.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Bespoke software, data & AI."
+  },
+  {
+    "name": "Epic Lanka",
+    "website": "https://www.epiclanka.com",
+    "careersUrl": "https://www.epiclanka.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Banking and payments software."
+  },
+  {
+    "name": "Gapstars",
+    "website": "https://www.gapstars.net",
+    "careersUrl": "https://www.gapstars.net/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Embedded offshore engineering teams."
+  },
+  {
+    "name": "Informatics International",
+    "website": "https://www.informaticsi.com",
+    "careersUrl": "https://www.informaticsi.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Insurance, billing and border software."
+  },
+  {
+    "name": "Aeturnum",
+    "website": "https://www.aeturnum.com",
+    "careersUrl": "https://www.aeturnum.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software for startups and ISVs."
+  },
+  {
+    "name": "Embla Software Innovation",
+    "website": "https://www.embla.no",
+    "careersUrl": "https://www.embla.no/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Extended office software teams."
+  },
+  {
+    "name": "Wavenet",
+    "website": "https://www.wavenet.lk",
+    "careersUrl": "https://www.wavenet.lk/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Telecom customer-experience software."
+  },
+  {
+    "name": "Insighture",
+    "website": "https://www.insighture.com",
+    "careersUrl": "https://www.insighture.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Cloud consulting & app modernisation."
+  },
+  {
+    "name": "Fcode Labs",
+    "website": "https://www.fcodelabs.com",
+    "careersUrl": "https://www.fcodelabs.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Product engineering, AI & cloud."
+  },
+  {
+    "name": "SenzMate",
+    "website": "https://www.senzmate.com",
+    "careersUrl": "https://www.senzmate.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AIoT platforms and IoT solutions."
+  },
+  {
+    "name": "Xeynergy",
+    "website": "https://www.xeynergy.com",
+    "careersUrl": "https://www.xeynergy.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Staff augmentation & dedicated teams."
+  },
+  {
+    "name": "Bileeta",
+    "website": "https://www.bileeta.com",
+    "careersUrl": "https://www.bileeta.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Cloud ERP and eLMIS."
+  },
+  {
+    "name": "Creately",
+    "website": "https://creately.com",
+    "careersUrl": "https://creately.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Diagramming and visual collaboration."
+  },
+  {
+    "name": "Eyepax IT Consulting",
+    "website": "https://www.eyepax.com",
+    "careersUrl": "https://www.eyepax.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Custom software and team-as-a-service."
+  },
+  {
+    "name": "OrangeHRM",
+    "website": "https://www.orangehrm.com",
+    "careersUrl": "https://www.orangehrm.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): HR management software."
+  },
+  {
+    "name": "Yaala Labs",
+    "website": "https://www.yaalalabs.com",
+    "careersUrl": "https://www.yaalalabs.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Capital markets trading platforms."
+  },
+  {
+    "name": "Digiratina Technology Solutions",
+    "website": "https://www.digiratina.com",
+    "careersUrl": "https://www.digiratina.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Product engineering and custom AI."
+  },
+  {
+    "name": "Sanmark Solutions",
+    "website": "https://www.sanmark.com",
+    "careersUrl": "https://www.sanmark.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Odoo ERP and staff augmentation."
+  },
+  {
+    "name": "TIQRI",
+    "website": "https://www.tiqri.com",
+    "careersUrl": "https://www.tiqri.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Offshore software, AI and cloud."
+  },
+  {
+    "name": "Xiteb",
+    "website": "https://www.xiteb.com",
+    "careersUrl": "https://www.xiteb.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Custom software and mobile apps."
+  },
+  {
+    "name": "3axislabs",
+    "website": "https://www.3axislabs.com",
+    "careersUrl": "https://www.3axislabs.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI apps and full-stack (Jaffna)."
+  },
+  {
+    "name": "Intervest Software Technologies",
+    "website": "https://www.intervest.lk",
+    "careersUrl": "https://www.intervest.lk/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software development & IT support."
+  },
+  {
+    "name": "Persistent Systems",
+    "website": "https://www.persistent.com",
+    "careersUrl": "https://www.persistent.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital engineering (Colombo presence)."
+  },
+  {
+    "name": "Innodata",
+    "website": "https://innodata.com",
+    "careersUrl": "https://innodata.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Content & data services."
+  },
+  {
+    "name": "Nagarro",
+    "website": "https://www.nagarro.com",
+    "careersUrl": "https://www.nagarro.com/en/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital engineering services."
+  },
+  {
+    "name": "Deloitte Sri Lanka",
+    "website": "https://www2.deloitte.com/lk",
+    "careersUrl": "https://www2.deloitte.com/lk/en/careers.html",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Consulting & technology."
+  },
+  {
+    "name": "KPMG Sri Lanka",
+    "website": "https://home.kpmg/lk",
+    "careersUrl": "https://home.kpmg/lk/en/home/careers.html",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Consulting (IT services)."
+  },
+  {
+    "name": "WNS",
+    "website": "https://www.wns.com",
+    "careersUrl": "https://www.wns.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): BPM / KPO."
+  },
+  {
+    "name": "SimCentric Technologies",
+    "website": "https://www.simcentric.com",
+    "careersUrl": "https://www.simcentric.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Simulation & training tech."
+  },
+  {
+    "name": "Covalent Systems",
+    "website": "https://www.covalentsystems.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Check site / LinkedIn."
+  },
+  {
+    "name": "Just In Time Technologies",
+    "website": "https://www.jit.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Check site / LinkedIn for careers."
+  },
+  {
+    "name": "Blue Lotus 360",
+    "website": "https://www.bluelotus360.com",
+    "careersUrl": "https://www.bluelotus360.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): ERP / business software."
+  },
+  {
+    "name": "VitalHub",
+    "website": "https://www.vitalhub.com",
+    "careersUrl": "https://www.vitalhub.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Healthcare software (offshore)."
+  },
+  {
+    "name": "GrubTech",
+    "website": "https://www.grubtech.com",
+    "careersUrl": "https://www.grubtech.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Restaurant / cloud kitchen SaaS."
+  },
+  {
+    "name": "ACECAM",
+    "website": "https://www.acecamtech.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services & consultants."
+  },
+  {
+    "name": "Synergen Health",
+    "website": "https://www.synergenhealth.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Healthcare BPO / KPO."
+  },
+  {
+    "name": "MAS Holdings",
+    "website": "https://www.masholdings.com",
+    "careersUrl": "https://www.masholdings.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Apparel tech / digital."
+  },
+  {
+    "name": "LankaClear",
+    "website": "https://www.lankaclear.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Payments infrastructure."
+  },
+  {
+    "name": "Affno Asia Pacific",
+    "website": "https://www.affno.com",
+    "careersUrl": "https://www.affno.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software & digital solutions."
+  },
+  {
+    "name": "Codimite",
+    "website": "https://www.codimite.com",
+    "careersUrl": "https://www.codimite.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software development."
+  },
+  {
+    "name": "BISTEC Global Services",
+    "website": "https://www.bistecglobal.com",
+    "careersUrl": "https://www.bistecglobal.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services."
+  },
+  {
+    "name": "DirectFN",
+    "website": "https://www.directfn.com",
+    "careersUrl": "https://www.directfn.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Financial tech / trading platforms."
+  },
+  {
+    "name": "Xitricon",
+    "website": "https://www.xitricon.com",
+    "careersUrl": "https://www.xitricon.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IFS / ERP consulting & engineering."
+  },
+  {
+    "name": "Digital Turtles",
+    "website": "https://www.digitalturtles.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI / ML (check LinkedIn)."
+  },
+  {
+    "name": "Prime One Global",
+    "website": "https://www.primeoneglobal.com",
+    "careersUrl": "https://www.primeoneglobal.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software & digital services."
+  },
+  {
+    "name": "Avenir IT",
+    "website": "https://www.avenirit.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT solutions."
+  },
+  {
+    "name": "CMS",
+    "website": "https://www.cms.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT / security services."
+  },
+  {
+    "name": "Orysys Limited",
+    "website": "https://www.orysys.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software services."
+  },
+  {
+    "name": "Hatchyard",
+    "website": "https://www.hatchyard.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Mobile / software."
+  },
+  {
+    "name": "Algospring",
+    "website": "https://www.algospring.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software engineering."
+  },
+  {
+    "name": "Sygnisys",
+    "website": "https://www.sygnisys.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software development."
+  },
+  {
+    "name": "Zitech Solutions",
+    "website": "https://www.zitech.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT solutions."
+  },
+  {
+    "name": "Pentagon I Runway",
+    "website": "https://www.pentagonirunway.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital / tech."
+  },
+  {
+    "name": "Era Biz Solutions",
+    "website": "https://www.erabiz.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Digital services."
+  },
+  {
+    "name": "Platned",
+    "website": "https://www.platned.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI / platform engineering."
+  },
+  {
+    "name": "Asipiya Soft Solution",
+    "website": "https://www.asipiya.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software solutions."
+  },
+  {
+    "name": "Hexacorp",
+    "website": "https://www.hexacorp.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software engineering."
+  },
+  {
+    "name": "H Connect International",
+    "website": "https://www.hconnect.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services."
+  },
+  {
+    "name": "Bank of Ceylon",
+    "website": "https://www.boc.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Bank IT subsidiary."
+  },
+  {
+    "name": "Innobot",
+    "website": "https://www.innobot.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Automation / RPA."
+  },
+  {
+    "name": "TGT Global",
+    "website": "https://www.tgtglobal.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Security / tech."
+  },
+  {
+    "name": "Moksh Tech",
+    "website": "https://www.mokshtech.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Cloud services."
+  },
+  {
+    "name": "PetDesk",
+    "website": "https://www.petdesk.com",
+    "careersUrl": "https://www.petdesk.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Product company with SL presence."
+  },
+  {
+    "name": "Kaleris",
+    "website": "https://www.kaleris.com",
+    "careersUrl": "https://www.kaleris.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Supply chain tech."
+  },
+  {
+    "name": "Amazoft",
+    "website": "https://www.amazoft.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software."
+  },
+  {
+    "name": "BeesPoint",
+    "website": "https://www.beespoint.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT company."
+  },
+  {
+    "name": "Ceyentra Technologies",
+    "website": "https://www.ceyentra.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI-driven product engineering."
+  },
+  {
+    "name": "Loons Lab",
+    "website": "https://www.loonslab.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Government & healthcare digitalisation."
+  },
+  {
+    "name": "Nimi",
+    "website": "https://www.nimi.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Fintech software."
+  },
+  {
+    "name": "PragICTS",
+    "website": "https://www.pragicts.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software with IT operations."
+  },
+  {
+    "name": "Purple Software",
+    "website": "https://www.purplesoftware.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Custom software and AI agents."
+  },
+  {
+    "name": "TekGeeks",
+    "website": "https://www.tekgeeks.net",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Web apps and workflow automation."
+  },
+  {
+    "name": "Inova IT Systems",
+    "website": "https://www.inova.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Enterprise and e-government software."
+  },
+  {
+    "name": "Mitra Innovations",
+    "website": "https://www.mitra.ai",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): AI consultancy & legacy modernisation."
+  },
+  {
+    "name": "Northwood Consulting",
+    "website": "https://www.northwood.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Consulting (check LinkedIn)."
+  },
+  {
+    "name": "Azend Technologies",
+    "website": "https://www.azendtech.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software / tech."
+  },
+  {
+    "name": "Orel IT",
+    "website": "https://www.orel.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT services."
+  },
+  {
+    "name": "Global Frontiers",
+    "website": "https://www.globalfrontiers.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Tech services."
+  },
+  {
+    "name": "NCINGA",
+    "website": "https://www.ncinga.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Software / digital."
+  },
+  {
+    "name": "Sterling BPO Solutions",
+    "website": "https://www.sterlingbpo.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): BPO."
+  },
+  {
+    "name": "ADA",
+    "website": "https://www.ada-asia.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Customer engagement solutions."
+  },
+  {
+    "name": "Intrepid Travel",
+    "website": "https://www.intrepidgroup.travel",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Travel tech captive-style."
+  },
+  {
+    "name": "BIMA Lanka",
+    "website": "https://www.bima.co",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Healthcare / insurance tech."
+  },
+  {
+    "name": "Meta",
+    "website": "https://www.meta.com",
+    "careersUrl": "https://www.metacareers.com",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Limited local hiring; global careers."
+  },
+  {
+    "name": "HSBC Electronic Data Processing Lanka",
+    "website": "https://www.hsbc.com",
+    "careersUrl": "https://www.hsbc.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Banking GSC / captive."
+  },
+  {
+    "name": "Standard Chartered",
+    "website": "https://www.sc.com",
+    "careersUrl": "https://www.sc.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Banking shared services."
+  },
+  {
+    "name": "Acuity Knowledge Partners",
+    "website": "https://www.acuitykp.com",
+    "careersUrl": "https://www.acuitykp.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Knowledge services / research."
+  },
+  {
+    "name": "Moody's",
+    "website": "https://www.moodys.com",
+    "careersUrl": "https://www.moodys.com/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Research / analytics captive."
+  },
+  {
+    "name": "Mobitel",
+    "website": "https://www.mobitel.lk",
+    "careersUrl": "https://www.mobitel.lk/careers",
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Telco IT."
+  },
+  {
+    "name": "Ants Creation",
+    "website": "https://www.antscreation.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Creative / digital."
+  },
+  {
+    "name": "Asia Pacific Technology Systems",
+    "website": "https://www.apts.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): IT systems."
+  },
+  {
+    "name": "Chakray Consulting",
+    "website": "https://www.chakray.com",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Integration / middleware consulting."
+  },
+  {
+    "name": "Toyota Lanka",
+    "website": "https://www.toyota.lk",
+    "careersUrl": null,
+    "notes": "From the Sri Lanka IT companies careers list (Nov 2026): Corporate IT."
+  }
 ]

@@ -291,3 +291,155 @@ describe("round-2 sources (portals and platforms)", () => {
     expect(res.jobs[0]!.url).toMatch(/^https:\/\/wd5\.myworkdaysite\.com\/recruiting\/sysco\/syscocareers\/job\//);
   });
 });
+
+describe("Sri Lanka IT companies list (Nov 2026)", () => {
+  it("Codimite: cards with BambooHR apply links", async () => {
+    const { jobs } = await crawl("codimite", { "https://codimite.ai/careers/": "codimite.html" });
+    expect(jobs).toHaveLength(13);
+    expect(jobs[0]).toMatch(
+      /^Sales Development Representative \| Nugegoda \| unspecified \| full-time \| onsite \|.*codimitepvt\.bamboohr\.com\/careers\/131$/,
+    );
+  });
+
+  it("Digiratina: type and location from each card", async () => {
+    const { jobs } = await crawl("digiratina-technology-solutions", { "https://www.digiratina.com/careers/": "digiratina.html" });
+    expect(jobs).toHaveLength(12);
+    expect(jobs[0]).toMatch(/^Intern Sales and Marketing \| Sri Lanka \| intern \| internship \|/);
+  });
+
+  it("Gapstars: Colombo roles", async () => {
+    const { jobs } = await crawl("gapstars", { "https://gapstars.net/tech/jobs/": "gapstars.html" });
+    expect(jobs).toHaveLength(10);
+    expect(jobs.every((j) => j.includes("| Colombo |"))).toBe(true);
+  });
+
+  it("SenzMate: general interest cards are not vacancies", async () => {
+    const { jobs } = await crawl("senzmate", { "https://www.senzmate.com/careers/": "senzmate.html" });
+    expect(jobs).toHaveLength(24);
+    expect(jobs.some((j) => /^(Join Our Journey|Internships) \|/.test(j))).toBe(false);
+  });
+
+  it("Xeynergy: accxis360 job cards", async () => {
+    const { jobs } = await crawl("xeynergy", { "https://www.xeynergy.com/careers/": "xeynergy.html" });
+    expect(jobs).toHaveLength(6);
+    expect(jobs.find((j) => j.startsWith("Intern - Software Engineering"))).toMatch(/\| Colombo \| intern \| internship \| hybrid \|/);
+  });
+
+  it("Xitricon: only roles that include Sri Lanka", async () => {
+    const { raw, jobs } = await crawl("xitricon", { "https://xitricon.com/careers/": "xitricon.html" });
+    expect(raw).toHaveLength(6);
+    expect(jobs).toHaveLength(5);
+    expect(jobs.some((j) => j.startsWith("ERP Consulting Manager"))).toBe(false); // United States only
+  });
+
+  it("PetDesk Lever: Colombo roles only", async () => {
+    const { raw, jobs } = await crawl("petdesk", { "https://api.lever.co/v0/postings/petdesk": "lever-petdesk.json" });
+    expect(raw).toHaveLength(8);
+    expect(jobs).toEqual([expect.stringMatching(/^Technical Lead - Data Engineering \| Colombo \| lead \|/)]);
+  });
+
+  it("VitalHub BambooHR: Colombo roles only", async () => {
+    const { raw, jobs } = await crawl("vitalhub", { "https://vitalhub.bamboohr.com/careers/list": "bamboohr-vitalhub.json" });
+    expect(raw).toHaveLength(6);
+    expect(jobs).toHaveLength(3);
+    expect(jobs.every((j) => /\| Colombo \|.*vitalhub\.bamboohr\.com\/careers\/\d+$/.test(j))).toBe(true);
+  });
+
+  it("Kaleris Workday: Colombo roles only", async () => {
+    const c = company("kaleris");
+    const fn = resolveAdapter(c.adapter, c.adapterConfig);
+    const res = await fn({
+      fetcher: fakeFetcher({
+        "https://kaleris.wd501.myworkdayjobs.com/wday/cxs/kaleris/kaleris_careers/jobs": (req) =>
+          ((JSON.parse(req.body ?? "{}") as { offset?: number }).offset ?? 0) === 0
+            ? readFileSync(resolve(FIX, "workday-kaleris.json"), "utf8")
+            : JSON.stringify({ total: 0, jobPostings: [] }),
+      }),
+      url: c.careersUrl!,
+      config: c.adapterConfig,
+      log: () => {},
+    });
+    const lk = applyCommonConfig(res.jobs, c.adapterConfig).filter((j) => /colombo|sri lanka/i.test(j.location ?? ""));
+    expect(lk.map((j) => j.title)).toEqual(expect.arrayContaining(["Cloud Ops Engineer", "Sr DevOps Engineer"]));
+  });
+
+  it("Cambio Teamtailor RSS: an empty feed is a valid answer", async () => {
+    const { raw } = await crawl("cambio-software-engineering", { "https://careers.cambio.lk/jobs.rss": "teamtailor-cambio.xml" });
+    expect(raw).toEqual([]);
+  });
+
+  it("CodeGen: JobPosting JSON-LD", async () => {
+    const { jobs } = await crawl("codegen", { "https://codegen.co.uk/en/company/careers": "codegen.html" });
+    expect(jobs).toHaveLength(4);
+    expect(jobs.find((j) => j.startsWith("Trainee Engineer"))).toMatch(/\| Colombo \| trainee \|.*recruit\.kriyo\.net\/jobs\/17$/);
+  });
+
+  it("Allion: Odoo jobs page", async () => {
+    const { jobs } = await crawl("allion-technologies", { "https://www.alliontechnologies.com/jobs": "allion.html" });
+    expect(jobs).toEqual([expect.stringMatching(/^Associate Software Engineer - Infrastructure Support \| Colombo \|/)]);
+  });
+
+  it("Insighture: work-with-us rows", async () => {
+    const { jobs } = await crawl("insighture", { "https://www.insighture.com/work-with-us": "insighture.html" });
+    expect(jobs).toHaveLength(8);
+    expect(jobs[0]).toMatch(/^Technical Lead - \.NET \| Colombo \|/);
+  });
+});
+
+describe("Sri Lanka IT companies list (Nov 2026), round 3", () => {
+  it("Amazoft", async () => {
+    const { jobs } = await crawl("amazoft", { "https://www.amazoft.com/careers": "amazoft.html" });
+    expect(jobs).toHaveLength(6);
+  });
+
+  it("Bank of Ceylon: vacancies only, not interview-result notices", async () => {
+    const { jobs } = await crawl("bank-of-ceylon", { "https://www.boc.lk/careers": "boc.html" });
+    expect(jobs).toHaveLength(5);
+    expect(jobs.some((j) => /interview results/i.test(j))).toBe(false);
+  });
+
+  it("CMS, Orysys, TekGeeks, BeesPoint", async () => {
+    expect((await crawl("cms", { "https://www.cms.lk/careers/": "cms.html" })).jobs).toHaveLength(3);
+    expect((await crawl("orysys", { "https://orysys.com/careers/": "orysys.html" })).jobs).toHaveLength(18);
+    expect((await crawl("tekgeeks", { "https://www.tekgeeks.net/careers": "tekgeeks.html" })).jobs).toHaveLength(3);
+    expect((await crawl("beespoint", { "https://www.beespoint.com/company/career.php": "beespoint.html" })).jobs).toHaveLength(3);
+  });
+
+  it("Platned: only the Sri Lanka vacancies", async () => {
+    const { jobs } = await crawl("platned", { "https://platned.com/careers": "platned.html" });
+    expect(jobs).toHaveLength(6);
+    expect(jobs.every((j) => j.includes("| Sri Lanka |") && !j.includes("(Sri Lanka)"))).toBe(true);
+  });
+
+  it("Eyepax: the list its job-openings page loads", async () => {
+    const { jobs } = await crawl("eyepax-it-consulting", { "https://eyepax.com/wp-admin/admin-ajax.php": "eyepax-jobs.html" });
+    expect(jobs).toHaveLength(2);
+    expect(jobs[0]).toMatch(/^Senior Software Engineer – Java \/ Spring Boot \(EC-66\) \|/);
+  });
+
+  it("Manatal (careers-page.com): Creately", async () => {
+    const { jobs } = await crawl("creately", { "https://www.careers-page.com/api/v1.0/c/creately/jobs/": "manatal-creately.json" });
+    expect(jobs).toEqual([
+      expect.stringMatching(/^Junior UI UX Designer \| Colombo \|.*careers-page\.com\/creately\/job\/L3473778$/),
+      expect.stringMatching(/^Senior SEO Specialist \| Colombo \|.*\/L45767Y5$/),
+    ]);
+  });
+
+  it("MAS Oracle Recruiting Cloud: Sri Lanka roles, paginated", async () => {
+    const { jobs } = await crawl("mas-holdings", {
+      "https://egmh.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=25,offset=0,":
+        "oracle-mas.json",
+      "https://egmh.fa.us6.oraclecloud.com/": () => JSON.stringify({ items: [{ TotalJobsCount: 145, requisitionList: [] }] }),
+    });
+    expect(jobs).toHaveLength(25);
+    expect(jobs[0]).toMatch(/^Intern - Lean Enterprise \| Sri Lanka \| intern \|/);
+  });
+
+  it("Innodata Greenhouse: no Sri Lanka roles right now", async () => {
+    const { raw, jobs } = await crawl("innodata", {
+      "https://boards-api.greenhouse.io/v1/boards/innodatainc/": "greenhouse-innodata.json",
+    });
+    expect(raw).toHaveLength(5);
+    expect(jobs).toEqual([]);
+  });
+});
