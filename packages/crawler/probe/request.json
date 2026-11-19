@@ -1,105 +1,68 @@
 {
-  "note": "Run 12: separate careers sites / ATS for large employers not yet crawled (IFS, Virtusa, HCLTech, Standard Chartered, Deloitte, Wiley, HSBC, WNS, KPMG, Persistent, Moody's, Acuity, Swivel, Nagarro).",
-  "run": 12,
+  "note": "Run 13: Sri Lanka views of separate careers sites (SmartRecruiters pages for IFS/Swivel/Nagarro, SuccessFactors search for HCLTech/Standard Chartered/Deloitte, Wiley Workday, Moody's, WNS).",
+  "run": 13,
   "targets": [],
-  "render": true,
+  "render": false,
   "urls": [
     {
-      "id": "ifs-sr-careers",
-      "url": "https://careers.smartrecruiters.com/IFS1",
+      "id": "ifs-colombo",
+      "url": "https://careers.smartrecruiters.com/IFS1?search=&page=0&location=Colombo%2C%20LK",
       "render": false
     },
     {
-      "id": "ifs-sr-jobs",
-      "url": "https://jobs.smartrecruiters.com/IFS1",
+      "id": "ifs-more",
+      "url": "https://careers.smartrecruiters.com/IFS1/api/more?type=location&value=Colombo%2C%20LK&page=1",
       "render": false
     },
     {
-      "id": "ifs-sr-api",
-      "url": "https://api.smartrecruiters.com/v1/companies/IFS1/postings?country=lk",
+      "id": "swivel-careers",
+      "url": "https://careers.smartrecruiters.com/SwivelGroup",
       "render": false
     },
     {
-      "id": "ifs-site",
-      "url": "https://www.ifs.com/careers",
-      "render": true
-    },
-    {
-      "id": "swivel-sr-api",
-      "url": "https://api.smartrecruiters.com/v1/companies/SwivelGroup/postings",
+      "id": "nagarro-colombo",
+      "url": "https://careers.smartrecruiters.com/Nagarro1?search=&page=0&location=Colombo%2C%20LK",
       "render": false
     },
     {
-      "id": "nagarro-sr-api",
-      "url": "https://api.smartrecruiters.com/v1/companies/Nagarro1/postings?country=lk",
+      "id": "hcl-search",
+      "url": "https://careers.hcltech.com/search/?q=&locationsearch=Sri%20Lanka",
       "render": false
     },
     {
-      "id": "virtusa-site",
-      "url": "https://www.virtusa.com/careers",
-      "render": true
+      "id": "sc-search",
+      "url": "https://jobs.standardchartered.com/search/?q=&locationsearch=Sri%20Lanka",
+      "render": false
     },
     {
-      "id": "virtusa-careers",
-      "url": "https://careers.virtusa.com/",
-      "render": true
+      "id": "deloitte-search",
+      "url": "https://southasiacareers.deloitte.com/search/?q=&locationsearch=Sri%20Lanka",
+      "render": false
     },
     {
-      "id": "hcl-careers",
-      "url": "https://careers.hcltech.com/",
-      "render": true
+      "id": "moodys-lk",
+      "url": "https://careers.moodys.com/en/search-jobs/Sri%20Lanka",
+      "render": false
     },
     {
-      "id": "sc-jobs",
-      "url": "https://jobs.standardchartered.com/",
-      "render": true
+      "id": "wns-lk",
+      "url": "https://www.wnscareers.com/global-location/sri-lanka",
+      "render": false
     },
     {
-      "id": "deloitte-sa",
-      "url": "https://southasiacareers.deloitte.com/",
-      "render": true
-    },
-    {
-      "id": "wiley-careers",
-      "url": "https://www.wiley.com/en-us/about-us/careers",
-      "render": true
-    },
-    {
-      "id": "hsbc-find",
-      "url": "https://www.hsbc.com/careers/find-a-job",
-      "render": true
-    },
-    {
-      "id": "wns-careers",
-      "url": "https://www.wnscareers.com/",
-      "render": true
-    },
-    {
-      "id": "kpmg-lk",
-      "url": "https://kpmg.com/lk/en/careers.html",
-      "render": true
-    },
-    {
-      "id": "persistent",
-      "url": "https://www.persistent.com/careers/",
-      "render": true
-    },
-    {
-      "id": "moodys-search",
-      "url": "https://careers.moodys.com/en/search-jobs",
-      "render": true
-    },
-    {
-      "id": "acuity",
-      "url": "https://www.acuitykp.com/careers/",
-      "render": true
-    },
-    {
-      "id": "wiley-workday",
-      "url": "https://wiley.wd1.myworkdayjobs.com/wday/cxs/wiley/External/jobs",
+      "id": "wiley-wd-colombo",
+      "url": "https://wiley.wd1.myworkdayjobs.com/wday/cxs/wiley/wiley_careers/jobs",
       "method": "POST",
       "contentType": "application/json",
       "body": "{\"appliedFacets\": {}, \"limit\": 20, \"offset\": 0, \"searchText\": \"Colombo\"}",
+      "render": false
+    },
+    {
+      "id": "wiley-wd-lk",
+      "url": "https://wiley.wd1.myworkdayjobs.com/wday/cxs/wiley/wiley_careers/jobs",
+      "method": "POST",
+      "contentType": "application/json",
+      "body": "{\"appliedFacets\": {}, \"limit\": 20, \"offset\": 0, \"searchText\": \"Sri Lanka\"}",
       "render": false
     }
   ]
