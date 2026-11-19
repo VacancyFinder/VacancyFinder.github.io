@@ -1,6 +1,759 @@
 {
-  "at": "2026-11-18T06:10:01.650Z",
-  "ms": 0,
-  "requests": 0,
-  "entries": []
+  "at": "2026-11-19T04:24:14.397Z",
+  "ms": 69238,
+  "requests": 17,
+  "entries": [
+    {
+      "id": "zyner-rooster",
+      "url": "https://api.rooster.jobs/integration/graphql",
+      "method": "POST",
+      "body": "{\"query\": \"query FetchCompanyJobs($id: Int!) { fetchOneCompanyPublic(id: $id) { name activeJobs { id title department location jobType } } }\", \"variables\": {\"id\": 152597}}",
+      "contentType": "application/json",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://api.rooster.jobs/integration/graphql",
+        "bytes": 782,
+        "contentType": "application/json; charset=utf-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "",
+        "textLength": 781,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [],
+        "emails": [],
+        "hints": [],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "fortude-talentrecruit",
+      "url": "https://fortude.talentrecruit.com/",
+      "render": true,
+      "companies": [],
+      "fetch": {
+        "error": "HTTP 403 for https://fortude.talentrecruit.com/"
+      },
+      "atsChecks": [],
+      "rendered": {
+        "finalUrl": "https://fortude.talentrecruit.com/",
+        "signals": {
+          "title": "403 Forbidden",
+          "textLength": 13,
+          "jsonLdJobPostings": 0,
+          "jsonLdTypes": [],
+          "ats": [],
+          "iframes": [],
+          "pdfLinks": 0,
+          "imageHeavy": false,
+          "jobishLinks": [],
+          "emails": [],
+          "hints": [],
+          "likelyJsRendered": true
+        },
+        "json": []
+      }
+    },
+    {
+      "id": "fortude-careers",
+      "url": "https://careers.fortude.co/",
+      "render": true,
+      "companies": [],
+      "fetch": {
+        "error": "robots.txt disallows https://careers.fortude.co/"
+      },
+      "atsChecks": [],
+      "rendered": {
+        "error": "robots.txt disallows"
+      }
+    },
+    {
+      "id": "lankaioc-openings",
+      "url": "https://www.lankaioc.com/current-openings/",
+      "render": true,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://www.lankaioc.com/current-openings/",
+        "bytes": 201048,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Current Openings | Lanka IOC PLC",
+        "textLength": 3772,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "WebPage",
+          "BreadcrumbList",
+          "ListItem",
+          "WebSite"
+        ],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "CareersEmpower your future with us",
+            "href": "https://www.lankaioc.com/careers/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.lankaioc.com/careers/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.lankaioc.com/careers/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.lankaioc.com/careers/"
+          }
+        ],
+        "emails": [],
+        "hints": [
+          "wordpress"
+        ],
+        "likelyJsRendered": false
+      },
+      "rendered": {
+        "finalUrl": "https://www.lankaioc.com/current-openings/",
+        "signals": {
+          "title": "Current Openings | Lanka IOC PLC",
+          "textLength": 3772,
+          "jsonLdJobPostings": 0,
+          "jsonLdTypes": [
+            "WebPage",
+            "BreadcrumbList",
+            "ListItem",
+            "WebSite"
+          ],
+          "ats": [],
+          "iframes": [],
+          "pdfLinks": 0,
+          "imageHeavy": false,
+          "jobishLinks": [
+            {
+              "text": "CareersEmpower your future with us",
+              "href": "https://www.lankaioc.com/careers/"
+            },
+            {
+              "text": "Careers",
+              "href": "https://www.lankaioc.com/careers/"
+            },
+            {
+              "text": "Careers",
+              "href": "https://www.lankaioc.com/careers/"
+            },
+            {
+              "text": "Careers",
+              "href": "https://www.lankaioc.com/careers/"
+            }
+          ],
+          "emails": [],
+          "hints": [
+            "wordpress"
+          ],
+          "likelyJsRendered": false
+        },
+        "json": []
+      }
+    },
+    {
+      "id": "lankaioc-careers",
+      "url": "https://www.lankaioc.com/careers",
+      "render": true,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://www.lankaioc.com/careers/",
+        "bytes": 254837,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Careers | Lanka IOC PLC",
+        "textLength": 9419,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "WebPage",
+          "BreadcrumbList",
+          "ListItem",
+          "WebSite"
+        ],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "CareersEmpower your future with us",
+            "href": "https://www.lankaioc.com/careers/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.lankaioc.com/careers/"
+          },
+          {
+            "text": "Explore All Vacancies",
+            "href": "https://www.lankaioc.com/current-openings/"
+          },
+          {
+            "text": "Apply for Internship",
+            "href": "https://mail.google.com/mail/?view=cm&fs=1&to=careers@lankaioc.com"
+          },
+          {
+            "text": "Careers",
+            "href": "https://www.lankaioc.com/careers/"
+          }
+        ],
+        "emails": [
+          "careers@lankaioc.com"
+        ],
+        "hints": [
+          "wordpress",
+          "cloudflare-challenge"
+        ],
+        "likelyJsRendered": false
+      },
+      "rendered": {
+        "finalUrl": "https://www.lankaioc.com/careers/",
+        "signals": {
+          "title": "Careers | Lanka IOC PLC",
+          "textLength": 10117,
+          "jsonLdJobPostings": 0,
+          "jsonLdTypes": [
+            "WebPage",
+            "BreadcrumbList",
+            "ListItem",
+            "WebSite"
+          ],
+          "ats": [],
+          "iframes": [],
+          "pdfLinks": 0,
+          "imageHeavy": false,
+          "jobishLinks": [
+            {
+              "text": "CareersEmpower your future with us",
+              "href": "https://www.lankaioc.com/careers/"
+            },
+            {
+              "text": "Careers",
+              "href": "https://www.lankaioc.com/careers/"
+            },
+            {
+              "text": "careers@lankaioc.com",
+              "href": "mailto:careers@lankaioc.com"
+            },
+            {
+              "text": "Explore All Vacancies",
+              "href": "https://www.lankaioc.com/current-openings/"
+            },
+            {
+              "text": "Apply for Internship",
+              "href": "https://mail.google.com/mail/?view=cm&fs=1&to=careers@lankaioc.com"
+            },
+            {
+              "text": "Careers",
+              "href": "https://www.lankaioc.com/careers/"
+            }
+          ],
+          "emails": [
+            "careers@lankaioc.com"
+          ],
+          "hints": [
+            "wordpress"
+          ],
+          "likelyJsRendered": false
+        },
+        "json": []
+      }
+    },
+    {
+      "id": "wso2-careers",
+      "url": "https://wso2.com/careers/",
+      "render": true,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://choreolabs.com/careers",
+        "bytes": 85979,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Choreo Labs Careers",
+        "textLength": 11282,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "WebPage"
+        ],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://choreolabs.com/careers/"
+          },
+          {
+            "text": "Careers",
+            "href": "https://choreolabs.com/careers/"
+          },
+          {
+            "text": "View Open Positions→",
+            "href": "https://choreolabs.com/careers#careers"
+          },
+          {
+            "text": "View Open Positions→",
+            "href": "https://choreolabs.com/careers#careers"
+          },
+          {
+            "text": "Learn More→",
+            "href": "https://choreolabs.com/careers/internships/"
+          },
+          {
+            "text": "SALES Account Manager - Commercial SalesUNITED KINGDOMFull TimeApply now",
+            "href": "https://choreolabs.com/careers/303/2026-11-account-manager-commercial-sales-united-kingdom"
+          },
+          {
+            "text": "SALESAccount ManagerSRI LANKAFull TimeApply now",
+            "href": "https://choreolabs.com/careers/283/2026-09-account-manager-sri-lanka"
+          },
+          {
+            "text": "SALES ENGINEERINGAssociate Enterprise ArchitectSRI LANKAFull TimeApply now",
+            "href": "https://choreolabs.com/careers/300/2026-10-associate-enterprise-architect-sri-lanka"
+          },
+          {
+            "text": "SALES ENGINEERINGAssociate Enterprise ArchitectINDIAFull TimeApply now",
+            "href": "https://choreolabs.com/careers/260/2026-07-associate-enterprise-architect-india"
+          },
+          {
+            "text": "SALES ENGINEERINGAssociate Enterprise ArchitectUNITED STATESFull TimeApply now",
+            "href": "https://choreolabs.com/careers/202/2026-06-associate-enterprise-architect-united-states"
+          },
+          {
+            "text": "SALES ENGINEERINGAssociate Enterprise Architect - Sales EngineeringFRANCEFull Ti",
+            "href": "https://choreolabs.com/careers/261/2026-07-associate-enterprise-architect-sales-engineering-france"
+          },
+          {
+            "text": "SALESCommercial Account ManagerUNITED STATESFull TimeApply now",
+            "href": "https://choreolabs.com/careers/297/2026-11-commercial-account-manager-united-states"
+          },
+          {
+            "text": "SALESCommercial Account Manager (West)INDIAFull TimeApply now",
+            "href": "https://choreolabs.com/careers/214/2026-10-commercial-account-manager-west-india"
+          },
+          {
+            "text": "SALESCountry Manager - United KingdomUNITED KINGDOMFull TimeApply now",
+            "href": "https://choreolabs.com/careers/277/2026-08-country-manager-united-kingdom-united-kingdom"
+          },
+          {
+            "text": "CHANNEL SALESDirector - Channel SalesSPAINFull TimeApply now",
+            "href": "https://choreolabs.com/careers/284/2026-09-director-channel-sales-spain"
+          },
+          {
+            "text": "MARKETINGDirector - Product Marketing, IAMUNITED STATESUNITED KINGDOMFull TimeAp",
+            "href": "https://choreolabs.com/careers/254/2026-07-director-product-marketing-iam-united-states-united-kingdom"
+          },
+          {
+            "text": "SALESEnterprise Account ExecutiveUNITED STATESFull TimeApply now",
+            "href": "https://choreolabs.com/careers/299/2026-10-enterprise-account-executive-united-states"
+          },
+          {
+            "text": "SALESEnterprise Account Executive (East Region)UNITED STATESFull TimeApply now",
+            "href": "https://choreolabs.com/careers/231/2026-08-enterprise-account-executive-east-region-united-states"
+          },
+          {
+            "text": "SALES ENGINEERINGLead Solutions EngineerMEXICOFull TimeApply now",
+            "href": "https://choreolabs.com/careers/79/2025-12-lead-solutions-engineer-mexico"
+          },
+          {
+            "text": "ENGINEERINGResearch EngineerSRI LANKAFull TimeApply now",
+            "href": "https://choreolabs.com/careers/304/2026-11-research-engineer-sri-lanka"
+          },
+          {
+            "text": "SALESSenior Account Manager - SalesMEXICOConsultancyApply now",
+            "href": "https://choreolabs.com/careers/311/2026-11-senior-account-manager-sales-mexico"
+          },
+          {
+            "text": "SALESSenior Account Manager - SalesBRAZILFull TimeApply now",
+            "href": "https://choreolabs.com/careers/309/2026-11-senior-account-manager-sales-brazil"
+          },
+          {
+            "text": "SALESSenior Commercial Account ManagerUNITED STATESFull TimeApply now",
+            "href": "https://choreolabs.com/careers/298/2026-10-senior-commercial-account-manager-united-states"
+          },
+          {
+            "text": "CUSTOMER SUCCESSSenior Software Engineer - Customer Success TeamUNITED KINGDOMFu",
+            "href": "https://choreolabs.com/careers/289/2026-10-senior-software-engineer-customer-success-team-united-kingdom"
+          },
+          {
+            "text": "ENGINEERINGSoftware Engineer - IntegrationSRI LANKAFull TimeApply now",
+            "href": "https://choreolabs.com/careers/302/2026-11-software-engineer-integration-sri-lanka"
+          },
+          {
+            "text": "ENGINEERINGTechnical Lead - Agent PlatformSRI LANKAFull TimeApply now",
+            "href": "https://choreolabs.com/careers/282/2026-09-technical-lead-agent-platform-sri-lanka"
+          },
+          {
+            "text": "ENGINEERINGTechnical Lead - AISRI LANKAFull TimeApply now",
+            "href": "https://choreolabs.com/careers/278/2026-09-technical-lead-ai-sri-lanka"
+          },
+          {
+            "text": "BUSINESS OPERATIONSVice President - CloudGLOBALFull TimeApply now",
+            "href": "https://choreolabs.com/careers/307/2026-11-vice-president-cloud-global"
+          },
+          {
+            "text": "Careers",
+            "href": "https://choreolabs.com/careers/"
+          }
+        ],
+        "emails": [],
+        "hints": [
+          "drupal"
+        ],
+        "likelyJsRendered": false
+      },
+      "rendered": {
+        "finalUrl": "https://choreolabs.com/careers",
+        "signals": {
+          "title": "Choreo Labs Careers",
+          "textLength": 15075,
+          "jsonLdJobPostings": 0,
+          "jsonLdTypes": [
+            "WebPage"
+          ],
+          "ats": [],
+          "iframes": [],
+          "pdfLinks": 0,
+          "imageHeavy": false,
+          "jobishLinks": [
+            {
+              "text": "Careers",
+              "href": "https://choreolabs.com/careers/"
+            },
+            {
+              "text": "Careers",
+              "href": "https://choreolabs.com/careers/"
+            },
+            {
+              "text": "View Open Positions→",
+              "href": "https://choreolabs.com/careers#careers"
+            },
+            {
+              "text": "View Open Positions→",
+              "href": "https://choreolabs.com/careers#careers"
+            },
+            {
+              "text": "Learn More→",
+              "href": "https://choreolabs.com/careers/internships/"
+            },
+            {
+              "text": "SALES Account Manager - Commercial SalesUNITED KINGDOMFull TimeApply now",
+              "href": "https://choreolabs.com/careers/303/2026-11-account-manager-commercial-sales-united-kingdom"
+            },
+            {
+              "text": "SALESAccount ManagerSRI LANKAFull TimeApply now",
+              "href": "https://choreolabs.com/careers/283/2026-09-account-manager-sri-lanka"
+            },
+            {
+              "text": "SALES ENGINEERINGAssociate Enterprise ArchitectSRI LANKAFull TimeApply now",
+              "href": "https://choreolabs.com/careers/300/2026-10-associate-enterprise-architect-sri-lanka"
+            },
+            {
+              "text": "SALES ENGINEERINGAssociate Enterprise ArchitectINDIAFull TimeApply now",
+              "href": "https://choreolabs.com/careers/260/2026-07-associate-enterprise-architect-india"
+            },
+            {
+              "text": "SALES ENGINEERINGAssociate Enterprise ArchitectUNITED STATESFull TimeApply now",
+              "href": "https://choreolabs.com/careers/202/2026-06-associate-enterprise-architect-united-states"
+            },
+            {
+              "text": "SALES ENGINEERINGAssociate Enterprise Architect - Sales EngineeringFRANCEFull Ti",
+              "href": "https://choreolabs.com/careers/261/2026-07-associate-enterprise-architect-sales-engineering-france"
+            },
+            {
+              "text": "SALESCommercial Account ManagerUNITED STATESFull TimeApply now",
+              "href": "https://choreolabs.com/careers/297/2026-11-commercial-account-manager-united-states"
+            },
+            {
+              "text": "SALESCommercial Account Manager (West)INDIAFull TimeApply now",
+              "href": "https://choreolabs.com/careers/214/2026-10-commercial-account-manager-west-india"
+            },
+            {
+              "text": "SALESCountry Manager - United KingdomUNITED KINGDOMFull TimeApply now",
+              "href": "https://choreolabs.com/careers/277/2026-08-country-manager-united-kingdom-united-kingdom"
+            },
+            {
+              "text": "CHANNEL SALESDirector - Channel SalesSPAINFull TimeApply now",
+              "href": "https://choreolabs.com/careers/284/2026-09-director-channel-sales-spain"
+            },
+            {
+              "text": "MARKETINGDirector - Product Marketing, IAMUNITED STATESUNITED KINGDOMFull TimeAp",
+              "href": "https://choreolabs.com/careers/254/2026-07-director-product-marketing-iam-united-states-united-kingdom"
+            },
+            {
+              "text": "SALESEnterprise Account ExecutiveUNITED STATESFull TimeApply now",
+              "href": "https://choreolabs.com/careers/299/2026-10-enterprise-account-executive-united-states"
+            },
+            {
+              "text": "SALESEnterprise Account Executive (East Region)UNITED STATESFull TimeApply now",
+              "href": "https://choreolabs.com/careers/231/2026-08-enterprise-account-executive-east-region-united-states"
+            },
+            {
+              "text": "SALES ENGINEERINGLead Solutions EngineerMEXICOFull TimeApply now",
+              "href": "https://choreolabs.com/careers/79/2025-12-lead-solutions-engineer-mexico"
+            },
+            {
+              "text": "ENGINEERINGResearch EngineerSRI LANKAFull TimeApply now",
+              "href": "https://choreolabs.com/careers/304/2026-11-research-engineer-sri-lanka"
+            },
+            {
+              "text": "SALESSenior Account Manager - SalesMEXICOConsultancyApply now",
+              "href": "https://choreolabs.com/careers/311/2026-11-senior-account-manager-sales-mexico"
+            },
+            {
+              "text": "SALESSenior Account Manager - SalesBRAZILFull TimeApply now",
+              "href": "https://choreolabs.com/careers/309/2026-11-senior-account-manager-sales-brazil"
+            },
+            {
+              "text": "SALESSenior Commercial Account ManagerUNITED STATESFull TimeApply now",
+              "href": "https://choreolabs.com/careers/298/2026-10-senior-commercial-account-manager-united-states"
+            },
+            {
+              "text": "CUSTOMER SUCCESSSenior Software Engineer - Customer Success TeamUNITED KINGDOMFu",
+              "href": "https://choreolabs.com/careers/289/2026-10-senior-software-engineer-customer-success-team-united-kingdom"
+            },
+            {
+              "text": "ENGINEERINGSoftware Engineer - IntegrationSRI LANKAFull TimeApply now",
+              "href": "https://choreolabs.com/careers/302/2026-11-software-engineer-integration-sri-lanka"
+            },
+            {
+              "text": "ENGINEERINGTechnical Lead - Agent PlatformSRI LANKAFull TimeApply now",
+              "href": "https://choreolabs.com/careers/282/2026-09-technical-lead-agent-platform-sri-lanka"
+            },
+            {
+              "text": "ENGINEERINGTechnical Lead - AISRI LANKAFull TimeApply now",
+              "href": "https://choreolabs.com/careers/278/2026-09-technical-lead-ai-sri-lanka"
+            },
+            {
+              "text": "BUSINESS OPERATIONSVice President - CloudGLOBALFull TimeApply now",
+              "href": "https://choreolabs.com/careers/307/2026-11-vice-president-cloud-global"
+            },
+            {
+              "text": "Careers",
+              "href": "https://choreolabs.com/careers/"
+            }
+          ],
+          "emails": [],
+          "hints": [
+            "drupal"
+          ],
+          "likelyJsRendered": false
+        },
+        "json": [
+          {
+            "url": "https://cookie-cdn.cookiepro.com/scripttemplates/202610.1.0/assets/otCookieSettingsButton.json",
+            "status": 200,
+            "bytes": 6011
+          },
+          {
+            "url": "https://cookie-cdn.cookiepro.com/scripttemplates/202610.1.0/assets/otFloatingRoundedCorner.json",
+            "status": 200,
+            "bytes": 16344
+          },
+          {
+            "url": "https://cookie-cdn.cookiepro.com/scripttemplates/202610.1.0/assets/v2/otPcCenter.json",
+            "status": 200,
+            "bytes": 74496
+          },
+          {
+            "url": "https://cookie-cdn.cookiepro.com/logos/static/ot_guard_logo.svg",
+            "status": 200,
+            "bytes": 497
+          },
+          {
+            "url": "https://js.zi-scripts.com/unified/v1/master/getSubscriptions",
+            "status": 200,
+            "bytes": 458
+          },
+          {
+            "url": "https://ws.zoominfo.com/formcomplete-v2/forms",
+            "status": 200,
+            "bytes": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "platned-careers",
+      "url": "https://platned.com/careers",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "status": 200,
+        "finalUrl": "https://platned.com/careers",
+        "bytes": 224722,
+        "contentType": "text/html; charset=UTF-8"
+      },
+      "atsChecks": [],
+      "signals": {
+        "title": "Explore Exciting | Career Opportunities at Platned",
+        "textLength": 6640,
+        "jsonLdJobPostings": 0,
+        "jsonLdTypes": [
+          "WebPage",
+          "ImageObject",
+          "BreadcrumbList",
+          "ListItem",
+          "WebSite"
+        ],
+        "ats": [],
+        "iframes": [],
+        "pdfLinks": 0,
+        "imageHeavy": false,
+        "jobishLinks": [
+          {
+            "text": "Careers",
+            "href": "https://platned.com/careers"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/ifs-erp-consultant-supply-chain-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/ifs-erp-consultant-supply-chain-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/senior-applied-ai-engineer-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/senior-applied-ai-engineer-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/senior-ai-platform-engineer-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/senior-ai-platform-engineer-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/business-development-representative-uk"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/business-development-representative-uk"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/senior-technical-consultant-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/senior-technical-consultant-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/erp-consultant-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/erp-consultant-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/senior-site-reliability-engineer-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/senior-site-reliability-engineer-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/site-reliability-engineer-sl"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/site-reliability-engineer-sl"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/ifs-pre-sales-consultant"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/ifs-pre-sales-consultant"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/ifs-functional-consultant-supply-chain-manufacturing-usa-based"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/ifs-functional-consultant-supply-chain-manufacturing-usa-based"
+          },
+          {
+            "text": "",
+            "href": "https://platned.com/vacancy/ifs-functional-consultant-finance-usa-based"
+          },
+          {
+            "text": "Read More",
+            "href": "https://platned.com/vacancy/ifs-functional-consultant-finance-usa-based"
+          },
+          {
+            "text": "What career opportunities are currently available?",
+            "href": "https://platned.com/careers#"
+          },
+          {
+            "text": "What is the recruitment process?",
+            "href": "https://platned.com/careers#"
+          },
+          {
+            "text": "Are there opportunities for professional development?",
+            "href": "https://platned.com/careers#"
+          },
+          {
+            "text": "Careers",
+            "href": "https://platned.com/careers"
+          },
+          {
+            "text": "Careers",
+            "href": "https://platned.com/careers"
+          }
+        ],
+        "emails": [
+          "info@platned.com"
+        ],
+        "hints": [
+          "wordpress"
+        ],
+        "likelyJsRendered": false
+      }
+    },
+    {
+      "id": "zyner-careers",
+      "url": "https://careers.zyner.io/",
+      "render": false,
+      "companies": [],
+      "fetch": {
+        "error": "robots.txt disallows https://careers.zyner.io/"
+      },
+      "atsChecks": []
+    }
+  ]
 }

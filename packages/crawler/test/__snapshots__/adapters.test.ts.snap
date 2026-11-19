@@ -81,12 +81,11 @@ exports[`html adapter on real careers pages > Vallibel One 1`] = `
 
 exports[`html adapter on real careers pages > WSO2: keeps only Sri Lanka roles 1`] = `
 [
-  "Account Manager | Sri Lanka | manager | full-time | unspecified | sales-marketing | https://wso2.com/careers/283/2026-09-account-manager-sri-lanka",
-  "Marketing Officer - Content Operations Specialist | Sri Lanka | unspecified | full-time | unspecified | sales-marketing,operations-logistics | https://wso2.com/careers/272/2026-09-marketing-officer-content-operations-specialist-sri-lanka",
-  "Marketing Officer - Website Design | Sri Lanka | unspecified | full-time | unspecified | ui-ux-design,sales-marketing | https://wso2.com/careers/152/2026-09-marketing-officer-website-design-sri-lanka",
-  "Senior Lead - Finance Analyst | Sri Lanka | lead | full-time | unspecified | finance-accounting | https://wso2.com/careers/243/2026-06-senior-lead-finance-analyst-sri-lanka",
-  "Senior Software Engineer - Agent Platform | Sri Lanka | senior | full-time | unspecified | software-engineering | https://wso2.com/careers/281/2026-09-senior-software-engineer-agent-platform-sri-lanka",
-  "Technical Lead - Agent Platform | Sri Lanka | lead | full-time | unspecified | software-engineering | https://wso2.com/careers/282/2026-09-technical-lead-agent-platform-sri-lanka",
-  "Technical Lead - AI | Sri Lanka | lead | full-time | unspecified | software-engineering,data-ai-ml | https://wso2.com/careers/278/2026-09-technical-lead-ai-sri-lanka",
+  "Account Manager | Sri Lanka | manager | full-time | unspecified | sales-marketing | https://choreolabs.com/careers/283/2026-09-account-manager-sri-lanka",
+  "Associate Enterprise Architect | Sri Lanka | principal | full-time | unspecified | other | https://choreolabs.com/careers/300/2026-10-associate-enterprise-architect-sri-lanka",
+  "Research Engineer | Sri Lanka | unspecified | full-time | unspecified | other | https://choreolabs.com/careers/304/2026-11-research-engineer-sri-lanka",
+  "Software Engineer - Integration | Sri Lanka | unspecified | full-time | unspecified | software-engineering | https://choreolabs.com/careers/302/2026-11-software-engineer-integration-sri-lanka",
+  "Technical Lead - Agent Platform | Sri Lanka | lead | full-time | unspecified | software-engineering | https://choreolabs.com/careers/282/2026-09-technical-lead-agent-platform-sri-lanka",
+  "Technical Lead - AI | Sri Lanka | lead | full-time | unspecified | software-engineering,data-ai-ml | https://choreolabs.com/careers/278/2026-09-technical-lead-ai-sri-lanka",
 ]
 `;

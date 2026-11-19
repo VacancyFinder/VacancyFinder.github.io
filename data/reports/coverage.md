@@ -2,9 +2,9 @@
 
 | | Companies |
 |---|---|
-| Crawled (ready + active) | 66 |
+| Crawled (ready + active) | 65 |
 | Careers page known, not crawled yet (needs-adapter) | 55 |
-| Deliberately not crawled (active: false) | 30 |
+| Deliberately not crawled (active: false) | 31 |
 | Website known, careers page unknown (needs-discovery) | 126 |
 | No website known (needs-research) | 120 |
 | **Total** | **397** |
@@ -41,7 +41,6 @@
 | Digiratina Technology Solutions | html | Digiratina careers page, one card per opening (verified by the probe, Nov 2026). |
 | Digital Mobility Solutions Lanka PLC (PickMe) | html | PickMe's own careers page lists current openings (verified Sep 2026). |
 | Eyepax IT Consulting | html | Eyepax job openings page, read from the list it loads (admin-ajax filter_jobs; robots.txt allows it); Sri Lanka roles only (verified by the probe, Nov 2026). |
-| Fortude | custom: fortude | careers.fortude.co lists roles from its own job-list endpoint (17 at probe time); Apply goes to Fortude's TalentRecruit ATS (verified Sep 2026). |
 | Gapstars | html | Gapstars jobs page (all Sri Lanka openings; the Portugal hub has its own page) (verified by the probe, Nov 2026). |
 | Haycarb PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
 | Hayleys PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
@@ -73,12 +72,12 @@
 | Union Bank of Colombo PLC | custom: peopleshr | unionb.com/careers redirects to its PeoplesHR job portal; vacancies come from the portal's JSON (2 at probe time, verified Sep 2026). The portal has no per-vacancy link, so Apply opens the portal. |
 | Vallibel One PLC | html | 'Our openings' section on the careers page (verified Sep 2026). |
 | VitalHub | custom: bamboohr | VitalHub hires through BambooHR (vitalhub.bamboohr.com); only Colombo roles (verified by the probe, Nov 2026). |
-| WSO2 | html | Careers page lists global roles as cards; only Sri Lanka roles are kept (verified Sep 2026). |
+| WSO2 | html | wso2.com/careers now redirects to choreolabs.com/careers (new layout); only Sri Lanka roles (fixed Nov 2026). |
 | Xeynergy | html | Xeynergy careers page, filled from its accxis360 job board (verified by the probe, Nov 2026). |
 | Xitricon | html | Xitricon careers page; only roles that include Sri Lanka (verified by the probe, Nov 2026). |
 | ZILLIONe | custom: zillione | Careers page is filled from apisv1.zillione.com/api/careers (verified Sep 2026). |
 | Zone24x7 | html | Careers page lists current vacancies as cards (verified Sep 2026). |
-| Zyner.io | html | Zyner's own careers page lists roles; Apply links go to its Rooster postings (verified Sep 2026). |
+| Zyner.io | custom: rooster | careers.zyner.io now disallows crawling in robots.txt; its roles come from Rooster, read through Rooster's integration API (company 152597) like Surge Global (fixed Nov 2026). |
 
 ## Not crawled — and why
 
@@ -93,6 +92,7 @@
 | DFCC Bank PLC | Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page. |
 | EFutures | Not crawled: robots.txt disallows the careers page on efutures.com (checked Nov 2026). |
 | Flat Rock Technology | Careers page is filled from admin.flatrocktech.com/wp-admin/admin-ajax.php, which that host's robots.txt disallows; not crawled (verified Sep 2026). |
+| Fortude | Not crawled since Oct 2026: robots.txt on careers.fortude.co now disallows the job list, and fortude.talentrecruit.com refuses automated requests (HTTP 403). Checked Nov 2026. |
 | HCLTech | Not crawled: robots.txt disallows hcltech.com/careers (verified Sep 2026). Global portal. |
 | Hela Apparel Holdings PLC | Not crawled: robots.txt disallows the careers page (verified Sep 2026). |
 | IFS | IFS hires in Sri Lanka through SmartRecruiters (ifs1), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026). |

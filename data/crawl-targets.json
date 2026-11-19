@@ -202,15 +202,6 @@
     "parentGroup": null
   },
   {
-    "id": "careers-fortude-co",
-    "canonicalUrl": "https://careers.fortude.co/",
-    "adapter": "custom",
-    "companySlugs": [
-      "fortude"
-    ],
-    "parentGroup": null
-  },
-  {
     "id": "careers-page-com-axonect",
     "canonicalUrl": "https://careers-page.com/axonect",
     "adapter": "custom",
@@ -249,7 +240,7 @@
   {
     "id": "careers-zyner-io",
     "canonicalUrl": "https://careers.zyner.io/",
-    "adapter": "html",
+    "adapter": "custom",
     "companySlugs": [
       "zyner-io"
     ],
@@ -289,6 +280,15 @@
     "adapter": "none",
     "companySlugs": [
       "chakray-consulting"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "choreolabs-com-careers",
+    "canonicalUrl": "https://choreolabs.com/careers",
+    "adapter": "html",
+    "companySlugs": [
+      "wso2"
     ],
     "parentGroup": null
   },
@@ -877,15 +877,6 @@
     "adapter": "none",
     "companySlugs": [
       "wns"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "wso2-com-careers",
-    "canonicalUrl": "https://wso2.com/careers",
-    "adapter": "html",
-    "companySlugs": [
-      "wso2"
     ],
     "parentGroup": null
   },
