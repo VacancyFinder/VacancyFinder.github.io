@@ -229,6 +229,24 @@
     "parentGroup": null
   },
   {
+    "id": "careers-smartrecruiters-com-ifs1-search-location-colombo-2c-20lk",
+    "canonicalUrl": "https://careers.smartrecruiters.com/IFS1?search=&location=Colombo%2C%20LK",
+    "adapter": "html",
+    "companySlugs": [
+      "ifs"
+    ],
+    "parentGroup": null
+  },
+  {
+    "id": "careers-smartrecruiters-com-nagarro1-search-location-colombo-2c-20lk",
+    "canonicalUrl": "https://careers.smartrecruiters.com/Nagarro1?search=&location=Colombo%2C%20LK",
+    "adapter": "html",
+    "companySlugs": [
+      "nagarro"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "careers-tgtglobal-com",
     "canonicalUrl": "https://careers.tgtglobal.com/",
     "adapter": "teamtailor",
@@ -764,6 +782,15 @@
     "parentGroup": "softlogic"
   },
   {
+    "id": "southasiacareers-deloitte-com-search-q-locationsearch-sri-20lanka",
+    "canonicalUrl": "https://southasiacareers.deloitte.com/search?q=&locationsearch=Sri%20Lanka",
+    "adapter": "html",
+    "companySlugs": [
+      "deloitte-sri-lanka"
+    ],
+    "parentGroup": null
+  },
+  {
     "id": "sterlingbpo-com-careers",
     "canonicalUrl": "https://sterlingbpo.com/careers",
     "adapter": "none",
@@ -877,15 +904,6 @@
     "adapter": "none",
     "companySlugs": [
       "wns"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "www2-deloitte-com-lk-en-careers-html",
-    "canonicalUrl": "https://www2.deloitte.com/lk/en/careers.html",
-    "adapter": "none",
-    "companySlugs": [
-      "deloitte-sri-lanka"
     ],
     "parentGroup": null
   },

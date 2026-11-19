@@ -25,8 +25,8 @@ Ambiguous (kept separate, resolve by hand):
 
 | Status | Companies |
 |---|---|
-| ready | 67 |
-| needs-adapter | 84 |
+| ready | 70 |
+| needs-adapter | 81 |
 | needs-discovery | 126 |
 | needs-research | 120 |
 | disabled | 0 |
@@ -81,6 +81,8 @@ Check whether these belong to a group that the domain rule can't see.
 - cambio-software-engineering: website `cambio.se`, careers `careers.cambio.lk`
 - creately: website `creately.com`, careers `careers-page.com`
 - innodata: website `innodata.com`, careers `innodatacareers.com`
+- nagarro: website `nagarro.com`, careers `careers.smartrecruiters.com`
+- deloitte-sri-lanka: website `www2.deloitte.com`, careers `southasiacareers.deloitte.com`
 - vitalhub: website `vitalhub.com`, careers `vitalhub.bamboohr.com`
 - codimite: website `codimite.com`, careers `codimite.ai`
 - tgt-global: website `tgtglobal.com`, careers `careers.tgtglobal.com`
@@ -100,6 +102,8 @@ Check whether these belong to a group that the domain rule can't see.
 - eyepax-it-consulting.careersUrl
 - digiratina-technology-solutions.careersUrl
 - innodata.careersUrl
+- nagarro.careersUrl
+- deloitte-sri-lanka.careersUrl
 - vitalhub.careersUrl
 - mas-holdings.careersUrl
 - codimite.careersUrl
@@ -222,4 +226,4 @@ Check whether these belong to a group that the domain rule can't see.
 
 - companies.json: 397
 - groups.json: 20
-- crawl-targets.json: 103
+- crawl-targets.json: 105

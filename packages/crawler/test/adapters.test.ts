@@ -443,3 +443,26 @@ describe("Sri Lanka IT companies list (Nov 2026), round 3", () => {
     expect(jobs).toEqual([]);
   });
 });
+
+describe("separate careers sites (Nov 2026)", () => {
+  const emptyPage = () => "<html><body></body></html>";
+
+  it("IFS: SmartRecruiters careers page, Colombo filter", async () => {
+    const { jobs } = await crawl("ifs", {
+      "https://careers.smartrecruiters.com/IFS1/api/more?type=location&value=Colombo%2C%20LK&page=0": "smartrecruiters-ifs-colombo.html",
+      "https://careers.smartrecruiters.com/IFS1/api/more": emptyPage,
+    });
+    expect(jobs).toHaveLength(10);
+    expect(jobs.every((j) => j.includes("| Colombo |") && j.includes("jobs.smartrecruiters.com/IFS1/"))).toBe(true);
+  });
+
+  it("Deloitte South Asia: Sri Lanka search, Maldives roles skipped", async () => {
+    const { raw, jobs } = await crawl("deloitte-sri-lanka", {
+      "https://southasiacareers.deloitte.com/search/?q=&locationsearch=Sri%20Lanka&startrow=": emptyPage,
+      "https://southasiacareers.deloitte.com/search/": "deloitte-sa.html",
+    });
+    expect(raw.some((j) => /maldives/i.test(j.title))).toBe(false);
+    expect(jobs.length).toBeGreaterThanOrEqual(20);
+    expect(jobs.every((j) => j.includes("| Colombo |"))).toBe(true);
+  });
+});

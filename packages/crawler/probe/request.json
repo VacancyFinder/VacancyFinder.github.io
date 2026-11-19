@@ -1,69 +1,7 @@
 {
-  "note": "Run 13: Sri Lanka views of separate careers sites (SmartRecruiters pages for IFS/Swivel/Nagarro, SuccessFactors search for HCLTech/Standard Chartered/Deloitte, Wiley Workday, Moody's, WNS).",
-  "run": 13,
+  "note": "Run 14: real crawl preview with IFS, Nagarro and Deloitte (probe/run-crawl marker).",
+  "run": 14,
   "targets": [],
   "render": false,
-  "urls": [
-    {
-      "id": "ifs-colombo",
-      "url": "https://careers.smartrecruiters.com/IFS1?search=&page=0&location=Colombo%2C%20LK",
-      "render": false
-    },
-    {
-      "id": "ifs-more",
-      "url": "https://careers.smartrecruiters.com/IFS1/api/more?type=location&value=Colombo%2C%20LK&page=1",
-      "render": false
-    },
-    {
-      "id": "swivel-careers",
-      "url": "https://careers.smartrecruiters.com/SwivelGroup",
-      "render": false
-    },
-    {
-      "id": "nagarro-colombo",
-      "url": "https://careers.smartrecruiters.com/Nagarro1?search=&page=0&location=Colombo%2C%20LK",
-      "render": false
-    },
-    {
-      "id": "hcl-search",
-      "url": "https://careers.hcltech.com/search/?q=&locationsearch=Sri%20Lanka",
-      "render": false
-    },
-    {
-      "id": "sc-search",
-      "url": "https://jobs.standardchartered.com/search/?q=&locationsearch=Sri%20Lanka",
-      "render": false
-    },
-    {
-      "id": "deloitte-search",
-      "url": "https://southasiacareers.deloitte.com/search/?q=&locationsearch=Sri%20Lanka",
-      "render": false
-    },
-    {
-      "id": "moodys-lk",
-      "url": "https://careers.moodys.com/en/search-jobs/Sri%20Lanka",
-      "render": false
-    },
-    {
-      "id": "wns-lk",
-      "url": "https://www.wnscareers.com/global-location/sri-lanka",
-      "render": false
-    },
-    {
-      "id": "wiley-wd-colombo",
-      "url": "https://wiley.wd1.myworkdayjobs.com/wday/cxs/wiley/wiley_careers/jobs",
-      "method": "POST",
-      "contentType": "application/json",
-      "body": "{\"appliedFacets\": {}, \"limit\": 20, \"offset\": 0, \"searchText\": \"Colombo\"}",
-      "render": false
-    },
-    {
-      "id": "wiley-wd-lk",
-      "url": "https://wiley.wd1.myworkdayjobs.com/wday/cxs/wiley/wiley_careers/jobs",
-      "method": "POST",
-      "contentType": "application/json",
-      "body": "{\"appliedFacets\": {}, \"limit\": 20, \"offset\": 0, \"searchText\": \"Sri Lanka\"}",
-      "render": false
-    }
-  ]
+  "urls": []
 }

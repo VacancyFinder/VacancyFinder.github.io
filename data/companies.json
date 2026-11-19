@@ -2082,18 +2082,32 @@
     "slug": "deloitte-sri-lanka",
     "name": "Deloitte Sri Lanka",
     "website": "https://www2.deloitte.com/lk",
-    "careersUrl": "https://www2.deloitte.com/lk/en/careers.html",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://southasiacareers.deloitte.com/search/?q=&locationsearch=Sri%20Lanka",
+    "adapter": "html",
+    "adapterConfig": {
+      "listSelector": "tr.data-row",
+      "titleSelector": "td.colTitle a.jobTitle-link",
+      "linkSelector": "td.colTitle a.jobTitle-link",
+      "locationSelector": "td.colLocation .jobLocation",
+      "departmentSelector": "td.colDepartment .jobDepartment",
+      "dateSelector": "td.colDate .jobDate",
+      "skipTitlePattern": "maldives",
+      "pagination": {
+        "template": "https://southasiacareers.deloitte.com/search/?q=&locationsearch=Sri%20Lanka&startrow={offset}",
+        "step": 25,
+        "start": 2,
+        "maxPages": 10
+      }
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
+    "status": "ready",
     "active": true,
-    "notes": "Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026)."
+    "notes": "Deloitte South Asia careers site (SuccessFactors) searched for Sri Lanka; Maldives roles listed under the Sri Lanka office are skipped (verified by the probe, Nov 2026)."
   },
   {
     "slug": "dfcc-bank",
@@ -3054,7 +3068,7 @@
     ],
     "status": "needs-adapter",
     "active": false,
-    "notes": "Not crawled: robots.txt disallows hcltech.com/careers (verified Sep 2026). Global portal."
+    "notes": "Not crawled: robots.txt disallows hcltech.com/careers, and the careers.hcltech.com job search refuses automated requests (HTTP 403). Checked Nov 2026."
   },
   {
     "slug": "hdfc-bank-of-sri-lanka",
@@ -3305,18 +3319,30 @@
     "slug": "ifs",
     "name": "IFS",
     "website": "https://www.ifs.com",
-    "careersUrl": "https://careers.smartrecruiters.com/ifs1",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://careers.smartrecruiters.com/IFS1?search=&location=Colombo%2C%20LK",
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://careers.smartrecruiters.com/IFS1/api/more?type=location&value=Colombo%2C%20LK&page=0",
+      "listSelector": "li.opening-job",
+      "titleSelector": "h4",
+      "linkSelector": "a",
+      "departmentSelector": "span.spl-me-1",
+      "defaultLocation": "Colombo",
+      "pagination": {
+        "template": "https://careers.smartrecruiters.com/IFS1/api/more?type=location&value=Colombo%2C%20LK&page={n}",
+        "start": 1,
+        "maxPages": 10
+      }
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
-    "active": false,
-    "notes": "IFS hires in Sri Lanka through SmartRecruiters (ifs1), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026)."
+    "status": "ready",
+    "active": true,
+    "notes": "IFS's SmartRecruiters careers page (careers.smartrecruiters.com/IFS1) filtered to Colombo, read through the page's own 'show more' list; robots.txt allows it, unlike SmartRecruiters' API (verified by the probe, Nov 2026)."
   },
   {
     "slug": "industrial-asphalts-lanka",
@@ -4664,7 +4690,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
+    "notes": "Moody's careers site (careers.moodys.com) had no Sri Lanka roles at the probe (Nov 2026); not crawled."
   },
   {
     "slug": "muller-and-phipps-ceylon",
@@ -4718,18 +4744,30 @@
     "slug": "nagarro",
     "name": "Nagarro",
     "website": "https://www.nagarro.com",
-    "careersUrl": "https://www.nagarro.com/en/careers",
-    "adapter": "none",
-    "adapterConfig": {},
+    "careersUrl": "https://careers.smartrecruiters.com/Nagarro1?search=&location=Colombo%2C%20LK",
+    "adapter": "html",
+    "adapterConfig": {
+      "url": "https://careers.smartrecruiters.com/Nagarro1/api/more?type=location&value=Colombo%2C%20LK&page=0",
+      "listSelector": "li.opening-job",
+      "titleSelector": "h4",
+      "linkSelector": "a",
+      "departmentSelector": "span.spl-me-1",
+      "defaultLocation": "Colombo",
+      "pagination": {
+        "template": "https://careers.smartrecruiters.com/Nagarro1/api/more?type=location&value=Colombo%2C%20LK&page={n}",
+        "start": 1,
+        "maxPages": 10
+      }
+    },
     "industry": "technology",
     "cseSymbol": null,
     "parentGroup": null,
     "sourceLists": [
       "tech"
     ],
-    "status": "needs-adapter",
-    "active": false,
-    "notes": "Not crawled: Nagarro's Sri Lanka roles are on SmartRecruiters (Nagarro1), whose robots.txt disallows its public API (checked Nov 2026)."
+    "status": "ready",
+    "active": true,
+    "notes": "Nagarro's SmartRecruiters careers page (careers.smartrecruiters.com/Nagarro1) filtered to Colombo, read through the page's own 'show more' list; robots.txt allows it, unlike SmartRecruiters' API (verified by the probe, Nov 2026)."
   },
   {
     "slug": "namunukula-plantations",
@@ -6122,7 +6160,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026)."
+    "notes": "Not crawled: the jobs.standardchartered.com job search refuses automated requests (HTTP 403). Checked Nov 2026."
   },
   {
     "slug": "sterling-bpo-solutions",
@@ -6226,7 +6264,7 @@
     ],
     "status": "needs-adapter",
     "active": false,
-    "notes": "Careers on SmartRecruiters (SwivelGroup), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026)."
+    "notes": "careers.smartrecruiters.com/SwivelGroup now redirects away (no SmartRecruiters page any more) and the API is disallowed by robots.txt; not crawled (Nov 2026)."
   },
   {
     "slug": "sygnisys",
@@ -6734,7 +6772,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026)."
+    "notes": "Not crawled: virtusa.com blocks automated requests (HTTP 403) and its Taleo site was in maintenance (Nov 2026)."
   },
   {
     "slug": "vitalhub",
@@ -6805,7 +6843,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026)."
+    "notes": "Wiley hires through Workday (wiley.wd1.myworkdayjobs.com/wiley_careers); no Colombo/Sri Lanka roles were open at the probe (Nov 2026), so it isn't crawled yet."
   },
   {
     "slug": "windforce",
@@ -6838,7 +6876,7 @@
     ],
     "status": "needs-adapter",
     "active": true,
-    "notes": "Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026)."
+    "notes": "WNS's Sri Lanka careers page (wnscareers.com/global-location/sri-lanka) has no list of openings to read (Nov 2026)."
   },
   {
     "slug": "wso2",
