@@ -2,9 +2,9 @@
 
 | | Companies |
 |---|---|
-| Crawled (ready + active) | 65 |
-| Careers page known, not crawled yet (needs-adapter) | 55 |
-| Deliberately not crawled (active: false) | 31 |
+| Crawled (ready + active) | 68 |
+| Careers page known, not crawled yet (needs-adapter) | 54 |
+| Deliberately not crawled (active: false) | 29 |
 | Website known, careers page unknown (needs-discovery) | 126 |
 | No website known (needs-research) | 120 |
 | **Total** | **397** |
@@ -35,6 +35,7 @@
 | Codimite | html | Codimite careers page lists every opening with its BambooHR apply link (verified by the probe, Nov 2026). |
 | Creately | custom: manatal | Vacancies on careers-page.com/creately (Manatal), read from its public jobs API; Sri Lanka roles only (verified by the probe, Nov 2026). |
 | Creative Software | html | Webflow list of open vacancies on the careers page (verified Sep 2026). |
+| Deloitte Sri Lanka | html | Deloitte South Asia careers site (SuccessFactors) searched for Sri Lanka; Maldives roles listed under the Sri Lanka office are skipped (verified by the probe, Nov 2026). |
 | Dialog Axiata PLC | html | dialog.lk/careers links to Dialog's MiHCM career portal; listings are in its HTML (31 roles at probe time, verified Sep 2026). Office buildings are shown instead of towns, so the location is Colombo. |
 | Dialog Finance PLC | html | dialog.lk/careers links to Dialog's MiHCM career portal; listings are in its HTML (31 roles at probe time, verified Sep 2026). Office buildings are shown instead of towns, so the location is Colombo. |
 | Diesel & Motor Engineering PLC | html | DIMO vacancies page (paginated). Listings past their closing date are dropped — at probe time all 4 had closed (verified Sep 2026). |
@@ -47,6 +48,7 @@
 | Hayleys Fabric PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
 | Hayleys Fibre PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
 | Hayleys Leisure PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
+| IFS | html | IFS's SmartRecruiters careers page (careers.smartrecruiters.com/IFS1) filtered to Colombo, read through the page's own 'show more' list; robots.txt allows it, unlike SmartRecruiters' API (verified by the probe, Nov 2026). |
 | Innodata | greenhouse | Innodata hires through Greenhouse (innodatainc); only Sri Lanka roles (none open at the time of the probe) (verified by the probe, Nov 2026). |
 | Insighture | html | Insighture's 'Work with us' page lists its open roles (verified by the probe, Nov 2026). |
 | John Keells PLC | html | keells.com/careers links to the group's SAP SuccessFactors site; its search results (51 roles, 10 per page) are read page by page (verified Sep 2026). The RSS feed is disallowed by robots.txt. |
@@ -57,6 +59,7 @@
 | LSEG | custom: workday | Workday career site, filtered to the Sri Lanka country facet (28 roles at probe time, verified Sep 2026). Millennium IT roles are listed here. |
 | MAS Holdings | custom: oracle-hcm | MAS hires through Oracle Recruiting Cloud (site CX_1); Sri Lanka roles (verified by the probe, Nov 2026). |
 | MillenniumIT ESP | custom: manatal | Vacancies on careers-page.com/mitesp (Manatal), read from its public jobs API; Sri Lanka roles only (verified by the probe, Nov 2026). |
+| Nagarro | html | Nagarro's SmartRecruiters careers page (careers.smartrecruiters.com/Nagarro1) filtered to Colombo, read through the page's own 'show more' list; robots.txt allows it, unlike SmartRecruiters' API (verified by the probe, Nov 2026). |
 | National Development Bank PLC | html | ndbbank.com/careers links to NDB's MiHCM career portal (14 roles at probe time, verified Sep 2026). Dates are month/day/year. |
 | Orysys Limited | html | Orysys careers page (WP Job Manager list) (verified by the probe, Nov 2026). |
 | Pearson | custom: oracle-hcm | Pearson's Oracle Recruiting Cloud site, filtered to Sri Lanka (3 roles at probe time, verified Sep 2026). |
@@ -93,9 +96,8 @@
 | EFutures | Not crawled: robots.txt disallows the careers page on efutures.com (checked Nov 2026). |
 | Flat Rock Technology | Careers page is filled from admin.flatrocktech.com/wp-admin/admin-ajax.php, which that host's robots.txt disallows; not crawled (verified Sep 2026). |
 | Fortude | Not crawled since Oct 2026: robots.txt on careers.fortude.co now disallows the job list, and fortude.talentrecruit.com refuses automated requests (HTTP 403). Checked Nov 2026. |
-| HCLTech | Not crawled: robots.txt disallows hcltech.com/careers (verified Sep 2026). Global portal. |
+| HCLTech | Not crawled: robots.txt disallows hcltech.com/careers, and the careers.hcltech.com job search refuses automated requests (HTTP 403). Checked Nov 2026. |
 | Hela Apparel Holdings PLC | Not crawled: robots.txt disallows the careers page (verified Sep 2026). |
-| IFS | IFS hires in Sri Lanka through SmartRecruiters (ifs1), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026). |
 | Informatics International | Not crawled: robots.txt disallows the careers page on informaticsi.com (checked Nov 2026). |
 | John Keells Hotels PLC | careers.cinnamonhotels.com's vacancy API returns ~12 MB per request (embedded images), too heavy to poll every 3 hours. Cinnamon roles on the John Keells careers site are still credited here (verified Sep 2026). |
 | LB Finance PLC | Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page. |
@@ -103,7 +105,6 @@
 | LOLC General Insurance PLC | Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page. |
 | LOLC Holdings PLC | Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page. |
 | Melstacorp PLC | Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page. |
-| Nagarro | Not crawled: Nagarro's Sri Lanka roles are on SmartRecruiters (Nagarro1), whose robots.txt disallows its public API (checked Nov 2026). |
 | Nations Trust Bank PLC | Careers page returns HTTP 403 to automated requests (verified Sep 2026). |
 | Pan Asia Banking Corporation PLC | Not crawled: robots.txt disallows the careers page (verified Sep 2026). |
 | People's Leasing & Finance PLC | Not crawled: robots.txt disallows the careers page (verified Sep 2026). |
@@ -111,7 +112,7 @@
 | Sanmark Solutions | Not crawled: robots.txt disallows the careers page on sanmark.com (checked Nov 2026). |
 | Singer (Sri Lanka) PLC | singer.lk/careers redirects to the singersl.com homepage; no careers page found (verified Sep 2026). |
 | Swisstek (Ceylon) PLC | Not crawled: robots.txt disallows the careers page (verified Sep 2026). |
-| Swivel Group | Careers on SmartRecruiters (SwivelGroup), but SmartRecruiters' robots.txt disallows its public API (verified Sep 2026). |
+| Swivel Group | careers.smartrecruiters.com/SwivelGroup now redirects away (no SmartRecruiters page any more) and the API is disallowed by robots.txt; not crawled (Nov 2026). |
 | Teejay Lanka PLC | Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page. |
 | Wavenet | Not crawled: robots.txt disallows the careers page on wavenet.lk (checked Nov 2026). |
 | 3axislabs | Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026). |
@@ -131,7 +132,6 @@
 | Calcey Technologies | Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026). |
 | Ceyentra Technologies | Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026). |
 | Chakray Consulting | Chakray's careers page doesn't say where each role is based, so Sri Lanka roles can't be picked out; not crawled (Nov 2026). |
-| Deloitte Sri Lanka | Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026). |
 | Dilmah Ceylon Tea Company PLC | The careers page has no vacancy listings (verified Sep 2026); nothing to crawl yet. |
 | DirectFN | Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026). |
 | Embla Software Innovation | Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026). |
@@ -148,7 +148,7 @@
 | Loons Lab | Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026). |
 | Meta | Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026). |
 | Mobitel | SLT-Mobitel roles are listed on SLT's careers page, which is already crawled (sri-lanka-telecom) (checked Nov 2026). |
-| Moody's | Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026). |
+| Moody's | Moody's careers site (careers.moodys.com) had no Sri Lanka roles at the probe (Nov 2026); not crawled. |
 | OrangeHRM | Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026). |
 | Persistent Systems | Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026). |
 | PragICTS | Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026). |
@@ -159,14 +159,14 @@
 | Softlogic Finance PLC | Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026). |
 | Softlogic Holdings PLC | Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026). |
 | Softlogic Life Insurance PLC | Careers page points to topjobs.lk; third-party boards are not crawled in v1 (verified Sep 2026). |
-| Standard Chartered | Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026). |
+| Standard Chartered | Not crawled: the jobs.standardchartered.com job search refuses automated requests (HTTP 403). Checked Nov 2026. |
 | Sterling BPO Solutions | Sterling BPO's careers page has no list of openings to read (Nov 2026). |
 | Sunshine Holdings PLC | Careers page points to LinkedIn jobs; third-party boards are not crawled in v1 (verified Sep 2026). |
 | Synergen Health | Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026). |
 | TIQRI | Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026). |
-| Virtusa | Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026). |
-| Wiley | Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026). |
-| WNS | Global careers portal with no Sri Lanka listing page to read; not crawled (checked Nov 2026). |
+| Virtusa | Not crawled: virtusa.com blocks automated requests (HTTP 403) and its Taleo site was in maintenance (Nov 2026). |
+| Wiley | Wiley hires through Workday (wiley.wd1.myworkdayjobs.com/wiley_careers); no Colombo/Sri Lanka roles were open at the probe (Nov 2026), so it isn't crawled yet. |
+| WNS | WNS's Sri Lanka careers page (wnscareers.com/global-location/sri-lanka) has no list of openings to read (Nov 2026). |
 | Xiteb | Careers URL from the list doesn't work (not found, server error or timeout); needs a new URL (checked Nov 2026). |
 | Yaala Labs | Not crawled: the site blocks automated requests (HTTP 403) (checked Nov 2026). |
 
