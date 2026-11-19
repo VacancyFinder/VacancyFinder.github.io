@@ -173,7 +173,9 @@ If a site can't be crawled reliably or ethically, leave it `active: false` with 
 
 Update rules per run: a job seen for the first time is **added**; seen again → `lastSeenAt` refreshed; missing from
 a successful crawl → `missedRuns++`, and **closed** at 2. A failed crawl never touches a company's jobs, and a company
-that had ≥ 3 jobs but suddenly returns 0 is flagged `suspect` and kept as it was.
+that had ≥ 3 jobs but suddenly returns 0 is flagged `suspect` and kept as it was — but only for a while: a job its
+source hasn't confirmed for 7 days (`STALE_AFTER_DAYS`) is closed, so a site that moved, blocked crawling or really
+has no openings can't leave out-of-date jobs on Rekiya.
 
 ## Legal and ethics
 

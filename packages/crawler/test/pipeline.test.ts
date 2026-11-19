@@ -88,6 +88,16 @@ describe("diff (spec §9)", () => {
     expect(r.jobs.every((j) => j.status === "open" && j.missedRuns === 0)).toBe(true);
   });
 
+  it("closes a failed or suspect company's jobs once they're unconfirmed for 7 days", () => {
+    const later = "2026-09-08T00:00:01.000Z"; // T0 + 7 days
+    const prev = [job("a", { lastSeenAt: T0 }), job("b", { lastSeenAt: "2026-09-05T00:00:00.000Z" })];
+    for (const o of ["failed", "suspect"] as const) {
+      const r = diffJobs({ previous: prev, current: [], outcomeOf: () => o, now: later });
+      expect(r.closed.map((j) => j.id)).toEqual([prev[0]!.id]);
+      expect(r.jobs.find((j) => j.id === prev[1]!.id)).toMatchObject({ status: "open" });
+    }
+  });
+
   it("treats 304 Not Modified as still open", () => {
     const r = diffJobs({ previous: [job("a", { missedRuns: 1 })], current: [], outcomeOf: () => "not-modified", now: T1 });
     expect(r.jobs[0]).toMatchObject({ status: "open", missedRuns: 0, lastSeenAt: T1 });

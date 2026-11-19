@@ -3,6 +3,11 @@ import type { Job } from "@rekiya/shared";
 export const CLOSE_AFTER_MISSED_RUNS = 2;
 export const ARCHIVE_AFTER_DAYS = 30;
 export const SUSPECT_MIN_PREVIOUS = 3;
+/**
+ * A failed or suspect crawl keeps a source's jobs, so a temporary outage never empties the site. But a job its source
+ * hasn't confirmed for this long is out of date (the site moved, blocked crawling, or really has no openings): close it.
+ */
+export const STALE_AFTER_DAYS = 7;
 
 /** How a target's crawl ended this run. */
 export type TargetOutcome = "ok" | "failed" | "not-modified" | "suspect" | "skipped";
@@ -49,6 +54,7 @@ export function diffJobs({ previous, current, outcomeOf, now }: DiffInput): Diff
   const archived: Job[] = [];
   let updated = 0;
   const cutoff = Date.parse(now) - ARCHIVE_AFTER_DAYS * 86_400_000;
+  const staleBefore = Date.parse(now) - STALE_AFTER_DAYS * 86_400_000;
 
   for (const prev of previous) {
     const c = cur.get(prev.id);
@@ -68,7 +74,13 @@ export function diffJobs({ previous, current, outcomeOf, now }: DiffInput): Diff
     }
     const outcome = outcomeOf(prev.company);
     if (outcome === "failed" || outcome === "suspect") {
-      out.push(prev); // never overwrite good data with a failed crawl
+      if (Date.parse(prev.lastSeenAt) < staleBefore) {
+        const c2: Job = { ...prev, status: "closed", closedAt: now };
+        closed.push(c2);
+        out.push(c2);
+      } else {
+        out.push(prev); // never overwrite good data with a failed crawl
+      }
       continue;
     }
     if (outcome === "not-modified") {

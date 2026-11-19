@@ -2700,8 +2700,8 @@
       "tech"
     ],
     "status": "ready",
-    "active": true,
-    "notes": "careers.fortude.co lists roles from its own job-list endpoint (17 at probe time); Apply goes to Fortude's TalentRecruit ATS (verified Sep 2026)."
+    "active": false,
+    "notes": "Not crawled since Oct 2026: robots.txt on careers.fortude.co now disallows the job list, and fortude.talentrecruit.com refuses automated requests (HTTP 403). Checked Nov 2026."
   },
   {
     "slug": "galadari-hotels-lanka",
@@ -6844,15 +6844,15 @@
     "slug": "wso2",
     "name": "WSO2",
     "website": "https://wso2.com",
-    "careersUrl": "https://wso2.com/careers",
+    "careersUrl": "https://choreolabs.com/careers",
     "adapter": "html",
     "adapterConfig": {
-      "listSelector": ".pd-card",
-      "titleSelector": "h5",
-      "linkSelector": "a.cLinkCTA",
-      "locationSelector": ".cCountry",
-      "departmentSelector": ".pd-tier",
-      "typeSelector": ".pd-tag:not(.cCountry)",
+      "listSelector": "li.cl-car-card",
+      "titleSelector": "h3",
+      "linkSelector": "a",
+      "departmentSelector": "span.cl-tag",
+      "locationSelector": "p.cl-car-card__meta span:eq(0)",
+      "typeSelector": "p.cl-car-card__meta span:eq(1)",
       "locationFilter": "sri lanka"
     },
     "industry": "technology",
@@ -6863,7 +6863,7 @@
     ],
     "status": "ready",
     "active": true,
-    "notes": "Careers page lists global roles as cards; only Sri Lanka roles are kept (verified Sep 2026)."
+    "notes": "wso2.com/careers now redirects to choreolabs.com/careers (new layout); only Sri Lanka roles (fixed Nov 2026)."
   },
   {
     "slug": "xeynergy",
@@ -7030,15 +7030,10 @@
     "name": "Zyner.io",
     "website": "https://zyner.io",
     "careersUrl": "https://careers.zyner.io/",
-    "adapter": "html",
+    "adapter": "custom",
     "adapterConfig": {
-      "listSelector": "[data-slot='card']",
-      "titleSelector": "h2",
-      "linkSelector": "a[href*='rooster.jobs']",
-      "typeSelector": "h2 + div span:nth-child(1)",
-      "workplaceSelector": "h2 + div span:nth-child(2)",
-      "descriptionSelector": "p",
-      "defaultLocation": "Sri Lanka"
+      "kind": "rooster",
+      "companyId": 152597
     },
     "industry": "technology",
     "cseSymbol": null,
@@ -7048,6 +7043,6 @@
     ],
     "status": "ready",
     "active": true,
-    "notes": "Zyner's own careers page lists roles; Apply links go to its Rooster postings (verified Sep 2026)."
+    "notes": "careers.zyner.io now disallows crawling in robots.txt; its roles come from Rooster, read through Rooster's integration API (company 152597) like Surge Global (fixed Nov 2026)."
   }
 ]

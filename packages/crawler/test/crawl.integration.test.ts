@@ -16,7 +16,7 @@ const FIX = resolve(__dirname, "../fixtures");
 
 /** URL prefix → fixture file. Unlisted URLs 404, like a real missing page. */
 const ROUTES: Record<string, string> = {
-  "https://wso2.com/careers": "wso2.html",
+  "https://choreolabs.com/careers": "wso2.html",
   "https://www.creativesoftware.com/careers": "creative-software.html",
   "https://www.cdb.lk/": "cdb.html",
   "https://pickme.lk/": "pickme.html",
@@ -24,7 +24,6 @@ const ROUTES: Record<string, string> = {
   "https://www.vallibelone.com/": "vallibel-one.html",
   "https://vallibelone.com/": "vallibel-one.html",
   "https://abansfinance.lk/": "abans-finance.html",
-  "https://careers.zyner.io/": "zyner.html",
   "https://www.slt.lk/": "slt.html",
   "https://rootcode.ai/api/jobs": "rootcode.json",
   "https://apisv1.zillione.com/api/careers": "zillione.json",
@@ -94,6 +93,11 @@ function fakeFetcher(opts: { down?: RegExp } = {}): PoliteFetcher {
       const text = offset === 0 ? readFileSync(resolve(FIX, "workday-sysco.json"), "utf8") : JSON.stringify({ total: 20, jobPostings: [] });
       return { status: 200, url, headers: {}, text, notModified: false, validators: {} };
     }
+    if (url.startsWith("https://api.rooster.jobs/")) {
+      const id = (JSON.parse(req.body ?? "{}") as { variables?: { id?: number } }).variables?.id;
+      const text = readFileSync(resolve(FIX, id === 152597 ? "rooster-zyner.json" : "rooster-surge.json"), "utf8");
+      return { status: 200, url, headers: {}, text, notModified: false, validators: {} };
+    }
     if (url.includes("myworkdayjobs.com/wday/cxs/kaleris/kaleris_careers/jobs")) {
       const offset = (JSON.parse(req.body ?? "{}") as { offset?: number }).offset ?? 0;
       const text =
@@ -147,7 +151,6 @@ describe("local crawl over fixtures", () => {
       "union-bank-of-colombo",
       "pearson",
       "surge-global",
-      "fortude",
       "sysco-labs",
       "99x",
       "lanka-ioc",
@@ -176,7 +179,7 @@ describe("local crawl over fixtures", () => {
 
   it("a site that is down keeps its jobs and counts a failure", async () => {
     const before = read<Job[]>("jobs.json").filter((j) => j.company === "wso2");
-    const r = await runCrawl({ ...opts(), now: T2, fetcher: fakeFetcher({ down: /wso2\.com/ }) });
+    const r = await runCrawl({ ...opts(), now: T2, fetcher: fakeFetcher({ down: /choreolabs\.com/ }) });
     expect(r.closed).toBe(0);
     expect(read<Job[]>("jobs.json").filter((j) => j.company === "wso2")).toEqual(before);
     const health = read<Record<string, { consecutiveFailures: number; lastError: string | null }>>("health.json");

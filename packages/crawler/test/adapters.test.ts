@@ -63,7 +63,7 @@ const summarize = (jobs: NonNullable<ReturnType<typeof normalizeJob>["job"]>[]) 
 
 describe("html adapter on real careers pages", () => {
   it("WSO2: keeps only Sri Lanka roles", async () => {
-    const { raw, jobs } = await crawl("wso2", { "https://wso2.com/careers": "wso2.html" });
+    const { raw, jobs } = await crawl("wso2", { "https://choreolabs.com/careers": "wso2.html" });
     expect(raw.length).toBeGreaterThan(20);
     expect(jobs.length).toBeGreaterThan(3);
     expect(jobs.every((j) => j.includes("| Sri Lanka |"))).toBe(true);
@@ -107,10 +107,10 @@ describe("html adapter on real careers pages", () => {
     expect(jobs).toMatchSnapshot();
   });
 
-  it("Zyner", async () => {
-    const { jobs } = await crawl("zyner-io", { "https://careers.zyner.io/": "zyner.html" });
-    expect(jobs).toHaveLength(3);
-    expect(jobs.every((j) => j.includes("| intern |") && j.includes("| remote |"))).toBe(true);
+  it("Zyner via Rooster's integration API", async () => {
+    const { jobs } = await crawl("zyner-io", { "https://api.rooster.jobs/": "rooster-zyner.json" });
+    expect(jobs).toHaveLength(5);
+    expect(jobs.every((j) => j.includes("| intern | internship |") && j.includes("boards.rooster.jobs/jobs/"))).toBe(true);
   });
 
   it("SLT: ALL-CAPS headings become readable titles", async () => {

@@ -69,6 +69,7 @@ Check whether these belong to a group that the domain rule can't see.
 - rootcode: website `rootcode.io`, careers `rootcode.ai`
 - ascentic: website `ascentic.se`, careers `career.ascentic.se`
 - ifs: website `ifs.com`, careers `careers.smartrecruiters.com`
+- wso2: website `wso2.com`, careers `choreolabs.com`
 - sysco-labs: website `syscolabs.lk`, careers `wd5.myworkdaysite.com`
 - lseg: website `lseg.com`, careers `lseg.wd3.myworkdayjobs.com`
 - zyner-io: website `zyner.io`, careers `careers.zyner.io`
@@ -221,4 +222,4 @@ Check whether these belong to a group that the domain rule can't see.
 
 - companies.json: 397
 - groups.json: 20
-- crawl-targets.json: 104
+- crawl-targets.json: 103
