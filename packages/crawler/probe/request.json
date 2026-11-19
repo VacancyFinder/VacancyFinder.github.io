@@ -1,50 +1,105 @@
 {
-  "note": "Run 11: sources failing in production (Fortude, Zyner, Lanka IOC, WSO2, Platned).",
-  "run": 11,
+  "note": "Run 12: separate careers sites / ATS for large employers not yet crawled (IFS, Virtusa, HCLTech, Standard Chartered, Deloitte, Wiley, HSBC, WNS, KPMG, Persistent, Moody's, Acuity, Swivel, Nagarro).",
+  "run": 12,
   "targets": [],
   "render": true,
   "urls": [
     {
-      "id": "zyner-rooster",
-      "url": "https://api.rooster.jobs/integration/graphql",
+      "id": "ifs-sr-careers",
+      "url": "https://careers.smartrecruiters.com/IFS1",
+      "render": false
+    },
+    {
+      "id": "ifs-sr-jobs",
+      "url": "https://jobs.smartrecruiters.com/IFS1",
+      "render": false
+    },
+    {
+      "id": "ifs-sr-api",
+      "url": "https://api.smartrecruiters.com/v1/companies/IFS1/postings?country=lk",
+      "render": false
+    },
+    {
+      "id": "ifs-site",
+      "url": "https://www.ifs.com/careers",
+      "render": true
+    },
+    {
+      "id": "swivel-sr-api",
+      "url": "https://api.smartrecruiters.com/v1/companies/SwivelGroup/postings",
+      "render": false
+    },
+    {
+      "id": "nagarro-sr-api",
+      "url": "https://api.smartrecruiters.com/v1/companies/Nagarro1/postings?country=lk",
+      "render": false
+    },
+    {
+      "id": "virtusa-site",
+      "url": "https://www.virtusa.com/careers",
+      "render": true
+    },
+    {
+      "id": "virtusa-careers",
+      "url": "https://careers.virtusa.com/",
+      "render": true
+    },
+    {
+      "id": "hcl-careers",
+      "url": "https://careers.hcltech.com/",
+      "render": true
+    },
+    {
+      "id": "sc-jobs",
+      "url": "https://jobs.standardchartered.com/",
+      "render": true
+    },
+    {
+      "id": "deloitte-sa",
+      "url": "https://southasiacareers.deloitte.com/",
+      "render": true
+    },
+    {
+      "id": "wiley-careers",
+      "url": "https://www.wiley.com/en-us/about-us/careers",
+      "render": true
+    },
+    {
+      "id": "hsbc-find",
+      "url": "https://www.hsbc.com/careers/find-a-job",
+      "render": true
+    },
+    {
+      "id": "wns-careers",
+      "url": "https://www.wnscareers.com/",
+      "render": true
+    },
+    {
+      "id": "kpmg-lk",
+      "url": "https://kpmg.com/lk/en/careers.html",
+      "render": true
+    },
+    {
+      "id": "persistent",
+      "url": "https://www.persistent.com/careers/",
+      "render": true
+    },
+    {
+      "id": "moodys-search",
+      "url": "https://careers.moodys.com/en/search-jobs",
+      "render": true
+    },
+    {
+      "id": "acuity",
+      "url": "https://www.acuitykp.com/careers/",
+      "render": true
+    },
+    {
+      "id": "wiley-workday",
+      "url": "https://wiley.wd1.myworkdayjobs.com/wday/cxs/wiley/External/jobs",
       "method": "POST",
       "contentType": "application/json",
-      "body": "{\"query\": \"query FetchCompanyJobs($id: Int!) { fetchOneCompanyPublic(id: $id) { name activeJobs { id title department location jobType } } }\", \"variables\": {\"id\": 152597}}",
-      "render": false
-    },
-    {
-      "id": "fortude-talentrecruit",
-      "url": "https://fortude.talentrecruit.com/",
-      "render": true
-    },
-    {
-      "id": "fortude-careers",
-      "url": "https://careers.fortude.co/",
-      "render": true
-    },
-    {
-      "id": "lankaioc-openings",
-      "url": "https://www.lankaioc.com/current-openings/",
-      "render": true
-    },
-    {
-      "id": "lankaioc-careers",
-      "url": "https://www.lankaioc.com/careers",
-      "render": true
-    },
-    {
-      "id": "wso2-careers",
-      "url": "https://wso2.com/careers/",
-      "render": true
-    },
-    {
-      "id": "platned-careers",
-      "url": "https://platned.com/careers",
-      "render": false
-    },
-    {
-      "id": "zyner-careers",
-      "url": "https://careers.zyner.io/",
+      "body": "{\"appliedFacets\": {}, \"limit\": 20, \"offset\": 0, \"searchText\": \"Colombo\"}",
       "render": false
     }
   ]
