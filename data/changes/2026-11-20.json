@@ -976,5 +976,30 @@
         "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2598006"
       }
     ]
+  },
+  {
+    "at": "2026-11-20T19:31:39.606Z",
+    "added": [
+      {
+        "id": "6a0c15dce0607d17e18a2b675c9562c5d873eaed",
+        "title": "Executive - Human Resources",
+        "company": "keells",
+        "url": "https://careers.keells.com/job/Wattala-Executive-Human-Resources/1370696666/"
+      }
+    ],
+    "closed": [
+      {
+        "id": "35a8b56f15d99a30b233fb691effb2a68a7e66db",
+        "title": "Assistant - Development Systems & Control",
+        "company": "mas-holdings",
+        "url": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/21829"
+      },
+      {
+        "id": "e49008352ede44e21161dd0a070c69819dd7f91b",
+        "title": "Assistant - Development Systems & Control",
+        "company": "mas-holdings",
+        "url": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/21827"
+      }
+    ]
   }
 ]
