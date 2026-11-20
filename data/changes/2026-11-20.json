@@ -1001,5 +1001,53 @@
         "url": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/21827"
       }
     ]
+  },
+  {
+    "at": "2026-11-20T22:32:03.987Z",
+    "added": [],
+    "closed": [
+      {
+        "id": "4d9e6a0c6ee8de16fff26bdc551f4491d4ca16b1",
+        "title": "Banking Associate - Retail Recoveries",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2044645"
+      },
+      {
+        "id": "232433befffd9eb8df9c1f6ae25290980c19bec8",
+        "title": "Process Associate - Financial Services",
+        "company": "keells",
+        "url": "https://careers.keells.com/InfoMate/job/Colombo-Process-Associate-Financial-Services/1369730366/"
+      },
+      {
+        "id": "89a5f2f97df3eac021b99fbb35306945b50f7a9d",
+        "title": "Executive - Finance & Operations",
+        "company": "keells",
+        "url": "https://careers.keells.com/job/Colombo-02-Executive-Finance-&-Operations/1369578666/"
+      },
+      {
+        "id": "a87b52b6c4e878763440691ead1f521dcfe9a65d",
+        "title": "Associate Manager - Credit Audit",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-2042405"
+      },
+      {
+        "id": "796e5ec4f205271f3d7a23c362c329c96fbb5077",
+        "title": "Junior Executive - Operations",
+        "company": "hayleys-group",
+        "url": "https://emdm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_23001/job/3144"
+      },
+      {
+        "id": "90667558ddcb5bcf2facc6764bc52f713bfc6c44",
+        "title": "Consultant - Core solutions and services (SAP HCM Payroll)",
+        "company": "keells",
+        "url": "https://careers.keells.com/JohnKeellsIT/job/Colombo-Consultant-Core-solutions-and-services-%28SAP-HCM-Payroll%29/1369132366/"
+      },
+      {
+        "id": "96fd5d82f049cda3e749a0fd8204f8c619f2d50f",
+        "title": "Intern - Information Technology",
+        "company": "keells",
+        "url": "https://careers.keells.com/JohnKeellsIT/job/Colombo-Intern-Information-Technology/1369131866/"
+      }
+    ]
   }
 ]
