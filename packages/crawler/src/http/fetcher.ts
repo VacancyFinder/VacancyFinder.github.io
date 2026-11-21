@@ -148,7 +148,18 @@ export class PoliteFetcher {
   /** Fetch with politeness. Throws RobotsDisallowedError, HttpError (after retries), or network errors. */
   async get(url: string, req: FetchRequest = {}): Promise<FetchResult> {
     if (!req.skipRobots && !(await this.allowed(url))) throw new RobotsDisallowedError(url);
-    const r = await this.request(url, req);
+    let r = await this.request(url, req);
+    // Some servers and firewalls answer a conditional request (If-None-Match / If-Modified-Since) with a 4xx
+    // (e.g. Codimite 422, Bank of Ceylon 403) while serving the same page normally: retry once without them.
+    if (
+      r.status >= 400 &&
+      r.status < 500 &&
+      r.status !== 404 &&
+      r.status !== 410 &&
+      (req.validators?.etag || req.validators?.lastModified)
+    ) {
+      r = await this.request(url, { ...req, validators: undefined });
+    }
     if (r.status >= 400) throw new HttpError(r.status, url);
     return r;
   }

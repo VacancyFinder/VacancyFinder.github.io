@@ -94,7 +94,6 @@ Check whether these belong to a group that the domain rule can't see.
 - codegen.careersUrl
 - axiata-digital-labs.careersUrl
 - allion-technologies.careersUrl
-- gapstars.careersUrl
 - insighture.careersUrl
 - senzmate.careersUrl
 - xeynergy.careersUrl
@@ -226,4 +225,4 @@ Check whether these belong to a group that the domain rule can't see.
 
 - companies.json: 397
 - groups.json: 20
-- crawl-targets.json: 105
+- crawl-targets.json: 104
