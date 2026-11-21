@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-21T04:32:57.647Z",
-  "runDurationMs": 172777,
+  "generatedAt": "2026-11-21T07:33:19.202Z",
+  "runDurationMs": 77843,
   "totals": {
-    "open": 748,
+    "open": 749,
     "companiesWithJobs": 57,
     "targets": 56,
-    "targetsOk": 52
+    "targetsOk": 51
   },
   "byField": {
     "admin-customer-service": 33,
     "banking-insurance": 23,
-    "cloud-devops": 68,
+    "cloud-devops": 69,
     "cybersecurity": 18,
     "data-ai-ml": 75,
     "digital-graphics": 7,
@@ -62,7 +62,7 @@
     "keells": 40,
     "keells-food-products": 2,
     "lseg": 30,
-    "mas-holdings": 134,
+    "mas-holdings": 135,
     "millenniumit-esp": 29,
     "nagarro": 1,
     "national-development-bank": 16,
@@ -96,7 +96,7 @@
     "principal": 17,
     "senior": 122,
     "trainee": 14,
-    "unspecified": 280
+    "unspecified": 281
   },
   "byIndustry": {
     "automotive": 2,
@@ -106,7 +106,7 @@
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 509,
+    "technology": 510,
     "telecommunications": 29
   }
 }
