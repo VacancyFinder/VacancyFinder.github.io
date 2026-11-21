@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-21T01:32:28.415Z",
-  "runDurationMs": 180946,
+  "generatedAt": "2026-11-21T04:32:57.647Z",
+  "runDurationMs": 172777,
   "totals": {
-    "open": 752,
+    "open": 748,
     "companiesWithJobs": 57,
     "targets": 56,
     "targetsOk": 52
@@ -14,17 +14,17 @@
     "cybersecurity": 18,
     "data-ai-ml": 75,
     "digital-graphics": 7,
-    "engineering-manufacturing": 64,
+    "engineering-manufacturing": 63,
     "finance-accounting": 75,
     "healthcare": 2,
     "hospitality-tourism": 8,
     "human-resource": 41,
     "legal-compliance": 26,
-    "operations-logistics": 80,
+    "operations-logistics": 79,
     "other": 78,
-    "product-project-business": 40,
+    "product-project-business": 38,
     "qa-testing": 22,
-    "sales-marketing": 93,
+    "sales-marketing": 92,
     "software-engineering": 122,
     "ui-ux-design": 4
   },
@@ -46,7 +46,7 @@
     "codimite": 13,
     "creately": 2,
     "creative-software": 2,
-    "deloitte-sri-lanka": 24,
+    "deloitte-sri-lanka": 23,
     "dialog": 2,
     "dialog-axiata": 28,
     "diesel-and-motor-engineering": 2,
@@ -62,7 +62,7 @@
     "keells": 40,
     "keells-food-products": 2,
     "lseg": 30,
-    "mas-holdings": 137,
+    "mas-holdings": 134,
     "millenniumit-esp": 29,
     "nagarro": 1,
     "national-development-bank": 16,
@@ -88,15 +88,15 @@
     "zyner-io": 5
   },
   "bySeniority": {
-    "intern": 108,
+    "intern": 107,
     "junior": 54,
     "lead": 59,
     "manager": 93,
     "mid": 2,
     "principal": 17,
-    "senior": 124,
+    "senior": 122,
     "trainee": 14,
-    "unspecified": 281
+    "unspecified": 280
   },
   "byIndustry": {
     "automotive": 2,
@@ -106,7 +106,7 @@
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 513,
+    "technology": 509,
     "telecommunications": 29
   }
 }
