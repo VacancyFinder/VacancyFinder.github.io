@@ -1,22 +1,27 @@
 {
-  "note": "Run 15: Union Bank PeoplesHR job portal now answers 404.",
-  "run": 15,
+  "note": "Run 16: sources failing since Nov 20 (Gapstars 0 jobs, Codimite 422, Bank of Ceylon 403).",
+  "run": 16,
   "targets": [],
   "render": true,
   "urls": [
     {
-      "id": "unionb-portal",
-      "url": "https://unionbank.peopleshr.com/JobPortal",
+      "id": "gapstars-jobs",
+      "url": "https://gapstars.net/tech/jobs/",
       "render": true
     },
     {
-      "id": "unionb-careers",
-      "url": "https://www.unionb.com/careers",
+      "id": "gapstars-careers",
+      "url": "https://gapstars.net/tech/careers/",
+      "render": false
+    },
+    {
+      "id": "codimite-careers",
+      "url": "https://codimite.ai/careers/",
       "render": true
     },
     {
-      "id": "unionb-careers-2",
-      "url": "https://www.unionb.com/careers/",
+      "id": "boc-careers",
+      "url": "https://www.boc.lk/careers",
       "render": true
     }
   ]
