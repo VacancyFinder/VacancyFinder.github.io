@@ -308,8 +308,8 @@ describe("Sri Lanka IT companies list (Nov 2026)", () => {
   });
 
   it("Gapstars: Colombo roles", async () => {
-    const { jobs } = await crawl("gapstars", { "https://gapstars.net/tech/jobs/": "gapstars.html" });
-    expect(jobs).toHaveLength(10);
+    const { jobs } = await crawl("gapstars", { "https://www.gapstars.net/careers": "gapstars.html" });
+    expect(jobs).toHaveLength(9);
     expect(jobs.every((j) => j.includes("| Colombo |"))).toBe(true);
   });
 

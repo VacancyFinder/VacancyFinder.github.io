@@ -2753,14 +2753,13 @@
     "slug": "gapstars",
     "name": "Gapstars",
     "website": "https://www.gapstars.net",
-    "careersUrl": "https://gapstars.net/tech/jobs/",
+    "careersUrl": "https://www.gapstars.net/careers",
     "adapter": "html",
     "adapterConfig": {
-      "listSelector": "div.jet-listing-grid__item",
-      "titleSelector": "h3",
-      "locationSelector": "div.elementor-heading-title",
-      "linkSelector": "a[href*=\"career-listings\"]",
-      "requireLink": true,
+      "listSelector": "a[class*=\"__resultItem\"]",
+      "titleSelector": "div:eq(1) span:eq(0)",
+      "locationSelector": "div:eq(0) span:eq(1)",
+      "departmentSelector": "div:eq(2) span",
       "locationFilter": "colombo|sri lanka"
     },
     "industry": "technology",
@@ -2771,7 +2770,7 @@
     ],
     "status": "ready",
     "active": true,
-    "notes": "Gapstars jobs page (all Sri Lanka openings; the Portugal hub has its own page) (verified by the probe, Nov 2026)."
+    "notes": "Gapstars moved its careers to www.gapstars.net/careers (new site, Nov 2026); reads the page's full job list, Sri Lanka roles only."
   },
   {
     "slug": "gestetner-of-ceylon",
@@ -6698,8 +6697,8 @@
       "cse"
     ],
     "status": "ready",
-    "active": true,
-    "notes": "unionb.com/careers redirects to its PeoplesHR job portal; vacancies come from the portal's JSON (2 at probe time, verified Sep 2026). The portal has no per-vacancy link, so Apply opens the portal."
+    "active": false,
+    "notes": "Not crawled: since Nov 2026 robots.txt on unionbank.peopleshr.com disallows the job portal (it also returned 404 for a while)."
   },
   {
     "slug": "vallibel-finance",

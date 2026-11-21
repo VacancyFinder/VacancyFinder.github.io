@@ -429,8 +429,8 @@
     "parentGroup": null
   },
   {
-    "id": "gapstars-net-tech-jobs",
-    "canonicalUrl": "https://gapstars.net/tech/jobs",
+    "id": "gapstars-net-careers",
+    "canonicalUrl": "https://gapstars.net/careers",
     "adapter": "html",
     "companySlugs": [
       "gapstars"
@@ -841,15 +841,6 @@
     "adapter": "none",
     "companySlugs": [
       "tiqri"
-    ],
-    "parentGroup": null
-  },
-  {
-    "id": "unionb-com-careers",
-    "canonicalUrl": "https://unionb.com/careers",
-    "adapter": "custom",
-    "companySlugs": [
-      "union-bank-of-colombo"
     ],
     "parentGroup": null
   },
