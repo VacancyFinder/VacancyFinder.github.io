@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-21T07:33:19.202Z",
-  "runDurationMs": 77843,
+  "generatedAt": "2026-11-21T10:33:54.104Z",
+  "runDurationMs": 177220,
   "totals": {
-    "open": 749,
+    "open": 751,
     "companiesWithJobs": 57,
     "targets": 56,
-    "targetsOk": 51
+    "targetsOk": 52
   },
   "byField": {
     "admin-customer-service": 33,
@@ -24,7 +24,7 @@
     "other": 78,
     "product-project-business": 38,
     "qa-testing": 22,
-    "sales-marketing": 92,
+    "sales-marketing": 94,
     "software-engineering": 122,
     "ui-ux-design": 4
   },
@@ -62,7 +62,7 @@
     "keells": 40,
     "keells-food-products": 2,
     "lseg": 30,
-    "mas-holdings": 135,
+    "mas-holdings": 137,
     "millenniumit-esp": 29,
     "nagarro": 1,
     "national-development-bank": 16,
@@ -88,7 +88,7 @@
     "zyner-io": 5
   },
   "bySeniority": {
-    "intern": 107,
+    "intern": 109,
     "junior": 54,
     "lead": 59,
     "manager": 93,
@@ -106,7 +106,7 @@
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 510,
+    "technology": 512,
     "telecommunications": 29
   }
 }
