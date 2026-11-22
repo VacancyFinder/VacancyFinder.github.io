@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-22T19:38:46.657Z",
-  "runDurationMs": 183991,
+  "generatedAt": "2026-11-22T22:39:12.780Z",
+  "runDurationMs": 163205,
   "totals": {
-    "open": 745,
+    "open": 740,
     "companiesWithJobs": 56,
     "targets": 56,
-    "targetsOk": 53
+    "targetsOk": 52
   },
   "byField": {
     "admin-customer-service": 33,
@@ -16,16 +16,16 @@
     "digital-graphics": 8,
     "engineering-manufacturing": 63,
     "finance-accounting": 75,
-    "healthcare": 2,
-    "hospitality-tourism": 8,
+    "healthcare": 1,
+    "hospitality-tourism": 7,
     "human-resource": 41,
     "legal-compliance": 25,
     "operations-logistics": 78,
-    "other": 78,
+    "other": 77,
     "product-project-business": 38,
     "qa-testing": 22,
     "sales-marketing": 93,
-    "software-engineering": 120,
+    "software-engineering": 118,
     "ui-ux-design": 4
   },
   "byCompany": {
@@ -45,7 +45,7 @@
     "codegen": 5,
     "codimite": 13,
     "creately": 2,
-    "creative-software": 2,
+    "creative-software": 1,
     "deloitte-sri-lanka": 23,
     "dialog": 2,
     "dialog-axiata": 28,
@@ -53,12 +53,12 @@
     "digiratina-technology-solutions": 12,
     "digital-mobility-solutions-lanka-pickme": 3,
     "gapstars": 9,
-    "hayleys-group": 111,
+    "hayleys-group": 109,
     "ifs": 23,
     "insighture": 8,
     "john-keells-hotels": 2,
     "kaleris": 2,
-    "keells": 38,
+    "keells": 37,
     "keells-food-products": 2,
     "lseg": 29,
     "mas-holdings": 136,
@@ -74,7 +74,7 @@
     "senzmate": 24,
     "sri-lanka-telecom": 1,
     "surge-global": 19,
-    "sysco-labs": 48,
+    "sysco-labs": 47,
     "tekgeeks": 3,
     "tgt-global": 1,
     "union-bank-of-colombo": 1,
@@ -89,23 +89,23 @@
   "bySeniority": {
     "intern": 108,
     "junior": 54,
-    "lead": 59,
+    "lead": 58,
     "manager": 92,
     "mid": 2,
     "principal": 17,
     "senior": 119,
     "trainee": 14,
-    "unspecified": 280
+    "unspecified": 276
   },
   "byIndustry": {
     "automotive": 2,
     "banking": 18,
     "consumer-goods-retail": 2,
-    "diversified": 162,
+    "diversified": 159,
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 508,
+    "technology": 506,
     "telecommunications": 29
   }
 }
