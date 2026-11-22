@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-22T16:38:17.305Z",
-  "runDurationMs": 170125,
+  "generatedAt": "2026-11-22T19:38:46.657Z",
+  "runDurationMs": 183991,
   "totals": {
     "open": 745,
     "companiesWithJobs": 56,
     "targets": 56,
-    "targetsOk": 52
+    "targetsOk": 53
   },
   "byField": {
     "admin-customer-service": 33,
     "banking-insurance": 23,
-    "cloud-devops": 69,
+    "cloud-devops": 68,
     "cybersecurity": 18,
     "data-ai-ml": 73,
     "digital-graphics": 8,
-    "engineering-manufacturing": 62,
+    "engineering-manufacturing": 63,
     "finance-accounting": 75,
     "healthcare": 2,
     "hospitality-tourism": 8,
@@ -61,7 +61,7 @@
     "keells": 38,
     "keells-food-products": 2,
     "lseg": 29,
-    "mas-holdings": 135,
+    "mas-holdings": 136,
     "millenniumit-esp": 29,
     "nagarro": 1,
     "national-development-bank": 16,
@@ -74,7 +74,7 @@
     "senzmate": 24,
     "sri-lanka-telecom": 1,
     "surge-global": 19,
-    "sysco-labs": 49,
+    "sysco-labs": 48,
     "tekgeeks": 3,
     "tgt-global": 1,
     "union-bank-of-colombo": 1,
