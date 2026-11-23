@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-23T19:42:20.734Z",
-  "runDurationMs": 171858,
+  "generatedAt": "2026-11-23T22:42:44.656Z",
+  "runDurationMs": 157127,
   "totals": {
-    "open": 756,
+    "open": 742,
     "companiesWithJobs": 57,
     "targets": 56,
-    "targetsOk": 52
+    "targetsOk": 51
   },
   "byField": {
     "admin-customer-service": 35,
@@ -14,17 +14,16 @@
     "cybersecurity": 18,
     "data-ai-ml": 74,
     "digital-graphics": 8,
-    "engineering-manufacturing": 66,
-    "finance-accounting": 76,
-    "healthcare": 1,
+    "engineering-manufacturing": 65,
+    "finance-accounting": 72,
     "hospitality-tourism": 7,
-    "human-resource": 43,
+    "human-resource": 42,
     "legal-compliance": 24,
-    "operations-logistics": 81,
-    "other": 81,
+    "operations-logistics": 77,
+    "other": 79,
     "product-project-business": 40,
     "qa-testing": 19,
-    "sales-marketing": 91,
+    "sales-marketing": 88,
     "software-engineering": 120,
     "ui-ux-design": 4
   },
@@ -54,15 +53,15 @@
     "digiratina-technology-solutions": 12,
     "digital-mobility-solutions-lanka-pickme": 3,
     "gapstars": 9,
-    "hayleys-group": 114,
+    "hayleys-group": 103,
     "ifs": 21,
     "insighture": 8,
     "john-keells-hotels": 2,
     "kaleris": 2,
     "keells": 37,
     "keells-food-products": 2,
-    "lseg": 30,
-    "mas-holdings": 142,
+    "lseg": 28,
+    "mas-holdings": 141,
     "millenniumit-esp": 29,
     "nagarro": 1,
     "national-development-bank": 20,
@@ -88,25 +87,25 @@
     "zyner-io": 6
   },
   "bySeniority": {
-    "intern": 113,
-    "junior": 53,
+    "intern": 112,
+    "junior": 51,
     "lead": 59,
-    "manager": 92,
+    "manager": 89,
     "mid": 2,
     "principal": 16,
-    "senior": 119,
+    "senior": 117,
     "trainee": 16,
-    "unspecified": 286
+    "unspecified": 280
   },
   "byIndustry": {
     "automotive": 2,
     "banking": 22,
     "consumer-goods-retail": 2,
-    "diversified": 163,
+    "diversified": 152,
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 513,
+    "technology": 510,
     "telecommunications": 30
   }
 }
