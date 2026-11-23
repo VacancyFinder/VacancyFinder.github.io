@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-11-23T07:40:31.549Z",
-  "runDurationMs": 171757,
+  "generatedAt": "2026-11-23T10:41:04.733Z",
+  "runDurationMs": 164771,
   "totals": {
-    "open": 736,
-    "companiesWithJobs": 56,
+    "open": 746,
+    "companiesWithJobs": 57,
     "targets": 56,
-    "targetsOk": 51
+    "targetsOk": 53
   },
   "byField": {
     "admin-customer-service": 33,
     "banking-insurance": 23,
-    "cloud-devops": 69,
+    "cloud-devops": 70,
     "cybersecurity": 18,
     "data-ai-ml": 73,
     "digital-graphics": 8,
-    "engineering-manufacturing": 63,
-    "finance-accounting": 75,
+    "engineering-manufacturing": 65,
+    "finance-accounting": 76,
     "healthcare": 1,
     "hospitality-tourism": 7,
     "human-resource": 39,
     "legal-compliance": 24,
-    "operations-logistics": 78,
-    "other": 80,
-    "product-project-business": 38,
+    "operations-logistics": 80,
+    "other": 81,
+    "product-project-business": 39,
     "qa-testing": 19,
-    "sales-marketing": 89,
-    "software-engineering": 119,
+    "sales-marketing": 90,
+    "software-engineering": 120,
     "ui-ux-design": 4
   },
   "byCompany": {
@@ -37,6 +37,7 @@
     "bank-of-ceylon": 5,
     "beespoint": 3,
     "brownsgroup": 10,
+    "cambio-software-engineering": 1,
     "cargills-bank": 1,
     "cargills-ceylon": 2,
     "cargillsceylon": 1,
@@ -53,7 +54,7 @@
     "digiratina-technology-solutions": 12,
     "digital-mobility-solutions-lanka-pickme": 3,
     "gapstars": 9,
-    "hayleys-group": 113,
+    "hayleys-group": 114,
     "ifs": 22,
     "insighture": 8,
     "john-keells-hotels": 2,
@@ -61,7 +62,7 @@
     "keells": 37,
     "keells-food-products": 2,
     "lseg": 29,
-    "mas-holdings": 128,
+    "mas-holdings": 136,
     "millenniumit-esp": 29,
     "nagarro": 1,
     "national-development-bank": 16,
@@ -87,25 +88,25 @@
     "zyner-io": 6
   },
   "bySeniority": {
-    "intern": 104,
+    "intern": 108,
     "junior": 53,
-    "lead": 58,
+    "lead": 59,
     "manager": 92,
     "mid": 2,
     "principal": 17,
-    "senior": 117,
+    "senior": 118,
     "trainee": 16,
-    "unspecified": 277
+    "unspecified": 281
   },
   "byIndustry": {
     "automotive": 2,
     "banking": 18,
     "consumer-goods-retail": 2,
-    "diversified": 162,
+    "diversified": 163,
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 498,
+    "technology": 507,
     "telecommunications": 30
   }
 }
