@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-23T13:41:28.945Z",
-  "runDurationMs": 170789,
+  "generatedAt": "2026-11-23T16:41:55.807Z",
+  "runDurationMs": 175142,
   "totals": {
-    "open": 752,
+    "open": 756,
     "companiesWithJobs": 57,
     "targets": 56,
-    "targetsOk": 51
+    "targetsOk": 53
   },
   "byField": {
-    "admin-customer-service": 34,
-    "banking-insurance": 25,
+    "admin-customer-service": 35,
+    "banking-insurance": 27,
     "cloud-devops": 69,
     "cybersecurity": 18,
     "data-ai-ml": 74,
@@ -20,12 +20,12 @@
     "hospitality-tourism": 7,
     "human-resource": 43,
     "legal-compliance": 24,
-    "operations-logistics": 80,
+    "operations-logistics": 81,
     "other": 81,
-    "product-project-business": 39,
+    "product-project-business": 40,
     "qa-testing": 19,
     "sales-marketing": 91,
-    "software-engineering": 119,
+    "software-engineering": 120,
     "ui-ux-design": 4
   },
   "byCompany": {
@@ -61,16 +61,16 @@
     "kaleris": 2,
     "keells": 37,
     "keells-food-products": 2,
-    "lseg": 29,
+    "lseg": 30,
     "mas-holdings": 142,
     "millenniumit-esp": 29,
     "nagarro": 1,
-    "national-development-bank": 18,
+    "national-development-bank": 20,
     "octave": 7,
     "orysys": 19,
     "pearson": 9,
     "petdesk": 1,
-    "platned": 7,
+    "platned": 8,
     "rootcode": 5,
     "senzmate": 24,
     "sri-lanka-telecom": 1,
@@ -88,7 +88,7 @@
     "zyner-io": 6
   },
   "bySeniority": {
-    "intern": 112,
+    "intern": 113,
     "junior": 53,
     "lead": 59,
     "manager": 92,
@@ -96,17 +96,17 @@
     "principal": 16,
     "senior": 119,
     "trainee": 16,
-    "unspecified": 283
+    "unspecified": 286
   },
   "byIndustry": {
     "automotive": 2,
-    "banking": 20,
+    "banking": 22,
     "consumer-goods-retail": 2,
     "diversified": 163,
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 511,
+    "technology": 513,
     "telecommunications": 30
   }
 }
