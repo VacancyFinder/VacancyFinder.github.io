@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T10:44:27.876Z",
-  "runDurationMs": 172934,
+  "generatedAt": "2026-11-24T13:44:57.774Z",
+  "runDurationMs": 172267,
   "totals": {
-    "open": 724,
+    "open": 725,
     "companiesWithJobs": 56,
     "targets": 56,
     "targetsOk": 51
@@ -10,14 +10,14 @@
   "byField": {
     "admin-customer-service": 35,
     "banking-insurance": 27,
-    "cloud-devops": 70,
+    "cloud-devops": 71,
     "cybersecurity": 18,
     "data-ai-ml": 73,
     "digital-graphics": 8,
     "engineering-manufacturing": 59,
     "finance-accounting": 69,
-    "hospitality-tourism": 7,
-    "human-resource": 44,
+    "hospitality-tourism": 8,
+    "human-resource": 43,
     "legal-compliance": 24,
     "operations-logistics": 75,
     "other": 73,
@@ -52,15 +52,15 @@
     "digiratina-technology-solutions": 12,
     "digital-mobility-solutions-lanka-pickme": 3,
     "gapstars": 9,
-    "hayleys-group": 104,
+    "hayleys-group": 105,
     "ifs": 21,
     "insighture": 8,
     "john-keells-hotels": 2,
     "kaleris": 2,
-    "keells": 37,
+    "keells": 38,
     "keells-food-products": 2,
     "lseg": 29,
-    "mas-holdings": 124,
+    "mas-holdings": 123,
     "millenniumit-esp": 29,
     "nagarro": 1,
     "national-development-bank": 20,
@@ -86,24 +86,24 @@
     "zyner-io": 6
   },
   "bySeniority": {
-    "intern": 107,
+    "intern": 106,
     "junior": 50,
     "lead": 59,
     "manager": 86,
     "mid": 2,
-    "principal": 16,
+    "principal": 17,
     "senior": 115,
     "trainee": 16,
-    "unspecified": 273
+    "unspecified": 274
   },
   "byIndustry": {
     "banking": 22,
     "consumer-goods-retail": 2,
-    "diversified": 152,
+    "diversified": 154,
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 494,
+    "technology": 493,
     "telecommunications": 30
   }
 }
