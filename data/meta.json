@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-24T04:43:35.268Z",
-  "runDurationMs": 174170,
+  "generatedAt": "2026-11-24T07:43:58.487Z",
+  "runDurationMs": 178498,
   "totals": {
-    "open": 723,
+    "open": 724,
     "companiesWithJobs": 56,
     "targets": 56,
-    "targetsOk": 51
+    "targetsOk": 52
   },
   "byField": {
     "admin-customer-service": 35,
     "banking-insurance": 27,
-    "cloud-devops": 69,
+    "cloud-devops": 70,
     "cybersecurity": 18,
     "data-ai-ml": 73,
     "digital-graphics": 8,
-    "engineering-manufacturing": 61,
+    "engineering-manufacturing": 60,
     "finance-accounting": 69,
     "hospitality-tourism": 7,
     "human-resource": 43,
@@ -23,8 +23,8 @@
     "other": 73,
     "product-project-business": 39,
     "qa-testing": 19,
-    "sales-marketing": 84,
-    "software-engineering": 120,
+    "sales-marketing": 85,
+    "software-engineering": 121,
     "ui-ux-design": 4
   },
   "byCompany": {
@@ -59,7 +59,7 @@
     "kaleris": 2,
     "keells": 37,
     "keells-food-products": 2,
-    "lseg": 28,
+    "lseg": 29,
     "mas-holdings": 124,
     "millenniumit-esp": 29,
     "nagarro": 1,
@@ -92,9 +92,9 @@
     "manager": 86,
     "mid": 2,
     "principal": 16,
-    "senior": 114,
+    "senior": 116,
     "trainee": 16,
-    "unspecified": 274
+    "unspecified": 273
   },
   "byIndustry": {
     "banking": 22,
@@ -103,7 +103,7 @@
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 493,
+    "technology": 494,
     "telecommunications": 30
   }
 }
