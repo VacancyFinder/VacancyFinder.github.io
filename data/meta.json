@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-23T22:42:44.656Z",
-  "runDurationMs": 157127,
+  "generatedAt": "2026-11-24T01:43:08.254Z",
+  "runDurationMs": 164300,
   "totals": {
-    "open": 742,
+    "open": 743,
     "companiesWithJobs": 57,
     "targets": 56,
-    "targetsOk": 51
+    "targetsOk": 52
   },
   "byField": {
     "admin-customer-service": 35,
@@ -17,7 +17,7 @@
     "engineering-manufacturing": 65,
     "finance-accounting": 72,
     "hospitality-tourism": 7,
-    "human-resource": 42,
+    "human-resource": 43,
     "legal-compliance": 24,
     "operations-logistics": 77,
     "other": 79,
@@ -53,7 +53,7 @@
     "digiratina-technology-solutions": 12,
     "digital-mobility-solutions-lanka-pickme": 3,
     "gapstars": 9,
-    "hayleys-group": 103,
+    "hayleys-group": 104,
     "ifs": 21,
     "insighture": 8,
     "john-keells-hotels": 2,
@@ -88,7 +88,7 @@
   },
   "bySeniority": {
     "intern": 112,
-    "junior": 51,
+    "junior": 52,
     "lead": 59,
     "manager": 89,
     "mid": 2,
@@ -101,7 +101,7 @@
     "automotive": 2,
     "banking": 22,
     "consumer-goods-retail": 2,
-    "diversified": 152,
+    "diversified": 153,
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
