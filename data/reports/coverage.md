@@ -2,9 +2,9 @@
 
 | | Companies |
 |---|---|
-| Crawled (ready + active) | 68 |
+| Crawled (ready + active) | 67 |
 | Careers page known, not crawled yet (needs-adapter) | 54 |
-| Deliberately not crawled (active: false) | 29 |
+| Deliberately not crawled (active: false) | 30 |
 | Website known, careers page unknown (needs-discovery) | 126 |
 | No website known (needs-research) | 120 |
 | **Total** | **397** |
@@ -42,7 +42,7 @@
 | Digiratina Technology Solutions | html | Digiratina careers page, one card per opening (verified by the probe, Nov 2026). |
 | Digital Mobility Solutions Lanka PLC (PickMe) | html | PickMe's own careers page lists current openings (verified Sep 2026). |
 | Eyepax IT Consulting | html | Eyepax job openings page, read from the list it loads (admin-ajax filter_jobs; robots.txt allows it); Sri Lanka roles only (verified by the probe, Nov 2026). |
-| Gapstars | html | Gapstars jobs page (all Sri Lanka openings; the Portugal hub has its own page) (verified by the probe, Nov 2026). |
+| Gapstars | html | Gapstars moved its careers to www.gapstars.net/careers (new site, Nov 2026); reads the page's full job list, Sri Lanka roles only. |
 | Haycarb PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
 | Hayleys PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
 | Hayleys Fabric PLC | custom: oracle-hcm | hayleys.com/careers links to Oracle Recruiting Cloud (site CX_23001, 93 roles, 90 in Sri Lanka at probe time); read via its public requisitions API (verified Sep 2026). |
@@ -72,7 +72,6 @@
 | Sysco LABS | custom: workday | syscolabs.lk/careers links to Sysco's Workday site filtered to 'Sysco LABS - Sri Lanka' (87 roles at probe time, verified Sep 2026). |
 | TekGeeks | html | TekGeeks careers page (verified by the probe, Nov 2026). |
 | TGT Global | teamtailor | TGT's careers site runs on Teamtailor; only Sri Lanka roles (verified by the probe, Nov 2026). |
-| Union Bank of Colombo PLC | custom: peopleshr | unionb.com/careers redirects to its PeoplesHR job portal; vacancies come from the portal's JSON (2 at probe time, verified Sep 2026). The portal has no per-vacancy link, so Apply opens the portal. |
 | Vallibel One PLC | html | 'Our openings' section on the careers page (verified Sep 2026). |
 | VitalHub | custom: bamboohr | VitalHub hires through BambooHR (vitalhub.bamboohr.com); only Colombo roles (verified by the probe, Nov 2026). |
 | WSO2 | html | wso2.com/careers now redirects to choreolabs.com/careers (new layout); only Sri Lanka roles (fixed Nov 2026). |
@@ -114,6 +113,7 @@
 | Swisstek (Ceylon) PLC | Not crawled: robots.txt disallows the careers page (verified Sep 2026). |
 | Swivel Group | careers.smartrecruiters.com/SwivelGroup now redirects away (no SmartRecruiters page any more) and the API is disallowed by robots.txt; not crawled (Nov 2026). |
 | Teejay Lanka PLC | Careers URL from the CSE list returns HTTP 404 (verified Sep 2026); needs the current careers page. |
+| Union Bank of Colombo PLC | Not crawled: since Nov 2026 robots.txt on unionbank.peopleshr.com disallows the job portal (it also returned 404 for a while). |
 | Wavenet | Not crawled: robots.txt disallows the careers page on wavenet.lk (checked Nov 2026). |
 | 3axislabs | Careers page has no list of openings to read (CVs by email, or no current openings) (checked Nov 2026). |
 | Abans Electricals PLC | The 'Work with us' page has no vacancy listings (verified Sep 2026); nothing to crawl yet. |
