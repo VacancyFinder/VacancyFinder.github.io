@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-25T16:49:13.650Z",
-  "runDurationMs": 162350,
+  "generatedAt": "2026-11-25T19:49:48.214Z",
+  "runDurationMs": 150934,
   "totals": {
-    "open": 766,
+    "open": 763,
     "companiesWithJobs": 56,
     "targets": 56,
     "targetsOk": 51
@@ -19,9 +19,9 @@
     "healthcare": 1,
     "hospitality-tourism": 6,
     "human-resource": 42,
-    "legal-compliance": 24,
+    "legal-compliance": 23,
     "operations-logistics": 80,
-    "other": 80,
+    "other": 78,
     "product-project-business": 46,
     "qa-testing": 18,
     "sales-marketing": 95,
@@ -59,12 +59,12 @@
     "john-keells-hotels": 2,
     "kaleris": 2,
     "keells": 41,
-    "keells-food-products": 2,
+    "keells-food-products": 1,
     "lseg": 26,
-    "mas-holdings": 142,
+    "mas-holdings": 141,
     "millenniumit-esp": 30,
     "nagarro": 1,
-    "national-development-bank": 18,
+    "national-development-bank": 17,
     "octave": 7,
     "orysys": 19,
     "pearson": 9,
@@ -90,21 +90,21 @@
     "intern": 113,
     "junior": 56,
     "lead": 59,
-    "manager": 93,
+    "manager": 92,
     "mid": 2,
     "principal": 17,
     "senior": 116,
     "trainee": 16,
-    "unspecified": 294
+    "unspecified": 292
   },
   "byIndustry": {
-    "banking": 20,
+    "banking": 19,
     "consumer-goods-retail": 2,
     "diversified": 175,
     "financial-services": 20,
-    "food-beverage-tobacco": 2,
+    "food-beverage-tobacco": 1,
     "hotels-leisure": 2,
-    "technology": 513,
+    "technology": 512,
     "telecommunications": 32
   }
 }
