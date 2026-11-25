@@ -885,5 +885,36 @@
         "url": "https://careers.keells.com/UnionAssurance/job/Colombo-Senior-Executive-Rewards-&-Management-Information-Systems/1368076766/"
       }
     ]
+  },
+  {
+    "at": "2026-11-25T16:49:13.650Z",
+    "added": [
+      {
+        "id": "259c5be95f19e4717c3c1a1e5ec443bf73b51527",
+        "title": "Assistant Manager - Financial Services",
+        "company": "keells",
+        "url": "https://careers.keells.com/InfoMate/job/Colombo-Assistant-Manager-Financial-Services/1370899066/"
+      },
+      {
+        "id": "b760e308b123a01e75caeb3e3e6282251c9f3d3c",
+        "title": "Service Desk Analyst",
+        "company": "sysco-labs",
+        "url": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/job/Sysco-LABS-----Sri-Lanka/Service-Desk-Analyst_R267477"
+      }
+    ],
+    "closed": [
+      {
+        "id": "8448754aef59d9cee578e40e245ecd7aeb202fc6",
+        "title": "Technical Onboarding Engineer - IFS Logistics",
+        "company": "ifs",
+        "url": "https://jobs.smartrecruiters.com/IFS1/744000160578710-technical-onboarding-engineer-ifs-logistics"
+      },
+      {
+        "id": "3036a5eb1b2e6bfa18221d9e86e2ba43d5381982",
+        "title": "Quality Engineer",
+        "company": "sysco-labs",
+        "url": "https://wd5.myworkdaysite.com/recruiting/sysco/syscocareers/job/Sysco-LABS-----Sri-Lanka/Senior-Quality-Engineer_R256578"
+      }
+    ]
   }
 ]

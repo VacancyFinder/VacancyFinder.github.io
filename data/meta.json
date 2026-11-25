@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-25T13:48:37.215Z",
-  "runDurationMs": 156997,
+  "generatedAt": "2026-11-25T16:49:13.650Z",
+  "runDurationMs": 162350,
   "totals": {
     "open": 766,
     "companiesWithJobs": 56,
@@ -8,24 +8,24 @@
     "targetsOk": 51
   },
   "byField": {
-    "admin-customer-service": 34,
+    "admin-customer-service": 35,
     "banking-insurance": 25,
     "cloud-devops": 71,
     "cybersecurity": 18,
     "data-ai-ml": 75,
     "digital-graphics": 8,
     "engineering-manufacturing": 71,
-    "finance-accounting": 75,
+    "finance-accounting": 76,
     "healthcare": 1,
     "hospitality-tourism": 6,
     "human-resource": 42,
     "legal-compliance": 24,
-    "operations-logistics": 81,
+    "operations-logistics": 80,
     "other": 80,
     "product-project-business": 46,
-    "qa-testing": 19,
+    "qa-testing": 18,
     "sales-marketing": 95,
-    "software-engineering": 124,
+    "software-engineering": 123,
     "ui-ux-design": 4
   },
   "byCompany": {
@@ -54,11 +54,11 @@
     "digital-mobility-solutions-lanka-pickme": 3,
     "gapstars": 9,
     "hayleys-group": 120,
-    "ifs": 23,
+    "ifs": 22,
     "insighture": 8,
     "john-keells-hotels": 2,
     "kaleris": 2,
-    "keells": 40,
+    "keells": 41,
     "keells-food-products": 2,
     "lseg": 26,
     "mas-holdings": 142,
@@ -90,21 +90,21 @@
     "intern": 113,
     "junior": 56,
     "lead": 59,
-    "manager": 92,
+    "manager": 93,
     "mid": 2,
     "principal": 17,
     "senior": 116,
     "trainee": 16,
-    "unspecified": 295
+    "unspecified": 294
   },
   "byIndustry": {
     "banking": 20,
     "consumer-goods-retail": 2,
-    "diversified": 174,
+    "diversified": 175,
     "financial-services": 20,
     "food-beverage-tobacco": 2,
     "hotels-leisure": 2,
-    "technology": 514,
+    "technology": 513,
     "telecommunications": 32
   }
 }
