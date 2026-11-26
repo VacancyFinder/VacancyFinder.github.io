@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-25T22:50:14.092Z",
-  "runDurationMs": 139830,
+  "generatedAt": "2026-11-26T01:50:41.909Z",
+  "runDurationMs": 153015,
   "totals": {
     "open": 745,
-    "companiesWithJobs": 55,
+    "companiesWithJobs": 56,
     "targets": 56,
-    "targetsOk": 53
+    "targetsOk": 52
   },
   "byField": {
-    "admin-customer-service": 35,
+    "admin-customer-service": 34,
     "banking-insurance": 25,
-    "cloud-devops": 69,
+    "cloud-devops": 68,
     "cybersecurity": 18,
     "data-ai-ml": 73,
     "digital-graphics": 8,
@@ -25,7 +25,7 @@
     "product-project-business": 46,
     "qa-testing": 18,
     "sales-marketing": 93,
-    "software-engineering": 122,
+    "software-engineering": 123,
     "ui-ux-design": 4
   },
   "byCompany": {
@@ -52,6 +52,7 @@
     "dialog-axiata": 28,
     "digiratina-technology-solutions": 12,
     "digital-mobility-solutions-lanka-pickme": 3,
+    "eyepax-it-consulting": 1,
     "gapstars": 9,
     "hayleys-group": 118,
     "ifs": 22,
@@ -65,7 +66,7 @@
     "nagarro": 1,
     "national-development-bank": 16,
     "octave": 7,
-    "orysys": 19,
+    "orysys": 18,
     "pearson": 9,
     "petdesk": 1,
     "platned": 8,
@@ -87,12 +88,12 @@
   },
   "bySeniority": {
     "intern": 112,
-    "junior": 56,
+    "junior": 55,
     "lead": 57,
     "manager": 87,
     "mid": 2,
     "principal": 17,
-    "senior": 114,
+    "senior": 115,
     "trainee": 16,
     "unspecified": 284
   },
