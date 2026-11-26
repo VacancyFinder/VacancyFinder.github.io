@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-26T16:53:06.860Z",
-  "runDurationMs": 146388,
+  "generatedAt": "2026-11-26T19:53:37.798Z",
+  "runDurationMs": 151179,
   "totals": {
-    "open": 772,
+    "open": 769,
     "companiesWithJobs": 55,
     "targets": 56,
     "targetsOk": 51
   },
   "byField": {
     "admin-customer-service": 33,
-    "banking-insurance": 26,
-    "cloud-devops": 65,
+    "banking-insurance": 25,
+    "cloud-devops": 64,
     "cybersecurity": 18,
     "data-ai-ml": 76,
     "digital-graphics": 8,
@@ -22,7 +22,7 @@
     "legal-compliance": 23,
     "operations-logistics": 75,
     "other": 80,
-    "product-project-business": 49,
+    "product-project-business": 48,
     "qa-testing": 20,
     "sales-marketing": 94,
     "software-engineering": 132,
@@ -61,10 +61,10 @@
     "kaleris": 2,
     "keells": 34,
     "lseg": 23,
-    "mas-holdings": 149,
+    "mas-holdings": 148,
     "millenniumit-esp": 30,
     "nagarro": 1,
-    "national-development-bank": 20,
+    "national-development-bank": 18,
     "octave": 7,
     "orysys": 18,
     "pearson": 9,
@@ -86,23 +86,23 @@
     "zyner-io": 6
   },
   "bySeniority": {
-    "intern": 119,
+    "intern": 118,
     "junior": 59,
     "lead": 58,
     "manager": 92,
     "mid": 2,
     "principal": 19,
-    "senior": 121,
+    "senior": 120,
     "trainee": 16,
-    "unspecified": 286
+    "unspecified": 285
   },
   "byIndustry": {
-    "banking": 21,
+    "banking": 19,
     "consumer-goods-retail": 2,
     "diversified": 172,
     "financial-services": 21,
     "hotels-leisure": 2,
-    "technology": 523,
+    "technology": 522,
     "telecommunications": 31
   }
 }
