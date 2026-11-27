@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-26T22:54:04.826Z",
-  "runDurationMs": 148758,
+  "generatedAt": "2026-11-27T01:54:29.033Z",
+  "runDurationMs": 154798,
   "totals": {
-    "open": 759,
+    "open": 760,
     "companiesWithJobs": 55,
     "targets": 56,
     "targetsOk": 51
@@ -22,7 +22,7 @@
     "legal-compliance": 23,
     "operations-logistics": 75,
     "other": 79,
-    "product-project-business": 48,
+    "product-project-business": 49,
     "qa-testing": 20,
     "sales-marketing": 92,
     "software-engineering": 132,
@@ -61,7 +61,7 @@
     "kaleris": 2,
     "keells": 34,
     "lseg": 23,
-    "mas-holdings": 147,
+    "mas-holdings": 148,
     "millenniumit-esp": 30,
     "nagarro": 1,
     "national-development-bank": 16,
@@ -92,7 +92,7 @@
     "manager": 89,
     "mid": 2,
     "principal": 19,
-    "senior": 119,
+    "senior": 120,
     "trainee": 16,
     "unspecified": 280
   },
@@ -102,7 +102,7 @@
     "diversified": 166,
     "financial-services": 21,
     "hotels-leisure": 2,
-    "technology": 521,
+    "technology": 522,
     "telecommunications": 30
   }
 }
