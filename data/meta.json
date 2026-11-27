@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-27T04:54:54.707Z",
-  "runDurationMs": 143480,
+  "generatedAt": "2026-11-27T07:55:25.262Z",
+  "runDurationMs": 153947,
   "totals": {
-    "open": 752,
-    "companiesWithJobs": 55,
+    "open": 745,
+    "companiesWithJobs": 54,
     "targets": 56,
-    "targetsOk": 51
+    "targetsOk": 52
   },
   "byField": {
     "admin-customer-service": 33,
     "banking-insurance": 24,
-    "cloud-devops": 62,
+    "cloud-devops": 61,
     "cybersecurity": 18,
-    "data-ai-ml": 75,
+    "data-ai-ml": 72,
     "digital-graphics": 8,
-    "engineering-manufacturing": 72,
+    "engineering-manufacturing": 73,
     "finance-accounting": 71,
     "healthcare": 1,
     "hospitality-tourism": 6,
@@ -22,10 +22,10 @@
     "legal-compliance": 23,
     "operations-logistics": 73,
     "other": 75,
-    "product-project-business": 48,
+    "product-project-business": 47,
     "qa-testing": 20,
     "sales-marketing": 90,
-    "software-engineering": 133,
+    "software-engineering": 126,
     "ui-ux-design": 4
   },
   "byCompany": {
@@ -49,19 +49,18 @@
     "creative-software": 1,
     "deloitte-sri-lanka": 26,
     "dialog": 3,
-    "dialog-axiata": 29,
+    "dialog-axiata": 30,
     "digiratina-technology-solutions": 12,
     "digital-mobility-solutions-lanka-pickme": 3,
     "eyepax-it-consulting": 2,
-    "gapstars": 9,
     "hayleys-group": 118,
     "ifs": 23,
     "insighture": 9,
     "john-keells-hotels": 2,
     "kaleris": 2,
-    "keells": 34,
-    "lseg": 23,
-    "mas-holdings": 137,
+    "keells": 35,
+    "lseg": 24,
+    "mas-holdings": 136,
     "millenniumit-esp": 30,
     "nagarro": 1,
     "national-development-bank": 16,
@@ -86,23 +85,23 @@
     "zyner-io": 6
   },
   "bySeniority": {
-    "intern": 118,
-    "junior": 58,
-    "lead": 58,
-    "manager": 91,
+    "intern": 120,
+    "junior": 59,
+    "lead": 55,
+    "manager": 89,
     "mid": 2,
     "principal": 19,
-    "senior": 120,
+    "senior": 117,
     "trainee": 16,
-    "unspecified": 270
+    "unspecified": 268
   },
   "byIndustry": {
     "banking": 17,
     "consumer-goods-retail": 2,
-    "diversified": 168,
+    "diversified": 169,
     "financial-services": 21,
     "hotels-leisure": 2,
-    "technology": 512,
-    "telecommunications": 30
+    "technology": 503,
+    "telecommunications": 31
   }
 }
