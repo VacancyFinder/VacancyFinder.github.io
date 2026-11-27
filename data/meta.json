@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-11-27T16:53:12.315Z",
-  "runDurationMs": 150222,
+  "generatedAt": "2026-11-27T19:53:35.654Z",
+  "runDurationMs": 146476,
   "totals": {
-    "open": 750,
+    "open": 748,
     "companiesWithJobs": 54,
     "targets": 56,
-    "targetsOk": 52
+    "targetsOk": 53
   },
   "byField": {
     "admin-customer-service": 32,
     "banking-insurance": 26,
     "cloud-devops": 60,
     "cybersecurity": 18,
-    "data-ai-ml": 71,
+    "data-ai-ml": 70,
     "digital-graphics": 8,
     "engineering-manufacturing": 73,
     "finance-accounting": 71,
     "healthcare": 1,
     "hospitality-tourism": 6,
-    "human-resource": 40,
+    "human-resource": 39,
     "legal-compliance": 25,
     "operations-logistics": 73,
     "other": 77,
@@ -54,8 +54,8 @@
     "digital-mobility-solutions-lanka-pickme": 3,
     "eyepax-it-consulting": 3,
     "hayleys-group": 118,
-    "ifs": 24,
-    "insighture": 9,
+    "ifs": 23,
+    "insighture": 8,
     "john-keells-hotels": 2,
     "kaleris": 2,
     "keells": 36,
@@ -91,8 +91,8 @@
     "manager": 92,
     "mid": 2,
     "principal": 19,
-    "senior": 119,
-    "trainee": 16,
+    "senior": 118,
+    "trainee": 15,
     "unspecified": 270
   },
   "byIndustry": {
@@ -101,7 +101,7 @@
     "diversified": 170,
     "financial-services": 21,
     "hotels-leisure": 2,
-    "technology": 505,
+    "technology": 503,
     "telecommunications": 31
   }
 }

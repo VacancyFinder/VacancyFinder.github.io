@@ -20,8 +20,8 @@
     "companies": [
       "99x"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 3,
@@ -34,8 +34,8 @@
     "companies": [
       "abans-finance"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 7,
@@ -134,8 +134,8 @@
     "companies": [
       "allion-technologies"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 1,
@@ -148,8 +148,8 @@
     "companies": [
       "amazoft"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 6,
@@ -204,8 +204,8 @@
     "companies": [
       "beespoint"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 3,
@@ -246,10 +246,10 @@
     "companies": [
       "bank-of-ceylon"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
     "lastSuccessAt": "2026-11-26T13:52:39.174Z",
     "lastError": "HTTP 403 for https://www.boc.lk/careers",
-    "consecutiveFailures": 9,
+    "consecutiveFailures": 10,
     "jobCount": 1,
     "suspect": false
   },
@@ -262,8 +262,8 @@
       "browns-beach-hotels",
       "browns-investments"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 14,
@@ -290,8 +290,8 @@
     "companies": [
       "ascentic"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 0,
@@ -304,8 +304,8 @@
     "companies": [
       "cambio-software-engineering"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 1,
@@ -318,8 +318,8 @@
     "companies": [
       "axiata-digital-labs"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 22,
@@ -332,8 +332,8 @@
     "companies": [
       "creately"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 2,
@@ -346,8 +346,8 @@
     "companies": [
       "millenniumit-esp"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 30,
@@ -360,11 +360,11 @@
     "companies": [
       "ifs"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
-    "jobCount": 24,
+    "jobCount": 23,
     "suspect": false
   },
   "careers-smartrecruiters-com-nagarro1-search-location-colombo-2c-20lk": {
@@ -374,8 +374,8 @@
     "companies": [
       "nagarro"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 1,
@@ -388,8 +388,8 @@
     "companies": [
       "tgt-global"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 1,
@@ -402,8 +402,8 @@
     "companies": [
       "zyner-io"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 6,
@@ -417,8 +417,8 @@
       "c-t-holdings",
       "cargills-ceylon"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 3,
@@ -431,8 +431,8 @@
     "companies": [
       "citizens-development-business-finance"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 11,
@@ -473,8 +473,8 @@
     "companies": [
       "wso2"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 4,
@@ -487,8 +487,8 @@
     "companies": [
       "cms"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 3,
@@ -501,10 +501,10 @@
     "companies": [
       "codegen"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
     "lastSuccessAt": "2026-11-23T04:40:10.579Z",
     "lastError": "returned 0 jobs but had 5 open; kept previous jobs",
-    "consecutiveFailures": 36,
+    "consecutiveFailures": 37,
     "jobCount": 5,
     "suspect": true
   },
@@ -515,10 +515,10 @@
     "companies": [
       "codimite"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T07:55:25.262Z",
-    "lastError": "HTTP 422 for https://codimite.ai/careers/",
-    "consecutiveFailures": 3,
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
+    "lastError": null,
+    "consecutiveFailures": 0,
     "jobCount": 12,
     "suspect": false
   },
@@ -529,8 +529,8 @@
     "companies": [
       "creative-software"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 1,
@@ -544,8 +544,8 @@
       "dialog-axiata",
       "dialog-finance"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 33,
@@ -558,8 +558,8 @@
     "companies": [
       "digiratina-technology-solutions"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 12,
@@ -586,8 +586,8 @@
     "companies": [
       "diesel-and-motor-engineering"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 0,
@@ -642,8 +642,8 @@
     "companies": [
       "eyepax-it-consulting"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 3,
@@ -670,8 +670,8 @@
     "companies": [
       "gapstars"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 0,
@@ -702,8 +702,8 @@
       "hayleys-fibre",
       "hayleys-leisure"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 118,
@@ -716,8 +716,8 @@
     "companies": [
       "pearson"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 9,
@@ -800,8 +800,8 @@
     "companies": [
       "innodata"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 0,
@@ -814,11 +814,11 @@
     "companies": [
       "insighture"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
-    "jobCount": 9,
+    "jobCount": 8,
     "suspect": false
   },
   "intervest-lk-careers": {
@@ -856,8 +856,8 @@
     "companies": [
       "kaleris"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 2,
@@ -874,8 +874,8 @@
       "john-keells-holdings",
       "keells-food-products"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 36,
@@ -888,8 +888,8 @@
     "companies": [
       "lanka-ioc"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 0,
@@ -916,8 +916,8 @@
     "companies": [
       "lseg"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 24,
@@ -930,8 +930,8 @@
     "companies": [
       "mas-holdings"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 137,
@@ -986,8 +986,8 @@
     "companies": [
       "national-development-bank"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 18,
@@ -1014,8 +1014,8 @@
     "companies": [
       "orysys"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 18,
@@ -1042,8 +1042,8 @@
     "companies": [
       "petdesk"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 1,
@@ -1056,8 +1056,8 @@
     "companies": [
       "digital-mobility-solutions-lanka-pickme"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 3,
@@ -1070,8 +1070,8 @@
     "companies": [
       "platned"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 8,
@@ -1112,8 +1112,8 @@
     "companies": [
       "rootcode"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 2,
@@ -1140,8 +1140,8 @@
     "companies": [
       "senzmate"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 24,
@@ -1182,8 +1182,8 @@
     "companies": [
       "sri-lanka-telecom"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 1,
@@ -1213,8 +1213,8 @@
     "companies": [
       "deloitte-sri-lanka"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 27,
@@ -1255,8 +1255,8 @@
     "companies": [
       "surge-global"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 22,
@@ -1283,8 +1283,8 @@
     "companies": [
       "tekgeeks"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 3,
@@ -1311,10 +1311,10 @@
     "companies": [
       "union-bank-of-colombo"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
     "lastSuccessAt": "2026-11-19T04:25:35.535Z",
     "lastError": "robots.txt: robots.txt disallows https://unionbank.peopleshr.com/JobPortal/Home/GetVacanciesToApply",
-    "consecutiveFailures": 68,
+    "consecutiveFailures": 69,
     "jobCount": 0,
     "suspect": false
   },
@@ -1325,8 +1325,8 @@
     "companies": [
       "vallibel-one"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 1,
@@ -1353,8 +1353,8 @@
     "companies": [
       "vitalhub"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 4,
@@ -1367,8 +1367,8 @@
     "companies": [
       "sysco-labs"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 48,
@@ -1409,8 +1409,8 @@
     "companies": [
       "xeynergy"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 8,
@@ -1437,8 +1437,8 @@
     "companies": [
       "xitricon"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 5,
@@ -1465,8 +1465,8 @@
     "companies": [
       "zillione"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 3,
@@ -1479,8 +1479,8 @@
     "companies": [
       "zone24x7"
     ],
-    "lastRunAt": "2026-11-27T16:53:12.315Z",
-    "lastSuccessAt": "2026-11-27T16:53:12.315Z",
+    "lastRunAt": "2026-11-27T19:53:35.654Z",
+    "lastSuccessAt": "2026-11-27T19:53:35.654Z",
     "lastError": null,
     "consecutiveFailures": 0,
     "jobCount": 0,
