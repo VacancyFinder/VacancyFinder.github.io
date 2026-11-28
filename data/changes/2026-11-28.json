@@ -439,5 +439,90 @@
       }
     ],
     "closed": []
+  },
+  {
+    "at": "2026-11-28T13:56:17.031Z",
+    "added": [
+      {
+        "id": "98e0f81b8a848a5fa546ac36cdefd401f10aad67",
+        "title": "Designer",
+        "company": "mas-holdings",
+        "url": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/22285"
+      }
+    ],
+    "closed": [
+      {
+        "id": "0006b5cc0e9dd4cf56a315cd6c2acba51410731e",
+        "title": "Deputy Manager - Business Advisory (Financial Crime Compliance)",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-5134454"
+      },
+      {
+        "id": "7d9e0007c0c4e207a51482c490148347d38eba91",
+        "title": "Associate-Accounts Payable",
+        "company": "lseg",
+        "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Associate-Accounts-Payable_R0125432"
+      },
+      {
+        "id": "e80b5b2df0e666ba7fb9e6f84a96fc2f0db6929d",
+        "title": "Banking Associates - Contact Centre",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-5137944"
+      },
+      {
+        "id": "271af9fb4422a4221ebb1e2b92727006cb974887",
+        "title": "Internship",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-676972"
+      },
+      {
+        "id": "1f5fe9d6fce47e8097378b90de6c4a32c734ba8e",
+        "title": "Deputy Manager - Business Advisory (Financial Crime Compliance)",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-5139624"
+      },
+      {
+        "id": "313838127464d27c37cf220d58c00ef4049cb8c1",
+        "title": "Intern - Technical",
+        "company": "mas-holdings",
+        "url": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/22093"
+      },
+      {
+        "id": "3d9e492db81f25d2a6b4a365ed2274d08d98983a",
+        "title": "Intern - Technical Projects",
+        "company": "mas-holdings",
+        "url": "https://egmh.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/22058"
+      },
+      {
+        "id": "5ee80b8194cc52955733182e542c90d52132672b",
+        "title": "Manager - Contracts/Agreements, Special Assignments & Retail Banking Unit",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-5134554"
+      },
+      {
+        "id": "e646b2e79a6e580e29025df01d233d6ea3c4c426",
+        "title": "Banking Associate - Retail Recoveries",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-5137734"
+      },
+      {
+        "id": "40f119a74db81d63460e4f6e7262e07474b30211",
+        "title": "Business Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-5137784"
+      },
+      {
+        "id": "5cde727a8dce5483d722e5c40ac39c652262eeca",
+        "title": "Pawning Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-5137004"
+      },
+      {
+        "id": "63f3ebd648c41a0608629ce038f570fa5810eafc",
+        "title": "Elevate - Client Relationship Officer",
+        "company": "national-development-bank",
+        "url": "https://app.mihcm.com/CareerPortal/Careers?q=w3AftNHht3c1v3Zb5ip9vw%3D%3D&lang=En#job-vacant-5137814"
+      }
+    ]
   }
 ]
